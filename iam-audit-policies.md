@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2021, 2022
+  years: 2021, 2023
 
 lastupdated: "2023-12-26"
 
@@ -42,7 +42,7 @@ When you delete a policy, it's no longer included for authorization evaluations.
 {: note}
 
 ## Exporting user access policy reports
-{: #audit-user-access}
+{: #audit-user-access-policies}
 {: ui}
 
 You can export an access policy report for each user in your account if you are the account owner, have the Editor role or higher on the User Management service, or have the Editor role or higher on the IAM Access Management service. The access policy report lists all of the access policies that the user has, including the policies that are associated with access groups that the user is a member of.
@@ -147,7 +147,7 @@ The format of the response is represented in JSON.
             "last_modified_at": "2021-04-09T14:36:30.505Z",
             "last_modified_by_id": "IBMid-310000JVN5",
             "last_permit_at": null,       <-- IAM has no record of this policy ever granting a permit decision. This will be reset when this policy is deleted.
-            "last_permit_frequency": 0,
+          "last_permit_frequency": 0,
             "state": "active"
         },
         {

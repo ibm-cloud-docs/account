@@ -3,9 +3,7 @@
 copyright:
 
   years: 2015, 2024
-
-lastupdated: "2024-02-19"
-
+lastupdated: "2024-01-29"
 
 keywords: service key, api key, bind, credential
 
@@ -19,7 +17,6 @@ subcollection: account
 {: #service_credentials}
 
 You can generate a new set of credentials for times when you want to manually connect an app or external consumer to an {{site.data.keyword.Bluemix}} service. For example, if you're trying to bind an AWS app to a Watson service, you need to generate a new credential that can be used to bind them together. After your credential is created, you can [manually add](/docs/app-configuration?topic=app-configuration-ac-service-credentials) it to your {{site.data.keyword.Bluemix_notm}} app or other [external consumer](/docs/account?topic=account-externalapp) to connect your service.
-{: shortdesc}
 
 To manually add credentials to your apps, refer to the documentation for the type of app or compute option that you are using.
 {: tip}
@@ -28,27 +25,27 @@ To manually add credentials to your apps, refer to the documentation for the typ
 {: #IAM_credential-ui}
 {: ui}
 
-Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL.
+Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
-However, while the contents of each credential is unique to the service that generates it, all services managed by IAM require that new credentials include an IAM Service access role. Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
+Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
 
 Complete the following steps to add a credential to a service that is managed by IAM:
 
-1. From the Resource list page, select the name of the service to open the service details page. Then, select the Credentials tab, and click **New Credential**.
-2. From the Add New Credential dialog, provide a **Name**.
-3. Specify the role. This value sets the IAM service access role. For more information, see [IAM Access](/docs/account?topic=account-userroles).
-4. Optionally, you can provide a Service ID by either allowing IAM to generate a unique value for you, or by providing an existing Service ID. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
-5. Optionally, you can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
+1. From the Resource list page, select the name of the service to open the service details page. Then, click **Service credentials > New Credential+**.
+1. Provide a **Name**.
+1. Specify the role. This value sets the IAM service access role. For more information, see [IAM Access](/docs/account?topic=account-userroles).
+1. Optionally, you can provide a Service ID by either allowing IAM to generate a unique value for you, or by providing an existing Service ID. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
+1. Optionally, you can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
 
-   Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service offering.
+   Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service.
    {: note}
 
-6. Click **Add** to generate the new service credential.
+1. Click **Add** to generate the new service credential.
 
 ### Creating a service credential without an IAM service role
 {: #no-service-role}
 
-Services managed by IAM that generate new credentials can assign an IAM Service access role. This role grants access to the entire service instance. For services with fine-grained resource access, you might want to grant access only to a subresource, such as a Cloud {{site.data.keyword.cos_short}} bucket. In this case, you can choose to continue without selecting a role so that the new credential is created without an IAM Service role. This way, you can manage the fine-grained access by creating an IAM policy that you scope to a specific resource, like a bucket. To create the credential without an IAM service role, complete the following steps:
+Services managed by IAM that generate new credentials can assign an IAM Service access role. This role grants access to the entire service instance. For services that have fine-grained resource access, you might want to grant access only to a subresource, such as a Cloud {{site.data.keyword.cos_short}} bucket. In this case, you can choose to continue without selecting a role so that the new credential is created without an IAM Service role. This way, you can manage the fine-grained access by creating an IAM policy that you scope to a specific resource, like a bucket. To create the credential without an IAM service role, complete the following steps:
 
 1. From the Resource list page, select the name of the service to open the service details page. Then, click **Service credentials > New Credential+**.
 1. Provide a **Name**.
@@ -60,9 +57,12 @@ Services managed by IAM that generate new credentials can assign an IAM Service 
 {: #IAM_credential-api}
 {: api}
 
-Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL.
+Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
-However, while the contents of each credential is unique to the service that generates it, all services managed by IAM require that new credentials include an IAM Service access role. Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
+Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
+
+Services managed by IAM that generate new credentials can assign an IAM Service access role. This role grants access to the entire service instance. For services that have finer grain resource access, you might want to grant access only to a sub-resource, such as a Cloud {{site.data.keyword.cos_short}} bucket. In this case, select **None** as the role so that the new credential is created without an IAM Service role. This way, you can manage fine grain access by creating an IAM policy that you scope to a specific resource, like a bucket. To do so, go to **Manage > Access (IAM) > Service IDs**. Select the service ID with the same name as the service credential key, and click **Assign access**.
+{: tip}
 
 To create a resource key, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example:
 
@@ -215,7 +215,7 @@ Use the following steps to add a crednetial when binding an IAM-enabled service:
 
 
 
-### Example request to create an app credential binding
+### Example Request to create an App Credential Binding
 {: #app-cred-binding-api}
 
 ```bash
@@ -254,7 +254,7 @@ curl "https://api.example.org/v3/service_credential_bindings" \
 ```
 {: codeblock}
 
-### Example request to create a key credential binding
+### Example Request to create a Key Credential Binding
 {: #key-cred-binding-api}
 
 ```bash
@@ -306,7 +306,7 @@ To view an existing service credential for a service, complete the following ste
 
 The access of the user must be equal to or greater than the access of the service credential. For example, if the credential has the IAM service role `Writer`, then the user trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted:
 
-```text
+```bash
     "credentials": {
         "REDACTED": "REDACTED"
     },
@@ -318,7 +318,7 @@ The access of the user must be equal to or greater than the access of the servic
 
 When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted:
 
-```text
+```bash
     "credentials": {
         "REDACTED": "REDACTED_EXPLICIT"
     },
@@ -326,11 +326,12 @@ When the credential level access can't be determined by comparing the access of 
 
 To view the credential, the user must have the IAM level access action `resource-controller.credential.retrieve_all`. This action is given with the Administrator role, and overrides any credential level access enabling the user to view the credential.
 
+
 ## Viewing a credential by using the API
 {: #viewing-credentials-api}
 {: api}
 
-After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential including the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned.
+After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential that includes the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user that is trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned.
 
 To get a list of all of the resource keys, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#list-resource-keys) as shown in the following example:
 
@@ -395,6 +396,7 @@ fmt.Printf("\nListResourceKeys() response:\n%s\n", string(b))
 {: go}
 
 Example response:
+
 ```bash
 {
   "rows_count": 1,
@@ -446,7 +448,7 @@ Example response:
 
 The access of the user must be equal to or greater than the access of the service credential. For example, if the credential has the IAM service role `Writer`, then the user that is trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned. When a user doesn't have the correct access, details such as the API key value are redacted:
 
-```text
+```bash
     "credentials": {
         "REDACTED": "REDACTED"
     },
@@ -458,7 +460,7 @@ The access of the user must be equal to or greater than the access of the servic
 
 When the credential level access can't be determined by comparing the access of the user and the credential, the credential is redacted:
 
-```text
+```bash
     "credentials": {
         "REDACTED": "REDACTED_EXPLICIT"
     },

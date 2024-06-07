@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-02"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 
@@ -26,18 +26,18 @@ To manage access for users or service IDs by using IAM policies, you must be the
 You can assign access to resources by using two types of policies:
 
 * Access to resources in the account, including the option for just one type or all types
-* Access to resources within a resource group, including the option for just one resource or all
+* Access to resources within a resource group, including the option for just one resource or all resources
 
-If you delete or edit an existing policy for a service ID currently being used, it might cause service interruption.
+If you delete or edit an existing policy for a service ID that's currently being used, it might cause service interruption.
 {: note}
 
-If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all IAM-enabled resources, you must assign a user the following access:
-* A policy for **All Identity and Access enabled services** with the Administrator and Manager roles.
-* A policy with Administrator role on **All Account Management services**.
+If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all IAM-enabled resources, you must assign a user the following access:
+* A policy for **Identity and Access enabled services** with the Administrator and Manager roles.
+* A policy with the Administrator role on **All Account Management services**.
 
 You can also set access management tags to manage access. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 
-Users with the Administrator role for account management services can change the access of other users for any account management service. They can also invite and remove users from the account, including other users with the administrator role.
+Users with the Administrator role for account management services can change the access of other users and remove users from the resource, including other users with the administrator role.
 {: important}
 
 ### Assigning access to resources in the console
@@ -48,7 +48,7 @@ Users with the Administrator role for account management services can change the
 
 To assign access to an individual resource in the account or access to all resources in the account, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Manage** > **Access (IAM)**, and select **Service IDs**, depending on which identity you want to assign access.
 1. Click the **Actions** icon ![List of actions icon](../icons/action-menu-icon.svg) > **Assign access** for the user or service ID that you want to assign access.
 1. Select a group of services or a single service. Then, click **Next**.
 1. Scope the access to the all resources in the account, or select specific resources based on attributes.
@@ -70,9 +70,9 @@ If a user doesn't have a role on the resource group that contains the resources,
 To assign access to all resources in a resource group or to just one service within a resource group, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
-1. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
-1. Select a group of services or a sinlge service. Then, click **Next**.
-1. Scope the access to **Specific resources**, then select the **Resource group** attribute. By selecting a resource group, you can select roles for access to manage the resource group as well.
+1. Click the user or service ID that you want to assign access, then click **Access** > **Assign access**.
+1. Select a group of services or a single service. Then, click **Next**.
+1. Scope the access to **Specific resources**. Select the **Resource group** attribute type and enter a resource group.
 1. Click **Next**.
 1. Select the access roles to manage the resource group. Then, click **Next**.
 1. Select any combination of roles to assign, and click **Review**.
@@ -90,7 +90,7 @@ As an administrator, you might want to create an access group with the Viewer ro
 
 To assign access to a resource group without assigning service access, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to assign access.
-1. Click on the user or service ID that you want to assign access, then click **Access** > **Assign access**.
+1. Click the user or service ID that you want to assign access, then click **Access** > **Assign access**.
 1. Select **Resource group only**.
 1. Select **Add a condition**.
 1. Select the **Resource group** attribute type and enter a resource group.
@@ -535,7 +535,7 @@ Removing access for a user or service ID can take up to 10 minutes to take effec
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Users** or **Service IDs**, depending on which identity you want to manage.
 1. Select the user's name or service ID that you want to remove access for.
-1. Go to **Access** and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
+1. From the **Access** tab, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove** on the row for the policy you want to remove.
 1. Review the policy details that you're about to remove, and confirm by clicking **Remove**.
 
 You can also remove users and service IDs from access groups by selecting the checkbox for the user or service ID that you want to remove, and click **Remove**. Then, click **Remove** again to approve the process.

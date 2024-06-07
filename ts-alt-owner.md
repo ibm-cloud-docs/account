@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-12-27"
+  years: 2020
+lastupdated: "2022-11-28"
 
 keywords: troubleshoot account, dashboard role, permission, view dashboard, dashboard
 

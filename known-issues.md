@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-04-25"
+lastupdated: "2024-05-02"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -19,6 +19,10 @@ subcollection: account
 Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}} catalog, and the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources.
 {: shortdesc}
 
+## Google login doesn't support federated IDs
+{: #google-fed-id}
+
+Google ID login isn't available for users with federated IDs due to additional access that might be required by their corporate external identity provider (IdP). 
 
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
 {: #settings-noapply}
@@ -109,7 +113,7 @@ Access management tags are available only when you create an access policy that 
 ### Trusted profile limitations
 {: #tp-limits}
 
-Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile. Additionally, {{site.data.keyword.openshiftlong}} doesn't currently support trusted profiles. 
+Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
 
 ### Enterprise-managed IAM limitations
 {: #enterprise-limitations}
@@ -168,19 +172,11 @@ As of 25 January 2023, IAM supports two versions of the IAM Policy Management AP
 ### String comparisons
 {: #policy-string-comparison}
 
-The following table lists the string comparison operators that you can use to build access policies with `/v2/policies` syntax. For more information about each version, see [Comparing `/v1/policies` and `/v2/policies` syntax](/docs/account?topic=account-known-issues#compare-syntax).
+{{site.data.content.string-compare-intro-reuse}}
 
 You can have up to 10 conditions and nesting up to 2 levels. {: important}
 
-| Operator   | Description  |
-|------------|--------------|
-| `stringEquals`  | Case-sensitive string comparison. Boolean or number values are converted into a string before comparison. |
-| `stringMatch`  | Case-sensitive string match is performed between the pattern and the target string by using either an asterisk (`*`), question mark (`?`), or both. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. |
-| `stringExists`  | String must be true. |
-| `stringEqualsAnyOf` | Case-sensitive exact string matching any of the strings in an array of strings. Limit of 10 values. |
-| `stringMatchAnyOf` | Case-sensitive string matching any of the strings in an array of strings. The values can include a multi-character wildcard (`*`), which matches any sequence of zero or more characters, a single-character wildcard (`?`), matching any single character, or both. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. Limit of 10 values. |
-{: caption="Table 3. The string comparison operators available for conditions in access policies." caption-side="top"}
-
+{{site.data.content.string-compare-table-reuse}}
 
 For example, the following statement contains an `operator` element that uses `stringEquals` to specify that the account ID and service name must exactly match the `value` element. The statement also contains an `operator` element that uses `stringMatch` to specify a naming pattern for {{site.data.keyword.messagehub}} topics that you might use to organize access to those specific resources. This way, you can assign one policy to all topics in your account that begin with `messagehub-topic-dev`.
 

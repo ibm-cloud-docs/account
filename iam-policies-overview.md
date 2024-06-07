@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2023
 
-lastupdated: "2023-12-15"
+lastupdated: "2023-02-23"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -22,7 +22,7 @@ A policy grants a subject one or multiple roles to a set of resources so that sp
 
 The following graphic helps to explain how the IAM policy is created. Policies are always created by specifying the subject first. The subject is a specific user, service ID, access group, or a trusted profile. Next, the target of the policy is selected which is what you are allowing the user to access, for example: all services in a resource group, all IAM-enabled services in the account, account management services, or a particular service instance. Finally, you complete your access policy by selecting from the available roles. These roles define exactly what actions that a user can complete. More configuration options might be available, depending on the service you select.
 
-![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role"){: caption="Figure 1. How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
+![Creating IAM policies by using a subject, target, and role](images/IAM.svg){: caption="Figure 1. How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
 
 You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
 
@@ -53,6 +53,15 @@ You can provide fine-grained access for users, service IDs, or access groups by 
 If you want to enable a user full administrator access to complete the [account management tasks](/docs/account?topic=account-account-services#account-services), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all account resources, you must assign a user the following access:
 * A policy for **All Identity and Access enabled services** within the account with the administrator and manager roles assigned.
 * A policy with the administrator role assigned on **All Account Management services**.
+
+### Groups of services
+{: #service-groupings}
+
+You can assign access to a group of services so that you need only a single policy to assign access to multiple services. This way, you decrease the number of policies in your account and reduce the time and effort to manage access.
+
+* **All Identity and Access enabled services**: All catalog services that use IAM for access management.
+* **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+   * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
 
 ## Assigning {{site.data.keyword.cloud_notm}} access policies
 {: #policy-details}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-02-27"
+lastupdated: "2024-02-20"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -28,7 +28,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 
 | Feature | Trial              | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| Free community buildpacks |    186 GBH       |    186 GBH       |    186 GBH          |
+| [Free community buildpacks](/docs/cloud-foundry-public?topic=cloud-foundry-public-available_buildpacks) |    186 GBH       |    186 GBH       |    186 GBH          |
 | Access to [Lite service plans](/catalog?search=label%3Alite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to the full {{site.data.keyword.cloud_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
@@ -40,7 +40,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 {: caption="Table 1. Comparison of {{site.data.keyword.cloud_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
-[^tabletext]: Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise.
+[^tabletext]: Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise. Pay-As-You-Go accounts that sign up through IBM Cloud Sales or Softlayer can't create an enterprise.
 
 New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registration update.
 {: note}
@@ -102,7 +102,7 @@ Support subscription credit is separate from any platform or service subscriptio
 
 Service bundle subscriptions give you access and credit toward a set of services within a particular domain that are targeted for popular use cases. You can choose from service bundles that span AI, analytics, {{site.data.keyword.blockchainfull_notm}}, Internet of Things (IoT), and cloud-native services. If your needs cross multiple domains, you can purchase multiple service bundle subscriptions.
 
-You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.cloud_notm}} Terms of Use](/docs/overview?topic=overview-terms).
+You can add services bundles to any type of existing account, including Lite accounts. Service bundle subscriptions are subject to the [{{site.data.keyword.cloud_notm}} Terms of Use](/docs/overview/terms-of-use?topic=overview-terms).
 
 Service bundle subscriptions aren't available through the {{site.data.keyword.cloud_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 {: tip}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-02-08"
 
 
 keywords: create network access, network access rule, network zone
@@ -20,7 +20,7 @@ subcollection: account
 Context-based restrictions allow you to manage user and service access to specific cloud resources. You can define restrictions to the resources based on contexts, such as network zones and endpoint types. For more information, see [What are context-based restrictions](/docs/account?topic=account-context-restrictions-whatis&interface=ui).
 {: shortdesc}
 
-User and account-level IP address restrictions can also affect users' ability to access resources. To view account-level IP address restrictions, go to [Settings](/iam/settings). To view individual user settings, go to [Users](/iam/users) and view each user's IP address restrictions in the details tab.
+User and account-level IP address restrictions can also affect users' ability to access resources. You can view account-level IP address restrictions on the [Settings](/iam/settings) page. To view individual user settings, go to the [Users](/iam/users) page and view each user's IP address restrictions in the details tab.
 {: note}
 
 ## Before you begin
@@ -342,13 +342,13 @@ To create a rule, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Context-based restrictions**, and select **Rules**.
 1. Click **Create**.
 1. Select the service that you want to target in your rule. Then, click **Next**.
-
+    
     When you create context-based restriction for the IAM Access Groups service, users who don't satisfy the rule can't view any groups in the account, including the public access group.
     {: note}
 
-1. Select the scope of APIs whose operations are restricted by your rule. For more information, see [Defining the scope of a rule](/docs/account?topic=account-context-restrictions-whatis&interface=ui#rule-scope).
+1. (Optional) Select the scope of APIs whose operations are restricted by your rule. For more information, see [Defining the scope of a rule](/docs/account?topic=account-context-restrictions-whatis&interface=ui#rule-scope).
 
-    Only some services have the ability to select individual service APIs.
+    Not all services support the ability to scope a rule by API.
     {: note}
 
 1. Scope the restriction to **All resources** or **Specific resources** based on selected attributes.
@@ -566,6 +566,7 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
 
 
 ## Creating rules by using Terraform

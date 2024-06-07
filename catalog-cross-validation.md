@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-12-26"
+lastupdated: "2023-12-19"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -23,7 +23,7 @@ Trusted profiles are the preferred method of authentication because you can secu
 If you link your private catalog with a project, you still need an {{site.data.keyword.cloud_notm}} API key or a trusted profile ID to enable access.
 {: note}
 
-You might want to use a target account to validate software for the following reasons:
+You might want to use a target account for the following reasons:
 
 - Prevent the account with the product from becoming cluttered with resources that are created and deleted as part of the onboarding process
 - Allow users to complete onboarding when they might not have authorization to create resources in the account that contains the product
@@ -41,8 +41,10 @@ You might want to use a target account to validate software for the following re
 
 You can use an API key to give your private catalog access to validate your product and run security and compliance scans in a target account.
 
-Alternatively, use a trusted profile to eliminate the need for key rotation. For more information, see [Using a trusted profile](/docs/account?topic=account-catalog-cross-validation#target-trusted-profile)).
+Alternatively, use a trusted profile to eliminate the need for key rotation. For more information, see [Using a trusted profile](/docs/account?topic=account-catalog-cross-validation#target-trusted-profile).
 {: tip}
+
+
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage > Catalogs > Private catalogs** to access your private catalogs.
 1. Select the private catalog that you want to add a target account to.

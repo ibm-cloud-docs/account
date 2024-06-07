@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2023
 
-lastupdated: "2023-03-22"
+lastupdated: "2023-03-14"
 
 
 keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
@@ -28,14 +28,14 @@ When you invite someone to the account, only you, the account owner, or a user w
 
 Extra permissions can be set after the user accepts the invitation. For example, the initial permission set assigned on the invitation doesn't grant access to devices. So, you must grant device access after the user accepts the invitation.
 
-Support center account management access is recommended for users working with classic infrastructure resources. To perform many tasks when working with classic infrastructure resources, such as creating or deleting a virtual server instance, users must have access to work with support cases. For more information about assigning this type of access, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+Support center account management access is recommended for users that work with classic infrastructure resources. To complete many tasks on classic infrastructure resources, such as creating or deleting a virtual server instance, users must have access to work with support cases. For more information about assigning this type of access, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 {: tip}
 
 The following graphic shows how classic infrastructure permissions are assigned per user. You can grant each user access to a classic infrastructure service or device by selecting from the granular permission options to customize each user's access.
 
 ![Classic infrastructure access](images/ClassicIaaS.svg "Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions"){: caption="Figure 1. Assigning classic infrastructure access by selecting a user, device, or service, then any combination of granular permissions" caption-side="bottom"}
 
-There are four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category highlighting some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**.
+Classic infrastructure has four main categories of permissions to choose from: account, devices, network, and services. The following lists provide examples from each category that highlight some of the commonly assigned permissions from each. To view all of the available permissions from each category, go to **Manage** > **Access (IAM)** > **Users** in the {{site.data.keyword.cloud_notm}} console. Then, select a user's name from the list that you can manage access for, then click **Classic infrastructure**.
 
 Account
 - Add and upgrade storage
@@ -84,7 +84,7 @@ When a classic infrastructure user invites another user to the account, the clas
 
 1. To grant a user device access, select **Devices**, and assign the access to specific devices and device types as needed.
 
-   Access to devices is assigned after the user is invited to the account. The device permissions apply to the specific devices that are assigned for the user. You can select specific devices from the list, or you can assign access by device type. If you assign access by device type, you might want to use the **Enable future access** options to ensure that each time new devices of a specific type are added, the user automatically gets assigned access to those devices.
+   Access to devices is assigned after the user is invited to the account. The device permissions apply to the specific devices that are assigned for the user. You can select specific devices from the list, or you can assign access by device type. If you assign access by device type, you might want to use the **Enable future access** options. This way, you ensure that each time new devices of a specific type are added, the user automatically gets assigned access to those devices.
 
 1. To update a user's access to VPN subnets, select **VPN subnets**.
 

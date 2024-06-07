@@ -22,7 +22,7 @@ Dynamic rules and trusted profiles both use conditional IAM statements that you 
 
 You can also assign conditional IAM access policies to designate temporary access to resources in your account or allow access to resources during specific time windows. For more information, see [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based) and review the section [Conditions in `/v2/policies` access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
 
-## Rule and profile details
+## Dynamic rule and trusted profile details
 {: #general-details}
 
 Each dynamic rule and trusted profile trust relationship has the following properties:
@@ -36,15 +36,15 @@ Identity provider (IdP)
 Session duration
 :   The dynamic access group membership or trusted profile session expires after the number of hours that are specified in this property. For example, if the property is set to 24 hours, the user’s dynamic or trusted profile session ends one day (24 hours) after they log in.
 
-## Condition statement properties
+### Rule and profile condition statement properties
 {: #condition-properties}
 
 Additionally, each dynamic rule and trusted profile trust relationship has one or more conditions that consist of the following properties. Users need to satisfy all conditions for the overall dynamic rule or trusted profile authentication to evaluate to true:
 
 Allow users when
-:   An attribute name that is part your identity provider data. To learn more about how attribute names are created from your enterprise identity provider to the condition evaluation, see [Mapping of enterprise identity provider attributes](https://developer.ibm.com/articles/identity-and-access-management-what-developers-need-to-know/#mapping-of-enterprise-identity-provider-attributes){: external}.
+: An attribute name that is part your identity provider data. To learn more about how attribute names are created from your enterprise identity provider to the condition evaluation, see [Mapping of enterprise identity provider attributes](https://developer.ibm.com/articles/identity-and-access-management-what-developers-need-to-know/#mapping-of-enterprise-identity-provider-attributes){: external}.
 
-Comparator
+Operator
 :   Compares the attribute that is specified in the `Allow users when` field with the `Values` property. You can choose from Equals, Not Equals, Equals Ignore Case, Not Equals Ignore Case, In, and Contains. Use the Contains option when the attribute statement has an array type. You can enter more than one value to be matched by using the In option.
 
 Values
@@ -53,10 +53,10 @@ Values
 You can think of a dynamic rule or trusted profile condition as a key:value pair. The key is what you add in the `Allow users when` field, and the value is what you enter in the `Values` field.
 {: tip}
 
-## Available comparators for conditions
-{: #comparators}
+### Available operators for rule and profile conditions
+{: #operators}
 
-| Comparator | Description  | Sample condition |
+| Operator | Description  | Sample condition |
 |------------|--------------|------------------|
 | Equals                 | Case-sensitive string comparison. Boolean or number values are converted into a string before comparison. | primaryGroup Equals “Admins” |
 | Not Equals             | Negated case-sensitive string comparison. Boolean or number values are converted into a string before comparison. | primaryGroup NotEquals “Admins” |
@@ -64,9 +64,9 @@ You can think of a dynamic rule or trusted profile condition as a key:value pair
 | Not Equals Ignore Case | Negated case-insensitive string comparison. Boolean or number values are converted into a string before comparison.	 | is_teamlead NotEqualsIgnoreCase “TrUe” |
 | Contains               | If the attribute is an array of strings, numbers, or Booleans, `Contains` determines by using the comparator `Equals` if the value that is provided is part of the array in the login message. If the attribute is a single string instead, `Contains` determines whether the value that is provided is contained in the string attribute in the login message. | `group` contains “Admins” |
 | In                     | Short notation for multiple Equal operators. Compares the value in the login message attribute with the list of potential values in this rule. Boolean or numbers are converted to a string before comparison. | jobRole in [“Manager”,”Director”,”Team-Lead”] |
-{: caption="Table 1. Available comparators for conditions" caption-side="top"}
+{: caption="Table 1. Available operators for conditions" caption-side="top"}
 
-## Example
+#### Example
 {: #example-values}
 
 The following table includes values for each of the fields for a dynamic rule or a trusted profile condition. In this example, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.Bluemix_notm}} access group or trusted profile that has specific access set for only managers.
@@ -77,16 +77,16 @@ The following table includes values for each of the fields for a dynamic rule or
 | Identity provider               | `https://idp.example.org/SAML2` |
 | Session duration in hours       | `12`                              |
 | Allow users when (attribute name) | `isManager`                       |
-| Comparator                      | `Equals`                          |
+| Operator                      | `Equals`                          |
 | Value                           | `true`                            |
 {: caption="Table 2. Example values" caption-side="top"}
 
-## Compute resource attribute names
+### Compute resource attribute names
 {: #cr-attribute-names}
 
 To establish trust with a compute resource in a trusted profile, you can use the {{site.data.keyword.cloud_notm}} console, {{site.data.keyword.cloud_notm}} CLI, or the IAM API. If you select **All service resources** and add conditions to filter the compute resource instances that can apply the profile, the conditions are built based on the following resource attributes.
 
-### Kubernetes and Red Hat OpenShift attribute names
+#### Kubernetes and Red Hat OpenShift attribute names
 {: #cr-kub-rhos}
 
 | {{site.data.keyword.cloud_notm}} console name | CLI and API name | Description         |
@@ -100,7 +100,7 @@ To establish trust with a compute resource in a trusted profile, you can use the
 | Pod                    | `pod`                 | The name of the Kubernetes pod that runs the code that wants to retrieve an IAM token. |
 {: caption="Table 3. Kubernetes and Red Hat OpenShift attribute names" caption-side="top"}
 
-### Virtual server for VPC attribute names
+#### Virtual server for VPC attribute names
 {: #cr-vpc}
 
 | {{site.data.keyword.cloud_notm}} console name | CLI and API name | Description         |

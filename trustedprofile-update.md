@@ -195,7 +195,7 @@ If you'd like to remove an access policy for a trusted profile, you can use the 
 For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api).
 
 ### Updating the name or description
-{: #update-tp-desc-api}
+{: update-tp-desc-api}
 
 To update the name or description of an existing trusted profile, call the following. Enter your updated `name` and `description` attributes.
    ```bash

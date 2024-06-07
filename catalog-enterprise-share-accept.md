@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2023
-lastupdated: "2023-09-14"
+lastupdated: "2023-10-09"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, accept request, opt in
 
@@ -23,8 +23,10 @@ When you accept a share request, products that are shared by the requesting acco
 ## Before you begin
 {: #prereqs-enterprise-share}
 
-* You must be assigned the Administrator role on the Catalog Management service in the individual account itself.
-* You must be assigned the Editor role for the enterprise itself if you're managing share requests that are for the enterprise.
+* You must be assigned the Publisher role on the Catalog Management service in the individual account itself.
+* If you're managing share requests that are for the enterprise, you must be assigned the following roles:
+   * Viewer role for the enterprise itself.
+   * Publisher role on the Catalog Management service for the enterprise. (The Publisher role is a new role.)
 
 For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 
@@ -40,3 +42,6 @@ Complete the following steps to accept a share request for a product:
 1. For any requests that are in the `Pending` state, click either **Accept** or **Deny**.
    - When you click **Accept**, the request state changes from `Pending` to `Accepted`, and the product is visible in your account.
    - When you click **Deny**, the request state changes to `Denied`.
+
+When you accept a request, products that are shared by the requesting account are visible in the {{site.data.keyword.cloud_notm}} catalog for your account. In addition, the account that sent this request is able to see your account name.
+{: note}

@@ -3,7 +3,7 @@
 
 copyright:
   years: 2021, 2023
-lastupdated: "2023-05-22"
+lastupdated: "2023-05-08"
 
 keywords: onboard software, suspend, support, software, sellers, catalog, Partner Center - Sell, remove, delete, deprecate, catalogs, private catalogs
 
@@ -11,7 +11,16 @@ subcollection: account
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
+{:beta: .beta}
+{:important: .important}
+{:download: .download}
+{:external: target="_blank" .external}
 
 # Suspending a version of a private product
 {: #suspend-product}
@@ -27,7 +36,7 @@ Complete the following steps to suspend your version:
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Catalogs** > **Private catalogs**.
 1. Select the private catalog where your product is located.
 1. Select your product.
-1. Select the version that you want to suspend.
+1. Select the version you want to suspend.
 
    If your software has only one shared version, and you suspend that version, the entire product is suspended.
    {: note}

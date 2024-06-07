@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2024
-lastupdated: "2024-02-26"
+lastupdated: "2024-01-02"
 
 keywords: resource, account resources, create resource, access to create resources
 
@@ -36,7 +36,7 @@ For users in your account to be able to create resources from the catalog and as
 {: help}
 
 Use the following steps to create a resource in the console:
-1. From the {{site.data.keyword.cloud}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
+1. From your dashboard, click **View resources** within the Resources summary widget.
 2. Click **Create resource**. From here, you are directed to the catalog. You can search the products or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
 
 After you create the resource, it is displayed in your list of resources on the Resource list page.
@@ -63,7 +63,7 @@ In this command,`NAME` is the name of the service instance, `SERVICE_NAME or SER
    ```
    {: codeblock}
 
-   To list services, use the [`ibmcloud catalog service-marketplace`](/docs/cli?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command.
+   To list services, use the [`ibmcloud catalog service-marketplace`](/docs/cli/reference/ibmcloud?topic=cli-ibmcloud_catalog#ibmcloud_catalog_service_marketplace) command.
    {: note}
 
 For example, the following command creates a service instance that is named `my-service-instance`, uses service plan `test-   service-plan` of service `test-service` on location `eu-gb`:
@@ -72,6 +72,8 @@ For example, the following command creates a service instance that is named `my-
    ibmcloud resource service-instance-create my-service-instance test-service test-service-plan eu-gb
    ```
    {: codeblock}
+
+
 
 
 ## Creating new resource instances by using the API
@@ -166,6 +168,14 @@ fmt.Printf("\nCreateResourceInstance() response:\n%s\n", string(b))
 ```
 {: codeblock}
 {: go}
+
+
+
+## Installing software by using the API
+{: #install-software-api}
+{: api}
+
+You can install software only through the console or CLI. To see the steps, switch to the UI or CLI instructions.
 
 ## Creating new resource instances by using Terraform
 {: #create-resource-instance-terraform}

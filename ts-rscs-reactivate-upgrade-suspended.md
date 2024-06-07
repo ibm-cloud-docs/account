@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2023
+  years: 2021, 2022
 
-lastupdated: "2023-05-09"
+lastupdated: "2022-12-21"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, resource group, reactivate resource, upgrade resource, reactiveate account, upgrade account
 
@@ -13,6 +13,7 @@ subcollection: account
 content-type: troubleshoot
 
 ---
+
 
 {{site.data.keyword.attribute-definition-list}}
 
@@ -35,3 +36,6 @@ This is a known issue and limitation for deactivated accounts that have been res
 
 To resolve the issue, [create a support case](/docs/get-support?topic=get-support-open-case) and include the group name from the error message in the case details.
 {: tsResolve}
+
+
+ 

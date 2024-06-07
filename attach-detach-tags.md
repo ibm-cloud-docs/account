@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-05"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -26,7 +26,7 @@ A resource can have a maximum of 1000 user tags, 1000 service tags, and 250 acce
 {: #attach-detach-console}
 {: ui}
 
-1. From the {{site.data.keyword.cloud}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
+1. From the {{site.data.keyword.cloud}} console, click the Navigation Menu icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
 1. Locate the specific resource in the list.
 1. To attach a tag to the resource, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions")  > **Add tags**.
 1. Enter the name of the tag, and click **Save**.

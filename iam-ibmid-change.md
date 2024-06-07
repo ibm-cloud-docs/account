@@ -13,7 +13,6 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Changing a user's IBMid
 {: #change-ibm-id}
 
@@ -29,7 +28,9 @@ Account owners can't change their own IBMid.
 ## Before you begin
 {: #id-update-prereq}
 
-To change an IBMid, the replacement ID must already exist. If you're not sure if the new IBMid exists, users can go to [My IBM](https://myibm.ibm.com) and click **Create an IBMid**. If you enter an email address that corresponds to a federated identity provider (IdP) domain, IBMid redirects you to that IdP's login page. First-time logins to {{site.data.keyword.IBM}} using a federated IdP triggers the creation of a new IBMid. Otherwise, follow the steps to create the ID. The email address that is used becomes the user's new replacement IBMid.
+To change an IBMid, the replacement ID must already exist. If you're not sure if the new IBMid exists, users can go to [My IBM](https://myibm.ibm.com/) and click **Create an IBMid**. If you enter an email address that corresponds to a federated identity provider (IdP) domain, IBMid redirects you to that IdP's login page. First-time logins to {{site.data.keyword.IBM}} using a federated IdP triggers the creation of a new IBMid. Otherwise, follow the steps to create the ID. The email address that is used becomes the user's new replacement IBMid.
+
+
 
 After the user ensures that the new IBMid exists, complete the following steps:
 

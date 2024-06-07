@@ -1,10 +1,9 @@
 ---
 
 copyright:
-
   years: 2020, 2024
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-05"
 
 keywords: restrict api keys, block users from creating api keys, restrict api key creation
 
@@ -42,7 +41,6 @@ Enabling this setting affects only the creation of user API keys. It does not af
 
 Now that the setting is enabled to restrict users from creating API keys, you can assign the required access to enable specific users to continue creating user API keys. Remember, the account owner is also required to be assigned this explicit access.
 {: important}
-
 
 ## Enabling the API key creation setting by using Terraform
 {: #allow-all-api-create-terraform}
@@ -97,7 +95,6 @@ For more information, see the [Terraform documentation](https://registry.terrafo
 
 Now that the setting is enabled to restrict users from creating API keys, you can assign the required access to enable specific users to continue creating user API keys. Remember, the account owner is also required to be assigned this explicit access.
 {: important}
-
 
 ## Assigning access to create API keys with restrictions enabled
 {: #restrict-api-create-access}

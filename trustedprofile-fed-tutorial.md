@@ -91,7 +91,7 @@ For more information about the fields that are used to create conditions for tru
 {: #trusted-profile-federated-access}
 {: step}
 
-Marla created narrow conditions that authenticate only the developers on the team that are working in the chatbot test environment. Now she can create a policy to give them the {{site.data.keyword.cloud_notm}} service and platform access they need for the project. 
+Marla created narrow conditions that authenticate only the developers on the team that are working in the chatbot test environment. Now she can create a policy to give them the {{site.data.keyword.cloud_notm}} service and platform access they need for the project.
 
 1. Select **Access policy**
 1. Select **{{site.data.keyword.containershort}}** from the list of services. Click **Next**.

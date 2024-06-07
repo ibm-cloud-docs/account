@@ -3,9 +3,9 @@
 copyright:
   years: 2015, 2024
 
-lastupdated: "2024-02-21"
+lastupdated: "2024-04-23"
 
-keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget
+keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
 subcollection: account
 
@@ -19,9 +19,6 @@ content-type: faq
 
 # FAQs about managing resources
 {: #resources-faq}
-
-FAQs for managing {{site.data.keyword.cloud_notm}} resources might include questions about working with resource groups and access for working with resources.
-{: shortdesc}
 
 ## What is a resource group?
 {: #resource-group}
@@ -87,7 +84,7 @@ You can't move service instances between resource groups. If you assign a servic
 
 You can delete a service instance by using the following steps:
 
-1. From the {{site.data.keyword.cloud}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
+1. From the {{site.data.keyword.cloud}} console, click the Navigation Menu icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
 2. Expand the sections to locate the service instance that you want to delete.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
 
@@ -112,12 +109,12 @@ For more information about the required access for other resources types, see [T
 {: #slitems}
 {: faq}
 
-To view all of your resources, click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
+To view all of your resources, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
 
 To view just your classic infrastructure resources, select from the following options:
 
-* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
-* Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
+* Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
+* Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
 
 ## What causes resource restorations to fail?
 {: #reclamation-fail}
@@ -129,7 +126,7 @@ A resource restoration can fail if you try to restore a resource in a deleted re
 {: #reclamation-list}
 {: faq}
 
-After the instance is deleted from the console, you can view it in your account by using the CLI in the SCHEDULED state. The SCHEDULED state indicates that this instance is scheduled for reclamation. For more information, see [Working with resources and resource groups](/docs/account?topic=account-ibmcloud_commands_resource).
+After the instance is deleted from the console, you can view it in your account by using the CLI in the SCHEDULED state. The SCHEDULED state indicates that this instance is scheduled for reclamation. For more information, see [Working with resources and resource groups](/docs/account?topic=account-ibmcloud_commands_resource#ibmcloud_resource_reclamations).
 
 ## Can you restore a resource that is in a deleted resource group?
 {: #reclamation-delete}

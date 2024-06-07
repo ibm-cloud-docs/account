@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-09-22"
+  years: 2020
+lastupdated: "2020-06-02"
 
 
 keywords: troubleshoot classic infrastructure permissions, what classic infrastructure permission does a user have
@@ -15,7 +15,6 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # How can I view classic infrastructure permissions for other users?
 {: #troubleshoot-classicinfra}
 {: troubleshoot}
@@ -27,7 +26,7 @@ Account owners have full access to the {{site.data.keyword.Bluemix}} account, so
 
 You see a message that states that you can't view another user's classic infrastructure permissions.
 {: tsSymptoms}
-
+   
 You might not be assigned the correct access.
 {: tsCauses}
 

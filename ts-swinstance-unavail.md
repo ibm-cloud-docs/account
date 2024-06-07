@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2022
+  years: 2021
 
-lastupdated: "2022-12-27"
+lastupdated: "2021-08-31"
 
 keywords: troubleshooting software, troubleshooting resources, software instance, suspended, removed, deleted
 
@@ -16,7 +16,6 @@ content-type: troubleshoot
 
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Why is my software instance not usable?
 {: #ts-swinstance-unavail}

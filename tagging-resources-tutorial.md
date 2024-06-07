@@ -2,7 +2,7 @@
 
 copyright:
    years: 2021, 2022
-lastupdated: "2022-06-13"
+lastupdated: "2022-06-19"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -43,7 +43,7 @@ If you are new to using IAM, check out the following resources to learn more abo
 {: #tagging-resources-create}
 {: step}
 
-Before you can add an access management tag to your {{site.data.keyword.cos_short}}, you need to create it first.
+Create an access management tag that you will attach to your {{site.data.keyword.cos_short}}.
 
 1. Go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and select **Tags**.
 2. Click **Access management tags**.
@@ -58,7 +58,7 @@ Because tags are visible account-wide, avoid using personal information, such as
 
 Now that you created your tag, you can add it to your resource.
 
-1. Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account.
+1. Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List** to access the list of resources in your account.
 2. Find your {{site.data.keyword.cos_full}} instance and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Add tags**.
 3. Type `project:analysis` and press Enter.
 

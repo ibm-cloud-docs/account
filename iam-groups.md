@@ -4,8 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-02-19"
-
+lastupdated: "2024-01-25"
 
 
 keywords: access groups, access group, create group, assign access to group, administrator, administrator role
@@ -50,8 +49,6 @@ Before you can set up access groups by using Terraform, make sure that you have 
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
-{: terraform}
-
 
 ## Creating an access group in the console
 {: #create_ag}
@@ -206,9 +203,9 @@ Use the following steps to create access groups by using Terraform:
 {: #access_ag}
 {: ui}
 
-After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group.
+After you set up your group with users and service IDs, you can assign a common access policy to the group. Remember, any policy that you set for the group applies to all entities within the group. For example, assigning access policies to an access group delegates the ability to grant or revoke access to users, service-ids, or trusted profiles to the administrators of that access group.
 
-Assigning an access group Administrator access on **All Identity and Access enabled services** and **All Account Management services** includes the ability to revoke access for other users with the administrator role by removing them from the group.
+Administrator access to everything in the account includes the ability to revoke access for other users with the administrator role.
 {: important}
 
 Use the following steps to assign access to a group in the console:

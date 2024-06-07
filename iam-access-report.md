@@ -13,7 +13,6 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Auditing access to resources
 {: #access-report}
 
@@ -45,7 +44,7 @@ With the following access, you can view display names, access group membership, 
 To export the report, complete the following steps:
 
 1. Go to the Resource list page.
-2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Export access report** for the row of the resource that you want a report for.
+2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) > **Export access report** for the row of the resource that you want a report for.
 3. Click **Download JSON** or **Download CSV**.
 
 Depending on your assigned access, you might be able to view just the IDs, or you might have the full detailed view. Check the value that is set for the `fullReport` flag. If it is set to `false`, then you don't have full access to view all display names, memberships, or rules.

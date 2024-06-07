@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2021
 
-lastupdated: "2021-09-22"
+lastupdated: "2021-08-06"
 
 keywords: VPN password, update VPN password, classic infrastructure VPN
 
@@ -12,8 +12,10 @@ subcollection: account
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
-
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
 
 # Updating the classic infrastructure VPN password
 {: #vpnpassword}

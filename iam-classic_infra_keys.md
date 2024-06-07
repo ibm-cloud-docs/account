@@ -11,8 +11,12 @@ subcollection: account
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
-
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:external: target="_blank" .external}
+{:note: .note}
+{:tip: .tip}
 
 # Managing classic infrastructure API keys
 {: #classic_keys}
@@ -30,13 +34,12 @@ To manage classic infrastructure API keys, go to **Manage** > **Access (IAM)** >
 
 When you create a classic infrastructure API key, you can use the IP address restrictions feature on the **User details** page. To create a classic infrastructure API key, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**, and select **Classic infrastructure API keys**.
-1. Click **Create a classic infrastructure key**.
-
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**, and select **Classic infrastructure API keys**. 
+2. Click **Create a classic infrastructure key**.
    If you don't see this option, check to see if you already have a classic infrastructure API key that is created because you're only allowed to have one in the account per user.
    {: note}
 
-1. Copy or download the API key, and save it in a safe place. You can retrieve the details of the API key later.
+3. Copy or download the API key, and save it in a safe place. You can retrieve the details of the API key later.
 
 To get the details of a classic infrastructure API key after you create it, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **View details**. You can copy the API key value.
 
@@ -44,13 +47,13 @@ To get the details of a classic infrastructure API key after you create it, go t
 
 In most cases, the username of your classic infrastructure API key will be your `<account_ID>_<email_address>`. It is the same as your VPN username displayed on your User details page in the VPN password section.
 {: tip}
-
+     
 To delete a classic infrastructure API key, click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** on the row for the API key in the API keys section.
 
 ## Managing other user's classic infrastructure API keys
 {: #user-classic-infrastruture-keys}
 
-If you are an ancestor in the classic infrastructure hierarchy for a user, you can view and delete classic infrastructure API keys for users, including VPN only users.
+If you are an ancestor in the classic infrastructure hierarchy for a user, you can view and delete classic infrastructure API keys for users, including VPN only users. 
 
 Only users who create the API key can retrieve the API key value after it's created.
 {: note}

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2021
-lastupdated: "2021-09-22"
+  years: 2018, 2022
+lastupdated: "2022-03-11"
 
 keywords: classic infrastructure assets, application development, services that work with classic infrastructure
 
@@ -13,12 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Using services with classic infrastructure assets
 {: #api-services-infrastructure}
 
 You can easily use API-based public {{site.data.keyword.Bluemix}} services with your classic infrastructure assets. All APIs are secure and encrypted so that your data is protected.
-{: shortdesc}
 
 You can gain insights and cognitive knowledge by calling Watson APIs from your apps to make them more personalized. Or, use data and analytics services to tap into high-performance analytics for your apps. Or, choose database-as-a-service where you can leave the management to {{site.data.keyword.Bluemix_notm}}.
 
@@ -41,7 +39,7 @@ For example, do you want to add cognitive capabilities from Watson to your apps 
 
 For example, do you want to add cognitive capabilities from Watson to your apps that are running on classic infrastructure bare metal servers? You can add a service such as {{site.data.keyword.personalityinsightsshort}} to help understand your app's user by completing the following steps:
 
-1. Create an instance of the service by calling [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request:
+1. Create an instance of the service by calling [Resource Controller API](/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request: 
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>' -H 'Content-Type: application/json' -d '{
@@ -126,7 +124,7 @@ For example, do you want to add cognitive capabilities from Watson to your apps 
    {: codeblock}
    {: go}
 
-1. Retrieve the credentials (resource key). Call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
+1. Retrieve the credentials (resource key). Call the [Resource Controller API](/apidocs/resource-controller/resource-controller#get-resource-key){: external} as shown in the following example request and pass the ID associated with the instance.
 
    ```bash
    curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys/23693f48-aaa2-4079-b0c7-334846eff8d0 -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -189,5 +187,6 @@ For example, do you want to add cognitive capabilities from Watson to your apps 
    {: codeblock}
    {: go}
 
-1. Copy the service credentials and add them to your application.
-1. After the update to the app, deploy the new version to your classic infrastructure assets.
+1. Copy the service credentials and add them to your application. 
+1. After the update to the app, deploy the new version to your classic infrastructure assets. 
+

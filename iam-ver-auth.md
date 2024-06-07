@@ -6,7 +6,7 @@ copyright:
 
 lastupdated: "2024-02-07"
 
-keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key, reset MFA
+keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
 subcollection: account
 
@@ -109,4 +109,6 @@ You can update or reset your authentication methods if the email address or phon
 3. Click **Show accounts**.
 4. Take note of the Authentication setting for each account.
    1. If the account uses MFA for **IBMid users**, work with the [IBMid help desk](https://www.ibm.com/docs/en/ibmid){: external} to reset your authentication factors.
-   1. If the account uses MFA for **All users**, you can add new authentication factors on the Verification methods and authentication factors page and remove the old ones.
+   1. If the account uses MFA for **All users**, you can reset your authentication factors on the Verification methods and authentication factors page.
+      1. Click the checkbox next to the MFA method that you want to reset and click Remove.
+      1. Set up your new MFA factor the next time that you login to {{site.data.keyword.cloud}}.

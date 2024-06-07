@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-02"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -13,7 +13,6 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Managing user API keys
 {: #userapikey}
 
@@ -22,9 +21,15 @@ A federated user or non-federated user can create an API key to use in the CLI o
 
 The API key inherits all assigned access for the user identity for which it is created, and the access is not limited to just the account where the API key is created because it inherits any policies that are assigned to the user. So, if the user has access to resources from multiple accounts, then the API key inherits the access from all accounts. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created.
 
-Because the API key that is associated with your user identity has all of the access you're entitled to across any account that you are a member of, you must be cautious with how you use your API key. For example, an {{site.data.keyword.cloud_notm}} service might need to act on behalf of a user or access services that are not IAM-enabled, so the service might request a user API key. In these cases, it is recommended that you create an API key that is associated with a functional ID that is assigned the minimum level of access that is required to work with the service.
 
-A functional ID is a user ID created to represent a program, application, or service. The functional ID can be invited to an account and assigned only the access for a particular purpose, such as interacting with a specific resource or application. The functional ID should be granted only the minimum level access in a single account that is needed for the specific function, which it was created.
+
+To avoid this, you can enable cross-account restrictions. With cross-account restrictions, you can specify an allowlist of accounts that can access resources in your account. You can also leave the allowlist empty. This way, if a user tries to access resources in your account with an API key that is created in different account, they are denied access For more information, see [Managing cross-account restrictions](/docs/account?topic=account-cross-acct).
+
+
+
+Because the API key that is associated with your user identity has all of the access you're entitled to across any account that you are a member of, you must be cautious with how you use your API key. For example, an {{site.data.keyword.cloud_notm}} service might need to act on behalf of a user or access services that are not IAM-enabled, so the service might request a user API key. In these cases, create an API key that's associated with a functional ID that is assigned the minimum level of access that is required to work with the service.
+
+A functional ID is a user ID created to represent a program, application, or service. The functional ID can be invited to an account and assigned only the access for a particular purpose, such as interacting with a specific resource or application. The functional ID should be granted only the minimum level access in a single account that is needed for the specific function for which it was created.
 
 If you are applying a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys. For more information, see [FAQs about IAM](/docs/account?topic=account-iamfaq#tp-apikey).
 {: note}
@@ -42,13 +47,13 @@ To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated wi
 | All user {{site.data.keyword.cloud_notm}} API keys | All IBM Cloud API keys created by all users in the account | Administrator role on IAM Identity service | View, edit, and delete     |
 {: caption="Table 1. Required access for API key management on the API keys page" caption-side="top"}
 
-## Creating an API key
+## Creating an API key in the console
 {: #create_user_key}
 {: help}
 {: support}
 {: ui}
 
-As an {{site.data.keyword.Bluemix_notm}} user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key can be that a user or organization can create several API keys for different programs and the API keys can be deleted independently if compromised without interfering with other API keys or even the user. You can create up to 20 API keys.
+As an {{site.data.keyword.Bluemix_notm}} user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key is that a user or organization can create several API keys for different programs. The API keys can be deleted independently if compromised without interfering with other API keys or even the user. You can create up to 20 API keys.
 
 To create an API key for your user identity in the UI, complete the following steps:
 
@@ -68,7 +73,7 @@ For security reasons, the API key is only available to be copied or downloaded a
 
 To create an API key by using the CLI, use the following command:
 
-1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]` in your command prompt, and specify a name, description, and file for saving your key. See the following example:
+1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]`, and specify a name, description, and file for saving your key. See the following example:
 
 ```bash
 ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
@@ -155,7 +160,56 @@ apikeyID = *apiKey.ID
 {: codeblock}
 {: go}
 
-## Updating an API key
+## Before you begin
+{: #before-you-begin-userapikey}
+{: terraform}
+
+Before you can manage user API keys by using Terraform, make sure that you have completed the following:
+
+- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
+- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
+
+## Creating an API key by using Terraform
+{: #create_user_key-api-terra}
+{: terraform}
+
+Use the following steps to create access groups by using Terraform.
+
+1. Create an argument in your `main.tf` file. The following example creates an access group by using the `ibm_iam_api_key` resource, where `name` is a unique name to identify the API key.
+
+   ```terraform
+   resource "ibm_iam_api_key" "iam_api_key" {
+    name        = "test1234"
+   }
+   ```
+   {: codeblock}
+
+   The `description` property is only available if a description is provided during API key creation. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key){: external} page.
+
+1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
+
+   ```terraform
+   terraform init
+   ```
+   {: pre}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://developer.hashicorp.com/terraform/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
+## Updating an API key in the console
 {: #update_user_key}
 {: ui}
 
@@ -172,13 +226,13 @@ To edit an API key that is not your own, but you have access to manage, go to th
 {: tip}
 
 
-## Updating an API key using the CLI
+## Updating an API key by using the CLI
 {: #update_user_key-cli}
 {: cli}
 
 To edit an API key by using the CLI, enter the following command:
 
-1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]` in your command prompt, specifying the old name, new name, and new description for the key. For example,:
+1. Enter `ibmcloud iam api-key-update NAME [-n NAME] [-d DESCRIPTION]`, specifying the old name, new name, and new description for the key. For more information, see the following example:
 
 ```bash
 ibmcloud iam api-key-update MyCurrentName -n MyNewName -d "the new description of my key"
@@ -258,15 +312,48 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-## Locking an API key
-{: #lock_user_key}
+## Updating an API key by using Terraform
+{: #update_user_key-api-terra}
+{: terraform}
+
+Use the following steps to update an API key by using terraform:
+
+1. In your Terraform configuration `main.tf` file, find the Terraform code that you used to create the `iam_api_key`.
+1. The following example updates and API key by using the `ibm_iam_api_key` resource, where `name` is a unique name to identify the API key.
+
+   ```terraform
+   resource "ibm_iam_api_key" "iam_api_key" {
+    name        = "test1234"
+    description = "API key for users"
+   }
+   ```
+   {: codeblock}
+
+   The `description` property is only available if a description is provided during API key creation. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key){: external} page.
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://developer.hashicorp.com/terraform/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
+For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key).
+
+## Locking and unlocking an API key in the console
+{: #lock-user-key-ui}
 {: ui}
 
 For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked").
-
-### Locking and unlocking an API key from the UI
-{: #lockui}
-{: ui}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to lock, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Lock**.
@@ -274,11 +361,11 @@ For platform API keys that represent your user identity you can prevent the API 
 You can unlock your API key at any time to update or remove the API key from your account. Select the API key from the table that you want to unlock and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Unlock**.
 {: tip}
 
-### Locking and unlocking an API key by using the CLI
-{: #lockcli}
+## Locking and unlocking an API key by using the CLI
+{: #lock-user-key-cli}
 {: cli}
 
-To lock an API key, use the following command:
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. To lock an API key, use the following command:
 
 ```bash
 ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
@@ -289,18 +376,20 @@ ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 
 **Command options**:
 
-NAME
-:   The name of the API key to be locked, exclusive with the UUID option.
+NAME (required)
+:   Name of the API key to be locked, exclusive with UUID.
 
-UUID
-:   The UUID of the API key to be locked, exclusive with the NAME option.
+UUID (required)
+:   UUID of the API key to be locked, exclusive with NAME.
 
 -f, --force
-:   Force lock without confirmation.
+:   Forces lock without confirmation.
 
-**Examples**:
 
-Lock the API key named `test-api-key`:
+
+**Example**:
+
+Lock API key `test-api-key`
 
 ```bash
 ibmcloud iam api-key-lock test-api-key
@@ -318,18 +407,19 @@ ibmcloud iam api-key-unlock (NAME|UUID) [-f, --force]
 
 **Command options**:
 
-NAME
-:   The name of the API key to be unlocked, exclusive with the UUID option.
+NAME (required)
+:   Name of the API key to be unlocked, exclusive with UUID.
 
-UUID
-:   The UUID of the API key to be unlocked, exclusive with the NAME option.
+UUID (required)
+:   UUID of the API key to be unlocked, exclusive with NAME.
 
 -f, --force
-:   Force unlock without confirmation.
+:   Forces unlock without confirmation.
+
 
 **Example**:
 
-Unlock the API key named `test-api-key`:
+Unlock API key `test-api-key`
 
 ```bash
 ibmcloud iam api-key-unlock test-api-key
@@ -342,7 +432,7 @@ ibmcloud iam api-key-unlock test-api-key
 
 For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it.
 
-### Locking an API key
+### Locking an API key by using the API
 {: #lock-keyapi}
 {: api}
 
@@ -405,7 +495,7 @@ if err != nil {
 {: go}
 
 ### Unlocking an API key
-{: unlock-keyapi}
+{: #unlock-keyapi}
 {: api}
 
 To unlock an API key by using the API, call the [IAM Identity Service API](https://cloud.ibm.com/apidocs/iam-identity-token-api?code=go#unlock-api-key){: external} as shown in the following example:
@@ -461,6 +551,47 @@ if err != nil {
 {: codeblock}
 {: go}
 
+## Locking and unlocking an API key by using the API
+{: #lock-user-key-terra}
+{: terraform}
+
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it.
+
+### Locking an API key by using Terraform
+{: #lock-keyapi-terra}
+{: terraform}
+
+Use the following steps to lock an API key by using Terraform:
+
+1. In your Terraform configuration `main.tf` file, find the Terraform code that you used to create the `iam_api_key`.
+1. The following example updates and API key by using the `ibm_iam_api_key` resource, where `entity_lock` indicates whether the API key is locked for further write operations. The default value is `false`.
+
+   ```terraform
+   resource "ibm_iam_api_key" "iam_api_key" {
+    entity_lock        = "true"
+   }
+   ```
+   {: codeblock}
+
+1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://developer.hashicorp.com/terraform/cli/run){: external}.
+
+   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
+
+      ```terraform
+      terraform plan
+      ```
+      {: pre}
+
+   1. Run `terraform apply` to create the resources that are defined in the plan.
+
+      ```terraform
+      terraform apply
+      ```
+      {: pre}
+
+For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key).
+
+
 ## Deleting an API key
 {: #delete_user_key}
 {: ui}
@@ -470,8 +601,8 @@ If you are using a key rotation strategy, you might want to delete an older key 
 To delete an API key, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
-2. Identify the row of the API key that you want to delete, and select **Delete** from the **Actions** ![List of actions icon](../icons/action-menu-icon.svg) menu.
-3. Confirm the deletion by clicking **Delete**.
+2. Identify the row of the API key that you want to delete, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete**.
+3. Then, confirm the deletion by clicking **Delete**.
 
 To delete an API key that is not your own, but you have access to manage, go to the API keys page. Then, select the **All user {{site.data.keyword.cloud_notm}} API keys** option from the **View** menu to find the API key.
 {: tip}
@@ -482,7 +613,8 @@ To delete an API key that is not your own, but you have access to manage, go to 
 
 To delete an API key by using the CLI:
 
-Enter `ibmcloud iam api-key-delete NAME` in your command prompt, specifying the name of the key to delete.
+Enter `ibmcloud iam api-key-delete NAME`, specifying the name of the key to delete.
+
 
 ## Deleting an API key by using the API
 {: #delete_user_key-api}
@@ -545,129 +677,3 @@ if err != nil {
 ```
 {: codeblock}
 {: go}
-
-## Before you begin
-{: #before-you-begin-userapikey}
-{: terraform}
-
-Before you can manage user API keys by using Terraform, make sure that you have completed the following:
-
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
-
-## Creating an API key by using Terraform
-{: #create_user_key-api-terra}
-{: terraform}
-
-Use the following steps to create access groups by using Terraform.
-
-1. Create an argument in your `main.tf` file. The following example creates an access group by using the `ibm_iam_api_key` resource, where `name` is a unique name to identify the API key.
-
-   ```terraform
-   resource "ibm_iam_api_key" "iam_api_key" {
-    name        = "test1234"
-   }
-   ```
-   {: codeblock}
-
-   The `description` property is only available if a description is provided during API key creation. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key){: external} page.
-
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
-
-   ```terraform
-   terraform init
-   ```
-   {: pre}
-
-1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://developer.hashicorp.com/terraform/cli/run){: external}.
-
-   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
-
-      ```terraform
-      terraform plan
-      ```
-      {: pre}
-
-   1. Run `terraform apply` to create the resources that are defined in the plan.
-
-      ```terraform
-      terraform apply
-      ```
-      {: pre}
-
-## Updating an API key by using Terraform
-{: #update_user_key-api-terra}
-{: terraform}
-
-Use the following steps to update an API key by using terraform:
-
-1. In your Terraform configuration `main.tf` file, find the Terraform code that you used to create the `iam_api_key`.
-1. The following example updates and API key by using the `ibm_iam_api_key` resource, where `name` is a unique name to identify the API key.
-
-   ```terraform
-   resource "ibm_iam_api_key" "iam_api_key" {
-    name        = "test1234"
-    description = "API key for users"
-   }
-   ```
-   {: codeblock}
-
-   The `description` property is only available if a description is provided during API key creation. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key){: external} page.
-
-1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://developer.hashicorp.com/terraform/cli/run){: external}.
-
-   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
-
-      ```terraform
-      terraform plan
-      ```
-      {: pre}
-
-   1. Run `terraform apply` to create the resources that are defined in the plan.
-
-      ```terraform
-      terraform apply
-      ```
-      {: pre}
-
-For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key).
-
-## Locking and unlocking an API key by using the API
-{: #lock-user-key-terra}
-{: terraform}
-
-For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it.
-
-### Locking an API key by using Terraform
-{: #lock-keyapi-terra}
-{: terraform}
-
-Use the following steps to lock an API key by using Terraform:
-
-1. In your Terraform configuration `main.tf` file, find the Terraform code that you used to create the `iam_api_key`.
-1. The following example updates and API key by using the `ibm_iam_api_key` resource, where `entity_lock` indicates whether the API key is locked for further write operations. The default value is `false`.
-
-   ```terraform
-   resource "ibm_iam_api_key" "iam_api_key" {
-    entity_lock        = "true"
-   }
-   ```
-   {: codeblock}
-
-1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://developer.hashicorp.com/terraform/cli/run){: external}.
-
-   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
-
-      ```terraform
-      terraform plan
-      ```
-      {: pre}
-
-   1. Run `terraform apply` to create the resources that are defined in the plan.
-
-      ```terraform
-      terraform apply
-      ```
-      {: pre}
-
-For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_api_key).

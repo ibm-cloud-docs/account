@@ -83,7 +83,7 @@ authenticator = IAMAuthenticator('myapikey')
 # Construct the service instance.
 service = ExampleServiceV1(authenticator=authenticator)
 
-# 'service' can now be used to invoke operations.
+# Use 'service' to invoke operations.
 ```
 {: codeblock}
 {: python}

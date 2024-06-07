@@ -38,7 +38,7 @@ Refer to the documentation for the specific service that you are assigning acces
 
 The following example shows how you might create a policy that gives a user access to manage all {{site.data.keyword.messagehub}} topics that start with `dev` in a particular account.
 
-```json
+```bash
 {
     "type": "access",
     "subjects": [
@@ -90,7 +90,7 @@ The following example shows how you can create a policy that gives a user access
 
 On the line `"value": "*??81"`, the `*` indicates zero or more characters and matches any string that ends with `??81`. The `?` represents a single character. Since there are two `??`, the resulting pattern matches a string of four or more characters that end in `81`.
 
-```json
+```bash
 {
     "type": "access",
     "subjects": [
@@ -136,13 +136,12 @@ On the line `"value": "*??81"`, the `*` indicates zero or more characters and ma
 ```
 {: codeblock}
 
-
 ### Using an asterisk (`*`) and question mark (`?`) as a literal character
 {: #literal}
 
-You can express an asterisk (`*`) and question mark (`?`) as a literal character, ensuring they aren't interpreted as a wildcard by enclosing each within two sets of curly brackets `{{}}`.
+You can express an asterisk (`*`) and question mark (`?`) as a literal character, ensuring that they aren't interpreted as a wildcard by enclosing each within two sets of curly brackets `{{}}`.
 
-The following example shows how you can create a policy that gives a user access to edit an {{site.data.keyword.messagehub}} topic that contains the literal characters `*` and `?` . The topic must end with the pattern `.?.log`, implying any single character between the periods `.` followed by the `log` string.
+The following example shows how you can create a policy that gives a user access to edit an Event Streams topic that contains the literal characters `*` and `?`. The topic must end with the pattern `.?.log`, implying any single character between the periods `.` followed by the `log` string.
 
 ```json
 {

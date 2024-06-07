@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-05"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 

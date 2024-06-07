@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-02-07"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -15,7 +15,7 @@ subcollection: account
 # Onboarding software to your account
 {: #create-private-catalog}
 
-The process to onboard software to your account includes importing a version to a private catalog, validating that the version can be successfully installed on the target infrastructure that you require, and sharing the software to your account. The software is then available to users in your account.
+The process to onboard software to your account includes importing a version to a private catalog, validating that the version can be successfully installed on the target infrastructure that you require, and publishing the software to your account. The software is then available to users in your account.
 {: shortdesc}
 
 ## Before you begin
@@ -41,6 +41,7 @@ The process to onboard software to your account includes importing a version to 
 
 1. Make sure you're assigned the following [IAM access](/docs/account?topic=account-groups):
 
+   * Manager role on the Schematics service
    * Editor role on the catalog management service
    * Viewer role on all resource groups in your account
    * Writer role on the {{site.data.keyword.secrets-manager_short}} service
@@ -68,6 +69,11 @@ Before you can onboard software to your account by using Terraform, make sure th
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
 {: important}
+
+
+
+
+
 
 ## Creating a private catalog
 {: #create-catalog-ui}
@@ -106,8 +112,7 @@ Complete the following steps to import software to your private catalog:
    * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
    * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
    * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
-
-   * Virtual server image for VPC: Select an image from the list of available images, or import a new image to onboard it.
+   * Virtual server image for VPC: Select an image from the list of available images that were imported into your VPC, or import a new image to your account.
 
     A virtual server image for VPC can only be added to one product within one private catalog at a time. If the virtual server image you want to import is already imported into another product, you must remove the image from that product or delete the product before you add the virtual server image to a new product.
     {: note}
@@ -160,6 +165,8 @@ For more information, see [Defining your product details](/docs/account?topic=ac
 1. From the version list that's displayed on the product details page, click the row that contains your software.
 1. Review the version details, and click **Next**.
 
+
+
 ### Operator from Red Hat registry
 {: #catalog-config-oprh}
 {: ui}
@@ -205,7 +212,7 @@ Provide the URLs to the license agreements that users are required to accept whe
 {: #catalog-readme-edit}
 {: ui}
 
-When users install the software, they can view product information by clicking the Readme file link. This information is generated from the readme file that you uploaded to your source repository.
+When users install the software, they can select the link to your readme file to view product information. The information in the Readme link is generated from the readme file that you uploaded to your source repository.
 
 1. From the Edit readme tab, preview how the information in the readme file will be displayed to users when they install the software.
 1. To make updates, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") next to the Readme section title.
@@ -357,32 +364,33 @@ If you want to share your product to your account or enterprise, click the name 
 {: #create-cicd-product}
 {: cli}
 
-Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process.
 
-1. Create a private catalog. Private catalogs provide a way for you to manage access to products for users in your account. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#create-catalog) for creating a private catalog.
+Complete the following steps to add your software by using the CLI. You can use this task in a CI/CD process. To add software from a private repository, you must include a personal access token.
+
+1. Run the [ibmcloud catalog create](/docs/cli?topic=cli-manage-catalogs-plugin#create-catalog) command to create a private catalog. Private catalogs provide a way for you to manage access to products for users in your account.
     ```bash
     ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
     ```
     {: codeblock}
 
-1. Add software to your private catalog. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#create-offering) for adding software to your private catalog.
+1. Run the [ibmcloud catalog offering create](/docs/cli?topic=cli-manage-catalogs-plugin#create-offering) command to add software to your private catalog.
     ```bash
-    ibmcloud catalog offering create --catalog "Name of catalog" --zipurl https://software.url.com.tgz
+    ibmcloud catalog offering create [--catalog CATALOG-NAME] [--zipurl URL]
     ```
     {: codeblock}
 
     If you want to import software from a private repository, you can use a personal access token by adding [--token TOKEN] to your command.
     {: important}
 
-1. Add a category. By default, the **Developer tools** category is added to your product. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) for adding a category.
+1. Run the [ibmcloud catalog offering add-category](/docs/cli?topic=cli-manage-catalogs-plugin#add-category-offering) command to add a category to your product. By default, the **Developer tools** category is added to your product.
     ```bash
-    ibmcloud catalog offering add-category --catalog "Name of catalog" --offering "software-offering" --category "category"
+    ibmcloud catalog offering add-category --catalog CATALOG_NAME [--offering OFFERING] [--category CATEGORY]
     ```
     {: codeblock}
 
-1. Import the software version that you want in your catalog.
+1. Run the [ibmcloud catalog offering import-version](/docs/cli?topic=cli-manage-catalogs-plugin#import-offering-version) command to import the software version that you want in your catalog.
     ```bash
-    ibmcloud catalog offering import-version -c <CATALOGID> -o <OFFERINGID> --zipurl <TGZ> --target-version <VERSION>
+    ibmcloud catalog offering import-version --catalog CATALOG --offering OFFERING_NAME --zipurl URL
     ```
     {: codeblock}
 
@@ -394,24 +402,27 @@ Complete the following steps to add your software by using the CLI. You can use 
     * OVA image: `https://github.com/gcatalog/OVA-sample/blob/main/ova-sample.yaml`
     * Terraform template: `https://github.com/IBM-Cloud/terraform-sample/releases/tag/v1.0.0`
     * Virtual server image with Terraform: `https://github.com/IBM-Cloud/isv-vsi-product-deploy-sample/releases/download/v1.0/isv-vsi-product-deploy-sample.tar.gz`
+    * Virtual server image for VPC: Select an image from the list of images that were imported into your VPC, or import a new image to your account.
 
-1. Validate the software. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#validate-offering) for validating the software.
+1. Run the [ibmcloud catalog offering version validate](/docs/cli?topic=cli-manage-catalogs-plugin#validate-offering) command to validate the software.
     ```bash
-    ibmcloud catalog offering version validate --version-locator VERSION_NUMBER --cluster CLUSTER_ID --namespace NAME [--timeout TIMEOUT] [--wait WAIT] [--override-values VALUES|FILENAME]
+    ibmcloud catalog offering version validate --version-locator VERSION_NUMBER --cluster CLUSTER_ID --namespace NAME [--timeout TIMEOUT] [--wait WAIT]
     ```
     {: codeblock}
 
-    Deploying the software can take a few minutes. You can check the validation status by querying the product validation state. The validation is complete when the state is Valid. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#validate-status-offering) for validation status.
+    Deploying the software can take a few minutes. Run the [ibmcloud catalog offering version validate-status](/docs/cli?topic=cli-manage-catalogs-plugin#validate-status-offering) to check the validation status by querying the product validation state.
     ```bash
-    ibmcloud catalog offering version validate-status --version-locator VERSION_NUMBER [--output FORMAT]
+   ibmcloud catalog offering version validate-status --version-locator VERSION_NUMBER [--output FORMAT]
+
     ```
     {: codeblock}
 
-1. Publish your software to make it available to users in your account. For more information, see the [cli documentation](/docs/cli?topic=cli-manage-catalogs-plugin#publish-offering-to-account) for publishing to your account.
+1. Run the [ibmcloud catalog offering publish account](/docs/cli?topic=cli-manage-catalogs-plugin#publish-offering-to-account) to publish your software to users in your account.
     ```bash
     ibmcloud catalog offering publish account [--catalog CATALOG][--offering OFFERING]
     ```
     {: codeblock}
+
 
 
 ## Creating a private catalog by using the API
@@ -587,7 +598,6 @@ fmt.Println(response)
 ```
 {: codeblock}
 {: go}
-
 
 ## Creating a private catalog by using Terraform
 {: #create-catalog-terraform}

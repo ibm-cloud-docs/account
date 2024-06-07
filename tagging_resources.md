@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-03-26"
+lastupdated: "2024-02-22"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -28,7 +28,7 @@ You can apply **user tags** to organize your resources and service IDs and easil
 ## Tag types
 {: #tag-types}
 
-There are three types of tags: user, service, and access management.
+There are three types of tags: service, user, and access management.
 
 User tags
 :   User tags are added to resources or service IDs by an authorized user in the account.  Add user tags to your resources to organize, track, and manage costs for related resources. When you use a consistent tagging schema to identify which resources are tied to specific teams, you can group and filter by those tags when you analyze costs within your exported usage report.

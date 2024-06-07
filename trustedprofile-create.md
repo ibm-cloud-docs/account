@@ -2,10 +2,10 @@
 
 copyright:
 
-  years: 2021, 2024
+  years: 2021, 2023
 
 
-lastupdated: "2024-01-15"
+lastupdated: "2023-12-29"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -28,6 +28,8 @@ When you initially create a trusted profile, you can build conditions of trust w
 
 You can use {{site.data.keyword.cloudaccesstrailshort}} to monitor which federated users compute resources, service IDs, and {{site.data.keyword.cloud_notm}} services apply a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
 {: tip}
+
+
 
 ## Before you begin
 {: #tp-roles-reqs}
@@ -88,7 +90,7 @@ Complete the following steps to set up better control over granting access to co
    1. Select **Compute resources** and select a compute service type from the list.
    1. If you select the option for **All service resources**, you can define multiple conditions to filter resources for the selected compute service type by clicking **Add a condition**. These conditions are based on attributes, such as resource groups or location, and apply to all existing and future resources. Resources must meet all the conditions to be included in the trusted profile.
 
-   The Kubernetes namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`. You can also enter `default` for both. For more information, see [Using Trusted Profiles in your Kubernetes and Red Hat OpenShift Clusters](https://www.ibm.com/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters){: external}.
+   The Kubernetes namespace and service account names that you enter do not have to exist already. Any future namespaces or service accounts with these names can establish trust. To list existing namespaces, log in to your cluster and run `kubectl get ns`. To list existing service accounts, log in to your cluster and run `kubectl get sa -n <namespace>`. You can also enter `default` for both. For more information, see [Using Trusted Profiles in your Kubernetes and Red Hat OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters).
    {: tip}
 
    1. If you select **Specific resources**, you can establish trust with one or more existing compute resource instances directly without conditions. For example, a Kubernetes cluster.
@@ -274,19 +276,7 @@ Complete the following steps to set up better control over granting access to co
 {: #create-profile-services-cli}
 {: cli}
 
-An {{site.data.keyword.cloud_notm}} service in your account or another account might need a token to run an operation in your account.
-
-Example 1
-:   A Project service instance in another account can assume a trusted profile to securely deploy an architecture in your account without the need for key rotation. For more information, see [Using trusted profiles to authorize a project to deploy an architecture](/docs/secure-enterprise?topic=secure-enterprise-tp-project).
-
-Example 2
-:   A private catalog is an instance of the Catalog Management service that is identified by a CRN. You might want to validate products from your private catalog in an account that’s separate from the one that contains your catalog. You can give a private catalog access to create resources for validation in a target account by creating a trusted profile in the target account. Then you establish trust with the catalog by using the catalog CRN to link the service instance to the trusted profile. For more information, see [Setting up a target account for validation](/docs/account?topic=account-catalog-cross-validation).
-
-Sharing resources across accounts by using trusted profiles works for a limited set of services and is not a general method for cross-account access for services.
-{: note}
-
-Complete the following steps to define how an {{site.data.keyword.cloud_notm}} service can access specific resources in your account:
-
+An {{site.data.keyword.cloud_notm}} service in another account might need a token to execute an operation in your account. Complete the following steps to define how an {{site.data.keyword.cloud_notm}} service can access specific resources in your account:
 1. Ask the administrator on the service in another account for the CRN that uniquely identifies the service instance. The CRN is used to authorize operations.
 
    The service administrator can find the CRN by going to the Navigation Menu icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** and clicking the service that you're targeting. In the **Details** section, copy the CRN.
@@ -449,7 +439,7 @@ Complete the following steps to set up better control over granting access to co
          "name": "my link",
          "cr_type": "VSI",
          "link": {
-      "crn": "crn:v1:bluemix:public:iam-identity::a/18e3020749ce4744b0b472466d61fdb4::computeresource:Fake-Compute-Resource",
+      "crn": "crn:v1:staging:public:iam-identity::a/18e3020749ce4744b0b472466d61fdb4::computeresource:Fake-Compute-Resource",
       "namespace": "default",
       "name": "my compute resource name"
          }

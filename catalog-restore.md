@@ -11,7 +11,16 @@ subcollection: account
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
+{:beta: .beta}
+{:important: .important}
+{:download: .download}
+{:external: target="_blank" .external}
 
 # Restoring a deprecated private product or version
 {: #restore-deprecated-product}

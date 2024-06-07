@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-05"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -36,7 +36,7 @@ When you delete an access management tag from the account, any associated IAM po
 
 Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the **`ibmcloud resource tag-delete`** command for deleting only one or all of the unused tags.
 
-The following example deletes the `MyTag` user tag:
+* The following example deletes the `MyTag` user tag:
 
    ```bash
    ibmcloud resource tag-delete --tag-name MyTag

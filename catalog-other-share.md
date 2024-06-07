@@ -16,7 +16,7 @@ subcollection: account
 # Publishing products to specific accounts
 {: #catalog-other-publish}
 
-If you don't want your product to be publicly available to all users in the {{site.data.keyword.cloud}} catalog but you do want certain accounts to be able to access your product, you can publish your product to specific allowlisted accounts if your product is [approved for publishing](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
+If you don't want your product to be publicly available to all users in the {{site.data.keyword.cloud}} catalog but you do want certain accounts to be able to access your product, you can publish your product to specific allowlisted accounts as long as your product is [approved for publishing](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
 {: shortdesc}
 
 A different process is used if you want to share your product with users in your own enterprise or account or to enterprises to which you have the Editor role or higher already assigned, and it does not require approval for publishing. For more information, see [Sharing private catalog products](/docs/account?topic=account-catalog-share&interface=ui).
@@ -24,7 +24,7 @@ A different process is used if you want to share your product with users in your
 ## Before you begin
 {: #prereqs-share-enterprise}
 
-1. Ensure that your product is [approved to publish](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
+1. Ensure that your product has been [approved to publish](/docs/sell?topic=sell-sw-publish&interface=ui#sw-request-approval).
 
 1. You must be assigned the Administrator role for the Catalog Management account management service in the same account as your product. For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 

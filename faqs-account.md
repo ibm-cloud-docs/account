@@ -127,7 +127,6 @@ To close a Pay-As-You-Go or Subscription account, you need to cancel all service
 To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. After an account is closed for 30 days, all data is deleted and all services are removed.
 
 
-
 ## Can I log in to the console with my SoftLayer ID?
 {: #slid}
 {: faq}
@@ -252,7 +251,7 @@ Go to the [Account settings](/account/settings) page in the console to view your
 The account owner, organization manager, or a user with the correct permissions can invite you to join their account.
 
 * If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need.
-* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command.
+* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#accept-invitation-to-join-a-new-account-) command.
 
 ## Can I switch between multiple accounts?
 {: #switch-between-accounts}
@@ -387,7 +386,6 @@ You can't edit the default dashboard directly. However, you can create a duplica
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functions, which get built and added over time. This way, you can always bring out the most of your workflow.
 
 You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
-
 
 ## Why do I get logged out of my account?
 {: #user-session-log-out}

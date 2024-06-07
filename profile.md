@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2023
-lastupdated: "2023-01-30"
+lastupdated: "2023-01-04"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile
 
@@ -11,7 +11,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Updating your profile
 {: #usersettings}

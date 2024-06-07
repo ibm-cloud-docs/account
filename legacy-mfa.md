@@ -16,6 +16,8 @@ subcollection: account
 # Deprecated legacy account-based MFA
 {: #legacy-mfa}
 
+
+
 [Deprecated]{: tag-deprecated}
 
 Legacy account-based MFA was available to accounts with classic infrastructure prior to the release of the {{site.data.keyword.cloud_notm}} MFA. This legacy offering continues to work for accounts with classic infrastructure and requires the user to provide a secondary authentication input when logging in or switching to accounts with classic infrastructure. Non-classic resources are not secured by this legacy offering. {{site.data.keyword.cloud_notm}} MFA is for customers that want to implement MFA to secure the full range of IBM Cloud offerings.
@@ -132,4 +134,3 @@ Complete the following steps to turn on MFA security questions for a user:
 If the toggle **Require MFA security questions at login** is disabled and you can't turn it on or off, you don't have access to manage the MFA factor. You must be the account owner or have the **User-managed login** setting turned on. Contact your account owner or administrator to get access to turn on the User-managed login setting. To check if User-managed login is turned on, go to **Manage > Access (IAM) > Users** and click on yourself. View the User-managed login section.
 {: tip}
 {: note}
-

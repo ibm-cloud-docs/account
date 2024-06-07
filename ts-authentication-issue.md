@@ -14,13 +14,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Why didn't my IBMid login complete?
 {: #ts_login_ibmid}
 {: troubleshoot}
 
 If you log in to {{site.data.keyword.Bluemix_notm}} and the authentication of your IBMid doesn't complete, there might be a problem with the service.
-{: shortdesc}
 
 When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid doesn't complete.
 {: tsSymptoms}

@@ -3,7 +3,7 @@
 copyright:
   years: 2021, 2024
 
-lastupdated: "2024-04-05"
+lastupdated: "2024-06-08"
 
 
 keywords: IBM Cloud notifications, notification preferences, email preferences, user notifications, distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
@@ -74,7 +74,7 @@ When you receive a notification through a webhook, a payload is being sent to yo
 ## Headers
 {: #header-payload}
 
-You receive the payload with a header that you configured in the UI when you added a webhook, and with an additional version header that has semantic version number. This version header can be used to determine the expected format of the webhook payload.
+You receive the payload with a header that you configured in the UI when you added a webhook, and with an additional version header that has a semantic version number. This version header can be used to determine the expected format of the webhook payload.
 
 The current version header is `"IBM-Notifications-API-Version": "v2.0.0"`.
 
@@ -87,7 +87,7 @@ The following descriptions provide information about the field values that are b
 
 `category`: The type of the event. This can be incident, maintenance, announcement, or security bulletins.
 
-`componentNames`: If a service is impacted, this field represents it. This also can be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.Bluemix_notm}} catalog page](/catalog#services){: external}.
+`componentNames`: If a service is impacted, this field represents it. This can also be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.Bluemix_notm}} catalog page](/catalog#services){: external}.
 
 `regions`: This field shows you the location of the event.
 
@@ -98,8 +98,8 @@ The following descriptions provide information about the field values that are b
      * `Severity 3`: Partial or noncritical disruption to functionality with minimal or isolated impact.
      * `Severity 4`: A minor issue that requires action, but does not impact functionality or usage.
    * **Maintenance**
-     * `High impact`: Maintenance will, or is likely to, cause service outages and disruptions.
-     * `Medium impact`: Maintenance will, or is likely to, cause measurable service degradation but not an actual outage.
+     * `High impact`: Maintenance will, or is likely to cause service outages and disruptions.
+     * `Medium impact`: Maintenance will, or is likely to cause measurable service degradation but not an actual outage.
      * `Low impact`: Maintenance will cause no service disruption during or after the maintenance window.
    * **Announcements**
      * `Major`: Important incidents such as legal notices, service deprecation, or security patches.
@@ -146,7 +146,7 @@ Additional fields might be added in the future without a major version change. T
 To add webhooks to a distribution list, complete the following steps:
 1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud}} console.
 2. Click **Add**, and select **Add webhook**.
-3. Enter a name identifier for your webhook and an endpoint URL, where the notifications about events are being sent, when the webhook is triggered. Set up the URL that will be your own custom endpoint.
+3. Enter a name identifier for your webhook and an endpoint URL, where the notifications about events are being sent when the webhook is triggered. Set up the URL that will be your own custom endpoint.
 
    Custom header and secure header fields are also available to set. You can specify these by clicking **Add header** or **Add secure header**. If you choose to add a secure header for credentials, they are passed encrypted with the private data. This type of header can be deleted, but cannot be edited later. You can easily edit and delete custom headers later.
    {: tip}
@@ -183,7 +183,7 @@ To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, comple
 ## Adding Microsoft Teams webhooks to a distribution list
 {: #add-microsoft-teams-webhook}
 
-Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications.
+Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them.
 
 To create a webhook in the {{site.data.keyword.Bluemix_notm}} console, first create the incoming webhook in Microsoft Teams. This allows external apps to share content in Teams channels, and provides the unique URL where you can send the notification message text in the form of a JSON payload. You receive the notifications in the selected Teams channel in which you added the incoming webhook. For more information, see [Create Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet){: external}.
 
@@ -202,4 +202,4 @@ First, you need to create a Scripted REST API on the ServiceNow website. After t
 
 When you are ready with the process and have the URL for your Scripted REST API, you can start to use it on the **{{site.data.keyword.Bluemix_notm}} Notification distribution list** page and create webhooks.
 
-To get to know the complete ServiceNow webhook integration process, follow the instructions on the [How to Integrate Webhooks Into ServiceNow](https://community.servicenow.com/community?id=community_blog&sys_id=886d2a29dbd0dbc01dcaf3231f9619b0){: external} blog post. This blog walks you through the steps in detail.
+To get to know the complete ServiceNow webhook integration process, follow the instructions in the [How to Integrate Webhooks Into ServiceNow](https://www.servicenow.com/community/in-other-news/how-to-integrate-webhooks-into-servicenow/ba-p/2271745){: external} blog post. This blog walks you through the steps in detail.

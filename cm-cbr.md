@@ -281,7 +281,7 @@ To find a list of available service references, call the [ListAvailableServicere
 {: tip}
 
 ## Creating network zones by using Terraform
-{: #cm-network-zones-create-terra}
+{: #network-zones-create-terra}
 {: terraform}
 
 By creating network zones, you establish a list of allowed locations where an access request originates. Add the Catalog Management service to that allowlist as a service reference. After you create a network zone, you can add it to a rule.

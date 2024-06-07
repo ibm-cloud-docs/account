@@ -4,7 +4,7 @@ copyright:
 
   years: 2023, 2024
 
-lastupdated: "2024-02-26"
+lastupdated: "2024-02-16"
 
 keywords:
 
@@ -62,7 +62,7 @@ During configuration of your {{site.data.keyword.appid_full_notm}} service insta
 
 The following table compares characteristics of each federation option. In both cases, the assumption is that the customer connects either an IBMid or an {{site.data.keyword.appid_full_notm}} instance with their IdP with SAML.
 
-| Feature | IBMid |{{site.data.keyword.appid_short}}|
+| Feature |IBMid|{{site.data.keyword.appid_short}}|
 |---|---|---|
 |Email address|Users must have a globally unique email address. For example, firstname.lastname@example.com. If your company's email domain is already federated, you can start configuring access to your account. If it's not already federated, a manual process with the IBMid federation team is required to establish federation. During the federation setup process, the customer collaborates with the IBMid federation team to define which email pattern matches with the IdP users. The decision to federate to your company's own user directory needs to involve the person in your company that can make company-wide decisions when it comes to connecting to external parties for identity services. You need to ensure that this person is included in the process. Federating with IBMid can have an impact on non-{{site.data.keyword.Bluemix_notm}} web services that your company already uses with {{site.data.keyword.IBM_notm}}.|This option requires the creation of an {{site.data.keyword.appid_short}} instance. It is a self-service option with a low usage fee. Choosing this option requires a custom URL to log in to {{site.data.keyword.Bluemix_notm}}. In addition, an {{site.data.keyword.appid_short}} instance and configuration of the federation to your IdP is required for every {{site.data.keyword.Bluemix_notm}} account.|
 |Costs|Customers do not need to pay to use IBMid with or without federation.| {{site.data.keyword.appid_full_notm}} instances have a low fee, with a free tier up to 1,000 users and 1,000 events (for example, logins). See the {{site.data.keyword.appid_short}} page for more details.|
@@ -93,16 +93,16 @@ Using {{site.data.keyword.Bluemix_notm}} and other {{site.data.keyword.IBM_notm}
 
 The following links help you implement the federation that you choose:
 
-[IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}
+[IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}.
 :   The publicly available IBMid federation guide gives you an overview about the steps that are required to federate your Identity Provider and whom to contact to get the federation implemented. Be aware that you need an "IBM Sponsor" (for example, an {{site.data.keyword.IBM_notm}} employee that works as main contact between you and the IBMid team).
 
-[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/blog/announcement/ibm-cloud-self-service-federation-for-external-identity-providers){: external}
+[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/cloud/blog/announcement/ibm-cloud-self-service-federation-for-external-identity-providers){: external}.
 :   Announcement for the {{site.data.keyword.Bluemix_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}}.
 
 [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration)
 :   Follow the steps necessary to integrate an {{site.data.keyword.appid_full_notm}} service instance with {{site.data.keyword.Bluemix_notm}} IAM so that your users can use your {{site.data.keyword.Bluemix_notm}} account without creating IBMids. Review the section Setting IAM-specific attributes in {{site.data.keyword.appid_short}} tokens to make sure that your users are correctly onboarded and displayed inside your {{site.data.keyword.Bluemix_notm}} account.
 
-[Control access to cloud resources](https://developer.ibm.com/articles/identity-and-access-management-what-developers-need-to-know/){: external}
+[Control access to cloud resources](https://developer.ibm.com/articles/identity-and-access-management-what-developers-need-to-know/){: external}.
 :   This tutorial describes how to use Dynamic Rules in Access Groups so that you automate permission assignments based on attributes that your Identity Provider is sending to {{site.data.keyword.Bluemix_notm}} via SAML. The tutorial itself was written for IBMid federation, but the same concept and steps also work with {{site.data.keyword.appid_full_notm}} based federation.
 
 [Using {{site.data.keyword.appid_short}} instances to build dynamic rules in access groups](/docs/account?topic=account-idp-integration#app-id-dynamic-rules)

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2022
-lastupdated: "2022-07-21"
+lastupdated: "2022-06-24"
 
 keywords: troubleshoot context-based restrictions, VPC, public endpoint
 

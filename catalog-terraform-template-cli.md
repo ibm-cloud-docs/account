@@ -19,6 +19,7 @@ completion-time: 20m
 
 {{site.data.keyword.attribute-definition-list}}
 
+
 # Onboarding a Terraform template by using the CLI
 {: #catalog-terraform-template-cli}
 {: toc-content-type="tutorial"}
@@ -138,6 +139,8 @@ Deploying the software can take a few minutes. You can check the validation stat
 ibmcloud catalog offering version validate-status --version-locator VERSION_NUMBER [--output FORMAT]
 ```
 {: codeblock}
+
+
 
 ## Mark a version as ready
 {: #mark-version-ready}

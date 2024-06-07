@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2015, 2021
+  years: 2015, 2020
 
-lastupdated: "2021-02-25"
+lastupdated: "2020-06-02"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, resource group, move resource, reassign resource, reassign instance
 
@@ -14,11 +14,9 @@ content-type: troubleshoot
 
 ---
 
-
 {{site.data.keyword.attribute-definition-list}}
 
-
-# Why can't I assign my resource to a new resource group?
+# Why can't I assign my resource to a new resource group? 
 {: #ts_service_instance}
 {: troubleshoot}
 
@@ -33,3 +31,4 @@ Resources can't be moved after they are assigned to a resource group.
 
 To correct this issue, you can try to delete the resource and create a new instance of it from the catalog. This way, you can be sure to assign the new instance to the correct resource group.
 {: tsResolve}
+

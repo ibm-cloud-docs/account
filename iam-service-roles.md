@@ -2,7 +2,7 @@
 
 copyright:
 
-  years: 2019
+  years: 2019, 2022
 
 lastupdated: "2024-06-07"
 
@@ -13,7 +13,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # IAM roles and actions
 {: #iam-service-roles-actions}
@@ -27,11 +26,11 @@ Each service has custom actions that they define and map to platform and service
 
 For more information about assigning access for each service, check out the documentation for the service that you're using.
 
-<!-- Everything is deleted after this line. -->
-## Statum KPI
-{: #3p-amberoon-xaas-statumkpi-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `3p-amberoon-xaas-statumkpi` for the service name.
+## IBM Analytics Engine SBN
+{: #ae-dev-sbn-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ae-dev-sbn` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -40,193 +39,62 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 1. Platform roles - Statum KPI" caption-side="top"}
+{: caption="Table 1. Platform roles - IBM Analytics Engine SBN" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="3p-amberoon-xaas-statumkpi"}
+{: tab-group="ae-dev-sbn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table1}
 
 | Role | Description |
 | ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 1. Service roles - Statum KPI" caption-side="top"}
+{: caption="Table 1. Service roles - IBM Analytics Engine SBN" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="3p-amberoon-xaas-statumkpi"}
+{: tab-group="ae-dev-sbn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
 {: #service-roles-table1}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `3p-amberoon-xaas-statumkpi.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 1. Service actions - Statum KPI" caption-side="top"}
+| `ae-dev-sbn.cluster.createlogconfig` | Create cluster log configuration | Administrator, Editor, Manager, Writer |
+| `ae-dev-sbn.cluster.customize` | Customize cluster | Administrator, Editor, Manager, Writer |
+| `ae-dev-sbn.cluster.deletelogconfig` | Delete cluster log configuration | Administrator, Editor, Manager, Writer |
+| `ae-dev-sbn.cluster.read` | Read cluster details | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `ae-dev-sbn.cluster.resize` | Resize cluster | Administrator, Editor, Manager, Writer |
+| `ae-dev-sbn.cluster.resetpassword` | Reset cluster password | Administrator, Manager |
+| `ae-dev-sbn.cluster.viewpassword` | View cluster password | Administrator, Editor, Manager, Writer |
+| `ae-dev-sbn.instance-logging.create` | Create logging configuration for an instance | Manager, Writer |
+| `ae-dev-sbn.instance-logging.delete` | Delete logging configuration for an instance | Manager, Writer |
+| `ae-dev-sbn.instance-logging.patch` | Patch logging configuration of an instance | Manager, Writer |
+| `ae-dev-sbn.instance-logging.read` | View logging configuration of an instance | Manager, Reader, Writer |
+| `ae-dev-sbn.instance-logging.update` | Update logging configuration of an instance | Manager, Writer |
+| `ae-dev-sbn.instances.read` | View instance details | Manager, Reader, Writer |
+| `ae-dev-sbn.applications.create` | Create an application | Manager, Writer |
+| `ae-dev-sbn.applications.read` | View application details | Manager, Reader, Writer |
+| `ae-dev-sbn.applications.delete` | Delete application | Manager, Writer |
+| `ae-dev-sbn.instances.update` | Update instance | Manager, Writer |
+| `ae-dev-sbn.instances.patch` | Patch instance | Manager, Writer |
+| `ae-dev-sbn.kernels.create` | Create kernel | Manager, Writer |
+| `ae-dev-sbn.kernels.delete` | Delete kernel | Manager, Writer |
+| `ae-dev-sbn.kernels.read` | View kernel details or get a Websocket connection | Manager, Reader, Writer |
+| `ae-dev-sbn.livybatch.read` | Read livy batch | Manager, Reader, Writer |
+| `ae-dev-sbn.livybatch.create` | Create livy batch operation | Manager, Writer |
+| `ae-dev-sbn.livybatch.delete` | Delete livy batch operation | Manager, Writer |
+| `ae-dev-sbn.sparkhistoryserver.create` | Start Spark history server | Manager, Writer |
+| `ae-dev-sbn.sparkhistoryserver.delete` | Stop Spark history server | Manager, Writer |
+| `ae-dev-sbn.sparkhistoryserver.read` | Get Spark history server details | Manager, Reader, Writer |
+| `ae-dev-sbn.sparkhistoryui.read` | View Spark history UI | Manager, Reader, Writer |
+{: caption="Table 1. Service actions - IBM Analytics Engine SBN" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="3p-amberoon-xaas-statumkpi"}
+{: tab-group="ae-dev-sbn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table1}
-
-## ViziVault Platform
-{: #3p-anontech-xaas-vizivault-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `3p-anontech-xaas-vizivault` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 2. Platform roles - ViziVault Platform" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="3p-anontech-xaas-vizivault"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table2}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 2. Service roles - ViziVault Platform" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="3p-anontech-xaas-vizivault"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table2}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `3p-anontech-xaas-vizivault.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 2. Service actions - ViziVault Platform" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="3p-anontech-xaas-vizivault"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table2}
-
-## Cognitive View
-{: #3p-cognitiveview-xaas-cognitiveview-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `3p-cognitiveview-xaas-cognitiveview` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 3. Platform roles - Cognitive View" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="3p-cognitiveview-xaas-cognitiveview"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table3}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 3. Service roles - Cognitive View" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="3p-cognitiveview-xaas-cognitiveview"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table3}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `3p-cognitiveview-xaas-cognitiveview.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 3. Service actions - Cognitive View" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="3p-cognitiveview-xaas-cognitiveview"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table3}
-
-## SimpleCloud
-{: #3p-summusrender-xaas-simplecl0ud-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `3p-summusrender-xaas-simplecl0ud` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 4. Platform roles - SimpleCloud" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="3p-summusrender-xaas-simplecl0ud"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table4}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 4. Service roles - SimpleCloud" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="3p-summusrender-xaas-simplecl0ud"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table4}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `3p-summusrender-xaas-simplecl0ud.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 4. Service actions - SimpleCloud" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="3p-summusrender-xaas-simplecl0ud"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table4}
-
-## VPC+ DRaaS (VPC+ Disaster Recovery as a Service)
-{: #3p-wanclds-draas-vpcplus-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `3p-wanclds-draas-vpcplus` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 5. Platform roles - VPC+ DRaaS (VPC+ Disaster Recovery as a Service)" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="3p-wanclds-draas-vpcplus"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table5}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 5. Service roles - VPC+ DRaaS (VPC+ Disaster Recovery as a Service)" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="3p-wanclds-draas-vpcplus"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table5}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `3p-wanclds-draas-vpcplus.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 5. Service actions - VPC+ DRaaS (VPC+ Disaster Recovery as a Service)" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="3p-wanclds-draas-vpcplus"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table5}
 
 ## Watson OpenScale
 {: #aiopenscale-roles}
@@ -240,37 +108,85 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 6. Platform roles - Watson OpenScale" caption-side="top"}
+{: caption="Table 2. Platform roles - Watson OpenScale" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="aiopenscale"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table6}
+{: #platform-roles-table2}
 
 | Role | Description |
 | ----- | :----- |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 6. Service roles - Watson OpenScale" caption-side="top"}
+{: caption="Table 2. Service roles - Watson OpenScale" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="aiopenscale"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table6}
+{: #service-roles-table2}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `aiopenscale.dashboard.view` | View OpenScale | Administrator, Editor, Operator, Viewer |
-| `aiopenscale.dashboard.edit` | Edit OpenScale | Administrator, Editor, Writer |
+| `aiopenscale.dashboard.edit` | Edit OpenScale | Administrator, Editor |
 | `aiopenscale.dashboard.administer` | Administer OpenScale | Administrator |
 | `aiopenscale.kms.read` | KMS Read | Reader |
-{: caption="Table 6. Service actions - Watson OpenScale" caption-side="top"}
+{: caption="Table 2. Service actions - Watson OpenScale" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="aiopenscale"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table6}
+{: #actions-table2}
+
+## API Connect Dev
+{: #api-connect-velox-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `api-connect-velox-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 3. Service roles - API Connect Dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="api-connect-velox-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table3}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `api-connect-velox-dev.settings.view` | api-connect-velox-dev.settings.view | Manager, Reader, Writer |
+| `api-connect-velox-dev.settings.manage` |  | Manager |
+| `api-connect-velox-dev.topology.view` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.topology.manage` |  | Manager |
+| `api-connect-velox-dev.drafts.view` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.drafts.edit` |  | Manager, Writer |
+| `api-connect-velox-dev.drafts.manage` |  | Manager |
+| `api-connect-velox-dev.product.view` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.product.manage` |  | Manager |
+| `api-connect-velox-dev.consumer-org.view` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.consumer-org.manage` |  | Manager |
+| `api-connect-velox-dev.app.view-all` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.app.manage-all` |  | Manager |
+| `api-connect-velox-dev.subscription.view-all` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.subscription.manage-all` |  | Manager |
+| `api-connect-velox-dev.api-analytics.manage` |  | Manager |
+| `api-connect-velox-dev.child.view` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.child.create` |  | Manager, Writer |
+| `api-connect-velox-dev.child.manage` |  | Manager |
+| `api-connect-velox-dev.instance.view` |  | Manager, Reader, Writer |
+| `api-connect-velox-dev.instance.edit` |  | Manager, Reader |
+| `api-connect-velox-dev.instance.admin` |  | Manager |
+{: caption="Table 3. Service actions - API Connect Dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="api-connect-velox-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table3}
 
 ## API Gateway
 {: #api-gateway-roles}
@@ -283,12 +199,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 7. Platform roles - API Gateway" caption-side="top"}
+{: caption="Table 4. Platform roles - API Gateway" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="api-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table7}
+{: #platform-roles-table4}
 
 | Role | Description |
 | ----- | :----- |
@@ -296,12 +212,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 7. Service roles - API Gateway" caption-side="top"}
+{: caption="Table 4. Service roles - API Gateway" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="api-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table7}
+{: #service-roles-table4}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -311,12 +227,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `api-gateway.api.edit` |  | Manager, Writer |
 | `api-gateway.api.delete` |  | Manager, Writer |
 | `api-gateway.api.share` |  | Manager |
-{: caption="Table 7. Service actions - API Gateway" caption-side="top"}
+{: caption="Table 4. Service actions - API Gateway" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="api-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table7}
+{: #actions-table4}
 
 ## API Connect
 {: #apiconnect-roles}
@@ -330,12 +246,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 8. Platform roles - API Connect" caption-side="top"}
+{: caption="Table 5. Platform roles - API Connect" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="apiconnect"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table8}
+{: #platform-roles-table5}
 
 | Role | Description |
 | ----- | :----- |
@@ -346,12 +262,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 8. Service roles - API Connect" caption-side="top"}
+{: caption="Table 5. Service roles - API Connect" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="apiconnect"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table8}
+{: #service-roles-table5}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -361,12 +277,40 @@ Review the available platform and service roles and the actions mapped to each t
 | `apiconnect.instance.manage-community` | apiconnect.instance.manage-community | Community Manager, Operator |
 | `apiconnect.instance.api-admin` | apiconnect.instance.api-admin | Api Administrator, Editor, Manager |
 | `apiconnect.instance.develop` | apiconnect.instance.develop | API Developer, Writer |
-{: caption="Table 8. Service actions - API Connect" caption-side="top"}
+{: caption="Table 5. Service actions - API Connect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apiconnect"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table8}
+{: #actions-table5}
+
+## App Connect
+{: #appconnect-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `appconnect` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 6. Service roles - App Connect" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="appconnect"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table6}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `appconnect.dashboard.admin` | Full access to App Connect instance | Manager, Reader, Writer |
+{: caption="Table 6. Service actions - App Connect" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="appconnect"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table6}
 
 ## App ID
 {: #appid-roles}
@@ -380,12 +324,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 9. Service roles - App ID" caption-side="top"}
+{: caption="Table 7. Service roles - App ID" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="appid"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table9}
+{: #service-roles-table7}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -476,102 +420,105 @@ Review the available platform and service roles and the actions mapped to each t
 | `appid.config.read` | Read configuration information | Service Configuration Reader |
 | `appid.mgmt.get.settings` | Retrieve instance settings | Manager, Reader, Writer |
 | `appid.mgmt.set.settings` | Set instance settings | Manager, Writer |
-{: caption="Table 9. Service actions - App ID" caption-side="top"}
+{: caption="Table 7. Service actions - App ID" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="appid"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table9}
+{: #actions-table7}
 
-## App Configuration
+## App Launch Dev
+{: #applaunchservice-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `applaunchservice` for the service name.
+
+No supported roles.
+## AppRapp
 {: #apprapp-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `apprapp` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-{: row-headers}
-{: caption="Table 10. Platform roles - App Configuration" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="apprapp"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table10}
-
-| Role | Description |
-| ----- | :----- |
-| Client SDK | Role to manage Client SDK |
+| Client SDK | Client SDK |
 | Config Operator | As a Config Operator, you can toggle the feature state. |
+| Configuration Aggregator Reader | As a Configuration Aggregator Reader, you have permission to query for the configuration metadata of resources |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 10. Service roles - App Configuration" caption-side="top"}
+{: caption="Table 9. Service roles - AppRapp" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="apprapp"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table10}
+{: #service-roles-table9}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `apprapp.dashboard.view` | Dashboard view | Administrator, Config Operator, Editor, Manager, Operator, Reader, Writer |
-| `apprapp.collections.list` | List collections | Client SDK, Config Operator, Manager, Reader, Writer |
-| `apprapp.collections.create` | Create collections | Manager |
-| `apprapp.collections.update` | Update collections | Manager |
-| `apprapp.collections.delete` | Delete collections  | Manager |
-| `apprapp.features.list` | List features | Config Operator, Manager, Reader, Writer |
-| `apprapp.features.create` | Create Features | Manager |
-| `apprapp.features.update` | Update features | Manager |
-| `apprapp.features.delete` | Delete features | Manager |
-| `apprapp.segments.list` | List segments | Config Operator, Manager, Reader, Writer |
-| `apprapp.segments.update` | Update segments | Manager, Writer |
-| `apprapp.segments.create` | Create segments | Manager, Writer |
-| `apprapp.segments.delete` | Delete segments | Manager, Writer |
-| `apprapp.features.patch` | Patch features | Writer |
-| `apprapp.features.toggle` | Toggle feature | Config Operator, Manager, Writer |
-| `apprapp.properties.list` | List properties | Config Operator, Manager, Reader, Writer |
-| `apprapp.properties.update` | Update properties | Manager |
-| `apprapp.properties.create` | Create properties | Manager |
-| `apprapp.properties.delete` | Delete properties | Manager |
-| `apprapp.properties.patch` | Patch properties | Writer |
-| `apprapp.environments.create` | Create environments | Manager |
-| `apprapp.environments.update` | Update environments | Manager |
-| `apprapp.environments.delete` | Delete environments | Manager |
-| `apprapp.environments.list` | List environments | Config Operator, Manager, Reader, Writer |
-| `apprapp.instances.export` | Export instance resources to a JSON | Manager |
-| `apprapp.instances.import` | Import instance resources from a JSON | Manager |
-| `apprapp.gitconfigs.create` | Create git configuration | Manager |
-| `apprapp.gitconfigs.update` | Update git configurations | Manager |
-| `apprapp.gitconfigs.delete` | Delete GIT configuration | Manager |
-| `apprapp.gitconfigs.view` | GET a GIT configuration | Config Operator, Manager, Reader, Writer |
-| `apprapp.gitconfigs.promote` | Promote configuration | Manager |
-| `apprapp.usage.create` | Usage posting | Client SDK, Config Operator, Manager, Reader, Writer |
-| `apprapp.sse.view` | SSE connect | Client SDK, Config Operator, Manager, Reader, Writer |
-| `apprapp.originconfigs.update` | Update origin configuration for allowlisting CORS policy for Browser clients SDKs | Manager |
-| `apprapp.originconfigs.list` | List origin configuration for allowlisting CORS policy for Browser clients SDKs | Config Operator, Manager, Reader, Writer |
-| `apprapp.gitconfigs.restore` | Restore configuration | Manager |
-| `apprapp.integrations.create` | Create a integration between App Configuration and an external service | Manager |
-| `apprapp.integrations.list` | List integrations between App Configuration and external services | Config Operator, Manager, Reader, Writer |
-| `apprapp.integrations.delete` | Delete the integration between App Configuration and an external service | Manager |
-| `apprapp.workflowconfigs.create` | Create workflow configuration for service now integration for CR approval | Manager |
-| `apprapp.workflowconfigs.update` | Update workflow configuration for service now integration for CR approval | Manager |
-| `apprapp.workflowconfigs.list` | List the workflow configuration for service now integration for CR approval | Config Operator, Manager, Reader, Writer |
-| `apprapp.workflowconfigs.delete` | Delete the workflow configuration for service now integration for CR approval | Manager |
-| `apprapp.changerequest.create` | API endpoint to listen to service-now events | Manager |
-| `apprapp.config.import` | Import the configuration of the instance | Manager |
-| `apprapp.config.export` | Export the configuration of the instance | Client SDK, Config Operator, Manager, Reader, Writer |
-| `apprapp.config.action` | Perform actions on the configuration of the instance like promote, restore to git | Manager |
-{: caption="Table 10. Service actions - App Configuration" caption-side="top"}
+| `apprapp.collections.list` | The ability to view collections. | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.collections.create` | The ability to create collections. | Manager |
+| `apprapp.collections.update` | The ability to edit or update existing collections. | Manager |
+| `apprapp.collections.delete` | The ability to delete existing collections. | Manager |
+| `apprapp.features.list` | The ability to see feature flags. | Config Operator, Manager, Reader, Writer |
+| `apprapp.features.create` | The ability to create feature flags. | Manager |
+| `apprapp.features.update` | The ability to update or edit existing feature flags. | Manager |
+| `apprapp.features.delete` | The ability to delete existing feature flags. | Manager |
+| `apprapp.segments.list` | The ability to see segments. | Config Operator, Manager, Reader, Writer |
+| `apprapp.segments.update` | The ability to update or edit existing segments. | Manager, Writer |
+| `apprapp.segments.create` | The ability to create segments. | Manager, Writer |
+| `apprapp.segments.delete` | The ability to delete existing segments. | Manager, Writer |
+| `apprapp.features.patch` | The ability to partially update or edit existing feature flags. | Writer |
+| `apprapp.features.toggle` | The ability to enable or disable existing feature flags. | Config Operator, Manager, Writer |
+| `apprapp.properties.list` | The ability to see properties. | Config Operator, Manager, Reader, Writer |
+| `apprapp.properties.update` | The ability to update or edit existing properties. | Manager |
+| `apprapp.properties.create` | The ability to create properties. | Manager |
+| `apprapp.properties.delete` | The ability to delete existing properties. | Manager |
+| `apprapp.properties.patch` | The ability to partially update or edit existing properties. | Writer |
+| `apprapp.environments.create` | The ability to create environments. | Manager |
+| `apprapp.environments.update` | The ability to update or edit existing environments. | Manager |
+| `apprapp.environments.delete` | The ability to delete existing environments. | Manager |
+| `apprapp.environments.list` | The ability to see environments. | Config Operator, Manager, Reader, Writer |
+| `apprapp.instances.export` | [Deprecated] The ability to get the JSON copy of entire instance resources such as collections, environments, feature flags, properties & segments. | Manager |
+| `apprapp.instances.import` | [Deprecated] The ability to import resources such as collections, environments, feature flags, properties & segments into the instance. Note - This action will delete all the existing resources from the instance & re-creates them with the newly provided data. | Manager |
+| `apprapp.gitconfigs.create` | The ability to create git configurations. | Manager |
+| `apprapp.gitconfigs.update` | The ability to update or edit existing git configurations. | Manager |
+| `apprapp.gitconfigs.delete` | The ability to delete existing git configurations. | Manager |
+| `apprapp.gitconfigs.view` | The ability to see git configurations. | Config Operator, Manager, Reader, Writer |
+| `apprapp.gitconfigs.promote` | [Deprecated] The ability to promote existing git configurations to Github repo. | Manager |
+| `apprapp.sse.view` | The ability for a EventSource to subscribe to server-sent events. This action is used by App Configuration Client SDKs only. | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.usage.create` | The ability to submit feature flags & properties evaluation metrics. | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.originconfigs.update` | The ability to add or update origin URLs to the allowlist. | Manager |
+| `apprapp.originconfigs.list` | The ability to see allowlisted origin URLs. | Config Operator, Manager, Reader, Writer |
+| `apprapp.gitconfigs.restore` | [Deprecated] The ability to restore snapshots from Github repo into App Configuration instance. | Manager |
+| `apprapp.integrations.create` | The ability to create integrations between App Configuration and external services such as Key Protect, HPCS and Event Notifications. | Manager |
+| `apprapp.integrations.list` | The ability to see integrations existing between App Configuration and external services such as Key Protect, HPCS & Event Notifications. | Config Operator, Manager, Reader, Writer |
+| `apprapp.integrations.delete` | The ability to delete the existing integrations between App Configuration and an external services such as Key Protect, HPCS & Event Notifications. | Manager |
+| `apprapp.workflowconfigs.create` | The ability to create workflow configurations. | Manager |
+| `apprapp.workflowconfigs.update` | The ability to update or edit existing workflow configurations. | Manager |
+| `apprapp.workflowconfigs.list` | The ability to see workflow configurations. | Config Operator, Manager, Reader, Writer |
+| `apprapp.workflowconfigs.delete` | The ability to delete existing workflow configurations. | Manager |
+| `apprapp.changerequest.create` | The ability to send service-now change request events to App Configuration instance. | Manager |
+| `apprapp.config.import` | The ability to import resources such as collections, environments, feature flags, properties & segments into the instance. Note - This action will delete all the existing resources from the instance & re-creates them with the newly provided data. | Manager |
+| `apprapp.config.export` | The ability to get the JSON copy of entire instance resources such as collections, environments, feature flags, properties & segments. | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.config.action` | The ability to promote or restore the existing git configurations. | Manager |
+| `apprapp.dashboard.view` | View Dashboard | Config Operator, Manager, Reader, Writer |
+| `apprapp.configaggregator.query` | Query API to retrieve resource metadata from Config Aggregator | Configuration Aggregator Reader |
+| `apprapp.configaggregatorsettings.update` | Update the settings for the Configuration aggregator | Manager |
+| `apprapp.configaggregatorsettings.list` | Retrieve the settings for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
+{: caption="Table 9. Service actions - AppRapp" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table10}
+{: #actions-table9}
 
+## at-test1
+{: #at-test1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `at-test1` for the service name.
+
+No supported roles.
 ## Activity Tracker
 {: #atracker-roles}
 
@@ -593,7 +540,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+| Writer | The writer role is reserved for IBM internal use. |
 {: row-headers}
 {: caption="Table 11. Service roles - Activity Tracker" caption-side="top"}
 {: tab-title="Service roles"}
@@ -634,10 +581,40 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table11}
 
-## Bespoken Automated Testing For IVR and Chat
-{: #automated-testing-and-monitoring-for-voice-and-chat-roles}
+## Billing
+{: #billing-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `automated-testing-and-monitoring-for-voice-and-chat` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `billing` for the service name.
+
+No supported roles.
+## binding-test
+{: #binding-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `binding-test` for the service name.
+
+No supported roles.
+## binding-test-k
+{: #binding-test-k-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `binding-test-k` for the service name.
+
+No supported roles.
+## bss-async-new
+{: #bss-async-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `bss-async` for the service name.
+
+No supported roles.
+## bss-async-atul
+{: #bss-async-atul-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `bss-async-atul` for the service name.
+
+No supported roles.
+## Lite
+{: #bss-monotoring-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `bss-monotoring` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -646,40 +623,366 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 12. Platform roles - Bespoken Automated Testing For IVR and Chat" caption-side="top"}
+{: caption="Table 17. Platform roles - Lite" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="automated-testing-and-monitoring-for-voice-and-chat"}
+{: tab-group="bss-monotoring"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table12}
+{: #platform-roles-table17}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 17. Service roles - Lite" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="bss-monotoring"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table17}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `bss-monotoring.dashboard.view` |  | Administrator, Editor, Manager, Operator, Reader, Writer |
+| `POST /v1/resource_keys` |  | Manager, Reader, Writer |
+| `POST /v1/resource_bindings/` |  | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+{: caption="Table 17. Service actions - Lite" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="bss-monotoring"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table17}
+
+## bss-rc-cf
+{: #bss-rc-cf-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `bss-rc-cf` for the service name.
+
+No supported roles.
+## bss-rc-cfx2
+{: #bss-rc-cfx2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `bss-rc-cfx2` for the service name.
+
+No supported roles.
+## BssAsyncx2
+{: #bssasync-rc-cf-x2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `bssasync-rc-cf-x2` for the service name.
+
+No supported roles.
+## cbr composite testing
+{: #cbr-composite-testing-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cbr-composite-testing` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 21. Platform roles - cbr composite testing" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cbr-composite-testing"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table21}
+
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 21. Service roles - cbr composite testing" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cbr-composite-testing"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table21}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cbr-composite-testing.dashboard.view` |  | Administrator, Editor, Operator |
+| `cbr-composite-testing.resource.view` | Resource View | Reader |
+{: caption="Table 21. Service actions - cbr composite testing" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cbr-composite-testing"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table21}
+
+## cbr composite testing 1
+{: #cbr-composite-testing-1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cbr-composite-testing-1` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 22. Platform roles - cbr composite testing 1" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cbr-composite-testing-1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table22}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 12. Service roles - Bespoken Automated Testing For IVR and Chat" caption-side="top"}
+{: caption="Table 22. Service roles - cbr composite testing 1" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="automated-testing-and-monitoring-for-voice-and-chat"}
+{: tab-group="cbr-composite-testing-1"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table12}
+{: #service-roles-table22}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `automated-testing-and-monitoring-for-voice-and-chat.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 12. Service actions - Bespoken Automated Testing For IVR and Chat" caption-side="top"}
+| `cbr-composite-testing-1.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 22. Service actions - cbr composite testing 1" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="automated-testing-and-monitoring-for-voice-and-chat"}
+{: tab-group="cbr-composite-testing-1"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table12}
+{: #actions-table22}
 
-## Billing
-{: #billing-roles}
+## cbr composite testing 2
+{: #cbr-composite-testing-2-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `billing` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cbr-composite-testing-2` for the service name.
 
-No supported roles.
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 23. Platform roles - cbr composite testing 2" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cbr-composite-testing-2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table23}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 23. Service roles - cbr composite testing 2" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cbr-composite-testing-2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table23}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cbr-composite-testing-2.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 23. Service actions - cbr composite testing 2" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cbr-composite-testing-2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table23}
+
+## cbr composite testing 2 sub1
+{: #cbr-composite-testing-2.cbr-composite-testing-2-sub1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cbr-composite-testing-2.cbr-composite-testing-2-sub1` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 24. Platform roles - cbr composite testing 2 sub1" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cbr-composite-testing-2.cbr-composite-testing-2-sub1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table24}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 24. Service roles - cbr composite testing 2 sub1" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cbr-composite-testing-2.cbr-composite-testing-2-sub1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table24}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cbr-composite-testing-2.cbr-composite-testing-2-sub1.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 24. Service actions - cbr composite testing 2 sub1" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cbr-composite-testing-2.cbr-composite-testing-2-sub1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table24}
+
+## cbr composite testing 2 sub1
+{: #cbr-composite-testing-2.cbr-composite-testing-2-sub2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cbr-composite-testing-2.cbr-composite-testing-2-sub2` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 25. Platform roles - cbr composite testing 2 sub1" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cbr-composite-testing-2.cbr-composite-testing-2-sub2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table25}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 25. Service roles - cbr composite testing 2 sub1" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cbr-composite-testing-2.cbr-composite-testing-2-sub2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table25}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cbr-composite-testing-2.cbr-composite-testing-2-sub2.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 25. Service actions - cbr composite testing 2 sub1" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cbr-composite-testing-2.cbr-composite-testing-2-sub2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table25}
+
+## cbr composite testing sub1
+{: #cbr-composite-testing.cbr-composite-testing-sub1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cbr-composite-testing.cbr-composite-testing-sub1` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 26. Platform roles - cbr composite testing sub1" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cbr-composite-testing.cbr-composite-testing-sub1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table26}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 26. Service roles - cbr composite testing sub1" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cbr-composite-testing.cbr-composite-testing-sub1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table26}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cbr-composite-testing.cbr-composite-testing-sub1.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 26. Service actions - cbr composite testing sub1" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cbr-composite-testing.cbr-composite-testing-sub1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table26}
+
+## cbr composite testing sub2
+{: #cbr-composite-testing.cbr-composite-testing-sub2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cbr-composite-testing.cbr-composite-testing-sub2` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 27. Platform roles - cbr composite testing sub2" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cbr-composite-testing.cbr-composite-testing-sub2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table27}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 27. Service roles - cbr composite testing sub2" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cbr-composite-testing.cbr-composite-testing-sub2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table27}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cbr-composite-testing.cbr-composite-testing-sub2.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 27. Service actions - cbr composite testing sub2" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cbr-composite-testing.cbr-composite-testing-sub2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table27}
+
+## Cf-Migration-Test5-dev
+{: #cf-migration-test5-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cf-migration-test5-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+| null | null |
+| null | null |
+{: row-headers}
+{: caption="Table 28. Service roles - Cf-Migration-Test5-dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cf-migration-test5-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table28}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `GET /cf-migration-test5` |  | null, null, null |
+| `POST /cf-migration-test5` |  | null, null |
+| `DELETE /cf-migration-test5` |  | null |
+{: caption="Table 28. Service actions - Cf-Migration-Test5-dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cf-migration-test5-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table28}
+
 ## Cloud Foundry for Custom Domain
 {: #cf4customdomain-roles}
 
@@ -691,27 +994,74 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 14. Service roles - Cloud Foundry for Custom Domain" caption-side="top"}
+{: caption="Table 29. Service roles - Cloud Foundry for Custom Domain" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cf4customdomain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table14}
+{: #service-roles-table29}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `cf4customdomain.newdashboard.view` | View information in the new dashboard | Manager, Reader, Writer |
-{: caption="Table 14. Service actions - Cloud Foundry for Custom Domain" caption-side="top"}
+{: caption="Table 29. Service actions - Cloud Foundry for Custom Domain" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cf4customdomain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table14}
+{: #actions-table29}
 
 ## Cloud Foundry Enterprise Environment
 {: #cfaas-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cfaas` for the service name.
+
+No supported roles.
+## Client Financial Data Repository API
+{: #cfdr-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cfdr` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 31. Platform roles - Client Financial Data Repository API" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cfdr"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table31}
+
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 31. Service roles - Client Financial Data Repository API" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cfdr"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table31}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cfdr.dashboard.view` |  | Administrator, Editor, Operator |
+| `cfdr.v1.write` | This configuration allows a cfdr user to have Reader and Writer permissions to access cfdr-core through cfdr-exg | Reader, Writer |
+{: caption="Table 31. Service actions - Client Financial Data Repository API" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cfdr"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table31}
+
+## cfmysqlv4-private-t1
+{: #cfmysqlv4-private-t1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cfmysqlv4-private-t1` for the service name.
 
 No supported roles.
 ## Cloud Object Storage
@@ -730,12 +1080,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a Writer, one can create/modify/delete buckets. In addition, one can upload and download the objects in the bucket. |
 {: row-headers}
-{: caption="Table 16. Service roles - Cloud Object Storage" caption-side="top"}
+{: caption="Table 33. Service roles - Cloud Object Storage" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cloud-object-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table16}
+{: #service-roles-table33}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -780,6 +1130,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.bucket.list_bucket_crn` | View a bucket CRN. | Manager, Reader, Writer |
 | `cloud-object-storage.bucket.get_notifications` | Internal use only - unsupported for users. | Notifications Manager |
 | `cloud-object-storage.bucket.put_notifications` | Internal use only - unsupported for users. | Notifications Manager |
+| `cloud-object-storage.bucket.post_mdms` | POST bucket Mass Data Movements. | Manager, Writer |
+| `cloud-object-storage.bucket.get_mdms` | GET bucket Mass Data Movements. | Manager, Reader, Writer |
 | `cloud-object-storage.object.get` | View and download objects. | Content Reader, Manager, Object Reader, Reader, Writer |
 | `cloud-object-storage.object.head` | Read an object's metadata. | Content Reader, Manager, Object Reader, Reader, Writer |
 | `cloud-object-storage.object.get_version` | Unsupported operation - used for S3 API compatibility only. | Content Reader, Manager, Object Reader, Reader, Writer |
@@ -798,7 +1150,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.object.post_initiate_upload` | Initiate multipart uploads. | Manager, Object Writer, Writer |
 | `cloud-object-storage.object.put_part` | Upload an object part. | Manager, Object Writer, Writer |
 | `cloud-object-storage.object.copy_part` | Copy (write) an object part. | Manager, Writer |
-| `cloud-object-storage.object.copy_part_get` | Copy (read) an object part. | Manager, Reader, Writer |
+| `cloud-object-storage.object.copy_part_get` | Copy (read) an object as a part. | Manager, Reader, Writer |
 | `cloud-object-storage.object.post_complete_upload` | Complete a multipart upload. | Manager, Object Writer, Writer |
 | `cloud-object-storage.object.copy` | Copy (write) an object from one bucket to another. | Manager, Writer |
 | `cloud-object-storage.object.copy_get` | Copy (read) an object from one bucket to another. | Manager, Reader, Writer |
@@ -832,12 +1184,16 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.bucket.delete_replication` | Delete replication configuration of an bucket. | Manager, Writer |
 | `cloud-object-storage.bucket.get_protection_management` | Read protection management of a bucket. | Manager |
 | `cloud-object-storage.bucket.put_protection_management` | Add protection management to a bucket. | Manager |
-{: caption="Table 16. Service actions - Cloud Object Storage" caption-side="top"}
+| `cloud-object-storage.bucket.put_inventory` | Add inventory configuration to a bucket. | Manager, Writer |
+| `cloud-object-storage.bucket.get_inventory` | Read inventory configuration of a bucket. | Manager, Reader, Writer |
+| `cloud-object-storage.bucket.list_inventory` | List inventory configuration of a bucket. | Manager, Reader, Writer |
+| `cloud-object-storage.bucket.delete_inventory` | Delete inventory configuration of a bucket. | Manager, Writer |
+{: caption="Table 33. Service actions - Cloud Object Storage" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloud-object-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table16}
+{: #actions-table33}
 
 ## Cloudant
 {: #cloudantnosqldb-roles}
@@ -851,27 +1207,27 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 17. Platform roles - Cloudant" caption-side="top"}
+{: caption="Table 34. Platform roles - Cloudant" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="cloudantnosqldb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table17}
+{: #platform-roles-table34}
 
 | Role | Description |
 | ----- | :----- |
 | Checkpointer | As a checkpointer, you have permissions to write local documents enabling checkpoint writes. Checkpoints are local documents optionally created during replication recording their state. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Monitor | As a monitor, you have permissions to get information about specified databases, list databases, monitor indexing and replication, view data volume usage and view provisioned and current throughput. |
-| Reader | As a reader, you can perform read-only actions within a service, such as viewing service-specific resources. |
+| Monitor | As a monitor, you have permissions to get information about specified databases, list databases, monitor indexing and replication, view data volume usage and view provisioned, and current throughput. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 17. Service roles - Cloudant" caption-side="top"}
+{: caption="Table 34. Service roles - Cloudant" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cloudantnosqldb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table17}
+{: #service-roles-table34}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -885,11 +1241,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.sapi.supportattachments` | View attachments on support tickets for user | Manager |
 | `cloudantnosqldb.sapi.supporttickets` | View support tickets for user | Manager |
 | `cloudantnosqldb.sapi.userinfo` | Retrieve basic user infomation for this user | Administrator, Editor, Manager, Operator, Viewer |
-| `cloudantnosqldb.users-database-info.read` | Read users' database info | Manager |
-| `cloudantnosqldb.users-database.create` | Create users' databases | Manager |
-| `cloudantnosqldb.users-database.delete` | Delete users' databases | Manager |
-| `cloudantnosqldb.users.read` | Read from users' databases | Manager |
-| `cloudantnosqldb.users.write` | Write to users' databases | Manager |
+| `cloudantnosqldb.users-database-info.read` | Read _users database info | Manager |
+| `cloudantnosqldb.users-database.create` | Create users databases | Manager |
+| `cloudantnosqldb.users-database.delete` | Delete users databases | Manager |
+| `cloudantnosqldb.users.read` | Read from users databases | Manager |
+| `cloudantnosqldb.users.write` | Write to users databases | Manager |
 | `cloudantnosqldb.database.create` | Create databases | Manager |
 | `cloudantnosqldb.database.delete` | Delete databases | Manager |
 | `cloudantnosqldb.sapi.userplan` | Retrieve and update instance plan settings | Administrator, Editor, Manager, Operator, Viewer |
@@ -915,7 +1271,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.replication-scheduler.read` | Read from replication _scheduler endpoints | Manager, Monitor |
 | `cloudantnosqldb.account-up.read` | View _up | Manager, Monitor |
 | `cloudantnosqldb.account-uuids.read` | Generate doc ID UUIDs | Manager, Writer |
-| `cloudantnosqldb.data-document.write` | Create, update, and delete normal documents in a database | Manager, Writer |
+| `cloudantnosqldb.data-document.write` | Create, update and delete normal documents in a database | Manager, Writer |
 | `cloudantnosqldb.local-document.write` | Write _local documents | Checkpointer, Manager, Writer |
 | `cloudantnosqldb.design-document.write` | Write _design documents | Manager |
 | `cloudantnosqldb.cluster-membership.read` | View cluster membership | Manager |
@@ -935,14 +1291,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.account-search-analyze.execute` | Call _search_analyze endpoint | Manager, Reader, Writer |
 | `cloudantnosqldb.couchdbextension-instance.read` | View metadata of an Extension for Apache CouchDB instance | Manager |
 | `cloudantnosqldb.couchdbextension-instance.write` | Make changes to an Extension for Apache CouchDB instance | Manager |
-| `cloudantnosqldb.legacy-root-credential.revoke` | Revoke legacy credential tied to your instance URL | Administrator, Manager |
+| `cloudantnosqldb.legacy-root-credential.revoke` | Revoke the legacy root credential for a service instance | Administrator, Manager |
 | `cloudantnosqldb.legacy-credentials.revoke` | Migrate instance to IAM only  | Administrator, Manager |
-{: caption="Table 17. Service actions - Cloudant" caption-side="top"}
+{: caption="Table 34. Service actions - Cloudant" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloudantnosqldb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table17}
+{: #actions-table34}
 
 ## IBM Cloud Shell
 {: #cloudshell-roles}
@@ -953,12 +1309,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 18. Platform roles - IBM Cloud Shell" caption-side="top"}
+{: caption="Table 35. Platform roles - IBM Cloud Shell" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="cloudshell"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table18}
+{: #platform-roles-table35}
 
 | Role | Description |
 | ----- | :----- |
@@ -967,12 +1323,12 @@ Review the available platform and service roles and the actions mapped to each t
 | File Manager | As a file manager, you can create Cloud Shell environments to manage IBM Cloud resources and manage files in your workspace (File Upload and File Download enabled). |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 18. Service roles - IBM Cloud Shell" caption-side="top"}
+{: caption="Table 35. Service roles - IBM Cloud Shell" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cloudshell"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table18}
+{: #service-roles-table35}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -981,12 +1337,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudshell.server.preview-web` | The ability to preview web applications in Cloud Shell (Web Preview enabled). | Administrator, Cloud Developer |
 | `cloudshell.server.manage-file` | The ability to manage files in the Cloud Shell workspace (File Upload and File Download enabled). | Administrator, File Manager |
 | `cloudshell.config.read` | Configuration Information Point API access | Service Configuration Reader |
-{: caption="Table 18. Service actions - IBM Cloud Shell" caption-side="top"}
+{: caption="Table 35. Service actions - IBM Cloud Shell" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloudshell"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table18}
+{: #actions-table35}
 
 ## IBM watsonx Code Assistant
 {: #code-assistant-roles}
@@ -1000,38 +1356,38 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 19. Platform roles - IBM watsonx Code Assistant" caption-side="top"}
+{: caption="Table 36. Platform roles - IBM watsonx Code Assistant" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="code-assistant"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table19}
+{: #platform-roles-table36}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 19. Service roles - IBM watsonx Code Assistant" caption-side="top"}
+{: caption="Table 36. Service roles - IBM watsonx Code Assistant" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="code-assistant"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table19}
+{: #service-roles-table36}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `code-assistant.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 19. Service actions - IBM watsonx Code Assistant" caption-side="top"}
+{: caption="Table 36. Service actions - IBM watsonx Code Assistant" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="code-assistant"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table19}
+{: #actions-table36}
 
-## Code Engine
-{: #codeengine-roles}
+## Cognos Analytics Dev
+{: #cognos-analytics-dev-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `codeengine` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cognos-analytics-dev` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -1039,52 +1395,57 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 20. Platform roles - Code Engine" caption-side="top"}
+{: caption="Table 37. Platform roles - Cognos Analytics Dev" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="codeengine"}
+{: tab-group="cognos-analytics-dev"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table20}
+{: #platform-roles-table37}
 
 | Role | Description |
 | ----- | :----- |
-| Compute Environment Administrator | Can manage Code Engine Compute Environments. |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+| Analytics Administrator (Dev) | Members have the same access permissions as Analytics Users. They can also access Exploration, Planning Analytics for Microsoft Excel, Cognos Framework Manager, Cognos Cube Designer and Dynamic Query Analyzer, Jupyter Notebook, Transformer, IBM Software Development Kit; and components in the Manage menu, including IBM Cognos Administration. |
+| Analytics User (Dev) | Members can create new reports, dashboards, explorations, stories, new jobs, data server/source connections, or data modules. They can execute reports, respond to prompts, and upload files. They can also access Cognos for Microsoft Office, Cognos Workspace, Cognos Event Studio, Cognos Query Studio, and Cognos Analysis Studio. |
+| Analytics Viewer (Dev) | Members can read public content. For example, they can subscribe to reports and view dashboards and stories. However, members cannot execute public content. Therefore, they cannot schedule reports. |
 {: row-headers}
-{: caption="Table 20. Service roles - Code Engine" caption-side="top"}
+{: caption="Table 37. Service roles - Cognos Analytics Dev" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="codeengine"}
+{: tab-group="cognos-analytics-dev"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table20}
+{: #service-roles-table37}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `codeengine.dashboard.view` | View Dashboard | Administrator, Editor, Operator |
-| `codeengine.tenant.read` | View project details | Manager, Reader, Writer |
-| `codeengine.tenant.entities.create` | Create project contents, such as applications, job definitions, and jobs | Manager, Writer |
-| `codeengine.tenant.entities.update` | Modify existing items already contained by a project, such as applications, jobs, or job definitions.  This does not include the ability to create or delete these items. | Manager, Writer |
-| `codeengine.tenant.entities.delete` | Delete existing items from within a project | Manager, Writer |
-| `codeengine.tenant.entities.read` | List and view existing items within a project | Manager, Reader, Writer |
-| `codeengine.config.read` | Configuration Information Point API access | Service Configuration Reader |
-| `codeengine.computeenvironment.create` | Allows you to create a Code Engine Compute Environment. | Compute Environment Administrator |
-| `codeengine.computeenvironment.delete` | Allows you to delete compute environments. | Compute Environment Administrator |
-| `codeengine.computeenvironment.projects.create` | Allows you to create projects in this compute environment. | Manager, Writer |
-| `codeengine.computeenvironment.projects.delete` | Allows you to delete projects in this compute environment. | Manager, Writer |
-{: caption="Table 20. Service actions - Code Engine" caption-side="top"}
+| `cognos-analytics-dev.dashboard.view` | View Dashboard | Administrator, Analytics Administrator (Dev), Analytics User (Dev), Analytics Viewer (Dev), Editor, Operator |
+| `GET /bi/v1/analytics-user-dummy` | Dummy action for test purposes | Analytics User (Dev) |
+| `GET /bi/v1/analytics-viewer-dummy` | Dummy action for Analytics Viewer | Analytics Viewer (Dev) |
+| `GET /bi/v1/analytics-admin-dummy` | Dummy action for analytics-admin role | Administrator, Analytics Administrator (Dev) |
+{: caption="Table 37. Service actions - Cognos Analytics Dev" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="codeengine"}
+{: tab-group="cognos-analytics-dev"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table20}
+{: #actions-table37}
 
-## Compass
-{: #compass-roles}
+## Compare and Comply-Slot1-dev
+{: #compare-and-comply-slot1-dev-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `compass` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `compare-and-comply-slot1-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 38. Platform roles - Compare and Comply-Slot1-dev" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="compare-and-comply-slot1-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table38}
 
 | Role | Description |
 | ----- | :----- |
@@ -1092,24 +1453,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 21. Service roles - Compass" caption-side="top"}
+{: caption="Table 38. Service roles - Compare and Comply-Slot1-dev" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="compass"}
+{: tab-group="compare-and-comply-slot1-dev"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table21}
+{: #service-roles-table38}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `compass.dataprotection.view` |  | Manager, Reader, Writer |
-| `compass.dataprotection.operate` |  | Manager, Writer |
-| `compass.dataprotection.administer` |  | Manager |
-{: caption="Table 21. Service actions - Compass" caption-side="top"}
+| `compare-and-comply-slot1-dev.dashboard.view` |  | Administrator, Editor, Operator |
+| `GET /compare-and-comply-slot1` |  | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+{: caption="Table 38. Service actions - Compare and Comply-Slot1-dev" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="compass"}
+{: tab-group="compare-and-comply-slot1-dev"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table21}
+{: #actions-table38}
 
 ## IBM Cloud Compliance and Security Center
 {: #compliance-roles}
@@ -1123,12 +1483,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 22. Platform roles - IBM Cloud Compliance and Security Center" caption-side="top"}
+{: caption="Table 39. Platform roles - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="compliance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table22}
+{: #platform-roles-table39}
 
 | Role | Description |
 | ----- | :----- |
@@ -1137,12 +1497,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 22. Service roles - IBM Cloud Compliance and Security Center" caption-side="top"}
+{: caption="Table 39. Service roles - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="compliance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table22}
+{: #service-roles-table39}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1235,65 +1595,24 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.scans-update` | Update Scans | Administrator, Editor |
 | `compliance.posture-management.scans-delete` | Delete Scans | Administrator, Editor |
 | `compliance.posture-management.reports-read` | Read Scan Results and Reports | Administrator, Editor, Manager, Operator, Reader, Writer |
+| `compliance.posture-management.provider-data-write` | Ingest Data from Providers | Administrator, Data Provider, Editor, Manager, Operator, Writer |
 | `compliance.posture-management.profiles-compare` | Compare profiles | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `compliance.posture-management.attachments-upgrade` | Upgrade attachments | Administrator, Editor, Manager, Writer |
-| `compliance.posture-management.provider-data-write` | Ingest Data from Providers | Administrator, Data Provider, Editor, Manager, Operator, Writer |
-| `compliance.targets.read` | View Targets | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
-| `compliance.targets.create` | Create Target | Administrator, Editor, Manager, Operator, Writer |
-| `compliance.targets.update` | Update Target | Administrator, Editor, Manager, Operator, Writer |
-| `compliance.targets.delete` | Delete Target | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.posture-management.reports-create` | Create Reports | Administrator, Editor |
 | `compliance.scopes.create` | Create a scope | Administrator, Editor, Manager, Operator, Writer |
 | `compliance.scopes.delete` | Delete a scope | Administrator, Editor, Manager, Operator, Writer |
 | `compliance.scopes.read` | View scopes | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `compliance.scopes.update` | Edit a scope | Administrator, Editor, Manager, Operator, Writer |
-{: caption="Table 22. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
+| `compliance.targets.read` | View Targets | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.targets.create` | Create Target | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.targets.update` | Update Target | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.targets.delete` | Delete Target | Administrator, Editor, Manager, Operator, Writer |
+{: caption="Table 39. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table22}
-
-## Consult with IBM Cloud Garage
-{: #consult-with-icg-wes-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `consult-with-icg-wes` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 23. Platform roles - Consult with IBM Cloud Garage" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="consult-with-icg-wes"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table23}
-
-| Role | Description |
-| ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
-{: row-headers}
-{: caption="Table 23. Service roles - Consult with IBM Cloud Garage" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="consult-with-icg-wes"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table23}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `consult-with-icg-wes.dashboard.view` | The ability to view your provisioned Consult with IBM Garage services in the dashboard. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
-{: caption="Table 23. Service actions - Consult with IBM Cloud Garage" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="consult-with-icg-wes"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table23}
+{: #actions-table39}
 
 ## Container Registry
 {: #container-registry-roles}
@@ -1307,16 +1626,16 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 24. Service roles - Container Registry" caption-side="top"}
+{: caption="Table 40. Service roles - Container Registry" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="container-registry"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table24}
+{: #service-roles-table40}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `container-registry.exemption.manager` | Create an exemption for a security issue. Delete an exemption for a security issue. | Manager |
+| `container-registry.exemption.manager` | Create an exemption for a security issue. List your exemptions for security issues. Delete an exemption for a security issue. List the types of security issues that you can exempt. | Manager |
 | `container-registry.image.push` | Push a container image. Sign a container image. Import IBM software that is downloaded from IBM Passport Advantage Online. Restore a deleted container image from the trash. Create a new container image that refers to a source image. | Manager, Writer |
 | `container-registry.image.pull` | Pull a container image. Inspect the signature for a container image. Create a new image that refers to a source image. | Manager, Reader, Writer |
 | `container-registry.namespace.create` | Add a namespace. | Manager |
@@ -1324,7 +1643,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `container-registry.image.delete` | Delete one or more container images. Remove a tag, or tags, from each specified container image in IBM Cloud Container Registry. Delete the signature for a container image. Clean up your namespaces by retaining only images that meet your criteria. Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Writer |
 | `container-registry.namespace.list` | List your namespaces. | Manager, Reader |
 | `container-registry.image.list` | List your container images. Display the container images that are in the trash. | Manager, Reader, Service Configuration Reader |
-| `container-registry.image.vulnerabilities` | View a vulnerability assessment report for your container image. | Manager, Reader, Service Configuration Reader |
 | `container-registry.image.inspect` | Display details about a specific container image. | Manager, Reader |
 | `container-registry.quota.get` | Display your current quotas for traffic and storage, and usage information against those quotas. | Manager, Reader, Writer |
 | `container-registry.quota.set` | Modify the specified quota. | Manager |
@@ -1339,15 +1657,118 @@ Review the available platform and service roles and the actions mapped to each t
 | `container-registry.exemption.list` | List your exemptions for security issues.  List the types of security issues that you can exempt. | Manager, Reader |
 | `container-registry.settings.get` | Get Account Settings, such as whether platform metrics are enabled | Manager, Reader, Writer |
 | `container-registry.settings.set` | Set Account Settings, such as whether platform metrics are enabled | Manager |
-| `container-registry.config.read` | Configuration Information Point API access | Service Configuration Reader |
-{: caption="Table 24. Service actions - Container Registry" caption-side="top"}
+{: caption="Table 40. Service actions - Container Registry" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="container-registry"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table24}
+{: #actions-table40}
 
-## Kubernetes Service
+## Container Registry (DEV)
+{: #container-registry-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `container-registry-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 41. Service roles - Container Registry (DEV)" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="container-registry-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table41}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `container-registry-dev.exemption.manager` | Create an exemption for a security issue. Delete an exemption for a security issue. | Manager |
+| `container-registry-dev.image.push` | Push a container image. Sign a container image. Import IBM software that is downloaded from IBM Passport Advantage Online. Restore a deleted container image from the trash. Create a new container image that refers to a source image. | Manager, Writer |
+| `container-registry-dev.image.pull` | Pull a container image. Inspect the signature for a container image. Create a new image that refers to a source image. | Manager, Reader, Writer |
+| `container-registry-dev.namespace.create` | Add a namespace. | Manager |
+| `container-registry-dev.namespace.delete` | Remove a namespace. | Manager |
+| `container-registry-dev.image.delete` | Delete one or more container images. Remove a tag, or tags, from each specified container image in IBM Cloud Container Registry. Delete the signature for a container image. Clean up your namespaces by retaining only images that meet your criteria. Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Writer |
+| `container-registry-dev.namespace.list` | List your namespaces. | Manager, Reader |
+| `container-registry-dev.image.list` | List your container images. Display the container images that are in the trash. | Manager, Reader, Service Configuration Reader |
+| `container-registry-dev.image.vulnerabilities` | View a vulnerability assessment report for your container image. | Manager, Reader, Service Configuration Reader |
+| `container-registry-dev.image.inspect` | Display details about a specific container image. | Manager, Reader |
+| `container-registry-dev.quota.get` | Display your current quotas for traffic and storage, and usage information against those quotas. | Manager, Reader, Writer |
+| `container-registry-dev.quota.set` | Modify the specified quota. | Manager |
+| `container-registry-dev.plan.get` | Display your pricing plan. | Manager |
+| `container-registry-dev.plan.set` | Upgrade to the standard plan. | Manager |
+| `container-registry-dev.auth.get` | Get Auth Configuration, such as whether IAM policy enforcement is enabled | Manager, Reader, Writer |
+| `container-registry-dev.auth.set` | Enable IAM policy enforcement. | Manager |
+| `container-registry-dev.retention.analyze` | Clean up your namespaces by retaining only container images that meet your criteria. Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Reader |
+| `container-registry-dev.retention.get` | Get an image retention policy. | Manager, Reader |
+| `container-registry-dev.retention.set` | Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Writer |
+| `container-registry-dev.retention.list` | List the image retention policies for your account. | Manager, Reader |
+| `container-registry-dev.exemption.list` | List your exemptions for security issues.  List the types of security issues that you can exempt. | Manager, Reader |
+| `container-registry-dev.settings.get` | Get Account Settings, such as whether platform metrics are enabled | Manager, Reader, Writer |
+| `container-registry-dev.settings.set` | Set Account Settings, such as whether platform metrics are enabled | Manager |
+| `container-registry-dev.config.read` | Configuration Information Point API access | Service Configuration Reader |
+{: caption="Table 41. Service actions - Container Registry (DEV)" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="container-registry-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table41}
+
+## Container Registry PRESTAGE
+{: #container-registry-prestage-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `container-registry-prestage` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 42. Service roles - Container Registry PRESTAGE" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="container-registry-prestage"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table42}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `container-registry-prestage.exemption.manager` | Create an exemption for a security issue. Delete an exemption for a security issue. | Manager |
+| `container-registry-prestage.image.push` | Push a container image. Sign a container image. Import IBM software that is downloaded from IBM Passport Advantage Online. Restore a deleted container image from the trash. Create a new container image that refers to a source image. | Manager, Writer |
+| `container-registry-prestage.image.pull` | Pull a container image. Inspect the signature for a container image. Create a new image that refers to a source image. | Manager, Reader, Writer |
+| `container-registry-prestage.namespace.create` | Add a namespace. | Manager |
+| `container-registry-prestage.namespace.delete` | Remove a namespace. | Manager |
+| `container-registry-prestage.image.delete` | Delete one or more container images. Remove a tag, or tags, from each specified container image in IBM Cloud Container Registry. Delete the signature for a container image. Clean up your namespaces by retaining only images that meet your criteria. Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Writer |
+| `container-registry-prestage.namespace.list` | List your namespaces. | Manager, Reader |
+| `container-registry-prestage.image.list` | List your container images. Display the container images that are in the trash. | Manager, Reader, Service Configuration Reader |
+| `container-registry-prestage.image.vulnerabilities` | View a vulnerability assessment report for your container image. | Manager, Reader, Service Configuration Reader |
+| `container-registry-prestage.image.inspect` | Display details about a specific container image. | Manager, Reader |
+| `container-registry-prestage.quota.get` | Display your current quotas for traffic and storage, and usage information against those quotas. | Manager, Reader, Writer |
+| `container-registry-prestage.quota.set` | Modify the specified quota. | Manager |
+| `container-registry-prestage.plan.get` | Display your pricing plan. | Manager |
+| `container-registry-prestage.plan.set` | Upgrade to the standard plan. | Manager |
+| `container-registry-prestage.auth.get` | Get Auth Configuration, such as whether IAM policy enforcement is enabled | Manager, Reader, Writer |
+| `container-registry-prestage.auth.set` | Enable IAM policy enforcement. | Manager |
+| `container-registry-prestage.retention.analyze` | Clean up your namespaces by retaining only container images that meet your criteria. Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Reader |
+| `container-registry-prestage.retention.get` | Get an image retention policy. | Manager, Reader |
+| `container-registry-prestage.retention.set` | Set a policy to clean up your namespaces by retaining only container images that meet your criteria. | Manager, Writer |
+| `container-registry-prestage.retention.list` | List the image retention policies for your account. | Manager, Reader |
+| `container-registry-prestage.exemption.list` | List your exemptions for security issues.  List the types of security issues that you can exempt. | Manager, Reader |
+| `container-registry-prestage.settings.get` | Get Account Settings, such as whether platform metrics are enabled | Manager, Reader, Writer |
+| `container-registry-prestage.settings.set` | Set Account Settings, such as whether platform metrics are enabled | Manager |
+| `container-registry-prestage.config.read` | Configuration Information Point API access | Service Configuration Reader |
+{: caption="Table 42. Service actions - Container Registry PRESTAGE" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="container-registry-prestage"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table42}
+
+## Kubernetes Cluster
 {: #containers-kubernetes-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `containers-kubernetes` for the service name.
@@ -1359,26 +1780,27 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 25. Platform roles - Kubernetes Service" caption-side="top"}
+{: caption="Table 43. Platform roles - Kubernetes Cluster" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="containers-kubernetes"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table25}
+{: #platform-roles-table43}
 
 | Role | Description |
 | ----- | :----- |
 | Compliance Management | Allows Security and Compliance Center to access your cluster to setup, run, and fetch compliance results. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 25. Service roles - Kubernetes Service" caption-side="top"}
+{: caption="Table 43. Service roles - Kubernetes Cluster" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="containers-kubernetes"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table25}
+{: #service-roles-table43}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1389,12 +1811,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `containers-kubernetes.kube.read` | Users get read access to most Kubernetes resources in the namespace, but not to certain resources like roles, role bindings, or secrets. Corresponds to the RBAC view cluster role, which can be scoped to a namespace. | Reader |
 | `containers-kubernetes.kube.write` | Users get read and write access to most Kubernetes resources in the namespace, but not to certain resources like roles or role bindings. Corresponds to the RBAC edit cluster role, which can be scoped to a namespace. | Writer |
 | `containers-kubernetes.kube.manage` | When scoped to one namespace: Users can read and write to all Kubernetes resources in the namespace, but not to objects that apply across namespaces, the namespace resource quota, or the namespace itself. Corresponds to the RBAC admin cluster role to that namespace. When scoped to all namespaces in the cluster (by leaving the previous namespace field empty): Users can read and write to all Kubernetes resources in all namespaces in the cluster and work with objects that apply across namespaces, like top pods, top nodes, or creating an Ingress resource to make apps publicly available. Corresponds to the RBAC cluster-admin cluster role. | Manager |
-{: caption="Table 25. Service actions - Kubernetes Service" caption-side="top"}
+| `containers-kubernetes.config.read` | Configuration Information Point API access | Service Configuration Reader |
+{: caption="Table 43. Service actions - Kubernetes Cluster" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="containers-kubernetes"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table25}
+{: #actions-table43}
 
 ## Context-Based Restrictions
 {: #context-based-restrictions-roles}
@@ -1407,23 +1830,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 26. Platform roles - Context-Based Restrictions" caption-side="top"}
+{: caption="Table 44. Platform roles - Context-Based Restrictions" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="context-based-restrictions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table26}
+{: #platform-roles-table44}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `context-based-restrictions.account-settings.read` | View context-based restriction account settings | Administrator, Editor, Viewer |
 | `context-based-restrictions.account-settings.update` | Update context-based restriction account settings | Administrator |
-{: caption="Table 26. Service actions - Context-Based Restrictions" caption-side="top"}
+{: caption="Table 44. Service actions - Context-Based Restrictions" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="context-based-restrictions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table26}
+{: #actions-table44}
 
 ## Network Zone Management
 {: #context-based-restrictions.zone-roles}
@@ -1436,12 +1859,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 27. Platform roles - Network Zone Management" caption-side="top"}
+{: caption="Table 45. Platform roles - Network Zone Management" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="context-based-restrictions.zone"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table27}
+{: #platform-roles-table45}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1449,12 +1872,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `context-based-restrictions.zone.read` | Network Zone Read | Administrator, Editor, Viewer |
 | `context-based-restrictions.zone.update` | Network Zone Update | Administrator, Editor |
 | `context-based-restrictions.zone.delete` | Network Zone Delete | Administrator, Editor |
-{: caption="Table 27. Service actions - Network Zone Management" caption-side="top"}
+{: caption="Table 45. Service actions - Network Zone Management" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="context-based-restrictions.zone"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table27}
+{: #actions-table45}
 
 ## Continuous Delivery
 {: #continuous-delivery-roles}
@@ -1466,25 +1889,26 @@ Review the available platform and service roles and the actions mapped to each t
 | Administrator | As an administrator, you can modify the Authorized Users list. |
 | Editor | As an editor, you can create, view, update, change the plan for, and delete instances of the Continuous Delivery service. |
 | Operator | As an operator, you can view instances of the Continuous Delivery service. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 28. Platform roles - Continuous Delivery" caption-side="top"}
+{: caption="Table 46. Platform roles - Continuous Delivery" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="continuous-delivery"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table28}
+{: #platform-roles-table46}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 28. Service roles - Continuous Delivery" caption-side="top"}
+{: caption="Table 46. Service roles - Continuous Delivery" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="continuous-delivery"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table28}
+{: #service-roles-table46}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1492,52 +1916,15 @@ Review the available platform and service roles and the actions mapped to each t
 | `continuous-delivery.instance.add-auth-users` | Add entries to the Authorized Users list on the Manage tab of a Continuous Delivery service instance. | Administrator, Manager, Writer |
 | `continuous-delivery.instance.remove-auth-users` | Remove entries from the Authorized Users list on the Manage tab of a Continuous Delivery service instance. | Administrator, Manager, Writer |
 | `continuous-delivery.instance.config-auth-users` | Configure authorized users. | Administrator, Manager |
-{: caption="Table 28. Service actions - Continuous Delivery" caption-side="top"}
+| `continuous-delivery.settings.read` | View additional settings for the Continuous Delivery service. | Administrator, Editor, Manager, Viewer |
+| `continuous-delivery.settings.update` | Update additional settings for the Continuous Delivery service. | Administrator, Manager |
+| `continuous-delivery.consolidated-auth-users.list` | View the consolidated user list managed by this Continuously Delivery instance. | Administrator, Editor, Operator, Viewer |
+{: caption="Table 46. Service actions - Continuous Delivery" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="continuous-delivery"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table28}
-
-## Converlistics
-{: #converlistics-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `converlistics` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 29. Platform roles - Converlistics" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="converlistics"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table29}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 29. Service roles - Converlistics" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="converlistics"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table29}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `converlistics.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 29. Service actions - Converlistics" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="converlistics"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table29}
+{: #actions-table46}
 
 ## Watson Assistant
 {: #conversation-roles}
@@ -1548,12 +1935,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 30. Platform roles - Watson Assistant" caption-side="top"}
+{: caption="Table 47. Platform roles - Watson Assistant" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="conversation"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table30}
+{: #platform-roles-table47}
 
 | Role | Description |
 | ----- | :----- |
@@ -1563,12 +1950,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Version Maker | As a Version Maker, you will be able to create or delete versions of your assistant. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 30. Service roles - Watson Assistant" caption-side="top"}
+{: caption="Table 47. Service roles - Watson Assistant" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="conversation"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table30}
+{: #service-roles-table47}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1583,17 +1970,68 @@ Review the available platform and service roles and the actions mapped to each t
 | `conversation.assistant.write` | Can rename, edit, or delete an assistant. | Manager, Writer |
 | `conversation.assistant.read` | Can open and view an assistant. | Manager, Reader, Writer |
 | `conversation.logs.read` | Can view skill analytics and access user conversation logs. | Logs Reader, Manager |
-| `conversation.assistant.list` | Can list assistant or skill | Manager, Reader, Viewer, Writer |
-| `conversation.assistant.default` | Default access for Assistant | Manager, Reader, Viewer, Writer |
+| `conversation.assistant.list` | Can list assistant, environment or skill | Manager, Reader, Viewer, Writer |
+| `conversation.assistant.default` | Default access for Assistant | Manager, Reader, Writer |
 | `conversation.environment.write` | Can rename, edit, or delete an environment | Manager, Writer |
 | `conversation.environment.read` | Can open and view an environment | Manager, Reader, Writer |
 | `conversation.release.write` | Can create or delete a Release for an Assistant | Manager, Version Maker, Writer |
-{: caption="Table 30. Service actions - Watson Assistant" caption-side="top"}
+{: caption="Table 47. Service actions - Watson Assistant" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="conversation"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table30}
+{: #actions-table47}
+
+## Watson Assistant.dev
+{: #conversation-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `conversation-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 48. Platform roles - Watson Assistant.dev" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="conversation-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table48}
+
+| Role | Description |
+| ----- | :----- |
+| Logs Reader Dev | As a logs reader, you can view user conversations and analytics. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Version Maker Dev | Version Maker Dev |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 48. Service roles - Watson Assistant.dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="conversation-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table48}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `conversation-dev.skill.write` | Can rename, edit, or delete a skill. | Manager, Writer |
+| `conversation-dev.skill.read` | Can open and view a skill. | Manager, Reader, Writer |
+| `conversation-dev.assistant.write` | Can rename, edit, or delete an assistant | Manager, Writer |
+| `conversation-dev.assistant.read` | Can open and view an assistant | Manager, Reader, Writer |
+| `conversation-dev.logs.read` | Can view skill analytics and access user conversation logs | Logs Reader Dev, Manager |
+| `conversation-dev.assistant.legacy` | Can perform authoring methods for a workspace through v1 APIs. | Manager |
+| `conversation-dev.assistant.list` | Can list assistant, environment or skill. | Manager, Reader, Viewer, Writer |
+| `conversation-dev.assistant.default` | Default access for Assistant | Manager, Reader, Writer |
+| `conversation-dev.environment.write` | Can rename, edit, or delete an environment | Manager, Writer |
+| `conversation-dev.environment.read` | Can open and view an environment | Manager, Reader, Writer |
+| `conversation-dev.release.write` | Can create or delete a Release for an Assistant | Manager, Version Maker Dev, Writer |
+{: caption="Table 48. Service actions - Watson Assistant.dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="conversation-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table48}
 
 ## IBM Cloud Pak for Data
 {: #cp4d-roles}
@@ -1605,29 +2043,32 @@ Review the available platform and service roles and the actions mapped to each t
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 {: row-headers}
-{: caption="Table 31. Platform roles - IBM Cloud Pak for Data" caption-side="top"}
+{: caption="Table 49. Platform roles - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="cp4d"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table31}
+{: #platform-roles-table49}
 
 | Role | Description |
 | ----- | :----- |
-| CloudPak Data Engineer | Create or view governance artifacts. |
+| CloudPak Data Engineer | Create or view governance artifacts |
 | CloudPak Data Quality Analyst | CloudPak Data Quality Analyst |
 | CloudPak Data Scientist | Find data in catalogs and use data in projects. |
+| CloudPak Data Source Administrator | Create data source definitions and see a list of all connections across the account |
+| CloudPak Data Source Creator | Create data source definitions |
 | CloudPak Data Steward | Create or view governance artifacts and curate data into catalogs. |
 | Governance Artifacts Administrator | Manage governance artifacts |
 | Manager | Manage catalogs, governance artifacts, categories, and workflow. |
-| Reporting Administrator | Manage reports on Watson Knowledge Catalog data. |
+| Reporting Administrator | Manage reports on Watson Knowledge Catalog data |
+| Watsonx.data Service Access (For Service to Service Authorization Only) | Watsonx.data Service Access (For Service to Service Authorization Only) |
 {: row-headers}
-{: caption="Table 31. Service roles - IBM Cloud Pak for Data" caption-side="top"}
+{: caption="Table 49. Service roles - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="cp4d"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table31}
+{: #service-roles-table49}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1649,13 +2090,155 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.data-quality-sla-rules.manage` | Manage data quality SLA rules | CloudPak Data Quality Analyst, Manager |
 | `cp4d.data-quality.measure` | Execute data quality rules | CloudPak Data Quality Analyst, Manager |
 | `cp4d.data-quality.drill-down` | Drill down to issue details | CloudPak Data Quality Analyst, Manager |
+| `cp4d.wxd.access` | Watsonx.data Service Access | Watsonx.data Service Access (For Service to Service Authorization Only) |
+| `cp4d.data-source-definitions.create` | Create data source definitions | CloudPak Data Source Creator, Manager |
+| `cp4d.data-source-definitions.manage` | Create data source definitions and see a list of all connections across the account | CloudPak Data Source Administrator, Manager |
 | `cp4d.catalog-assets-to-projects.add` | Users with this permission can add assets from a catalog to a project. Users must also have the Admin or Editor role in the catalog and the project, and must be asset owners or asset members. | Administrator, CloudPak Data Scientist, CloudPak Data Steward, Editor, Manager |
-{: caption="Table 31. Service actions - IBM Cloud Pak for Data" caption-side="top"}
+{: caption="Table 49. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table31}
+{: #actions-table49}
+
+## Cloud Pak for Integration (qa)
+{: #cp4i-qa-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `cp4i-qa` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 50. Platform roles - Cloud Pak for Integration (qa)" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="cp4i-qa"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table50}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 50. Service roles - Cloud Pak for Integration (qa)" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="cp4i-qa"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table50}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `cp4i-qa.dashboard.view` | sample service action description | Administrator, Editor, Operator |
+| `cp4i-qa.remotes.create` | sample service action description | Manager |
+| `cp4i-qa.remotes.read` | sample service action description | Manager, Reader, Writer |
+| `cp4i-qa.remotes.update` | sample service action description | Manager |
+| `cp4i-qa.remotes.delete` | sample service action description | Manager |
+| `cp4i-qa.catalogs.create` | sample service action description | Manager |
+| `cp4i-qa.catalogs.read` | sample service action description | Manager, Reader, Writer |
+| `cp4i-qa.catalogs.delete` | sample service action description | Manager |
+| `cp4i-qa.assets.create` | sample service action description | Manager, Writer |
+| `cp4i-qa.assets.read` | sample service action description | Manager, Reader, Writer |
+| `cp4i-qa.assets.update` | sample service action description | Manager, Writer |
+| `cp4i-qa.assets.delete` | sample service action description | Manager, Writer |
+{: caption="Table 50. Service actions - Cloud Pak for Integration (qa)" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="cp4i-qa"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table50}
+
+## csf-hello-world-andres-dev
+{: #csf-hello-world-andres-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `csf-hello-world-andres-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+| null | null |
+| null | null |
+{: row-headers}
+{: caption="Table 51. Service roles - csf-hello-world-andres-dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="csf-hello-world-andres-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table51}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `GET /csf-hello-world-andres-dev` |  | null, null, null |
+| `PUT /csf-hello-world-andres-dev` |  | null |
+| `POST /csf-hello-world-andres-dev` |  | null |
+| `DELETE /csf-hello-world-andres-dev` |  | null, null |
+{: caption="Table 51. Service actions - csf-hello-world-andres-dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="csf-hello-world-andres-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table51}
+
+## Curtis Test Service
+{: #curtispd-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `curtispd-test` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+{: row-headers}
+{: caption="Table 52. Platform roles - Curtis Test Service" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="curtispd-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table52}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `curtispd-test.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 52. Service actions - Curtis Test Service" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="curtispd-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table52}
+
+## czhen-test
+{: #czhen-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `czhen-test` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 53. Platform roles - czhen-test" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="czhen-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table53}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `czhen-test.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 53. Service actions - czhen-test" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="czhen-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table53}
 
 ## Db2 Warehouse
 {: #dashdb-roles}
@@ -1669,24 +2252,24 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 32. Platform roles - Db2 Warehouse" caption-side="top"}
+{: caption="Table 54. Platform roles - Db2 Warehouse" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="dashdb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table32}
+{: #platform-roles-table54}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 32. Service roles - Db2 Warehouse" caption-side="top"}
+{: caption="Table 54. Service roles - Db2 Warehouse" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="dashdb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table32}
+{: #service-roles-table54}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1802,14 +2385,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `PUT /v5/:platform/deployments/:deployment_id/replication/:id` | Activate/deactivate replication | Administrator, Editor, Operator |
 | `PUT /v5/:platform/deployments/:deployment_id/encryption` | Retrieve wired encryption status | Administrator, Editor, Operator, Viewer |
 | `PUT /v5/:platform/deployments/:deployment_id/encryption/:action` | Enable/disable wired encryption | Administrator, Editor, Operator |
-{: caption="Table 32. Service actions - Db2 Warehouse" caption-side="top"}
+{: caption="Table 54. Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table32}
+{: #actions-table54}
 
-## Db2 on Cloud
+## Db2
 {: #dashdb-for-transactions-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dashdb-for-transactions` for the service name.
@@ -1821,50 +2404,52 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 33. Platform roles - Db2 on Cloud" caption-side="top"}
+{: caption="Table 55. Platform roles - Db2" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="dashdb-for-transactions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table33}
+{: #platform-roles-table55}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 {: row-headers}
-{: caption="Table 33. Service roles - Db2 on Cloud" caption-side="top"}
+{: caption="Table 55. Service roles - Db2" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="dashdb-for-transactions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table33}
+{: #service-roles-table55}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `dashdb-for-transactions.console.access` | Allows users to view the Db2 Console. | Manager |
 | `dashdb-for-transactions.console.manage-users` | Allows management of users for database access such as creating new users or assign and IAM user or service id to a database user. | Administrator, Manager |
 | `dashdb-for-transactions.console.monitor` | Allows viewing of metrics and information that allow you to understand the resources your database is using or workload it is running. | Administrator, Editor, Operator, Viewer |
-| `dashdb-for-transactions.console.clone` | clone operation | Administrator, Editor |
 | `dashdb-for-transactions.console.scale` | scale operation | Administrator, Editor, Operator |
+| `dashdb-for-transactions.console.clone` | clone operation | Administrator, Editor |
 | `dashdb-for-transactions.console.backup` | backup operation | Administrator, Editor, Operator |
 | `dashdb-for-transactions.console.restore` | restore operation | Administrator, Editor, Operator |
 | `dashdb-for-transactions.console.settings` | set configuration | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/configuration` | Get deployment configuration | Administrator, Editor, Operator, Viewer |
 | `dashdb-for-transactions.console.view-settings` | view database settings | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/regions` | Read discover available regions | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/task_infos/:task_id` | Read a Task metadata | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/backups/:backup_id` | Read a backup | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/task_infos` | Read all deployment tasks metadata | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Viewer |
 | `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
 | `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration` | Get deployment configuration | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a group | Administrator, Editor, Operator |
@@ -1896,9 +2481,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/describe_updates` | Get db updates | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db_updates` | Create db update | Administrator, Editor, Operator |
 | `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id/password` | Update password | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/check_updates` | Check deployment for available updates | Administrator, Editor, Operator, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/billable` | Set billable annotation to true | Administrator, Editor, Operator |
 | `PATCH /v4/:platform/deployments/:deployment_id/migrated` | Set migration flag to false | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/check_updates` | Check deployment for available updates | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/dr_take_over` | dr_take_over | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/get_dr` | get_dr | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/resyncs` | resyncs | Administrator, Editor, Operator |
@@ -1953,25 +2538,22 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v5/:platform/deployments/:deployment_id/configure_sets` | Configures db2set parameters | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/configure_sets` | Retrieves configured parameters | Administrator, Editor, Operator, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/configure_sets` | Retrieves configured parameters | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/task_infos` | Read all deployment tasks metadata | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/task_infos/:task_id` | Read a Task metadata
- | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/rebalance` | rebalance tablespaces | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/reducemax` | reclaim disk space | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/configure_iks_worker` | Configure bare metal and dedicated virtual machine | Administrator, Editor, Operator, Viewer |
-| `POST /hyperwarp_messages` | hyperwarp subscriber endpoint | Administrator, Editor, Operator |
+| `POST /v4/:platform/deployments/:deployment_id/hardware` | Configures the instance to be bare metal or a dedicated virtual machine | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/hibernate` | Hibernate the target instance | Administrator, Editor, Operator |
 | `DELETE /v4/:platform/deployments/:deployment_id/hibernate` | Reactivate the target hibernating instance. | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/db2audit/version` | Retrieve Db2 audit version | Administrator, Editor, Operator, Viewer |
+| `POST /hyperwarp_messages` | contact hyperwarp endpoint | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/privatelink_allowed_principals` | Add or remove from allow list for aws private link | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/db2audit/version` | Retrieve db2 audit version | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/install_v3` | Installs Db2 audit v3 | Administrator, Editor, Operator, Viewer |
+| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/schedule_scaling` | schedule scaling | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/process_report` | db2audit process report | Administrator, Editor, Operator, Viewer |
-{: caption="Table 33. Service actions - Db2 on Cloud" caption-side="top"}
+{: caption="Table 55. Service actions - Db2" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table33}
+{: #actions-table55}
 
 ## IBM Data Product Hub
 {: #data-product-hub-roles}
@@ -1985,34 +2567,34 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 34. Platform roles - IBM Data Product Hub" caption-side="top"}
+{: caption="Table 56. Platform roles - IBM Data Product Hub" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="data-product-hub"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table34}
+{: #platform-roles-table56}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you can view service instances and additionally can create the data product catalog and manage users on the catalog. |
 {: row-headers}
-{: caption="Table 34. Service roles - IBM Data Product Hub" caption-side="top"}
+{: caption="Table 56. Service roles - IBM Data Product Hub" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="data-product-hub"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table34}
+{: #service-roles-table56}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `data-product-hub.dashboard.view` | The ability to view the IBM Data Product Exchange dashboard | Administrator, Editor, Manager, Operator, Viewer |
+| `data-product-hub.dashboard.view` | The ability to view the IBM Data Product Hub dashboard | Administrator, Editor, Manager, Operator, Viewer |
 | `data-product-hub.catalog.manage` | The ability to create a data product catalog | Manager |
-{: caption="Table 34. Service actions - IBM Data Product Hub" caption-side="top"}
+{: caption="Table 56. Service actions - IBM Data Product Hub" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="data-product-hub"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table34}
+{: #actions-table56}
 
 ## IBM Data Replication on Cloud
 {: #data-replication-roles}
@@ -2021,46 +2603,28 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 35. Platform roles - IBM Data Replication on Cloud" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="data-replication"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table35}
-
-| Role | Description |
-| ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 35. Service roles - IBM Data Replication on Cloud" caption-side="top"}
+{: caption="Table 57. Service roles - IBM Data Replication on Cloud" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="data-replication"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table35}
+{: #service-roles-table57}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `data-replication.replications.retrieve` | data-replication.replications.retrieve | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
-| `data-replication.replications.create` | Create replication | Manager, Writer |
-| `data-replication.replications.operate` | Operate Replication | Manager, Writer |
-| `data-replication.replications.delete` | Delete Replication | Manager, Writer |
-| `data-replication.replications.update` | Update Replication | Manager, Writer |
-{: caption="Table 35. Service actions - IBM Data Replication on Cloud" caption-side="top"}
+| `data-replication.replications.retrieve` | View dashboard | Manager, Reader, Writer |
+{: caption="Table 57. Service actions - IBM Data Replication on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="data-replication"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table35}
+{: #actions-table57}
 
-## Watson Studio
+## Data Science Experience
 {: #data-science-experience-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `data-science-experience` for the service name.
@@ -2075,12 +2639,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | null |
 {: row-headers}
-{: caption="Table 37. Platform roles - Data Store for Memcache" caption-side="top"}
+{: caption="Table 59. Platform roles - Data Store for Memcache" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="data-store-for-memcache"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table37}
+{: #platform-roles-table59}
 
 | Role | Description |
 | ----- | :----- |
@@ -2088,12 +2652,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | null |
 | Writer | null |
 {: row-headers}
-{: caption="Table 37. Service roles - Data Store for Memcache" caption-side="top"}
+{: caption="Table 59. Service roles - Data Store for Memcache" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="data-store-for-memcache"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table37}
+{: #service-roles-table59}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -2103,12 +2667,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `data-store-for-memcache.keys.delete` |  | Manager |
 | `data-store-for-memcache.keys.encode` |  | Manager, Writer |
 | `data-store-for-memcache.keys.decode` |  | Manager, Writer |
-{: caption="Table 37. Service actions - Data Store for Memcache" caption-side="top"}
+{: caption="Table 59. Service actions - Data Store for Memcache" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="data-store-for-memcache"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table37}
+{: #actions-table59}
 
 ## Data Virtualization
 {: #data-virtualization-roles}
@@ -2122,36 +2686,36 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 38. Platform roles - Data Virtualization" caption-side="top"}
+{: caption="Table 60. Platform roles - Data Virtualization" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="data-virtualization"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table38}
+{: #platform-roles-table60}
 
 | Role | Description |
 | ----- | :----- |
-| DataAccess (For Service to Service Authorization Only) | Used for Service to Service authorization.  Do not choose this role for service credential generation. |
+| DataAccess (For Service to Service Authorization Only) | DataAccess |
 | Manager (For generated service credentials only) | This role is only enabled for generated service credentials.  Using this role will grant the generated Service ID Manager access. |
 {: row-headers}
-{: caption="Table 38. Service roles - Data Virtualization" caption-side="top"}
+{: caption="Table 60. Service roles - Data Virtualization" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="data-virtualization"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table38}
+{: #service-roles-table60}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
+| `data-virtualization.data.access` | Allows data access for other services. | DataAccess (For Service to Service Authorization Only) |
 | `data-virtualization.console.manage-users` | Allows management of users for database access such as creating new users or assign and IAM user or service id to a database user. | Administrator |
 | `data-virtualization.console.monitor` | Allows viewing of metrics and information that allow you to understand the resources your database is using or workload it is running. | Administrator, Editor, Manager (For generated service credentials only), Operator, Viewer |
-| `data-virtualization.data.access` | Allows data access for other services. | DataAccess (For Service to Service Authorization Only) |
 | `data-virtualization.console.scale` | scale operation | Administrator, Editor, Manager (For generated service credentials only), Operator |
 | `data-virtualization.console.backup` | backup operation | Administrator, Editor, Operator |
 | `data-virtualization.console.restore` | restore operation | Administrator, Editor, Operator |
-| `data-virtualization.console.settings` | set configuration | Administrator, Editor, Manager (For generated service credentials only), Operator |
+| `data-virtualization.console.settings` | set configuration | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/configuration` | Get deployment configuration | Administrator, Editor, Operator, Viewer |
-| `data-virtualization.console.view-settings` | view database settings | Administrator, Editor, Manager (For generated service credentials only), Operator, Viewer |
+| `data-virtualization.console.view-settings` | view database settings | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/regions` | Read discover available regions | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Viewer |
@@ -2192,12 +2756,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/describe_updates` | Get db updates | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db_updates` | Create db update | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/check_updates` | Check deployment for available updates | Administrator, Editor, Operator, Viewer |
-{: caption="Table 38. Service actions - Data Virtualization" caption-side="top"}
+| `GET /v4/:platform/internal_identifiers/:instance_id` | Read pre instance id | Administrator, Editor, Operator, Viewer |
+{: caption="Table 60. Service actions - Data Virtualization" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="data-virtualization"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table38}
+{: #actions-table60}
 
 ## Netezza Performance Server
 {: #data-warehouse-roles}
@@ -2211,1297 +2776,40 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 39. Platform roles - Netezza Performance Server" caption-side="top"}
+{: caption="Table 61. Platform roles - Netezza Performance Server" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="data-warehouse"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table39}
+{: #platform-roles-table61}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 39. Service roles - Netezza Performance Server" caption-side="top"}
+{: caption="Table 61. Service roles - Netezza Performance Server" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="data-warehouse"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table39}
+{: #service-roles-table61}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `data-warehouse.dashboard.view` | The capability to view the service instance details page | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
-| `data-warehouse.database.connect` | The  action describes who can connect to the database | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `data-warehouse.dashboard.view` | The capability to view the service instance details page | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
+| `data-warehouse.database.connect` | The  action describes who can connect to the database | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
 | `data-warehouse.database.admin` | The role defines people with admin privileges on the database | Administrator, Manager |
-{: caption="Table 39. Service actions - Netezza Performance Server" caption-side="top"}
+{: caption="Table 61. Service actions - Netezza Performance Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="data-warehouse"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table39}
+{: #actions-table61}
 
-## Databases for DataStax
-{: #databases-for-cassandra-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-cassandra` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 40. Platform roles - Databases for DataStax" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-cassandra"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table40}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 40. Service roles - Databases for DataStax" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-cassandra"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table40}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 40. Service actions - Databases for DataStax" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-cassandra"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table40}
-
-## Databases for Elasticsearch
-{: #databases-for-elasticsearch-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-elasticsearch` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 41. Platform roles - Databases for Elasticsearch" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-elasticsearch"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table41}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 41. Service roles - Databases for Elasticsearch" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-elasticsearch"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table41}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/elasticsearch/file_syncs` | Create elasticsearch file sync | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/elasticsearch/file_syncs` | Create elasticsearch file sync | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `deployment-elasticsearch-file-syncs.create` | Create elasticsearch file sync | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 41. Service actions - Databases for Elasticsearch" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-elasticsearch"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table41}
-
-## Databases for EDB
-{: #databases-for-enterprisedb-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-enterprisedb` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 42. Platform roles - Databases for EDB" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-enterprisedb"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table42}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 42. Service roles - Databases for EDB" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-enterprisedb"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table42}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `databases-for-enterprisedb.emp.allow` | Allow access to EnterpriseDB Migration Portal | Administrator, Editor, Operator, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 42. Service actions - Databases for EDB" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-enterprisedb"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table42}
-
-## Databases for etcd
-{: #databases-for-etcd-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-etcd` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 43. Platform roles - Databases for etcd" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-etcd"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table43}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 43. Service roles - Databases for etcd" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-etcd"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table43}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 43. Service actions - Databases for etcd" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-etcd"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table43}
-
-## Databases for MongoDB
-{: #databases-for-mongodb-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-mongodb` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 44. Platform roles - Databases for MongoDB" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-mongodb"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table44}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 44. Service roles - Databases for MongoDB" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-mongodb"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table44}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 44. Service actions - Databases for MongoDB" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-mongodb"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table44}
-
-## Databases for MySQL
-{: #databases-for-mysql-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-mysql` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 45. Platform roles - Databases for MySQL" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-mysql"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table45}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 45. Service roles - Databases for MySQL" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-mysql"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table45}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 45. Service actions - Databases for MySQL" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-mysql"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table45}
-
-## Databases for PostgreSQL
-{: #databases-for-postgresql-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-postgresql` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 46. Platform roles - Databases for PostgreSQL" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-postgresql"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table46}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 46. Service roles - Databases for PostgreSQL" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-postgresql"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table46}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/postgresql/logical_replication_slots` | Create postgresql logical replication slot | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/postgresql/logical_replication_slots/:name` | Delete postgresql logical replication slot | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/postgresql/logical_replication_slots` | Create postgresql logical replication slot | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/postgresql/logical_replication_slots/:name` | Delete postgresql logical replication slot | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `deployment-postgresql-logical-replication-slot.create` | Create postgresql logical replication slot | Administrator, Editor, Operator |
-| `deployment-postgresql-logical-replication-slot.delete` | Delete postgresql logical replication slot | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 46. Service actions - Databases for PostgreSQL" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-postgresql"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table46}
-
-## Databases for Redis
-{: #databases-for-redis-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-redis` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 47. Platform roles - Databases for Redis" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-redis"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table47}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 47. Service roles - Databases for Redis" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-redis"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table47}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 47. Service actions - Databases for Redis" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-redis"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table47}
-
-## IBM Knowledge Catalog for Watson Data and AI
+## IBM Data Catalog for Watson Data Platform
 {: #datacatalog-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `datacatalog` for the service name.
@@ -3510,37 +2818,51 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 48. Platform roles - IBM Knowledge Catalog for Watson Data and AI" caption-side="top"}
+{: caption="Table 62. Platform roles - IBM Data Catalog for Watson Data Platform" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table48}
+{: #platform-roles-table62}
 
 | Role | Description |
 | ----- | :----- |
+| Business Analyst | Business Analyst role |
+| Data Engineer - do not select | Select Data Engineer Role from the IBM Cloud Pak for Data service |
+| Data Quality Analyst - do not select | Select Roles from the IBM Cloud Pak for Data service |
+| Data Scientist - do not select | Select Data Scientist Role from the IBM Cloud Pak for Data service |
+| Data Steward - do not select | Select Data Steward Role from the IBM Cloud Pak for Data service |
+| Developer - do not select | Select Roles from the IBM Cloud Pak for Data service |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Watsonx.data Service Access (For Service to Service Authorization Only) for IKC | Watsonx.data Service Access (For Service to Service Authorization Only) for IKC |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 48. Service roles - IBM Knowledge Catalog for Watson Data and AI" caption-side="top"}
+{: caption="Table 62. Service roles - IBM Data Catalog for Watson Data Platform" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table48}
+{: #service-roles-table62}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `datacatalog` | Do not use - Please select from the IBM Cloud Pak for Data service | Administrator |
 | `datacatalog.catalog.create` | Do not use - Please select from the IBM Cloud Pak for Data service | Administrator, Manager, Writer |
+| `datacatalog.catalog.access` | Access catalogs - do not use | Business Analyst, Data Engineer - do not select, Data Quality Analyst - do not select, Data Scientist - do not select, Data Steward - do not select, Developer - do not select, Manager |
+| `datacatalog.governance-workflows.manage` | Manage governance workflows | Manager |
+| `datacatalog.governance-categories.manage` | Manage governance categories | Manager |
+| `datacatalog.metadata-import.manage` | Import metadata | Data Engineer - do not select, Data Quality Analyst - do not select, Data Steward - do not select, Manager |
+| `datacatalog.governance-artifacts.author` | Manage data protection rules | Data Engineer - do not select, Data Quality Analyst - do not select, Data Steward - do not select, Manager |
+| `datacatalog.governance-artifacts.view` | Access governance artifacts | Business Analyst, Data Steward - do not select, Manager |
+| `datacatalog.services.provision` | Create service instances | Data Engineer - do not select, Developer - do not select |
+| `datacatalog.catalog.manage` | Manage catalogs | Manager |
 | `datacatalog.data.access` | Watsonx.data Service Access to IKC | Watsonx.data Service Access (For Service to Service Authorization Only) for IKC |
-{: caption="Table 48. Service actions - IBM Knowledge Catalog for Watson Data and AI" caption-side="top"}
+{: caption="Table 62. Service actions - IBM Data Catalog for Watson Data Platform" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table48}
+{: #actions-table62}
 
 ## DataStage
 {: #datastage-roles}
@@ -3553,119 +2875,110 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 49. Platform roles - DataStage" caption-side="top"}
+{: caption="Table 63. Platform roles - DataStage" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="datastage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table49}
+{: #platform-roles-table63}
 
 | Role | Description |
 | ----- | :----- |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 {: row-headers}
-{: caption="Table 49. Service roles - DataStage" caption-side="top"}
+{: caption="Table 63. Service roles - DataStage" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="datastage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table49}
+{: #service-roles-table63}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `datastage.dashboard.view` | DataStage dashboard view | Administrator, Editor, Operator, Reader |
-{: caption="Table 49. Service actions - DataStage" caption-side="top"}
+{: caption="Table 63. Service actions - DataStage" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="datastage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table49}
+{: #actions-table63}
 
-## Direct Link
-{: #directlink-roles}
+## Cloud Application
+{: #devex-base-application-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `devex-base-application` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| null | null |
+| null | null |
+| null | null |
 {: row-headers}
-{: caption="Table 50. Service roles - Direct Link" caption-side="top"}
+{: caption="Table 64. Service roles - Cloud Application" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="directlink"}
+{: tab-group="devex-base-application"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table50}
+{: #service-roles-table64}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `directlink.config.read` | Configuration Information Point API access | Service Configuration Reader |
-{: caption="Table 50. Service actions - Direct Link" caption-side="top"}
+| `devex-base-application.keys.create` |  | null |
+| `devex-base-application.keys.read` |  | null, null, null |
+| `devex-base-application.keys.update` |  | null, null |
+| `devex-base-application.keys.delete` |  | null |
+| `devex-base-application.keys.encode` |  | null, null |
+| `devex-base-application.keys.decode` |  | null, null |
+{: caption="Table 64. Service actions - Cloud Application" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="directlink"}
+{: tab-group="devex-base-application"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table50}
+{: #actions-table64}
 
-## Direct Link Connect
-{: #directlink.connect-roles}
+## DevOps Insights
+{: #devopsinsights-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink.connect` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `devopsinsights` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+| null | null |
+| null | null |
+| null | null |
 {: row-headers}
-{: caption="Table 51. Platform roles - Direct Link Connect" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="directlink.connect"}
+{: caption="Table 65. Service roles - DevOps Insights" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="devopsinsights"}
 {: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table51}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table65}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `directlink.connect.view` | View | Administrator, Editor, Operator, Viewer |
-| `directlink.connect.edit` | Edit | Administrator, Editor |
-{: caption="Table 51. Service actions - Direct Link Connect" caption-side="top"}
+| `devopsinsights.notes.read` |  | null, null, null |
+| `devopsinsights.notes.write` |  | null, null |
+| `devopsinsights.notes.delete` |  | null, null |
+| `devopsinsights.occurrences.read` |  | null, null, null |
+| `devopsinsights.occurrences.write` |  | null, null |
+| `devopsinsights.occurrences.delete` |  | null, null |
+| `devopsinsights.notes.read-other` |  | null |
+| `devopsinsights.notes.write-other` |  | null |
+| `devopsinsights.notes.delete-other` |  | null |
+| `devopsinsights.occurrences.read-other` |  | null |
+| `devopsinsights.occurrences.write-other` |  | null |
+| `devopsinsights.occurrences.delete-other` |  | null |
+| `devopsinsights.data.query` |  | null, null, null |
+| `devopsinsights.data.query-other` |  | null |
+| `devopsinsights.data.manage` |  | null, null |
+| `devopsinsights.data.manage-other` |  | null |
+| `devopsinsights.microservice.admin-access` |  | null |
+{: caption="Table 65. Service actions - DevOps Insights" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="directlink.connect"}
+{: tab-group="devopsinsights"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table51}
-
-## Direct Link Dedicated
-{: #directlink.dedicated-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `directlink.dedicated` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 52. Platform roles - Direct Link Dedicated" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="directlink.dedicated"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table52}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `directlink.dedicated.view` | View | Administrator, Editor, Operator, Viewer |
-| `directlink.dedicated.edit` | Edit | Administrator, Editor |
-{: caption="Table 52. Service actions - Direct Link Dedicated" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="directlink.dedicated"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table52}
+{: #actions-table65}
 
 ## Discovery
 {: #discovery-roles}
@@ -3678,12 +2991,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 53. Service roles - Discovery" caption-side="top"}
+{: caption="Table 66. Service roles - Discovery" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="discovery"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table53}
+{: #service-roles-table66}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3692,17 +3005,17 @@ Review the available platform and service roles and the actions mapped to each t
 | `DELETE /discovery` | Delete resources | Manager, Writer |
 | `PATCH /discovery` | Make partial update to resources | Manager, Writer |
 | `GET /discovery` | Retrieve resources | Manager, Reader, Writer |
-{: caption="Table 53. Service actions - Discovery" caption-side="top"}
+{: caption="Table 66. Service actions - Discovery" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="discovery"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table53}
+{: #actions-table66}
 
-## DNS Services
-{: #dns-svcs-roles}
+## test
+{: #dwt-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dns-svcs` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dwt` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -3710,47 +3023,50 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 54. Platform roles - DNS Services" caption-side="top"}
+{: caption="Table 67. Platform roles - test" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="dns-svcs"}
+{: tab-group="dwt"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table54}
-
-| Role | Description |
-| ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
-{: row-headers}
-{: caption="Table 54. Service roles - DNS Services" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="dns-svcs"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table54}
+{: #platform-roles-table67}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `dns-svcs.dashboard.view` |  | Administrator, Editor, Operator |
-| `dns-svcs.zones.read` |  | Manager, Reader, Writer |
-| `dns-svcs.zones.update` |  | Manager, Writer |
-| `dns-svcs.zones.manage` |  | Manager |
-| `dns-svcs.resource-records.manage` |  | Manager |
-| `dns-svcs.resource-records.update` |  | Manager, Writer |
-| `dns-svcs.resource-records.read` |  | Manager, Reader, Writer |
-| `dns-svcs.acls.manage` |  | Manager |
-| `dns-svcs.acls.update` |  | Manager, Writer |
-| `dns-svcs.acls.read` |  | Manager, Reader, Writer |
-| `dns-svcs.permitted-networks.manage` |  | Manager |
-| `dns-svcs.permitted-networks.update` |  | Manager, Writer |
-| `dns-svcs.permitted-networks.read` |  | Manager, Reader, Writer |
-{: caption="Table 54. Service actions - DNS Services" caption-side="top"}
+| `dwt.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 67. Service actions - test" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="dns-svcs"}
+{: tab-group="dwt"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table54}
+{: #actions-table67}
+
+## dwt-test-service
+{: #dwttest-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dwttest` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 68. Platform roles - dwt-test-service" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="dwttest"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table68}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `dwttest.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 68. Service actions - dwt-test-service" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="dwttest"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table68}
 
 ## Dynamic Dashboard Embedded
 {: #dynamic-dashboard-embedded-roles}
@@ -3763,29 +3079,78 @@ Review the available platform and service roles and the actions mapped to each t
 | null | null |
 | null | null |
 {: row-headers}
-{: caption="Table 55. Service roles - Dynamic Dashboard Embedded" caption-side="top"}
+{: caption="Table 69. Service roles - Dynamic Dashboard Embedded" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="dynamic-dashboard-embedded"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table55}
+{: #service-roles-table69}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `dynamic-dashboard-embedded.instances.write` |  | null, null, null |
-{: caption="Table 55. Service actions - Dynamic Dashboard Embedded" caption-side="top"}
+{: caption="Table 69. Service actions - Dynamic Dashboard Embedded" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dynamic-dashboard-embedded"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table55}
+{: #actions-table69}
 
-## ibm-cloud-for-education
-{: #education-roles}
+## DDE (Dev)
+{: #dynamic-dashboard-embedded-dev-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `education` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `dynamic-dashboard-embedded-dev` for the service name.
 
 No supported roles.
+## Enigmatic Secret Manager
+{: #enigmatic-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `enigmatic` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 71. Platform roles - Enigmatic Secret Manager" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="enigmatic"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table71}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 71. Service roles - Enigmatic Secret Manager" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="enigmatic"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table71}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `enigmatic.dashboard.view` | View Dashboard | Administrator, Editor, Operator |
+| `enigmatic.secret.read-meta` | Read Secret Metadata | Manager, Reader, Viewer, Writer |
+| `enigmatic.secret.list` | List Secrets | Manager, Reader, Viewer, Writer |
+| `enigmatic.secret.read-data` | Read Secret Data | Reader |
+| `enigmatic.secret.create` | Create Secrets | Manager, Writer |
+| `enigmatic.secret.update` | Update and Rotate Secrets and Versions | Manager, Writer |
+| `enigmatic.secret.delete` | Delete Secrets | Manager |
+| `enigmatic.secret.restore` | Restore Secrets | Manager |
+{: caption="Table 71. Service actions - Enigmatic Secret Manager" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="enigmatic"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table71}
+
 ## IBM Cloud Platform Enterprise Service
 {: #enterprise-roles}
 
@@ -3798,23 +3163,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | Operators can view the enterprise, account groups, and accounts. |
 | Viewer | Viewers can view the enterprise, account groups, and accounts. |
 {: row-headers}
-{: caption="Table 57. Platform roles - IBM Cloud Platform Enterprise Service" caption-side="top"}
+{: caption="Table 72. Platform roles - IBM Cloud Platform Enterprise Service" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="enterprise"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table57}
+{: #platform-roles-table72}
 
 | Role | Description |
 | ----- | :----- |
 | Usage Report Viewer | Usage report viewers can view the usage reports for the entire enterprise, an account group and its accounts, or a specific account. |
 {: row-headers}
-{: caption="Table 57. Service roles - IBM Cloud Platform Enterprise Service" caption-side="top"}
+{: caption="Table 72. Service roles - IBM Cloud Platform Enterprise Service" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="enterprise"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table57}
+{: #service-roles-table72}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3852,12 +3217,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `enterprise.account.attach-templates` |  | Administrator |
 | `enterprise.account.detach-templates` |  | Administrator |
 | `enterprise.account.update-templates` |  | Administrator |
-{: caption="Table 57. Service actions - IBM Cloud Platform Enterprise Service" caption-side="top"}
+{: caption="Table 72. Service actions - IBM Cloud Platform Enterprise Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="enterprise"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table57}
+{: #actions-table72}
 
 ## License and Entitlement
 {: #entitlement-roles}
@@ -3868,24 +3233,27 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 58. Platform roles - License and Entitlement" caption-side="top"}
+{: caption="Table 73. Platform roles - License and Entitlement" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="entitlement"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table58}
+{: #platform-roles-table73}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `entitlement.entitlement.write` |  | Administrator, Editor |
 | `entitlement.entitlement.write-admin` |  | Administrator |
-{: caption="Table 58. Service actions - License and Entitlement" caption-side="top"}
+| `entitlement.entitlement.read` | Read access to entitlements. | Administrator, Editor, Operator, Viewer |
+{: caption="Table 73. Service actions - License and Entitlement" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="entitlement"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table58}
+{: #actions-table73}
 
 ## Event Notifications
 {: #event-notifications-roles}
@@ -3898,19 +3266,19 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 59. Platform roles - Event Notifications" caption-side="top"}
+{: caption="Table 74. Platform roles - Event Notifications" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="event-notifications"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table59}
+{: #platform-roles-table74}
 
 | Role | Description |
 | ----- | :----- |
 | Channel Editor | Custom role to handle subscription activities |
 | Custom Email Status Reporter | Custom role to handle vpc api callbacks |
 | Device Manager | Custom role to handle push device registration with the event-noitifications service |
-| Email Sender | Custom role to send email events from classic to VPC |
+| Email Sender | Custom role is to send email events from classic to VPC |
 | Event Notification Publisher | Custom role to send notifications |
 | Event Source Manager | Custom role to handle source integration with the event-notifications service |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
@@ -3920,12 +3288,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Status Reporter | Custom role to handle messaging api callbacks |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 59. Service roles - Event Notifications" caption-side="top"}
+{: caption="Table 74. Service roles - Event Notifications" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="event-notifications"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table59}
+{: #service-roles-table74}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3992,7 +3360,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.integrations.update` | This action is to update an already  created integration with EN | Administrator, Event Source Manager, Manager |
 | `event-notifications.integrations.read` | This action is to get an already-created integration | Administrator, Event Source Manager, Manager |
 | `event-notifications.integrations.list` | This action is to list all integrations with EN | Administrator, Event Source Manager, Manager |
-| `event-notifications.integrations.delete` | This action is to delete integration | Event Source Manager, Manager |
+| `event-notifications.integrations.delete` | This action is to delete integration | Administrator, Event Source Manager, Manager |
 | `event-notifications.custom-email.create` | This action is to send an email event to the VPC endpoint | Email Sender |
 | `event-notifications.custom-email-status.create` | Action to handle the callback from the VPC cluster | Custom Email Status Reporter |
 | `event-notifications.templates.create` | This action is to create a templates | Administrator, Manager, Writer |
@@ -4015,14 +3383,154 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.smtp-user.update` | This action is to update a user within an SMTP configuration | Administrator, Manager, SMTP Manager, Writer |
 | `event-notifications.smtp-user.delete` | This action is to delete a user within an SMTP configuration | Manager, SMTP Manager, Writer |
 | `event-notifications.smtp-config.enable` | This internal API is to manage EN Authorization  | Pool ID Manager |
-{: caption="Table 59. Service actions - Event Notifications" caption-side="top"}
+{: caption="Table 74. Service actions - Event Notifications" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="event-notifications"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table59}
+{: #actions-table74}
 
-## IBM Cloud Functions
+## Event Notifications
+{: #event-notifications-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `event-notifications-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 75. Platform roles - Event Notifications" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="event-notifications-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table75}
+
+| Role | Description |
+| ----- | :----- |
+| Channel Editor Dev | Custom role to handle subscription activities |
+| Custom Email Status Reporter dev | Custom role to handle vpc api callbacks |
+| Device Manager Dev | Custom role to handle push device registration with the event-noitifications service |
+| Email Sender Dev | Custom role is to send email events from classic to VPC |
+| Event Notification Publisher Dev | Custom role to send notifications |
+| Event Source Manager Dev | Custom role to handle source integration with the event-noitifications service |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Pool ID Manager Dev | Custom role is to manage apis related to pool id for sms |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| SMTP Manager Dev | Custom role is to manage SMTP Configurations |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Status Reporter dev | Custom role to handle messaging api callbacks |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 75. Service roles - Event Notifications" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="event-notifications-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table75}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `event-notifications-dev.dashboard.view` | This action is to view the dashboard | Administrator, Channel Editor Dev, Event Source Manager Dev, Manager, Operator, Reader, Viewer, Writer |
+| `event-notifications-dev.sources.create` | This action is to integrate a new source | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.sources.read` | This action is to get an already integrated source | Administrator, Channel Editor Dev, Event Source Manager Dev, Manager, Reader |
+| `event-notifications-dev.sources.update` | This action is to update an already integrated source | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.sources.delete` | This action is to delete an already integrated source | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.sources.list` | This action is to list all integrated sources in an instance | Administrator, Channel Editor Dev, Event Source Manager Dev, Manager, Reader |
+| `event-notifications-dev.topics.create` | This action is to create a new topic | Administrator, Manager, Writer |
+| `event-notifications-dev.topics.read` | This action is to get an already created topic | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.topics.update` | This action is to update an already created topic | Administrator, Manager, Writer |
+| `event-notifications-dev.topics.delete` | This action is to delete an already created topic | Administrator, Manager |
+| `event-notifications-dev.topics.list` | This action is to list all topics in an instance | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.rules.create` | This action is to create a rule under a source | Administrator, Manager, Writer |
+| `event-notifications-dev.rules.read` | This action is to get a rule in an instance | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.rules.update` | This action is to update an existing rule | Administrator, Manager, Writer |
+| `event-notifications-dev.rules.delete` | This action is to delete a rule in an instance | Administrator, Manager |
+| `event-notifications-dev.rules.list` | This action is to list all rules in an instance based on the sourceID and/or topicID | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.destinations.create` | This action is to create a new destination | Administrator, Manager, Writer |
+| `event-notifications-dev.destinations.read` | This action is to get a destination within an instance | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.destinations.update` | This action is to update existing destination information | Administrator, Manager, Writer |
+| `event-notifications-dev.destinations.delete` | This action is to delete a destination | Administrator, Manager |
+| `event-notifications-dev.destinations.list` | This action is to list all destinations within an instance | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.subscriptions.create` | This action is to create associate a destination to a topic | Administrator, Channel Editor Dev, Manager, Writer |
+| `event-notifications-dev.subscriptions.read` | This action is to get a destination-topic mapping | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.subscriptions.update` | This action is to update a destination-topic mapping | Administrator, Channel Editor Dev, Manager, Writer |
+| `event-notifications-dev.subscriptions.delete` | This action is to delete a subscription | Administrator, Channel Editor Dev, Manager |
+| `event-notifications-dev.subscriptions.list` | This action is to list subscriptions based on the topicID and/or destinationID | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.notifications.post` | This action is to publish an event to EN | Administrator, Event Notification Publisher Dev, Event Source Manager Dev, Manager, Writer |
+| `event-notifications-dev.keys.create` | This action is used for byok registration | Administrator, Channel Editor Dev, Editor, Event Notification Publisher Dev, Event Source Manager Dev, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
+| `event-notifications-dev.counts.get` | This action is to get counts of all entities in an instance | Channel Editor Dev, Event Notification Publisher Dev, Event Source Manager Dev, Manager, Reader |
+| `event-notifications-dev.events.create` | This API is used to create a new Event | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.events.read` | This API is used to get information about an event | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.events.list` | This API is used to list all events in an instance under a source | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.events.delete` | This API is used to delete an event in an instance under a source | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.keys.read` | This action is to read DEK encryption key from the byok service | Administrator, Channel Editor Dev, Editor, Event Notification Publisher Dev, Event Source Manager Dev, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
+| `event-notifications-dev.keys.delete` | This action is for deleting byok config | Administrator, Channel Editor Dev, Editor, Event Notification Publisher Dev, Event Source Manager Dev, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
+| `event-notifications-dev.publickey.read` | To get public keys related to webhook encryption | Administrator, Channel Editor Dev, Manager, Reader, Writer |
+| `event-notifications-dev.severities.create` | This API is used to create a new Event | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.severities.read` | This API is used to get information about an event | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.severities.list` | This API is used to list all events in an instance under a source | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.severities.delete` | This API is used to delete an event in an instance under a source | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.email-status.create` | The API is used for callback from messaging service | Administrator, Manager, Status Reporter dev |
+| `event-notifications-dev.sms-status.create` | The API is used for callback from messaging service | Administrator, Manager, Status Reporter dev |
+| `event-notifications-dev.webhook-status.create` | The API is used for callback from messaging service | Administrator, Manager, Status Reporter dev |
+| `event-notifications-dev.devices.create` | This API is used to register new device for push destination | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.devices.read` | This API is used to get registered push destination device by device_id | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.devices.update` | This API is used to update the push registered device for push destination | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.devices.delete` | This API is used to delete registered push device for push destination | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.devices.list` | This API is used to get all registered devices for push destination | Administrator, Manager |
+| `event-notifications-dev.tag-subscriptions.list` | The API is get subscriptions for push destination | Administrator, Manager |
+| `event-notifications-dev.tag-subscriptions.devices.list` | This Api is used to get subscriptions by device for push destination | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.tag-subscriptions.create` | The API is create subscription for push destination | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.tag-subscriptions.delete` | The API is delete subscription for push destination | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.channel-groups.create` | This action is to integrate a new channel group | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.channel-groups.read` | This action is to read a channel group | Administrator, Device Manager Dev, Manager, Reader |
+| `event-notifications-dev.channel-groups.list` | This action is to get all channel groups | Administrator, Device Manager Dev, Manager, Reader |
+| `event-notifications-dev.channel-groups.update` | This action is to update a channel group | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.channel-groups.delete` | This action is to delete a channel group | Administrator, Manager |
+| `event-notifications-dev.channels.create` | This action is to create fcm channel | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.channels.read` | This action is to read a channel | Administrator, Device Manager Dev, Manager, Reader |
+| `event-notifications-dev.channels.list` | This action is to read all fcm channels | Administrator, Device Manager Dev, Manager, Reader |
+| `event-notifications-dev.channels.update` | This action is to update fcm channel | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.channels.delete` | This action is to delete a fcm channel | Administrator, Manager |
+| `event-notifications-dev.integrations.create` | This action is to create an integration. For example BYOK integration with EN. | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.integrations.update` | This action is to update an already  created integration with EN | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.integrations.read` | This action is to get an already-created integration | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.integrations.list` | This action is to list all integrations with EN | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.integrations.delete` | This action is to delete integration | Administrator, Event Source Manager Dev, Manager |
+| `event-notifications-dev.custom-email.create` | This action is to send an email event to the VPC endpoint | Email Sender Dev |
+| `event-notifications-dev.custom-email-status.create` | Action to handle the callback from the VPC cluster | Custom Email Status Reporter dev |
+| `event-notifications-dev.templates.create` | This action is to create a templates | Administrator, Manager, Writer |
+| `event-notifications-dev.templates.read` | This action is to get a single template | Administrator, Manager, Reader, Writer |
+| `event-notifications-dev.templates.list` | This action is to list all templates | Administrator, Manager, Reader, Writer |
+| `event-notifications-dev.templates.update` | This action is to update a template | Administrator, Manager, Writer |
+| `event-notifications-dev.templates.delete` | This action is to delete a single template | Administrator, Manager, Writer |
+| `event-notifications-dev.pool-id-mapping.create` | This action is to create a new pool id mapping for a destination | Pool ID Manager Dev |
+| `event-notifications-dev.pool-id-mapping.delete` | This action is to delete a new pool id mapping for a destination | Pool ID Manager Dev |
+| `event-notifications-dev.pool-id-mapping.update` | This action is to update a new pool id mapping for a destination | Pool ID Manager Dev |
+| `event-notifications-dev.delivery.create` | This API is used to send the status of push devices | Administrator, Device Manager Dev, Manager |
+| `event-notifications-dev.smtp-config.create` | This API is used to create new smtp configuration | Administrator, Manager, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-config.read` | This action is to get the smtp config | Administrator, Manager, Reader, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-config.list` | This action is to get all smtp configs within an instance | Administrator, Manager, Reader, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-config.update` | This api is to update a smtp config in an instance | Administrator, Manager, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-config.delete` | This action is to delete a SMTP configuration within an instance | Administrator, Manager, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-user.create` | This action is to create a user within a SMTP configuration | Administrator, Manager, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-user.read` | This action is to read user details under an SMTP configuration | Administrator, Manager, Reader, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-user.list` | This action is to get all users within an SMTP configuration | Administrator, Manager, Reader, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-user.update` | This action is to update a user within an SMTP configuration | Administrator, Manager, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-user.delete` | This action is to delete a user within an SMTP configuration | Manager, SMTP Manager Dev, Writer |
+| `event-notifications-dev.smtp-config.enable` | This internal API is to manage EN Authorization  | Pool ID Manager Dev |
+{: caption="Table 75. Service actions - Event Notifications" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="event-notifications-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table75}
+
+## Functions
 {: #functions-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `functions` for the service name.
@@ -4033,29 +3541,29 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 60. Service roles - IBM Cloud Functions" caption-side="top"}
+{: caption="Table 76. Service roles - Functions" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="functions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table60}
+{: #service-roles-table76}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `functions.namespaces.read` |  | Manager, Reader, Writer |
-| `functions.namespaces.delete` |  | Manager |
-| `functions.namespaces.update` |  | Manager |
-| `functions.entities.create` |  | Manager, Writer |
-| `functions.entities.update` |  | Manager, Writer |
-| `functions.entities.delete` |  | Manager, Writer |
-| `functions.entities.read` |  | Manager, Reader, Writer |
-| `functions.entities.activate` |  | Manager, Reader, Writer |
-{: caption="Table 60. Service actions - IBM Cloud Functions" caption-side="top"}
+| `functions.namespaces.read` | View functions namespace | Manager, Reader, Writer |
+| `functions.namespaces.delete` | Delete functions namespaces | Manager |
+| `functions.namespaces.update` | Update functions namespaces | Manager |
+| `functions.entities.create` | Create functions namespace entities | Manager, Writer |
+| `functions.entities.update` | Update functions namespace entities | Manager, Writer |
+| `functions.entities.delete` | Delete functions namespace entities | Manager, Writer |
+| `functions.entities.read` | View functions namespace entities | Manager, Reader, Writer |
+| `functions.entities.activate` | Invoke functions namespace actions | Manager, Reader, Writer |
+{: caption="Table 76. Service actions - Functions" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="functions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table60}
+{: #actions-table76}
 
 ## Globalization Pipeline
 {: #g11n-pipeline-roles}
@@ -4068,12 +3576,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 61. Platform roles - Globalization Pipeline" caption-side="top"}
+{: caption="Table 77. Platform roles - Globalization Pipeline" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="g11n-pipeline"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table61}
+{: #platform-roles-table77}
 
 | Role | Description |
 | ----- | :----- |
@@ -4081,12 +3589,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 61. Service roles - Globalization Pipeline" caption-side="top"}
+{: caption="Table 77. Service roles - Globalization Pipeline" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="g11n-pipeline"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table61}
+{: #service-roles-table77}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4154,12 +3662,112 @@ Review the available platform and service roles and the actions mapped to each t
 | `g11n-pipeline.document.get-segment-info` |  | Manager, Writer |
 | `g11n-pipeline.document.upload-document-content` |  | Manager |
 | `g11n-pipeline.document.update-segment-translation` |  | Manager, Writer |
-{: caption="Table 61. Service actions - Globalization Pipeline" caption-side="top"}
+{: caption="Table 77. Service actions - Globalization Pipeline" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="g11n-pipeline"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table61}
+{: #actions-table77}
+
+## gatekeeper
+{: #gatekeeper-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `gatekeeper` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Abuse Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the abuse service. In addition, you can create and edit abuse-specific resources. |
+| Abuse Reader | Reader role with view only permission |
+| Abuse Writer | As a writer, you have permissions beyond the reader role, including creating and editing abuse-specific resources. |
+| Fraud Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the fraud service. In addition, you can create and edit fraud-specific resources. |
+| Fraud Reader | As a reader, you can perform read-only actions within fraud service such as viewing fraud-specific resources. |
+| Fraud Writer | As a writer, you have permissions beyond the reader role, including creating and editing fraud-specific resources. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 78. Service roles - gatekeeper" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="gatekeeper"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table78}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `gatekeeper.frauddashboard.read` | ability to view gatekeeper fraud landing page dashboard as a reader | Fraud Reader, Reader |
+| `gatekeeper.fraudcase.read` | searching or viewing a case | Fraud Reader, Reader |
+| `gatekeeper.fraudcasenotes.create` | Ability to create and edit fraud case  | Fraud Writer, Writer |
+| `gatekeeper.fraudagents.create` | Ability to view, create, edit and delete agents | Fraud Manager, Manager |
+| `gatekeeper.fraudhyperwarp.read` | Ability to view hyperwarp  | Fraud Reader, Reader |
+| `gatekeeper.fraudhyperwarp.create` | Ability to view, create, edit and delete hyperwarp | Fraud Manager, Manager |
+| `gatekeeper.fraudmetrics.read` | Ability to view Metrics | Fraud Reader, Reader |
+| `gatekeeper.fraudrules.read` | Ability to view assignment rules | Fraud Reader, Reader |
+| `gatekeeper.fraudrules.create` | The ability to create, edit and Delete assignment Rules | Fraud Manager, Manager |
+| `gatekeeper.abusedashboard.read` | ability to view gatekeeper abuse landing page dashboard as a reader | Abuse Reader, Reader |
+| `gatekeeper.abusereport.read` | This role is for searching or viewing a ticket | Abuse Reader, Reader |
+| `gatekeeper.abusereport.update` | This role is for updating a ticket
+ | Abuse Writer, Writer |
+| `gatekeeper.abuseadmin.read` | This role is for viewing abuse rules, playbook, queue, types and boilerplate | Abuse Manager, Reader |
+| `gatekeeper.abuseadmin.create` | This role is for creating or deleting abuse rules, playbook, queue, types and boilerplate | Abuse Manager, Manager |
+{: caption="Table 78. Service actions - gatekeeper" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="gatekeeper"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table78}
+
+## Asset repo
+{: #gg-ar-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `gg-ar-test` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 79. Platform roles - Asset repo" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="gg-ar-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table79}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 79. Service roles - Asset repo" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="gg-ar-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table79}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `gg-ar-test.dashboard.view` | sample service action description | Administrator, Editor, Operator |
+| `gg-ar-test.remotes.create` | sample service action description | Manager |
+| `gg-ar-test.remotes.read` | sample service action description | Manager, Reader, Writer |
+| `gg-ar-test.remotes.update` | sample service action description | Manager |
+| `gg-ar-test.remotes.delete` | sample service action description | Manager |
+| `gg-ar-test.catalogs.create` | sample service action description | Manager |
+| `gg-ar-test.catalogs.read` | sample service action description | Manager, Reader, Writer |
+| `gg-ar-test.catalogs.delete` | sample service action description | Manager |
+| `gg-ar-test.assets.create` | sample service action description | Manager, Writer |
+| `gg-ar-test.assets.read` | sample service action description | Manager, Reader, Writer |
+| `gg-ar-test.assets.update` | sample service action description | Manager, Writer |
+| `gg-ar-test.assets.delete` | sample service action description | Manager, Writer |
+{: caption="Table 79. Service actions - Asset repo" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="gg-ar-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table79}
 
 ## GhoST API
 {: #ghost-api-roles}
@@ -4170,12 +3778,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 62. Platform roles - GhoST API" caption-side="top"}
+{: caption="Table 80. Platform roles - GhoST API" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="ghost-api"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table62}
+{: #platform-roles-table80}
 
 ## GhoST Tagging Service
 {: #ghost-tags-roles}
@@ -4186,24 +3794,30 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 63. Platform roles - GhoST Tagging Service" caption-side="top"}
+{: caption="Table 81. Platform roles - GhoST Tagging Service" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="ghost-tags"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table63}
+{: #platform-roles-table81}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `ghost-tags.create-access-tag` | The ability to create access management tags in an account | Administrator |
 | `ghost-tags.delete-access-tag` | The ability to delete access management tags in an account | Administrator |
-{: caption="Table 63. Service actions - GhoST Tagging Service" caption-side="top"}
+{: caption="Table 81. Service actions - GhoST Tagging Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="ghost-tags"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table63}
+{: #actions-table81}
 
+## Git
+{: #git-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `git` for the service name.
+
+No supported roles.
 ## Global Catalog
 {: #globalcatalog-roles}
 
@@ -4216,26 +3830,26 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | Operators can view private services added to the account. |
 | Viewer | Viewers can view private services added to the account. |
 {: row-headers}
-{: caption="Table 64. Platform roles - Global Catalog" caption-side="top"}
+{: caption="Table 83. Platform roles - Global Catalog" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="globalcatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table64}
+{: #platform-roles-table83}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `globalcatalog.is.admin` | Is Admin | Administrator |
 | `globalcatalog.is.editor` | Is Editor | Editor |
 | `globalcatalog.is.viewer` | Is Viewer | Operator, Viewer |
-{: caption="Table 64. Service actions - Global Catalog" caption-side="top"}
+{: caption="Table 83. Service actions - Global Catalog" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="globalcatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table64}
+{: #actions-table83}
 
-## Personal Catalog
+## Catalog Management
 {: #globalcatalog-collection-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `globalcatalog-collection` for the service name.
@@ -4244,12 +3858,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 65. Platform roles - Personal Catalog" caption-side="top"}
+{: caption="Table 84. Platform roles - Catalog Management" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="globalcatalog-collection"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table65}
+{: #platform-roles-table84}
 
 | Role | Description |
 | ----- | :----- |
@@ -4259,12 +3873,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Share Request Manager | You can view and manage share requests that are sent and received from accounts, enterprises, or account groups. |
 {: row-headers}
-{: caption="Table 65. Service roles - Personal Catalog" caption-side="top"}
+{: caption="Table 84. Service roles - Catalog Management" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="globalcatalog-collection"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table65}
+{: #service-roles-table84}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4282,12 +3896,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `globalcatalog-collection.accountshare.manage-sent-request` | This action manages share requests that are sent from your own account. You can delete or make a request to share a catalog type to another account, enterprise, or account group. | Administrator, Share Request Manager |
 | `globalcatalog-collection.accountshare.view-incoming-request` | View share requests that are received by this account. | Administrator, Share Request Manager |
 | `globalcatalog-collection.accountshare.manage-incoming-request` | This action manages share requests that are received by this account. You can approve or deny these received share requests with this action. | Administrator, Share Request Manager |
-{: caption="Table 65. Service actions - Personal Catalog" caption-side="top"}
+{: caption="Table 84. Service actions - Catalog Management" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="globalcatalog-collection"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table65}
+{: #actions-table84}
 
 ## Instance Management
 {: #globalcatalog-instance-roles}
@@ -4301,50 +3915,132 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 66. Platform roles - Instance Management" caption-side="top"}
+{: caption="Table 85. Platform roles - Instance Management" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="globalcatalog-instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table66}
+{: #platform-roles-table85}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `globalcatalog-instance.dashboard.view` | View Dashboard | Administrator, Editor, Operator, Viewer |
-{: caption="Table 66. Service actions - Instance Management" caption-side="top"}
+{: caption="Table 85. Service actions - Instance Management" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="globalcatalog-instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table66}
+{: #actions-table85}
 
-## HPCaaS from Rescale
-{: #hpcaas-from-rescale-prod-roles}
+## Hello World Service
+{: #helloworld-osb-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hpcaas-from-rescale-prod` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `helloworld-osb` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | null |
-| Editor | null |
-| Operator | null |
+| null | null |
+| null | null |
+| null | null |
 {: row-headers}
-{: caption="Table 67. Platform roles - HPCaaS from Rescale" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="hpcaas-from-rescale-prod"}
+{: caption="Table 86. Service roles - Hello World Service" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="helloworld-osb"}
 {: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table67}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table86}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `hpcaas-from-rescale-prod.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 67. Service actions - HPCaaS from Rescale" caption-side="top"}
+| `helloworld-osb.keys.view` |  | null, null, null |
+{: caption="Table 86. Service actions - Hello World Service" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="hpcaas-from-rescale-prod"}
+{: tab-group="helloworld-osb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table67}
+{: #actions-table86}
+
+## HelloWorld-TestPak
+{: #helloworld-testpak-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `helloworld-testpak` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 87. Platform roles - HelloWorld-TestPak" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="helloworld-testpak"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table87}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 87. Service roles - HelloWorld-TestPak" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="helloworld-testpak"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table87}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `helloworld-testpak.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 87. Service actions - HelloWorld-TestPak" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="helloworld-testpak"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table87}
+
+## hl2020
+{: #hl2020-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hl2020` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 88. Platform roles - hl2020" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="hl2020"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table88}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 88. Service roles - hl2020" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="hl2020"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table88}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `hl2020.dashboard.view` |  | Administrator, Editor, Operator |
+| `hl2020.endpoint.get` | Just for test | Manager, Reader, Writer |
+{: caption="Table 88. Service actions - hl2020" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="hl2020"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table88}
 
 ## Hyper Protect Virtual Server
 {: #hpvs-roles}
@@ -4357,12 +4053,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 68. Platform roles - Hyper Protect Virtual Server" caption-side="top"}
+{: caption="Table 89. Platform roles - Hyper Protect Virtual Server" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="hpvs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table68}
+{: #platform-roles-table89}
 
 | Role | Description |
 | ----- | :----- |
@@ -4370,22 +4066,22 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 68. Service roles - Hyper Protect Virtual Server" caption-side="top"}
+{: caption="Table 89. Service roles - Hyper Protect Virtual Server" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="hpvs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table68}
+{: #service-roles-table89}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `hpvs.dashboard.view` | Can view the dashboard | Administrator, Editor, Manager, Operator, Reader, Writer |
-{: caption="Table 68. Service actions - Hyper Protect Virtual Server" caption-side="top"}
+{: caption="Table 89. Service actions - Hyper Protect Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="hpvs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table68}
+{: #actions-table89}
 
 ## Hyper Protect Crypto Services
 {: #hs-crypto-roles}
@@ -4399,12 +4095,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 69. Platform roles - Hyper Protect Crypto Services" caption-side="top"}
+{: caption="Table 90. Platform roles - Hyper Protect Crypto Services" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="hs-crypto"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table69}
+{: #platform-roles-table90}
 
 | Role | Description |
 | ----- | :----- |
@@ -4420,12 +4116,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Vault Administrator | Can manage vaults, keystores (incl. cost implications), templates, and can perform destructive lifecycle actions on managed keys. Different vaults can be used to e.g. separate teams, lines of business, or customers. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 69. Service roles - Hyper Protect Crypto Services" caption-side="top"}
+{: caption="Table 90. Service roles - Hyper Protect Crypto Services" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="hs-crypto"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table69}
+{: #service-roles-table90}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4559,14 +4255,223 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.uko.initiate-paid-upgrade` | Start billing of UKO base price (by using external keystores) | Vault Administrator |
 | `hs-crypto.uko.add-paid-keystore` | Create a paid keystore (beyond free amount) | Vault Administrator |
 | `hs-crypto.secrets-with-policy-overrides.create` | hs-crypto.secrets-with-policy-overrides.create | Manager |
-{: caption="Table 69. Service actions - Hyper Protect Crypto Services" caption-side="top"}
+{: caption="Table 90. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="hs-crypto"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table69}
+{: #actions-table90}
 
-## IAM Access Management
+## Hyper Protect Crypto Services SVT
+{: #hs-crypto-solution-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `hs-crypto-solution` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 91. Platform roles - Hyper Protect Crypto Services SVT" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="hs-crypto-solution"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table91}
+
+| Role | Description |
+| ----- | :----- |
+| Certificate Manager SVT | Managing client certificates to configure mutual TLS for EP11 workloads |
+| KMS Key Purge SVT | As a KMS Key Purge, the user is allowed to purge encryption keys. |
+| Key Custodian - Creator SVT | Manages Keys. For a complete key lifecycle both Creator and Deployer roles are needed. To implement separaton of duties assign Creator and Deployer role to different people. Can create keys |
+| Key Custodian - Deployer SVT | Manages Keys. For a complete key lifecycle both Creator and Deployer roles are needed. To implement separaton of duties assign Creator and Deployer role to different people. Can deploy keys |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Reader Plus SVT | As a reader plus, you can perform read-only actions within the service such as viewing service-specific resources. You can also access key material of standard keys. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| VMWare KMIP Manager SVT | Allow the VMWare Solutions service to configure KMIP (activate/deactivate KMIP endpoint, manage client certificates) |
+| Vault Administrator SVT | Can manage vaults, keystores (incl. cost implications), templates, and can perform destructive lifecycle actions on managed keys. Different vaults can be used to e.g. separate teams, lines of business, or customers. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 91. Service roles - Hyper Protect Crypto Services SVT" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="hs-crypto-solution"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table91}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `hs-crypto-solution.crypto.decrypt` | hs-crypto-solution.crypto.decrypt | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.derivekey` | hs-crypto-solution.crypto.derivekey | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.digest` | hs-crypto-solution.crypto.digest | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.digestkey` | hs-crypto-solution.crypto.digestkey | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.encrypt` | hs-crypto-solution.crypto.encrypt | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.generatekey` | hs-crypto-solution.crypto.generatekey | Manager, Writer |
+| `hs-crypto-solution.crypto.generatekeypair` | hs-crypto-solution.crypto.generatekeypair | Manager, Writer |
+| `hs-crypto-solution.crypto.generaterandom` | hs-crypto-solution.crypto.generaterandom | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.getattributevalue` | hs-crypto-solution.crypto.getattributevalue | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.getmechanisminfo` | hs-crypto-solution.crypto.getmechanisminfo | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.getmechanismlist` | hs-crypto-solution.crypto.getmechanismlist | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.rewrapkeyblob` | hs-crypto-solution.crypto.rewrapkeyblob | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.setattributevalue` | hs-crypto-solution.crypto.setattributevalue | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.sign` | hs-crypto-solution.crypto.sign | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.unwrapkey` | hs-crypto-solution.crypto.unwrapkey | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.verify` | hs-crypto-solution.crypto.verify | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.wrapkey` | hs-crypto-solution.crypto.wrapkey | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.login` | hs-crypto-solution.crypto.login | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.crypto.logout` | hs-crypto-solution.crypto.logout | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.discovery.listservers` | hs-crypto-solution.discovery.listservers | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.registertopic` | hs-crypto-solution.voting.registertopic | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.listtopicsbyids` | hs-crypto-solution.voting.listtopicsbyids | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.listtopicsbyattributes` | hs-crypto-solution.voting.listtopicsbyattributes | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.deletetopic` | hs-crypto-solution.voting.deletetopic | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.newpoll` | hs-crypto-solution.voting.newpoll | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.finishpoll` | hs-crypto-solution.voting.finishpoll | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.registerpermanentvoter` | hs-crypto-solution.voting.registerpermanentvoter | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.listvotersbyids` | hs-crypto-solution.voting.listvotersbyids | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.listvotersbyattributes` | hs-crypto-solution.voting.listvotersbyattributes | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.deletevoter` | hs-crypto-solution.voting.deletevoter | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.newvote` | hs-crypto-solution.voting.newvote | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.getpollresults` | hs-crypto-solution.voting.getpollresults | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.voting.registerlivevoter` | hs-crypto-solution.voting.registerlivevoter | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.keystore.createkeystore` | hs-crypto-solution.keystore.createkeystore | Manager |
+| `hs-crypto-solution.keystore.deletekey` | hs-crypto-solution.keystore.deletekey | Manager, Writer |
+| `hs-crypto-solution.keystore.deletekeystore` | hs-crypto-solution.keystore.deletekeystore | Manager |
+| `hs-crypto-solution.keystore.listkeysbyattributes` | hs-crypto-solution.keystore.listkeysbyattributes | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.keystore.listkeysbyids` | hs-crypto-solution.keystore.listkeysbyids | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.keystore.listkeystoresbyattributes` | hs-crypto-solution.keystore.listkeystoresbyattributes | Manager |
+| `hs-crypto-solution.keystore.listkeystoresbyids` | hs-crypto-solution.keystore.listkeystoresbyids | Manager |
+| `hs-crypto-solution.keystore.storenewkey` | hs-crypto-solution.keystore.storenewkey | Manager, Writer |
+| `hs-crypto-solution.keystore.updatekey` | hs-crypto-solution.keystore.updatekey | Manager, Writer |
+| `hs-crypto-solution.dashboard.view` | View the dashboard | Administrator, Editor, Operator |
+| `hs-crypto-solution.instances.read` | Get Instance API endpoint info | Administrator, Editor, Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Manager, Reader, VMWare KMIP Manager SVT, Vault Administrator SVT, Viewer, Writer |
+| `hs-crypto-solution.secrets.list` | Retrieve a list of encryption keys. | Manager, Reader, Reader Plus SVT, VMWare KMIP Manager SVT, Writer |
+| `hs-crypto-solution.secrets.wrap` | Wrap an encryption key. | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.secrets.unwrap` | Unwrap an encryption key. | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.secrets.create` | Create an encryption key. | Manager, Writer |
+| `hs-crypto-solution.secrets.read` | Retrieve an encryption key. | Manager, Reader Plus SVT, Writer |
+| `hs-crypto-solution.secrets.delete` | Delete an encryption key. | Manager |
+| `hs-crypto-solution.secrets.rotate` | Rotate an encryption key. | Manager, Writer |
+| `hs-crypto-solution.instances.manage` | Manage instance via TKE. | Manager |
+| `hs-crypto-solution.ep11.use` | Use the GREP11 Interface for Hyper Protect Crypto Services | Administrator, Editor, Manager, Reader, Reader Plus SVT, Viewer, Writer |
+| `hs-crypto-solution.importtoken.create` | Allow creation of secure import tokens | Manager, Writer |
+| `hs-crypto-solution.importtoken.read` | Allow retrieval of secure import tokens | Manager, Writer |
+| `hs-crypto-solution.policies.read` | Retrieve policies for an encryption key | Manager |
+| `hs-crypto-solution.policies.write` | Set policies for an encryption key | Manager |
+| `hs-crypto-solution.instancepolicies.read` | Retrieve instance level policies | Manager |
+| `hs-crypto-solution.instancepolicies.write` | Add or update instance level policies | Manager |
+| `hs-crypto-solution.secrets.setkeyfordeletion` | Set or prepare an encryption key for deletion | Manager, Writer |
+| `hs-crypto-solution.secrets.unsetkeyfordeletion` | Unset an encryption key for deletion | Manager, Writer |
+| `hs-crypto-solution.secrets.readmetadata` | Retrieve the details of an encryption key | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.secrets.rewrap` | Rewrap an encryption key | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.registrations.list` | Retrieve a list of registrations | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.secrets.listkeyversions` | Retrieve a list of versions that are associated with an encryption key | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.registrations.listforkey` | Retrieve a list of registrations for a given encryption key | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.registrations.deactivate` | Move a suspended registration to the deactivated state | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.registrations.create` | Create a registration between an encryption key and a cloud resource | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.registrations.write` | Replace an existing registration | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.registrations.merge` | Update the details of an existing registration | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.registrations.delete` | Delete a registration | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.secrets.disable` | Disable operations for an encryption key | Manager |
+| `hs-crypto-solution.secrets.enable` | Enable operations for an encryption key | Manager |
+| `hs-crypto-solution.secrets.restore` | Restore a previously deleted encryption key | Manager |
+| `hs-crypto-solution.secrets.eventack` | Acknowledge a key lifecycle event | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.accesscontrollist.registernewuser` | hs-crypto-solution.accesscontrollist.registernewuser | Manager |
+| `hs-crypto-solution.accesscontrollist.listusers` | hs-crypto-solution.accesscontrollist.listusers | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.kmip.activate` | Activate KMIP endpoint | VMWare KMIP Manager SVT |
+| `hs-crypto-solution.kmip.deactivate` | Deactivate KMIP endpoint | VMWare KMIP Manager SVT |
+| `hs-crypto-solution.kmip.status` | Get Status of KMIP endpoint | VMWare KMIP Manager SVT |
+| `hs-crypto-solution.kmip.certadd` | Add Client Certificates to KMIP endpoint for usage of mutual TLS | VMWare KMIP Manager SVT |
+| `hs-crypto-solution.kmip.certdel` | Delete Client Certificates from KMIP endpoint for usage of mutual TLS | VMWare KMIP Manager SVT |
+| `hs-crypto-solution.keyrings.create` | Create key rings | Manager, Writer |
+| `hs-crypto-solution.keyrings.delete` | Delete key rings | Manager |
+| `hs-crypto-solution.keyrings.list` | List key rings | Manager, Reader, Reader Plus SVT, Writer |
+| `hs-crypto-solution.secrets.createalias` | Create key alias | Manager, Writer |
+| `hs-crypto-solution.secrets.deletealias` | Delete key alias | Manager, Writer |
+| `hs-crypto-solution.accesscontrollist.deleteuser` | hs-crypto-solution.accesscontrollist.deleteuser | Manager |
+| `hs-crypto-solution.config.read` | Configuration Information Point API access | Service Configuration Reader |
+| `hs-crypto-solution.secrets.sync` | Initiate a manual synchronization request to the associated resources of a key. | Manager, Writer |
+| `hs-crypto-solution.secrets.purge` | Purge a destroyed encryption key. | KMS Key Purge SVT |
+| `hs-crypto-solution.secrets.patch` | Update an encryption key | Manager |
+| `hs-crypto-solution.mtlscert-admin-key.create` | Create the administrator signature key for the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.mtlscert-admin-key.update` | Update the administrator signature key for the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.mtlscert-admin-key.delete` | Delete the administrator signature key of the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.mtlscert-admin-key.read` | Get the administrator signature key of the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.mtlscert-cert.set` | Create or update certificates by the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.mtlscert-cert.list` | List all certificates that are managed by the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.mtlscert-cert.read` | Get certificates by the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.mtlscert-cert.delete` | Delete certificates by the certificate administrator | Certificate Manager SVT |
+| `hs-crypto-solution.vault-keys.active-deactivate` | Deactivate an ACTIVE key | Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.active-install` | Install an ACTIVE key | Key Custodian - Deployer SVT, Vault Administrator SVT |
+| `hs-crypto-solution.vault-keys.active-uninstall` | Uninstall an ACTIVE key | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.deactivated-destroy` | Destroy a DEACTIVATED key | Vault Administrator SVT |
+| `hs-crypto-solution.vault-keys.deactivated-install` | Install a DEACTIVATED key | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.deactivated-reactivate` | Reactivate a DEACTIVATED key | Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.deactivated-uninstall` | Uninstall a DEACTIVATED key | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.destroyed-remove` | Remove a DESTROYED key from Vault | Vault Administrator SVT |
+| `hs-crypto-solution.vault-keys.distribute` | Distribute key into assigned keystores | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.generate` | Generate new key material | Key Custodian - Creator SVT |
+| `hs-crypto-solution.vault-keys.preactivation-activate` | Activate a PREACTIVE key | Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.preactivation-destroy` | Destroy a PREACTIVE key | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.read` | Read managed key details | Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Reader, Vault Administrator SVT |
+| `hs-crypto-solution.vault-keys.list` | List managed keys | Administrator, Editor, Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Manager, Reader, Vault Administrator SVT, Viewer, Writer |
+| `hs-crypto-solution.vault-keys.write` | Write/edit managed key details | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.delete` | Delete a managed key | Vault Administrator SVT |
+| `hs-crypto-solution.vault-keys.write-dates` | Write key activation/expiration dates | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keys.write-tags` | Write key tags | Key Custodian - Creator SVT, Key Custodian - Deployer SVT |
+| `hs-crypto-solution.vault-keystores.read` | Read target keystore details | Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Reader, Vault Administrator SVT |
+| `hs-crypto-solution.vault-keystores.list` | List target keystores | Administrator, Editor, Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Manager, Reader, Vault Administrator SVT, Viewer, Writer |
+| `hs-crypto-solution.vault-keystores.write` | Write/edit target keystore details | Vault Administrator SVT |
+| `hs-crypto-solution.vault-keystores.delete` | Delete a keystore (internal) / Disconnect a keystore (external) | Vault Administrator SVT |
+| `hs-crypto-solution.vault-key-templates.read` | Read key template details | Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Reader, Vault Administrator SVT |
+| `hs-crypto-solution.vault-key-templates.list` | List key templates | Administrator, Editor, Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Manager, Reader, Vault Administrator SVT, Viewer, Writer |
+| `hs-crypto-solution.vault-key-templates.write` | Write/Edit key templates | Key Custodian - Creator SVT, Vault Administrator SVT |
+| `hs-crypto-solution.vault-key-templates.delete` | Delete key templates | Vault Administrator SVT |
+| `hs-crypto-solution.vaults.read` | Read Vault details | Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Reader, Vault Administrator SVT |
+| `hs-crypto-solution.vaults.list` | List Vaults | Administrator, Editor, Key Custodian - Creator SVT, Key Custodian - Deployer SVT, Manager, Reader, Vault Administrator SVT, Viewer, Writer |
+| `hs-crypto-solution.vaults.write` | Write/Edit Vault details | Vault Administrator SVT |
+| `hs-crypto-solution.vaults.delete` | Delete a Vault | Vault Administrator SVT |
+| `hs-crypto-solution.uko.initiate-paid-upgrade` | Start billing of UKO base price (by using external keystores) | Vault Administrator SVT |
+| `hs-crypto-solution.uko.add-paid-keystore` | Create a paid keystore (beyond free amount) | Vault Administrator SVT |
+{: caption="Table 91. Service actions - Hyper Protect Crypto Services SVT" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="hs-crypto-solution"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table91}
+
+## IAC Service Broker
+{: #iacservicebroker-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iacservicebroker` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 92. Platform roles - IAC Service Broker" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="iacservicebroker"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table92}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `iacservicebroker.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 92. Service actions - IAC Service Broker" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="iacservicebroker"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table92}
+
+## null
 {: #iam-access-management-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `iam-access-management` for the service name.
@@ -4577,24 +4482,24 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 70. Platform roles - IAM Access Management" caption-side="top"}
+{: caption="Table 93. Platform roles - null" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="iam-access-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table70}
+{: #platform-roles-table93}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iam-access-management.settings.read` | Read Access Management account settings | Administrator, Editor, Viewer |
 | `iam-access-management.user-access-list.read` | Read User Access list | Administrator, Editor |
 | `iam-access-management.settings.update` | Update Access Management account settings | Administrator |
-{: caption="Table 70. Service actions - IAM Access Management" caption-side="top"}
+{: caption="Table 93. Service actions - null" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-access-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table70}
+{: #actions-table93}
 
 ## Role Management
 {: #iam-access-management.customRole-roles}
@@ -4608,12 +4513,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 71. Platform roles - Role Management" caption-side="top"}
+{: caption="Table 94. Platform roles - Role Management" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="iam-access-management.customRole"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table71}
+{: #platform-roles-table94}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4621,12 +4526,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-access-management.customRole.update` | The ability to edit and update custom roles. | Administrator, Editor |
 | `iam-access-management.customRole.delete` | The ability to delete a custom role. | Administrator |
 | `iam-access-management.customRole.read` | Retrieve custom roles | Administrator, Editor, Operator, Viewer |
-{: caption="Table 71. Service actions - Role Management" caption-side="top"}
+{: caption="Table 94. Service actions - Role Management" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-access-management.customRole"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table71}
+{: #actions-table94}
 
 ## AM Insights
 {: #iam-access-management.insight-roles}
@@ -4638,22 +4543,22 @@ Review the available platform and service roles and the actions mapped to each t
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 {: row-headers}
-{: caption="Table 72. Platform roles - AM Insights" caption-side="top"}
+{: caption="Table 95. Platform roles - AM Insights" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="iam-access-management.insight"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table72}
+{: #platform-roles-table95}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iam-access-management.insight.get` | Read Access Management insights | Administrator, Editor |
-{: caption="Table 72. Service actions - AM Insights" caption-side="top"}
+{: caption="Table 95. Service actions - AM Insights" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-access-management.insight"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table72}
+{: #actions-table95}
 
 ## IAM Access Groups
 {: #iam-groups-roles}
@@ -4666,12 +4571,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can view, create, edit, and delete access groups including adding or removing users from the groups. |
 | Viewer | As a viewer, you can view access groups and its members. |
 {: row-headers}
-{: caption="Table 73. Platform roles - IAM Access Groups" caption-side="top"}
+{: caption="Table 96. Platform roles - IAM Access Groups" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="iam-groups"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table73}
+{: #platform-roles-table96}
 
 | Role | Description |
 | ----- | :----- |
@@ -4680,12 +4585,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Template Administrator | Template Administrator |
 {: row-headers}
-{: caption="Table 73. Service roles - IAM Access Groups" caption-side="top"}
+{: caption="Table 96. Service roles - IAM Access Groups" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="iam-groups"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table73}
+{: #service-roles-table96}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4714,12 +4619,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-groups.group-assignment.update` | Update an Access Groups Template assignment | Assignment Administrator |
 | `iam-groups.group-assignment.read` | Get an Access Groups Template assignment | Assignment Administrator, Template Administrator |
 | `iam-groups.group-assignment.delete` | Delete an Access Groups Template Assignment | Assignment Administrator |
-{: caption="Table 73. Service actions - IAM Access Groups" caption-side="top"}
+{: caption="Table 96. Service actions - IAM Access Groups" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-groups"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table73}
+{: #actions-table96}
 
 ## IAM Identity Service
 {: #iam-identity-roles}
@@ -4733,12 +4638,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | An Operator can view, update and delete service IDs and API keys. |
 | Viewer | A Viewer can view service IDs and API keys. |
 {: row-headers}
-{: caption="Table 74. Platform roles - IAM Identity Service" caption-side="top"}
+{: caption="Table 97. Platform roles - IAM Identity Service" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="iam-identity"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table74}
+{: #platform-roles-table97}
 
 | Role | Description |
 | ----- | :----- |
@@ -4749,12 +4654,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Template Administrator | A Template Administrator can manage Enterprise Templates |
 | User API key creator | Can create API keys when the account setting to restrict API key creation is enabled. |
 {: row-headers}
-{: caption="Table 74. Service roles - IAM Identity Service" caption-side="top"}
+{: caption="Table 97. Service roles - IAM Identity Service" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="iam-identity"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table74}
+{: #service-roles-table97}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4816,12 +4721,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.account-settings-assignment.delete` | Delete an assignment of Account Settings | Assignment Administrator |
 | `iam-identity.account-settings-assignment.read` | Get the details of an Account Settings Assignment | Assignment Administrator, Template Administrator |
 | `iam-identity.account-settings-assignment.update` | Update an assignment of Account Settings | Assignment Administrator |
-{: caption="Table 74. Service actions - IAM Identity Service" caption-side="top"}
+{: caption="Table 97. Service actions - IAM Identity Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-identity"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table74}
+{: #actions-table97}
 
 ## Identity and Access Management
 {: #iam-svcs-roles}
@@ -4835,104 +4740,33 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 75. Platform roles - Identity and Access Management" caption-side="top"}
+{: caption="Table 98. Platform roles - Identity and Access Management" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table75}
+{: #platform-roles-table98}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 75. Service roles - Identity and Access Management" caption-side="top"}
+{: caption="Table 98. Service roles - Identity and Access Management" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table75}
+{: #service-roles-table98}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `iam-svcs.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 75. Service actions - Identity and Access Management" caption-side="top"}
+{: caption="Table 98. Service actions - Identity and Access Management" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table75}
-
-## Analytics Engine
-{: #ibmanalyticsengine-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ibmanalyticsengine` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 76. Platform roles - Analytics Engine" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="ibmanalyticsengine"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table76}
-
-| Role | Description |
-| ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
-{: row-headers}
-{: caption="Table 76. Service roles - Analytics Engine" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="ibmanalyticsengine"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table76}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `ibmae.applications.create` |  | Manager, Writer |
-| `ibmae.applications.delete` |  | Manager, Writer |
-| `ibmae.applications.read` |  | Manager, Reader, Writer |
-| `ibmae.cluster.createlogconfig` |  | Administrator, Editor, Manager, Writer |
-| `ibmae.cluster.customize` |  | Administrator, Editor, Manager, Writer |
-| `ibmae.cluster.deletelogconfig` |  | Administrator, Editor, Manager, Writer |
-| `ibmae.cluster.read` |  | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
-| `ibmae.cluster.resize` |  | Administrator, Editor, Manager, Writer |
-| `ibmae.cluster.resetpassword` |  | Administrator, Manager |
-| `ibmae.cluster.updatePrivateEndpointAllowlist` |  | Administrator, Editor, Manager, Writer |
-| `ibmae.cluster.updatePrivateEndpointWhitelist` |  | Administrator, Editor, Manager, Writer |
-| `ibmae.cluster.viewpassword` |  | Administrator, Editor, Manager, Writer |
-| `ibmae.instance-logging.create` |  | Manager, Writer |
-| `ibmae.instance-logging.delete` |  | Manager, Writer |
-| `ibmae.instance-logging.patch` |  | Manager, Writer |
-| `ibmae.instance-logging.read` |  | Manager, Reader, Writer |
-| `ibmae.instance-logging.update` |  | Manager, Writer |
-| `ibmae.instances.patch` |  | Manager, Writer |
-| `ibmae.instances.read` |  | Manager, Reader, Writer |
-| `ibmae.instances.update` |  | Manager, Writer |
-| `ibmae.kernels.create` |  | Manager, Writer |
-| `ibmae.kernels.delete` |  | Manager, Writer |
-| `ibmae.kernels.read` |  | Manager, Reader, Writer |
-| `ibmae.livybatch.create` |  | Manager, Writer |
-| `ibmae.livybatch.delete` |  | Manager, Writer |
-| `ibmae.livybatch.read` |  | Manager, Reader, Writer |
-| `ibmae.sparkhistoryserver.create` |  | Manager, Writer |
-| `ibmae.sparkhistoryserver.delete` |  | Manager, Writer |
-| `ibmae.sparkhistoryserver.read` |  | Manager, Reader, Writer |
-| `ibmae.sparkhistoryui.read` |  | Manager, Reader, Writer |
-{: caption="Table 76. Service actions - Analytics Engine" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="ibmanalyticsengine"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table76}
+{: #actions-table98}
 
 ## IBM Cloud Platform
 {: #ibmcloud-platform-roles}
@@ -4946,12 +4780,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | null |
 | Viewer | null |
 {: row-headers}
-{: caption="Table 77. Platform roles - IBM Cloud Platform" caption-side="top"}
+{: caption="Table 99. Platform roles - IBM Cloud Platform" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="ibmcloud-platform"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table77}
+{: #platform-roles-table99}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4959,54 +4793,151 @@ Review the available platform and service roles and the actions mapped to each t
 | `ibmcloud-platform.osbbroker.update` |  | Administrator, Editor, Operator |
 | `ibmcloud-platform.osbbroker.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `ibmcloud-platform.osbbroker.delete` |  | Administrator, Editor |
-{: caption="Table 77. Service actions - IBM Cloud Platform" caption-side="top"}
+{: caption="Table 99. Service actions - IBM Cloud Platform" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="ibmcloud-platform"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table77}
+{: #actions-table99}
 
-## Human Intelligence
-{: #insight-specialist-ltd--msp-human-intelligence-roles}
+## icosb-public-newservice
+{: #icosb-public-newservice-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `insight-specialist-ltd--msp-human-intelligence` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `icosb-public-newservice` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
 {: row-headers}
-{: caption="Table 78. Platform roles - Human Intelligence" caption-side="top"}
+{: caption="Table 100. Platform roles - icosb-public-newservice" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="insight-specialist-ltd--msp-human-intelligence"}
+{: tab-group="icosb-public-newservice"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table78}
+{: #platform-roles-table100}
 
 | Role | Description |
 | ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| null | null |
+| null | null |
 {: row-headers}
-{: caption="Table 78. Service roles - Human Intelligence" caption-side="top"}
+{: caption="Table 100. Service roles - icosb-public-newservice" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="insight-specialist-ltd--msp-human-intelligence"}
+{: tab-group="icosb-public-newservice"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table78}
+{: #service-roles-table100}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `insight-specialist-ltd--msp-human-intelligence.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 78. Service actions - Human Intelligence" caption-side="top"}
+| `icosb-public-newservice.dashboard.view` |  | Administrator, Editor, Operator |
+| `POST /v2/service_instances` |  | null, null, Administrator, Editor, Operator |
+{: caption="Table 100. Service actions - icosb-public-newservice" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="insight-specialist-ltd--msp-human-intelligence"}
+{: tab-group="icosb-public-newservice"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table78}
+{: #actions-table100}
 
-## Cloud Internet Services
+## icosb-public-service1
+{: #icosb-public-service1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `icosb-public-service1` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+{: row-headers}
+{: caption="Table 101. Platform roles - icosb-public-service1" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="icosb-public-service1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table101}
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+{: row-headers}
+{: caption="Table 101. Service roles - icosb-public-service1" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="icosb-public-service1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table101}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `icosb-public-service1.dashboard.view` |  | Administrator, Editor, Operator |
+| `POST /v2/service_instances/:instanceid` |  | null |
+{: caption="Table 101. Service actions - icosb-public-service1" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="icosb-public-service1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table101}
+
+## icosb-public-service2
+{: #icosb-public-service2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `icosb-public-service2` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+{: row-headers}
+{: caption="Table 102. Platform roles - icosb-public-service2" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="icosb-public-service2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table102}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `icosb-public-service2.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 102. Service actions - icosb-public-service2" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="icosb-public-service2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table102}
+
+## icosb-test-ji-1-17
+{: #icosb-test-ji-1-17-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `icosb-test-ji-1-17` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | Administrators can take all actions including the ability to manage access control. |
+| Editor | Editors can take actions that can modify the state and create/delete sub-resources. |
+| Operator | Operators can take actions required to configure and operate resources. |
+{: row-headers}
+{: caption="Table 103. Platform roles - icosb-test-ji-1-17" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="icosb-test-ji-1-17"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table103}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `icosb-test-ji-1-17.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 103. Service actions - icosb-test-ji-1-17" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="icosb-test-ji-1-17"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table103}
+
+## Internet Services
 {: #internet-svcs-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `internet-svcs` for the service name.
@@ -5018,33 +4949,34 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 79. Service roles - Cloud Internet Services" caption-side="top"}
+{: caption="Table 104. Service roles - Internet Services" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="internet-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table79}
+{: #service-roles-table104}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `internet-svcs.zones.read` | View all zone settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
 | `internet-svcs.zones.update` | Modify all zone settings but can't create or delete them. | Manager, Writer |
-| `internet-svcs.zones.manage` | View, Modify, Create, and Delete all zone settings. | Manager |
+| `internet-svcs.zones.manage` | View, Modify, Create and Delete all zone settings. | Manager |
 | `internet-svcs.reliability.read` | View all Reliability settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
 | `internet-svcs.reliability.update` | Modify all Reliability settings except for pools and monitors. | Manager, Writer |
-| `internet-svcs.reliability.manage` | View, Modify, Create, and Delete all Reliability settings except for pools and monitors. | Manager |
+| `internet-svcs.reliability.manage` | View, Create, Modify and Delete all Reliability settings except for pools and monitors. | Manager |
 | `internet-svcs.security.read` | View all Security settings except for instance level firewall rules. | Manager, Reader, Service Configuration Reader, Writer |
 | `internet-svcs.security.update` | Modify all Security settings except for instance level firewall rules. | Manager, Writer |
-| `internet-svcs.security.manage` | View, Modify, Create, and Delete all Security settings except for instance level firewall rules. | Manager |
-| `internet-svcs.performance.read` | View all Performance settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
-| `internet-svcs.performance.update` | Modify all Performance settings but cannot create or delete. | Manager, Writer |
-| `internet-svcs.performance.manage` | View, Modify, Create, and Delete all Performance settings. | Manager |
-{: caption="Table 79. Service actions - Cloud Internet Services" caption-side="top"}
+| `internet-svcs.security.manage` | View, Create, Modify and Delete all Security settings except for instance level firewall rules. | Manager |
+| `internet-svcs.performance.read` | View all Performance settings. | Manager, Reader, Service Configuration Reader, Writer |
+| `internet-svcs.performance.update` | Modify all Performance settings. | Manager, Writer |
+| `internet-svcs.performance.manage` | View, Create, Modify and Delete all Performance settings. | Manager |
+| `internet-svcs.zones.metrics` | View all metrics for the zone | Manager |
+{: caption="Table 104. Service actions - Internet Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="internet-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table79}
+{: #actions-table104}
 
 ## Internet of Things Platform
 {: #iotf-service-roles}
@@ -5057,22 +4989,33 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 80. Platform roles - Internet of Things Platform" caption-side="top"}
+{: caption="Table 105. Platform roles - Internet of Things Platform" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="iotf-service"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table80}
+{: #platform-roles-table105}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+{: row-headers}
+{: caption="Table 105. Service roles - Internet of Things Platform" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="iotf-service"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table105}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `iotf-service.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 80. Service actions - Internet of Things Platform" caption-side="top"}
+| `iotf-service.dashboard.view` |  | Administrator, Editor, Manager, Operator |
+{: caption="Table 105. Service actions - Internet of Things Platform" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iotf-service"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table80}
+{: #actions-table105}
 
 ## Infrastructure Service
 {: #is-roles}
@@ -5092,12 +5035,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can manage and operate backup polices and plans. |
 | Viewer | As a viewer, you can retrieve backup polices and plans but you can't modify them. |
 {: row-headers}
-{: caption="Table 82. Platform roles - Regional Backup as a Service for VPC" caption-side="top"}
+{: caption="Table 107. Platform roles - Regional Backup as a Service for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.backup-policy"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table82}
+{: #platform-roles-table107}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5107,12 +5050,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.backup-policy.backup-policy.list` | IAM action for listing all backup policy in an account | Administrator, Editor, Operator, Viewer |
 | `is.backup-policy.backup-policy.update` | IAM action for Updating Backup Policy | Administrator, Editor |
 | `is.backup-policy.backup-policy.delete` | IAM action for deleting a backup policy | Administrator, Editor |
-{: caption="Table 82. Service actions - Regional Backup as a Service for VPC" caption-side="top"}
+{: caption="Table 107. Service actions - Regional Backup as a Service for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.backup-policy"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table82}
+{: #actions-table107}
 
 ## Bare Metal Server for VPC
 {: #is.bare-metal-server-roles}
@@ -5126,24 +5069,24 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can view and perform actions (such as restart) on a bare metal server. |
 | Viewer | As a viewer, you can view bare metal servers, but not modify them. |
 {: row-headers}
-{: caption="Table 83. Platform roles - Bare Metal Server for VPC" caption-side="top"}
+{: caption="Table 108. Platform roles - Bare Metal Server for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.bare-metal-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table83}
+{: #platform-roles-table108}
 
 | Role | Description |
 | ----- | :----- |
 | Bare Metal Advanced Network Operator | As an advanced network operator, you will be permitted access to modify IP Spoofing and Infrastructure NAT on bare metal interfaces |
 | Bare Metal Console Admin | As a console admin, you will be able to access the bare metal server console. |
 {: row-headers}
-{: caption="Table 83. Service roles - Bare Metal Server for VPC" caption-side="top"}
+{: caption="Table 108. Service roles - Bare Metal Server for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.bare-metal-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table83}
+{: #service-roles-table108}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5158,12 +5101,63 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.bare-metal-server.bare-metal-server.infrastructure-nat` | NAT control for Bare Metal Server | Bare Metal Advanced Network Operator |
 | `is.bare-metal-server.bare-metal-server.console` | Access Bare Metal Server Console | Bare Metal Console Admin |
 | `is.bare-metal-server.bare-metal-server-firmware.update` | Update Firmware on a Bare Metal Server | Administrator, Editor, Operator |
-{: caption="Table 83. Service actions - Bare Metal Server for VPC" caption-side="top"}
+| `is.bare-metal-server.initialization.update` | Server initialization on a bare metal server | Administrator, Editor |
+{: caption="Table 108. Service actions - Bare Metal Server for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.bare-metal-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table83}
+{: #actions-table108}
+
+## Cluster Network
+{: #is.cluster-network-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.cluster-network` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 109. Platform roles - Cluster Network" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="is.cluster-network"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table109}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `is.cluster-network.cluster-network.create` | Create Cluster Network | Administrator, Editor |
+| `is.cluster-network.cluster-network.read` | Read Cluster Network | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.cluster-network.list` | List Cluster Networks | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.cluster-network.update` | Update Cluster Network | Administrator, Editor |
+| `is.cluster-network.cluster-network.delete` | Delete Cluster Network | Administrator, Editor |
+| `is.cluster-network.profile.read` | Read Cluster Network Profile | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.profile.list` | List Cluster Network Profiles | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.interface.create` | Create Cluster Network Interface | Administrator, Editor |
+| `is.cluster-network.interface.read` | Read Cluster Network Interface | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.interface.list` | List Cluster Network Interface | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.interface.update` | Update Cluster Network Interface | Administrator, Editor |
+| `is.cluster-network.interface.delete` | Delete Cluster Network Interface | Administrator, Editor |
+| `is.cluster-network.subnet.create` | Create Cluster Network Subnet | Administrator, Editor |
+| `is.cluster-network.subnet.read` | Read Cluster Network Subnet | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.subnet.list` | List Cluster Network Subnets | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.subnet.update` | Update Cluster Network Subnet | Administrator, Editor |
+| `is.cluster-network.subnet.delete` | Delete Cluster Network Subnet | Administrator, Editor |
+| `is.cluster-network.subnet-reserved-ip.create` | Create Cluster Network Subnet Reserved IP | Administrator, Editor |
+| `is.cluster-network.subnet-reserved-ip.read` | Read Cluster Network Subnet Reserved IP | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.subnet-reserved-ip.list` | List Cluster Network Subnet Reserved IPs | Administrator, Editor, Operator, Viewer |
+| `is.cluster-network.subnet-reserved-ip.update` | Update Cluster Network Subnet Reserved IP | Administrator, Editor |
+| `is.cluster-network.subnet-reserved-ip.delete` | Delete Cluster Network Subnet Reserved IP | Administrator, Editor |
+{: caption="Table 109. Service actions - Cluster Network" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="is.cluster-network"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table109}
 
 ## Dedicated Host for VPC
 {: #is.dedicated-host-roles}
@@ -5177,12 +5171,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 84. Platform roles - Dedicated Host for VPC" caption-side="top"}
+{: caption="Table 110. Platform roles - Dedicated Host for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.dedicated-host"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table84}
+{: #platform-roles-table110}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5202,12 +5196,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.dedicated-host.dedicated-host.operate` | Operate on a Dedicated Host | Administrator, Editor, Operator |
 | `is.dedicated-host.dedicated-host-group.operate` | Operate on a Dedicated Host Group | Administrator, Editor, Operator |
 | `is.dedicated-host.dedicated-host-group.list` | List Dedicated Host Groups | Administrator, Editor, Operator, Viewer |
-{: caption="Table 84. Service actions - Dedicated Host for VPC" caption-side="top"}
+{: caption="Table 110. Service actions - Dedicated Host for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.dedicated-host"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table84}
+{: #actions-table110}
 
 ## Virtual Private Endpoint for VPC
 {: #is.endpoint-gateway-roles}
@@ -5216,17 +5210,17 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator you can create, delete, update and view endpoint gateway service instances, and assign access policies to other users. Administrators can also bind and unbind an endpoint gateway to a reserved IP address. |
+| Administrator | As an administrator you can create, delete, update and view endpoint gateway service instances, and assign access policies to other users.  Administrators can also bind and unbind an endpoint gateway to a reserved IP address. |
 | Editor | As an editor you can create, delete, update and view endpoint gateway service instance. Editors can also bind and unbind an endpoint gateway to a reserved IP address. |
-| Operator | As an operator you can bind and unbind an endpoint gateway service instance to a reserved IP address. You can also view the properties of endpoint gateways but you cannot modify them. |
-| Viewer | 	As a viewer you can view the properties of endpoint gateway service instances, but you cannot modify them. |
+| Operator | As an operator you can bind and unbind an endpoint gateway service instance to a reserved IP address.  You can also view the properties of endpoint gateways but you cannot modify them. |
+| Viewer | As a viewer you can view the properties of endpoint gateway service instances, but you cannot modify them. |
 {: row-headers}
-{: caption="Table 85. Platform roles - Virtual Private Endpoint for VPC" caption-side="top"}
+{: caption="Table 111. Platform roles - Virtual Private Endpoint for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.endpoint-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table85}
+{: #platform-roles-table111}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5236,12 +5230,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.endpoint-gateway.endpoint-gateway.update` | Update Endpoint Gateway | Administrator, Editor |
 | `is.endpoint-gateway.endpoint-gateway.list` | List Endpoint Gateways | Administrator, Editor, Operator, Viewer |
 | `is.endpoint-gateway.endpoint-gateway.operate` | Operate Endpoint Gateway | Administrator, Editor, Operator |
-{: caption="Table 85. Service actions - Virtual Private Endpoint for VPC" caption-side="top"}
+{: caption="Table 111. Service actions - Virtual Private Endpoint for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.endpoint-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table85}
+{: #actions-table111}
 
 ## Floating IP for VPC
 {: #is.floating-ip-roles}
@@ -5255,27 +5249,27 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 86. Platform roles - Floating IP for VPC" caption-side="top"}
+{: caption="Table 112. Platform roles - Floating IP for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.floating-ip"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table86}
+{: #platform-roles-table112}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
+| `is.floating-ip.floating-ip.read` |  | Administrator, Editor, Operator, Viewer |
+| `is.floating-ip.floating-ip.operate` |  | Administrator, Editor, Operator |
+| `is.floating-ip.floating-ip.update` |  | Administrator, Editor |
 | `is.floating-ip.floating-ip.create` |  | Administrator, Editor |
 | `is.floating-ip.floating-ip.delete` |  | Administrator, Editor |
-| `is.floating-ip.floating-ip.update` |  | Administrator, Editor |
-| `is.floating-ip.floating-ip.operate` |  | Administrator, Editor, Operator |
-| `is.floating-ip.floating-ip.read` |  | Administrator, Editor, Operator, Viewer |
 | `is.floating-ip.floating-ip.list` |  | Administrator, Editor, Operator, Viewer |
-{: caption="Table 86. Service actions - Floating IP for VPC" caption-side="top"}
+{: caption="Table 112. Service actions - Floating IP for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.floating-ip"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table86}
+{: #actions-table112}
 
 ## IBM Cloud Flow Logs for VPC
 {: #is.flow-log-collector-roles}
@@ -5289,27 +5283,28 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 87. Platform roles - IBM Cloud Flow Logs for VPC" caption-side="top"}
+{: caption="Table 113. Platform roles - IBM Cloud Flow Logs for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.flow-log-collector"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table87}
+{: #platform-roles-table113}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
+| `is.flow-log-collector.dashboard.view` |  | Administrator, Editor, Operator |
 | `is.flow-log-collector.flow-log-collector.read` | As an administrator, an editor, an operator or a viewer, you can view the details of a flow log collector | Administrator, Editor, Operator, Viewer |
 | `is.flow-log-collector.flow-log-collector.update` | As an administrator or an editor, you can update a flow log collector | Administrator, Editor |
 | `is.flow-log-collector.flow-log-collector.operate` | As an administrator, an editor or an operator, you can operate on a flow log collector | Administrator, Editor, Operator |
 | `is.flow-log-collector.flow-log-collector.create` | As an administrator or an editor, you can create a flow log collector | Administrator, Editor |
 | `is.flow-log-collector.flow-log-collector.delete` | As an administrator or an editor, you can delete a flow log collector | Administrator, Editor |
 | `is.flow-log-collector.flow-log-collector.list` | List Flow Log Collectors | Administrator, Editor, Operator, Viewer |
-{: caption="Table 87. Service actions - IBM Cloud Flow Logs for VPC" caption-side="top"}
+{: caption="Table 113. Service actions - IBM Cloud Flow Logs for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.flow-log-collector"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table87}
+{: #actions-table113}
 
 ## Image Service for VPC
 {: #is.image-roles}
@@ -5323,45 +5318,46 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 88. Platform roles - Image Service for VPC" caption-side="top"}
+{: caption="Table 114. Platform roles - Image Service for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.image"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table88}
+{: #platform-roles-table114}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 88. Service roles - Image Service for VPC" caption-side="top"}
+{: caption="Table 114. Service roles - Image Service for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.image"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table88}
+{: #service-roles-table114}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.image.image.list` | List Images | Administrator, Editor, Operator, Viewer |
-| `is.image.image.read` | Read Images | Administrator, Editor, Operator, Viewer |
+| `is.image.image.read` | Read Images | Administrator, Editor, Operator, Reader, Viewer |
 | `is.image.image.create` | Create Images | Administrator, Editor |
-| `is.image.image.update` | Update Images | Administrator, Editor |
 | `is.image.image.delete` | Delete Images | Administrator, Editor |
 | `is.image.image.provision` | Provision Images | Administrator, Editor, Operator |
-| `is.image.image.operate` | Operate on Custom Images | Administrator, Editor, Operator |
-| `is.image.image.config.read` | IBM Cloud Compliance Configuration Read | Service Configuration Reader |
+| `is.image.image.update` | Update Images | Administrator, Editor |
+| `is.image.image.operate` | Operate on custom images | Administrator, Editor, Manager, Operator |
+| `is.image.image.config.read` | Configuration Information Point API access | Service Configuration Reader |
 | `is.image.image.export` | Export on Custom Images | Administrator, Editor |
-| `is.image.image.obsolete` | Set an image status to obsolete | Administrator, Editor, Manager, Writer |
 | `is.image.image.deprecate` | Set an image status to deprecated | Administrator, Editor, Manager, Writer |
-{: caption="Table 88. Service actions - Image Service for VPC" caption-side="top"}
+| `is.image.image.obsolete` | Set an image status to obsolete | Administrator, Editor, Manager, Writer |
+{: caption="Table 114. Service actions - Image Service for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.image"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table88}
+{: #actions-table114}
 
 ## Virtual Server for VPC
 {: #is.instance-roles}
@@ -5375,12 +5371,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 89. Platform roles - Virtual Server for VPC" caption-side="top"}
+{: caption="Table 115. Platform roles - Virtual Server for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table89}
+{: #platform-roles-table115}
 
 | Role | Description |
 | ----- | :----- |
@@ -5388,12 +5384,12 @@ Review the available platform and service roles and the actions mapped to each t
 | IP Spoofing Operator | As the IP spoofing operator, you can enable or disable the IP spoofing check on virtual server instances. This role should only be granted if necessary.  |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 89. Service roles - Virtual Server for VPC" caption-side="top"}
+{: caption="Table 115. Service roles - Virtual Server for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table89}
+{: #service-roles-table115}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5410,12 +5406,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.instance.instance.ip-spoofing` | IP spoofing control for Virtual Server Instance | IP Spoofing Operator |
 | `is.instance.instance.console` | Access Virtual Server Instance Console | Console Administrator |
 | `is.instance.instance.config.read` | IBM Cloud Compliance Configuration Read | Service Configuration Reader |
-{: caption="Table 89. Service actions - Virtual Server for VPC" caption-side="top"}
+{: caption="Table 115. Service actions - Virtual Server for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table89}
+{: #actions-table115}
 
 ## Auto Scale for VPC
 {: #is.instance-group-roles}
@@ -5429,38 +5425,39 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 90. Platform roles - Auto Scale for VPC" caption-side="top"}
+{: caption="Table 116. Platform roles - Auto Scale for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.instance-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table90}
+{: #platform-roles-table116}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 90. Service roles - Auto Scale for VPC" caption-side="top"}
+{: caption="Table 116. Service roles - Auto Scale for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.instance-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table90}
+{: #service-roles-table116}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
+| `is.instance-group.dashboard.view` | View Dashboard | Administrator, Editor, Operator, Viewer |
 | `is.instance-group.instance-group.read` | Read an Instance Group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `is.instance-group.instance-group.create` | Create an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.update` | Update an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.delete` | Delete an Instance Group | Administrator, Editor |
 | `is.instance-group.instance-group.list` | List Instance Groups | Administrator, Editor, Operator, Viewer |
 | `is.instance-group.instance-group.config.read` | Configuration Information Point API access | Service Configuration Reader |
-{: caption="Table 90. Service actions - Auto Scale for VPC" caption-side="top"}
+{: caption="Table 116. Service actions - Auto Scale for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.instance-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table90}
+{: #actions-table116}
 
 ## SSH Key for VPC
 {: #is.key-roles}
@@ -5474,12 +5471,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 91. Platform roles - SSH Key for VPC" caption-side="top"}
+{: caption="Table 117. Platform roles - SSH Key for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.key"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table91}
+{: #platform-roles-table117}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5496,13 +5493,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.key.userdata.delete` | Delete User Data | Administrator, Editor |
 | `is.key.userdata.read` | Read User Data | Administrator, Editor, Operator, Viewer |
 | `is.key.artifactattachment.read` | Read Artifact Attachment | Administrator, Editor, Operator, Viewer |
-| `is.key.key.operate` | Operate on Key | Administrator, Editor, Operator |
-{: caption="Table 91. Service actions - SSH Key for VPC" caption-side="top"}
+| `is.key.key.operate` | Operate on SSH Keys | Administrator, Editor, Operator |
+{: caption="Table 117. Service actions - SSH Key for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.key"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table91}
+{: #actions-table117}
 
 ## Load Balancer for VPC
 {: #is.load-balancer-roles}
@@ -5516,36 +5513,41 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 92. Platform roles - Load Balancer for VPC" caption-side="top"}
+{: caption="Table 118. Platform roles - Load Balancer for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.load-balancer"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table92}
+{: #platform-roles-table118}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 92. Service roles - Load Balancer for VPC" caption-side="top"}
+{: caption="Table 118. Service roles - Load Balancer for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.load-balancer"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table92}
+{: #service-roles-table118}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `is.load-balancer.load-balancer.view` | View load balancers | Administrator, Editor, Operator, Viewer |
 | `is.load-balancer.load-balancer.manage` |  | Administrator, Editor |
+| `is.load-balancer.load-balancer.read` | DNLB Load Balancer Read Permission (DNLB)  | Administrator, Editor, Operator, Viewer |
+| `is.load-balancer.load-balancer.create` | Create Load Balancer (DNLB) | Administrator, Editor |
+| `is.load-balancer.load-balancer.delete` | Load Balancer Delete Permission (DNLB) | Administrator, Editor |
+| `is.load-balancer.load-balancer.update` | Load Balancer Update permission (DNLB) | Administrator, Editor |
+| `is.load-balancer.load-balancer.list` | Load Balancer List Permission (DNLB) | Administrator, Editor, Operator, Viewer |
 | `is.load-balancer.config.read` | Configuration Information Point API access | Service Configuration Reader |
 | `is.load-balancer.load-balancer.operate` | Operator permissions for load balancers | Administrator, Editor, Operator |
-{: caption="Table 92. Service actions - Load Balancer for VPC" caption-side="top"}
+{: caption="Table 118. Service actions - Load Balancer for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.load-balancer"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table92}
+{: #actions-table118}
 
 ## Network ACL
 {: #is.network-acl-roles}
@@ -5559,12 +5561,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 93. Platform roles - Network ACL" caption-side="top"}
+{: caption="Table 119. Platform roles - Network ACL" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.network-acl"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table93}
+{: #platform-roles-table119}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5574,12 +5576,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.network-acl.network-acl.delete` |  | Administrator, Editor |
 | `is.network-acl.network-acl.list` |  | Administrator, Editor, Operator, Viewer |
 | `is.network-acl.network-acl.operate` |  | Administrator, Editor, Operator |
-{: caption="Table 93. Service actions - Network ACL" caption-side="top"}
+{: caption="Table 119. Service actions - Network ACL" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.network-acl"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table93}
+{: #actions-table119}
 
 ## Placement Groups for VPC
 {: #is.placement-group-roles}
@@ -5593,12 +5595,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 94. Platform roles - Placement Groups for VPC" caption-side="top"}
+{: caption="Table 120. Platform roles - Placement Groups for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.placement-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table94}
+{: #platform-roles-table120}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5609,12 +5611,46 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.placement-group.placement-group.operate` | Add or remove an instance to or from a placement group | Administrator, Editor, Operator |
 | `is.placement-group.placement-group.read` | View the details of a virtual instance placement group | Administrator, Editor, Operator, Viewer |
 | `is.placement-group.placement-group.list` | List all placements groups associated for this account | Administrator, Editor, Operator, Viewer |
-{: caption="Table 94. Service actions - Placement Groups for VPC" caption-side="top"}
+{: caption="Table 120. Service actions - Placement Groups for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.placement-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table94}
+{: #actions-table120}
+
+## Private Path Service for VPC
+{: #is.private-path-service-gateway-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.private-path-service-gateway` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator you can create, delete, update and view private path service gateway service instances, and assign access policies to other users. |
+| Editor | As an editor you can create, delete, update and view private path service gateway service instance. |
+| Operator | As an operator you can view the properties of private path service gateways but you cannot modify them. |
+| Viewer | As a viewer you can view the properties of private path service gateway service instances, but you cannot modify them. |
+{: row-headers}
+{: caption="Table 121. Platform roles - Private Path Service for VPC" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="is.private-path-service-gateway"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table121}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `is.private-path-service-gateway.private-path-service-gateway.read` | View Private Path Service | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.private-path-service-gateway.list` | List Private Path Services | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.private-path-service-gateway.create` | Create Private Path Service | Administrator, Editor |
+| `is.private-path-service-gateway.private-path-service-gateway.delete` | Delete Private Path Service | Administrator, Editor |
+| `is.private-path-service-gateway.private-path-service-gateway.update` | Update Private Path Service | Administrator, Editor |
+| `is.private-path-service-gateway.private-path-service-gateway.operate` | Operate Private Path Service | Administrator, Editor, Operator |
+{: caption="Table 121. Service actions - Private Path Service for VPC" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="is.private-path-service-gateway"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table121}
 
 ## Public Gateway
 {: #is.public-gateway-roles}
@@ -5628,12 +5664,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 95. Platform roles - Public Gateway" caption-side="top"}
+{: caption="Table 122. Platform roles - Public Gateway" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.public-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table95}
+{: #platform-roles-table122}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5643,12 +5679,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.public-gateway.public-gateway.delete` |  | Administrator, Editor |
 | `is.public-gateway.public-gateway.list` |  | Administrator, Editor, Operator, Viewer |
 | `is.public-gateway.public-gateway.operate` |  | Administrator, Editor, Operator |
-{: caption="Table 95. Service actions - Public Gateway" caption-side="top"}
+{: caption="Table 122. Service actions - Public Gateway" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.public-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table95}
+{: #actions-table122}
 
 ## Reservations for VPC
 {: #is.reservation-roles}
@@ -5659,15 +5695,15 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions for the reservation resource this role is assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions for a reservation resource except managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate reservation resources, such as viewing the reservations dashboard. |
+| Operator | As an operator, you can perform platform actions required to configure and operate reservation resources, such as viewing the reservation dashboard. |
 | Viewer | As a viewer, you can view reservation resources, but you can't modify them. |
 {: row-headers}
-{: caption="Table 96. Platform roles - Reservations for VPC" caption-side="top"}
+{: caption="Table 123. Platform roles - Reservations for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.reservation"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table96}
+{: #platform-roles-table123}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5679,12 +5715,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.reservation.reservation.operate` | Operate Reservation | Administrator, Editor, Operator |
 | `is.reservation.reservation.activate` | Activate Reservation | Administrator, Editor |
 | `is.reservation.reservation.expire` | Expire Reservation | Administrator, Editor |
-{: caption="Table 96. Service actions - Reservations for VPC" caption-side="top"}
+{: caption="Table 123. Service actions - Reservations for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.reservation"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table96}
+{: #actions-table123}
 
 ## Security Group for VPC
 {: #is.security-group-roles}
@@ -5698,12 +5734,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 97. Platform roles - Security Group for VPC" caption-side="top"}
+{: caption="Table 124. Platform roles - Security Group for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.security-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table97}
+{: #platform-roles-table124}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+{: row-headers}
+{: caption="Table 124. Service roles - Security Group for VPC" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="is.security-group"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table124}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5711,13 +5758,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.security-group.security-group.read` |  | Administrator, Editor, Operator, Viewer |
 | `is.security-group.security-group.update` |  | Administrator, Editor |
 | `is.security-group.security-group.delete` |  | Administrator, Editor |
-| `is.security-group.security-group.operate` |  | Administrator, Editor, Operator |
-{: caption="Table 97. Service actions - Security Group for VPC" caption-side="top"}
+| `is.security-group.security-group.operate` | Security Group Operate | Administrator, Editor, Manager, Operator |
+{: caption="Table 124. Service actions - Security Group for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.security-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table97}
+{: #actions-table124}
 
 ## File Storage for VPC
 {: #is.share-roles}
@@ -5731,25 +5778,26 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 98. Platform roles - File Storage for VPC" caption-side="top"}
+{: caption="Table 125. Platform roles - File Storage for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.share"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table98}
+{: #platform-roles-table125}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Share Broker | The role to create and delete the bindings between the real and shadow share. |
 | Share Remote Account Accessor | To create cross account accessor from origin share belonging to another account |
+| Share Snapshot Operator | Share Snapshot Operator |
 {: row-headers}
-{: caption="Table 98. Service roles - File Storage for VPC" caption-side="top"}
+{: caption="Table 125. Service roles - File Storage for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.share"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table98}
+{: #service-roles-table125}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5765,13 +5813,18 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.share.accessor-binding.delete` | Deletes the accessor binding of is.share | Administrator, Share Broker |
 | `is.share.accessor-binding.read` | Get Share Accessor Binding | Administrator, Editor, Operator, Viewer |
 | `is.share.accessor-binding.list` | List Share Accessor Bindings | Administrator, Editor, Operator, Viewer |
-| `is.share.share.allow-remote-account-access` | To create accessor share pointing to origin share in another account. | Share Remote Account Accessor |
-{: caption="Table 98. Service actions - File Storage for VPC" caption-side="top"}
+| `is.share.share.allow-remote-account-access` | Allows to operate on cross account shares | Share Remote Account Accessor |
+| `is.share.snapshot.create` | Create share snapshot | Administrator, Share Snapshot Operator |
+| `is.share.snapshot.read` | Read share snapshot | Administrator, Share Snapshot Operator |
+| `is.share.snapshot.list` | List Share Snapshots | Administrator, Share Snapshot Operator |
+| `is.share.snapshot.update` | Patch Share Snapshot | Administrator, Share Snapshot Operator |
+| `is.share.snapshot.delete` | Delete Share Snapshot | Administrator, Share Snapshot Operator |
+{: caption="Table 125. Service actions - File Storage for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.share"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table98}
+{: #actions-table125}
 
 ## Block Storage Snapshots for VPC
 {: #is.snapshot-roles}
@@ -5785,23 +5838,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can view, list and restore block storage snapshots, but you can't modify them. |
 | Viewer | As a viewer, you can view and list block storage snapshots, but you can't modify them. |
 {: row-headers}
-{: caption="Table 99. Platform roles - Block Storage Snapshots for VPC" caption-side="top"}
+{: caption="Table 126. Platform roles - Block Storage Snapshots for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.snapshot"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table99}
+{: #platform-roles-table126}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 99. Service roles - Block Storage Snapshots for VPC" caption-side="top"}
+{: caption="Table 126. Service roles - Block Storage Snapshots for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.snapshot"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table99}
+{: #service-roles-table126}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5811,17 +5864,16 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.snapshot.snapshot.update` | This action allows the user to modify block storage snapshots. | Administrator, Editor |
 | `is.snapshot.snapshot.delete` | This action allows the user to delete block storage snapshots. | Administrator, Editor |
 | `is.snapshot.snapshot.restore` | This action allows the user to restore block storage snapshots. | Administrator, Editor, Operator |
-| `is.snapshot.snapshot.operate` | Operate a snapshot | Administrator, Editor, Operator |
+| `is.snapshot.snapshot.operate` | Operation a snapshot | Administrator, Editor, Operator |
 | `is.snapshot.snapshot.config.read` | Configuration Governance endpoint | Service Configuration Reader |
 | `is.snapshot.snapshot-clone.create` | Create clones of block storage snapshots for fast restoration | Administrator, Editor |
-| `is.snapshot.clone.read` | View the clones of block storage snapshots | Administrator, Editor, Operator, Viewer |
 | `is.snapshot.snapshot-clone.delete` | Delete clones of block storage snapshots | Administrator, Editor |
-{: caption="Table 99. Service actions - Block Storage Snapshots for VPC" caption-side="top"}
+{: caption="Table 126. Service actions - Block Storage Snapshots for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.snapshot"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table99}
+{: #actions-table126}
 
 ## Multi Volume Snapshots for VPC
 {: #is.snapshot-consistency-group-roles}
@@ -5835,12 +5887,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can view and list snapshot consistency group, but you can't modify them. |
 | Viewer | As a viewer, you can view and list snapshot consistency group, but you can't modify them. |
 {: row-headers}
-{: caption="Table 100. Platform roles - Multi Volume Snapshots for VPC" caption-side="top"}
+{: caption="Table 127. Platform roles - Multi Volume Snapshots for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.snapshot-consistency-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table100}
+{: #platform-roles-table127}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5849,12 +5901,57 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.snapshot-consistency-group.snapshot-consistency-group.list` | This action allows the user to list snapshot consistency group resources. | Administrator, Editor, Operator, Viewer |
 | `is.snapshot-consistency-group.snapshot-consistency-group.update` | This action allows the user to modify snapshot consistency group properties  | Administrator, Editor |
 | `is.snapshot-consistency-group.snapshot-consistency-group.delete` | This action allows the user to delete Snapshot Consistency Group | Administrator, Editor |
-{: caption="Table 100. Service actions - Multi Volume Snapshots for VPC" caption-side="top"}
+{: caption="Table 127. Service actions - Multi Volume Snapshots for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.snapshot-consistency-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table100}
+{: #actions-table127}
+
+## IBM Cloud Storage Service for NetApp ONTAP
+{: #is.storage-ontap-instance-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.storage-ontap-instance` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 128. Platform roles - IBM Cloud Storage Service for NetApp ONTAP" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="is.storage-ontap-instance"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table128}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `is.storage-ontap-instance.dashboard.view` | View Dashboard | Administrator, Editor, Operator |
+| `is.storage-ontap-instance.storage-ontap-instance.create` | Creates a storage-ontap-instance | Administrator, Editor |
+| `is.storage-ontap-instance.storage-ontap-instance.delete` | Deletes a storage ontap instance | Administrator, Editor |
+| `is.storage-ontap-instance.storage-ontap-instance.operate` | Operate a storage ontap instance | Administrator, Editor, Operator |
+| `is.storage-ontap-instance.storage-ontap-instance.list` | List a storage ontap instance | Administrator, Editor, Operator, Viewer |
+| `is.storage-ontap-instance.storage-ontap-instance.read` | Read a storage ontap instance | Administrator, Editor, Viewer |
+| `is.storage-ontap-instance.storage-ontap-instance.update` | Update a storage ontap instance | Administrator, Editor |
+| `is.storage-ontap-instance.storage-virtual-machine.update` | Update a storage virtual machine | Administrator, Editor |
+| `is.storage-ontap-instance.storage-virtual-machine.read` | Read a storage virtual machine | Administrator, Editor, Viewer |
+| `is.storage-ontap-instance.storage-virtual-machine.list` | List storage virtual machines in storage ontap instance | Administrator, Editor, Viewer |
+| `is.storage-ontap-instance.volume.create` | Create CVO volume  | Administrator, Editor |
+| `is.storage-ontap-instance.volume.delete` | Delete CVO volume | Administrator, Editor |
+| `is.storage-ontap-instance.volume.update` | Update CVO volume | Administrator, Editor |
+| `is.storage-ontap-instance.volume.read` | Get CVO Volume | Administrator, Editor, Viewer |
+| `is.storage-ontap-instance.volume.list` | List CVO volumes | Administrator, Editor, Viewer |
+| `is.storage-ontap-instance.volume.operate` | Operate CVO volume | Administrator, Editor, Operator, Viewer |
+| `is.storage-ontap-instance.storage-virtual-machine.operate` | Operate a CVO storage virtual machine | Administrator, Editor, Operator, Viewer |
+{: caption="Table 128. Service actions - IBM Cloud Storage Service for NetApp ONTAP" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="is.storage-ontap-instance"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table128}
 
 ## Subnet
 {: #is.subnet-roles}
@@ -5868,12 +5965,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 101. Platform roles - Subnet" caption-side="top"}
+{: caption="Table 129. Platform roles - Subnet" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.subnet"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table101}
+{: #platform-roles-table129}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+{: row-headers}
+{: caption="Table 129. Service roles - Subnet" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="is.subnet"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table129}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5882,13 +5990,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.subnet.subnet.update` |  | Administrator, Editor |
 | `is.subnet.subnet.delete` |  | Administrator, Editor |
 | `is.subnet.subnet.list` |  | Administrator, Editor, Operator, Viewer |
-| `is.subnet.subnet.operate` |  | Administrator, Editor, Operator |
-{: caption="Table 101. Service actions - Subnet" caption-side="top"}
+| `is.subnet.subnet.operate` | Operate Subnet | Administrator, Editor, Manager, Operator |
+{: caption="Table 129. Service actions - Subnet" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.subnet"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table101}
+{: #actions-table129}
 
 ## Virtual Network Interface
 {: #is.virtual-network-interface-roles}
@@ -5902,12 +6010,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As a Virtual Network Interface operator, you can Read, List, Attach, and Detach Virtual Network resources. |
 | Viewer | As a Virtual Network Interface viewer, you can Read, and List Virtual Network resources. |
 {: row-headers}
-{: caption="Table 102. Platform roles - Virtual Network Interface" caption-side="top"}
+{: caption="Table 130. Platform roles - Virtual Network Interface" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.virtual-network-interface"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table102}
+{: #platform-roles-table130}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5920,12 +6028,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.virtual-network-interface.virtual-network-interface.manage-infrastructure-nat` | Infrastructure NAT for Virtual Network Interface | Administrator |
 | `is.virtual-network-interface.virtual-network-interface.manage-ip-spoofing` | IP Spoofing for Virtual Network Interface | Administrator |
 | `is.virtual-network-interface.virtual-network-interface.manage-protocol-state-filtering-mode` | Configure Protocol State Filtering for Virtual Network Interface | Administrator, Editor |
-{: caption="Table 102. Service actions - Virtual Network Interface" caption-side="top"}
+{: caption="Table 130. Service actions - Virtual Network Interface" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.virtual-network-interface"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table102}
+{: #actions-table130}
 
 ## Block Storage for VPC
 {: #is.volume-roles}
@@ -5939,40 +6047,43 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 103. Platform roles - Block Storage for VPC" caption-side="top"}
+{: caption="Table 131. Platform roles - Block Storage for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table103}
+{: #platform-roles-table131}
 
 | Role | Description |
 | ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Restore Volume From Remote Account Snapshot | To create cross account snapshot restore |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 103. Service roles - Block Storage for VPC" caption-side="top"}
+{: caption="Table 131. Service roles - Block Storage for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table103}
+{: #service-roles-table131}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.volume.profile.view` |  | Administrator, Editor, Operator, Viewer |
-| `is.volume.volume.create` |  | Administrator, Editor |
-| `is.volume.volume.list` |  | Administrator, Editor, Operator, Viewer |
-| `is.volume.volume.read` |  | Administrator, Editor, Operator, Viewer |
-| `is.volume.volume.update` |  | Administrator, Editor |
-| `is.volume.volume.delete` |  | Administrator, Editor |
+| `is.volume.profile.view` | View profile | Administrator, Editor, Operator, Viewer |
+| `is.volume.volume.create` | Create Volume | Administrator, Editor, Manager |
+| `is.volume.volume.list` | List Volumes | Administrator, Editor, Operator, Viewer |
+| `is.volume.volume.read` | Get Volume | Administrator, Editor, Manager, Operator, Viewer |
+| `is.volume.volume.update` | Update Volume | Administrator, Editor |
+| `is.volume.volume.delete` | Delete Volume | Administrator, Editor |
 | `is.volume.volume.config.read` | Configuration Governance endpoint | Service Configuration Reader |
-| `is.volume.volume.operate` | Operate a volume | Administrator, Editor, Operator |
-{: caption="Table 103. Service actions - Block Storage for VPC" caption-side="top"}
+| `is.volume.volume.operate` | Operation a volume | Administrator, Editor, Operator |
+| `is.volume.volume.allow-remote-account-snapshot-restore` | Allow remote account snapshot restore | Restore Volume From Remote Account Snapshot |
+{: caption="Table 131. Service actions - Block Storage for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table103}
+{: #actions-table131}
 
 ## Virtual Private Cloud
 {: #is.vpc-roles}
@@ -5986,52 +6097,53 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 104. Platform roles - Virtual Private Cloud" caption-side="top"}
+{: caption="Table 132. Platform roles - Virtual Private Cloud" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.vpc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table104}
+{: #platform-roles-table132}
 
 | Role | Description |
 | ----- | :----- |
-| DNS Binding Connector | DNS Binding Connector role is required to create and remove DNS resolution bindings. |
+| DNS Binding Connector | DNS Binding Connector role is required to create and remove DNS resolution binding |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 {: row-headers}
-{: caption="Table 104. Service roles - Virtual Private Cloud" caption-side="top"}
+{: caption="Table 132. Service roles - Virtual Private Cloud" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.vpc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table104}
+{: #service-roles-table132}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.vpc.vpc.read` | View a Virtual Private Cloud (VPC) | Administrator, DNS Binding Connector, Editor, Operator, Viewer |
-| `is.vpc.vpc.create` | Create a Virtual Private Cloud (VPC) | Administrator, Editor |
-| `is.vpc.vpc.delete` | Delete a Virtual Private Cloud (VPC) | Administrator, Editor |
-| `is.vpc.vpc.update` | Update a Virtual Private Cloud (VPC) | Administrator, Editor |
-| `is.vpc.vpc.list` | List Virtual Private Clouds (VPC) | Administrator, Editor, Operator, Viewer |
-| `is.vpc.vpc.operate` | Operate a Virtual Private Clouds (VPC) | Administrator, Editor, Operator |
-| `is.vpc.routing-table.list` | List Routing Tables | Administrator, Editor, Operator, Viewer |
+| `is.vpc.vpc.read` | View VPC | Administrator, DNS Binding Connector, Editor, Operator, Viewer |
+| `is.vpc.vpc.create` |  | Administrator, Editor |
+| `is.vpc.vpc.delete` |  | Administrator, Editor |
+| `is.vpc.vpc.update` |  | Administrator, Editor |
+| `is.vpc.vpc.list` |  | Administrator, Editor, Operator, Viewer |
+| `is.vpc.vpc.operate` | Operate VPC | Administrator, Editor, Manager, Operator |
+| `is.vpc.routing-table.list` | List routing tables | Administrator, Editor, Operator, Viewer |
 | `is.vpc.routing-table.read` | Read Routes/Details of Routing Table | Administrator, Editor, Operator, Viewer |
-| `is.vpc.routing-table.create` | Create a Route Table | Administrator, Editor |
-| `is.vpc.routing-table.update` | Update Routing Table and Routes | Administrator, Editor |
-| `is.vpc.routing-table.delete` | Delete Route Table | Administrator, Editor |
-| `is.vpc.routing-table.operate` | Configure Subnet Attachment to Route Table | Administrator, Editor, Operator |
-| `is.vpc.routing-table.advertise` | Enable or disable route advertisement of non-VPC address prefixes and routes to Transit Gateway and Direct Link | Administrator, Editor |
+| `is.vpc.routing-table.create` | Create a routing table | Administrator, Editor |
+| `is.vpc.routing-table.update` | Update routing tables and routes | Administrator, Editor |
+| `is.vpc.routing-table.delete` | Delete Routing Tables | Administrator, Editor |
+| `is.vpc.routing-table.operate` | Configure Subnet Attachment to Routing Tables | Administrator, Editor, Operator |
+| `is.vpc.routing-table.advertise` | Configure Route Advertisement | Administrator, Editor |
 | `is.vpc.dns-resolution-binding.create` | Create DNS resolution binding | Administrator, Editor |
-| `is.vpc.dns-resolution-binding.delete` | Delete DNS resolution binding | Administrator, Editor |
+| `is.vpc.dns-resolution-binding.delete` |  	Delete DNS resolution binding | Administrator, Editor |
 | `is.vpc.dns-resolution-binding.update` | Update the name of a DNS resolution binding | Administrator, Editor |
 | `is.vpc.dns-resolution-binding.read` | Get details of a DNS resolution binding | Administrator, Editor, Operator, Viewer |
-| `is.vpc.dns-resolution-binding.list` | List DNS resolution bindings | Administrator, Editor, Operator, Viewer |
+| `is.vpc.dns-resolution-binding.list` |  	List DNS resolution bindings | Administrator, Editor, Operator, Viewer |
 | `is.vpc.dns-resolution-binding.connect` | Connect DNS resolution binding between two VPCs | DNS Binding Connector |
 | `is.vpc.dns-resolution-binding.disconnect` | Disconnect DNS resolution binding between two VPCs | DNS Binding Connector |
-{: caption="Table 104. Service actions - Virtual Private Cloud" caption-side="top"}
+{: caption="Table 132. Service actions - Virtual Private Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.vpc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table104}
+{: #actions-table132}
 
 ## VPN for VPC
 {: #is.vpn-roles}
@@ -6045,23 +6157,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 105. Platform roles - VPN for VPC" caption-side="top"}
+{: caption="Table 133. Platform roles - VPN for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table105}
+{: #platform-roles-table133}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 105. Service roles - VPN for VPC" caption-side="top"}
+{: caption="Table 133. Service roles - VPN for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table105}
+{: #service-roles-table133}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6072,12 +6184,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpn.vpn.list` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.dashboard.view` |  | Administrator, Editor, Operator, Viewer |
 | `is.vpn.config.read` | Configuration Information Point API access | Service Configuration Reader |
-{: caption="Table 105. Service actions - VPN for VPC" caption-side="top"}
+{: caption="Table 133. Service actions - VPN for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table105}
+{: #actions-table133}
 
 ## VPN Server for VPC
 {: #is.vpn-server-roles}
@@ -6091,24 +6203,24 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 106. Platform roles - VPN Server for VPC" caption-side="top"}
+{: caption="Table 134. Platform roles - VPN Server for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.vpn-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table106}
+{: #platform-roles-table134}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | VPN Client | Users of the VPN server need this role to connect to the VPN server |
 {: row-headers}
-{: caption="Table 106. Service roles - VPN Server for VPC" caption-side="top"}
+{: caption="Table 134. Service roles - VPN Server for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.vpn-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table106}
+{: #service-roles-table134}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6125,79 +6237,89 @@ Review the available platform and service roles and the actions mapped to each t
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.connect` | Connect to VPN server | VPN Client |
 | `is.vpn-server.config.read` | Configuration Information Point API access | Service Configuration Reader |
-{: caption="Table 106. Service actions - VPN Server for VPC" caption-side="top"}
+{: caption="Table 134. Service actions - VPN Server for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.vpn-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table106}
+{: #actions-table134}
 
-## IBM Key Protect
+## keeasync-bss-rc-cf
+{: #keeasync-bss-rc-cf-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `keeasync-bss-rc-cf` for the service name.
+
+No supported roles.
+## keesync-bss-rc-cf
+{: #keesync-bss-rc-cf-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `keesync-bss-rc-cf` for the service name.
+
+No supported roles.
+## Key Protect
 {: #kms-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `kms` for the service name.
 
 | Role | Description |
 | ----- | :----- |
+| ComplianceReader | Key Protect custom role for security compliance center goals. |
 | KeyPurge | Role for purging key. |
 | KmipAdapterManager | Key Protect role that controls read and write access to REST resources associated with Key Protect Native KMIP support. It also allows read access to list Keys and Key Rings. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| ReaderPlus | As a reader plus, you can perform read-only actions within Key Protect such as viewing service-specific resources. You can also access key material for standard keys. |
+| ReaderPlus | As a reader plus, you can perform read-only actions within a service such as viewing service-specific resources and get key by id.  |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 107. Service roles - IBM Key Protect" caption-side="top"}
+{: caption="Table 137. Service roles - Key Protect" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="kms"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table107}
+{: #service-roles-table137}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `kms.secrets.create` | Create an encryption key. | Manager, Writer |
 | `kms.secrets.read` | Retrieve an encryption key. | Manager, ReaderPlus, Writer |
-| `kms.secrets.list` | Retrieve a list of encryption keys. | KmipAdapterManager, Manager, Reader, ReaderPlus, Writer |
+| `kms.secrets.list` | Retrieve a list of encryption keys. | ComplianceReader, KmipAdapterManager, Manager, Reader, ReaderPlus, Writer |
 | `kms.secrets.delete` | Delete an encryption key. | Manager |
+| `kms.secrets.rotate` | Rotate an encryption key. | Manager, Writer |
 | `kms.secrets.wrap` | Wrap an encryption key. | Manager, Reader, ReaderPlus, Writer |
 | `kms.secrets.unwrap` | Unwrap an encryption key. | Manager, Reader, ReaderPlus, Writer |
-| `kms.secrets.rotate` | Rotate an encryption key. | Manager, Writer |
-| `kms.lockers.read` | Read lockers | Manager, Writer |
-| `kms.lockers.create` | Create lockers | Manager, Writer |
-| `kms.lockers.list` | List lockers | Manager, Writer |
-| `kms.policies.read` | Retrieve policies for an encryption key. | Manager |
-| `kms.policies.write` | Set policies for an encryption key. | Manager |
+| `kms.policies.read` | Retrieve a rotation policy for an encryption key. | ComplianceReader, Manager |
+| `kms.policies.write` | Set a rotation policy for an encryption key. | Manager |
 | `kms.secrets.rewrap` | Rewrap an encryption key. | Manager, Reader, ReaderPlus, Writer |
 | `kms.importtoken.read` | Retrieve an import token. | Manager, Writer |
 | `kms.importtoken.create` | Create an import token. | Manager, Writer |
+| `kms.registrations.create` | Create a registration between an encryption key and a cloud resource. | Manager, Reader, ReaderPlus, Writer |
+| `kms.registrations.write` | Replace an existing registration. | Manager, Reader, ReaderPlus, Writer |
+| `kms.registrations.merge` | Update the details of an existing registration. | Manager, Reader, ReaderPlus, Writer |
+| `kms.registrations.delete` | Delete a registration. | Manager, Reader, ReaderPlus, Writer |
 | `kms.registrations.list` | Retrieve a list of registrations. | Manager, Reader, ReaderPlus, Writer |
 | `kms.registrations.listforkey` | Retrieve a list of registrations for a given encryption key. | Manager, Reader, ReaderPlus, Writer |
-| `kms.registrations.delete` | Delete a registration. | Manager, Reader, ReaderPlus, Writer |
-| `kms.registrations.merge` | Update the details of an existing registration. | Manager, Reader, ReaderPlus, Writer |
-| `kms.registrations.write` | Replace an existing registration. | Manager, Reader, ReaderPlus, Writer |
-| `kms.registrations.create` | Create a registration between an encryption key and a cloud resource. | Manager, Reader, ReaderPlus, Writer |
-| `kms.registrations.deactivate` | Move a suspended registration to the deactivated state | Manager, Reader, ReaderPlus, Writer |
-| `kms.instancepolicies.read` | Retrieve instance level policies. | Manager |
+| `kms.instancepolicies.read` | Retrieve instance level policies. | ComplianceReader, Manager |
 | `kms.instancepolicies.write` | Add or update instance level policies. | Manager |
 | `kms.secrets.setkeyfordeletion` | Set or prepare an encryption key for deletion. | Manager, Writer |
 | `kms.secrets.unsetkeyfordeletion` | Unset an encryption key for deletion. | Manager, Writer |
+| `kms.registrations.deactivate` | Move a suspended registration to the deactivated state. | Manager, Reader, ReaderPlus, Writer |
 | `kms.secrets.readmetadata` | Retrieve the details of an encryption key. | Manager, Reader, ReaderPlus, Writer |
-| `kms.secrets.listkeyversions` | Retrieve a list of versions that are associated with an encryption key. | Manager, Reader, ReaderPlus, Writer |
 | `kms.keyversions.list` | Retrieve a list of versions that are associated with an encryption key. | Manager, Reader, ReaderPlus, Writer |
-| `kms.secrets.restore` | Restore a previously deleted encryption key. | Manager |
 | `kms.secrets.disable` | Disable operations for an encryption key. | Manager |
+| `kms.secrets.listkeyversions` | Retrieve a list of versions that are associated with an encryption key. | Manager, Reader, ReaderPlus, Writer |
 | `kms.secrets.enable` | Enable operations for an encryption key. | Manager |
+| `kms.secrets.restore` | Restore a previously deleted encryption key. | Manager |
 | `kms.secrets.eventack` | Acknowledge a key lifecycle event | Manager, Reader, ReaderPlus, Writer |
 | `kms.instance.readipwhitelistport` | Retrieve port associated with instance level ip whitelist policy. | Manager |
 | `kms.instance.readallowedipport` | Retrieve port associated with instance level allowed IP policy. | Manager |
 | `kms.secrets.sync` | Initiate a manual data synchronization request to the associated resources of a key. | Manager, Writer |
-| `kms.secrets.createalias` | Create an alias for an encryption key. | Manager, Writer |
-| `kms.secrets.deletealias` |  Delete an alias for an encryption key. | Manager, Writer |
-| `kms.governance.configread` | Retrieve current configuration of the queried resources. | Service Configuration Reader |
+| `kms.secrets.createalias` | Create/Add alias for the KP key | Manager, Writer |
+| `kms.secrets.deletealias` | Delete/remove alias associated with KP key | Manager, Writer |
 | `kms.keyrings.list` | Retrieve a list of key rings in the instance. | KmipAdapterManager, Manager, Reader, ReaderPlus, Writer |
 | `kms.keyrings.create` | Create a key ring in the instance. | Manager, Writer |
 | `kms.keyrings.delete` | Delete a key ring in the instance. | Manager |
+| `kms.governance.configread` | Retrieve current configuration of the queried resources. | Service Configuration Reader |
 | `kms.secrets.purge` | Purge an encryption key. | KeyPurge |
 | `kms.secrets.patch` | Patch attributes of an encryption key. | Manager |
 | `kms.secrets-with-policy-overrides.create` | Create an encryption key with policy overrides. | Manager |
@@ -6208,12 +6330,18 @@ Review the available platform and service roles and the actions mapped to each t
 | `kms.kmip-management.list` | Lists a KMIP management resource | KmipAdapterManager, Manager |
 | `kms.kmip-management.read` | Reads a KMIP management resource | KmipAdapterManager, Manager |
 | `kms.kmip-management.delete` | Deletes a KMIP management resource | KmipAdapterManager, Manager |
-{: caption="Table 107. Service actions - IBM Key Protect" caption-side="top"}
+| `kms.voting.listtopicsbyids` | test | Manager, Reader |
+| `kms.keystore.createkeystore` | test | Manager, Reader |
+| `kms.keystore.listkeystoresbyids` | test | Manager, Reader |
+| `kms.keystore.deletekeystore` | test | Manager, Reader |
+| `kms.registrations-custom.merge` | key-protect-registrations-custom-merge-action
+ | Manager |
+{: caption="Table 137. Service actions - Key Protect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="kms"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table107}
+{: #actions-table137}
 
 ## Knowledge Studio
 {: #knowledge-studio-roles}
@@ -6224,14 +6352,13 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 108. Platform roles - Knowledge Studio" caption-side="top"}
+{: caption="Table 138. Platform roles - Knowledge Studio" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table108}
+{: #platform-roles-table138}
 
 | Role | Description |
 | ----- | :----- |
@@ -6239,68 +6366,22 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 108. Service roles - Knowledge Studio" caption-side="top"}
+{: caption="Table 138. Service roles - Knowledge Studio" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table108}
+{: #service-roles-table138}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `knowledge-studio.dashboard.view` |  | Administrator, Editor, Manager, Reader, Viewer, Writer |
-{: caption="Table 108. Service actions - Knowledge Studio" caption-side="top"}
+| `knowledge-studio.dashboard.view` |  | Administrator, Editor, Manager, Reader, Writer |
+{: caption="Table 138. Service actions - Knowledge Studio" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table108}
-
-## IBM Lakehouse
-{: #lakehouse-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `lakehouse` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 109. Platform roles - IBM Lakehouse" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="lakehouse"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table109}
-
-| Role | Description |
-| ----- | :----- |
-| DataAccess | DataAccess |
-| MetastoreAccess | Grant Metastore access |
-{: row-headers}
-{: caption="Table 109. Service roles - IBM Lakehouse" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="lakehouse"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table109}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `lakehouse.dashboard.view` | Description | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
-| `lakehouse.metastore.admin` | Allowing metastore access | MetastoreAccess |
-| `lakehouse.uservpc.manage` | Provides ability to create and manage a deployment in a user owned VPC | Administrator, Editor, Operator |
-| `lakehouse.data.access` | Allows data access for other services. | DataAccess, MetastoreAccess |
-{: caption="Table 109. Service actions - IBM Lakehouse" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="lakehouse"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table109}
+{: #actions-table138}
 
 ## Language Translator
 {: #language-translator-roles}
@@ -6309,113 +6390,121 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+| Manager | As a manager, you can perform all actions including deletion of custom models. |
+| Reader | As a reader, you can perform all actions except for deleting custom models. |
+| Writer | As a writer, you can perform all actions except for deleting custom models. |
 {: row-headers}
-{: caption="Table 110. Service roles - Language Translator" caption-side="top"}
+{: caption="Table 139. Service roles - Language Translator" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="language-translator"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table110}
+{: #service-roles-table139}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `GET /language-translator` |  | Manager, Reader, Writer |
 | `POST /language-translator` |  | Manager, Reader, Writer |
 | `DELETE /language-translator` |  | Manager, Writer |
-{: caption="Table 110. Service actions - Language Translator" caption-side="top"}
+{: caption="Table 139. Service actions - Language Translator" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="language-translator"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table110}
+{: #actions-table139}
 
-## IBM Log Analysis with LogDNA
-{: #logdna-roles}
+## li-cloud-object-storage
+{: #li-cloud-object-storage-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `logdna` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-{: row-headers}
-{: caption="Table 111. Platform roles - IBM Log Analysis with LogDNA" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="logdna"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table111}
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `li-cloud-object-storage` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Manager | As a manager, you can manage resources, configure views, dashboards and alerts, export data, search, filter, and view all data. |
-| Reader | As a reader, you can perform read-only actions such as monitor data through views and dashboards. |
-| Standard Member | As a member, you can configure views, dashboards and alerts, export data, search, filter, and view all data. |
+| null | null |
+| null | null |
+| null | null |
 {: row-headers}
-{: caption="Table 111. Service roles - IBM Log Analysis with LogDNA" caption-side="top"}
+{: caption="Table 140. Service roles - li-cloud-object-storage" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="logdna"}
+{: tab-group="li-cloud-object-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table111}
+{: #service-roles-table140}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `logdna.dashboard.view` | View LogDNA Dashboard | Administrator, Manager, Reader, Standard Member |
-| `logdna.dashboard.read` | Access LogDNA dashboard without any edit permission | Reader |
-| `logdna.dashboard.member` | Access LogDNA dashboard with limited edit capabilities | Standard Member |
-| `logdna.dashboard.manage` | Access and manage LogDNA dashboard without any limitation | Administrator, Manager |
-{: caption="Table 111. Service actions - IBM Log Analysis with LogDNA" caption-side="top"}
+| `li-cloud-object-storage.resourceinstance.create` |  | null, null |
+| `li-cloud-object-storage.resourceinstance.delete` |  | null |
+| `li-cloud-object-storage.resourceinstance.read` |  | null, null, null |
+{: caption="Table 140. Service actions - li-cloud-object-storage" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="logdna"}
+{: tab-group="li-cloud-object-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table111}
+{: #actions-table140}
 
-## IBM Cloud Activity Tracker with LogDNA
-{: #logdnaat-roles}
+## li-cloud-object-storage-china
+{: #li-cloud-object-storage-china-new-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `logdnaat` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `li-cloud-object-storage-china-new` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
 {: row-headers}
-{: caption="Table 112. Platform roles - IBM Cloud Activity Tracker with LogDNA" caption-side="top"}
+{: caption="Table 141. Platform roles - li-cloud-object-storage-china" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="logdnaat"}
+{: tab-group="li-cloud-object-storage-china-new"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table112}
-
-| Role | Description |
-| ----- | :----- |
-| Manager | As a manager, you can manage resources, configure views, dashboards and alerts, export data, search, filter, and view all data. |
-| Reader | As a reader, you can perform read-only actions such as monitor data through views and dashboards. |
-| Standard member | As a member, you can configure views, dashboards and alerts, export data, search, filter, and view all data. |
-{: row-headers}
-{: caption="Table 112. Service roles - IBM Cloud Activity Tracker with LogDNA" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="logdnaat"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table112}
+{: #platform-roles-table141}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `logdnaat.dashboard.view` | View LogDNA Dashboard | Administrator, Manager, Reader, Standard member |
-| `logdnaat.dashboard.read` | Access LogDNA dashboard without any edit permission | Reader |
-| `logdnaat.dashboard.member` | Access LogDNA dashboard with limited edit capabilities | Standard member |
-| `logdnaat.dashboard.manage` | Access and manage LogDNA dashboard without any limitation | Administrator, Manager |
-{: caption="Table 112. Service actions - IBM Cloud Activity Tracker with LogDNA" caption-side="top"}
+| `li-cloud-object-storage-china-new.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 141. Service actions - li-cloud-object-storage-china" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="logdnaat"}
+{: tab-group="li-cloud-object-storage-china-new"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table112}
+{: #actions-table141}
 
+## li-cloud-object-storage-china-new2
+{: #li-cloud-object-storage-china-new2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `li-cloud-object-storage-china-new2` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+{: row-headers}
+{: caption="Table 142. Platform roles - li-cloud-object-storage-china-new2" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="li-cloud-object-storage-china-new2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table142}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `li-cloud-object-storage-china-new2.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 142. Service actions - li-cloud-object-storage-china-new2" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="li-cloud-object-storage-china-new2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table142}
+
+## li-migration-test
+{: #li-migration-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `li-migration-test` for the service name.
+
+No supported roles.
 ## Managed Solutions
 {: #managed-solutions-roles}
 
@@ -6428,12 +6517,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 113. Platform roles - Managed Solutions" caption-side="top"}
+{: caption="Table 144. Platform roles - Managed Solutions" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="managed-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table113}
+{: #platform-roles-table144}
 
 | Role | Description |
 | ----- | :----- |
@@ -6441,12 +6530,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 113. Service roles - Managed Solutions" caption-side="top"}
+{: caption="Table 144. Service roles - Managed Solutions" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="managed-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table113}
+{: #service-roles-table144}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6461,7 +6550,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `managed-solutions.health-alerts.view` | View Health Alerts | Administrator, Editor, Operator, Viewer |
 | `managed-solutions.support.manage-settings` | Managed Support Settings | Administrator |
 | `managed-solutions.oracle-applications.view` | View Oracle Applications | Viewer |
-| `managed-solutions.support.manage-change-approvers` | Manages who can approve cases for a solution. | Administrator, Manager |
+| `managed-solutions.support.manage-change-approvers` | Manages who can approve cases for a solution. | Manager |
 | `managed-solutions.support.manage-subscriptions` | Manage Support API Subscriptions | Administrator, Editor |
 | `managed-solutions.platform.view` | Allows access to view Managed Solutions that are not IAM enabled. | Administrator, Editor, Operator, Viewer |
 | `managed-solutions.solution.view` | View Managed Solutions, but not necessarily data associated with the solutions. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
@@ -6472,13 +6561,15 @@ Review the available platform and service roles and the actions mapped to each t
 | `managed-solutions.platform.administrate` | Perform administrative functions on non-IAM enabled solutions. | Administrator |
 | `managed-solutions.sap-instances.view` | View SAP Instances | Administrator, Editor, Operator, Viewer |
 | `managed-solutions.health.view-alerts` | View Alerts | Manager, Reader, Writer |
+| `managed-solutions.sap.restart-system` | Restart SAP System | Manager, Writer |
+| `managed-solutions.core.restart-server` | Restart Server | Manager, Writer |
 | `managed-solutions.core.manage-host-credentials` | Manage credentials on the host. | Administrator, Manager |
-{: caption="Table 113. Service actions - Managed Solutions" caption-side="top"}
+{: caption="Table 144. Service actions - Managed Solutions" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="managed-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table113}
+{: #actions-table144}
 
 ## Master Data Connect
 {: #mdm-oc-roles}
@@ -6492,12 +6583,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 114. Platform roles - Master Data Connect" caption-side="top"}
+{: caption="Table 145. Platform roles - Master Data Connect" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="mdm-oc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table114}
+{: #platform-roles-table145}
 
 | Role | Description |
 | ----- | :----- |
@@ -6506,8 +6597,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Data Engineer | As a Data Engineer you have full access to all microservices. |
 | Data Manager | As a Data Manager, you can perform read, write and manage actions in the Data microservice. |
 | Data Reader | As a Data Reader, you can perform read only actions in the Data microservice. |
-| Data Steward | As a Data Steward, you can add or delete rules from the matching microservice. |
 | Data Writer | As a Data Writer, you can perform read and write actions in the Data microservice. |
+| DataSteward | As a Data Steward, you can add or delete rules from the matching microservice. |
 | Entity Viewer | As a Entity Viewer you can perform read actions in both the model and data microservice. |
 | Job Reader | As a Job Reader, you can perform read actions in the Job microservice. |
 | Job Writer | As a Job Writer, you can perform read and write actions in the Job microservice. |
@@ -6524,38 +6615,86 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 114. Service roles - Master Data Connect" caption-side="top"}
+{: caption="Table 145. Service roles - Master Data Connect" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="mdm-oc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table114}
+{: #service-roles-table145}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `mdm-oc.dashboard.view` | View Dashboard | Administrator, Configurator Manager, Configurator Reader, Data Engineer, Data Manager, Data Reader, Data Steward, Data Writer, Editor, Entity Viewer, Job Reader, Job Writer, Manager, Matching Manager, Matching Reader, Matching Writer, Model Manager, Model Reader, Model Writer, Operator, Pair Analysis Reader, Pair Analysis Writer, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.data.read` | Read access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Data Reader, Data Steward, Data Writer, Editor, Entity Viewer, Manager, Operator, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.data.write` | Write access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Data Steward, Data Writer, Manager, Publisher User, Writer |
-| `mdm-oc.data.manage` | Manage access to the Master Data Management Data microservice. | Administrator, Data Engineer, Data Manager, Manager, Publisher User |
-| `mdm-oc.matching.read` | Read access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Matching Manager, Matching Reader, Matching Writer, Operator, Reader, Viewer, Writer |
-| `mdm-oc.matching.write` | Write access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Data Steward, Manager, Matching Manager, Matching Writer, Writer |
-| `mdm-oc.matching.manage` | Manage access to the Master Data Management Matching microservice. | Administrator, Data Engineer, Manager, Matching Manager |
-| `mdm-oc.model.read` | Read access to the Master Data Management Model microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Manager, Model Manager, Model Reader, Model Writer, Operator, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.model.write` | Write access to the Master Data Management Model microservice. | Administrator, Data Engineer, Manager, Model Manager, Model Writer, Publisher User, Writer |
-| `mdm-oc.configurator.read` | Read access to the Master Data Management Configurator microservice. | Administrator, Configurator Manager, Configurator Reader, Data Engineer, Editor, Manager, Operator, Viewer, Writer |
-| `mdm-oc.configurator.manage` | Manage access to the Master Data Management Configurator microservice. | Administrator, Configurator Manager, Data Engineer, Manager |
-| `mdm-oc.pairs-analysis.read` | Read access to the Master Data Management Pair Analysis microservice. | Administrator, Data Engineer, Data Steward, Editor, Manager, Operator, Pair Analysis Reader, Pair Analysis Writer, Reader, Viewer, Writer |
-| `mdm-oc.pairs-analysis.write` | Write access to the Master Data Management Pair Analysis microservice. | Administrator, Data Engineer, Data Steward, Manager, Pair Analysis Writer, Writer |
-| `mdm-oc.job.write` | Write access to the Master Data Management Job microservice. | Administrator, Data Engineer, Job Writer, Manager, Publisher User, Writer |
-| `mdm-oc.job.read` | Read access to the Master Data Management Job microservice. | Administrator, Data Engineer, Data Steward, Editor, Entity Viewer, Job Reader, Job Writer, Manager, Operator, Publisher User, Reader, Viewer, Writer |
-| `mdm-oc.model.manage` | Manage access to the Master Data Management Model microservice. | Administrator, Data Engineer, Manager, Model Manager, Publisher User |
-| `mdm-oc.matching.datasteward` | Data Steward access to the Master Data Management. | Administrator, Data Engineer, Data Steward, Manager |
-{: caption="Table 114. Service actions - Master Data Connect" caption-side="top"}
+| `mdm-oc.dashboard.view` | View Dashboard | Administrator, Data Engineer, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `mdm-oc.rest.read` | This service action is used to provide read access to the Operational Cache instance, such as retrieving records and running searches. | Administrator, Data Engineer, DataSteward, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `mdm-oc.rest.read` | This service action is used to provide read access to the Operational Cache instance, such as retrieving records and running searches. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `mdm-oc.rest.write` | This service action is used to provide write access to the Operational Cache instance, such as performing bulk load of records. | Administrator, Manager, Writer |
+| `mdm-oc.rest.manage` | This service action is used to provide manage access to the Operational Cache instance, such as updating the model. | Administrator, Manager |
+| `mdm-oc.data.read` | Read access to the Master Data Management Data microservice | Administrator, Data Manager, Data Reader, Data Writer, DataSteward, Editor, Entity Viewer, Operator, Publisher User, Viewer |
+| `mdm-oc.data.write` | Write access to the Master Data Management Data microservice | Administrator, Data Manager, Data Writer, DataSteward, Publisher User |
+| `mdm-oc.data.manage` | Manage access to the Master Data Management Data microservice | Administrator, Data Engineer, Data Manager, Publisher User |
+| `mdm-oc.matching.read` | Read access to the Master Data Management Matching microservice | Administrator, Data Engineer, DataSteward, Editor, Entity Viewer, Matching Manager, Matching Reader, Matching Writer, Operator, Publisher User, Viewer |
+| `mdm-oc.matching.write` | Write access to the Master Data Management Matching microservice | Administrator, Data Engineer, DataSteward, Matching Manager, Matching Writer |
+| `mdm-oc.matching.manage` | Manage access to the Master Data Management Matching microservice | Administrator, Data Engineer, Matching Manager |
+| `mdm-oc.model.read` | Read access to the Master Data Management Model microservice | Administrator, Data Engineer, DataSteward, Editor, Entity Viewer, Model Manager, Model Reader, Model Writer, Operator, Publisher User, Viewer |
+| `mdm-oc.model.write` | Write access to the Master Data Management Model microservice | Administrator, Data Engineer, Model Manager, Model Writer, Publisher User |
+| `mdm-oc.configurator.read` | Read access to the Master Data Management Configurator microservice | Administrator, Configurator Manager, Configurator Reader, Data Engineer, Editor, Operator, Viewer |
+| `mdm-oc.configurator.manage` | Manage access to the Master Data Management Configurator microservice | Administrator, Configurator Manager, Data Engineer |
+| `mdm-oc.pairs-analysis.read` | Read access to the Master Data Management Pair Analysis microservice | Administrator, DataSteward, Editor, Operator, Pair Analysis Reader, Pair Analysis Writer, Viewer |
+| `mdm-oc.pairs-analysis.write` | Write access to the Master Data Management Pair Analysis microservice | Administrator, Data Engineer, DataSteward, Pair Analysis Writer |
+| `mdm-oc.job.write` | Write access to the Master Data Management Job microservice | Administrator, Job Writer |
+| `mdm-oc.job.read` | Read access to the Master Data Management Job microservice | Administrator, DataSteward, Editor, Entity Viewer, Job Reader, Job Writer, Operator, Publisher User, Viewer |
+| `mdm-oc.model.manage` | Manage access to the Master Data Management Model microservice | Administrator, Data Engineer, Model Manager, Publisher User |
+| `mdm-oc.matching.datasteward` | Data Steward access to the Master Data Management | Administrator, Data Engineer, DataSteward |
+{: caption="Table 145. Service actions - Master Data Connect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="mdm-oc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table114}
+{: #actions-table145}
+
+## Algorithmics Managed Financial Data
+{: #mds-test-1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mds-test-1` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 146. Platform roles - Algorithmics Managed Financial Data" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="mds-test-1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table146}
+
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 146. Service roles - Algorithmics Managed Financial Data" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="mds-test-1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table146}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `mds-test-1.dashboard.view` |  | Administrator, Editor, Operator |
+| `mds-test-1.combined.read` |  | Reader |
+| `mds-test-1.instruments.read` |  | Reader |
+| `mds-test-1.marketdata.read` |  | Reader |
+| `mds-test-1.timeseries.read` |  | Reader |
+| `mds-test-1.meta.read` |  | Reader |
+{: caption="Table 146. Service actions - Algorithmics Managed Financial Data" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="mds-test-1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table146}
 
 ## Event Streams
 {: #messagehub-roles}
@@ -6569,189 +6708,33 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 115. Service roles - Event Streams" caption-side="top"}
+{: caption="Table 147. Service roles - Event Streams" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="messagehub"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table115}
+{: #service-roles-table147}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `messagehub.topic.read` | Allow an app to read messages from all topics, or if applied to a named topic, then just that single topic. | Manager, Reader, Writer |
-| `messagehub.topic.write` | Allow an app to write messages to all topics, or if applied to a named topic, then just that single topic. | Manager, Writer |
 | `messagehub.topic.manage` | Allow an app or user to create or delete topic. If applied to a named topic, then only topics of that name can be created or deleted. | Manager |
-| `messagehub.cluster.read` | Allow an app to connect to a service instance and read its state, including listing consumer groups, topics and offsets and describing consumer groups, topics and broker configurations. | Manager, Reader, Writer |
-| `messagehub.group.read` | Allow an app to join and commit offsets in a consumer group. | Manager, Reader, Writer |
 | `messagehub.group.manage` | Allow an app or user to delete a Consumer Group. If applied to a group ID, then only the consumer group with that ID can be deleted. | Manager |
+| `messagehub.cluster.read` | Allow an app to connect to a service instance and read its state, including listing consumer groups, topics and offsets and describing consumer groups, topics and broker configurations. | Manager, Reader, Writer |
+| `messagehub.topic.read` | Allow an app to read messages from all topics, or if applied to a named topic, then just that single topic. | Manager, Reader, Writer |
+| `messagehub.topic.write` | Allow an app to produce to a topicAllow an app to write messages to all topics, or if applied to a named topic, then just that single topic. | Manager, Writer |
+| `messagehub.group.read` | Allow an app to join and commit offsets in a consumer group. | Manager, Reader, Writer |
 | `messagehub.txnid.write` | Allow an app to produce messages transactionally. | Manager, Writer |
 | `messagehub.schema.read` | Read a schema/schema version | Manager, Reader, Writer |
-| `messagehub.schema.write` | Create a schema/schema version | Manager, Writer |
 | `messagehub.schema.manage` | Delete a schema/schema version | Manager |
+| `messagehub.schema.write` | Create a schema/schema version | Manager, Writer |
 | `messagehub.cluster.manage` | Manage the configuration of an Event Streams instance | Manager |
 | `messagehub.config.read` | Configuration Information Point API access | Manager, Reader, Service Configuration Reader, Writer |
-{: caption="Table 115. Service actions - Event Streams" caption-side="top"}
+{: caption="Table 147. Service actions - Event Streams" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="messagehub"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table115}
-
-## Messages for RabbitMQ
-{: #messages-for-rabbitmq-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `messages-for-rabbitmq` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Table 116. Platform roles - Messages for RabbitMQ" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="messages-for-rabbitmq"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table116}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 116. Service roles - Messages for RabbitMQ" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="messages-for-rabbitmq"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table116}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Table 116. Service actions - Messages for RabbitMQ" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="messages-for-rabbitmq"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table116}
+{: #actions-table147}
 
 ## Metrics Router
 {: #metrics-router-roles}
@@ -6765,23 +6748,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 117. Platform roles - Metrics Router" caption-side="top"}
+{: caption="Table 148. Platform roles - Metrics Router" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="metrics-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table117}
+{: #platform-roles-table148}
 
 | Role | Description |
 | ----- | :----- |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 {: row-headers}
-{: caption="Table 117. Service roles - Metrics Router" caption-side="top"}
+{: caption="Table 148. Service roles - Metrics Router" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="metrics-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table117}
+{: #service-roles-table148}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6803,17 +6786,66 @@ Review the available platform and service roles and the actions mapped to each t
 | `metrics-router.onboarding.create` | Create onboarding config for services only. | Administrator |
 | `metrics-router.onboarding.list` | List onboarding config for services only. | Viewer |
 | `metrics-router.onboarding.update` | Update onboarding config for services only. | Reader |
-{: caption="Table 117. Service actions - Metrics Router" caption-side="top"}
+{: caption="Table 148. Service actions - Metrics Router" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="metrics-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table117}
+{: #actions-table148}
 
-## Migration Services for IBM Cloud
-{: #migrationtool-from-wanclds-roles}
+## Managed Financial Data API
+{: #mfd-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `migrationtool-from-wanclds` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mfd` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 149. Platform roles - Managed Financial Data API" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="mfd"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table149}
+
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 149. Service roles - Managed Financial Data API" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="mfd"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table149}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `mfd.dashboard.view` |  | Administrator, Editor, Operator |
+| `mfd.combined.read` |  | Reader |
+| `mfd.instruments.read` |  | Reader |
+| `mfd.marketdata.read` |  | Reader |
+| `mfd.timeseries.read` |  | Reader |
+{: caption="Table 149. Service actions - Managed Financial Data API" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="mfd"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table149}
+
+## migration-test
+{: #migrate-tests-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `migrate-tests` for the service name.
+
+No supported roles.
+## Cloud Migration
+{: #migration-offering4-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `migration-offering4` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -6822,73 +6854,115 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 118. Platform roles - Migration Services for IBM Cloud" caption-side="top"}
+{: caption="Table 151. Platform roles - Cloud Migration" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="migrationtool-from-wanclds"}
+{: tab-group="migration-offering4"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table118}
+{: #platform-roles-table151}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 118. Service roles - Migration Services for IBM Cloud" caption-side="top"}
+{: caption="Table 151. Service roles - Cloud Migration" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="migrationtool-from-wanclds"}
+{: tab-group="migration-offering4"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table118}
+{: #service-roles-table151}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `migrationtool-from-wanclds.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 118. Service actions - Migration Services for IBM Cloud" caption-side="top"}
+| `migration-offering4.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 151. Service actions - Cloud Migration" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="migrationtool-from-wanclds"}
+{: tab-group="migration-offering4"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table118}
+{: #actions-table151}
 
-## Minio
-{: #minio-roles}
+## mike-service
+{: #mikewu-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `minio` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mikewu` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+{: row-headers}
+{: caption="Table 152. Platform roles - mike-service" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="mikewu"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table152}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `mikewu.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 152. Service actions - mike-service" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="mikewu"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table152}
+
+## mmuston-e2e-test2
+{: #mmuston-e2e-test2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mmuston-e2e-test2` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+{: row-headers}
+{: caption="Table 153. Service roles - mmuston-e2e-test2" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="mmuston-e2e-test2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table153}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `mmuston-e2e-test2.keys.get` |  | null |
+{: caption="Table 153. Service actions - mmuston-e2e-test2" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="mmuston-e2e-test2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table153}
+
+## Mobile Foundation Test
+{: #mobile-foundation-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mobile-foundation-test` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 119. Platform roles - Minio" caption-side="top"}
+{: caption="Table 154. Platform roles - Mobile Foundation Test" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="minio"}
+{: tab-group="mobile-foundation-test"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table119}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 119. Service roles - Minio" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="minio"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table119}
+{: #platform-roles-table154}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `minio.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 119. Service actions - Minio" caption-side="top"}
+| `mobile-foundation-test.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 154. Service actions - Mobile Foundation Test" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="minio"}
+{: tab-group="mobile-foundation-test"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table119}
+{: #actions-table154}
 
 ## IBM Cloud Monitoring Service
 {: #monitoring-roles}
@@ -6897,17 +6971,17 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+| Viewer | null |
 {: row-headers}
-{: caption="Table 120. Platform roles - IBM Cloud Monitoring Service" caption-side="top"}
+{: caption="Table 155. Platform roles - IBM Cloud Monitoring Service" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="monitoring"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table120}
+{: #platform-roles-table155}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6922,14 +6996,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `monitoring.domain.dashboard_read` |  | Administrator, Editor, Viewer |
 | `monitoring.domain.uptime_write` |  | Administrator, Editor |
 | `monitoring.domain.uptime_read` |  | Administrator, Editor, Viewer |
-{: caption="Table 120. Service actions - IBM Cloud Monitoring Service" caption-side="top"}
+{: caption="Table 155. Service actions - IBM Cloud Monitoring Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="monitoring"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table120}
+{: #actions-table155}
 
-## IBM MQ
+## mqcloud
 {: #mqcloud-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `mqcloud` for the service name.
@@ -6940,34 +7014,34 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 121. Platform roles - IBM MQ" caption-side="top"}
+{: caption="Table 156. Platform roles - mqcloud" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="mqcloud"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table121}
+{: #platform-roles-table156}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 121. Service roles - IBM MQ" caption-side="top"}
+{: caption="Table 156. Service roles - mqcloud" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="mqcloud"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table121}
+{: #service-roles-table156}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `mqcloud.instance.use` | Users can get access to service instances and their queue managers. | Administrator, Editor, Manager, Viewer, Writer |
-{: caption="Table 121. Service actions - IBM MQ" caption-side="top"}
+{: caption="Table 156. Service actions - mqcloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="mqcloud"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table121}
+{: #actions-table156}
 
 ## Natural Language Understanding
 {: #natural-language-understanding-roles}
@@ -6980,12 +7054,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 122. Platform roles - Natural Language Understanding" caption-side="top"}
+{: caption="Table 157. Platform roles - Natural Language Understanding" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="natural-language-understanding"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table122}
+{: #platform-roles-table157}
 
 | Role | Description |
 | ----- | :----- |
@@ -6993,31 +7067,105 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 122. Service roles - Natural Language Understanding" caption-side="top"}
+{: caption="Table 157. Service roles - Natural Language Understanding" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="natural-language-understanding"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table122}
+{: #service-roles-table157}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `natural-language-understanding.dashboard.view` |  | Administrator, Editor, Operator |
-| `GET /natural-language-understanding` |  | Manager, Reader, Writer |
-| `POST /natural-language-understanding` |  | Manager, Reader, Writer |
-| `DELETE /natural-language-understanding` |  | Manager, Reader, Writer |
+| `GET /natural-language-understanding` | GET /natural-language-understanding | Manager, Reader, Writer |
+| `POST /natural-language-understanding` | POST /natural-language-understanding | Manager, Reader, Writer |
+| `DELETE /natural-language-understanding` | DELETE /natural-language-understanding | Manager |
 | `PUT /natural-language-understanding` | PUT /natural-language-understanding | Manager, Reader, Writer |
-{: caption="Table 122. Service actions - Natural Language Understanding" caption-side="top"}
+{: caption="Table 157. Service actions - Natural Language Understanding" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="natural-language-understanding"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table122}
+{: #actions-table157}
 
-## NeuralSeek
-{: #neuralseek-roles}
+## Network Policy Service (default)
+{: #network-policy-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `neuralseek` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `network-policy` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 158. Platform roles - Network Policy Service (default)" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="network-policy"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table158}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `network-policy.zone.create` | Network Policy Zone Create description (default) | Administrator, Editor |
+| `network-policy.zone.read` | Network Policy Zone Read description (default) | Administrator, Editor, Viewer |
+| `network-policy.zone.update` | Network Policy Zone Update description (default) | Administrator, Editor |
+| `network-policy.zone.delete` | Network Policy Zone Delete description (default) | Administrator, Editor |
+| `network-policy.zone.list` | Network Policy Zone List description (default) | Administrator, Editor, Viewer |
+| `network-policy.account-settings.read` | View network policy account settings description (default) | Administrator, Editor, Viewer |
+| `network-policy.account-settings.update` | Update network policy account settings description (default) | Administrator |
+{: caption="Table 158. Service actions - Network Policy Service (default)" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="network-policy"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table158}
+
+## network policy enabled service
+{: #network-policy-enabled-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `network-policy-enabled` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 159. Platform roles - network policy enabled service" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="network-policy-enabled"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table159}
+
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 159. Service roles - network policy enabled service" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="network-policy-enabled"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table159}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `network-policy-enabled.dashboard.view` |  | Administrator, Editor, Operator |
+| `network-policy-enabled.resource.view` | Resource View | Reader |
+{: caption="Table 159. Service actions - network policy enabled service" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="network-policy-enabled"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table159}
+
+## network policy not enabled
+{: #network-policy-not-enabled-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `network-policy-not-enabled` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -7026,33 +7174,62 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 123. Platform roles - NeuralSeek" caption-side="top"}
+{: caption="Table 160. Platform roles - network policy not enabled" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="neuralseek"}
+{: tab-group="network-policy-not-enabled"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table123}
+{: #platform-roles-table160}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 123. Service roles - NeuralSeek" caption-side="top"}
+{: caption="Table 160. Service roles - network policy not enabled" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="neuralseek"}
+{: tab-group="network-policy-not-enabled"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table123}
+{: #service-roles-table160}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `neuralseek.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 123. Service actions - NeuralSeek" caption-side="top"}
+| `network-policy-not-enabled.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 160. Service actions - network policy not enabled" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="neuralseek"}
+{: tab-group="network-policy-not-enabled"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table123}
+{: #actions-table160}
+
+## SOme name
+{: #new-company-some-name-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `new-company-some-name` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 161. Platform roles - SOme name" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="new-company-some-name"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table161}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `new-company-some-name.dashboard.view` |  | Administrator, Editor |
+{: caption="Table 161. Service actions - SOme name" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="new-company-some-name"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table161}
 
 ## OpenPages with Watson
 {: #openpages-roles}
@@ -7066,77 +7243,214 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can complete platform actions that are required to configure and operate IBM OpenPages service instances. You can also log in to the IBM OpenPages application and further access is defined in the application. |
 | Viewer | As a Viewer, you can view IBM OpenPages service instances, but you can't modify them. You can also log in to the IBM OpenPages application and further access is defined in the application. |
 {: row-headers}
-{: caption="Table 124. Platform roles - OpenPages with Watson" caption-side="top"}
+{: caption="Table 162. Platform roles - OpenPages with Watson" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="openpages"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table124}
+{: #platform-roles-table162}
 
 | Role | Description |
 | ----- | :----- |
 | OpenPages User | As an OpenPages user, you can log in to the IBM OpenPages application but you do not have access to the service instance on IBM Cloud console. Further access is defined in IBM OpenPages. |
 {: row-headers}
-{: caption="Table 124. Service roles - OpenPages with Watson" caption-side="top"}
+{: caption="Table 162. Service roles - OpenPages with Watson" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="openpages"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table124}
+{: #service-roles-table162}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `openpages.service.administer` | The ability to administer OpenPages Service. | Administrator |
 | `openpages.service.login` | The ability to login to OpenPages service. | Administrator, Editor, OpenPages User, Operator, Viewer |
-{: caption="Table 124. Service actions - OpenPages with Watson" caption-side="top"}
+{: caption="Table 162. Service actions - OpenPages with Watson" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="openpages"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table124}
+{: #actions-table162}
 
-## Personality Insights
-{: #personality-insights-roles}
+## Red Hat OpenShift Cluster
+{: #openshift-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `personality-insights` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `openshift` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | null |
-| Editor | null |
-| Operator | null |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 125. Platform roles - Personality Insights" caption-side="top"}
+{: caption="Table 163. Platform roles - Red Hat OpenShift Cluster" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="personality-insights"}
+{: tab-group="openshift"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table125}
-
-| Role | Description |
-| ----- | :----- |
-| Manager | null |
-| Reader | null |
-| Writer | null |
-{: row-headers}
-{: caption="Table 125. Service roles - Personality Insights" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="personality-insights"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table125}
+{: #platform-roles-table163}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `personality-insights.dashboard.view` |  | Administrator, Editor, Operator |
-| `GET /personality-insights` |  | Manager, Reader, Writer |
-| `POST /personality-insights` |  | Manager, Reader, Writer |
-{: caption="Table 125. Service actions - Personality Insights" caption-side="top"}
+| `openshift.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 163. Service actions - Red Hat OpenShift Cluster" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="personality-insights"}
+{: tab-group="openshift"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table125}
+{: #actions-table163}
+
+## OSB Sample 
+{: #osb-sample-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `osb-sample` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 164. Platform roles - OSB Sample " caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="osb-sample"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table164}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 164. Service roles - OSB Sample " caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="osb-sample"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table164}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `osb-sample.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 164. Service actions - OSB Sample " caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="osb-sample"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table164}
+
+## Privileged Access Management
+{: #pams-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `pams` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 165. Platform roles - Privileged Access Management" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="pams"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table165}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 165. Service roles - Privileged Access Management" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="pams"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table165}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `pams.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 165. Service actions - Privileged Access Management" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="pams"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table165}
+
+## partner
+{: #partner-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `partner` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 166. Platform roles - partner" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="partner"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table166}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 166. Service roles - partner" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="partner"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table166}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `partner.usage-report.read` | View Partner's usage reports | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `partner.credit-pool.read` | View credit-pool reports | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `partner.billing-option.read` | View billing-options  | Administrator, Editor, Manager, Reader, Viewer, Writer |
+{: caption="Table 166. Service actions - partner" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="partner"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table166}
+
+## Partner Center
+{: #partner-portal-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `partner-portal` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 167. Platform roles - Partner Center" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="partner-portal"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table167}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `partner-portal.dashboard.view` | View Dashboard | Administrator, Editor, Viewer |
+| `partner-portal.dashboard.edit` | Enabled for testing only | Administrator, Editor |
+{: caption="Table 167. Service actions - Partner Center" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="partner-portal"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table167}
 
 ## Planning Analytics
 {: #planning-analytics-roles}
@@ -7150,34 +7464,114 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 126. Platform roles - Planning Analytics" caption-side="top"}
+{: caption="Table 168. Platform roles - Planning Analytics" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="planning-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table126}
+{: #platform-roles-table168}
 
 | Role | Description |
 | ----- | :----- |
 | Planning Analytics User | Planning Analytics User |
 {: row-headers}
-{: caption="Table 126. Service roles - Planning Analytics" caption-side="top"}
+{: caption="Table 168. Service roles - Planning Analytics" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="planning-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table126}
+{: #service-roles-table168}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `planning-analytics.dashboard.view` | View Dashboard | Administrator, Editor, Operator, Viewer |
 | `planning-analytics.access` | Planning Analytics Access | Administrator, Planning Analytics User |
-{: caption="Table 126. Service actions - Planning Analytics" caption-side="top"}
+{: caption="Table 168. Service actions - Planning Analytics" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="planning-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table126}
+{: #actions-table168}
+
+## Planning Analytics Dev
+{: #planning-analytics-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `planning-analytics-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 169. Platform roles - Planning Analytics Dev" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="planning-analytics-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table169}
+
+| Role | Description |
+| ----- | :----- |
+| Planning Analytics Dev User | Planning Analytics Dev User |
+{: row-headers}
+{: caption="Table 169. Service roles - Planning Analytics Dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="planning-analytics-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table169}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `planning-analytics-dev.access` | Planning Analytics Dev Access | Administrator, Editor, Operator, Planning Analytics Dev User, Viewer |
+{: caption="Table 169. Service actions - Planning Analytics Dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="planning-analytics-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table169}
+
+## Platform Analytics
+{: #platform-analytics-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `platform-analytics` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 170. Platform roles - Platform Analytics" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="platform-analytics"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table170}
+
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 170. Service roles - Platform Analytics" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="platform-analytics"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table170}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `platform-analytics.usage-reports.view` | View Dashboard | Administrator, Editor, Operator, Reader, Viewer |
+{: caption="Table 170. Service actions - Platform Analytics" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="platform-analytics"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table170}
 
 ## Watson Machine Learning
 {: #pm-20-roles}
@@ -7186,122 +7580,78 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Administrator | null |
+| Editor | null |
 {: row-headers}
-{: caption="Table 127. Platform roles - Watson Machine Learning" caption-side="top"}
+{: caption="Table 171. Platform roles - Watson Machine Learning" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table127}
+{: #platform-roles-table171}
 
 | Role | Description |
 | ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Writer | As a writer, you can perform all actions on the WML instance this role is being assigned. |
+| null | null |
+| null | null |
 {: row-headers}
-{: caption="Table 127. Service roles - Watson Machine Learning" caption-side="top"}
+{: caption="Table 171. Service roles - Watson Machine Learning" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table127}
+{: #service-roles-table171}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `pm-20.instances.admin` |  | Administrator |
-| `pm-20.instances.write` |  | Editor, Manager, Writer |
-{: caption="Table 127. Service actions - Watson Machine Learning" caption-side="top"}
+| `pm-20.instances.write` |  | null, null, Editor |
+{: caption="Table 171. Service actions - Watson Machine Learning" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table127}
+{: #actions-table171}
 
-## Portworx Enterprise
-{: #portworx-roles}
+## Watson Machine Learning
+{: #pm-20-devops-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `portworx` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-{: row-headers}
-{: caption="Table 128. Platform roles - Portworx Enterprise" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="portworx"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table128}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `portworx.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 128. Service actions - Portworx Enterprise" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="portworx"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table128}
-
-## Portworx Test
-{: #portworx-test-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `portworx-test` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-{: row-headers}
-{: caption="Table 129. Platform roles - Portworx Test" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="portworx-test"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table129}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `portworx-test.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 129. Service actions - Portworx Test" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="portworx-test"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table129}
-
-## PowerAI
-{: #power-ai-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-ai` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `pm-20-devops` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Administrator | null |
 | Editor | null |
-| Operator | null |
 {: row-headers}
-{: caption="Table 130. Platform roles - PowerAI" caption-side="top"}
+{: caption="Table 172. Platform roles - Watson Machine Learning" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="power-ai"}
+{: tab-group="pm-20-devops"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table130}
+{: #platform-roles-table172}
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+| null | null |
+{: row-headers}
+{: caption="Table 172. Service roles - Watson Machine Learning" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="pm-20-devops"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table172}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `power-ai.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 130. Service actions - PowerAI" caption-side="top"}
+| `pm-20-devops.instances.admin` |  | Administrator |
+| `pm-20-devops.instances.write` |  | null, null, Editor |
+{: caption="Table 172. Service actions - Watson Machine Learning" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="power-ai"}
+{: tab-group="pm-20-devops"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table130}
+{: #actions-table172}
 
 ## Power Systems Virtual Server
 {: #power-iaas-roles}
@@ -7313,25 +7663,187 @@ Review the available platform and service roles and the actions mapped to each t
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 {: row-headers}
-{: caption="Table 131. Service roles - Power Systems Virtual Server" caption-side="top"}
+{: caption="Table 173. Service roles - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="power-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table131}
+{: #service-roles-table173}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `power-iaas.dashboard.view` |  | Manager, Reader |
-| `power-iaas.cloud-instance.modify` |  | Manager |
-| `power-iaas.cloud-instance.read` |  | Manager, Reader |
+| `power-iaas.dashboard.view` | View Dashboard | Manager, Reader |
+| `power-iaas.cloud-instance.modify` | Power IaaS Cloud Instance Modify | Manager |
+| `power-iaas.cloud-instance.read` | Power IaaS Cloud Instance Read | Manager, Reader |
 | `power-iaas.pod-capacity.view` | Provides the ability to view Satellite POD capacity details. | Manager |
-{: caption="Table 131. Service actions - Power Systems Virtual Server" caption-side="top"}
+| `power-iaas.cloud-connection-vpc.list` | vpc cloud connections for a given cloud instance | Manager, Reader |
+| `power-iaas.cloud-connection.read` | cloud connection for a given cloud instance | Manager, Reader |
+| `power-iaas.cloud-connection.list` | cloud connections for a given cloud instance | Manager, Reader |
+| `power-iaas.cloud-connection.create` | create a new cloud connection | Manager |
+| `power-iaas.cloud-connection.update` | update an existing cloud connection | Manager |
+| `power-iaas.cloud-connection.delete` | delete an existing cloud connection | Manager |
+| `power-iaas.cloud-connection-network.update` | attach a network to a cloud connection | Manager |
+| `power-iaas.cloud-connection-network.delete` | detach a network from a cloud connection | Manager |
+| `power-iaas.cloud-instance.list` | get the status of a power cloud instance | Manager, Reader |
+| `power-iaas.cos-image.read` | the latest cos-image import job for a cloud instance | Manager, Reader |
+| `power-iaas.cos-image.create` | creates an cos-image import job for a cloud instance | Manager |
+| `power-iaas.event.read` | get the corresponding event translated into the specified language | Manager, Reader |
+| `power-iaas.event.list` | list all corresponding events between specific time(s) | Manager, Reader |
+| `power-iaas.image-export.create` | create a image export job | Manager |
+| `power-iaas.image-export.read` | get the lastest image export job | Manager, Reader |
+| `power-iaas.stock-image.read` | get the info of an available stock image | Manager, Reader |
+| `power-iaas.stock-image.list` | list the available stock images in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-image.read` | get an image in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-image.list` | list the images in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-image.create` | create (copies) an image into a Cloud Instance | Manager |
+| `power-iaas.cloud-instance-image.delete` | delete an image from a cloud instance | Manager |
+| `power-iaas.job.read` | get the info for a job | Manager, Reader |
+| `power-iaas.job.list` | list recent jobs initiated by the cloud instance | Manager, Reader |
+| `power-iaas.job.delete` | delete the requested job | Manager |
+| `power-iaas.network-port.delete` | delete a port on a network | Manager |
+| `power-iaas.network-port.read` | get the information of a network port | Manager, Reader |
+| `power-iaas.network-port.list` | list the information of all a network's ports | Manager, Reader |
+| `power-iaas.network-port.create` | create a network port | Manager |
+| `power-iaas.network-port.update` | update a network port | Manager |
+| `power-iaas.network.delete` | delete a network | Manager |
+| `power-iaas.network.read` | get a network | Manager, Reader |
+| `power-iaas.network.list` | list all networks in a cloud instance | Manager, Reader |
+| `power-iaas.network.create` | create a network | Manager |
+| `power-iaas.network.update` | update a network | Manager |
+| `power-iaas.pvm-instance-console.create` | get the console url for an instance | Manager |
+| `power-iaas.pvm-instance-console.read` | get console languages for an instance | Manager, Reader |
+| `power-iaas.pvm-instance-console.update` | update a instance console required codepage | Manager |
+| `power-iaas.pvm-instance-network.delete` | remove a network from a pvm-instance | Manager |
+| `power-iaas.pvm-instance-network.read` | get network information of a pvm-instance | Manager, Reader |
+| `power-iaas.pvm-instance-network.list` | list all networks on a pvm-instance | Manager, Reader |
+| `power-iaas.pvm-instance-network.create` | add a network to a pvm-instance | Manager |
+| `power-iaas.pvm-instance.read` | get an instance | Manager, Reader |
+| `power-iaas.pvm-instance.delete` | delete an instance | Manager |
+| `power-iaas.pvm-instance.list` | list all instances | Manager, Reader |
+| `power-iaas.pvm-instance.create` | create an instance | Manager |
+| `power-iaas.pvm-instance.update` | update an instance | Manager |
+| `power-iaas.pvm-instance.action` | perform an action on an instance | Manager |
+| `power-iaas.pvm-instance.operation` | perform an operation on an instance | Manager |
+| `power-iaas.pvm-instance-capture.create` | create an instance capture job | Manager |
+| `power-iaas.pvm-instance-capture.read` | get the latest instance capture job | Manager, Reader |
+| `power-iaas.pvm-instance-clone.create` | clone an instance | Manager |
+| `power-iaas.pvm-instance-snapshot.create` | create a snapshot of an instance | Manager |
+| `power-iaas.pvm-instance-snapshot.list` | list of all the snapshots for an instance | Manager, Reader |
+| `power-iaas.pvm-instance-snapshot.restore` | restores a snapshot for an instance | Manager |
+| `power-iaas.placement-group.read` | get a placement group | Manager, Reader |
+| `power-iaas.placement-group.list` | list all placement groups from a cloud instance | Manager, Reader |
+| `power-iaas.placement-group.delete` | delete a placement group | Manager |
+| `power-iaas.placement-group.create` | create a placement group | Manager |
+| `power-iaas.placement-group-member.create` | add a server to a placement group | Manager |
+| `power-iaas.placement-group-member.delete` | remove a server from a placement group | Manager |
+| `power-iaas.shared-processor-pool.create` | create a shared processor pool | Manager |
+| `power-iaas.shared-processor-pool.delete` | delete a shared processor pool | Manager |
+| `power-iaas.shared-processor-pool.list` | list all shared processor pool for a cloud instance | Manager, Reader |
+| `power-iaas.shared-processor-pool.read` | get a shared processor pool | Manager, Reader |
+| `power-iaas.shared-processor-pool.update` | update a shared processor pool | Manager |
+| `power-iaas.spp-placement-group.create` | create a spp placement group | Manager |
+| `power-iaas.spp-placement-group.read` | get a spp placement group | Manager, Reader |
+| `power-iaas.spp-placement-group.list` | list all spp placement group for a cloud instance | Manager, Reader |
+| `power-iaas.spp-placement-group-member.create` | add spp placement group members | Manager |
+| `power-iaas.spp-placement-group-member.delete` | delete spp placement group members | Manager |
+| `power-iaas.spp-placement-group.delete` | delete a spp placement group | Manager |
+| `power-iaas.sap.read` | get a sap profile | Manager, Reader |
+| `power-iaas.sap.list` | list all sap profiles | Manager, Reader |
+| `power-iaas.sap.create` | create a sap pvm-instance | Manager |
+| `power-iaas.dhcp-service.read` | get a DHCP server | Manager, Reader |
+| `power-iaas.dhcp-service.list` | list all DHCP servers in a cloud instance | Manager, Reader |
+| `power-iaas.dhcp-service.delete` | delete a DHCP server | Manager |
+| `power-iaas.dhcp-service.create` | create a DHCP server | Manager |
+| `power-iaas.cloud-instance-snapshot.read` | get the details of a snapshot in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-snapshot.list` | list all snapshots in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-snapshot.update` | update a cloud instance snapshot | Manager |
+| `power-iaas.cloud-instance-snapshot.delete` | delete a cloud instance snapshot | Manager |
+| `power-iaas.storage-capacity-type.list` | get the storage capacity for all supported storage types for a region | Manager, Reader |
+| `power-iaas.storage-capacity-type.read` | get the storage capacity for a region supported storage type | Manager, Reader |
+| `power-iaas.storage-capacity-pool.list` | gets the storage capacity for all storage pools for a region | Manager, Reader |
+| `power-iaas.storage-capacity-pool.read` | gets the storage capacity for a storage pools for a region | Manager, Reader |
+| `power-iaas.storage-tier.read` | get the supported storage tiers for a data center | Manager, Reader |
+| `power-iaas.system-pool.list` | list of available system pools within a particular datacenter | Manager, Reader |
+| `power-iaas.task.read` | get the info for a task | Manager, Reader |
+| `power-iaas.task.delete` | delete a task | Manager |
+| `power-iaas.volume-clone.create` | create a volume clone | Manager |
+| `power-iaas.volume-clone.read` | get the details for a volumes-clone request | Manager, Reader |
+| `power-iaas.volume-clone.list` | list all volume clone requests | Manager, Reader |
+| `power-iaas.volume-clone.start` | start action for a volume clone request | Manager |
+| `power-iaas.volume-clone.execute` | execute action for a volume clone request | Manager |
+| `power-iaas.volume-clone.cancel` | cancel action for a volume clone request | Manager |
+| `power-iaas.volume-clone.delete` | delete a volume clone request | Manager |
+| `power-iaas.cloud-instance-volume.create` | create a data volume into a cloud instance | Manager |
+| `power-iaas.pvm-instance-volume.delete` | detach volumes from a pvm instance | Manager |
+| `power-iaas.volume-group.list` | list all volume groups in cloud instance | Manager, Reader |
+| `power-iaas.volume-group.read` | get a volume group in a cloud instance | Manager, Reader |
+| `power-iaas.volume-group.delete` | delete a volume group | Manager |
+| `power-iaas.volume-group.create` | create a volume group | Manager |
+| `power-iaas.volume-group.update` | update a volume group | Manager |
+| `power-iaas.volume-group.action` | perfoms action on a volume group | Manager |
+| `power-iaas.volume-group-remote-copy.read` | get list of remote copy volumes relationships | Manager, Reader |
+| `power-iaas.volume-group-storage.read` | get storage details of volume group | Manager, Reader |
+| `power-iaas.volume-onboarding.list` | list of all volume onboardings in a cloud instance | Manager, Reader |
+| `power-iaas.volume-onboarding.read` | get a volume onboarding operation information | Manager, Reader |
+| `power-iaas.volume-onboarding.create` | create a volume onboarding operation | Manager |
+| `power-iaas.cloud-instance-volume.read` | gets the info of an volume in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-volume.list` | list all volumes in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-volume.update` | update a volume in a cloud instance | Manager |
+| `power-iaas.cloud-instance-volume.delete` | deletes a volume from a cloud instance | Manager |
+| `power-iaas.pvm-instance-volume.list` | list all the volumes attached to a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance-volume.read` | get the info of an volume attached to a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance-volume.create` | attach volumes to a pvm instance | Manager |
+| `power-iaas.pvm-instance-volume.update` | update a volume attached to a pvm instance | Manager |
+| `power-iaas.pvm-instance-boot-volume.update` | set a pvm instance volume as the boot volume | Manager |
+| `power-iaas.volume-remote-copy.read` | get the info of remote copy volume | Manager, Reader |
+| `power-iaas.volume-flash-copy.read` | get the flash copy mappings of a volume | Manager, Reader |
+| `power-iaas.vpn-connection-network.delete` | detaches a local subnet from a vpn connection | Manager |
+| `power-iaas.vpn-connection-network.read` | list all local subnets attached to a vpn connection | Manager, Reader |
+| `power-iaas.vpn-connection-network.update` | attaches a local subnet to a vpn connection | Manager |
+| `power-iaas.vpn-connection-peer-subnet.delete` | detaches a peer subnet from a vpn connection | Manager |
+| `power-iaas.vpn-connection-peer-subnet.read` | list all peer subnets attached to a vpn connection | Manager, Reader |
+| `power-iaas.vpn-connection-peer-subnet.update` | attach a peer subnet to a vpn connection | Manager |
+| `power-iaas.vpn-connection-ike-policy.delete` | delete an IKE policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ike-policy.read` | get an IKE policy in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ike-policy.list` | list all IKE policies in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ike-policy.create` | create an IKE policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ike-policy.update` | update an IKE policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ipsec-policy.delete` | delete an IPSec policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ipsec-policy.read` | get an IPSec policy in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ipsec-policy.list` | list all IPSec policies in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ipsec-policy.create` | create a new IPSec policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ipsec-policy.update` | update an IPSec policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection.delete` | delete a VPN connection in a cloud instance | Manager |
+| `power-iaas.vpn-connection.read` | get a VPN connection in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection.list` | list all VPN connections in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection.create` | create a VPN connection for a cloud instance | Manager |
+| `power-iaas.vpn-connection.update` | update a VPN connection for a cloud instance | Manager |
+| `power-iaas.disaster-recovery.read` | get the disaster recovery location details for a cloud instance | Manager, Reader |
+| `power-iaas.available-hosts.list` | get a list of  available hosts | Manager, Reader |
+| `power-iaas.host-group.create` | creates a new hostgroup | Manager |
+| `power-iaas.host-group.list` | the list of all the hostgroups accessible from the workspace | Manager, Reader |
+| `power-iaas.host-group.read` | details about a specific hostgroup | Manager, Reader |
+| `power-iaas.cloud-instance-volume.action` | perform an action on a volume | Manager |
+| `power-iaas.tenant-sshkey.list` | list all of a tenants ssh keys | Manager, Reader |
+| `power-iaas.tenant-sshkey.create` | add a new ssh key to the tenant | Manager |
+| `power-iaas.tenant-sshkey.read` | get a tenant ssh key | Manager, Reader |
+| `power-iaas.tenant-sshkey.update` | update a tenant ssh key | Manager |
+| `power-iaas.tenant-sshkey.delete` | delete a tenant ssh key | Manager |
+| `power-iaas.tenant.read` | get the status of a tenant | Manager, Reader |
+| `power-iaas.tenant.update` | updates a tenant | Manager |
+| `power-iaas.host-group.update` | update the sharing status of a host group | Manager |
+| `power-iaas.host.create` | adds a host to an existing host group | Manager |
+| `power-iaas.host.delete` | removes the host from its host group | Manager |
+| `power-iaas.host.list` | list of all the hosts the workspace has access to | Manager, Reader |
+| `power-iaas.host.read` | Get the details about a host | Manager, Reader |
+| `power-iaas.host.update` | Modify the display name of a host | Manager |
+| `power-iaas.per-connection.migrate` | Perform a Power Edge Router actions on a workspace | Manager |
+{: caption="Table 173. Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table131}
+{: #actions-table173}
 
 ## PowerVS Network
 {: #power-iaas.network-roles}
@@ -7350,29 +7862,7 @@ No supported roles.
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-iaas.shared-processor-pool` for the service name.
 
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-{: row-headers}
-{: caption="Table 134. Platform roles - Power Virtual Server Shared Processor Pool" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="power-iaas.shared-processor-pool"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table134}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `power-iaas.shared-processor-pool.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 134. Service actions - Power Virtual Server Shared Processor Pool" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="power-iaas.shared-processor-pool"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table134}
-
+No supported roles.
 ## PowerVS Snapshot
 {: #power-iaas.snapshot-roles}
 
@@ -7385,10 +7875,118 @@ No supported roles.
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-iaas.volume` for the service name.
 
 No supported roles.
-## HDM Workload Migrator
-{: #primaryio-hdm-workload-migrator-roles}
+## Portfolio Optimization API
+{: #poz-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `primaryio-hdm-workload-migrator` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `poz` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 179. Platform roles - Portfolio Optimization API" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="poz"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table179}
+
+| Role | Description |
+| ----- | :----- |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 179. Service roles - Portfolio Optimization API" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="poz"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table179}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `poz.dashboard.view` |  | Administrator, Editor, Operator |
+| `poz.v1.read` |  | Reader |
+| `poz.v2.read` |  | Reader |
+{: caption="Table 179. Service actions - Portfolio Optimization API" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="poz"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table179}
+
+## Workspace for Power Private Virtual Server
+{: #ppc-aas-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+{: row-headers}
+{: caption="Table 180. Service roles - Workspace for Power Private Virtual Server" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="ppc-aas"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table180}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `ppc-aas.dashboard.view` | View Dashboard | Manager, Reader |
+| `ppc-aas.cloud-instance.modify` | Allow modification to the service instance | Manager |
+| `ppc-aas.cloud-instance.read` | PPC aaS Cloud Instance Read | Manager, Reader |
+| `ppc-aas.pod-capacity.view` | View the Capacity Information for a Service Instance's POD | Manager |
+{: caption="Table 180. Service actions - Workspace for Power Private Virtual Server" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="ppc-aas"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table180}
+
+## CRN Development Workspace for Power Private Virtual Server
+{: #ppc-aas-crn-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas-crn` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| PVM Instance Creator | PVM Instance Creator |
+| PVM Instance Manager | PVM Instance Manager |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Volume Manager | Volume Manager |
+| VolumeCreator | Non-Manager users with the ability to create volumes |
+{: row-headers}
+{: caption="Table 181. Service roles - CRN Development Workspace for Power Private Virtual Server" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="ppc-aas-crn"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table181}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `ppc-aas-crn.dashboard.view` | View Dashboard | Manager, PVM Instance Creator, PVM Instance Manager, Reader, Volume Manager, VolumeCreator |
+| `ppc-aas-crn.cloud-instance.modify` | Allow modification to service instance | Manager |
+| `ppc-aas-crn.cloud-instance.read` | PPC aaS Cloud Instance Read | Manager, PVM Instance Creator, PVM Instance Manager, Reader, Volume Manager, VolumeCreator |
+| `ppc-aas-crn.volume.create` | The ability to create volumes in workspaces | Manager, VolumeCreator |
+| `ppc-aas-crn.volume.modify` | Volume Manager | Manager, Volume Manager |
+| `ppc-aas-crn.pvm-instance.manager` | PVM Instance Manager | Manager, PVM Instance Manager |
+| `ppc-aas-crn.pvm-instance.create` | PVM Instance Create | Manager, PVM Instance Creator |
+{: caption="Table 181. Service actions - CRN Development Workspace for Power Private Virtual Server" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="ppc-aas-crn"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table181}
+
+## Stratos for Power PVM Instance
+{: #ppc-aas-crn.pvm-instance-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas-crn.pvm-instance` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -7397,87 +7995,176 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 137. Platform roles - HDM Workload Migrator" caption-side="top"}
+{: caption="Table 182. Platform roles - Stratos for Power PVM Instance" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="primaryio-hdm-workload-migrator"}
+{: tab-group="ppc-aas-crn.pvm-instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table137}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 137. Service roles - HDM Workload Migrator" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="primaryio-hdm-workload-migrator"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table137}
+{: #platform-roles-table182}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `primaryio-hdm-workload-migrator.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 137. Service actions - HDM Workload Migrator" caption-side="top"}
+| `ppc-aas-crn.pvm-instance.dashboard.view` |  | Administrator, Editor, Operator |
+| `ppc-aas-crn.pvm-instance.create` | You can create a new VM instance | Editor |
+| `ppc-aas-crn.pvm-instance.read` | You can view VM instance | Viewer |
+| `ppc-aas-crn.pvm-instance.update` | You can update the existing VM information | Editor |
+| `ppc-aas-crn.pvm-instance.delete` | You can delete the existing VM | Editor |
+{: caption="Table 182. Service actions - Stratos for Power PVM Instance" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="primaryio-hdm-workload-migrator"}
+{: tab-group="ppc-aas-crn.pvm-instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table137}
+{: #actions-table182}
 
-## Privileged Access Gateway
-{: #privileged-access-gateway-roles}
+## Stratos for Power Snapshot
+{: #ppc-aas-crn.snapshot-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `privileged-access-gateway` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas-crn.snapshot` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 138. Platform roles - Privileged Access Gateway" caption-side="top"}
+{: caption="Table 183. Platform roles - Stratos for Power Snapshot" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="privileged-access-gateway"}
+{: tab-group="ppc-aas-crn.snapshot"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table138}
+{: #platform-roles-table183}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `ppc-aas-crn.snapshot.dashboard.view` |  | Administrator, Editor, Operator |
+| `ppc-aas-crn.snapshot.create` | You can create a new snapshot instance | Editor |
+| `ppc-aas-crn.snapshot.read` | You can read snapshot information | Viewer |
+| `ppc-aas-crn.snapshot.update` | You can update the existing snapshot information | Editor |
+| `ppc-aas-crn.snapshot.delete` | You can delete the existing snapshot | Editor |
+{: caption="Table 183. Service actions - Stratos for Power Snapshot" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="ppc-aas-crn.snapshot"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table183}
+
+## CRN Development Volume for Stratos for Power
+{: #ppc-aas-crn.volume-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas-crn.volume` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 138. Service roles - Privileged Access Gateway" caption-side="top"}
+{: caption="Table 184. Service roles - CRN Development Volume for Stratos for Power" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="privileged-access-gateway"}
+{: tab-group="ppc-aas-crn.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table138}
+{: #service-roles-table184}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `privileged-access-gateway.dashboard.view` |  | Administrator, Editor, Operator |
-| `privileged-access-gateway.certificate.create` | this action is going to create a user certificate for the user that is needed to login to the session | Manager, Writer |
-| `privileged-access-gateway.public.ca.key` | retrieves the public CA key (to be removed) | Manager, Reader, Writer |
-| `privileged-access-gateway.ssh.login` | ssh login | Manager, Writer |
-| `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | Manager, Writer |
-| `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | Manager, Writer |
-| `privileged-access-gateway.session.list.all` | List All  Active Sessions(to be removed) | Manager |
-| `privileged-access-gateway.instance.upgrade` | Perform a software update of the gateway associated an instance. | Administrator, Editor, Operator |
-| `privileged-access-gateway.info` | get api info | Manager, Reader, Writer |
-| `privileged-access-gateway.gateway.start` | Starting customer gateway for restart operation | Manager |
-| `privileged-access-gateway.gateway.stop` | Stop Customer gateway for restart operation | Manager |
-| `privileged-access-gateway.gateway.reset` | Reset customer gateway disk to recover functionality | Manager |
-| `privileged-access-gateway.session-all.list` | list all the active sessions | Manager |
-| `privileged-access-gateway.public-ca-key.get` | retrieves the public CA key  | Manager, Reader, Writer |
-{: caption="Table 138. Service actions - Privileged Access Gateway" caption-side="top"}
+| `ppc-aas-crn.volume.dashboard.view` | View Dashboard | Manager, Reader |
+| `ppc-aas-crn.volume.read` | You can read volume information | Manager, Reader |
+| `ppc-aas-crn.volume.modify` | Modify Volumes | Manager |
+{: caption="Table 184. Service actions - CRN Development Volume for Stratos for Power" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="privileged-access-gateway"}
+{: tab-group="ppc-aas-crn.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table138}
+{: #actions-table184}
+
+## CRN Development Workspace for Stratos for Power
+{: #ppc-aas-crn.workspace-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas-crn.workspace` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 185. Platform roles - CRN Development Workspace for Stratos for Power" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="ppc-aas-crn.workspace"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table185}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `ppc-aas-crn.workspace.dashboard.view` |  | Administrator, Editor, Operator |
+| `ppc-aas-crn.workspace.create` | You can create a new workspace | Editor |
+| `ppc-aas-crn.workspace.read` | You can read workspace information | Viewer |
+| `ppc-aas-crn.workspace.update` | You can update the existing workspace information | Editor |
+| `ppc-aas-crn.workspace.delete` | You can delete the existing workspace | Editor |
+{: caption="Table 185. Service actions - CRN Development Workspace for Stratos for Power" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="ppc-aas-crn.workspace"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table185}
+
+## Stratos for Power Network
+{: #ppc-aas.network-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas.network` for the service name.
+
+No supported roles.
+## Stratos for Power PVM Instance
+{: #ppc-aas.pvm-instance-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas.pvm-instance` for the service name.
+
+No supported roles.
+## Stratos for Power Snapshot
+{: #ppc-aas.snapshot-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas.snapshot` for the service name.
+
+No supported roles.
+## Volume for Stratos for Power
+{: #ppc-aas.volume-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `ppc-aas.volume` for the service name.
+
+No supported roles.
+## Pricing
+{: #pricing-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `pricing` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+| Viewer | null |
+{: row-headers}
+{: caption="Table 190. Platform roles - Pricing" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="pricing"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table190}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `pricing.spi.writer` |  | Administrator, Editor |
+| `pricing.spi.operator` |  | Administrator, Editor, Operator |
+| `pricing.spi.reader` |  | Administrator, Editor, Operator, Viewer |
+{: caption="Table 190. Service actions - Pricing" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="pricing"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table190}
 
 ## Product Lifecycle
 {: #product-lifecycle-roles}
@@ -7488,41 +8175,79 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 139. Platform roles - Product Lifecycle" caption-side="top"}
+{: caption="Table 191. Platform roles - Product Lifecycle" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="product-lifecycle"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table139}
+{: #platform-roles-table191}
 
 | Role | Description |
 | ----- | :----- |
 | Lifecycle Approver | Approvers can approve or reject workflow tasks |
 {: row-headers}
-{: caption="Table 139. Service roles - Product Lifecycle" caption-side="top"}
+{: caption="Table 191. Service roles - Product Lifecycle" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="product-lifecycle"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table139}
+{: #service-roles-table191}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `product-lifecycle.dashboard.view` |  | Administrator, Editor, Operator |
 | `product-lifecycle.offering.create` | Create an onboarding offering in the account | Administrator, Editor |
 | `product-lifecycle.offering.edit` | Edit an onboarding offering in the account. | Administrator, Editor |
 | `product-lifecycle.review.complete` | Complete (accept or reject) a review | Lifecycle Approver |
 | `product-lifecycle.offering.read` | Read values of an offering | Administrator, Editor, Lifecycle Approver |
 | `product-lifecycle.registration.read` | Read onboarding registration | Administrator, Editor, Lifecycle Approver |
 | `product-lifecycle.registration.create` | Create onboarding registration | Administrator, Editor |
-{: caption="Table 139. Service actions - Product Lifecycle" caption-side="top"}
+{: caption="Table 191. Service actions - Product Lifecycle" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="product-lifecycle"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table139}
+{: #actions-table191}
+
+## ServiceNow Managed Services
+{: #prof-svc-snow-mgd-servs-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `prof-svc-snow-mgd-servs` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 192. Platform roles - ServiceNow Managed Services" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="prof-svc-snow-mgd-servs"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table192}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 192. Service roles - ServiceNow Managed Services" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="prof-svc-snow-mgd-servs"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table192}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `prof-svc-snow-mgd-servs.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 192. Service actions - ServiceNow Managed Services" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="prof-svc-snow-mgd-servs"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table192}
 
 ## Project
 {: #project-roles}
@@ -7536,23 +8261,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 140. Platform roles - Project" caption-side="top"}
+{: caption="Table 193. Platform roles - Project" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="project"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table140}
+{: #platform-roles-table193}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 140. Service roles - Project" caption-side="top"}
+{: caption="Table 193. Service roles - Project" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="project"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table140}
+{: #service-roles-table193}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7605,17 +8330,23 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.resources.retrieve-all` | The ability to view project resources. | Administrator, Editor, Operator, Viewer |
 | `project.resources.update` | The ability to update project resources. | Administrator, Editor, Operator |
 | `project.available-resources.retrieve-all` | The ability to view project available resources. | Administrator, Editor, Operator, Viewer |
-{: caption="Table 140. Service actions - Project" caption-side="top"}
+{: caption="Table 193. Service actions - Project" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="project"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table140}
+{: #actions-table193}
 
-## PX-Backup By Portworx
-{: #px-backup-roles}
+## provision-li
+{: #provision-li-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `px-backup` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `provision-li` for the service name.
+
+No supported roles.
+## PortWorx Enterprise
+{: #px-enterprise-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `px-enterprise` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -7624,33 +8355,78 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 141. Platform roles - PX-Backup By Portworx" caption-side="top"}
+{: caption="Table 195. Platform roles - PortWorx Enterprise" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="px-backup"}
+{: tab-group="px-enterprise"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table141}
+{: #platform-roles-table195}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 195. Service roles - PortWorx Enterprise" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="px-enterprise"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table195}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `px-enterprise.dashboard.view` | View Dashboard | Administrator, Editor, Operator, Reader, Viewer, Writer |
+| `px-enterprise.admin` | PX  Admin | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
+| `px-enterprise.operator` | PX Operator | Reader, Writer |
+{: caption="Table 195. Service actions - PortWorx Enterprise" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="px-enterprise"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table195}
+
+## QRadar SIEM on IBM Cloud
+{: #qroc-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `qroc` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 196. Platform roles - QRadar SIEM on IBM Cloud" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="qroc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table196}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 141. Service roles - PX-Backup By Portworx" caption-side="top"}
+{: caption="Table 196. Service roles - QRadar SIEM on IBM Cloud" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="px-backup"}
+{: tab-group="qroc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table141}
+{: #service-roles-table196}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `px-backup.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 141. Service actions - PX-Backup By Portworx" caption-side="top"}
+| `qroc.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 196. Service actions - QRadar SIEM on IBM Cloud" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="px-backup"}
+{: tab-group="qroc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table141}
+{: #actions-table196}
 
 ## Quantum Services
 {: #quantum-computing-roles}
@@ -7663,12 +8439,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 142. Service roles - Quantum Services" caption-side="top"}
+{: caption="Table 197. Service roles - Quantum Services" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="quantum-computing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table142}
+{: #service-roles-table197}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7687,46 +8463,73 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.instance.configuration.update` | Instance configuration update | Manager |
 | `quantum-computing.instance.usage.read` | Instance usage read | Manager, Reader, Writer |
 | `quantum-computing.instance.read` | Instance read | Manager, Reader, Writer |
+| `quantum-computing.instance.read` | Instance read | Manager, Reader, Writer |
 | `quantum-computing.session.create` | Create a Session | Manager, Writer |
-{: caption="Table 142. Service actions - Quantum Services" caption-side="top"}
+{: caption="Table 197. Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table142}
+{: #actions-table197}
 
-## Raxak Protect
-{: #raxak-protect-roles}
+## Kubernetes Resource Manager powered by Razee
+{: #razee-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `raxak-protect` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `razee` for the service name.
 
 | Role | Description |
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 143. Platform roles - Raxak Protect" caption-side="top"}
+{: caption="Table 198. Platform roles - Kubernetes Resource Manager powered by Razee" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="raxak-protect"}
+{: tab-group="razee"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table143}
+{: #platform-roles-table198}
+
+| Role | Description |
+| ----- | :----- |
+| Deployer1 | This role allow the user to deploy razee managed contents to managed clusters. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 198. Service roles - Kubernetes Resource Manager powered by Razee" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="razee"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table198}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `raxak-protect.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 143. Service actions - Raxak Protect" caption-side="top"}
+| `razee.dashboard.read` | Retrieve cluster and resource information | Administrator, Manager, Reader |
+| `razee.dashboard.manage` | Manage clusters and resources registered with razee | Administrator, Manager |
+| `razee.api.globalaccess` | global access razee api | Administrator, Manager |
+| `razee.channel.read` | read resource from a channel | Manager, Reader |
+| `razee.channel.write` | write a resource into a channel | Manager, Writer |
+| `razee.channel.manage` | manage a channel, including create and delete | Manager |
+| `razee.subscription.write` | update subscription | Deployer1, Manager |
+| `razee.cluster.read` | read meta data for a cluster | Administrator, Manager, Reader |
+| `razee.organization.manage` | manage organization configuration | Administrator, Manager |
+| `razee.organization.read` | Read service instance Operation | Manager, Reader, Viewer |
+| `razee.resource.get` | resource read operation | Administrator, Manager, Reader |
+| `razee.subscription.manage` | subscription manage action | Deployer1, Manager |
+| `razee.subscription.read` | Subscription read operation | Deployer1, Manager, Reader |
+| `razee.cluster.manage` | Cluster manage Operation | Administrator, Manager |
+{: caption="Table 198. Service actions - Kubernetes Resource Manager powered by Razee" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="raxak-protect"}
+{: tab-group="razee"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table143}
+{: #actions-table198}
 
-## Robin CNS
-{: #robin-storage-roles}
+## Razee Resource Service Broker
+{: #razee-resource-broker-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `robin-storage` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `razee-resource-broker` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -7735,33 +8538,75 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 144. Platform roles - Robin CNS" caption-side="top"}
+{: caption="Table 199. Platform roles - Razee Resource Service Broker" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="robin-storage"}
+{: tab-group="razee-resource-broker"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table144}
+{: #platform-roles-table199}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 199. Service roles - Razee Resource Service Broker" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="razee-resource-broker"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table199}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `razee-resource-broker.dashboard.view` | razee-resource-broker.dashboard.view | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+{: caption="Table 199. Service actions - Razee Resource Service Broker" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="razee-resource-broker"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table199}
+
+## rmc-1p-ianhe-adminservce1
+{: #rmc-1p-ianhe-adminservce1-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `rmc-1p-ianhe-adminservce1` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 200. Platform roles - rmc-1p-ianhe-adminservce1" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="rmc-1p-ianhe-adminservce1"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table200}
 
 | Role | Description |
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 144. Service roles - Robin CNS" caption-side="top"}
+{: caption="Table 200. Service roles - rmc-1p-ianhe-adminservce1" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="robin-storage"}
+{: tab-group="rmc-1p-ianhe-adminservce1"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table144}
+{: #service-roles-table200}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `robin-storage.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 144. Service actions - Robin CNS" caption-side="top"}
+| `rmc-1p-ianhe-adminservce1.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 200. Service actions - rmc-1p-ianhe-adminservce1" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="robin-storage"}
+{: tab-group="rmc-1p-ianhe-adminservce1"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table144}
+{: #actions-table200}
 
 ## IBM Cloud Satellite
 {: #satellite-roles}
@@ -7775,12 +8620,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 145. Platform roles - IBM Cloud Satellite" caption-side="top"}
+{: caption="Table 201. Platform roles - IBM Cloud Satellite" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="satellite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table145}
+{: #platform-roles-table201}
 
 | Role | Description |
 | ----- | :----- |
@@ -7792,23 +8637,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Satellite Link Source Access Controller | Allows the subject to enable access to Link Endpoint from a Link Source |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 145. Service roles - IBM Cloud Satellite" caption-side="top"}
+{: caption="Table 201. Service roles - IBM Cloud Satellite" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="satellite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table145}
+{: #service-roles-table201}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `satellite.dashboard.view` |  | Administrator, Editor, Operator |
 | `satellite.config-configuration.create` | create configuration for the satellite config. You can create one or more configurations for your org. | Administrator, Manager |
-| `satellite.config-configuration.read` | list all the configurations for your org, or get details about one configuration | Manager, Reader |
+| `satellite.config-configuration.read` | list all the configurations for your org, or get details about one configuration | Manager, Reader, Satellite Cluster Creator |
 | `satellite.config-configuration.update` | updates fields in configuration | Manager, Writer |
 | `satellite.config-configuration.delete` | delete a configuration | Administrator, Manager |
 | `satellite.config-configuration.manageversion` | change your configuration version | Manager, Writer |
 | `satellite.config-subscription.create` | create a subscription for a configuration | Deployer, Manager |
-| `satellite.config-subscription.read` | read subscriptions for your org | Deployer, Manager, Reader |
+| `satellite.config-subscription.read` | read subscriptions for your org | Deployer, Manager, Reader, Satellite Cluster Creator |
 | `satellite.config-subscription.update` | update subscription name and other relevant fields | Deployer, Manager |
 | `satellite.config-subscription.delete` | delete a subscription | Deployer, Manager |
 | `satellite.config-subscription.setversion` | set the configuration version on this subscription | Deployer, Manager |
@@ -7827,11 +8672,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `satellite.location.read` | read satellite location | Administrator, Editor, Operator, Satellite Cluster Creator, Satellite Link Administrator, Viewer |
 | `satellite.location.update` | edit an existing satellite location information | Administrator, Editor, Operator |
 | `satellite.location.delete` | delete a satellite location belonged to you | Administrator, Operator |
-| `satellite.config-clustergroup.setversion` | set the configuration version on this cluster group | Administrator, Deployer, Manager |
 | `satellite.resource.servicelevelread` | Service level read of resources | Administrator, Manager |
 | `satellite.link.get` | Get configuration and status of a Link instance. | Administrator, Editor, Operator, Satellite Link Administrator, Viewer |
 | `satellite.link.delete` | Delete a Link instance of a Satellite Location.  | Administrator, Operator |
-| `satellite.link-endpoints.list` | List all Link Endpoints of a Satellite Location. | Administrator, Editor, Operator, Satellite Link Administrator, Viewer |
 | `satellite.link-endpoints.create` | Create a Link Endpoint with specified configuration. | Administrator, Editor, Operator, Satellite Link Administrator |
 | `satellite.link-endpoints.get` | Get configuration and status of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Administrator, Viewer |
 | `satellite.link-endpoints.update` | Modify configuration of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Administrator |
@@ -7845,18 +8688,23 @@ Review the available platform and service roles and the actions mapped to each t
 | `satellite.link-endpoint-sources.list` | List ACL Sources used by a Link Endpoint.  | Administrator, Editor, Operator, Satellite Link Administrator, Viewer |
 | `satellite.link-endpoint-sources.update` | Update ACL Sources enable/disable state of a Link Endpoint. | Administrator, Editor, Operator, Satellite Link Source Access Controller |
 | `satellite.link-sources.update` | Modify IP address/subnets list of a ACL Source configured for the specified Link instance. | Administrator, Editor, Operator, Satellite Link Administrator |
+| `satellite.config-clustergroup.setversion` | setversion on the subscription belong to this group | Administrator, Deployer, Manager |
 | `satellite.config-cluster.update` | Update cluster registration | Manager |
 | `satellite.location.cluster-create` | Enables the user to create Red Hat OpenShift on IBM Cloud clusters in the Satellite Location | Administrator, Satellite Cluster Creator |
+| `satellite.link-endpoints.list` | List Endpoints of a Location. | Administrator, Editor, Operator, Satellite Link Administrator, Viewer |
 | `satellite.link-endpoints.import` | Import Endpoint from previous export. | Administrator, Editor, Operator, Satellite Link Administrator |
 | `satellite.link-endpoints.export` | Export Endpoint configuration to an archive file. | Administrator, Editor, Operator, Satellite Link Administrator |
-| `satellite.link-source-endpoints.list` | List Source status for all Endpoints. | Administrator, Editor, Operator, Satellite Link Administrator |
+| `satellite.link-source-endpoints.list` | List Source status for all Endpoints. | Administrator, Editor, Operator, Satellite Link Administrator, Viewer |
 | `satellite.link-source-endpoints.update` | Update Source status for listed Endpoints. | Administrator, Editor, Operator, Satellite Link Source Access Controller |
-{: caption="Table 145. Service actions - IBM Cloud Satellite" caption-side="top"}
+| `satellite.mesh.admin` | satellite.mesh.admin | Manager, Reader, Writer |
+| `satellite.mesh.reader` | satellite.mesh.reader | Reader |
+| `satellite.mesh.manage` | Satellite Mesh Manager | Manager, Writer |
+{: caption="Table 201. Service actions - IBM Cloud Satellite" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="satellite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table145}
+{: #actions-table201}
 
 ## Satellite Infrastructure Services 
 {: #satellite-iaas-roles}
@@ -7869,24 +8717,24 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 146. Platform roles - Satellite Infrastructure Services " caption-side="top"}
+{: caption="Table 202. Platform roles - Satellite Infrastructure Services " caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="satellite-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table146}
+{: #platform-roles-table202}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Satellite IS Request Handler | Satellite IS Request Handler |
 {: row-headers}
-{: caption="Table 146. Service roles - Satellite Infrastructure Services " caption-side="top"}
+{: caption="Table 202. Service roles - Satellite Infrastructure Services " caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="satellite-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table146}
+{: #service-roles-table202}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7894,12 +8742,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `satellite-iaas.request.create` | Create a location request | Administrator, Manager, Satellite IS Request Handler |
 | `satellite-iaas.request.update` | Update Satellite request | Satellite IS Request Handler |
 | `satellite-iaas.request.delete` | Delete Location Request | Satellite IS Request Handler |
-{: caption="Table 146. Service actions - Satellite Infrastructure Services " caption-side="top"}
+| `satellite-iaas.request.get` | Gets the location requests information | Satellite IS Request Handler |
+{: caption="Table 202. Service actions - Satellite Infrastructure Services " caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="satellite-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table146}
+{: #actions-table202}
 
 ## Schematics
 {: #schematics-roles}
@@ -7913,12 +8762,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 147. Platform roles - Schematics" caption-side="top"}
+{: caption="Table 203. Platform roles - Schematics" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="schematics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table147}
+{: #platform-roles-table203}
 
 | Role | Description |
 | ----- | :----- |
@@ -7927,23 +8776,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 147. Service roles - Schematics" caption-side="top"}
+{: caption="Table 203. Service roles - Schematics" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="schematics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table147}
+{: #service-roles-table203}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `schematics.workspace.create` |  | Manager |
 | `schematics.workspace.update` |  | Manager, Writer |
 | `schematics.workspace.delete` |  | Manager |
-| `schematics.workspace.read` | Read workspace details | Manager, Reader, Writer |
-| `schematics.presets.create` | Create new presets for the Account | Manager |
-| `schematics.presets.update` | Update the preset values | Manager, Writer |
-| `schematics.presets.delete` | Delete the preset from Account | Manager |
-| `schematics.presets.read` | Read the preset variable, value and metadata | Manager, Reader, Writer |
+| `schematics.workspace.read` | Read the workspace details | Manager, Reader, Writer |
+| `schematics.datasets.create` | Create new presets for the Account | Manager |
+| `schematics.datasets.update` | Update the preset values | Manager, Writer |
+| `schematics.datasets.delete` | Delete the preset from Account | Manager |
+| `schematics.datasets.read` | Read the preset variable, value and metadata | Manager, Reader, Writer |
 | `schematics.action.create` | Create an Action definition | Manager |
 | `schematics.action.update` | Update the Action definition | Manager, Writer |
 | `schematics.action.read` | Read the Action definition | Manager, Reader, Writer |
@@ -7951,30 +8800,103 @@ Review the available platform and service roles and the actions mapped to each t
 | `schematics.settings-kms.discover` | Discover KMS instances for Schematics settings | Administrator |
 | `schematics.settings-kms.read` | Read the Schematics KMS settings | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
 | `schematics.settings-kms.update` | Update the Schematics KMS settings | Administrator |
-| `schematics.environment.create` | Create an Environment | Manager |
-| `schematics.environment.update` | Update the Environment | Manager, Writer |
-| `schematics.environment.delete` | Delete an Environment | Manager |
-| `schematics.environment.read` | Read the Environment details | Manager, Reader, Writer |
+| `schematics.environment.create` | Create Environment | Manager |
+| `schematics.environment.update` | Update Environment  | Manager, Writer |
+| `schematics.environment.delete` | Delete Environment | Manager |
+| `schematics.environment.read` | Read Environment | Manager, Reader, Writer |
 | `schematics.agents.read` | Work with agent jobs | Operator |
 | `schematics.settings-connection.read` | Read the connection settings for external data or template | Manager, Reader, Writer |
 | `schematics.settings-connection.create` | Create connection settings for external data and template | Manager |
 | `schematics.settings-connection.update` | Update connection settings for external data and template | Manager, Writer |
-| `schematics.settings-connection.delete` | Delete the connection settings for external data and template | Manager |
-| `schematics.datasets.create` | Create new datasets for the Account | Manager |
-| `schematics.datasets.update` | Update the dataset values | Manager, Writer |
-| `schematics.datasets.delete` | Delete the dataset from Account | Manager |
-| `schematics.datasets.read` | Read the dataset variable, value and metadata | Manager, Reader, Writer |
-| `schematics.settings-agent.delete` | Unregister the Schematics Agent configuration setting | Manager |
-| `schematics.settings-agent.update` | Update the Schematics Agent configuration setting | Manager, Writer |
-| `schematics.settings-agent.read` | Read Schematics Agent configuration setting | Manager, Reader, Writer |
+| `schematics.settings-connection.delete` | Delete connection settings | Manager |
 | `schematics.settings-agent.register` | Register the schematics agent instance | Manager |
+| `schematics.settings-agent.read` | Read Schematics Agent configuration setting | Manager, Reader, Writer |
+| `schematics.settings-agent.update` | Update the Schematics Agent configuration setting | Manager, Writer |
+| `schematics.settings-agent.delete` | Unregister the Schematics Agent configuration setting | Manager |
 | `schematics.settings-agent.create` | Create the schematics agent instance | Manager |
-{: caption="Table 147. Service actions - Schematics" caption-side="top"}
+{: caption="Table 203. Service actions - Schematics" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="schematics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table147}
+{: #actions-table203}
+
+## sd-new-test
+{: #sd-new-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sd-new-test` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 204. Platform roles - sd-new-test" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="sd-new-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table204}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `sd-new-test.dashboard.view` | View Dashboard | Administrator, Editor, Operator |
+| `sd-new-test.dashboard.write` | write access | Administrator, Editor |
+{: caption="Table 204. Service actions - sd-new-test" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="sd-new-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table204}
+
+## sds-demo
+{: #sds-samriddhi-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sds-samriddhi` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+{: row-headers}
+{: caption="Table 205. Platform roles - sds-demo" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="sds-samriddhi"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table205}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Monitor Prometheus | Monitor Prometheus |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 205. Service roles - sds-demo" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="sds-samriddhi"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table205}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `sds-samriddhi.dashboard.create` | Create Dashboard | Administrator, Editor, Manager |
+| `sds-samriddhi.dashboard.view` | View Dashboard | Reader |
+| `sds-samriddhi.volume.create` | volume create | Manager, Writer |
+| `sds-samriddhi.volume.delete` | delete volume | Manager |
+| `sds-samriddhi.volume.get` | Volume Get | Manager, Reader, Writer |
+| `sds-samriddhi.volume.rename` | Volume Rename | Manager, Writer |
+| `sds-samriddhi.capacity.get` | Get Capacity | Manager |
+| `sds-samriddhi.capacity.performance.view` | sds-samriddhi.capacity.performance.view | Monitor Prometheus |
+{: caption="Table 205. Service actions - sds-demo" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="sds-samriddhi"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table205}
 
 ## Secrets Manager
 {: #secrets-manager-roles}
@@ -7987,26 +8909,27 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 148. Platform roles - Secrets Manager" caption-side="top"}
+{: caption="Table 206. Platform roles - Secrets Manager" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="secrets-manager"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table148}
+{: #platform-roles-table206}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions, such as managing secret groups, configuring secret engines, and managing secrets policies. |
 | Reader | As a reader, you can perform read-only actions within Secrets Manager, such as viewing service-specific resources. Readers can access only the metadata that is associated with a secret. |
 | SecretsReader | As a secrets reader, you can perform read-only actions, and you can also access the secret data that is associated with a secret. A secrets reader can't create secrets or modify the value of an existing secret. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the secrets reader role, including the ability to create and edit secrets. Writers can't create secret groups, manage the rotation policies of a secret, or configure secrets engines. |
 {: row-headers}
-{: caption="Table 148. Service roles - Secrets Manager" caption-side="top"}
+{: caption="Table 206. Service roles - Secrets Manager" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="secrets-manager"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table148}
+{: #service-roles-table206}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8030,6 +8953,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `secrets-manager.secret-engine-config.get` | Get secrets engine configuration. | Manager |
 | `secrets-manager.secret-versions.list` | List secret versions. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.endpoints.view` | Get service instance endpoints. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.config.read` | Get the configuration of Secrets Manager resources. Used for monitoring with the Security and Compliance Center. | Service Configuration Reader |
 | `secrets-manager.vault-token.create` | Create a Vault token. | Manager |
 | `secrets-manager.notifications-registration.create` | Register a Secrets Manager instance as a source in Event Notifications. | Manager |
 | `secrets-manager.notifications-registration.read` | Get the registration details between a Secrets Manager and Event Notifications instance. | Manager, Reader, SecretsReader, Writer |
@@ -8041,28 +8965,28 @@ Review the available platform and service roles and the actions mapped to each t
 | `secrets-manager.secret-locks.list` | List the locks that exist for secret and its versions. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.locks.list` | List the locks that are exist in your service instance. | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-action.create` | Create a secret action | Manager, Writer |
-| `secrets-manager.secret-version.create` | Create a new secret version.	 | Manager, Writer |
-| `secrets-manager.secret-version.read` | View the details of a secret version.	 | Manager, SecretsReader, Writer |
-| `secrets-manager.secret-version-metadata.read` | View the metadata of a secret version.	 | Manager, Reader, SecretsReader, Writer |
-| `secrets-manager.secret-version-action.create` | Create a secret version action.	 | Manager, Writer |
-| `secrets-manager.configuration.create` | Create a new configuration	 | Manager |
-| `secrets-manager.configuration-action.create` | Create a new configuration action	 | Manager |
-| `secrets-manager.configurations.list` | List configurations	 | Manager, Reader, Writer |
-| `secrets-manager.configuration.read` | View the details of a configuration.	 | Manager |
+| `secrets-manager.secret-version.create` | Create a new secret version. | Manager, Writer |
+| `secrets-manager.secret-version.read` | View the details of a secret version. | Manager, SecretsReader, Writer |
+| `secrets-manager.secret-version-metadata.read` | View the metadata of a secret version. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-version-action.create` | Create a secret version action. | Manager, Writer |
+| `secrets-manager.configuration.create` | Create a new configuration | Manager |
+| `secrets-manager.configuration-action.create` | Create a new configuration action | Manager |
+| `secrets-manager.configurations.list` | List configurations | Manager, Reader, Writer |
+| `secrets-manager.configuration.read` | View the details of a configuration. | Manager |
 | `secrets-manager.configuration.update` | Update a configuration | Manager |
 | `secrets-manager.configuration.delete` | Delete a configuration | Manager |
 | `secrets-manager.secret-locks.create` | Create secret locks. | Manager, Writer |
 | `secrets-manager.secret-locks.delete` | Delete secret locks. | Manager |
-| `secrets-manager.secret-version-locks.create` | Create secret version locks.	 | Manager, Writer |
+| `secrets-manager.secret-version-locks.create` | Create secret version locks. | Manager, Writer |
 | `secrets-manager.secret-version-locks.list` | List secret version locks | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-version-locks.delete` | Delete secret version locks. | Manager |
 | `secrets-manager.secrets-locks.list` | List secrets locks. | Manager, Reader, SecretsReader, Writer |
-{: caption="Table 148. Service actions - Secrets Manager" caption-side="top"}
+{: caption="Table 206. Service actions - Secrets Manager" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="secrets-manager"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table148}
+{: #actions-table206}
 
 ## Secure Gateway
 {: #securegateway-roles}
@@ -8075,62 +8999,22 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 149. Platform roles - Secure Gateway" caption-side="top"}
+{: caption="Table 207. Platform roles - Secure Gateway" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="securegateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table149}
+{: #platform-roles-table207}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `securegateway.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 149. Service actions - Secure Gateway" caption-side="top"}
+{: caption="Table 207. Service actions - Secure Gateway" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="securegateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table149}
-
-## IBM Verify
-{: #security-verify-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `security-verify` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
-{: row-headers}
-{: caption="Table 150. Platform roles - IBM Verify" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="security-verify"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table150}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 150. Service roles - IBM Verify" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="security-verify"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table150}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `security-verify.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 150. Service actions - IBM Verify" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="security-verify"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table150}
+{: #actions-table207}
 
 ## Simulated Instruments Analytics API
 {: #sia-roles}
@@ -8143,62 +9027,120 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 151. Platform roles - Simulated Instruments Analytics API" caption-side="top"}
+{: caption="Table 208. Platform roles - Simulated Instruments Analytics API" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="sia"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table151}
+{: #platform-roles-table208}
 
 | Role | Description |
 | ----- | :----- |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 {: row-headers}
-{: caption="Table 151. Service roles - Simulated Instruments Analytics API" caption-side="top"}
+{: caption="Table 208. Service roles - Simulated Instruments Analytics API" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="sia"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table151}
+{: #service-roles-table208}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `sia.dashboard.view` |  | Administrator, Editor, Operator |
 | `sia.instrument.read` |  | Reader |
-{: caption="Table 151. Service actions - Simulated Instruments Analytics API" caption-side="top"}
+{: caption="Table 208. Service actions - Simulated Instruments Analytics API" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="sia"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table151}
+{: #actions-table208}
 
-## Skytap On IBM Cloud
-{: #skytap-roles}
+## Simulated Instruments Analytics
+{: #siapoc-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `skytap` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `siapoc` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
 {: row-headers}
-{: caption="Table 152. Platform roles - Skytap On IBM Cloud" caption-side="top"}
+{: caption="Table 209. Platform roles - Simulated Instruments Analytics" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="skytap"}
+{: tab-group="siapoc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table152}
+{: #platform-roles-table209}
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+{: row-headers}
+{: caption="Table 209. Service roles - Simulated Instruments Analytics" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="siapoc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table209}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `skytap.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 152. Service actions - Skytap On IBM Cloud" caption-side="top"}
+| `siapoc.dashboard.view` |  | Administrator, Editor, Operator |
+| `siapoc.instrument.read` |  | null |
+{: caption="Table 209. Service actions - Simulated Instruments Analytics" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="skytap"}
+{: tab-group="siapoc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table152}
+{: #actions-table209}
+
+## sid-test
+{: #sid-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sid-test` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | null |
+| Editor | null |
+| Operator | null |
+{: row-headers}
+{: caption="Table 210. Platform roles - sid-test" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="sid-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table210}
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+| null | null |
+| null | null |
+{: row-headers}
+{: caption="Table 210. Service roles - sid-test" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="sid-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table210}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `sid-test.custom.test` |  | null |
+| `sid-test.dashboard.view` |  | Administrator, Editor, Operator |
+| `sid-test.dashboard.another` |  | null, null |
+| `sid-test.action.m` |  | null |
+| `sid-test.action.mw` |  | null, null |
+| `sid-test.action.all` |  | null, null, null |
+{: caption="Table 210. Service actions - sid-test" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="sid-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table210}
 
 ## Software Billing
 {: #software-billing-roles}
@@ -8212,33 +9154,78 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 153. Platform roles - Software Billing" caption-side="top"}
+{: caption="Table 211. Platform roles - Software Billing" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="software-billing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table153}
+{: #platform-roles-table211}
 
 | Role | Description |
 | ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 153. Service roles - Software Billing" caption-side="top"}
+{: caption="Table 211. Service roles - Software Billing" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="software-billing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table153}
+{: #service-roles-table211}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `software-billing.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 153. Service actions - Software Billing" caption-side="top"}
+| `software-billing.software.register` | software-billing.software.register | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+{: caption="Table 211. Service actions - Software Billing" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="software-billing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table153}
+{: #actions-table211}
+
+## SDS as a Service
+{: #software-defined-storage-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `software-defined-storage` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 212. Platform roles - SDS as a Service" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="software-defined-storage"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table212}
+
+| Role | Description |
+| ----- | :----- |
+| LocRegistration | LocRegistration |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 212. Service roles - SDS as a Service" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="software-defined-storage"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table212}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `software-defined-storage.dashboard.view` |  | Administrator, Editor, Operator |
+| `software-defined-storage.tag.loc-registration` | LocRegistration | LocRegistration, Manager, Writer |
+{: caption="Table 212. Service actions - SDS as a Service" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="software-defined-storage"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table212}
 
 ## Speech to Text
 {: #speech-to-text-roles}
@@ -8251,12 +9238,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 154. Platform roles - Speech to Text" caption-side="top"}
+{: caption="Table 213. Platform roles - Speech to Text" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="speech-to-text"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table154}
+{: #platform-roles-table213}
 
 | Role | Description |
 | ----- | :----- |
@@ -8264,29 +9251,73 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 154. Service roles - Speech to Text" caption-side="top"}
+{: caption="Table 213. Service roles - Speech to Text" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="speech-to-text"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table154}
+{: #service-roles-table213}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `speech-to-text.dashboard.view` |  | Administrator, Editor, Operator |
-| `GET /speech-to-text` |  | Manager, Reader, Writer |
-| `POST /speech-to-text` |  | Manager, Writer |
-| `DELETE /speech-to-text` |  | Manager, Writer |
-| `HEAD /speech-to-text` |  | Manager, Reader, Writer |
-| `PUT /speech-to-text` |  | Manager, Writer |
-{: caption="Table 154. Service actions - Speech to Text" caption-side="top"}
+| `GET /speech-to-text` | Retrieve resources | Manager, Reader, Writer |
+| `POST /speech-to-text` | Create new resources | Manager, Writer |
+| `DELETE /speech-to-text` | Delete resources | Manager, Writer |
+| `HEAD /speech-to-text` | Get headers | Manager, Reader, Writer |
+| `PUT /speech-to-text` | Update existing resources | Manager, Writer |
+| `speech-to-text.authorization.create` | Create IAM authorization policies | Manager, Reader, Writer |
+{: caption="Table 213. Service actions - Speech to Text" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="speech-to-text"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table154}
+{: #actions-table213}
 
-## sql-query
+## Speech to Text-dev
+{: #speech-to-text-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `speech-to-text-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 214. Service roles - Speech to Text-dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="speech-to-text-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table214}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `GET /speech-to-text-dev` |  | Manager, Reader, Writer |
+| `POST /speech-to-text-dev` |  | Manager, Writer |
+| `DELETE /speech-to-text-dev` |  | Manager, Writer |
+| `HEAD /speech-to-text-dev` |  | Manager, Reader, Writer |
+| `PUT /speech-to-text-dev` |  | Manager, Writer |
+| `speech-to-text-dev.models.query` | Query all available speech to text models | Manager, Reader, Writer |
+| `speech-to-text-dev.async.query` | Query jobs submitted to the speech to text asynchronous service | Manager, Reader, Writer |
+| `speech-to-text-dev.customization.query` | Query user created speech to text customized models | Manager, Reader, Writer |
+| `speech-to-text-dev.recognition.create` | Create speech to text recognition session to transcribe audio to text | Manager, Writer |
+| `speech-to-text-dev.async.create` | Create speech to text asynchronous job to asynchronously submit audio for transcription to text | Manager, Writer |
+| `speech-to-text-dev.async.delete` | Delete speech to text asynchronous job that was previously created | Manager, Writer |
+| `speech-to-text-dev.customization.create` | Create speech to text customized language model, or customized acoustic model | Manager, Writer |
+| `speech-to-text-dev.customization.delete` | Delete speech to text customized language model, or customized acoustic model | Manager, Writer |
+| `speech-to-text-dev.callback.create` | Create a callback to which the speech to text asynchronous jobs will submit transcription results | Manager |
+| `speech-to-text-dev.callback.delete` | Delete speech to text asynchronous callback that was previously created | Manager |
+| `speech-to-text-dev.user-data.delete` | Delete all speech to text user data submitted to create customized models, and asynchronous jobs | Manager |
+{: caption="Table 214. Service actions - Speech to Text-dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="speech-to-text-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table214}
+
+## SQL Query
 {: #sql-query-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sql-query` for the service name.
@@ -8297,12 +9328,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 155. Service roles - sql-query" caption-side="top"}
+{: caption="Table 215. Service roles - SQL Query" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="sql-query"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table155}
+{: #service-roles-table215}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8311,12 +9342,249 @@ Review the available platform and service roles and the actions mapped to each t
 | `sql-query.api.getjobinfo` | Retrieve the detailed status of a job based on provided jobid. | Manager, Reader, Writer |
 | `sql-query.api.managecatalog` | Manage the catalog and indexes. For example, submit DDL statements to create, alter and drop tables, views and indexes. | Manager |
 | `sql-query.api.readcatalog` | Introspect the catalog. For example, list the definitions of tables, views and indexes. | Manager, Reader, Writer |
-{: caption="Table 155. Service actions - sql-query" caption-side="top"}
+{: caption="Table 215. Service actions - SQL Query" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="sql-query"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table155}
+{: #actions-table215}
+
+## STAAS
+{: #staas-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `staas` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 216. Platform roles - STAAS" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="staas"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table216}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 216. Service roles - STAAS" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="staas"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table216}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `staas.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 216. Service actions - STAAS" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="staas"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table216}
+
+## Staas-trial
+{: #staas-chaitanya-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `staas-chaitanya` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 217. Platform roles - Staas-trial" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="staas-chaitanya"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table217}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 217. Service roles - Staas-trial" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="staas-chaitanya"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table217}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `staas-chaitanya.dashboard.read` | Description of dashboard | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
+| `staas-chaitanya.dashboard.update` | Update Dashboard description | Manager, Writer |
+| `staas-chaitanya.dashboard.delete` | Dashboard delete description | Manager |
+| `staas-chaitanya.dashboard.create` | Dashboard create description | Administrator |
+{: caption="Table 217. Service actions - Staas-trial" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="staas-chaitanya"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table217}
+
+## STaaS-Dev
+{: #staas-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `staas-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 218. Platform roles - STaaS-Dev" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="staas-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table218}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 218. Service roles - STaaS-Dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="staas-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table218}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `staas-dev.dashboard.view` |  | Administrator, Editor, Operator |
+| `staas-dev.getinfo.view` | get information of the user account | Manager, Reader, Writer |
+{: caption="Table 218. Service actions - STaaS-Dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="staas-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table218}
+
+## Staas-temp
+{: #staas-samriddhi-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `staas-samriddhi` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 219. Platform roles - Staas-temp" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="staas-samriddhi"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table219}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 219. Service roles - Staas-temp" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="staas-samriddhi"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table219}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `staas-samriddhi.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 219. Service actions - Staas-temp" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="staas-samriddhi"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table219}
+
+## staas-poc
+{: #stass-poc-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `stass-poc` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 220. Platform roles - staas-poc" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="stass-poc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table220}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 220. Service roles - staas-poc" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="stass-poc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table220}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `stass-poc.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 220. Service actions - staas-poc" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="stass-poc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table220}
+
+## Notifajer Produktum 2
+{: #strawberry-20221019-inc-notifajer-produktum-2-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `strawberry-20221019-inc-notifajer-produktum-2` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 221. Platform roles - Notifajer Produktum 2" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="strawberry-20221019-inc-notifajer-produktum-2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table221}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `strawberry-20221019-inc-notifajer-produktum-2.dashboard.view` | View Dashboard | Administrator, Editor |
+{: caption="Table 221. Service actions - Notifajer Produktum 2" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="strawberry-20221019-inc-notifajer-produktum-2"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table221}
 
 ## streaming-analytics
 {: #streaming-analytics-roles}
@@ -8325,39 +9593,39 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| null | null |
-| null | null |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 156. Service roles - streaming-analytics" caption-side="top"}
+{: caption="Table 222. Service roles - streaming-analytics" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="streaming-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table156}
+{: #service-roles-table222}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `streaming-analytics.instances.query` |  | null |
-| `streaming-analytics.instances.read` |  | null, null |
-| `streaming-analytics.instances.update` |  | null |
-| `streaming-analytics.instances.start` |  | null, null |
-| `streaming-analytics.jobs.query` |  | null, null |
-| `streaming-analytics.jobs.create` |  | null, null |
-| `streaming-analytics.jobs.read` |  | null, null |
-| `streaming-analytics.jobs.delete` |  | null, null |
-| `streaming-analytics.builds.query` |  | null, null |
-| `streaming-analytics.builds.create` |  | null, null |
-| `streaming-analytics.builds.read` |  | null, null |
-| `streaming-analytics.builds.delete` |  | null, null |
-| `streaming-analytics.artifacts.query` |  | null, null |
-| `streaming-analytics.artifacts.read` |  | null, null |
-| `streaming-analytics.artifacts.download` |  | null, null |
-{: caption="Table 156. Service actions - streaming-analytics" caption-side="top"}
+| `streaming-analytics.instances.query` | Get a list of instances | Manager |
+| `streaming-analytics.instances.read` | Get details for an instance | Manager, Writer |
+| `streaming-analytics.instances.update` | Update settings for an instance | Manager |
+| `streaming-analytics.instances.start` | Start an instance | Manager, Writer |
+| `streaming-analytics.jobs.query` | Get a list of jobs | Manager, Writer |
+| `streaming-analytics.jobs.create` | Submit a job to an instance | Manager, Writer |
+| `streaming-analytics.jobs.read` | Get details for a job | Manager, Writer |
+| `streaming-analytics.jobs.delete` | Cancel a job | Manager, Writer |
+| `streaming-analytics.builds.query` | Get a list of builds | Manager, Writer |
+| `streaming-analytics.builds.create` | Submit a build to an instance | Manager, Writer |
+| `streaming-analytics.builds.read` | Get details for a build | Manager, Writer |
+| `streaming-analytics.builds.delete` | Cancel a build | Manager, Writer |
+| `streaming-analytics.artifacts.query` | Get a list of build artifacts | Manager, Writer |
+| `streaming-analytics.artifacts.read` | Get details for a build artifact | Manager, Writer |
+| `streaming-analytics.artifacts.download` | Download a build artifact | Manager, Writer |
+{: caption="Table 222. Service actions - streaming-analytics" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="streaming-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table156}
+{: #actions-table222}
 
 ## Support Center
 {: #support-roles}
@@ -8370,12 +9638,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | View, search, create, and update support cases |
 | Viewer | View and search support cases |
 {: row-headers}
-{: caption="Table 157. Platform roles - Support Center" caption-side="top"}
+{: caption="Table 223. Platform roles - Support Center" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="support"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table157}
+{: #platform-roles-table223}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8383,12 +9651,52 @@ Review the available platform and service roles and the actions mapped to each t
 | `support.case.update` | The ability to update a case. | Administrator, Editor |
 | `support.case.read` | The ability to search cases. | Administrator, Editor, Viewer |
 | `support.case.list` | The ability to view cases. | Administrator, Editor, Viewer |
-{: caption="Table 157. Service actions - Support Center" caption-side="top"}
+{: caption="Table 223. Service actions - Support Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="support"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table157}
+{: #actions-table223}
+
+## Synthetics
+{: #synthetics-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `synthetics` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 224. Platform roles - Synthetics" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="synthetics"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table224}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 224. Service roles - Synthetics" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="synthetics"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table224}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `synthetics.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 224. Service actions - Synthetics" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="synthetics"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table224}
 
 ## IBM Cloud Monitoring with Sysdig
 {: #sysdig-monitor-roles}
@@ -8399,26 +9707,26 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions according to the resource for which this role is assigned, including assigning access policies to other users and managing Sysdig team membership. |
 {: row-headers}
-{: caption="Table 158. Platform roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
+{: caption="Table 225. Platform roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="sysdig-monitor"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table158}
+{: #platform-roles-table225}
 
 | Role | Description |
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role.  You are a member of every Sysdig Team with administrative permissions and are able to create, delete and configure all team definitions. |
 | Reader | As a reader, you have read access to the environment within the defined Sysdig Team scope, but cannot create, edit or delete dashboards, alerts or other content. |
-| Supertenant Metrics Publisher | This role permits IBM services to publish platform metrics to your account |
+| Supertenant Metrics Publisher | Role to allow IBM Cloud Metrics Routing to publish IBM Cloud services' metrics to the target service |
 | Writer | As a writer, you have read and write access to the environment within the defined Sysdig Team scope and can create, edit and delete dashboards, alerts and other content. |
 {: row-headers}
-{: caption="Table 158. Service roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
+{: caption="Table 225. Service roles - IBM Cloud Monitoring with Sysdig" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="sysdig-monitor"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table158}
+{: #service-roles-table225}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8482,12 +9790,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `sysdig-monitor.users.read` | Users (read) | Administrator |
 | `sysdig-monitor.system-role.admin` | System administrator role | Administrator, Manager |
 | `sysdig-monitor.platform-metrics.publish` | Permit publishing of platform metrics to Sysdig | Supertenant Metrics Publisher |
-{: caption="Table 158. Service actions - IBM Cloud Monitoring with Sysdig" caption-side="top"}
+| `sysdig-monitor.kubernetes-api-commands.read` | Kubernetes api (read) | Administrator, Manager, Reader, Writer |
+| `sysdig-monitor.live-logs.view` | Live logs (view) | Administrator, Manager, Reader, Writer |
+{: caption="Table 225. Service actions - IBM Cloud Monitoring with Sysdig" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="sysdig-monitor"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table158}
+{: #actions-table225}
 
 ## IBM Cloud Security
 {: #sysdig-secure-roles}
@@ -8498,12 +9808,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 {: row-headers}
-{: caption="Table 159. Platform roles - IBM Cloud Security" caption-side="top"}
+{: caption="Table 226. Platform roles - IBM Cloud Security" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="sysdig-secure"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table159}
+{: #platform-roles-table226}
 
 | Role | Description |
 | ----- | :----- |
@@ -8511,24 +9821,135 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 159. Service roles - IBM Cloud Security" caption-side="top"}
+{: caption="Table 226. Service roles - IBM Cloud Security" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="sysdig-secure"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table159}
+{: #service-roles-table226}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `sysdig-secure.launch.admin` | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | Administrator, Manager |
 | `sysdig-secure.launch.user` | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. | Administrator, Manager, Writer |
 | `sysdig-secure.launch.viewer` | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. | Administrator, Manager, Reader, Writer |
-{: caption="Table 159. Service actions - IBM Cloud Security" caption-side="top"}
+{: caption="Table 226. Service actions - IBM Cloud Security" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="sysdig-secure"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table159}
+{: #actions-table226}
+
+## Sysdig Source Test
+{: #sysdig-source-test-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `sysdig-source-test` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 227. Platform roles - Sysdig Source Test" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="sysdig-source-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table227}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `sysdig-source-test.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 227. Service actions - Sysdig Source Test" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="sysdig-source-test"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table227}
+
+## Anonymous Access Feature
+{: #test-anonymous-feature-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `test-anonymous-feature` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 228. Platform roles - Anonymous Access Feature" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="test-anonymous-feature"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table228}
+
+| Role | Description |
+| ----- | :----- |
+| AuthzOnly | Authorization only role. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| test Access Control role | test Access Control role |
+{: row-headers}
+{: caption="Table 228. Service roles - Anonymous Access Feature" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="test-anonymous-feature"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table228}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `test-anonymous-feature.dashboard.view` |  | Administrator, Editor, Operator |
+| `test-anonymous-feature.authz.do` |  | AuthzOnly |
+| `test-anonymous-feature.ticket.view` | test-anonymous-feature.ticket.view | AuthzOnly, Reader |
+{: caption="Table 228. Service actions - Anonymous Access Feature" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="test-anonymous-feature"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table228}
+
+## nem fontos a neve
+{: #test-saas-3p-migration-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `test-saas-3p-migration` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 229. Platform roles - nem fontos a neve" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="test-saas-3p-migration"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table229}
+
+| Role | Description |
+| ----- | :----- |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+{: row-headers}
+{: caption="Table 229. Service roles - nem fontos a neve" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="test-saas-3p-migration"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table229}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `test-saas-3p-migration.dashboard.view` |  | Administrator, Editor, Operator |
+{: caption="Table 229. Service actions - nem fontos a neve" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="test-saas-3p-migration"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table229}
 
 ## Text to Speech
 {: #text-to-speech-roles}
@@ -8541,12 +9962,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 160. Platform roles - Text to Speech" caption-side="top"}
+{: caption="Table 230. Platform roles - Text to Speech" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="text-to-speech"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table160}
+{: #platform-roles-table230}
 
 | Role | Description |
 | ----- | :----- |
@@ -8554,27 +9975,66 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 160. Service roles - Text to Speech" caption-side="top"}
+{: caption="Table 230. Service roles - Text to Speech" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="text-to-speech"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table160}
+{: #service-roles-table230}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `text-to-speech.dashboard.view` |  | Administrator, Editor, Operator |
-| `GET /text-to-speech` |  | Manager, Reader, Writer |
-| `POST /text-to-speech` |  | Manager, Writer |
-| `DELETE /text-to-speech` |  | Manager, Writer |
-| `HEAD /text-to-speech` |  | Manager, Reader, Writer |
-| `PUT /text-to-speech` |  | Manager, Writer |
-{: caption="Table 160. Service actions - Text to Speech" caption-side="top"}
+| `GET /text-to-speech` | Retrieve resources | Manager, Reader, Writer |
+| `POST /text-to-speech` | Create new resources | Manager, Writer |
+| `DELETE /text-to-speech` | Delete resources | Manager, Writer |
+| `HEAD /text-to-speech` | Get headers | Manager, Reader, Writer |
+| `PUT /text-to-speech` | Update existing resources | Manager, Writer |
+| `text-to-speech.authorization.create` | Create IAM authorization policies | Manager, Reader, Writer |
+{: caption="Table 230. Service actions - Text to Speech" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="text-to-speech"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table160}
+{: #actions-table230}
+
+## Text to Speech-dev
+{: #text-to-speech-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `text-to-speech-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 231. Service roles - Text to Speech-dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="text-to-speech-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table231}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `GET /text-to-speech-dev` |  | Manager, Reader, Writer |
+| `POST /text-to-speech-dev` |  | Manager, Writer |
+| `DELETE /text-to-speech-dev` |  | Manager, Writer |
+| `HEAD /text-to-speech-dev` |  | Manager, Reader, Writer |
+| `PUT /text-to-speech-dev` |  | Manager, Writer |
+| `text-to-speech-dev.voices.query` | Query all available text to speech voices | Manager, Reader, Writer |
+| `text-to-speech-dev.customization.query` | Query text to speech customized models or pronunciations | Manager, Reader, Writer |
+| `text-to-speech-dev.synthesis.create` | Create text to speech synthesis session to transcribe submitted text to audio | Manager, Writer |
+| `text-to-speech-dev.customization.create` | Create text to speech customized model to add words and/or pronunciations to the base voice | Manager, Writer |
+| `text-to-speech-dev.customization.delete` | Delete text to speech customized model that was previously created | Manager, Writer |
+| `text-to-speech-dev.user-data.delete` | Delete text to speech user data submitted to create text to speech customized models | Manager |
+{: caption="Table 231. Service actions - Text to Speech-dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="text-to-speech-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table231}
 
 ## Toolchain
 {: #toolchain-roles}
@@ -8588,12 +10048,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 161. Platform roles - Toolchain" caption-side="top"}
+{: caption="Table 232. Platform roles - Toolchain" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="toolchain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table161}
+{: #platform-roles-table232}
 
 | Role | Description |
 | ----- | :----- |
@@ -8601,12 +10061,12 @@ Review the available platform and service roles and the actions mapped to each t
 | PipelineRunner | Run Tekton or Classic pipelines. |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Table 161. Service roles - Toolchain" caption-side="top"}
+{: caption="Table 232. Service roles - Toolchain" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="toolchain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table161}
+{: #service-roles-table232}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8619,45 +10079,17 @@ Review the available platform and service roles and the actions mapped to each t
 | `toolchain.config.read` | Configuration Information Point API access for Security and Compliance Center Integration (SCC) | Service Configuration Reader |
 | `toolchain.pipeline-run.create` | Run the selected pipeline. | Administrator, Editor, Operator, PipelineRunner |
 | `toolchain.event.send` | Send a custom toolchain event | Administrator, Editor, EventSender, Operator |
-{: caption="Table 161. Service actions - Toolchain" caption-side="top"}
+{: caption="Table 232. Service actions - Toolchain" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="toolchain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table161}
+{: #actions-table232}
 
-## Transit Gateway
-{: #transit-roles}
+## Toolchain-stage
+{: #toolchain-stage-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `transit` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Table 162. Service roles - Transit Gateway" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="transit"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table162}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `transit.transit.manage` | Transit service manager | Manager |
-| `transit.config.read` | Configuration Information Point API Access | Service Configuration Reader |
-{: caption="Table 162. Service actions - Transit Gateway" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="transit"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table162}
-
-## Transit Gateway
-{: #transit.gateway-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `transit.gateway` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `toolchain-stage` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -8666,23 +10098,27 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 163. Platform roles - Transit Gateway" caption-side="top"}
+{: caption="Table 233. Platform roles - Toolchain-stage" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="transit.gateway"}
+{: tab-group="toolchain-stage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table163}
+{: #platform-roles-table233}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `transit.gateway.view` | The ability to view transit gateways and connections. | Administrator, Editor, Operator, Viewer |
-| `transit.gateway.edit` | The ability to create, change, view and delete transit gateways and connections. | Administrator, Editor |
-{: caption="Table 163. Service actions - Transit Gateway" caption-side="top"}
+| `toolchain-stage.dashboard.view` |  | Administrator, Editor, Operator |
+| `toolchain-stage.instance.read-properties` |  | Administrator, Editor, Viewer |
+| `toolchain-stage.instance.update-properties` |  | Administrator, Editor |
+| `toolchain-stage.instance.create-bindings` |  | Administrator, Editor |
+| `toolchain-stage.instance.delete-bindings` |  | Administrator, Editor |
+| `toolchain-stage.instance.list-bindings` |  | Administrator, Editor, Viewer |
+{: caption="Table 233. Service actions - Toolchain-stage" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="transit.gateway"}
+{: tab-group="toolchain-stage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table163}
+{: #actions-table233}
 
 ## IBM Cloud Platform User Management Service
 {: #user-management-roles}
@@ -8696,23 +10132,23 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can view users in the account and view profile settings. |
 | Viewer | As a viewer, you can view users in the account and view profile settings. |
 {: row-headers}
-{: caption="Table 164. Platform roles - IBM Cloud Platform User Management Service" caption-side="top"}
+{: caption="Table 234. Platform roles - IBM Cloud Platform User Management Service" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="user-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table164}
+{: #platform-roles-table234}
 
 | Role | Description |
 | ----- | :----- |
 | VPN Administrator | As a VPN administrator, you can configure classic infrastructure VPN settings for users. |
 {: row-headers}
-{: caption="Table 164. Service roles - IBM Cloud Platform User Management Service" caption-side="top"}
+{: caption="Table 234. Service roles - IBM Cloud Platform User Management Service" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="user-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table164}
+{: #service-roles-table234}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8727,12 +10163,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `user-management.user-setting.update` |  | Administrator, Editor |
 | `user-management.user-setting.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `user-management.vpn.update` | Update user VPN settings | VPN Administrator |
-{: caption="Table 164. Service actions - IBM Cloud Platform User Management Service" caption-side="top"}
+{: caption="Table 234. Service actions - IBM Cloud Platform User Management Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="user-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table164}
+{: #actions-table234}
 
 ## VMware Solutions on VPC
 {: #vmware-roles}
@@ -8752,12 +10188,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 166. Platform roles - VMware Solutions" caption-side="top"}
+{: caption="Table 236. Platform roles - VMware Solutions" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table166}
+{: #platform-roles-table236}
 
 | Role | Description |
 | ----- | :----- |
@@ -8773,12 +10209,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 166. Service roles - VMware Solutions" caption-side="top"}
+{: caption="Table 236. Service roles - VMware Solutions" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table166}
+{: #service-roles-table236}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8802,12 +10238,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `vmware-solutions.directorsite.editor` | Director Editor | Editor |
 | `vmware-solutions.directorsite.viewer` | Viewer in Director | Viewer |
 | `vmware-solutions.directorsite.operator` | Director Operator | Operator |
-{: caption="Table 166. Service actions - VMware Solutions" caption-side="top"}
+{: caption="Table 236. Service actions - VMware Solutions" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table166}
+{: #actions-table236}
 
 ## VMware Cloud Director
 {: #vmware.directorsite-roles}
@@ -8821,12 +10257,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Table 167. Platform roles - VMware Cloud Director" caption-side="top"}
+{: caption="Table 237. Platform roles - VMware Cloud Director" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="vmware.directorsite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table167}
+{: #platform-roles-table237}
 
 | Role | Description |
 | ----- | :----- |
@@ -8842,12 +10278,12 @@ Review the available platform and service roles and the actions mapped to each t
 | VCFaaS Director vApp User | As a vApp user within the vCloud Director console, you can use existing vApps. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 167. Service roles - VMware Cloud Director" caption-side="top"}
+{: caption="Table 237. Service roles - VMware Cloud Director" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="vmware.directorsite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table167}
+{: #service-roles-table237}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8875,12 +10311,56 @@ Review the available platform and service roles and the actions mapped to each t
 | `vmware.directorsite.consoleuser` | Director Console User | VCFaaS Director Console User |
 | `vmware.directorsite.backupuser` | Director Backup User | VCFaaS Director Backup User |
 | `vmware.directorsite.securityadmin` | Director Security Admin | VCFaaS Director Security Admin |
-{: caption="Table 167. Service actions - VMware Cloud Director" caption-side="top"}
+{: caption="Table 237. Service actions - VMware Cloud Director" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="vmware.directorsite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table167}
+{: #actions-table237}
+
+## VMware as a Service - License
+{: #vmware.license-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `vmware.license` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| License Administrator | As a license administrator, you have permission to manage customer host, host cluster and view license keys or other resources. |
+| License Manager | As a license manager, you have permission to not only view/list license keys, hosts, software and bundles, but also to load and purge license keys. |
+| License Viewer | As a license manager, you have permission to view resources like software, bundles, customer host, host cluster and license keys. |
+{: row-headers}
+{: caption="Table 238. Service roles - VMware as a Service - License" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="vmware.license"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table238}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `vmware.license.licensekeys.create` | upload license keys into the Licensing service. Each region will have its own set of license keys. | License Manager |
+| `vmware.license.licensekeys.view` | List license keys | License Administrator, License Manager, License Viewer |
+| `vmware.license.licensekeys.purge` | Purge keys for rebalancing when moving licensey keys from one region to another. This results in a hard delete / physical delete of the data from the regional database. | License Manager |
+| `vmware.license.licensekeys.delete` | Delete a specific license key. Not a physical delete - change status to "DELETED". | License Administrator, License Manager |
+| `vmware.license.customerhosts.view` | List all customer hosts, or get a customer host details available to the user | License Administrator, License Manager, License Viewer |
+| `vmware.license.customerhosts.manage` | Perform management operations (creation, deletion or update) to customer hosts | License Administrator, License Manager |
+| `vmware.license.hostclusters.view` | Get all available host clusters or a host cluster detail. | License Administrator, License Manager, License Viewer |
+| `vmware.license.hostclusters.manage` | Perform management operations(Create/license/delete) to a host cluster, or management operations(add/delete) to host/software of the host cluster | License Administrator, License Manager |
+| `vmware.license.software.view` | List all available software that can have licenses ordered | License Administrator, License Manager, License Viewer |
+| `vmware.license.bundles.view` | List all available bundles that can have licenses ordered. | License Administrator, License Manager, License Viewer |
+| `vmware.license.hostclusters.metering` | Metering to host clusters for billing purpose | License Manager |
+| `vmware.license.software.manage` | Perform management operation (Create or update ) to a VMWare software | License Manager |
+| `vmware.license.bundles.manage` | Perform management operations (List, Create or Update) to a VMware bundle | License Manager |
+| `vmware.license.customersoftware.view` | List all available customer software | License Administrator, License Manager, License Viewer |
+| `vmware.license.customersoftware.manage` | Perform management operations(Create, Delete or Update) to a customer software | License Manager |
+| `vmware.license.billing.view` | Get license pricing from billing | License Manager |
+| `vmware.license.licensekeys.register` | Register license key(s) | License Manager |
+{: caption="Table 238. Service actions - VMware as a Service - License" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="vmware.license"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table238}
 
 ## Organization Virtual Data Center
 {: #vmware.vdc-roles}
@@ -8899,12 +10379,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 169. Platform roles - Voice Agent with Watson" caption-side="top"}
+{: caption="Table 240. Platform roles - Voice Agent with Watson" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table169}
+{: #platform-roles-table240}
 
 | Role | Description |
 | ----- | :----- |
@@ -8912,12 +10392,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 169. Service roles - Voice Agent with Watson" caption-side="top"}
+{: caption="Table 240. Service roles - Voice Agent with Watson" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table169}
+{: #service-roles-table240}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8928,45 +10408,17 @@ Review the available platform and service roles and the actions mapped to each t
 | `voiceagent.sms.send` | Use the SMS gateway API to send SMS messages for a Voice Agent with Watson instance. | Administrator, Editor, Manager, Operator, Writer |
 | `voiceagent.voice.inbound` | Authenticate inbound calls for a Voice Agent with Watson instance using SIPS. | Manager, Writer |
 | `voiceagent.voice.outbound` | Use the outbound calling API to start outbound calls for a Voice Agent with Watson instance. | Manager, Writer |
-{: caption="Table 169. Service actions - Voice Agent with Watson" caption-side="top"}
+{: caption="Table 240. Service actions - Voice Agent with Watson" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table169}
+{: #actions-table240}
 
-## WebSphere Application Server
-{: #websphereappsvr-roles}
+## Watson-Example
+{: #watson-example-roles}
 
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `websphereappsvr` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-{: row-headers}
-{: caption="Table 170. Platform roles - WebSphere Application Server" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="websphereappsvr"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table170}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `websphereappsvr.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 170. Service actions - WebSphere Application Server" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="websphereappsvr"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table170}
-
-## Annotator for Clinical Data
-{: #wh-acd-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `wh-acd` for the service name.
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `watson-example` for the service name.
 
 | Role | Description |
 | ----- | :----- |
@@ -8974,12 +10426,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 171. Platform roles - Annotator for Clinical Data" caption-side="top"}
+{: caption="Table 241. Platform roles - Watson-Example" caption-side="top"}
 {: tab-title="Platform roles"}
-{: tab-group="wh-acd"}
+{: tab-group="watson-example"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table171}
+{: #platform-roles-table241}
 
 | Role | Description |
 | ----- | :----- |
@@ -8987,28 +10439,262 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 171. Service roles - Annotator for Clinical Data" caption-side="top"}
+{: caption="Table 241. Service roles - Watson-Example" caption-side="top"}
 {: tab-title="Service roles"}
-{: tab-group="wh-acd"}
+{: tab-group="watson-example"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table171}
+{: #service-roles-table241}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `wh-acd.dashboard.view` | View Dashboard | Administrator, Editor, Operator |
-| `GET /wh-acd` | ACD Dev Deadbolt API GET | Manager, Reader, Writer |
-| `PUT /wh-acd` | ACD Dev Deadbolt API PUT | Manager, Writer |
-| `POST /wh-acd` | ACD Dev Deadbolt API POST | Manager, Writer |
-| `DELETE /wh-acd` | ACD Dev Deadbolt API DELETE | Manager |
-| `wh-acd.cartridge.manage` | Cartridge manage | Manager, Writer |
-| `wh-acd.flows.manage` | Manage flows | Manager, Writer |
-| `wh-acd.profiles.manage` | Manage profiles | Manager, Writer |
-| `wh-acd.analyze` | Analyze | Manager, Reader, Writer |
-{: caption="Table 171. Service actions - Annotator for Clinical Data" caption-side="top"}
+| `watson-example.dashboard.view` |  | Administrator, Editor, Operator |
+| `GET /watson-example` | Sample service GET action | Manager, Reader, Writer |
+| `POST /watson-example` | Sample service POST action | Manager, Reader, Writer |
+{: caption="Table 241. Service actions - Watson-Example" caption-side="top"}
 {: tab-title="Actions"}
-{: tab-group="wh-acd"}
+{: tab-group="watson-example"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table171}
+{: #actions-table241}
+
+## Watson-Example-dev
+{: #watson-example-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `watson-example-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 242. Platform roles - Watson-Example-dev" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="watson-example-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table242}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 242. Service roles - Watson-Example-dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="watson-example-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table242}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `watson-example-dev.dashboard.view` | sample service action description | Administrator, Editor, Operator |
+| `GET /watson-example` | sample service action description | Manager, Reader, Writer |
+| `POST /watson-example` | sample service action description | Manager, Reader, Writer |
+| `GET /watson-example-dev` | sample service action description | Manager, Reader, Writer |
+| `watson-example-dev.watsonpostauth.create` | sample service action description | Writer |
+| `watson-example-dev.authorization.create` | sample service action description | Manager, Reader, Writer |
+{: caption="Table 242. Service actions - Watson-Example-dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="watson-example-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table242}
+
+##  IBM watsonx BI Assistant
+{: #watsonx-intelligence-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `watsonx-intelligence` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, on can create or delete catalogs where metric definitions are published.  |
+| Reader | As a reader, one can interrogate one's data and discover insight via a conversation experience; one can also build a personal list of Key performance Indicators (KPI); data can be available via metric definitions or one's own uploaded data. |
+| Writer | As a writer, one can author metric definitions, publish them in catalogs and make them available to Readers for consultation via the conversation experience. One can also delete published metric definitions. |
+{: row-headers}
+{: caption="Table 243. Service roles -  IBM watsonx BI Assistant" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="watsonx-intelligence"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table243}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `watsonx-intelligence.conversation.create` | capability to start a conversation and interact with your data, to rename and delete a conversation | Manager, Reader, Writer |
+{: caption="Table 243. Service actions -  IBM watsonx BI Assistant" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="watsonx-intelligence"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table243}
+
+## Data Kit for weather
+{: #weatherdatakit-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `weatherdatakit` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| null | null |
+| null | null |
+| null | null |
+{: row-headers}
+{: caption="Table 244. Service roles - Data Kit for weather" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="weatherdatakit"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table244}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `weatherdatakit.api.read` |  | null, null, null |
+{: caption="Table 244. Service actions - Data Kit for weather" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="weatherdatakit"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table244}
+
+## WebSphere Application Server
+{: #websphereappsvr-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `websphereappsvr` for the service name.
+
+No supported roles.
+## Wlp-Simsvc
+{: #wlp-simsvc-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `wlp-simsvc` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 246. Platform roles - Wlp-Simsvc" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="wlp-simsvc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table246}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 246. Service roles - Wlp-Simsvc" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="wlp-simsvc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table246}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `wlp-simsvc.dashboard.view` |  | Administrator, Editor, Operator |
+| `GET /wlp-simsvc` |  | Manager, Reader, Writer |
+| `POST /wlp-simsvc` |  | Manager, Writer |
+{: caption="Table 246. Service actions - Wlp-Simsvc" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="wlp-simsvc"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table246}
+
+## Wlp-Simsvc-dev
+{: #wlp-simsvc-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `wlp-simsvc-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 247. Platform roles - Wlp-Simsvc-dev" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="wlp-simsvc-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table247}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 247. Service roles - Wlp-Simsvc-dev" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="wlp-simsvc-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table247}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `wlp-simsvc-dev.dashboard.view` |  | Administrator, Editor, Operator |
+| `GET /wlp-simsvc` |  | Manager, Reader, Writer |
+| `POST /wlp-simsvc` |  | Manager, Writer |
+| `GET /wlp-simsvc-dev` |  | Manager, Reader, Writer |
+| `POST /wlp-simsvc-dev` |  | Manager, Writer |
+{: caption="Table 247. Service actions - Wlp-Simsvc-dev" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="wlp-simsvc-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table247}
+
+## Watson Orchestrate
+{: #wx-orchestrate-dev-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `wx-orchestrate-dev` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+{: row-headers}
+{: caption="Table 248. Platform roles - Watson Orchestrate" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="wx-orchestrate-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table248}
+
+| Role | Description |
+| ----- | :----- |
+| WXO Admin | You count on your employees to get their work done while you maintain relationships with all your stakeholders and make sure everybody's needs are met. Track metrics as a means to make sure that your staff is staying happy and productive. You're responsible for the high-level strategy and ensure that vision gets realized. |
+| WXO Builder | As a builder, you're the person responsible for realizing the dreams of your peers (and your own dreams). Taking input from managers and employees, you create customized skills for skill sets that fit specific needs. Have an idea for a skill? You can build custom skills through discovery apps, or you can build custom skills by using OpenAPI specifications to create a solution and implement your ideas. |
+| WXO User | As a user, you're responsible for getting work done. That might mean that you get some repetitive tasks that you do daily, or it might mean you're responsible for making sure that those tasks get done, no matter how it happens. You might be involved in planning and implementing solutions, but you know that it's on you at the end of the day. You manage your time, react when things go wrong, and get the job done no matter what. |
+{: row-headers}
+{: caption="Table 248. Service roles - Watson Orchestrate" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="wx-orchestrate-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table248}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `wx-orchestrate-dev.dashboard.view` |  | Administrator, Editor, Operator |
+| `wx-orchestrate-dev.automations.build` | An automation is a collection of artifacts that fulfill a business purpose. Automations that are created in the automation builder can also be reused in other automations. | WXO Builder |
+| `wx-orchestrate-dev.skills.use` | Skills are a part of an app and each one perform a different task to accomplish a work. | WXO User |
+| `wx-orchestrate-dev.users.manage` | Every team needs at least one admin, the person who first created the team. | WXO Admin |
+{: caption="Table 248. Service actions - Watson Orchestrate" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="wx-orchestrate-dev"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table248}
 

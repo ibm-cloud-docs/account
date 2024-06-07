@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-02-02"
+lastupdated: "2024-02-01"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -29,6 +29,7 @@ This tutorial walks you through how to onboard a sample Operator bundle from a {
 ## Before you begin
 {: #catalog-opbundle-prereqs}
 
+1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
 1. Go to the {{site.data.keyword.redhat_notm}} OperatorHub to confirm that your Operator bundle exists in the {{site.data.keyword.redhat_notm}} Certified registry.
 1. [Create your {{site.data.keyword.openshiftshort}} cluster](/docs/openshift?topic=openshift-getting-started).
 1. [Upload your Operator bundle and application images to {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started).
@@ -67,7 +68,7 @@ Private catalogs provide a way for you to make your own products available to us
 1. Click **Add version**.
 
 ## Review the version details
-{: #catalog-opbundle-review-version}
+{: #catalog-opbundle-version}
 {: step}
 
 1. From the Version list table, click the row that contains your operator.

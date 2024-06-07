@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-02"
 
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API

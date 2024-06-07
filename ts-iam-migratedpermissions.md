@@ -11,11 +11,9 @@ subcollection: account
 
 content-type: troubleshoot
 
-
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # How can I manage migrated billing and support case permissions in {{site.data.keyword.Bluemix_notm}}?
 {: #troubleshoot-migrated-permissions}
@@ -28,7 +26,7 @@ With the initial migration of users and permissions for managing billing and sup
 
 Users don't seem to have the same managing billing and support case permissions in the {{site.data.keyword.Bluemix_notm}} console that they were previously assigned in your SoftLayer account.
 {: tsSymptoms}
-
+   
 Your migrated permissions access groups might not be assigned the correct access policies when the users were initially migrated.
 {: tsCauses}
 

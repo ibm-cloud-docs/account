@@ -10,6 +10,8 @@ subcollection: account
 
 ---
 
+{{site.data.keyword.attribute-definition-list}}
+
 # Removing and deleting a dashboard 
 {: #dash-remove-delete}
 

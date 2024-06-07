@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-02-08"
+lastupdated: "2024-05-24"
 
 keywords: close account, cancel account, delete account, terminate account
 
@@ -20,21 +20,12 @@ subcollection: account
 When you no longer need your {{site.data.keyword.cloud}} account, you can close the account. If there's any way we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 {: shortdesc}
 
-## About the account closure process
+## Before you begin
 {: #about-close-account}
 
-To close a Pay-As-You-Go or Subscription account, a support case is required for account security and documentation purposes. Closing your account can't be undone, and your data is unrecoverable. The support case documents your acknowledgment that the account and its data cannot be recovered after closure.
+Before you can close a Pay-As-You-Go or Subscription account, the account owner needs to cancel all services, devices, and billing items for the account. Then, the account owner can create a support case to close a Subscription account or close a Pay-As-You-Go in the {{site.data.keyword.cloud}} console.
 
-* After your Pay-As-You-Go account is closed, all usage is stopped across all services that are running in your account. The usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
-
-* You can request to cancel your Subscription account before the end of the term, but whether the subscription can be canceled early is at the discretion of IBM. A subscription is a contract between you and IBM that commits you to use {{site.data.keyword.cloud_notm}} for a specific term and spending amount. For more information, see [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions).
-
-As a user on {{site.data.keyword.cloud_notm}}, you can be a member of multiple accounts. If you are not the account owner, you can leave the account. For more information, see [Leaving an account](/docs/account?topic=account-account-membership).
-
-## Closing a Pay-As-You-Go or Subscription account
-{: #close-account}
-
-As the account owner, to request an account closure, you need to cancel all services, devices, and billing items for the account. Then, create a support case for closing the account.
+If your account has reserved instances with term remaining on the agreement or other resources that you can't cancel, contact [support](/unifiedsupport/supportcenter). Rescheduled any pending cancellations to terminate prior to account cancellation. For example, you might have {{site.data.keyword.baremetal_short}} scheduled to terminate at the end of the month.
 
 ### Step 1: Canceling all services
 {: #cancel-services}
@@ -61,10 +52,26 @@ To cancel all billing items, use the following steps::
 1. Ensure that you are viewing all billing items.
 1. For each billing item that you want to cancel, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Cancel billing item**.
 
-### Step 4: Creating a support case for account closure
-{: #support-case-closure}
+As a user on {{site.data.keyword.cloud_notm}}, you can be a member of multiple accounts. If you are not the account owner, you can leave the account. For more information, see [Leaving an account](/docs/account?topic=account-account-membership).
 
-To create the support case, use the following steps::
+## Closing a Pay-As-You-Go account
+{: #close-account}
+
+After the account owner cancels all services, devices, and billing items for the account, they can cancel the account. To close a Pay-As-You-Go account, go to **Manage** > **Account**, select **Account settings** in the {{site.data.keyword.cloud_notm}} console. From the account settings page, click **Close account**.
+
+Closing your account can't be undone, and your data is unrecoverable.
+{: important}
+
+After your Pay-As-You-Go account is closed, all usage is stopped across all services that are running in your account. The usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
+
+## Closing a Subscription account
+{: #close-subscription-account}
+
+To close a Subscription account, a support case is required for account security and documentation purposes. Closing your account can't be undone, and your data is unrecoverable. The support case documents your acknowledgment that the account and its data cannot be recovered after closure.
+
+You can request to cancel your Subscription account before the end of the term, but whether the subscription can be canceled early is at the discretion of IBM. A subscription is a contract between you and IBM that commits you to use {{site.data.keyword.cloud_notm}} for a specific term and spending amount. For more information, see [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions).
+
+To create the support case, use the following steps:
 1. Go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center.
 1. Click **Account**.
 1. Select the **Cancel/close/suspend** subtopic and click **Next**.

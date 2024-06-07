@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-05"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -40,9 +40,7 @@ Administrator access is required for setting account-level filters to the {{site
 1. Select **Catalog Management** from the list of services.
 1. Select the catalog that you want users to access.
 1. In the Platform access section, select the **Administrator** role.
-1. Click **Review**.
-1. Click **Add** to add your policy configuration to your policy summary.
-1. **Assign**.
+1. Click **Add** > **Assign**.
 
 ### Editor access in the console
 {: #catalog-access-console-editor}
@@ -56,13 +54,12 @@ Editor access is required for creating private catalogs, setting filters at the 
 1. Select **Catalog Management** from the list of services.
 1. Select the catalog that you want users to access.
 1. In the Platform access section, select the **Editor** role.
-1. Click **Add** to add your policy configuration to your policy summary.
+1. Click **Add**.
 1. Select **Kubernetes Service** from the list of services.
 1. Select your cluster, and then select the **Administrator** and **Manager** roles.
 1. Click **Add**.
 1. Select **Schematics** from the list of services.
 1. Select the **Manager** role.
-1. Click **Review**.
 1. Click **Add** > **Assign**.
 
 ### Viewer access in the console
@@ -77,9 +74,7 @@ Viewer access is required for viewing private catalogs, the filtered {{site.data
 1. Select **Catalog Management** from the list of services.
 1. Select the catalog that you want users to access.
 1. In the Platform access section, select the **Viewer** role.
-1. Click **Review**.
-1. Click **Add** to add your policy configuration to your policy summary.
-1. Click **Assign**.
+1. Click **Add** > **Assign**.
 
 You also need to have viewer access on the resource group to which your private catalog is assigned. You can assign your private catalog to a resource group when you complete the steps for creating your private catalog. For more information, see [Customizing the IBM Cloud catalog for all account users](/docs/account?topic=account-filter-account).
 

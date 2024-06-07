@@ -44,5 +44,5 @@ When you end an active session, it logs out the user and requires credentials to
 1. Select a name from the list.
 1. Click **View sessions** in the User details section.
 1. Identify the row with the session details that you want to end.
-1. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **End session**.
+1. Select the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **End session**. 
 1. Confirm that you want to end the session.
