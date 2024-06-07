@@ -4,7 +4,7 @@ copyright:
 
   years: 2019
 
-lastupdated: "2024-06-06"
+lastupdated: "2024-06-07"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1147,10 +1147,10 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `compliance.posture-management.dashboard-view` | Access the Security and Compliance dashboard to view security and compliance posture and results. | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.controls-create` | Add a control to a profile. | Administrator, Editor |
-| `compliance.posture-management.controls-read` | View the controls that you can add to a profile. | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.controls-update` | Update an existing control. | Administrator, Editor |
-| `compliance.posture-management.controls-delete` | Delete a control. | Administrator, Editor |
+| `compliance.posture-management.controls-create` | Add a control to a profile. | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.controls-read` | View the controls that you can add to a profile. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.posture-management.controls-update` | Update an existing control. | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.controls-delete` | Delete a control. | Administrator, Editor, Manager, Writer |
 | `compliance.posture-management.scopes-create` | Create a scope. | Administrator, Editor |
 | `compliance.posture-management.scopes-update` | Edit a scope. | Administrator, Editor |
 | `compliance.posture-management.scopes-read` | View scopes. | Administrator, Editor, Operator, Viewer |
@@ -1163,10 +1163,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.credentialsmap-update` | Edit an existing credentials mapping. | Administrator, Editor |
 | `compliance.posture-management.credentialsmap-read` | View credentials mappings. | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.credentialsmap-delete` | Delete a credentials mapping. | Administrator, Editor |
-| `compliance.posture-management.profiles-create` | Create a profile. | Administrator, Editor |
-| `compliance.posture-management.profiles-update` | Update a profile. | Administrator, Editor |
-| `compliance.posture-management.profiles-read` | View profiles. | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.profiles-delete` | Delete a profile. | Administrator, Editor |
+| `compliance.posture-management.profiles-create` | Create a profile. | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.profiles-update` | Update a profile. | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.profiles-read` | View profiles. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.posture-management.profiles-delete` | Delete a profile. | Administrator, Editor, Manager, Writer |
 | `compliance.posture-management.validations-create` | Run a vallidation scan. | Administrator, Editor |
 | `compliance.posture-management.validations-update` | Update a validation scan. | Administrator, Editor |
 | `compliance.posture-management.validations-read` | View a validation scan. | Administrator, Editor, Operator, Viewer |
@@ -1184,10 +1184,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.tenants-delete` | Delete tenants | Administrator, Editor |
 | `compliance.posture-management.events-create` | Create an audit log for monitoring compliance activity. | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.events-view` | View audit logs. | Administrator, Editor, Operator, Viewer |
-| `compliance.configuration-governance.rules-create` | Create a config rule. | Administrator, Editor |
-| `compliance.configuration-governance.rules-read` | View the config rules that are available for your accounts. | Administrator, Editor, Operator, Viewer |
-| `compliance.configuration-governance.rules-update` | Update an existing config rule. | Administrator, Editor |
-| `compliance.configuration-governance.rules-delete` | Delete a config rule. | Administrator, Editor |
+| `compliance.configuration-governance.rules-create` | Create a config rule. | Administrator, Editor, Manager, Writer |
+| `compliance.configuration-governance.rules-read` | View the config rules that are available for your accounts. | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.configuration-governance.rules-update` | Update an existing config rule. | Administrator, Editor, Manager, Writer |
+| `compliance.configuration-governance.rules-delete` | Delete a config rule. | Administrator, Editor, Manager, Writer |
 | `compliance.configuration-governance.templates-create` | Create a template. | Administrator, Editor |
 | `compliance.configuration-governance.templates-read` | View the templates that are available for your accounts. | Administrator, Editor, Operator, Viewer |
 | `compliance.configuration-governance.templates-update` | Update an existing template. | Administrator, Editor |
@@ -1214,34 +1214,38 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.posture-management.keys-read` | Read BYOK/KYOK configuration | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.keys-write` | Edit BYOK/KYOK configuration | Administrator, Editor |
 | `compliance.posture-management.keys-delete` | Enable/Disable BYOK configuration | Administrator, Editor |
-| `compliance.admin.settings-read` | View Admin Settings | Administrator, Editor, Operator, Viewer |
-| `compliance.admin.settings-update` | Edit Admin Settings | Administrator |
-| `compliance.admin.test-event-send` | Send test events | Administrator |
+| `compliance.admin.settings-read` | Read Configured Settings | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.admin.settings-update` | Update Configured Settings | Administrator, Manager |
+| `compliance.admin.test-event-send` | Send test notifications | Administrator, Manager, Writer |
 | `compliance.platform.notifications.write` | To send platform notifications  | Manager, Reader, Writer |
-| `compliance.posture-management.integrations-read` | Read compliance posture management integrations | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.integrations-create` | Create compliance posture management integrations | Administrator, Editor, Operator |
-| `compliance.posture-management.integrations-update` | Update compliance posture management integrations | Administrator, Editor, Operator |
-| `compliance.posture-management.integrations-delete` | Delete compliance posture management integrations | Administrator, Editor |
-| `compliance.posture-management.attachments-create` | Create Attachments | Administrator, Editor |
-| `compliance.posture-management.attachments-update` | Update Attachments | Administrator, Editor |
-| `compliance.posture-management.attachments-read` | Read Attachments | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.attachments-delete` | Delete Attachments | Administrator, Editor |
-| `compliance.posture-management.control-libraries-create` | Add New Control Libraries | Administrator, Editor |
-| `compliance.posture-management.control-libraries-read` | Read Control Libraries | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.control-libraries-update` | Update Control Libraries | Administrator, Editor |
-| `compliance.posture-management.control-libraries-delete` | Delete Control Libraries | Administrator, Editor |
-| `compliance.posture-management.scans-create` | Add New Scans | Administrator, Editor |
+| `compliance.posture-management.integrations-read` | Read compliance posture management integrations | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.posture-management.integrations-create` | Create compliance posture management integrations | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.posture-management.integrations-update` | Update compliance posture management integrations | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.posture-management.integrations-delete` | Delete compliance posture management integrations | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.attachments-create` | Create Attachments | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.attachments-update` | Update Attachments | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.attachments-read` | Read Attachments | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.posture-management.attachments-delete` | Delete Attachments | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.control-libraries-create` | Add New Control Libraries | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.control-libraries-read` | Read Control Libraries | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.posture-management.control-libraries-update` | Update Control Libraries | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.control-libraries-delete` | Delete Control Libraries | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.scans-create` | Create a Scan | Administrator, Editor, Manager, Writer |
 | `compliance.posture-management.scans-read` | Read Scans | Administrator, Editor, Operator, Viewer |
 | `compliance.posture-management.scans-update` | Update Scans | Administrator, Editor |
 | `compliance.posture-management.scans-delete` | Delete Scans | Administrator, Editor |
-| `compliance.posture-management.reports-read` | View results | Administrator, Editor, Operator |
-| `compliance.posture-management.profiles-compare` | Compare profiles | Administrator, Editor, Operator, Viewer |
-| `compliance.posture-management.attachments-upgrade` | Upgrade attachments | Administrator, Editor |
-| `compliance.posture-management.provider-data-write` | Write Compliance data from Provider | Administrator, Data Provider, Editor, Operator |
+| `compliance.posture-management.reports-read` | Read Scan Results and Reports | Administrator, Editor, Manager, Operator, Reader, Writer |
+| `compliance.posture-management.profiles-compare` | Compare profiles | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.posture-management.attachments-upgrade` | Upgrade attachments | Administrator, Editor, Manager, Writer |
+| `compliance.posture-management.provider-data-write` | Ingest Data from Providers | Administrator, Data Provider, Editor, Manager, Operator, Writer |
 | `compliance.targets.read` | View Targets | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `compliance.targets.create` | Create Target | Administrator, Editor, Manager, Operator, Writer |
 | `compliance.targets.update` | Update Target | Administrator, Editor, Manager, Operator, Writer |
 | `compliance.targets.delete` | Delete Target | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.scopes.create` | Create a scope | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.scopes.delete` | Delete a scope | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.scopes.read` | View scopes | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `compliance.scopes.update` | Edit a scope | Administrator, Editor, Manager, Operator, Writer |
 {: caption="Table 22. Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
