@@ -1,10 +1,9 @@
 ---
 
 copyright:
-
   years: 2019, 2022
 
-lastupdated: "2024-06-07"
+lastupdated: "2024-06-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7300,7 +7299,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table163}
 
-## OSB Sample 
+## OSB Sample
 {: #osb-sample-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `osb-sample` for the service name.
@@ -8706,7 +8705,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table201}
 
-## Satellite Infrastructure Services 
+## Satellite Infrastructure Services
 {: #satellite-iaas-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `satellite-iaas` for the service name.
@@ -10697,4 +10696,8 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table248}
+
+
+
+
 
