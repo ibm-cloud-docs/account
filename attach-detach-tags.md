@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2024
-lastupdated: "2024-01-05"
+lastupdated: "2024-06-11"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -55,18 +55,77 @@ ibmcloud resource tag-attach --tag-names project:myproject --resource-name  'MyR
 ```
 {: codeblock}
 
+## Updating key:value tags of a resource by using the CLI
+{: #update-key-value-cli}
+{: cli}
+
+Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the appropriate CLI command.
+
+If you manage tags in the format `key:value`, you can update the `value` atomically,
+without first detach the `key:old-value` and attach the new `key:new-value`.
+
+To update the value of a tag in the format `key:value`, use the [**`ibmcloud resource tag-attach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_attach) command with the `--update` option. The allowed values for `tag-type` are `user` for user tags and `access` for access management tags. The default value is `user`. The following example shows how to update to `production` the value of the `env` user tag on a resource named `MyResource`:
+
+```bash
+ibmcloud resource tag-attach --tag-names 'env:production' --resource-name 'MyResource' --update
+```
+{: codeblock}
+
+Add the `tag-type` option to the previous command to update an access management tag:
+
+```bash
+ibmcloud resource tag-attach --tag-names 'env:production' --resource-name 'MyResource' --update --tag-type access 
+```
+{: codeblock}
+
+## Replacing all tags of a resource with a new set of tags by using the CLI
+{: #update-key-value-cli}
+{: cli}
+
+Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the appropriate CLI command.
+
+The attach operation results in adding tags to a resource in addition to what it might already have. There are cases where you need to replace the existing tags that are attached to a resource with a new set.
+
+To replace all resource's tags with a new set of tags, use the [**`ibmcloud resource tag-attach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_attach) command with the `--replace` option. The allowed values for `tag-type` are `user` for user tags and `access` for access management tags. The default value is `user`. The following example shows how to set the tags `tag1`, `tag2`, and `tag3` on a resource that is named `MyResource`, and remove all of those that it might already have:
+
+```bash
+ibmcloud resource tag-attach --tag-names 'tag1,tag2,tag3' --resource-name 'MyResource' --replace
+```
+{: codeblock}
+
+Add the `tag-type` option to the previous command to set access management tags. For example, to replace all access management tags with the `compliance:hipaa`:
+
+```bash
+ibmcloud resource tag-attach --tag-names 'compliance:hipaa' --resource-name 'MyResource' --replace --tag-type access 
+```
+{: codeblock}
+
 ## Detaching tags from a resource by using the CLI
 {: #detach-cli}
 {: cli}
 
-To detach a tag from a resource, use the [**`ibmcloud resource tag-detach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_detach) command. An example to detach a user tag called `MyTag` from a resource named `MyResource`:
+To detach a tag from a resource, use the [**`ibmcloud resource tag-detach`**](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_tag_detach) command. The following is an example to detach a user tag called `MyTag` from a resource named `MyResource`:
 
 ```bash
 ibmcloud resource tag-detach --tag-names MyTag —resource-name 'MyResource'
 ```
 {: codeblock}
 
-An example to detach an access management tag called `project:myproject` from a resource named `MyResource`:
+You can use the `*` wildcard to detach tags, which is useful to detach tags in the format `key:value`, and to detach all tags. For example, if you want to detach the `env` tag from `MyResource`, regardless of its value, you can run the following command:
+
+```bash
+ibmcloud resource tag-detach --tag-names 'env:*' —resource-name 'MyResource'
+```
+{: codeblock}
+
+To detach all tags from `MyResource`, you can use the following command:
+
+```bash
+ibmcloud resource tag-detach --tag-names '*' —resource-name 'MyResource'
+```
+{: codeblock}
+
+The following is an example to detach an access management tag called `project:myproject` from a resource named `MyResource`:
 
 ```bash
 ibmcloud resource tag-detach --tag-names project:myproject —resource-name 'MyResource' --tag-type access
@@ -257,7 +316,7 @@ You can programmatically attach tags by calling the [Global Search and Tagging -
 {: #detach-api}
 {: api}
 
-You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag that's called `project:myproject` from a service instance:
+You can programmatically detach tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#detach-tag){: external} as shown in the following sample requests. The allowed values for the `tag_type` query parameter are: `user` for user tags and `access` for access management tags. The following example shows how to detach an access management tag that is called `project:myproject` from a service instance:
 
 1. Find the unique identifier for your resource by calling the following command:
 
@@ -722,10 +781,10 @@ To detach a tag from a service ID, complete the following steps:
 
 1. Go to **Manage** > **Access (IAM)** > **Service IDs**.
 1. Click the  **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") in the Tags column.
-1. Click the **Remove** icon ![Remove icon](../icons/delete.svg "Remove") on the tag that you want to detach from the service ID..
+1. Click the **Remove** icon ![Remove icon](../icons/delete.svg "Remove") on the tag that you want to detach from the service ID.
 1. Click **Save**.
 
-When you detach an access management tag from a service ID, any policies that are scoped that that tag no longer includes access the service ID.
+When you detach an access management tag from a service ID, any policies that are scoped to that tag no longer includes access to the service ID.
 {: note}
 
 ## Detaching tags on a service ID by using the CLI
@@ -936,5 +995,5 @@ To detach a tag from a service ID, complete the following steps:
    {: codeblock}
    {: go}
 
-When you detach an access management tag from a service ID, any policies that are scoped that that tag no longer includes access the service ID.
+When you detach an access management tag from a service ID, any policies that are scoped to that tag no longer includes access to the service ID.
 {: note}
