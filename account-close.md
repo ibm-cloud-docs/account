@@ -25,7 +25,11 @@ When you no longer need your {{site.data.keyword.cloud}} account, you can close 
 
 Before you can close a Pay-As-You-Go or Subscription account, the account owner needs to cancel all services, devices, and billing items for the account. Then, the account owner can create a support case to close a Subscription account or close a Pay-As-You-Go in the {{site.data.keyword.cloud}} console.
 
+To close an enteprise account, you must also remove all child accounts. After an account is removed, it is closed and can't be reactivated.
+
 If your account has reserved instances with term remaining on the agreement or other resources that you can't cancel, contact [support](/unifiedsupport/supportcenter). Rescheduled any pending cancellations to terminate prior to account cancellation. For example, you might have {{site.data.keyword.baremetal_short}} scheduled to terminate at the end of the month.
+
+If there are active service commitments or an active Enterprise Savings Plan commitment remaining in your account, you must reach the end of your commitment term before you can close your account.
 
 ### Step 1: Canceling all services
 {: #cancel-services}
@@ -38,7 +42,7 @@ To delete a service instance, use the following steps:
 ### Step 2: Canceling all devices
 {: #cancel-devices}
 
-To cancel all devices, use the following steps::
+To cancel all devices, use the following steps:
 1. From the {{site.data.keyword.cloud_notm}} console,, click the menu icon ![Menu icon](../../icons/icon_hamburger.svg) > **Classic Infrastructure** > **Device List**.
 1. For each device that you want to cancel, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Cancel device**.
 1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
@@ -46,11 +50,18 @@ To cancel all devices, use the following steps::
 ### Step 3: Canceling all billing items
 {: #cancel-billing-items}
 
-To cancel all billing items, use the following steps::
+To cancel all billing items, use the following steps:
 1. From the {{site.data.keyword.cloud_notm}} console, select **Manage** > **Billing and usage**.
 1. Select **Billing items**.
 1. Ensure that you are viewing all billing items.
 1. For each billing item that you want to cancel, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Cancel billing item**.
+
+### Step 4: Removing all child acounts
+{: #remove-child-accounts}
+
+To remove a child account from an enterprise, use the following steps:
+1. From the {{site.data.keyword.cloud_notm}} console, select **Manage** > **Enterprise** > **Accounts**.
+1. 1. For each account that you want to remove, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Remove account**.
 
 As a user on {{site.data.keyword.cloud_notm}}, you can be a member of multiple accounts. If you are not the account owner, you can leave the account. For more information, see [Leaving an account](/docs/account?topic=account-account-membership).
 
