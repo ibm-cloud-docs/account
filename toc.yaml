@@ -175,7 +175,6 @@ toc:
               topics:
               - sharing-resources.md
               - accept-share.md
-          - resource-quota.md    
           - service_in_other_regions.md
           - using-services.md
           - topicgroup:
