@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-06-11"
+lastupdated: "2024-06-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -507,6 +507,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Client SDK | Role to manage Client SDK |
 | Config Operator | As a Config Operator, you can toggle the feature state. |
+| Configuration Aggregator Reader | As a Configuration Aggregator Reader, you have permission to query for the configuration metadata of resources |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -567,6 +568,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.config.import` | Import the configuration of the instance | Manager |
 | `apprapp.config.export` | Export the configuration of the instance | Client SDK, Config Operator, Manager, Reader, Writer |
 | `apprapp.config.action` | Perform actions on the configuration of the instance like promote, restore to git | Manager |
+| `apprapp.configaggregatorsettings.update` | Update the settings for the Configuration aggregator | Manager |
+| `apprapp.configaggregatorsettings.list` | Retrieve the settings for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
+| `apprapp.configaggregatorstatus.list` | Retrieve the status of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
+| `apprapp.configaggregator.query` | Query API to retrieve resource metadata from Config Aggregator | Configuration Aggregator Reader |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
@@ -7171,9 +7176,9 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `power-iaas.dashboard.view` |  | Manager, Reader |
-| `power-iaas.cloud-instance.modify` |  | Manager |
-| `power-iaas.cloud-instance.read` |  | Manager, Reader |
+| `power-iaas.dashboard.view` | View Dashboard | Manager, Reader |
+| `power-iaas.cloud-instance.modify` | Power IaaS Cloud Instance Modify | Manager |
+| `power-iaas.cloud-instance.read` | Power IaaS Cloud Instance Read | Manager, Reader |
 | `power-iaas.pod-capacity.view` | Provides the ability to view Satellite POD capacity details. | Manager |
 {: caption="Table 130. Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
