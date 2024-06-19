@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-06-18"
+lastupdated: "2024-06-19"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1473,6 +1473,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Administrator | As an administrator, you can modify the Authorized Users list. |
 | Editor | As an editor, you can create, view, update, change the plan for, and delete instances of the Continuous Delivery service. |
 | Operator | As an operator, you can view instances of the Continuous Delivery service. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
 {: caption="Table 28. Platform roles - Continuous Delivery" caption-side="top"}
 {: tab-title="Platform roles"}
@@ -1499,6 +1500,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `continuous-delivery.instance.add-auth-users` | Add entries to the Authorized Users list on the Manage tab of a Continuous Delivery service instance. | Administrator, Manager, Writer |
 | `continuous-delivery.instance.remove-auth-users` | Remove entries from the Authorized Users list on the Manage tab of a Continuous Delivery service instance. | Administrator, Manager, Writer |
 | `continuous-delivery.instance.config-auth-users` | Configure authorized users. | Administrator, Manager |
+| `continuous-delivery.settings.read` | View additional settings for the Continuous Delivery service. | Administrator, Editor, Manager, Operator, Viewer |
+| `continuous-delivery.settings.update` | Update additional settings for the Continuous Delivery service. | Administrator, Manager |
+| `continuous-delivery.consolidated-auth-users.list` | View the consolidated user list managed by this Continuously Delivery instance. | Administrator, Editor, Manager, Operator, Viewer |
 {: caption="Table 28. Service actions - Continuous Delivery" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="continuous-delivery"}
