@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-06-20"
+lastupdated: "2024-06-21"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5016,6 +5016,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.bare-metal-server.bare-metal-server.infrastructure-nat` | NAT control for Bare Metal Server | Bare Metal Advanced Network Operator |
 | `is.bare-metal-server.bare-metal-server.console` | Access Bare Metal Server Console | Bare Metal Console Admin |
 | `is.bare-metal-server.bare-metal-server-firmware.update` | Update Firmware on a Bare Metal Server | Administrator, Editor, Operator |
+| `is.bare-metal-server.initialization.update` | Server initialization on a bare metal server | Administrator, Editor |
 {: caption="Table 82. Service actions - Bare Metal Server for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.bare-metal-server"}
