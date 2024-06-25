@@ -122,7 +122,7 @@ When you add a credit card to your trial account, your account is upgraded to a 
 
 If there's any way that we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
-To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items. A support case is required to close a  Subscription account for account security and documentation purposes. You can close a Pay-As-You-Go account in the {{site.data.keyword.Bluemix_notm}} console. For steps and more information, see [Closing an account](/docs/account?topic=account-account-close).
+To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items. A support case is required to close a Subscription account for account security and documentation purposes. You can close a Pay-As-You-Go account in the {{site.data.keyword.Bluemix_notm}} console. For steps and more information, see [Closing an account](/docs/account?topic=account-account-close).
 
 To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. After an account is closed for 30 days, all data is deleted and all services are removed.
 
