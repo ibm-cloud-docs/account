@@ -164,7 +164,7 @@ Setting up MFA in your account affects all members of the account. This means th
 1. Select the type of MFA to enable in your account.
    * **MFA for users with an IBMid**: Require users to authenticate by using an IBMid, password, and time-based one-time passcode (TOTP). You can enable this option for all users or non-federated users.
    * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP.
-      * **Email-based MFA**: Users authenticate by using a security passcode that's sent via email.
+      * **Email-based MFA**: Users authenticate by using a security passcode that's sent by email.
       * **TOTP MFA**: Users authenticate by using a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator.
       * **U2F MFA**: Users authenticate by using a hardware security key. This factor offers the highest level of security.
 1. Click **Update**.
@@ -218,7 +218,7 @@ Complete the following steps to set your preferences for receiving various types
 1. To receive notifications about {{site.data.keyword.cloud_notm}} platform-related, or resource-related items, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar")
    **Profile** > **Notification preferences**.
    * When you set {{site.data.keyword.cloud_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive notifications about events that are associated with {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off.
-   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have. By default, all infrastructure notifications are turned off.
+   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you created. By default, all infrastructure notifications are turned off.
 
 1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
 

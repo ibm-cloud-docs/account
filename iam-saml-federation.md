@@ -6,7 +6,7 @@ copyright:
 
 lastupdated: "2024-06-28"
 
-keywords: federated ID, enterprise SSO
+keywords: enterprise SSO
 
 subcollection: account
 

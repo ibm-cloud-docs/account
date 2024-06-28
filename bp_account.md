@@ -67,7 +67,7 @@ A policy consists of a subject, target, and role. The subject in this case is th
 
 The following diagram shows how an access policy works:
 
-![What is an Access Policy](images/Access-Policy.svg "What is an Access Policy"){: caption="Figure 1. What is an Access Policy" caption-side="bottom"}
+![What is an access policy](images/Access-Policy.svg "What is an Access Policy"){: caption="Figure 1. What is an Access Policy" caption-side="bottom"}
 
 The most commonly used roles are viewer, editor, operator, and administrator platform roles.
 

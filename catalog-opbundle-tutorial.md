@@ -68,7 +68,7 @@ Private catalogs provide a way for you to make your own products available to us
 1. Click **Add version**.
 
 ## Review the version details
-{: #catalog-opbundle-version}
+{: #catalog-opbundle-review-version}
 {: step}
 
 1. From the Version list table, click the row that contains your operator.

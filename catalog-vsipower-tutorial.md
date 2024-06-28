@@ -15,15 +15,7 @@ completion-time: 20m
 
 ---
 
-{:shortdesc: .shortdesc}
-{:screen: .screen}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:tip: .tip}
-{:note: .note}
-{:beta: .beta}
-{:external: target="_blank" .external}
-{:step: data-tutorial-type='step'}
+{{site.data.keyword.attribute-definition-list}}
 
 # Onboarding a virtual server image for {{site.data.keyword.powerSys_notm}}
 {: #catalog-vsipower-tutorial}
@@ -131,7 +123,7 @@ The TGZ file that you imported to your private catalog includes a readme file th
 
 1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"), and update the description with the following sentence:
 
-> Create and deploy a virtual server with ease by using a custom image.
+`Create and deploy a virtual server with ease by using a custom image.`
 
 1. Click **Save** > **Next**.
 

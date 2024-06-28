@@ -17,7 +17,7 @@ subcollection: account
 # Monitoring context-based restrictions
 {: #cbr-monitor}
 
-Context-based restrictions protect your resources by denying access to identities that don't satisfy context requirements, such as making access requests from the network zones and endpoint types that you define. You can enable context-based restrictions upon creation, or choose to set the rule to report-only mode. Use {{site.data.keyword.cloudaccesstrailshort}} to monitor enabled rules, and monitor report-only rules to view how the rule affects your users, applications, and workflows without enforcing the rule.
+Context-based restrictions protect your resources by denying access to identities that don't satisfy context requirements, such as making access requests from the network zones and endpoint types that you define. You can enable context-based restrictions upon creation, or choose to set the rule to report-only mode. Use {{site.data.keyword.cloudaccesstrailshort}} to monitor enabled rules and report-only rules to view how the rule affects your users, applications, and workflows without enforcing the rule.
 {: shortdesc}
 
 Monitoring is available depending on the service and APIs that you target in your rule. Review each service's documentation to learn more about how they integrate with context-based restrictions.

@@ -106,7 +106,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {: #catalog-operator-readme}
 {: step}
 
-When users access your Operator from your account, they can select the link to your readme file in your private catalog to view product information. The readme information is automatically generated from the details in your TGZ or CSV file.
+When users access your Operator from your account, they can select the link to your readme file in your private catalog to view product information. The readme file information is automatically generated from the details in your TGZ or CSV file.
 
 1. From the Edit readme tab, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit").
 2. Preview how the information in the readme file will be displayed to users when they install the Operator.
