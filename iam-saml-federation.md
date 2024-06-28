@@ -2,11 +2,11 @@
 
 copyright:
 
-  years: 2019, 2022
+  years: 2019, 2024
 
-lastupdated: "2022-02-21"
+lastupdated: "2024-06-28"
 
-keywords: federated ID, enterprise SSO, SAML federation
+keywords: federated ID, enterprise SSO
 
 subcollection: account
 
