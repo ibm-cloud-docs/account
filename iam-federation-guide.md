@@ -6,7 +6,7 @@ copyright:
 
 lastupdated: "2024-02-16"
 
-keywords:
+keywords: SAML federation, federation option, federated IBMid, SAML fed 
 
 subcollection: account
 
