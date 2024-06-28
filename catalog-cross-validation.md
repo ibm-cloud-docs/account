@@ -23,7 +23,7 @@ Trusted profiles are the preferred method of authentication because you can secu
 If you link your private catalog with a project, you still need an {{site.data.keyword.cloud_notm}} API key or a trusted profile ID to enable access.
 {: note}
 
-You might want to use a target account for the following reasons:
+You might want to use a target account to validate software for the following reasons:
 
 - Prevent the account with the product from becoming cluttered with resources that are created and deleted as part of the onboarding process
 - Allow users to complete onboarding when they might not have authorization to create resources in the account that contains the product
