@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2022
-lastupdated: "2022-02-28"
+lastupdated: "2022-01-07"
 
-keywords: troubleshoot account, account problem, view all orgs
+keywords: troubleshoot account, account problem, view all orgs 
 
 subcollection: account
 
@@ -33,5 +33,5 @@ Complete the following steps:
 
    Ensure that you specified a business account and not a personal account type, if you are providing a VAT ID or tax identification number.
    {: note}
-
+   
 1. Click **Upgrade account**.

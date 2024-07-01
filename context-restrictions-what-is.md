@@ -121,7 +121,7 @@ The following is a list of services that you can add to a network zone as a serv
 | IAM Access Groups Service  | Account Management | `iam-groups` |
 | IAM User Management | Account Management | `user-management` |
 | [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-cbr) | IAM-enabled |  `logdnaat` |
-| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled |  `apprapp` |
+| [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled | `apprapp` |
 | Catalog Management Service | IAM-enabled | `globalcatalog-collection` |
 | Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled | |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | `cloud-object-storage` |
@@ -254,3 +254,31 @@ Context-based restrictions that are defined for IAM-enabled services do not appl
 
 Check back regularly to see what services are added as more services integrate with context-based restrictions.
 {: note}
+
+## Context-based restrictions limits
+{: #cbr-limits}
+
+The following table lists the maximum limits for context-based restrictions. These limits apply to any user who can create context-based restrictions rules or network zones. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis).
+
+If you have a specific use case that requires an extended limit, you can request an increase. For more information, see [Increasing account limits](/docs/account?topic=account-account-limits).
+{: note}
+
+| Resource                               | Max  |
+|----------------------------------------|------|
+| Context-based restriction rules per account [^tabletext2] | 4020 |
+| Network zones per account              | 500 |
+| IP addresses per network zone              | 1000 |
+| IP addresses per rule             | 1000 |
+{: caption="Table 5. Context-based restrictions limits" caption-side="top"}
+
+[^tabletext2]: IAM policies and context-based restrictions rules share a combined limit of 4020.
+
+A context-based restriction rule that includes multiple network zones can have a maximum of 1000 IP addresses indirectly associated with it. For example, in a rule that includes two network zones, one of the zones might have 800 IP addresses and the other might have a maximum of 200 IP addresses.
+{: note}
+
+If you want to check the number of rules in your account, see [Viewing the total number of rules per account](/docs/account?topic=account-account-limits&interface=cli#total-number-rules-cli). To request an increase in the account limit, see [Requesting a policy and rule shared limit increase](/docs/account?topic=account-account-limits&interface=cli#limit-increase).
+
+### Eventual consistency
+{: #cbr-eventual-consistency}
+
+Context-based restrictions follow an [eventually consistent](https://en.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, Context-based restrictions remain highly available and performant across multiple global regions. Changes that are made to Context-based restrictions rules and network zones are recorded and propagated worldwide. Access changes might not take effect until the propagation process is complete, usually within a few minutes.

@@ -2,9 +2,9 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-02-05"
 
-keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog
+keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 
 subcollection: account
 
@@ -18,12 +18,8 @@ subcollection: account
 Private catalogs provide a way to centrally manage access to products in the {{site.data.keyword.cloud}} catalog and your own catalogs. You can customize the public catalog and your private catalogs to make specific solutions available to users in your account. By doing so, you can ensure that your catalogs are relevant to your business.
 {: shortdesc}
 
-Let's say you're an account administrator for your team, and you require access to all products in the {{site.data.keyword.cloud_notm}} catalog. A member of your team is tasked with a specific project, for example, building a voice-enabled chatbot by using {{site.data.keyword.conversationshort}}, {{site.data.keyword.speechtotextshort}}, and {{site.data.keyword.texttospeechshort}}. And, you want them to access only those products in the {{site.data.keyword.cloud_notm}} catalog.
-
-To achieve this, you create one catalog that includes all products in the {{site.data.keyword.cloud_notm}} catalog. Then, you create another catalog that includes only the required products, and you give the team member viewer access to the catalog.
-
-All private catalogs that are in an account inherit filters that are set by the account owner or administrator at the account level. In addition, if the account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters apply to all child account groups and accounts.
-{: tip}
+To create catalogs to centrally manage your objects, such as Virtual Private Endpoints, see [Create objects for your private catalog](/docs/account?topic=account-object-onboard-catalog).
+{: note}
 
 ## Before you begin
 {: #prereq-restrict-ui}
@@ -72,7 +68,7 @@ Complete the following steps to create a catalog that includes all products in t
 1. Go to **Manage** > **Catalogs**, in the {{site.data.keyword.cloud_notm}} console, and click **Create a catalog**.
 1. Select the Product (default) catalog type.
 1. Enter a name and description.
-1. Make sure the **All products** option is selected, and click **Create**. The availability is based on the filters set at the account level on the [Settings page](https://cloud.ibm.com/content-mgmt/catalog-settings){: external}.
+1. Make sure the **All products** option is selected, and click **Create**. The availability is based on the filters set at the account level on the [Settings page](/content-mgmt/catalog-settings){: external}.
 1. Confirm that the catalog includes all products by clicking the catalog name > **Manage filters**. Then, check that **Include all products in the {{site.data.keyword.cloud_notm}} catalog** is selected in **Step 1: Select to include or exclude all products in the {{site.data.keyword.cloud_notm}} catalog**.
 
 ## Creating a private catalog with select products included by using the console
@@ -139,6 +135,8 @@ If you delete a private catalog, all of the products within the catalog are dele
 You can [restore a private catalog](/docs/account?topic=account-resource-reclamation&interface=cli#restore-resource-cli) within 7 days after you delete it.
 {: tip}
 
+
+
 ## Creating a private catalog with all products included by using the CLI
 {: #catalog-all-cli}
 {: cli}
@@ -152,7 +150,7 @@ Complete the following steps to create a catalog that includes all products in t
    ```
    {: codeblock}
 
-All the {{site.data.keyword.cloud_notm}} catalog products are visible by default when you create a new private catalog. See the [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#prereqs-managecatalogs) for more information.
+All the {{site.data.keyword.cloud_notm}} catalog products are visible by default when you create a new private catalog. See the [Catalogs management CLI](/docs/cli?topic=cli-manage-catalogs-plugin#prereqs-managecatalogs) for more information.
 
 
 ## Creating a private catalog with select products included by using the CLI
@@ -162,14 +160,12 @@ All the {{site.data.keyword.cloud_notm}} catalog products are visible by default
 Complete the following steps to create a catalog that includes a specific set of products in the {{site.data.keyword.cloud_notm}} catalog:
 1. Target a resource group to create a catalog. You can run the `ibmcloud resource groups` command, and then the `ibmcloud target -g "resource group"` command.
 1. Create a new private catalog in your account using the following command.
-
    ```bash
    ibmcloud catalog create --name CATALOG [--catalog-description "DESCRIPTION"]
    ```
    {: codeblock}
 
 1. Update the filter to include or exclude a particular product or products and any applicable pricing plans. Make sure to specify your catalog, or the filter will default to the account level. See [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#offering-filter) for more command options.
-
    ```bash
    ibmcloud catalog filter offering --offering PRODUCT-NAME
    ```
@@ -205,6 +201,7 @@ ibmcloud catalog delete --catalog CATALOG
 You can [restore a private catalog](/docs/account?topic=account-resource-reclamation&interface=cli#restore-resource-cli) within 7 days after you delete it.
 {: tip}
 
+
 ## Creating a private catalog with all products included by using the API
 {: #catalog-all-api}
 {: api}
@@ -213,7 +210,7 @@ To create a catalog that includes all products in the {{site.data.keyword.cloud_
 
 ```bash
 curl -X 'POST' \
-'https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogs' \
+'https://dev-cm.globalcatalog.test.cloud.ibm.com/api/v1-beta/catalogs' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
 -H "Authorization: ${IC_IAM_TOKEN}" \
@@ -278,7 +275,7 @@ fmt.Println(response)
 {: go}
 {: codeblock}
 
-All the {{site.data.keyword.cloud_notm}} public catalog offerings are visible by default when you create a new private catalog. See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-catalog) for more information.
+All the {{site.data.keyword.cloud_notm}} public catalog products are visible by default when you create a new private catalog. See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-catalog) for more information.
 
 ## Creating a private catalog with select products included by using the API
 {: #catalog-select-api}
@@ -288,7 +285,7 @@ To create a catalog that includes a specific set of products in the {{site.data.
 
 ```bash
 curl -X 'POST' \
-'https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogs' \
+'https://dev-cm.globalcatalog.test.cloud.ibm.com/api/v1-beta/catalogs' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
 -H "Authorization: ${IC_IAM_TOKEN}" \
@@ -314,6 +311,7 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {: codeblock}
 {: curl}
+
 
 See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog#update-catalog-account) for more information.
 
@@ -343,6 +341,9 @@ You can [restore a private catalog](/docs/account?topic=account-resource-reclama
 ## Creating a private catalog by using Terraform
 {: #catalog-all-terraform}
 {: terraform}
+
+You cannot customize the public catalog and your private catalogs to make specific solutions available to users in your account by using Terraform. To customize the public catalog and your private catalogs, switch to the UI, CLI, or API steps.
+{: important}
 
 Use the following steps to create a private catalog:
 

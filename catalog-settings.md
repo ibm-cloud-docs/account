@@ -20,6 +20,9 @@ subcollection: account
 As the account owner or administrator, you can manage the settings for all catalogs across your account. Management tasks include setting the visibility of the {{site.data.keyword.cloud}} catalog and controlling access to products in the public catalog and private catalogs for users in your account.
 {: shortdesc}
 
+All private catalogs that are in an account inherit filters that are set by the account owner or administrator at the account level. In addition, if the account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters apply to all child account groups and accounts.
+{: tip}
+
 ## Before you begin
 {: #set-before-begin}
 
@@ -136,48 +139,6 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {: codeblock}
 
-<!---
-```java
-String id = "{id}";
-Filters accountFilters = {accountFilters};
-UpdateCatalogAccountOptions updateOptions = new UpdateCatalogAccountOptions.Builder().id(id).accountFilters(accountFilters).build();
-Response<Void> response = service.updateCatalogAccount(updateOptions).execute();
-System.out.println(response.getResult());
-```
-{: codeblock}
-{: java}
-
-```javascript
-id = "{id}";
-accountFilters = {accountFilters};
-response = await service.updateCatalogAccount({ 'id': id, 'accountFilters': accountFilters });
-console.log(response);
-```
-{: codeblock}
-{: javascript}
-
-```python
-id="{id}"
-accountFilters={accountFilters}
-response = self.service.update_catalog_account(id=id, account_filters=accountFilters)
-print(response)
-```
-{: codeblock}
-{: python}
-
-```go
-id := "{id}"
-accountFilters := {accountFilters}
-updateOptions := service.NewUpdateCatalogAccountOptions()
-updateOptions.SetID(id)
-updateOptions.AccountFilters(accountFilters)
-response, _ := service.UpdateCatalogAccount(updateOptions)
-fmt.Println(response)
-```
-{: codeblock}
-{: go}
--->
-
 Make sure the `hide_IBM_cloud_catalog` field has a Boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field a Boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
 
 See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
@@ -199,48 +160,6 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 ```
 {: codeblock}
 
-<!---
-```java
-String id = "{id}";
-Filters accountFilters = {accountFilters};
-UpdateCatalogAccountOptions updateOptions = new UpdateCatalogAccountOptions.Builder().id(id).accountFilters(accountFilters).build();
-Response<Void> response = service.updateCatalogAccount(updateOptions).execute();
-System.out.println(response.getResult());
-```
-{: codeblock}
-{: java}
-
-```javascript
-id = "{id}";
-accountFilters = {accountFilters};
-response = await service.updateCatalogAccount({ 'id': id, 'accountFilters': accountFilters });
-console.log(response);
-```
-{: codeblock}
-{: javascript}
-
-```python
-id="{id}"
-accountFilters={accountFilters}
-response = self.service.update_catalog_account(id=id, account_filters=accountFilters)
-print(response)
-```
-{: codeblock}
-{: python}
-
-```go
-id := "{id}"
-accountFilters := {accountFilters}
-updateOptions := service.NewUpdateCatalogAccountOptions()
-updateOptions.SetID(id)
-updateOptions.AccountFilters(accountFilters)
-response, _ := service.UpdateCatalogAccount(updateOptions)
-fmt.Println(response)
-```
-{: codeblock}
-{: go}
-
---->
 The options for `{accountFilters}` are: `include_all`, `category_filters`, and `id_filters`.
 
 See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
@@ -325,7 +244,7 @@ The following table lists the filters that you can use to customize which produc
 |--------------|-------|
 | IBM {{site.data.keyword.containershort}} | Used to create a Kubernetes cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
 | {{site.data.keyword.bplong_notm}} | Used for infrastructure as code automation by using terraform templates. |
-| {{site.data.keyword.powerSys_notm}} | Used to create a Power server that is distinct from the {{site.data.keyword.cloud_notm}} servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to  {{site.data.keyword.cloud_notm}} infrastructure or on-premises environments. |
+| {{site.data.keyword.powerSys_notm}} | Used to create a Power server that is distinct from the {{site.data.keyword.cloud_notm}} servers with separate networks and direct-attached storage. The internal networks are fenced but offer connectivity options to {{site.data.keyword.cloud_notm}} infrastructure or on-premises environments. |
 | Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
 | VMware vCenter Server | Provides deployment and management of VMware virtualized environments. |
 | Virtual Private Cloud | Deploy and manage your server images on virtual private cloud as your infrastructure target. |
@@ -361,9 +280,9 @@ The following table lists the filters that you can use to customize which produc
 
 | Option | Description |
 |--------------|-------|
-| HPC | Products that enable High Performance Computing (HPC) workloads on {{site.data.keyword.cloud_notm}}. For more information, see [High-performance computing on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/high-performance-computing){: external} |
+| HPC | Products that enable High Performance Computing (HPC) workloads on {{site.data.keyword.cloud_notm}}. For more information, see [High-performance computing on {{site.data.keyword.cloud_notm}}](https://www.ibm.com/cloud/hpc){: external} |
 | SAP Certified | An infrastructure service that is certified by SAP to run production SAP workloads. For more information, see [{{site.data.keyword.ibm_cloud_sap}}](/docs/sap).|
-| Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. For more information, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.satelliteshort}}](https://www.ibm.com/products/satellite){: external}. |
+| Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. For more information, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.satelliteshort}}](https://www.ibm.com/cloud/satellite){: external}. |
 | Quantum Technologies | A service that is compatible with quantum technologies. For more information, see [{{site.data.keyword.IBM_notm}} Quantum services](http://cloud.ibm.com/quantum){: external}. |
 {: caption="Table 1. Options for filtering by runtime environment" caption-side="top"}
 {: #works-with-custom}

@@ -14,7 +14,6 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Why can't I view all the resources on dashboard that was shared?
 {: #ts_dash-access}
 {: troubleshoot}

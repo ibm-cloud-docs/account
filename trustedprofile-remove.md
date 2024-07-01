@@ -4,14 +4,27 @@ copyright:
 
   years: 2021
 
-lastupdated: "2021-11-29"
+lastupdated: "2021-10-20"
 
 keywords: trusted profile, federated users, compute resources, granting access, remove trusted profile, IAM trusted profile, trust relationship, establish trust
 subcollection: account
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
+{:pre: .pre}
+{:ui: .ph data-hd-interface='ui'}
+{:cli: .ph data-hd-interface='cli'}
+{:api: .ph data-hd-interface='api'}
+{:java: .ph data-hd-programlang='java'}
+{:python: .ph data-hd-programlang='python'}
+{:javascript: .ph data-hd-programlang='javascript'}
+{:curl: .ph data-hd-programlang='curl'}
+{:go: .ph data-hd-programlang='go'}
 
 # Removing trusted profiles
 {: #trusted-profile-remove}
@@ -76,4 +89,4 @@ curl -X DELETE 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID' -H 'Authorizat
 ```
 {: codeblock}
 
-For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api).
+For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api). 

@@ -19,7 +19,6 @@ content-type: troubleshoot
 {: troubleshoot}
 
 To successfully log in to the {{site.data.keyword.Bluemix}} console, make sure that you have IBMid authentication for each account.
-{: shortdesc}
 
 When you log in to the console, the following message is displayed:
 {: tsSymptoms}
@@ -31,3 +30,4 @@ You tried to log in to the console, but didn't use a valid IBMid. For example, y
 
 You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemix_notm}}. Enter a fully qualified email address for the IBMid.
 {: tsResolve}
+

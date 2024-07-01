@@ -30,11 +30,10 @@ Only account owners, users assigned the Administrator role for the {{site.data.k
 3. On the individual user's page, click the **Access** tab, and then click **Assign access**.
 4. Select the service **{{site.data.keyword.cloud-shell_notm}}**.
 5. For the role, select **Administrator**, and then click **Review**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
-6. Click **Review**.
-7. Click **Add** to add your policy configuration to your policy summary.
-8. Click **Assign**.
+6. Click **Add** to add your policy configuration to your policy summary.
+7. Click **Assign**.
 
-For more information, see the IAM roles and actions for the [{{site.data.keyword.cloud-shell_notm}}](/docs/account?topic=account-account-services#account-management-actions-roles) account management service.
+For more information, see the IAM roles and actions for the [{{site.data.keyword.cloud-shell_notm}}](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles) account management service.
 
 ## Enabling or disabling {{site.data.keyword.cloud-shell_short}} for an account
 {: #shell-settings-enable}
@@ -93,7 +92,7 @@ To assign {{site.data.keyword.cloud-shell_short}} access to a particular user, c
 4. For the service, select **{{site.data.keyword.cloud-shell_notm}}**. Then, click **Next**.
 5. Scope the access to **Specific resources**. Select a location to enable the features in. Then, click **Next**.
 6. Select one or more roles to assign to the user. For example, if you want to enable the **File Upload** and **File Download** features for the user, select the **File Manager** role. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
-7. Click **Review**. 
+7. Click **Review**.
 8. Click **Add** to add your policy configuration to your policy summary.
 9. Click **Assign**.
 

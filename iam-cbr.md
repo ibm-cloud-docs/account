@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2022-04-05"
+lastupdated: "2023-10-18"
 
 keywords: iam, context-based restrictions, protecting iam resources, security
 
@@ -28,7 +28,7 @@ Any {{site.data.keyword.cloudaccesstraillong_notm}} or audit log events generate
 To begin protecting your IAM resources with context-based restrictions, see the tutorial for [Leveraging context-based restrictions to secure your resources](/docs/account?topic=account-context-restrictions-tutorial).
 
 ## How IAM integrates with context-based restrictions
-{: #cbr-overview}
+{: #ia-cbr-overview}
 {: ui}
 
 To protect a specific IAM service or the group of all IAM Account Management services, complete the following steps:
@@ -85,7 +85,7 @@ The IAM Access Groups service includes the ability to create, edit, and delete a
 
 You can protect the ability to manage a specific access group by scoping a rule to the the `Resource ID` attribute. Creating a rule that is scoped to the `Resource ID` attribute protects all actions associated with the service for that specific access group.
 
-To configure this rule, target the **IAM Access Groups service**, scope the rule to **Specific resources**, and select the `Resource ID` attribute. Then, enter the ID of the access group that you want to protect. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
+To configure this rule, target the **IAM Access Groups service**, scope the rule to **Specific resources**, and select the `Resource ID` attribute. Then, enter the ID of the access group that you want to protect. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 
 To find the access group ID, go to **Manage > Access (IAM) > Access groups**. Click the access group that you want to protect in your rule. Then, click **Details**. The value that you want begins with `AccessGroupId`.
 {: tip}
@@ -146,7 +146,7 @@ You can protect the ability to manage custom roles by scoping a rule to the `Rol
 - `iam-access-management.customRole.delete`
 - `iam-access-management.customRole.read`
 
-To configure this rule, target the **IAM Access Management service**, scope the restriction to **Specific resources** > **Resource type**, and then select **Role management**. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
+To configure this rule, target the **IAM Access Management service**, scope the restriction to **Specific resources** > **Resource type**, and then select **Role management**. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 
 To complete any Role Management action, a user must be assigned the correct role with an IAM access policy and they must satisfy the context-based restricitons rule. For example, a user with the Viewer role on the IAM Access Management service can complete the action `iam-access-management.customRole.read` if they send the request from the correct network zone and satisfy the rule. If the same user tries to create a custom role, they can't complete that request even though they satisfy the rule because they aren't an Administrator.
 {: note}
@@ -184,21 +184,7 @@ To configure this rule, target the **IAM Access Management service**, scope the 
 To complete any settings action, a user must be assigned the correct role with an IAM access policy and they must satisfy the context-based restrictions rule. For example, a user with the Editor role on the IAM Access Management service can complete the action `iam-access-management.insight.get` if they send the request from the correct network zone and satisfy the rule. A users with the Viewer role can't complete that request even if they satisfy the rule because they aren't an Editor or Administrator.
 {: note}
 
-<!---
-### Restricting the ability to manage settings in the console
-{: #cbr-settings-ui}
-{: ui}
 
-You can protect the ability to manage IAM settings by scoping a rule to the `settings` resource type. Creating a rule that is scoped to the `settings` resource type protects the following actions:
-
-- `iam-access-management.settings.read`
-
-To configure this rule, target the **IAM Access Management service**, scope the restriction to **Specific resources** > **Resource type**, and then select **settings**. For more information, see [Creating rules](/docs/account?topic=account-context-restrictions-create&interface=ui#context-restrictions-create-rules).
-
-
-To complete any settings action, a user must be assigned the correct role with an IAM access policy and they must satisfy the context-based restrictions rule. For example, a user with the Viewer role on the IAM Access Management service can complete the action `iam-access-management.settings.read` if they send the request from the correct network zone and satisfy the rule. If the same user tries to create a policy, they can't complete that request even though they satisfy the rule because they aren't an Administrator.
-{: note}
---->
 
 ### Restricting the ability to manage custom roles by using the API
 {: #cbr-custom-roles-api}
@@ -291,10 +277,7 @@ The following example shows a rule in JSON format that protects policy actions:
 {: curl}
 {: codeblock}
 
-<!---
-To complete any Policy Management action, a user must be assigned the correct role with an IAM access policy and they must satisfy the context-based restrictions rule. For example, a user with the Viewer role on the IAM Access Management service can complete the action `iam.policy.read` if they send the request from the correct network zone and satisfy the rule. If the same user tries to create a policy, they can't complete that request even though they satisfy the rule because they aren't an Administrator.
-{: note}
---->
+
 
 ### Restricting the ability to view insights by using the API
 {: #cbr-insights-api}
@@ -364,7 +347,7 @@ You can protect the ability to manage service IDs and their API keys by scoping 
 - `iam-identity.apikey.update`
 - `iam-identity.apikey.delete`
 
-To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `serviceid`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
+To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `serviceid`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 
 ### Restricting the ability to manage service IDs and their API keys by using the API
 {: #iam-identity-serviceid-api}
@@ -425,8 +408,7 @@ You can protect the ability to manage user API keys by scoping a rule to the `ap
 - `iam-identity.apikey.update`
 - `iam-identity.apikey.delete`
 
-To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `apikey`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
-
+To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `apikey`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 
 ### Restricting the ability to manage user API keys by using the API
 {: #iam-identity-apikey-api}
@@ -485,8 +467,7 @@ You can protect the ability to manage trusted profiles by scoping a rule to the 
 - `iam-identity.profile.revoke_session`
 - `iam-identity.profile.linkToResource`
 
-To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `profile`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
-
+To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `profile`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 
 ### Restricting the ability to manage trusted profiles by using the API
 {: #iam-identity-profile-api}
@@ -548,8 +529,7 @@ You can protect the ability to manage account settings by scoping a rule to the 
 - `iam-identity.account.delete`
 - `iam-identity.session.manage`
 
-To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `settings`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
-
+To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `settings`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 
 ### Restricting the ability to manage account settings by using the API
 {: #iam-identity-settings-api}
@@ -611,8 +591,7 @@ You can protect the ability to manage Identity Providers (IdPs) by scoping a rul
 - `iam-identity.idp.test`
 - `iam-identity.idp.metadata`
 
-To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `idp`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
-
+To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `idp`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#-iam-cbr-overview).
 
 ### Restricting the ability to manage Identity Providers by using the API
 {: #iam-identity-ipd-api}
@@ -658,7 +637,6 @@ The following example shows a rule in JSON format that protects `idp` resource t
 {: curl}
 {: codeblock}
 
-
 ## Protecting the User Management service
 {: #cbr-user-management}
 
@@ -667,7 +645,7 @@ The User Management service includes the ability to view users in an account, in
 The viewer role on the User Management service is commonly assigned for users assigned a role to view or manage support cases. If an account owner restricts the visibility of the user list in the IAM settings, users can't see support cases that are opened by other users in the account. However, if they are assigned the viewer role for the user management service, the user list visibility setting doesn't affect the ability to view cases in the account.
 {: tip}
 
-To configure this rule, target the **User Management service**. For more information about the steps to set up a rule in the console, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
+To configure this rule, target the **User Management service**. For more information about the steps to set up a rule in the console, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 {: ui}
 
 The following example shows a rule in JSON format that protects all `user-management` actions:
@@ -705,7 +683,7 @@ The following example shows a rule in JSON format that protects all `user-manage
 
 **All IAM Account Management services** is the grouping of a subset of account management services, which includes IAM Identity, IAM Access Management, IAM User Management, and IAM Groups. You can create a rule that protects all actions associated with these services.
 
-To configure this rule, target the **All IAM Account Management services**. For more information about the steps to set up a rule in the console, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#cbr-overview).
+To configure this rule, target the **All IAM Account Management services**. For more information about the steps to set up a rule in the console, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr#iam-cbr-overview).
 {: ui}
 
 The following example shows a rule in JSON format that protects all actions associated with the  `IAM` service grouping:

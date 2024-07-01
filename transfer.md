@@ -56,4 +56,4 @@ When the ownership is transferred to the new owner, be aware that the previous a
 
    ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")
 
-To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**.
+To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**. Attach the official request document to the case before you submit it.

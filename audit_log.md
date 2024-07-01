@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2022
-lastupdated: "2022-02-21"
+  years: 2018, 2023
+lastupdated: "2023-12-29"
 
-keywords: audit log, user access, account log, system events, monitor system events, user access logs, logging for classic infrastructure
+keywords: audit log, user access, account log, system events, monitor system events, user access logs
 
 subcollection: account
 
@@ -17,6 +17,7 @@ subcollection: account
 
 If you have a classic infrastructure account, you can monitor storage replication events by viewing audit logs. Audit logs track the interactions of each user, like login attempts, port speed updates, power restarts, and interactions made by {{site.data.keyword.BluSoftlayer_notm}} infrastructure support staff.
 {: shortdesc}
+
 
 ## Viewing your audit log in the console
 {: #view-audit-log}
@@ -56,7 +57,7 @@ https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?
 
 curl -g -u $SL_USER:$SL_APIKEY 'https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?objectMask=mask[eventName,eventCreateDate,userType]&resultLimit=0,50'
 
-The output looks something like this,in this case just the first event in the list:
+The output will look something like this, in this case just the first event in the list:
 
 [
     {

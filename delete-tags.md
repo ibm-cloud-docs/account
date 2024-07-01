@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-05"
 
 keywords: tags, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -36,7 +36,7 @@ When you delete an access management tag from the account, any associated IAM po
 
 Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the **`ibmcloud resource tag-delete`** command for deleting only one or all of the unused tags.
 
-The following example deletes the `MyTag` user tag:
+* The following example deletes the `MyTag` user tag:
 
    ```bash
    ibmcloud resource tag-delete --tag-name MyTag
@@ -178,55 +178,3 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
-
-
-## Deleting tags by using Terraform
-{: #delete-terraform}
-{: terraform}
-
-Before you can delete tags by using Terraform, make sure that you have completed the following:
-
-- Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
-- Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
-
-Use the following steps to delete tags from your account:
-
-1. Create an argument in your `main.tf` file. The following example deletes the `ibm_tag` from the resource `ibm`, which is attached to resource ID `ibm_satellite_location.location.crn`.
-
-   ```terraform
-   resource "ibm_resource" "ibm" {
-   resource_id = ibm_satellite_location.location.crn
-   tags        = [ "ibm_tag" ]
-   }
-   ```
-   {: codeblock}
-
-1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
-
-   ```terraform
-   terraform init
-   ```
-   {: pre}
-
-1. Provision the resources from the `main.tf` file. For more information, see [Provisioning Infrastructure with Terraform](https://developer.hashicorp.com/terraform/cli/run){: external}.
-
-   1. Run `terraform plan` to generate a Terraform execution plan to preview the proposed actions.
-
-      ```terraform
-      terraform plan
-      ```
-      {: pre}
-
-   1. Run `terraform apply` to create the resources that are defined in the plan.
-
-      ```terraform
-      terraform apply
-      ```
-      {: pre}
-
-1. Delete the tags.
-
-   ```terraform
-   terraform destroy
-   ```
-   {: pre}

@@ -15,7 +15,6 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Giving access to resources in resource groups
 {: #rgs_manage_access}
 

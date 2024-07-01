@@ -42,6 +42,8 @@ You must create an instance of the {{site.data.keyword.at_short}} service in the
 * Logging in to {{site.data.keyword.Bluemix_notm}} by using an API key, authorization code, passcode, password, or an API key associated with a service ID
 * Logging in to {{site.data.keyword.Bluemix_notm}} by using a trusted profile. For more information, see [Monitoring login sessions for trusted profiles](/docs/account?topic=account-trusted-profile-monitor).
 
+
+
 For more information, see [IAM events](/docs/activity-tracker?topic=activity-tracker-at_events_iam).
 
 ### Enterprise IAM events
@@ -51,7 +53,7 @@ In addition, you can track the following events in an enterprise account:
 * Creating, updating, or deleting enterprise-managed IAM templates
 * Assigning enterprise-managed IAM templates to child accounts
 
-You can track the following enterprise events in a child account:
+You can track the following enterprise events in an child account:
 * Enterprise-managed IAM templates assigned to your account
 
 For more information, see [IAM events](/docs/activity-tracker?topic=activity-tracker-at_events_iam).

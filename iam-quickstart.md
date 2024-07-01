@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2024
-lastupdated: "2024-04-08"
+   years: 2020, 2023
+lastupdated: "2023-06-01"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 

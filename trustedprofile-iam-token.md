@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2024
 
-lastupdated: "2024-04-02"
+lastupdated: "2024-04-28"
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
 
@@ -22,12 +22,15 @@ You can request an Identity and Access Management (IAM) token for a trusted prof
 
 To generate IAM tokens for your compute resources, you must be at least an administrator on **All Identity and Access enabled services** within the account.
 
+
+
+
 ## {{site.data.keyword.containershort_notm}}
 {: #kub-token}
 
 For {{site.data.keyword.containerlong}}, you don't need to take steps to generate an IAM token from a compute resource (CR) token. The token generation is done automatically by the service for new clusters that run Kubernetes version 1.21 or later. Trusted profiles are not supported for earlier versions of Kubernetes. See [Authorizing pods in your cluster to IBM Cloud services with IAM trusted profiles](/docs/containers?topic=containers-pod-iam-identity) for more information.
 
-## {{site.data.keyword.openshiftshort}}
+## {{site.data.keyword.openshiftshort_notm}}
 {: #rhos-token}
 
 Give application pods that run in your {{site.data.keyword.openshiftlong}} cluster access to IBM Cloud services by creating a trusted profile. For more information, see [Authorizing pods in your cluster to IBM Cloud services with IAM trusted profiles](/docs/openshift?topic=openshift-pod-iam-identity&interface=ui).

@@ -44,7 +44,7 @@ To view what actions are mapped to each role, click the numbers listed next to e
 
 To check the name of the access management tag that's attached to the service, complete the following steps:
 
-1. Click the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
+1. Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
 2. Locate the service in the table, and see the Tags column.
 
 To help you quickly identify which tags are access management tags, the name is preceded by `IAM` in the label, for example, `IAM | devtools:project1`.

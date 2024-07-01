@@ -14,7 +14,6 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Why can't I create a new Lite plan instance?
 {: #nosecondlite}
 {: troubleshoot}
@@ -27,6 +26,7 @@ You receive the following error message when you try to create a new Lite plan i
 > Unable to provision new Lite instance
 > 
 > The account already has an instance created with the Lite plan
+
 
 There's a limit of one instance per Lite plan to ensure that these plans stay free. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}

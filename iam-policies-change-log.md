@@ -43,8 +43,14 @@ The following table shows the behavior changes for each version.
 The `v1` API is not forwards compatible with the `v2` API. You can't add conditions to a policy that is created with the `v1` API. To add conditions, you must delete the `v1` policy and replace it with a new access policy that includes conditions.
 {: important}
 
-## 25 January 2023
-{: #25-jan-2023}
+## 31 August 2023
+{: #31-aug-2023}
+
+This change log introduces new capabilities for the `v2` IAM Policy Management API that aren't compatible with `v1`. This new release adds the ability to create IAM policy templates in enterprise accounts, which you can reference to assign access in access group templates and trusted profile templates. For more information, see [Creating enterprise-managed policy templates](/docs/secure-enterprise?topic=secure-enterprise-policy-template-create&interface=api) and [How enterprise-managed IAM works](/docs/secure-enterprise?topic=secure-enterprise-access-enterprises#how-enterprise-iam).
+
+
+## 24 January 2023
+{: #24-jan-2023}
 
 This change log introduces a new version (`v1 -> v2`) of the IAM Policy Management API. This version adds a new JSON schema to support a conditional policy construct and several time-based comparison operators. These operators provide the capability to restrict access based on time and date. With time-based access control, customers can establish granular policy enforcement based on a specified time period.
 

@@ -1,11 +1,13 @@
 ---
 
 copyright:
+
   years: 2020, 2024
 
-lastupdated: "2024-05-18"
+lastupdated: "2024-06-05"
 
-keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key
+
+keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up
 
 subcollection: account
 
@@ -38,7 +40,7 @@ First, create an account by using your existing IBMid or a new IBMid. If your co
 |Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other {{site.data.keyword.IBM}} products and services. |
 |New IBMid        | If you don't yet have an IBMid, you can create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}. |
 |Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
-|Google ID | If you already have a Google account, you can use the credentials for Google to sign-up or log in to {{site.data.keyword.Bluemix_notm}}. |
+|Google ID | If you already have a Google account, you can use the credentials for Google to sign-up or log in to {{site.data.keyword.IBM_notm}}. |
 {: caption="Table 1. ID options for creating an account" caption-side="top"}
 
 ### Using your IBMid
@@ -129,6 +131,7 @@ A federated ID is an ID within a company's domain that is registered with {{site
 
 For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
 
+
 ### Using a Google ID 
 {: #signup-google}
 
@@ -215,7 +218,7 @@ Complete the following steps to set your preferences for receiving various types
 1. To receive notifications about {{site.data.keyword.cloud_notm}} platform-related, or resource-related items, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar")
    **Profile** > **Notification preferences**.
    * When you set {{site.data.keyword.cloud_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive notifications about events that are associated with {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off.
-   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you have created. By default, all infrastructure notifications are turned off.
+   *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you created. By default, all infrastructure notifications are turned off.
 
 1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
 
@@ -249,7 +252,7 @@ IAM access groups provide a way for you to quickly and easily assign access to m
 1. Assign access to the group.
 
    1. Click **Access** > **Assign access**.
-   2. Select individual services or a group of services:
+   1. Select a single service or a group of services:
 
       * **All Identity and Access enabled services**: Assigns access to all catalog services that use IAM for access management.
       * **All Account Management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).

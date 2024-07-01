@@ -37,22 +37,22 @@ You can include more columns in the readme file's control table but this informa
 
 For examples of how you can format your controls in your readme file, see the following tables:
 
-```
+```markdown
 | Profile | ID |
 |---------|----|
 | NIST | SC-7(3) |
 ```
 {: codeblock}
 
-```
+```markdown
 | Profile | Category | ID      | Description |
 |---------|----------|---------|-------------|
-| NIST | [SC-7](https://cloud.ibm.com/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) | SC-7(3) | Limit the number of external network connections to the system. |
+| NIST | [SC-7](https://test.cloud.ibm.com/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) | SC-7(3) | Limit the number of external network connections to the system. |
 ```
 {: codeblock}
 
 ## Managing compliance information for your product
-{: #manage-compliance}
+{: #managing-compliance}
 
 After you add your controls, you must run a Code Risk Analyzer scan and add a Security and Compliance Center scan.
 

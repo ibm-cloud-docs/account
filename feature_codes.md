@@ -26,7 +26,7 @@ You must have the Editor role or higher for all account management services to a
 * Increase the memory quota to a number of GB that is specified by the code
 * Add one organization with a memory quota that is specified by the code
 * Add an unlimited number of organizations
-* Upload a number of SSL certificates, as specified by the code
+* Upload an additional number of SSL certificates, as specified by the code
 * Use premium service plans
 * Convert a Lite account to a trial account, which provides access to more services but only within a limited trial period
 

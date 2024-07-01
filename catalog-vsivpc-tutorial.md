@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2024
-lastupdated: "2024-02-02"
+lastupdated: "2024-02-01"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -37,7 +37,11 @@ Onboarding Virtual Server Images for VPC with {{site.data.keyword.IBMz}} deploym
    1. Create your [VPC](/docs/vpc?topic=vpc-getting-started).
    1. Create an instance of [{{site.data.keyword.cloud_notm}} Object Storage](/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) and upload your image to a bucket.
    1. [Import and validate](/docs/vpc?topic=vpc-importing-custom-images-vpc&interface=ui) your custom image in your VPC. Do this for each region in which you want your software to be available and verify that the SHA or checksum matches for the imported image in each region.
-1. Make sure you're assigned the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) editor role or higher on the catalog management service. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
+1. Make sure you're assigned the following access in {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM):
+   * Editor role or higher on the catalog management service.
+   * Manager role or higher on the Schematics service.
+
+   See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
 
 ## Create a private catalog
 {: #catalog-vsivpc-create}

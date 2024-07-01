@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022
-lastupdated: "2022-09-19"
+lastupdated: "2022-09-16"
 
 keywords: terraform, embed code
 

@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2023
 lastupdated: "2023-01-12"
 
-keywords: troubleshoot account, infrastructure access, infrastructure services
+keywords: troubleshoot account, infrastructure access, infrastructure services 
 
 subcollection: account
 
@@ -14,13 +14,9 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # How can I access infrastructure services in my account?
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
-
-You can't view all infrastructure sections of the console because of an account configuration issue.
-{: shortdesc}
 
 When you attempt to access infrastructure sections of the IBM Cloud console, the following message might be displayed:
 {: tsSymptoms}

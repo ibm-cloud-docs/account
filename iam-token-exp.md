@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2023
+  years: 2019, 2022
 
-lastupdated: "2023-05-30"
+lastupdated: "2022-11-03"
 
 keywords: token, token expiration, settings, access token, refresh token, IAM
 

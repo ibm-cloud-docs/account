@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2024
-lastupdated: "2024-02-02"
+lastupdated: "2024-02-01"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -86,7 +86,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | **`crn`** | The {{site.data.keyword.powerSys_notm}} CRN | `True` | `False` |
 | **`instance_name`** | The name of the virtual server instance. | `True` | `False` |
 | **`memory`** | The amount of memory that you want to assign to your instance in gigabytes. | `False` | `False` |
-| **`network_name`** | The network ID or name to assign to the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | `True` |`False` |
+| **`network_name`** | The network ID or name to assign to the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | `True` | `False` |
 | **`processor_type`** | The type of processor mode in which the VM runs. Specify `shared`, `capped`, or `dedicated`. | `False` | `False` |
 | **`processors`** | The number of vCPUs to assign to the VM as visible within the guest OS. | `False` | `False` |
 | **`ssh_key_name`** | The name of the public SSH RSA key to use when you create the instance, as defined for the selected {{site.data.keyword.powerSys_notm}} CRN. | `True` | `False` |
@@ -123,7 +123,7 @@ The TGZ file that you imported to your private catalog includes a readme file th
 
 1. Click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit"), and update the description with the following sentence:
 
-   `Create and deploy a virtual server with ease by using a custom image.`
+`Create and deploy a virtual server with ease by using a custom image.`
 
 1. Click **Save** > **Next**.
 

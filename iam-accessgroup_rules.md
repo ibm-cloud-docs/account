@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-02-26"
+lastupdated: "2024-02-16"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -33,7 +33,7 @@ Dynamic rules are created by setting conditions that must be matched by the data
 
 To create a rule, follow these steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Access Groups**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Access Groups**.
 2. Select the name of the access group that you want to create a rule for. This action opens the group **Details** page.
 3. Select **Dynamic rules**.
 4. Click **Add rule**.
@@ -100,7 +100,6 @@ To create a rule by using Terraform, follow these steps:
       {: pre}
 
 For more information about the fields that are used to create dynamic rules, see [IAM condition properties](/docs/account?topic=account-iam-condition-properties).
-
 
 ## Viewing dynamic members of access groups
 {: #view-dynamic-users}

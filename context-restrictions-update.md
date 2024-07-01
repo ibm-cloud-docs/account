@@ -325,26 +325,26 @@ To update a network zone, complete the following steps.
 
 1. [Get the zone](/apidocs/context-based-restrictions?code=go#get-zone) that you want to replace. In the response body, copy the zone ID and in the response headers copy the ETag header.
 
-   ```sh
+       ```sh
    curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "https://cbr.cloud.ibm.com/v1/zones/{zone_id}"
    ```
    {: codeblock}
    {: curl}
 
-   ```java
+    ```java
    GetZoneOptions getZoneOptions = new GetZoneOptions.Builder()
      .zoneId(zoneID)
      .build();
 
-   Response<Zone> response = contextBasedRestrictionsService.getZone(getZoneOptions).execute();
+    Response<Zone> response = contextBasedRestrictionsService.getZone(getZoneOptions).execute();
    Zone zone = response.getResult();
 
-   System.out.println(zone);
+    System.out.println(zone);
    ```
    {: codeblock}
    {: java}
 
-   ```javascript
+    ```javascript
    const params = {
      zoneId,
    };
@@ -359,13 +359,13 @@ To update a network zone, complete the following steps.
    {: codeblock}
    {: javascript}
 
-   ```python
+    ```python
    get_zone_response = context_based_restrictions_service.get_zone(
      zone_id=zone_id
    )
    zone = get_zone_response.get_result()
 
-   print(json.dumps(zone, indent=2))
+    print(json.dumps(zone, indent=2))
    ```
    {: codeblock}
    {: python}
@@ -375,7 +375,7 @@ To update a network zone, complete the following steps.
      zoneID,
    )
 
-   zone, response, err := contextBasedRestrictionsService.GetZone(getZoneOptions)
+    zone, response, err := contextBasedRestrictionsService.GetZone(getZoneOptions)
    if err != nil {
      panic(err)
    }
@@ -386,13 +386,13 @@ To update a network zone, complete the following steps.
    {: go}
 
 
-1.  Update the network zone by using the [Replace zone](/apidocs/context-based-restrictions?code=go#replace-zone) method.
+2.  Update the network zone by using the [Replace zone](/apidocs/context-based-restrictions?code=go#replace-zone) method.
 
     The ETag value is required in the replace request’s `If-Match` header.
     {: tip}
 
     ```sh
-    curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "name": "new zone name", "description": "new zone description", "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "addresses": [ { "type": "ipAddress", "value": "169.23.56.234" }, { "type": "ipRange", "value": "169.23.22.0-169.23.22.255" }, { "type": "vpc", "value": "crn:v1:cloud:public:is:us-south:a/12ab34cd56ef78ab90cd12ef34ab56cd::vpc:r134-d98a1702-b39a-449a-86d4-ef8dbacf281e" } ] }' "{base_url}/v1/zones/{zone_id}"
+    curl -X PUT --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" --header "If-Match: {if_match}" --header "Content-Type: application/json" --data '{ "name": "new zone name", "description": "new zone description", "account_id": "12ab34cd56ef78ab90cd12ef34ab56cd", "addresses": [ { "type": "ipAddress", "value": "169.23.56.234" }, { "type": "ipRange", "value": "169.23.22.0-169.23.22.255" }, { "type": "vpc", "value": "crn:v1:bluemix:public:is:us-south:a/12ab34cd56ef78ab90cd12ef34ab56cd::vpc:r134-d98a1702-b39a-449a-86d4-ef8dbacf281e" } ] }' "{base_url}/v1/zones/{zone_id}"
     ```
     {: codeblock}
     {: curl}

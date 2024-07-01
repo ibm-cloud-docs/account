@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022, 2024
+  years: 2022, 2023
 
-lastupdated: "2024-01-09"
+lastupdated: "2023-12-19"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -51,7 +51,7 @@ For more information about using an API key associated with your user identity, 
 ### Functional IDs
 {: #functionalid-bestpract}
 
-Functional IDs are most commonly used when an application or service needs a digital identity and access to IAM-enabled resources or classic infrastructure resources. Some services require a functional ID when you create service instances, for example the {{site.data.keyword.containershort}}.
+Functional IDs are most commonly used when an application or service needs a digital identity and access to IAM-enabled resources or Classic infrastructure resources. Some services require a functional ID when you create service instances, for example the {{site.data.keyword.containershort}}.
 
 A functional ID is a type of user ID that exists in your Identity Provider's (IdP) user directory, but it's not tied to a specific user. To create a functional ID, you must create a new user in the user directory and invite them to your {{site.data.keyword.cloud_notm}} account.
 

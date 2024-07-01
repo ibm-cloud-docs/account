@@ -14,7 +14,6 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Why do I encounter console pages that don't load?
 {: #ts_err}
 {: troubleshoot}
@@ -27,11 +26,7 @@ One of the following error messages might be displayed:
 
 > BXNUI0001E: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.
 
-or
-
 > BXNUI0016E: The apps and services weren't retrieved because an {{site.data.keyword.Bluemix_notm}} page didn't load.
-
-or
 
 > 500 internal server error
 

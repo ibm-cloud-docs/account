@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023
-lastupdated: "2023-07-21"
+lastupdated: "2023-07-24"
 
 keywords: login session, end login session, monitor session, your login session, end all login sessions
 
@@ -16,7 +16,7 @@ subcollection: account
 # Monitoring your login sessions
 {: #monitor-your-session}
 
-When you log in to the {{site.data.keyword.cloud}} console or {{site.data.keyword.cloud_notm}} command-line interface by using a user ID, a login session is created. You can review your active and expired login sessions on the [Login sessions page](/user/sessions){: external}, where you can also end an individual session or all active sessions if a login-related credential, such as a refresh token or an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) cookie is compromised.
+When you log in to the {{site.data.keyword.cloud}} console or {{site.data.keyword.cloud_notm}} command-line interface by using a user ID, a login session is created. You can review your active and expired login sessions on the [Login sessions page](/user/sessions){: external}. You can also end an individual session or all active sessions if a login-related credential, such as a refresh token or an {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) cookie, is compromised.
 {: shortdesc}
 
 You can also review and end your own login sessions from the IAM Users page. In the {{site.data.keyword.cloud_notm}} console, click **Manage > Access (IAM)**, and select **Users**. Select your own user from the list, and click **View sessions** in the Details section to review your login sessions. 
@@ -38,13 +38,13 @@ To review your active and expired login sessions, complete the following steps:
 ## Ending your login sessions
 {: #end-your-sessions}
 
-When you end an active login session, it logs you out and requires your credentials to be entered again. To end your active login session, complete the following steps:
+When you end an active login session, you are logged out and you're required to enter your credentials again. To end your active login session, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile** > **Login sessions**.
 1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the session that you want to end and select **End session**.
 1. Click **End session** again to confirm that you want to end the session.
 
-## Ending all of your login sessions
+## Ending all active login sessions
 {: #end-all-your-sessions}
 
 You can also end all of your active sessions at once. Ending all of your active sessions logs you out of each session, so you can log in again by opening a session and entering your credentials. To end all of your login sessions at once, complete the following steps:

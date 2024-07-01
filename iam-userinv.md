@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2024
 
-lastupdated: "2024-05-08"
+lastupdated: "2024-01-05"
 
 keywords: invite, invite users, invitation access, vpn-only user
 

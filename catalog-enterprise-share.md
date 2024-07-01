@@ -2,7 +2,7 @@
 
 copyright:
   years: 2022, 2024
-lastupdated: "2024-03-26"
+lastupdated: "2024-06-03"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in
 
@@ -12,10 +12,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Sharing catalog products from your private catalog
+# Sharing private catalog products
 {: #catalog-share}
 
-Specify who can see your particular product by sharing a product from your private catalog with other accounts, enterprises, users in your account, or account groups within enterprises. Those accounts or groups can then create instances of any version that is in the `ready` or `pre-release` state. Versions that are in the `draft` state cannot be shared.
+Any user can specify who can see your particular product by sharing a product from your private catalog with other accounts, enterprises, users in your account, or account groups within enterprises. Those accounts or groups can then create instances of any version that is in the `ready` or `pre-release` state. Versions that are in the `draft` state cannot be shared.
 {: shortdesc}
 
 You can share your product from your private catalog with any account, enterprise, or account group without needing approval from Partner Center. The target account or group must accept the share request. For more information, see [Accepting share requests for private catalog products](/docs/account?topic=account-catalog-share-accept&interface=ui). However, if you are already approved in Partner Center, you can share your product with any user by adding their account to the allowlist. In that case, the share request doesn't need to be explicitly accepted by the other account.
@@ -57,7 +57,7 @@ Complete the following steps to share your product:
 1. Select one of the following options:
    - **Share to this account** to make the product available to any user who has access to this account. Then, click **Share**.
    - **Share with other accounts** to add IDs for accounts that you want to share your product with. Enterprise IDs are prefixed by `-ent-`, and account groups are prefixed by `-entgrp-`. This option is used to create an allowlist of other accounts to which you want to share your product.
-
+ 
    You need to configure [service to service authorization](/docs/account?topic=account-serviceauth&interface=ui#create-auth) to share a product between accounts through {{site.data.keyword.bplong}}. To establish a service-to-service authorization between {{site.data.keyword.bplong}} and Catalog Management, {{site.data.keyword.bplong}} acts as the source and Catalog Management as the target with a viewer role. This ensures that {{site.data.keyword.bplong}} can access the source URL when provisioning the product from another account. 
    {: note}
 

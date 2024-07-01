@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-10-27"
+  years: 2021, 2023
+lastupdated: "2023-12-19"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list
 

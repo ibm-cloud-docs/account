@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2022
 
-lastupdated: "2022-10-26"
+lastupdated: "2022-10-07"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 
@@ -273,7 +273,7 @@ fmt.Println(string(b))
 {: go}
 {: codeblock}
 
-For more information, see [Create a policy](/apidocs/iam-policy-management?code=go#create-policy){: external}.
+For more information, see [Create a policy](https://cloud.ibm.com/apidocs/iam-policy-management?code=go#create-policy){: external}.
 
 ## Disabling public access to resources
 {: #disable-public-access}
@@ -367,4 +367,4 @@ fmt.Println(string(b))
 {: go}
 {: codeblock}
 
-For more information, see [Update account settings](/apidocs/iam-access-groups#update-account-settings){: external}.
+For more information, see [Update account settings](https://cloud.ibm.com/apidocs/iam-access-groups#update-account-settings){: external}.

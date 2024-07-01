@@ -2,8 +2,7 @@
 
 copyright:
   years: 2015, 2024
-
-lastupdated: "2024-01-08"
+lastupdated: "2024-06-28"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -16,15 +15,20 @@ subcollection: account
 # Upgrading your account
 {: #upgrading-account}
 
-Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you are ready for more, you can upgrade your account to a Pay-As-You-Go, or Subscription account to unlock the entire catalog of production-ready services.
+Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you're ready to unlock the full {{site.data.keyword.Bluemix_notm}} catalog, get extra free resources, and more, you can upgrade to a Pay-As-You-Go or Subscription account.
 {: shortdesc}
 
-You can check your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.Bluemix_notm}} console and looking in the Account Type section.
+You can view your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.Bluemix_notm}} console and checking the Account Type section.
+
+After you upgrade your Lite account to a Pay-As-You-Go account, you get a promotional credit of $200 that is automatically applied to your account. Your $200 credit is valid for 30 days, and your usage is automatically deducted from the credit amount. The credit cannot be used with third-party products, and the credit might not be available for all accounts.
 
 Not sure which type of account you want to upgrade to? Get detailed information about the benefits of each account type in [Account types](/docs/account?topic=account-accounts).
 {: tip}
 
-To upgrade your account, you must have an access policy with the Editor role or higher on all account management services. For more information about IAM roles for managing accounts, see [Platform management roles](/docs/account?topic=account-userroles#platformroles).
+## Before you begin
+{: #upgrade-prereq}
+
+To upgrade your account, you must have an access policy with the editor role or higher on all account management services. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 
 ## Upgrading to a Pay-As-You-Go account
 {: #upgrade-paygo}
@@ -39,7 +43,7 @@ To upgrade to a Pay-As-You-Go account, complete the following steps.
 1. Enter your payment information, click **Next**, and submit your information.
 
 
-After your payment information is processed, your account is upgraded, and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice.
+After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice.
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
@@ -47,7 +51,7 @@ If you can't upgrade your account because of an issue with your credit card, see
 {: tip}
 
 ## Promotional credit for upgrading your account
-{: #promotional-credit-for-upgrading-your-account}
+{: #promo-paygo}
 
 When you enter a credit card for a new Pay-As-You-Go account, you'll receive a promotional credit to use on any {{site.data.keyword.IBM_notm}} product. To view the list of eligible products, go to the {{site.data.keyword.cloud_notm}} console and select **Catalog** > **Provider** > **{{site.data.keyword.IBM_notm}}**.
 
@@ -76,11 +80,10 @@ The following table lists the current upgrade promotional amounts for different 
 | South Africa  | ZAR        | 3,563.88               |
 {: caption="Table 1. Promo price for different currencies" caption-side="top"}
 
-
 ## Upgrading to a Subscription account
 {: #upgrade-subscription}
 
-With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular nondiscounted rate only on the overage.
+With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular non-discounted rate only on the overage.
 
 Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 

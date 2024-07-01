@@ -81,3 +81,4 @@ An English translation is required to upload other translations.
 
 --language-files
 :   Provide a comma-separated list of language files to upload. If no languages are specified, all of the available language files are uploaded. Valid options are `de.json`, `en.json`, `es.json`, `fr.json`, `it.json`, `ja.json`, `ko.json`, `pt-BR.json`, `zh-Hans.json`, and `zh-Hant.json`. 
+

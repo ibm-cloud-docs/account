@@ -30,6 +30,10 @@ The following patterns represent the allowed condition permutations:
 | `attribute-based-condition:resource:literal-and-wildcard` |	Conditions based on resource attributes with literal or wildcard values (based on the operator used) |
 {: caption="Table 1. Allowed condition patterns for resource attribute-based conditions." caption-side="top"}
 
+
+
+
+
 ## Before you begin
 {: #before-you-begin-resource-based-api}
 {: api}
@@ -46,7 +50,6 @@ You can have up to 10 conditions and nesting up to 2 levels by using `OR`.
 {: important}
 
 For more information and examples about available operators, see [Resource attribute-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#resource-based-conditions).
-
 
 
 
@@ -125,7 +128,7 @@ As an example, let's say that you're creating a conditional policy for a develop
 1. Click **Assign**.
 
 
-## Using conditions for specific services
+## Service-specific documentation
 {: #advanced-condition-service}
 
 For more information about how Cloud Object Storage uses resource attribute-based conditions, see [Controlling access to individual objects in a bucket](/docs/cloud-object-storage?topic=cloud-object-storage-object-access-tutorial).

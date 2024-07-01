@@ -45,7 +45,7 @@ A default resource group is created for your account. If you have a Lite account
 ### Searching for resources
 {: #tags}
 
-You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage&interface=ui#export-csv).
+You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
 
 For more information, see [Working with tags](/docs/account?topic=account-tag).
 
@@ -111,8 +111,10 @@ A logical way to assign access to your resource groups and the included resource
 
 For the Auditor-Group, assign two access policies that grant viewer access to the `CustApp-Test` and the `CustApp-Prod` resources and resource groups. For the Developer-Group, assign two access policies that grant editor access to the `CustApp-Dev` and `CustApp-Test` resources and resource groups. For the Admin-Group, assign three access policies that grant administrator access to all three `CustApp` resource groups and their resources.
 
-You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management services** with the Administrator role assigned. Users that apply this trusted profile have administrator access on the [IAM Access Groups service](/docs/account?topic=account-account-services&interface=ui#access-groups-account-management) and can grant and revoke access to all resources and identities in the account by [updating the trust relationship](/docs/account?topic=account-trusted-profile-update&interface=ui#trust). They can also manage all administrator access across the account.
-{: tip}
+You can assign administrator access to everything in an account by creating an access group and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. To create the second policy, select **All Account Management services** with the Administrator role assigned. Users with the Administrator role can change the access and remove access groups and add and remove users from an access group, including other users with the administrator role.
+
+Users with the Administrator role on access groups can grant or revoke access by adding or removing users from an access group. By creating an access group with administrator access, you are delegating the granting and revoking of administrator access of the account to the added administrators of the access group. Administrator access to everything in the account includes the ability to revoke access for other users with the administrator role.
+{: note}
 
 The following diagram shows how access is assigned to resource groups:
 
@@ -154,8 +156,10 @@ The following diagram shows how access is assigned to trusted profiles:
 
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
-You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. For the second policy, select **All Account Management services** with the Administrator role assigned. Users in this access group have administrator access on the [IAM Access Groups service](/docs/account?topic=account-account-services&interface=ui#access-groups-account-management) and can grant or revoke access to all resources and identities in the account by adding or removing users from the access group. They can also manage all administrator access across the account.
-{: tip}
+You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. For the second policy, select **All Account Management services** with the Administrator role assigned. Users with the Administrator role can update and remove trusted profile's access and add and remove users from the trusted profile, including other users with the administrator role.
+
+Users with the Administrator role on trusted profiles can grant or revoke access by adding or removing rules from trusted profiles. By creating a trusted profile with administrator access, you are delegating the granting and revoking of administrator access of the account to the added administrators of the trusted profile. Administrator access to everything in the account includes the ability to revoke access for other users with the administrator role.
+{: note}
 
 ### Sample access policies
 {: #sample_policies_tp}
@@ -204,6 +208,8 @@ If you have administrator access through a trusted profile, it is not recommende
 ## Use cases for organizing resources and assigning access
 {: #usecase_examples}
 
+
+
 Review the following use cases to help you prepare a plan that works for your organization. For each use case, it is recommended to use either access groups or trusted profiles to provide access to a group of users while maintaining a minimal number of access policies. By using access groups, you can simply add or remove users in your account from the access groups to assign or revoke access as needed. By using trusted profiles, you can easily update the conditions by which federated users from your corporate user directory are allowed to apply trusted profiles without having to invite them to the account or assign individual access to each user.
 
 ### Multiple users working together on a single project by using access groups
@@ -235,7 +241,7 @@ You have two functional projects in your account. Developers working on a projec
 
 Flexibility is important, and with IAM, you can share resources between various groups. Let's say you notice that a resource might work well for both projects. You can share a resource between the two projects by tagging the resource and relying on the existing permissions to grant access to the developers. If a project doesn't require a resource anymore, you can simply revoke the developers' access by detaching the appropriate tag from the service instance. Check out the following video to gain a better understanding of how you can use access management tags to manage access to the resources in your account.
 
-![Controlling access by using tags in {{site.data.keyword.cloud}}](https://cdnapisec.kaltura.com/html5/html5lib/v2.101/mwEmbedFrame.php/p/1773841/uiconf_id/27941801/entry_id/1_sgd6xxi4?wid=_1773841&iframeembed=true&entry_id=1_sgd6xxi4){: video output="iframe" data-script="#video-transcript-tags" id="mediacenter-player" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
+![Controlling access by using tags in {{site.data.keyword.cloud}}](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_sgd6xxi4){: video output="iframe" data-script="#video-transcript-tags" id="mediacenter-player" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
 
 #### Video transcript
 {: #video-transcript-tags}

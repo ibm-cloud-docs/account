@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2021, 2024
+  years: 2021, 2023
 
-lastupdated: "2024-04-05"
+lastupdated: "2023-08-14"
 
 keywords: frequently asked questions, cbr faqs, cbr and iam, context-based restrictions, access restrictions
 

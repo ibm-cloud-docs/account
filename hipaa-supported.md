@@ -10,8 +10,12 @@ subcollection: account
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
-
+{:shortdesc: .shortdesc}
+{:external: target="_blank" .external}
+{:important: .important}
+{:tip: .tip}
+{:note: .note}
+{:term: .term}
 
 
 # Enabling HIPAA support for your account
@@ -37,9 +41,11 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 2. For the HIPAA Supported option, click **On**.
 3. Read the information about enabling this setting.
 
-   You can't disable the setting after you enable it.
-   {: important}
+    You can't disable the setting after you enable it.
+    {: important}
 
 4. Select **Accept**, and click **Submit**.
 
-After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.Bluemix_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**.
+    After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.Bluemix_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**. 
+
+

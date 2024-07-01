@@ -1,8 +1,9 @@
 ---
 
+
 copyright:
   years: 2021, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-02"
 
 keywords: software instance, logs, delete, resource list, operator, operator bundle
 
@@ -24,7 +25,7 @@ After you install an Operator from the {{site.data.keyword.cloud}} catalog, you 
 
 The details page for your software instance includes information about the installed version, deployment target, pricing plan, and so on. To view details about your software instance, complete the following steps:
 
-1. Go to the **Navigation menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**.
+1. Go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**.
 1. Expand **Services and software**.
 1. Click the name of your software instance.
 
@@ -113,6 +114,7 @@ You can rename your software instance by using Terraform.
       terraform apply
       ```
       {: pre}
+
 
 ## Deleting your software instance by using Terraform
 {: #sw-delete-terraform}

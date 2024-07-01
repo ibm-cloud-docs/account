@@ -1,7 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2024
+
+  years: 2017, 2023
 
 lastupdated: "2024-04-17"
 
@@ -24,7 +25,7 @@ IAM enables you to securely authenticate users for platform services and control
 
 You can use [trusted profiles](/docs/account?topic=account-create-trusted-profile) to automate the grouping and granting of access to users, services, and app identities. By specifying conditions based on SAML attributes for users whose identity is federated from your external identity provider (IdP), users can be granted access to resources without having to be invited to the account if they meet those conditions. For service and app identities, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or managing the API key lifecycle for applications.
 
-![IAM access control in an account](images/tp-in-ag-access-diagram.svg){: caption="Figure 1. How IAM access works in an account by using access groups. Service IDs and select {{site.data.keyword.cloud_notm}} can also assume trusted profiles." caption-side="bottom"}
+![IAM access control in an account](images/tp-in-ag-access-diagram.svg){: caption="Figure 1. How IAM access works in an account by using access groups. Service IDs and select {{site.data.keyword.cloud_notm}} can also asssume trusted profiles." caption-side="bottom"}
 
 For classic infrastructure that doesn't support the use of {{site.data.keyword.cloud_notm}} IAM policies for managing access, you can use the [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra) documentation.
 {: note}
@@ -99,7 +100,7 @@ By using trusted profiles, you can define fine-grained authorization for all app
 ### Enterprise-managed IAM templates for centrally managing access in enterprises
 {: #enterprise-templates-feature}
 
-Your enterprise can easily scale access management and ensure consistent account security settings throughout the organizaiton by using enterprise-managed IAM templates. You can create templates for IAM resources like access groups, trusted profiles, and account security settings that you assign throughout the enterprise. When you assign an IAM template to child accounts, enterprise-managed IAM resources are created in the child accounts that you select.
+Your enterprise can easily scale access management and ensure consistent account security settings throughout the organizaiton by using enterprise-managed IAM templates. You can create templates for IAM resources like access groups, trusted profiles, and account security settings that you assign throughout the enterprise. When you assign an IAM template to child accounts, enterprise-managed IAM resources are created in the child accounts you select.
 
 For example, there might be a certain job role in every child account that requires the same permissions. You can create an access group template with the necessary access polices and assign the template to all of the child accounts in your enterprise. This way, you reduce policy drift and can be certain that users with that job role have only the access that is necessary in each account.
 

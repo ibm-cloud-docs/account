@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2024
 
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-05"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -30,8 +30,8 @@ To review and end active sessions to help maintain the security of your account,
 If you have the following access, you can update the settings for login sessions:
 
 * Account owners
-* Editor or administrator role on all account management services
-* Editor or administrator role on IAM identity service
+* Editor or admin role on all account management services
+* Editor or admin role on IAM identity service
 
 If a user is a member of multiple accounts, the lowest value of each setting is applied to their session. For example, let's say a user is a member of two accounts: `dev account` and `test account`. If `dev account` has a 15 minute inactivity timeout, and `test account` has a 30 minute inactivity timeout, the 15 minute inactivity timeout is applied to both accounts.
 {: note}
@@ -91,7 +91,6 @@ To update your user's active sessions settings by using terraform, complete the 
       terraform apply
       ```
       {: pre}
-
 
 For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_account_settings#allowed_ip_addresses).
 

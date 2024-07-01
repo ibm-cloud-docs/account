@@ -23,7 +23,7 @@ By default, all IP addresses can be used to log in to the {{site.data.keyword.cl
 ## Before you begin
 {: #before-allowing-ips}
 
-* When an IP address restriction is defined for both the account and the user, the IP address needs to match both specifications to be able to generate an IAM token.
+* If an IP address restriction is defined for both the account and the user, the IP address needs to match both specifications to be able to generate an IAM token.
 * When you allow only specific IP addresses to access an {{site.data.keyword.cloud_notm}} account, users can't access the {{site.data.keyword.cloud_notm}} Shell CLI. This is because the Cloud Shell is hosted on a shared platform that can't satisfy the IP address allowlist.
 
 ## Allowing specific IP addresses for a user
@@ -53,6 +53,8 @@ To restrict a user to using only specific IP addresses, complete the following s
 To enter a classic infrastructure IP address, the user must have already created a classic infrastructure API key.
 {: note}
 
+
+
 ## Allowing specific IP addresses for an account
 {: #ips_account}
 {: ui}
@@ -63,13 +65,12 @@ If you are assigned the following access, you can update the restricted IP addre
 
 To restrict all users to using only specific IP addresses, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
-1. From the Account section, enable the **IP address access** setting.
+1. From the Account section, enabled the **IP address access** setting.
 1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
    You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Make sure to use IPv4 or IPv6 addresses, and to separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
    {: note}
 
 1. Click **Save**.
-
 
 ## Allowing specific IP addresses for an account by using Terraform
 {: #ips_account_terraform}

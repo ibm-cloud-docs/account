@@ -56,6 +56,7 @@ The following H2s and H3s are going to be reused in several different topics tha
 * Paragraph - Intro to **String comparisons** is used in the following files:
    * known-issues.md
    * iam-wildcard.md
+   * iam-condition-properties.md
 
 {{site.data.content.string-compare-intro-reuse}}
 
@@ -65,7 +66,6 @@ The following table lists the string comparison operators that you can use to bu
 * Table - **String comparisons** is used in the following files:
    * known-issues.md
    * iam-wildcard.md
-   * iam-condition-properties.md
 
 {{site.data.content.string-compare-table-reuse}}
 

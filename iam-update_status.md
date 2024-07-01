@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-01-24"
+  years: 2018, 2023
+lastupdated: "2023-11-27"
 
 keywords: user state, user status, change user status, update user status
 
@@ -26,7 +26,7 @@ If you have the following access, you can update the status of another user:
 
 All account users are assigned a status that describes their user state. A user's status is displayed on the User details page.
 
-| User state                      | Description                                                                                                                                                   |
+| User State                      | Description                                                                                                                                                   |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Active                          | The user accepted the invitation and has the assigned access to work within the account.                                                                      |
 | Disabled classic infrastructure | The account owner or a user with sufficient permissions can set another user as disabled so that the user can no longer access classic infrastructure resources. The user can continue to log in to the console and access platform resources or support cases. |

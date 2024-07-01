@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2024
 
-lastupdated: "2024-05-18"
+lastupdated: "2024-05-01"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -22,10 +22,10 @@ As a federated user that uses a corporate or enterprise single sign-on ID, you c
 
 By using federated IDs, you don't need to set up new login credentials specific to {{site.data.keyword.cloud_notm}}, for example, by using IBMid. Instead, users in your organization can easily log in to {{site.data.keyword.cloud_notm}} with their organization credentials through your identity provider (IdP).
 
-Google login isn't available for users with federated IDs. IBMid ensures that federated IDs are always authenticating using the configured customer's Identity Provider without bypassing this authentication. This way, corporate customers can be sure that their security standard is always applied when their users log in to {{site.data.keyword.cloud_notm}}. 
-{: note}
-
 When a user logs in, the user gets an IAM token, which is a temporary credential that expires after 1 hour. After that time, the token must be refreshed to secure the connection and to continue accessing account resources to which they are assigned access. For more information about using federated IDs, see [Setting up your {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-account-getting-started).
+
+Google login isn't available for users with federated IDs. For more information, see [known issues and limitations](/docs/account?topic=account-known-issues&interface=ui). 
+{: note}
 
 ## Using the console to log in
 {: #login_console}

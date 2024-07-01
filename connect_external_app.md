@@ -45,7 +45,7 @@ If you want to delete service instances or check the billing information, you mu
 {: #externalapp-api}
 {: api}
 
-1. Create an instance of the service by calling [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request:
+1. Create an instance of the service by calling [Resource Controller API](/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request:
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>' -H 'Content-Type: application/json' -d '{
@@ -99,11 +99,11 @@ If you want to delete service instances or check the billing information, you mu
 
    ```python
    resource_instance = resource_controller_service.create_resource_instance(
-      name=resource_instance_name,
-      target=target_region,
-      resource_group=resource_group,
-      resource_plan_id=resource_plan_id
-   ).get_result()
+    name=resource_instance_name,
+    target=target_region,
+    resource_group=resource_group,
+    resource_plan_id=resource_plan_id
+    ).get_result()
 
    print('\ncreate_resource_instance() response:\n',
         json.dumps(resource_instance, indent=2))
@@ -131,7 +131,7 @@ If you want to delete service instances or check the billing information, you mu
    {: go}
 
 2. Retrieve or create credentials (resource key).
-   * To create new credentials, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example.
+   * To create new credentials, call the [Resource Controller API](/apidocs/resource-controller/resource-controller#create-resource-key){: external} as shown in the following example.
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_keys -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json' -d '{
@@ -220,7 +220,7 @@ If you want to delete service instances or check the billing information, you mu
    {: codeblock}
    {: go}
 
-   * To retrieve service credentials, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
+   * To retrieve service credentials, call the [Resource Controller API](/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
 
    ```bash
    curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys/23693f48-aaa2-4079-b0c7-334846eff8d0 -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -290,24 +290,24 @@ If you want to delete service instances or check the billing information, you mu
 
 The following services provide service keys for you to use externally:
 
-* {{site.data.keyword.alertnotificationshort}}
-* {{site.data.keyword.sparks}}
-* {{site.data.keyword.blockchain}}
-* {{site.data.keyword.discoveryshort}}
-* {{site.data.keyword.messagehub}}
-* {{site.data.keyword.geospatialshort_Geospatial}}
-* {{site.data.keyword.GlobalizationPipeline_short}}
-* {{site.data.keyword.appconserviceshort}}
-* {{site.data.keyword.cloudant}}
-* {{site.data.keyword.languagetranslatorshort}}
-* {{site.data.keyword.dwl_short}}
-* {{site.data.keyword.nlclassifiershort}}
-* {{site.data.keyword.objectstorageshort}}
-* {{site.data.keyword.personalityinsightsshort}}
-* {{site.data.keyword.mobilepush}}
-* {{site.data.keyword.speechtotextshort}}
-* {{site.data.keyword.streaminganalyticsshort}}
-* {{site.data.keyword.texttospeechshort}}
-* {{site.data.keyword.toneanalyzershort}}
-* {{site.data.keyword.conversationshort}}
-* {{site.data.keyword.workloadscheduler}}
+* {{site.data.keyword.alertnotificationshort}} 
+* {{site.data.keyword.sparks}} 
+* {{site.data.keyword.blockchain}} 
+* {{site.data.keyword.discoveryshort}} 
+* {{site.data.keyword.messagehub}} 
+* {{site.data.keyword.geospatialshort_Geospatial}} 
+* {{site.data.keyword.GlobalizationPipeline_short}} 
+* {{site.data.keyword.appconserviceshort}} 
+* {{site.data.keyword.cloudant}} 
+* {{site.data.keyword.languagetranslatorshort}} 
+* {{site.data.keyword.dwl_short}} 
+* {{site.data.keyword.nlclassifiershort}} 
+* {{site.data.keyword.objectstorageshort}} 
+* {{site.data.keyword.personalityinsightsshort}} 
+* {{site.data.keyword.mobilepush}} 
+* {{site.data.keyword.speechtotextshort}} 
+* {{site.data.keyword.streaminganalyticsshort}} 
+* {{site.data.keyword.texttospeechshort}} 
+* {{site.data.keyword.toneanalyzershort}} 
+* {{site.data.keyword.conversationshort}} 
+* {{site.data.keyword.workloadscheduler}} 

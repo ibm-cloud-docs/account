@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2024
+  years: 2019, 2022
 
-lastupdated: "2024-01-19"
+lastupdated: "2022-12-19"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -25,18 +25,19 @@ These special access groups include all of the appropriate IAM policies to prese
 After your classic infrastructure permissions are migrated, you must discontinue use of those permissions and stop using the SoftLayer CLI or API to manage them. See the following table for the migrated classic infrastructure permissions that are now a part of IAM access groups. Access groups are created only for the permissions that are already assigned to users, so you might notice a subset of the access groups that are in your account that is listed in the following table.
 {: note}
 
-You can continue to manage these migrated classic infrastructure permissions for users directly through IAM by adding and removing users from the access groups. The access group policies are locked to preserve the access behavior for their members. However, you might find it helpful to create new access groups that include a combination of access policies for the [account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles). The following table outlines the details of an IAM access policy that includes the permission from the migrated permission access group so that you can re-create and even combine these permissions with others in a new access group.
+You can continue to manage these migrated classic infrastructure permissions for users directly through IAM by adding and removing users from the access groups. The access group policies are locked to preserve the access behavior for their members. However, you might find it helpful to create new access groups that include a combination of access policies for the [account management services](/docs/account?topic=account-account-services). The following table outlines the details of an IAM access policy that includes the permission from the migrated permission access group so that you can re-create and even combine these permissions with others in a new access group.
 
-| Migrated permission access group name | Description | Account management service | IAM role |
-|---------------------------------------|-------------|----------------------------|----------|
-| View account summary | View the account summary page, invoices, and payments | Billing | Viewer |
-| Get compliance reports | Request compliance reports | Billing | Viewer |
-| Edit company profile | Edit the company profile information | Billing | Editor |
-| Update payment details | Update the recurring monthly payment information | Billing | Editor |
-| Limit EU case restriction | Enable or disable the EU Supported option to restrict support case data to the European Union | Billing | Not applicable |
-| Add cases and view orders | Create support cases and view all orders | Support Center | Editor |
-| View cases | View all support cases | Support Center and User Management | Viewer |
-| Search cases | Search all support cases if permission to view cases is assigned | Support Center | Viewer |
+| Migrated Permission Access Group Name | Description                                                                                    | Account Management Service         | IAM Role       |
+|---------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------|----------------|
+| View account summary                  | View the account summary page and invoices and payments.                                       | Billing                            | Viewer         |
+| Get compliance reports                | Request compliance reports.                                                                    | Billing                            | Viewer         |
+| Edit company profile                  | Edit the company profile information.                                                          | Billing                            | Editor         |
+| Update payment details                | Update the recurring monthly payment information.                                              | Billing                            | Editor         |
+| Limit EU case restriction             | Enable or disable the EU Supported option to restrict support case data to the European Union. | Billing                            | Not applicable |
+| Add cases and view orders             | Create support cases and view all orders.                                                      | Support Center                     | Editor         |
+| Edit cases                            | Edit any support case.                                                                         | Support Center                     | Editor         |
+| Search cases                          | Search all support cases if the view cases permission is also assigned.                        | Support Center                     | Viewer         |
+| View cases                            | View all support cases.                                                                        | Support Center and User Management | Viewer, Viewer |
 {: caption="Table 1. Migrated infrastructure permissions that are mapped to IAM roles" caption-side="top"}
 
 For the view cases access, create two separate policies with the viewer role for the Support Center and User Management services. The policy on the User Management service ensures that the user views all cases in the account regardless of who opened them. Without the policy on the User Management service, if the account owner has restricted users' ability to view other users in the account, the user's view of cases might be limited to only the ones they opened themselves.
@@ -47,7 +48,7 @@ For the view cases access, create two separate policies with the viewer role for
 
 To re-create the migrated permissions that are available in each access group, you can assign policies to individual users or create new access groups in your account. The benefit of creating a new access group is that you can choose to combine a set of permissions for one access group rather than manage a set of access groups with a granular scope of access set for each. For this example, the steps explain how to create a new access group and assign an equivalent access policy for viewing the account summary and viewing all support cases.
 
-Re-creating these permissions by assigning new IAM access policies for the account management services might include permissions in addition to the single permission that is available in the migrated permission access group. For example, if you assign a user the viewer role on the Billing service, that user can do more than view the account summary. For a full list of the actions that are allowed for each role, see [Assigning access to account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+Re-creating these permissions by assigning new IAM access policies for the account management services might include permissions in addition to the single permission that is available in the migrated permission access group. For example, if you assign a user the viewer role on the Billing service, that user can do more than view the account summary. For a full list of the actions that are allowed for each role, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 {: important}
 
 To create an access group, complete the following steps:

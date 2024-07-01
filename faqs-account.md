@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-04-15"
+lastupdated: "2024-06-10"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -122,10 +122,9 @@ When you add a credit card to your trial account, your account is upgraded to a 
 
 If there's any way that we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
-To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items, and then create a support case. A support case is required for account security and documentation purposes. For steps and more information, see [Closing an account](/docs/account?topic=account-account-close).
+To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items. A support case is required to close a Subscription account for account security and documentation purposes. You can close a Pay-As-You-Go account in the {{site.data.keyword.Bluemix_notm}} console. For steps and more information, see [Closing an account](/docs/account?topic=account-account-close).
 
 To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. After an account is closed for 30 days, all data is deleted and all services are removed.
-
 
 
 ## Can I log in to the console with my SoftLayer ID?
@@ -252,7 +251,7 @@ Go to the [Account settings](/account/settings) page in the console to view your
 The account owner, organization manager, or a user with the correct permissions can invite you to join their account.
 
 * If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need.
-* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command.
+* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#accept-invitation-to-join-a-new-account-) command.
 
 ## Can I switch between multiple accounts?
 {: #switch-between-accounts}
@@ -387,7 +386,6 @@ You can't edit the default dashboard directly. However, you can create a duplica
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functions, which get built and added over time. This way, you can always bring out the most of your workflow.
 
 You can also switch between the duplicate and original versions by selecting each one from your list of dashboards that's displayed on your active dashboard.
-
 
 ## Why do I get logged out of my account?
 {: #user-session-log-out}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-04-08"
+lastupdated: "2024-01-30"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates
 

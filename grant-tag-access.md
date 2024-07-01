@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2023
-lastupdated: "2023-06-01"
+lastupdated: "2023-05-02"
 
 keywords: tagging, enabling others to tag, tagging permissions
 

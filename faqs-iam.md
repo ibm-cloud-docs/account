@@ -202,8 +202,8 @@ Service and platform roles are two different types of roles:
 
 To assign a user in your account full administrator access, go to **Manage > Access (IAM)** in the console, select the user's name, and assign the following access:
 
-* An IAM policy with Administrator and Manager roles on **All Identity and Access enabled services**, which enable a user to create service instances and assign users access to all resources in the account.
-* An IAM policy with Administrator role on **All account management services**, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog products, and track billing and usage.
+* An IAM policy with Administrator and Manager roles on All Identity and Access enabled services, which enable a user to create service instances and assign users access to all resources in the account.
+* An IAM policy with Administrator role on All account management services, which enables a user to complete tasks like inviting and removing users, managing access groups, managing service IDs, managing private catalog products, and track billing and usage.
 
 * The Super user permission set for classic infrastructure, which includes all of the available classic infrastructure permissions
 
@@ -228,9 +228,9 @@ No. You can invite users, and then assign access later.
 {: #pending-user}
 {: faq}
 
-A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation.
+A user who is list as `Pending` is a user who has been invited to {{site.data.keyword.cloud_notm}} but who hasn't accepted their invitation. On the Users page, the management actions for these users include resending the invitation or cancelling the invitation. 
 
-When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access. When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
+When inspecting access group memberships or access policies in your account, you might see memberships or policies that are related to pending users that were created as part of the invite. These display with an IAM ID that uses the `BSS-`. This IAM ID is a placeholder for the memberships and policies until the user accepts the invitation. And, since the user hasn't registered with {{site.data.keyword.cloud_notm}}, they can't retrieve an IAM access token to leverage the assigned access. When the user accepts the invitation and registers with {{site.data.keyword.cloud_notm}}, the ID in these memberships and policies is replaced with their assigned IAM ID.
 
 
 ## How do I add authentication into my web and mobile apps?
@@ -313,7 +313,7 @@ To create a user API key, your IAM ID and the IAM ID of the user that's requesti
 To check whether a user qualifies to apply a trusted profile by using the IBMid identity provider (IdP), the user and the administrator must complete specific steps.
 
 
-1. The user must go to [{{site.data.keyword.cloud_notm}} User Claims](https://identity-2.us-south.iam.cloud.ibm.com/identity/claims?realm_id=IBMid){: external}.
+1. The user must go to [{{site.data.keyword.cloud_notm}} User Claims](https://identity-1.us-south.iam.cloud.ibm.com/identity/claims?realm_id=IBMid){: external}.
 1. From here, the claims are displayed.
 1. The user must provide the claims to the administrator.
 1. As the administrator, compare the claims of the user with the conditions set for the trusted profile. To view the conditions for a trusted profile, go to **Manage** > **Access (IAM)** > **Trusted profiles** in the {{site.data.keyword.cloud_notm}} console.

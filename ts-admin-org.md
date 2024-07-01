@@ -1,24 +1,23 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-02-25"
+  years: 2015, 2020
+lastupdated: "2020-04-06"
 
-keywords: troubleshoot account, account problem, view all orgs
+keywords: troubleshoot account, account problem, view all orgs 
 subcollection: account
 
 content-type: troubleshoot
+
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Why can't administrators use the console to view all orgs?
 {: #ts_ui_org}
 {: troubleshoot}
 
 As an administrator, you can't display every organization to administer them when you use the {{site.data.keyword.Bluemix_notm}} console. You can display and administer only those organizations to which you belong.
-{: shortdesc}
 
 As an administrator, you can't view all the organizations from the console.
 {: tsSymptoms}

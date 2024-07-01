@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2021, 2024
+  years: 2021, 2022
 
-lastupdated: "2024-01-05"
+lastupdated: "2022-12-19"
 
 keywords: troubleshooting software, troubleshooting resources, software, operator, private registry, Red Hat, Quay
 
@@ -17,12 +17,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Why can't I pull an Operator bundle from my private registry?
 {: #ts-swinstance-registry}
 {: troubleshoot}
 
-If you can't pull an Operator bundle from a private registry when you try to onboard it, check that you are using a supported private registry.
+If you can't pull an Operator bundle from a private registry when you try to add it to your private catalog, check that you are using a supported private registry.
 {: shortdesc}
 
 When you try to pull an Operator bundle from a private registry, the following error message is displayed:
@@ -33,5 +32,5 @@ When you try to pull an Operator bundle from a private registry, the following e
 This problem occurs if the Operator bundle is in a private registry that {{site.data.keyword.cloud}} cannot contact.
 {: tsCauses}
 
-Move your Operator bundle to a support registry and try to pull the bundle again. The supported registries are [Red Hat Quay.io](https://quay.io/){: external} and [Red Hat registry](https://catalog.redhat.com){: external}.
+Move your Operator bundle to a support registry and try to pull the bundle again. The supported registries are [Red Hat Quay.io](https://quay.io/){: external} and [Red Hat registry](https://registry.connect.redhat.com){: external}.
 {: tsResolve}

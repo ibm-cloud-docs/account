@@ -1,11 +1,9 @@
 ---
 
-
-
 copyright:
 
   years: 2020, 2024
-lastupdated: "2024-02-19"
+lastupdated: "2024-01-02"
 
 keywords: delete resource group, resource group, manage resource groups
 
@@ -14,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Deleting a resource group
 {: #delete_rgs}
@@ -40,7 +37,6 @@ To delete a resource group that doesn't contain resources and is not your defaul
 ```bash
 ibmcloud resource group-delete example-group -f
 ```
-{: codeblock}
 
 ## Deleting a resource group by using the API
 {: #delete-rg-api}
@@ -147,4 +143,3 @@ You can also delete a resource group by running the following `terraform destroy
 ```terraform
 terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
 ```
-{: pre}
