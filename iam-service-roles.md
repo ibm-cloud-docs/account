@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-07-02"
+lastupdated: "2024-07-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3873,6 +3873,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.smtp-user.update` | This action is to update a user within an SMTP configuration | Administrator, Manager, SMTP Manager, Writer |
 | `event-notifications.smtp-user.delete` | This action is to delete a user within an SMTP configuration | Manager, SMTP Manager, Writer |
 | `event-notifications.smtp-config.enable` | This internal API is to manage EN Authorization  | Pool ID Manager |
+| `event-notifications.metrics.read` | This API is to get metrics for resources in Event Notifications | Administrator, Manager, Reader, Writer |
 {: caption="Table 58. Service actions - Event Notifications" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="event-notifications"}
