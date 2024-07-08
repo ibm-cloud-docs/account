@@ -57,7 +57,7 @@ https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?
 
 curl -g -u $SL_USER:$SL_APIKEY 'https://api.softlayer.com/rest/v3.1/SoftLayer_Event_Log/getAllObjects.json?objectMask=mask[eventName,eventCreateDate,userType]&resultLimit=0,50'
 
-The output will look something like this, in this case just the first event in the list:
+The output looks something like this, in this case just the first event in the list:
 
 [
     {

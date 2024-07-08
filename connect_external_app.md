@@ -220,7 +220,7 @@ If you want to delete service instances or check the billing information, you mu
    {: codeblock}
    {: go}
 
-   * To retrieve service credentials, call the [Resource Controller API](/apidocs/resource-controller/resource-controller#get-resource-key) as shown in the following example request and pass the ID associated with the instance.
+   * To retrieve service credentials, call the [Resource Controller API](/apidocs/resource-controller/resource-controller#get-resource-key){: external} as shown in the following example request and pass the ID associated with the instance.
 
    ```bash
    curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys/23693f48-aaa2-4079-b0c7-334846eff8d0 -H 'Authorization: Bearer <IAM_TOKEN>'
