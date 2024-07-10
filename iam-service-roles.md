@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-07-04"
+lastupdated: "2024-07-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -572,6 +572,17 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.configaggregatorsettings.list` | Retrieve the settings for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
 | `apprapp.configaggregatorstatus.list` | Retrieve the status of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
 | `apprapp.configaggregator.query` | Query API to retrieve resource metadata from Config Aggregator | Configuration Aggregator Reader |
+| `apprapp.metrics.list` | The ability to see metrics. | Config Operator, Manager, Reader, Writer |
+| `apprapp.metrics.create` | The ability to create metrics. | Manager |
+| `apprapp.metrics.update` | The ability to edit or update existing metrics. | Manager |
+| `apprapp.metrics.delete` | The ability to delete existing metrics. | Manager |
+| `apprapp.experiments.list` | The ability to see experiments. | Config Operator, Manager, Reader, Writer |
+| `apprapp.experiments.create` | The ability to create experiments. | Manager |
+| `apprapp.experiments.update` | The ability to edit or update existing experiments. | Manager |
+| `apprapp.experiments.delete` | The ability to delete existing experiments. | Manager |
+| `apprapp.iterations.list` | The ability to view iterations of an experiment. | Config Operator, Manager, Reader, Writer |
+| `apprapp.analytics.create` | The ability to submit featureflag evaluation & metric events for an ongoing experiment. | Client SDK, Config Operator, Manager, Reader, Writer |
+| `apprapp.analytics.list` | The ability to view or download the metadata associated with the experiment. | Manager |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
