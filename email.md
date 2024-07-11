@@ -133,7 +133,7 @@ The invitations expire after 30 days. New users to {{site.data.keyword.cloud_not
 ## Managing marketing communications
 {: #marcom-notifications}
 
-You might receive notifications about significant technical enhancements, changes to the terms of service, plan changes, pricing changes, and the future removal of a product from the {{site.data.keyword.Bluemix_notm}} catalog. With a few exceptions, these announcements are published to the [{{site.data.keyword.Bluemix_notm}} blog](https://www.ibm.com/cloud/blog/announcements){: external}.
+You might receive notifications about significant technical enhancements, changes to the terms of service, plan changes, pricing changes, and the future removal of a product from the {{site.data.keyword.Bluemix_notm}} catalog. With a few exceptions, these announcements are published to the [{{site.data.keyword.Bluemix_notm}} blog](https://www.ibm.com/blog/announcements/){: external}.
 
 Use the following steps to update your preferences:
 

@@ -96,7 +96,7 @@ The following links help you implement the federation that you choose:
 [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}.
 :   The publicly available IBMid federation guide gives you an overview about the steps that are required to federate your Identity Provider and whom to contact to get the federation implemented. Be aware that you need an "IBM Sponsor" (for example, an {{site.data.keyword.IBM_notm}} employee that works as main contact between you and the IBMid team).
 
-[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/cloud/blog/announcement/ibm-cloud-self-service-federation-for-external-identity-providers){: external}.
+[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/products){: external}.
 :   Announcement for the {{site.data.keyword.Bluemix_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}}.
 
 [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration)
