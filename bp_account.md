@@ -45,7 +45,7 @@ A default resource group is created for your account. If you have a Lite account
 ### Searching for resources
 {: #tags}
 
-You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv).
+You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv&interface=ui).
 
 For more information, see [Working with tags](/docs/account?topic=account-tag).
 

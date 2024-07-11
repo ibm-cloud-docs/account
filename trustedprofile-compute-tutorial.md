@@ -3,7 +3,7 @@
 copyright:
   years: 2021, 2024
 
-lastupdated: "2024-07-01"
+lastupdated: "2024-07-11"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account
@@ -93,7 +93,7 @@ Now, you can create an access policy to give your compute resource instance acce
 ## Next steps
 {: #iam-compute-next}
 
-To learn more about establishing trust with a Kubernetes cluster, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/cloud/blog/using-trusted-profiles-in-your-kubernetes-and-openshift-clusters){: external}. To learn how to use trusted profiles with VPC virtual server instances, see [Introducing Trusted Profiles for VPC Virtual Server Instances]([https://www.ibm.com/cloud/blog/introducing-trusted-profiles-for-vpc-virtual-server-instances](https://www.ibm.com/blog/introducing-trusted-profiles-for-vpc-virtual-server-instances/){: external}.
+To learn more about establishing trust with a Kubernetes cluster, see [Using Trusted Profiles in your Kubernetes and OpenShift Clusters](https://www.ibm.com/products){: external}. To learn how to use trusted profiles with VPC virtual server instances, see [Introducing Trusted Profiles for VPC Virtual Server Instances](https://www.ibm.com/blog/introducing-trusted-profiles-for-vpc-virtual-server-instances/){: external}.
 
 Now that you learned the basics of how to create a trusted profile, you can continue to establish trust with additional compute resources. For more information, see [Updating trusted profiles](/docs/account?topic=account-trusted-profile-update).
 
