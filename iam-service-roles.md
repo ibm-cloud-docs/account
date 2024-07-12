@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-07-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1151,6 +1151,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Data Provider | Role assigned to external Provider to push Compliance data to SCC |
+| Instance Viewer | View Security and Compliance Center instances |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
