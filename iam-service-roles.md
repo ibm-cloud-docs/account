@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-07-12"
+lastupdated: "2024-07-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1823,8 +1823,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/replication` | Retrieve replication status | Administrator, Editor, Operator, Viewer |
 | `PUT /v5/:platform/deployments/:deployment_id/replication/:id` | Activate/deactivate replication | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/encryption` | Retrieve wired encryption status | Administrator, Editor, Operator, Viewer |
-| `PUT /v5/:platform/deployments/:deployment_id/encryption/:action` | Enable/disable wired encryption | Administrator, Editor, Operator |
+| `GET /v5/:platform/deployments/:deployment_id/encryption` | Retrieve wired encryption status | Administrator, Editor, Operator, Viewer |
+| `PUT /v5/:platform/deployments/:deployment_id/encryption/:id` | Enable/disable wired encryption | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/user_policy` | Create user policy | Administrator, Editor, Operator |
 | `PATCH /v5/:platform/deployments/:deployment_id/user_policy` | Update existing user policy | Administrator, Editor, Operator |
 | `DELETE /v5/:platform/deployments/:deployment_id/user_policy` | Delete existing user policy | Administrator, Editor, Operator |
