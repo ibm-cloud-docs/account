@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-02-16"
+lastupdated: "2024-07-17"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -17,7 +17,8 @@ subcollection: account
 # Invoking {{site.data.keyword.cloud_notm}} service APIs
 {: #iamapikeysforservices}
 
-To invoke an {{site.data.keyword.Bluemix}} service through an API, pass your credentials to the service's API to authenticate your user identity and your access to perform actions within the context of the service.
+
+To authorize applications and services to make API calls, pass your credentials to the service's API to authenticate your user identity and your access to perform actions within the context of the service.
 {: shortdesc}
 
 You can identify the caller in one of the following ways:
