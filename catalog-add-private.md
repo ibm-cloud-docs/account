@@ -37,14 +37,14 @@ The process to onboard software to your account includes importing a version to 
    * Operators with TGZ file from GitHub or GitLab repositories
    * Operator bundles from Red Hat OpenShift registries
 
-1. Upload your source code to a release in your GitHub or GitLab repository. See [Setting up your source code repository](/docs/sell?topic=sell-source-repo-setup).
+1. There is no requirement to upload your source code to a release on your GitHub or GitLab repository if you are deploying VSI on VPC. Instead, ensure you have a custom image ready and available in your account. See [Importing and validating custom images into VPC](/docs/vpc?topic=vpc-importing-custom-images-vpc&interface=ui). 
 
-1. Make sure you're assigned the following [IAM access](/docs/account?topic=account-groups):
+1. Make sure you are assigned the following [IAM access](/docs/account?topic=account-groups):
 
    * Manager role on the Schematics service
    * Editor role on the catalog management service
-   * Viewer role on all resource groups in your account
-   * Writer role on the {{site.data.keyword.secrets-manager_short}} service
+   * Viewer role on all resource groups in your account. You need access to at least one resource group to run the validation 
+   * Writer role on the {{site.data.keyword.secrets-manager_short}} service. This role is not required if you are using VSI on VPC
 
 1. Install the {{site.data.keyword.cloud_notm}} CLI and the {{site.data.keyword.bplong_notm}} plug-in. See [Setting up the CLI](/docs/schematics?topic=schematics-setup-cli) for more information.
 
