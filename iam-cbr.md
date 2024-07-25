@@ -28,7 +28,7 @@ Any {{site.data.keyword.cloudaccesstraillong_notm}} or audit log events generate
 To begin protecting your IAM resources with context-based restrictions, see the tutorial for [Leveraging context-based restrictions to secure your resources](/docs/account?topic=account-context-restrictions-tutorial).
 
 ## How IAM integrates with context-based restrictions
-{: #ia-cbr-overview}
+{: #iam-cbr-overview}
 {: ui}
 
 To protect a specific IAM service or the group of all IAM Account Management services, complete the following steps:
