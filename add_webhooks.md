@@ -20,9 +20,6 @@ subcollection: account
 In addition to adding email addresses, you can also add up to 10 webhooks to a [distribution list](/account/notifications-distribution-list){: external}. Account administrators can create and use webhooks to configure an application to receive asynchronous notifications whenever a platform event occurs. The registered webhooks send the information to the specified URL in the form of an HTTP POST request with a JSON payload. The content-type of the request is `application/json`.
 {: shortdesc}
 
-You can allowlist the ranges of IP addresses to restrict access to your servers that receive webhooks. For more information, see [Webhook IP addresses](/docs/account?topic=account-webhook-ips).
-{: tip}
-
 When you receive a notification through a webhook, a payload is being sent to your given webhook endpoint (URL), and informs you about all the details of an occurring event. See the following example:
 
 ```json
