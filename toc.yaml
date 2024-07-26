@@ -347,7 +347,7 @@ toc:
           label: Command reference
           topics:
           - include: ../cli/plugins/catalogs/manage-catalogs.md
-          - include: ../cli/reference/ibmcloud/cli_acct_org_role.md
+          - include: ../cli/reference/ibmcloud/cli_acct.md
           - include: ../cli/reference/ibmcloud/cli_enterprise.md
           - include: ../cli/reference/ibmcloud/cli_api_policy.md
           - include: ../cli/reference/ibmcloud/cli_catalog.md

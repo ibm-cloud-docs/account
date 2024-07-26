@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-06-10"
+lastupdated: "2024-07-26"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -107,7 +107,7 @@ If you upgrade your trial account to a Pay-As-You-Go account by entering a credi
 {: #convert-education}
 {: faq}
 
-When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational feature codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM SkillsBuild Software Downloads FAQs](https://www.ibm.com/academic/faqs/faqs){: external}.
+When you add a credit card to your trial account, your account is upgraded to a Pay-As-You-Go account. Educational feature codes can't be used in a Pay-As-You-Go account. In addition, a Pay-As-You-Go account can't be converted back to a trial account. For more information about educational trial accounts, see the [IBM SkillsBuild Software Downloads FAQs](https://www.ibm.com/academic/){: external}.
 
 ## Can I sign up for a trial at no cost?
 {: #freetrial}

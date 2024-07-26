@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2024
-lastupdated: "2024-06-11"
+lastupdated: "2024-07-22"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
@@ -312,6 +312,18 @@ You can programmatically attach tags by calling the [Global Search and Tagging -
    {: codeblock}
    {: go}
 
+### Updating key:value tags of a resource
+{: #attach-api-update}
+{: api}
+
+If you manage tags in the format `key:value`, you can update the value atomically, without first detach the `key:old-value` and attach the new `key:new-value`. To do so, use the `update` boolean query parameter. So, to update the tag `env` on a resource to the value `env:qa_test`, just add the `update=true` query parameter to your attach API call. See [Global Search and Tagging - Tagging API](/apidocs/tagging#attach-tag){: external} for more information about using the `update` query parameter.
+
+### Replacing all tags of a resource with a new set of tags
+{: #attach-api-replace}
+{: api}
+
+The attach operation results in adding tags to a resource in addition to what it might already have. There are cases where you need to replace the existing tags that are attached to a resource with a new set. To do so, use the `replace` boolean query parameter. So, to replace all tags on a resource with a new set of tags, just add the `replace=true` query parameter to your attach API call. See [Global Search and Tagging - Tagging API](/apidocs/tagging#attach-tag){: external} for more information about using the `replace` query parameter.
+
 ## Detaching tags from a resource by using the API
 {: #detach-api}
 {: api}
@@ -489,6 +501,34 @@ You can programmatically detach tags by calling the [Global Search and Tagging -
    When you detach an access management tag from a resource, any associated access policies are also detached from that resource.
    {: note}
 
+### Detaching all tags and detaching tags by key
+{: #detach-api-all}
+{: api}
+
+You can use the `*` wildcard to detach tags, which is useful to detach tags in the format `key:value`, and to detach all tags. For example, if you want to detach the `env` tag from a given resource, regardless of its value, you can run the following command:
+
+   ```bash
+   curl -X POST -H "Authorization: {iam_token}" \
+   -H "Accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d '{ "resources": [{ "resource_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::" }], "tag_names": ["env:*"] }' \
+   "https://tags.global-search-tagging.cloud.ibm.com/v3/tags/detach?tag_type=access"
+   ```
+   {: codeblock}
+   {: curl}
+
+If you want to detach all tags just use the `*` as tag_name or as the unique element in the `tag_names` array like in the following command:
+
+   ```bash
+   curl -X POST -H "Authorization: {iam_token}" \
+   -H "Accept: application/json" \
+   -H "Content-Type: application/json" \
+   -d '{ "resources": [{ "resource_id": "crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::" }], "tag_names": ["*"] }' \
+   "https://tags.global-search-tagging.cloud.ibm.com/v3/tags/detach?tag_type=access"
+   ```
+   {: codeblock}
+   {: curl}
+
 ## Attaching tags to a resource by using Terraform
 {: #attach-terraform}
 {: terraform}
@@ -500,15 +540,7 @@ Before you can attach tags to a resource by using Terraform, make sure that you 
 
 Use the following steps to attach tags to a resource by using Terraform:
 
-1. The following example attaches the `imb_tag` tag to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`.
-
-   ```terraform
-   resource "ibm_resource" "ibm" {
-   resource_id = ibm_satellite_location.location.crn
-   tags        = [ "ibm_tag" ]
-   }
-   ```
-   {: codeblock}
+1. Prepare your Terraform configuration file (e.g. main.tf) to attach a user tag to an existing resource in our account following the example documented at [ibm_resource_tag](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_tag) {: external}.
 
 1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
