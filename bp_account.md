@@ -202,9 +202,6 @@ For example, for the `CustApp` project, you might choose to create an `IAM Admin
 
 With this trusted profile, the administrator can add developers to an access group with broad access policies to complete day-to-day actions and tasks in the development and test environments. Access for operations on the production environment can be set up in a trusted profile named `Operator-Profile`. This way, the developer can change job roles by logging in and applying the `Operator-Profile` when they need to take any operation actions on the `CustApp` in production.
 
-If you have administrator access through a trusted profile, it is not recommended to invite users to an account while the profile is applied. Users should be invited by true account owners or administrators, or an error might occur.
-{: important}
-
 ## Use cases for organizing resources and assigning access
 {: #usecase_examples}
 
