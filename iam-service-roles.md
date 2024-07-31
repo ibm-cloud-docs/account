@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-07-30"
+lastupdated: "2024-07-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1640,6 +1640,8 @@ Review the available platform and service roles and the actions mapped to each t
 | CloudPak Data Engineer | Create or view governance artifacts. |
 | CloudPak Data Quality Analyst | CloudPak Data Quality Analyst |
 | CloudPak Data Scientist | Find data in catalogs and use data in projects. |
+| CloudPak Data Source Administrator | Create data source definitions and see a list of all connections across the account |
+| CloudPak Data Source Creator | Create data source definitions |
 | CloudPak Data Steward | Create or view governance artifacts and curate data into catalogs. |
 | Governance Artifacts Administrator | Manage governance artifacts |
 | Manager | Manage catalogs, governance artifacts, categories, and workflow. |
@@ -1673,6 +1675,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.data-quality.measure` | Execute data quality rules | CloudPak Data Quality Analyst, Manager |
 | `cp4d.data-quality.drill-down` | Drill down to issue details | CloudPak Data Quality Analyst, Manager |
 | `cp4d.catalog-assets-to-projects.add` | Users with this permission can add assets from a catalog to a project. Users must also have the Admin or Editor role in the catalog and the project, and must be asset owners or asset members. | Administrator, CloudPak Data Scientist, CloudPak Data Steward, Editor, Manager |
+| `cp4d.data-source-definitions.manage` | Create data source definitions and see a list of all connections across the account | CloudPak Data Source Administrator, Manager |
+| `cp4d.data-source-definitions.create` | Create data source definitions | CloudPak Data Source Creator, Manager |
 {: caption="Table 31. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
