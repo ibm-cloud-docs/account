@@ -61,10 +61,7 @@ You can search for the following attributes:
 `family`
 :   The cloud component to which your resource belongs. The allowed values are: `cloud_foundry`, `containers`, `container-registry`, `vmware`, `resource_controller`, `is`, `atracker`, `ims`, `iam`.
 
-`organization_id`
-:   The organization GUID.
-
-`doc.resource_group_id`
+`resource_group_id`
 :   The ID of the resource group.
 
 `type`
