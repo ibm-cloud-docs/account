@@ -47,7 +47,7 @@ To unsubscribe from the distribution list, use the link in the footer of any ema
 
 With {{site.data.keyword.en_full}}, you can choose to deliver your notifications to different destinations, including email, SMS, or webhooks. {{site.data.keyword.en_short}} is an alternative to the notification distribution list. It provides a way for you to be notified about critical events that occur in your account, and manage your notifications at scale. For more information, see [Getting started with Event Notifications](/docs/event-notifications?topic=event-notifications-getting-started).
 
-When an event of interest occurs on the {{site.data.keyword.Bluemix_notm}} platform and an event is generated, the notification distribution list communicates with a connected {{site.data.keyword.en_short}} instance to forward a notification to the supported destination. For more information about supported {{site.data.keyword.en_short}} destinations, see [Event destinations](/docs/event-notifications?topic=event-notifications-en-destination).
+When an event of interest occurs on the {{site.data.keyword.Bluemix_notm}} platform and an event is generated, the notification distribution list communicates with a connected {{site.data.keyword.en_short}} instance to forward a notification to the supported destination. For more information about supported {{site.data.keyword.en_short}} destinations, see [Event destinations](/docs/event-notifications?topic=event-notifications-en-destinations-push).
 
 ## Adding an {{site.data.keyword.en_short}} instance to the notification distribution list
 {: #event-notifications-add-ui}

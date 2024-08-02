@@ -45,7 +45,7 @@ A default resource group is created for your account. If you have a Lite account
 ### Searching for resources
 {: #tags}
 
-You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [exported usage report](/docs/billing-usage?topic=billing-usage-viewingusage#export-csv&interface=ui).
+You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [Exporting your usage details to a CSV file](/docs/billing-usage?topic=billing-usage-viewingusage&interface=ui#export-csv).
 
 For more information, see [Working with tags](/docs/account?topic=account-tag).
 
@@ -201,9 +201,6 @@ For example, for the `CustApp` project, you might choose to create an `IAM Admin
 * `Editor` for User Management account management service. This way, the administrator can invite users to the account, view users in account, and so on.
 
 With this trusted profile, the administrator can add developers to an access group with broad access policies to complete day-to-day actions and tasks in the development and test environments. Access for operations on the production environment can be set up in a trusted profile named `Operator-Profile`. This way, the developer can change job roles by logging in and applying the `Operator-Profile` when they need to take any operation actions on the `CustApp` in production.
-
-If you have administrator access through a trusted profile, it is not recommended to invite users to an account while the profile is applied. Users should be invited by true account owners or administrators, or an error might occur.
-{: important}
 
 ## Use cases for organizing resources and assigning access
 {: #usecase_examples}
