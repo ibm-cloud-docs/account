@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-07-31"
+lastupdated: "2024-08-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6183,7 +6183,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `lakehouse.dashboard.view` | Description | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
 | `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
-| `lakehouse.metastore.admin` | Allowing metastore access | MetastoreAccess |
+| `lakehouse.metastore.admin` | Allowing metastore access | Administrator, MetastoreAccess |
 | `lakehouse.uservpc.manage` | Provides ability to create and manage a deployment in a user owned VPC | Administrator, Editor, Operator |
 | `lakehouse.data.access` | Allows data access for other services. | DataAccess, MetastoreAccess |
 {: caption="Table 108. Service actions - IBM Lakehouse" caption-side="top"}
@@ -9141,6 +9141,62 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table171}
 
+## watsonx Orchestrate
+{: #watsonx-orchestrate-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `watsonx-orchestrate` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+{: row-headers}
+{: caption="Table 172. Platform roles - watsonx Orchestrate" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="watsonx-orchestrate"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table172}
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
+| WO User | As a user, you have permission to interact with assistants. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Table 172. Service roles - watsonx Orchestrate" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="watsonx-orchestrate"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table172}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `watsonx-orchestrate.skill.run` | Can run skill | Manager, WO User, Writer |
+| `watsonx-orchestrate.assistant.legacy` | Can perform authoring methods for a workspace through v1 APIs. | Manager |
+| `watsonx-orchestrate.skill.write` | Can create, rename, edit or delete a skill.  | Manager, Writer |
+| `watsonx-orchestrate.skill.read` | Can open and view a skill. | Manager, Writer |
+| `watsonx-orchestrate.assistant.write` | Can rename, edit or delete an assistant. | Manager, Writer |
+| `watsonx-orchestrate.assistant.read` | Can open and view an assistant. | Manager, Writer |
+| `watsonx-orchestrate.assistant.list` | Can list assistant or skill | Manager, Writer |
+| `watsonx-orchestrate.assistant.default` | Default access for Assistant | Manager, Writer |
+| `watsonx-orchestrate.logs.read` | Can view skill analytics and access user conversation logs. | Manager |
+| `watsonx-orchestrate.environment.write` | Can rename, edit or delete an environment | Manager, Writer |
+| `watsonx-orchestrate.environment.read` | Can open and view an environment | Manager, Writer |
+| `watsonx-orchestrate.release.write` | Can create or delete a Release for an Assistant | Manager |
+| `watsonx-orchestrate.dashboard.view` | Can view dashboard | Administrator, Editor, Manager, Operator, Service Configuration Reader, Viewer, WO User, Writer |
+| `watsonx-orchestrate.credentials.write` | Can assign and set credentials | Manager |
+{: caption="Table 172. Service actions - watsonx Orchestrate" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="watsonx-orchestrate"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table172}
+
 ## WebSphere Application Server
 {: #websphereappsvr-roles}
 
@@ -9152,22 +9208,22 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 172. Platform roles - WebSphere Application Server" caption-side="top"}
+{: caption="Table 173. Platform roles - WebSphere Application Server" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table172}
+{: #platform-roles-table173}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `websphereappsvr.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Table 172. Service actions - WebSphere Application Server" caption-side="top"}
+{: caption="Table 173. Service actions - WebSphere Application Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table172}
+{: #actions-table173}
 
 ## Annotator for Clinical Data
 {: #wh-acd-roles}
@@ -9180,12 +9236,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
-{: caption="Table 173. Platform roles - Annotator for Clinical Data" caption-side="top"}
+{: caption="Table 174. Platform roles - Annotator for Clinical Data" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table173}
+{: #platform-roles-table174}
 
 | Role | Description |
 | ----- | :----- |
@@ -9193,12 +9249,12 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Table 173. Service roles - Annotator for Clinical Data" caption-side="top"}
+{: caption="Table 174. Service roles - Annotator for Clinical Data" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table173}
+{: #service-roles-table174}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9211,12 +9267,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `wh-acd.flows.manage` | Manage flows | Manager, Writer |
 | `wh-acd.profiles.manage` | Manage profiles | Manager, Writer |
 | `wh-acd.analyze` | Analyze | Manager, Reader, Writer |
-{: caption="Table 173. Service actions - Annotator for Clinical Data" caption-side="top"}
+{: caption="Table 174. Service actions - Annotator for Clinical Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table173}
+{: #actions-table174}
 
 
 
