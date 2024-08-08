@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-08-03"
+lastupdated: "2024-08-08"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1644,7 +1644,9 @@ Review the available platform and service roles and the actions mapped to each t
 | CloudPak Data Source Creator | Create data source definitions |
 | CloudPak Data Steward | Create or view governance artifacts and curate data into catalogs. |
 | Governance Artifacts Administrator | Manage governance artifacts |
+| Lineage Administrator | Perform actions related to managing data lineage, like importing lineage metadata, publishing new assets, managing external agents or updating mappings. |
 | Manager | Manage catalogs, governance artifacts, categories, and workflow. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Reporting Administrator | Manage reports on Watson Knowledge Catalog data. |
 {: row-headers}
 {: caption="Table 31. Service roles - IBM Cloud Pak for Data" caption-side="top"}
@@ -1676,7 +1678,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.data-quality.drill-down` | Drill down to issue details | CloudPak Data Quality Analyst, Manager |
 | `cp4d.catalog-assets-to-projects.add` | Users with this permission can add assets from a catalog to a project. Users must also have the Admin or Editor role in the catalog and the project, and must be asset owners or asset members. | Administrator, CloudPak Data Scientist, CloudPak Data Steward, Editor, Manager |
 | `cp4d.data-source-definitions.manage` | Create data source definitions and see a list of all connections across the account | CloudPak Data Source Administrator, Manager |
-| `cp4d.data-source-definitions.create` | Create data source definitions | CloudPak Data Source Creator, Manager |
+| `cp4d.data-source-definitions.create` | Create data source definitions | CloudPak Data Source Creator, Lineage Administrator, Manager |
+| `cp4d.data-lineage.manage` | Manage data lineage | Lineage Administrator, Manager |
+| `cp4d.data-lineage.access` | Access data lineage | Lineage Administrator, Manager, Reader |
 {: caption="Table 31. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
