@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-08-08"
+lastupdated: "2024-08-09"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6173,7 +6173,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | DataAccess | DataAccess |
-| MetastoreAccess | Grant Metastore access |
+| MetastoreAdmin | Grant metastore access |
+| MetastoreViewer | MetastoreViewer |
 {: row-headers}
 {: caption="Table 108. Service roles - IBM Lakehouse" caption-side="top"}
 {: tab-title="Service roles"}
@@ -6187,9 +6188,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `lakehouse.dashboard.view` | Description | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
 | `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
-| `lakehouse.metastore.admin` | Allowing metastore access | Administrator, MetastoreAccess |
+| `lakehouse.metastore.admin` | Allowing metastore access | Administrator, MetastoreAdmin |
 | `lakehouse.uservpc.manage` | Provides ability to create and manage a deployment in a user owned VPC | Administrator, Editor, Operator |
-| `lakehouse.data.access` | Allows data access for other services. | DataAccess, MetastoreAccess |
+| `lakehouse.data.access` | Allows data access for other services. | DataAccess |
+| `lakehouse.metastore.view` | Allow metastore view | MetastoreViewer |
 {: caption="Table 108. Service actions - IBM Lakehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="lakehouse"}
