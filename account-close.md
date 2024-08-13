@@ -14,7 +14,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-<production>
+
 
 # Closing an account
 {: #account-close}
@@ -83,6 +83,6 @@ To close a Lite account or to end a Trial account before its expiration date, go
 
 You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed.
 
-</production>
+
 
 

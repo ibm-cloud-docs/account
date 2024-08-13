@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-01-25"
+lastupdated: "2024-08-13"
 
 keywords: remove user, delete user
 
@@ -60,7 +60,9 @@ For command options, see [Managing accounts and users](/docs/cli?topic=cli-ibmcl
 {: #remove-user-acount-api}
 {: api}
 
-To remove a user from an account, call the [User Management API](https://cloud.ibm.com/apidocs/user-management?code=java#remove-user) as shown in the following sample request. Replace variables with the user's IAM ID. You must use a user token for authorization. Service IDs can't remove users from an account.
+To remove a user from an account, call the [User Management API](https://cloud.ibm.com/apidocs/user-management?code=java#remove-user) as shown in the following sample request.
+
+Replace variables with the user's IAM ID. You must use a user token for authorization. Service IDs can't remove users from an account.
 
 ```bash
 curl -X DELETE https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users/IBMid-1000000000 -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json'
@@ -120,3 +122,11 @@ if err != nil {
 ```
 {: codeblock}
 {: go}
+
+You can also remove a user by their user ID or by their email address and realm. Either the user ID or email and realm is required. For more information, see [Remove user from account by user ID or email](/apidocs/user-management#remove-user-by-email-or-id).
+
+```bash
+curl -X DELETE https://user-management.cloud.ibm.com/v2/accounts/987d4cfd77b04e9b9e1a6asdcc861234/users?user_id=user%40ibm.com&email=user.email%40ibm.com&realm=ibmid -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json'
+```
+{: codeblock}
+{: curl}
