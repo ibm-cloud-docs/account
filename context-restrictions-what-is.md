@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-06-05"
+lastupdated: "2024-08-16"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -165,6 +165,8 @@ The three common endpoint types are as follows:
 
 Some endpoint types might not be supported by the selected service.
 {: note}
+
+
 
 ## Access requirements
 {: #cbr-access-reqs}
