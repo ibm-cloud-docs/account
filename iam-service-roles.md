@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-08-09"
+lastupdated: "2024-08-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2000,6 +2000,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/db2audit/alias` | Retrieve Db2 audit storage alias | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/install_v3` | Installs Db2 audit v3 | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/process_report` | db2audit process report | Administrator, Editor, Operator, Viewer |
+| `PATCH /v6/:platform/deployments/:deployment_id/availability` | Update deployment availability | Administrator, Editor, Operator, Viewer |
 {: caption="Table 33. Service actions - Db2 on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}
