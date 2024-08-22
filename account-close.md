@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-08-19"
+lastupdated: "2024-08-22"
 
 keywords: close account, cancel account, delete account, terminate account
 
@@ -18,21 +18,10 @@ subcollection: account
 # Closing an account
 {: #account-close}
 
-When you no longer need your {{site.data.keyword.cloud}} account, you can close the account. If there's any way we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
+When you decide that you no longer need your {{site.data.keyword.cloud}} account, you can close the account by using the {{site.data.keyword.Bluemix_notm}} console. If you need assistance with the process, don't hesitate to [contact us](/unifiedsupport/supportcenter){: external}.
 {: shortdesc}
 
-## Before you begin
-{: #about-close-account}
-
-Before you can close a Pay-As-You-Go or Subscription account, the account owner needs to cancel all services, devices, and billing items for the account. Then, the account owner can create a support case to close a Subscription account or close a Pay-As-You-Go in the {{site.data.keyword.cloud}} console.
-
-To close an enteprise account, you must also remove all child accounts. After an account is removed, it is closed and can't be reactivated. It takes 21 days after the removal is initiated to fully remove the account from the enterprise. The account is `SUSPENDED` for 14 days and `CANCEL_PENDING` for 7 days.
-
-If your account has reserved instances with term remaining on the agreement or other resources that you can't cancel, contact [support](/unifiedsupport/supportcenter). Rescheduled any pending cancellations to terminate prior to account cancellation. For example, you might have {{site.data.keyword.baremetal_short}} scheduled to terminate at the end of the month.
-
-If there are active service commitments or an active Enterprise Savings Plan commitment remaining in your account, you must reach the end of your commitment term before you can close your account.
-
-### Step 1: Canceling all services
+## Step 1: Canceling all services
 {: #cancel-services}
 
 To delete a service instance, use the following steps:
@@ -40,15 +29,15 @@ To delete a service instance, use the following steps:
 2. Expand the sections to locate the service instance that you want to delete.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
 
-### Step 2: Canceling all devices
+## Step 2: Canceling all devices
 {: #cancel-devices}
 
 To cancel all devices, use the following steps:
-1. From the {{site.data.keyword.cloud_notm}} console,, click the menu icon ![Menu icon](../../icons/icon_hamburger.svg) > **Classic Infrastructure** > **Device List**.
+1. From the {{site.data.keyword.cloud_notm}} console, click the menu icon ![Menu icon](../../icons/icon_hamburger.svg) > **Classic Infrastructure** > **Device List**.
 1. For each device that you want to cancel, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Cancel device**.
 1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
 
-### Step 3: Canceling all billing items
+## Step 3: Canceling all billing items
 {: #cancel-billing-items}
 
 To cancel all billing items, use the following steps:
@@ -57,25 +46,16 @@ To cancel all billing items, use the following steps:
 1. Ensure that you are viewing all billing items.
 1. For each billing item that you want to cancel, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Cancel billing item**.
 
-### Step 4: Removing all child acounts
-{: #remove-child-accounts}
-
-To remove a child account from an enterprise, use the following steps:
-1. From the {{site.data.keyword.cloud_notm}} console, select **Manage** > **Enterprise** > **Accounts**.
-1. For each account that you want to remove, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Remove account**.
-1. Confirm that you want to remove the account.
-
-As a user on {{site.data.keyword.cloud_notm}}, you can be a member of multiple accounts. If you are not the account owner, you can leave the account. For more information, see [Leaving an account](/docs/account?topic=account-account-membership).
-
 ## Closing a Pay-As-You-Go account
 {: #close-account}
 
 After the account owner cancels all services, devices, and billing items for the account, they can cancel the account. To close a Pay-As-You-Go account, go to **Manage** > **Account**, select **Account settings** in the {{site.data.keyword.cloud_notm}} console. From the account settings page, click **Close account**.
 
-Closing your account can't be undone, and your data is unrecoverable.
-{: important}
+If your account has reserved instances with term remaining on the agreement or if you can't cancel resources, contact [support](/unifiedsupport/supportcenter). Reschedule any pending cancellations to terminate before you cancel the account.
 
-After your Pay-As-You-Go account is closed, all usage is stopped across all services that are running in your account. The usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. You might receive a final invoice after you close your account due to incurred charges from the month before the account was closed.
+After an account is removed, it can't be reactivated. It takes 21 days after closing an account to fully terminate the account. The account is `SUSPENDED` for 14 days and `CANCEL_PENDING` for 7 days.
+
+When you close a Pay-As-You-Go account, all usage stops across all services that are running in your account. The usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. You might receive a final invoice after you close your account due to incurred charges from the month before closing the account.
 
 ## Closing a Subscription account
 {: #close-subscription-account}
@@ -94,9 +74,19 @@ To create the support case, use the following steps:
 
 Go to the [Manage cases](/unifiedsupport/cases/manage){: external} page to track the progress or to update the support case.
 
+## Closing an enterprise account
+{: #enterprise-close}
+
+To close an enterprise account, you must also remove all child accounts. After an account is removed, it can't be reactivated. It takes 21 days after removing an account to fully remove the account from the enterprise. The account is `SUSPENDED` for 14 days and `CANCEL_PENDING` for 7 days.
+
+To remove a child account from an enterprise, complete the following steps:
+1. From the {{site.data.keyword.cloud_notm}} console, select **Manage** > **Enterprise** > **Accounts**.
+1. For each account that you want to remove, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Remove account**.
+1. Confirm that you want to remove the account.
+
 ## Closing a Lite or Trial account
 {: #cancel-account}
 
 To close a Lite account or to end a Trial account before its expiration date, go to **Manage** > **Account**, select **Account settings** in the {{site.data.keyword.cloud_notm}} console. From the account settings page, click **Close account**.
 
-You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data is deleted and all services are removed.
+You can reactivate your account if you upgrade to a Pay-As-You-Go or Subscription account. After an account is closed for 30 days, all data are deleted and all services are removed.
