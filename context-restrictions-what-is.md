@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-08-16"
+lastupdated: "2024-08-23"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -15,7 +15,7 @@ subcollection: account
 # What are context-based restrictions?
 {: #context-restrictions-whatis}
 
-Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud}} resources based on a rule's criteria. The criteria include the network location of access requests, the endpoint type from where the request is sent, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide another layer of protection. Since both IAM policies and context-based restrictions enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
+Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud}} resources based on a rule's criteria. The criteria include the network location of access requests, the endpoint type from where the request is sent, the multifactor authentication level of an identity, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide another layer of protection. Since both IAM policies and context-based restrictions enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
 {: shortdesc}
 
 ![A diagram that shows how context-based restrictions work.](images/CBR-diagram.svg){: caption="Figure 1. A diagram that shows how context-based restrictions work." caption-side="bottom"}
@@ -89,6 +89,7 @@ Contexts define where your resource can be accessed. A context is made up of the
 
 * If a context includes network zones, then access is granted only when the request is created from within one of those zones.
 * If a context includes service endpoint types, then access is granted only when the request is received over a connection that matches one of those types.
+* If a context includes multifactor authentication (MFA), then access is granted only when the requesting identity has an MFA level equal to or exceeding the required MFA level.
 * If a context includes multiple restrictions, for example, both zones and endpoint types, then all restrictions must be satisfied for access to be granted.
 
 ### Network zone
@@ -165,6 +166,19 @@ The three common endpoint types are as follows:
 
 Some endpoint types might not be supported by the selected service.
 {: note}
+
+
+### Multifactor authentication
+{: #context-restrictions-mfa}
+
+Multifactor authentication (MFA) requires identities to authenticate by using another authentication factor beyond an ID and password. By setting a lower MFA level requirement, you’re allowing users who meet or exceed that requirement to authenticate. For example, if your rule requires users to authenticate with MFA Level 1, users that have MFA Level 2 are still compliant since Level 2 exceeds the security criteria for Level 1. The MFA levels below name the minimum MFA factor for each level. For more information, see [IBM Cloud multifactor authentication](/docs/account?topic=account-types).
+
+* Level 1: Email-based MFA
+* Level 2: TOTP MFA
+* Level 3: U2F MFA
+
+Only some services support the ability to specify MFA in a rule.
+{: preview}
 
 
 
