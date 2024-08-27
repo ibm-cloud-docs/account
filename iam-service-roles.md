@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-08-22"
+lastupdated: "2024-08-27"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1646,6 +1646,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Governance Artifacts Administrator | Manage governance artifacts |
 | Lineage Administrator | Perform actions related to managing data lineage, like importing lineage metadata, publishing new assets, managing external agents or updating mappings. |
 | Manager | Manage catalogs, governance artifacts, categories, and workflow. |
+| Policy Decision Operator | Evaluate data access requests on behalf of other users |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Reporting Administrator | Manage reports on Watson Knowledge Catalog data. |
 {: row-headers}
@@ -1666,7 +1667,7 @@ Review the available platform and service roles and the actions mapped to each t
  | Manager |
 | `cp4d.wkc.reporting.manage` | Manage reporting | Reporting Administrator |
 | `cp4d.governance-artifacts.access` | Access governance artifacts | CloudPak Data Engineer, CloudPak Data Scientist, CloudPak Data Steward |
-| `cp4d.catalog.access` | Access catalogs | CloudPak Data Scientist, CloudPak Data Steward, Manager |
+| `cp4d.catalog.access` | Access catalogs | CloudPak Data Scientist, CloudPak Data Steward, Manager, Policy Decision Operator |
 | `cp4d.data-protection-rules.manage` | Manage data protection rules | CloudPak Data Engineer, CloudPak Data Steward, Manager |
 | `cp4d.glossary.manage` | Perform business glossary administrative tasks | Manager |
 | `cp4d.project.manage` | Manage projects | Manager |
@@ -1681,6 +1682,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.data-source-definitions.create` | Create data source definitions | CloudPak Data Source Creator, Lineage Administrator, Manager |
 | `cp4d.data-lineage.manage` | Manage data lineage | Lineage Administrator, Manager |
 | `cp4d.data-lineage.access` | Access data lineage | Lineage Administrator, Manager, Reader |
+| `cp4d.governance-policy-decision.evaluate` | Permission required for an integration user to be allowed to evaluate data access requests on behalf of registered platform users | Policy Decision Operator |
 {: caption="Table 31. Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
