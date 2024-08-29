@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-03-06"
+  years: 2023, 2024
+lastupdated: "2024-08-29"
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions
 
 subcollection: account
@@ -139,7 +139,7 @@ The following example shows you how to create a one-time time-based condition fo
 1. Assign access to **All Account Management services** with the `Operator` role:
 
    ```bash
-   ibmcloud iam service-policy-create name@example.com --roles Administrator --account-management --api-version v2
+   ibmcloud iam service-policy-create [your service ID here] --roles Operator --account-management --api-version v2
    ```
    {: codeblock}
 
@@ -529,11 +529,15 @@ The following example shows you how to create a recurring time-based condition f
 1. Assign access to **All Account Management services** with the `Editor` role:
 
    ```bash
-   ibmcloud iam service-policy-create name@example.com --roles Editor --account-management --api-version v2
+   ibmcloud iam service-policy-create [your service ID here] --roles Editor --account-management --api-version v2
    ```
    {: codeblock}
 
 1. Use the following example of a recurring time-based policy JSON schema to create your own conditions:
+   ```bash
+   ibmcloud iam service-policy-create [your service ID here] --file [your JSON file name]
+   ```
+   {: codeblock}
 
     ```json
     {
