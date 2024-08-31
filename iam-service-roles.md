@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-08-29"
+lastupdated: "2024-08-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1092,6 +1092,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `codeengine.computeenvironment.delete` | Allows you to delete compute environments. | Compute Environment Administrator |
 | `codeengine.computeenvironment.projects.create` | Allows you to create projects in this compute environment. | Manager, Writer |
 | `codeengine.computeenvironment.projects.delete` | Allows you to delete projects in this compute environment. | Manager, Writer |
+| `codeengine.tenant.update` | The ability to change the project configuration, such as adjusting the allowed outbound destinations that deployed workload can connect to. | Manager |
 {: caption="Table 20. Service actions - Code Engine" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="codeengine"}
@@ -7716,25 +7717,13 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table141}
 
-| Role | Description |
-| ----- | :----- |
-| Lifecycle Approver | Approvers can approve or reject workflow tasks |
-{: row-headers}
-{: caption="Table 141. Service roles - Product Lifecycle" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="product-lifecycle"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table141}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `product-lifecycle.dashboard.view` |  | Administrator, Editor, Operator |
 | `product-lifecycle.offering.create` | Create an onboarding offering in the account | Administrator, Editor |
 | `product-lifecycle.offering.edit` | Edit an onboarding offering in the account. | Administrator, Editor |
-| `product-lifecycle.review.complete` | Complete (accept or reject) a review | Lifecycle Approver |
-| `product-lifecycle.offering.read` | Read values of an offering | Administrator, Editor, Lifecycle Approver |
-| `product-lifecycle.registration.read` | Read onboarding registration | Administrator, Editor, Lifecycle Approver |
+| `product-lifecycle.offering.read` | Read values of an offering | Administrator, Editor |
+| `product-lifecycle.registration.read` | Read onboarding registration | Administrator, Editor |
 | `product-lifecycle.registration.create` | Create onboarding registration | Administrator, Editor |
 {: caption="Table 141. Service actions - Product Lifecycle" caption-side="top"}
 {: tab-title="Actions"}
