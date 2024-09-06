@@ -95,7 +95,7 @@ If you have a specific use case that requires an extended limit, you can request
 | Trusted profile templates per enterprise account | 100 |
 | Users per trial account                | 100  |
 | Users per billable account             | 7500 |
-| Versions per enterprise-managed tempalte | 100 |
+| Versions per enterprise-managed template | 100 |
 {: caption="Table 1. IAM account limits" caption-side="top"}
 
 [^tabletext]: IAM policies and context-based restrictions rules share a combined limit of 4020.
