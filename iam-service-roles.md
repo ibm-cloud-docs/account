@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-08-31"
+lastupdated: "2024-09-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4691,7 +4691,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.apikey.manage` | Manage the API keys of an account. | Administrator |
 | `iam-identity.apikey.get` | Get the details of an existing API key. | Administrator, Editor, Operator |
 | `iam-identity.apikey.list` | List API keys based on properties. | Administrator, Editor, Operator |
-| `iam-identity.apikey.review` | List metadata of API keys based on properties. | API key reviewer, Administrator, Editor, Operator |
+| `iam-identity.apikey.review` | List metadata of API keys based on properties. | API key reviewer, Administrator, Editor, Operator, Service Configuration Reader |
 | `iam-identity.apikey.create` | Create a new API key. | Administrator, Operator |
 | `iam-identity.apikey.update` | Update the details of an existing API key. | Administrator, Editor, Operator |
 | `iam-identity.apikey.delete` | Delete an API key. | Administrator, Operator |
@@ -4709,7 +4709,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.idp.update` | Update an existing Identity Provider configuration. | Administrator, Editor, Operator |
 | `iam-identity.idp.delete` | Delete an Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.idp.test` | Test an Identity Provider configuration. | Administrator, Editor, Operator |
-| `iam-identity.idp.metadata` | Get the metadata of an identity provider | Administrator, Editor, Operator |
 | `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
 | `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
@@ -4742,6 +4741,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.account-settings-assignment.delete` | Delete an assignment of Account Settings | Assignment Administrator |
 | `iam-identity.account-settings-assignment.read` | Get the details of an Account Settings Assignment | Assignment Administrator, Template Administrator |
 | `iam-identity.account-settings-assignment.update` | Update an assignment of Account Settings | Assignment Administrator |
+| `iam-identity.preferences.read` | Get an identity's preferences | Administrator |
+| `iam-identity.preferences.update` | Update an identity's preferences | Administrator |
+| `iam-identity.serviceid-group.get` | Get the details of an existing service ID group. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.serviceid-group.create` | Create a new service ID group. | Administrator, Operator |
+| `iam-identity.serviceid-group.update` | Update the details of an existing service ID group. | Administrator, Editor, Operator |
+| `iam-identity.serviceid-group.delete` | Delete a service ID group. | Administrator, Operator |
 {: caption="Table 74. Service actions - IAM Identity Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-identity"}
