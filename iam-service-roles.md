@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-09-06"
+lastupdated: "2024-09-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -568,10 +568,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.config.import` | Import the configuration of the instance | Manager |
 | `apprapp.config.export` | Export the configuration of the instance | Client SDK, Config Operator, Manager, Reader, Writer |
 | `apprapp.config.action` | Perform actions on the configuration of the instance like promote, restore to git | Manager |
-| `apprapp.configaggregatorsettings.update` | Update the settings for the Configuration aggregator | Manager |
-| `apprapp.configaggregatorsettings.list` | Retrieve the settings for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
-| `apprapp.configaggregatorstatus.list` | Retrieve the status of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
-| `apprapp.configaggregator.query` | Query API to retrieve resource metadata from Config Aggregator | Configuration Aggregator Reader |
+| `apprapp.config-aggregator-settings.update` | Update the settings for the Configuration aggregator | Manager |
+| `apprapp.config-aggregator-settings.list` | Retrieve the settings for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
+| `apprapp.config-aggregator-status.read` | Retrieve the status of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
+| `apprapp.config-aggregator.query` | Query API to retrieve resource metadata from Config Aggregator | Configuration Aggregator Reader |
 | `apprapp.metrics.list` | The ability to see metrics. | Config Operator, Manager, Reader, Writer |
 | `apprapp.metrics.create` | The ability to create metrics. | Manager |
 | `apprapp.metrics.update` | The ability to edit or update existing metrics. | Manager |
@@ -583,6 +583,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.iterations.list` | The ability to view iterations of an experiment. | Config Operator, Manager, Reader, Writer |
 | `apprapp.analytics.create` | The ability to submit featureflag evaluation & metric events for an ongoing experiment. | Client SDK, Config Operator, Manager, Reader, Writer |
 | `apprapp.analytics.list` | The ability to view or download the metadata associated with the experiment. | Manager |
+| `apprapp.config-aggregator-scope.read` | Retrieve the account scope of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
 {: caption="Table 10. Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
@@ -611,7 +612,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+| Writer | The writer role is reserved for IBM internal use. |
 {: row-headers}
 {: caption="Table 11. Service roles - Activity Tracker" caption-side="top"}
 {: tab-title="Service roles"}
@@ -645,6 +646,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `atracker.onboarding.create` | Create onboarding config for services only. | Administrator |
 | `atracker.onboarding.update` | Update onboarding config for services only. | Administrator |
 | `atracker.onboarding.delete` | Delete onboarding config for services only. | Administrator |
+| `atracker.destination.search` | Search for target destinations. | Administrator, Editor, Operator, Viewer |
 {: caption="Table 11. Service actions - Activity Tracker" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="atracker"}
@@ -6858,6 +6860,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `metrics-router.onboarding.create` | Create onboarding config for services only. | Administrator |
 | `metrics-router.onboarding.list` | List onboarding config for services only. | Viewer |
 | `metrics-router.onboarding.update` | Update onboarding config for services only. | Reader |
+| `metrics-router.destination.search` | Search for target destinations. | Administrator, Editor, Operator, Viewer |
 {: caption="Table 118. Service actions - Metrics Router" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="metrics-router"}
