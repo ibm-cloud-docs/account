@@ -1,9 +1,9 @@
----
+----
 
 copyright:
 
   years: 2021, 2024
-lastupdated: "2024-07-22"
+lastupdated: "2024-09-11"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli
 
