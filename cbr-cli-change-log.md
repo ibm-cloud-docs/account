@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: "2024"
+  years: 2024
 lastupdated: "2024-09-11"
-
 keywords: change log for CBR, updates to CBR, cli, context-based restrictions
 
 subcollection: account
@@ -23,7 +22,7 @@ In this change log, you can learn about the latest changes, improvements, and up
 Version 1.7.2 of the CLI was released on 23 August 2024.
 
 - Updated the outputs of most commands to be more useful and readable
-- Added a mention of implicit global location 
+- Added a mention of implicit global location
 
 ## Version 1.7.1
 {: #cli-171}
@@ -56,7 +55,7 @@ Version 1.6.0 of the CLI was released on 23 Feb 2024.
 Version 1.4.1 of the CLI was released on 25 Oct 2023.
 
 - Improved examples
-- Added mutual exclusion check for conflicting flags 
+- Added mutual exclusion check for conflicting flags
 - Improved error handling and error messages
 
 ## Version 1.4.0
@@ -78,8 +77,8 @@ Added private endpoint support for classic infrastructure and VPC infrastructure
 
 Version 1.2.0 of the CLI was released on 16 Nov 2022.
 
-- Added `--service-group-id` flag to the following commands: **`ibmcloud cbr rule-create`**,**`ibmcloud cbr rule-update`**, and **`ibmcloud cbr rules`** 
-- Reordered command args in usage 
+- Added `--service-group-id` flag to the following commands: **`ibmcloud cbr rule-create`**,**`ibmcloud cbr rule-update`**, and **`ibmcloud cbr rules`**
+- Reordered command args in usage
 - Added support for tags
 - Improved error catching
 
