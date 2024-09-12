@@ -53,8 +53,6 @@ After the account owner cancels all services, devices, and billing items for the
 
 If your account has reserved instances with term remaining on the agreement or if you can't cancel resources, contact [support](/unifiedsupport/supportcenter). Reschedule any pending cancellations to terminate before you cancel the account.
 
-After an account is removed, it can't be reactivated. It takes 21 days after closing an account to fully terminate the account. The account is `SUSPENDED` for 14 days and `CANCEL_PENDING` for 7 days.
-
 When you close a Pay-As-You-Go account, all usage stops across all services that are running in your account. The usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. You might receive a final invoice after you close your account due to incurred charges from the month before closing the account.
 
 ## Closing a Subscription account
