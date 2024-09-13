@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-08-22"
+lastupdated: "2024-09-12"
 
 keywords: close account, cancel account, delete account, terminate account
 
