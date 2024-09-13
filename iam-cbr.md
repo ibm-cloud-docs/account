@@ -591,7 +591,7 @@ You can protect the ability to manage Identity Providers (IdPs) by scoping a rul
 - `iam-identity.idp.test`
 - `iam-identity.idp.metadata`
 
-To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `idp`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#-iam-cbr-overview).
+To configure this rule, target the **IAM Identity service**, scope the rule to **Specific resources**, and select the `Resource type` attribute. Then, enter the value `idp`. For more information about the steps to set up a rule, see [How IAM integrates with context-based restrictions](/docs/account?topic=account-iam-services-cbr&interface=ui#iam-cbr-overview).
 
 ### Restricting the ability to manage Identity Providers by using the API
 {: #iam-identity-ipd-api}
