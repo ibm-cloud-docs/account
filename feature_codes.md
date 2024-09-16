@@ -18,7 +18,7 @@ subcollection: account
 You can apply feature codes to take advantage of {{site.data.keyword.Bluemix}} resources or capabilities. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops.
 {: shortdesc}
 
-Are you looking for details about adding subscription credit to your account? See [Managing subscriptions](/docs/account?topic=account-subscriptions) for more information.
+Are you looking for details about adding subscription credit to your account? See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
 {: tip}
 
 You must have the Editor role or higher for all account management services to apply a feature code. The resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
