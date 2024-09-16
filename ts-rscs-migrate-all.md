@@ -32,5 +32,3 @@ Services that can't be added to resource groups and aren't managed by using Iden
 
 Check the services to confirm they're eligible for migration. You receive a notification and a **Migrate** icon ![Migrate icon](../icons/migrate.svg "Migrate this service instance to a resource group") is displayed to indicate if a service is eligible for migration.
 {: tsResolve}
-
-

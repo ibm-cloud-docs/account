@@ -31,4 +31,3 @@ Resources can't be moved after they are assigned to a resource group.
 
 To correct this issue, you can try to delete the resource and create a new instance of it from the catalog. This way, you can be sure to assign the new instance to the correct resource group.
 {: tsResolve}
-

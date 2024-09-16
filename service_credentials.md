@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2024
-lastupdated: "2024-01-29"
+lastupdated: "2024-09-13"
 
 keywords: service key, api key, bind, credential
 
@@ -33,7 +33,7 @@ Complete the following steps to add a credential to a service that is managed by
 
 1. From the Resource list page, select the name of the service to open the service details page. Then, click **Service credentials > New Credential+**.
 1. Provide a **Name**.
-1. Specify the role. This value sets the IAM service access role. For more information, see [IAM Access](/docs/account?topic=account-userroles).
+1. Specify the role. This value sets the IAM service access role. If no additional access is required, specify `None`. For more information, see [IAM Access](/docs/account?topic=account-userroles).
 1. Optionally, you can provide a Service ID by either allowing IAM to generate a unique value for you, or by providing an existing Service ID. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 1. Optionally, you can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
 
@@ -162,7 +162,7 @@ Before you can add a credential when binding an IAM-enabled service by using Ter
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
-Use the following steps to add a crednetial when binding an IAM-enabled service:
+Use the following steps to add a credential when binding an IAM-enabled service:
 
 1. Create an argument in your `main.tf` file. The following example creates credentials for a resource without a service ID by using the `ibm_resource_instance` resource, where `name` is a unique name to identify the credential.
 
@@ -292,13 +292,26 @@ curl "https://api.example.org/v3/service_credential_bindings" \
 {: #viewing-credentials-ui}
 {: ui}
 
-After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential that includes the API key value.
+After a credential is created for a service that has `onetime_credentials` configured to `false`, it can be viewed at any time for users that need the credential values. However, all users must have the correct level of access to see the details of a credential that includes the API key value.
 
 To view an existing service credential for a service, complete the following steps:
 
 1. From the Resource list page, select the name of the service to open the service details page.
 2. Click **Service credentials**
 3. Expand **View credentials** on the row for an existing credential.
+
+### One-time credentials
+{: #onetime-credentials}
+
+The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, it can be viewed at any time for users that need the credential values.
+
+
+
+This property is set when the credential is created and is determined by the `onetime_credentials` property on the service. To change this property by using the API, see the [Resource Controller API](/apidocs/resource-controller/resource-controller#update-resource-instance). 
+{: api}
+
+Existing credentials created before this property change are not affected.
+{: note}
 
 ### Credential level access
 {: #access-credentials-ui}
@@ -331,7 +344,7 @@ To view the credential, the user must have the IAM level access action `resource
 {: #viewing-credentials-api}
 {: api}
 
-After a credential is created for a service, it can be viewed at any time for users that need the API key value. However, all users must have the correct level of access to see the details of a credential that includes the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user that is trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned.
+After a credential is created for a service that has `onetime_credentials` configured to `false`, it can be viewed at any time for users that need the credential values. However, all users must have the correct level of access to see the details of a credential that includes the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user that is trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned.
 
 To get a list of all of the resource keys, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#list-resource-keys) as shown in the following example:
 
@@ -423,6 +436,7 @@ Example response:
       "account_id": "4329073d16d2f3663f74bfa955259139",
       "resource_group_id": "0be5ad401ae913d8ff665d92680664ed",
       "resource_id": "dff97f5c-bc5e-4455-b470-411c3edbe49c",
+      "onetime_credentials": false,
       "credentials": {
         "apikey": "XXXX-YYYY-ZZZZ\"",
         "endpoints": "https://cos-service-armada-s.us-south.containers.mybluemix.net/endpoints",

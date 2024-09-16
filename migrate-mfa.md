@@ -33,4 +33,3 @@ To migrate to the {{site.data.keyword.cloud_notm}} MFA:
 
 These steps must be completed by each user in the account to migrate to the {{site.data.keyword.cloud_notm}} MFA.
 {: important}
-

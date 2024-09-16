@@ -274,7 +274,6 @@ toc:
           - profile.md
           - contact_info.md
           - feature_codes.md
-          - signup-commit.md
           - shell-settings.md
           - topicgroup:
               label: Updating account settings for compliance
@@ -386,7 +385,6 @@ toc:
           - faqs-iam.md
           - faqs-resources.md
           - faqs-migration.md
-          - faqs-catalog-management.md
           - faqs-cbr.md
           - faqs-vrf.md
       - topicgroup:
@@ -436,8 +434,6 @@ toc:
           - ts-iam-delete-accesstag.md
           - ts-iam-instances.md
           - ts-alt-owner.md
-          - ts-enterprise-managed.md
-          - ts-enterprise-owner.md
       - topicgroup:
           label: Troubleshooting resources
           topics:

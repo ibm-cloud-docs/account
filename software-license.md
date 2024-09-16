@@ -82,4 +82,3 @@ fmt.Println(response)
 
 You can unassign a license from the account. Note, however, any {{site.data.keyword.bplong_notm}} workspaces in which the license is used will be impacted. 
 {: important}
-

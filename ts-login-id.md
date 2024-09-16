@@ -30,4 +30,3 @@ You tried to log in to the console, but didn't use a valid IBMid. For example, y
 
 You must have a valid IBMid and password to log in to {{site.data.keyword.Bluemix_notm}}. Enter a fully qualified email address for the IBMid.
 {: tsResolve}
-

@@ -189,4 +189,3 @@ For example, do you want to add cognitive capabilities from Watson to your apps 
 
 1. Copy the service credentials and add them to your application. 
 1. After the update to the app, deploy the new version to your classic infrastructure assets. 
-

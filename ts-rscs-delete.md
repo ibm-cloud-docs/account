@@ -34,4 +34,3 @@ This problem happens if the service instance is already deleted from the cloud c
 
 Create a service instance with the same service name, and connect it to your applications. Then, you can delete the service instance and the applications that use the service.   
 {: tsResolve}
-

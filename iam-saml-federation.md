@@ -40,5 +40,3 @@ To delete your deprecated SAML federation configuration, complete the following 
 2. Click **Delete**.
 3. Select the option to confirm that you understand deleting the configuration is permanent. Since this type of federation is deprecated, it can't be set up again.
 4. Click **Delete**.
-
-

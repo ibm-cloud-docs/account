@@ -3,7 +3,7 @@
 copyright:
   years: 2021, 2024
 
-lastupdated: "2024-07-11"
+lastupdated: "2024-09-13"
 
 keywords: trusted profile, compute resource, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account

@@ -31,5 +31,3 @@ Check your inbox and your spam folder for the email.
 * Check for filters or settings in your email program that delete email or route email to a location other than your inbox. 
 * Make sure that your spam filter or security software is allowing emails with links through to your email address.
 * Contact your email provider or administrator to ask them to check for any configuration that blocks email from `no_reply@cloud.ibm.com`.
-
-
