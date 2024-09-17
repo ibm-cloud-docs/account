@@ -21,6 +21,8 @@ You can apply feature codes to take advantage of {{site.data.keyword.Bluemix}} r
 Are you looking for details about adding subscription credit to your account? See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
 {: tip}
 
+
+
 You must have the Editor role or higher for all account management services to apply a feature code. The resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
 
 * Increase the memory quota to a number of GB that is specified by the code
