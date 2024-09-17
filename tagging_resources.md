@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-02-22"
+lastupdated: "2024-09-17"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -48,7 +48,7 @@ Access management tags
 ## Tagging rules
 {: #limits}
 
-Tags are not case-sensitive (despite the tag `name` may contain uppercase and lowercase characters, it is converted entirely to lowercase), and the maximum length of a tag is 128 characters. The permitted characters are A-Z, 0-9, spaces, underscore, hyphen, period, and colon. The only supported format for access management tags is `key:value`. The use of a colon formats the tag into a string that isolates two logical parts, like a `env:dev` pair. A comma separates multiple tags and can't be used within the tag name itself.
+Tags are not case-sensitive, any uppercase characters are converted to lowercase, and the maximum length of a tag is 128 characters. The permitted characters are A-Z, 0-9, spaces, underscore, hyphen, period, and colon. The only supported format for access management tags is `key:value`. The use of a colon formats the tag into a string that isolates two logical parts, like a `env:dev` pair. A comma separates multiple tags and can't be used within the tag name itself.
 
 Tags are visible account-wide and can be replicated across geographic regions. Since tags are not regulated information, avoid creating tags that use personal information, such as your name, address, phone number, email address, or other identifying or proprietary information.
 {: important}
