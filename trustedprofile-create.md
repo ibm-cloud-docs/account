@@ -664,3 +664,8 @@ fmt.Println(string(b))
 ```
 {: go}
 {: codeblock}
+
+## Trusted profile limitations
+{: #tp-limits}
+
+Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
