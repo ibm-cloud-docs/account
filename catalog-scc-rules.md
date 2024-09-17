@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2021-08-09"
+  years: 2021, 2024
+lastupdated: "2024-09-16"
 
 keywords: catalog, private catalogs, visibility, filter catalog, config rules, security, compliance, catalog filtering, restrict
 
@@ -10,21 +10,8 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
-{:external: target="_blank" .external}
-{:ui: .ph data-hd-interface='ui'}
-{:cli: .ph data-hd-interface='cli'}
-{:api: .ph data-hd-interface='api'}
-{:java: .ph data-hd-programlang='java'}
-{:python: .ph data-hd-programlang='python'}
-{:javascript: .ph data-hd-programlang='javascript'}
-{:curl: .ph data-hd-programlang='curl'}
-{:go: .ph data-hd-programlang='go'}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Governing what software users can install based on provider  
 {: #catalog-scc-rules}
@@ -53,6 +40,3 @@ After you create a rule, you can monitor for configuration changes by attaching 
 
 
  
-
-
-

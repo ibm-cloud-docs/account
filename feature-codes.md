@@ -1,12 +1,12 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-04-05"
+  years: 2018, 2022
+lastupdated: "2022-03-02"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
-subcollection: account
+subcollection: billing-usage
 
 ---
 
@@ -15,18 +15,18 @@ subcollection: account
 # Applying feature codes
 {: #codes}
 
-You can apply feature codes to take advantage of {{site.data.keyword.Bluemix}} resources or capabilities. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops.
+You can apply feature codes to take advantage of additional {{site.data.keyword.Bluemix}} resources or capabilities. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops.
 {: shortdesc}
 
 Are you looking for details about adding subscription credit to your account? See [Managing subscriptions](/docs/account?topic=account-subscriptions) for more information.
 {: tip}
 
-You must have the Editor role or higher for all account management services to apply a feature code. The resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
+You must have the Editor role or higher for all account management services to apply a feature code. The additional resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
 
 * Increase the memory quota to a number of GB that is specified by the code
 * Add one organization with a memory quota that is specified by the code
 * Add an unlimited number of organizations
-* Upload an additional number of SSL certificates, as specified by the code
+* Upload an extra number of SSL certificates, as specified by the code
 * Use premium service plans
 * Convert a Lite account to a trial account, which provides access to more services but only within a limited trial period
 
