@@ -45,9 +45,7 @@ If you have a specific use case that requires an extended limit, you can request
 |----------------------------------------|------|
 | Access groups per account              | 500  |
 | Access groups per user                 | 50   |
-| Access group templates per enterprise account | 100 |
 | Access management tags per account     | 250   |
-| Account settings templates per enterprise account | 10 |
 | API Keys per identity                  | 20   |
 | Custom roles per account               | 40   |
 | Dynamic rules per access group         | 5  |
@@ -57,13 +55,10 @@ If you have a specific use case that requires an extended limit, you can request
 | Policies per account [^tabletext]      | 4020 |
 | Policies per subject within an account | 1000  |
 | Policies with access management tags within an account   | 500   |
-| Policy templates per enterprise account | 500 |
 | Service IDs per account                | 2000 |
 | Trusted profiles per account           | 2000 |
-| Trusted profile templates per enterprise account | 100 |
 | Users per trial account                | 100  |
 | Users per billable account             | 7500 |
-| Versions per enterprise-managed template | 100 |
 {: caption="Table 1. IAM account limits" caption-side="top"}
 
 [^tabletext]: IAM policies and context-based restrictions rules share a combined limit of 4020.
