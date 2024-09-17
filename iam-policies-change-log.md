@@ -2,7 +2,7 @@
 
 copyright:
   years:  2023, 2024
-lastupdated: "2024-09-17"
+lastupdated: "2024-01-02"
 
 keywords: change log for access-management polices, updates to access-management polices, IAM Policy Management API change log, policies change log, access management change log
 
