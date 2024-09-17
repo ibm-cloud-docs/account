@@ -303,7 +303,7 @@ To find a list of available service references, call the [ListAvailableServicere
 {: tip}
 
 ## Creating network zones by using Terraform
-{: #network-zones-create-terra}
+{: #network-zones-create-terraform}
 {: terraform}
 
 By creating network zones, you establish a list of allowed locations where an access request originates. A set of one or more network locations can be specified by IP addresses such as individual addresses, ranges or subnets, VPC IDs, and service references. After you create a network zone, you can add it to a rule.

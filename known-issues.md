@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-05-02"
+lastupdated: "2024-09-17"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -22,7 +22,7 @@ Known issues and limitations include not being able to restrict access to some p
 ## Google login doesn't support federated IDs
 {: #google-fed-id}
 
-Google ID login isn't available for users with federated IDs due to additional access that might be required by their corporate external identity provider (IdP). 
+Google ID login isn't available for users with federated IDs due to additional access that might be required by their corporate external identity provider (IdP).
 
 ## Catalog management settings don't apply to some {{site.data.keyword.IBM_notm}} products
 {: #settings-noapply}
@@ -65,104 +65,10 @@ Users can still create instances of the following products by using an API or th
 * VPN
 * VPN for VPC
 
-## {{site.data.keyword.Bluemix_notm}} IAM limits
-{: #iam_limits}
-
-The following table lists the maximum limits for IAM resources. These limits apply to any user who can create IAM resources. If a limit is exceeded, you receive an exception and are not allowed to create any new resources beyond that limit.
-
-If you have a specific use case that requires an extended limit, you can request an increase. For more information, see [Increasing account limits](/docs/account?topic=account-account-limits).
-{: note}
-
-| Resource                               | Max  |
-|----------------------------------------|------|
-| Access groups per account              | 500  |
-| Access groups per user                 | 50   |
-| Access group templates per enterprise account | 100 |
-| Access management tags per account     | 250   |
-| Account settings templates per enterprise account | 10 |
-| API Keys per identity                  | 20   |
-| Custom roles per account               | 40   |
-| Dynamic rules per access group         | 5  |
-| Dynamic rules per trusted profile      | 20   |
-| Dynamic rules per Identity provider (IdP) | 2000 |
-| IdPs per account  | 5    |
-| Policies per account [^tabletext]      | 4020 |
-| Policies per subject within an account | 1000  |
-| Policies with access management tags within an account   | 500   |
-| Policy templates per enterprise account | 500 |
-| Service IDs per account                | 2000 |
-| Trusted profiles per account           | 2000 |
-| Trusted profile templates per enterprise account | 100 |
-| Users per trial account                | 100  |
-| Users per billable account             | 7500 |
-| Versions per enterprise-managed template | 100 |
-{: caption="Table 1. IAM account limits" caption-side="top"}
-
-[^tabletext]: IAM policies and context-based restrictions rules share a combined limit of 4020.
-
-A maximum of 1,000 policies and service to service authorizations within one account is recommended to ensure optimal performance within your account. For more information about limiting the number of policies in your account, see the [Best practices for organizing resources and assigning access](/docs/account?topic=account-account_setup).
-{: tip}
-
-If you want to check the number of policies in your account, see [Viewing the total number of policies per account](/docs/account?topic=account-account-limits&interface=cli#total-number-policies-cli). To request an increase in the account limit, see [Requesting a policy and rule shared limit increase](/docs/account?topic=account-account-limits&interface=cli#limit-increase).
-
-### Policy limitations based on attributes
+## Policy limitations based on attributes
 {: #access-tag-limits}
 
 Access management tags are available only when you create an access policy that is scoped for all IAM-enabled services. In this case, when you enable the access based on tags, no other attributes can be added. And, when you base your policy on a specific location or resource group, no tag can be added to the access policy.
-
-### Trusted profile limitations
-{: #tp-limits}
-
-Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
-
-### Enterprise-managed IAM limitations
-{: #enterprise-limitations}
-
-See the following sections for details about limitations for enterprise-managed IAM templates. For more information about enterprise-managed IAM, see [How enterprise-managed IAM works](/docs/secure-enterprise?topic=secure-enterprise-access-enterprises#how-enterprise-iam).
-
-You can't assign an IAM template to the enteprise account, only child accounts.
-{: note}
-
-#### Settings templates
-{: #settings-template-limits}
-
-Only one settings template can be assigned in an enteprise. You can assign multiple versions of the template, but not different templates.
-
-#### Policy templates
-{: #policy-template-limits}
-
-You can create access policy templates without an explicit subject by using the CLI or API, but using the {{site.data.keyword.cloud_notm}} console to complete this task is not supported.
-
-When you assign access to an access group template or a trusted profile template in the console, a policy template is automatically created based on the policy that you assign. Go to **Manage > Access (IAM) > Templates > Policies** to view the policy templates.
-{: note}
-
-## Context-based restrictions limits
-{: #cbr-limits}
-
-The following table lists the maximum limits for context-based restrictions. These limits apply to any user who can create context-based restrictions rules or network zones. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis).
-
-If you have a specific use case that requires an extended limit, you can request an increase. For more information, see [Increasing account limits](/docs/account?topic=account-account-limits).
-{: note}
-
-| Resource                               | Max  |
-|----------------------------------------|------|
-| Context-based restriction rules per account [^tabletext2] | 4020 |
-| Network zones per account              | 500 |
-| IP addresses per network zone              | 1000 |
-| IP addresses per rule             | 1000 |
-{: caption="Table 2. Context-based restrictions limits" caption-side="top"}
-
-[^tabletext2]: IAM policies and context-based restrictions rules share a combined limit of 4020.
-
-A context-based restriction rule that includes multiple network zones can have a maximum of 1000 IP addresses indirectly associated with it. For example, in a rule that includes two network zones, one of the zones might have 800 IP addresses and the other might have a maximum of 200 IP addresses.
-{: note}
-
-If you want to check the number of rules in your account, see [Viewing the total number of rules per account](/docs/account?topic=account-account-limits&interface=cli#total-number-rules-cli). To request an increase in the account limit, see [Requesting a policy and rule shared limit increase](/docs/account?topic=account-account-limits&interface=cli#limit-increase).
-
-### Eventual consistency
-{: #cbr-eventual-consistency}
-
-Context-based restrictions follow an [eventually consistent](https://en.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, Context-based restrictions remain highly available and performant across multiple global regions. Changes that are made to Context-based restrictions rules and network zones are recorded and propagated worldwide. Access changes might not take effect until the propagation process is complete, usually within a few minutes.
 
 ## Access policy version limitations
 {: #policy-version-limit}
