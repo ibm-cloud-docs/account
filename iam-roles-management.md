@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2024
 
-lastupdated: "2024-01-05"
+lastupdated: "2024-09-19"
 
 keywords: custom access, custom role, create a role, combine actions
 
@@ -17,7 +17,7 @@ subcollection: account
 # Creating custom roles
 {: #custom-roles}
 
-Each service maps specific actions that you can perform within the context of the service to platform or service roles. From the Roles page, you can view all of the available roles in the account and all roles for a specific service, including the actions that are mapped to each. You can pick and choose actions from all of the roles for a specific service to combine into a custom role of your choice.
+Each service maps specific actions that you can perform within the context of the service to platform or service roles. From the Roles page in {{site.data.keyword.Bluemix}} Identity and Access Management (IAM), you can view all of the available roles in the account and all roles for a specific service, including the actions that are mapped to each. You can pick and choose actions from all of the roles for a specific service to combine into a custom role of your choice.
 {: shortdesc}
 
 Many services map different sets of actions to different platform or service roles. However, you might want to combine some of the actions that are currently spread across multiple roles for a service to make assigning meet your custom use case. With a custom role, you can pick and choose actions that are mapped to different roles so that next time you assign access to the service, you don't have to select three different roles, for example.

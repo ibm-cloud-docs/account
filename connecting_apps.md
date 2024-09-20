@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2023
-lastupdated: "2023-05-02"
+  years: 2017, 2024
+lastupdated: "2024-09-19"
 
 keywords: create connection, connect a service, bind, alias
 
@@ -12,7 +12,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing connections
+# Managing connections between services and applications
 {: #connect_app}
 
 You can connect a service to an existing or new {{site.data.keyword.Bluemix}} application from the Connections tab on your service dashboard. You can add more connections or delete connections from the Connections tab.

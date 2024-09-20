@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2023
-lastupdated: "2023-06-01"
+   years: 2020, 2024
+lastupdated: "2024-09-19"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -138,4 +138,4 @@ You can update existing access by editing the assigned roles for a user.
 ## Next steps
 {: #iam-user-next}
 
-Continue securing your cloud resources by creating context-based restrictions, which work with traditional IAM policies, to provide another layer of protection. Or, learn what else you can do with {{site.data.keyword.Bluemix_notm}} IAM by checking out the [features list](/docs/account?topic=account-iamoverview#features).
+Continue securing your cloud resources by creating context-based restrictions, which work with traditional IAM policies, to provide [another layer of protection](/docs/account?topic=account-context-restrictions-tutorial). Or, learn what else you can do with {{site.data.keyword.Bluemix_notm}} IAM by checking out the [features list](/docs/account?topic=account-iamoverview#features).

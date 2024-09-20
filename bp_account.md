@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2024
-lastupdated: "2024-04-17"
+lastupdated: "2024-09-19"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -15,7 +15,7 @@ subcollection: account
 # Best practices for organizing resources and assigning access
 {: #account_setup}
 
-After you set up your {{site.data.keyword.cloud}} account, you're ready to start planning how you want to organize resources and assign access to identities in your account. These best practices provide you with the basic building blocks to enable successful and secure app development in {{site.data.keyword.cloud_notm}}.
+After you set up your {{site.data.keyword.cloud}} account, you're ready to start planning how you want to organize [resources](#x2004267){: term} and assign access to identities in your account. These best practices provide you with the basic building blocks to enable successful and secure app development in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
 The following best practices focus on resources that are enabled for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) and that are assigned to resource groups. Classic infrastructure services aren't IAM-enabled, which means that they can't be assigned to resource groups.
@@ -24,7 +24,7 @@ The following best practices focus on resources that are enabled for {{site.data
 ## What makes a good resource group strategy?
 {: #resource-group-strategy}
 
-Use resource groups to organize your account [resources](#x2004267){: term} for access control and billing purposes.
+Use resource groups to organize your account resources for access control and billing purposes.
 
 Administrators can have better control of resource usage at the project environment level if one resource group per project environment is used. For example, a typical project has development, test, and production environments. A project that is named `CustApp` might have the following resource groups:
 
