@@ -24,7 +24,7 @@ FAQs for your {{site.data.keyword.cloud}} account might include questions about 
 {: #create-account}
 {: faq}
 
-You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions and temporary educational accounts. To verify your identity with a code, you can apply a purchased subscription code for a Subscription account, or a feature code for a temporary educational account. For more information, see [Account types](/docs/account?topic=account-accounts).
+You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. A debit card is acceptable if it is from Visa or Mastercard, and it is not a disposable card or one-time use card number. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions and temporary educational accounts. To verify your identity with a code, you can apply a purchased subscription code for a Subscription account, or a feature code for a temporary educational account. For more information, see [Account types](/docs/account?topic=account-accounts).
 
 Feature codes aren't supported in some countries. For more information, see [personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
 {: note}
@@ -251,7 +251,7 @@ Go to the [Account settings](/account/settings) page in the console to view your
 The account owner, organization manager, or a user with the correct permissions can invite you to join their account.
 
 * If you're new to {{site.data.keyword.cloud}}, you receive an email that contains all the information you need.
-* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#accept-invitation-to-join-a-new-account-) command.
+* As an existing member of {{site.data.keyword.cloud}}, you can accept the invitation in your notifications, by email, or by using the CLI to onboard to the new account. To accept invitations in the CLI, use the [**`ibmcloud login`**](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) command.
 
 ## Can I switch between multiple accounts?
 {: #switch-between-accounts}
@@ -404,6 +404,6 @@ If you created a Lite account before 25 October 2021, you can continue working a
 {: #instance-create}
 {: faq}
 
-From the [Resource list](/resources), expand the appropriate section, and click the row for the instance that you want more details about. You can find more details about the resource display including when the resource was created and by whom.
+From the [Resource list](/resources), expand the appropriate section, and click the row for the instance that you want more details about. You can find more details about the resource display including when the resource was created and by whom. To view the details by using the CLI, see [ibmcloud resource service-instance](/docs/account?topic=account-ibmcloud_commands_resource#ibmcloud_resource_service_instance).
 
 For classic infrastructure services, you can get similar information by using the [Audit log](/docs/account?topic=account-audit-log).

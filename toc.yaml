@@ -375,7 +375,6 @@ toc:
       - iam-login-flows.md
       - iam-condition-properties.md
       - customer-incident-report.md
-      - bxnui.md
   - navgroup:
       id: help
       topics:
