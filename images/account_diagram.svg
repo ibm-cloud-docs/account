@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1496.7 673.7" style="enable-background:new 0 0 1496.7 673.7;" xml:space="preserve">
+	 viewBox="0 0 1496.7 748" style="enable-background:new 0 0 1496.7 748;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#D0E2FF;}
 	.st1{font-family:'IBMPlexSans';}
@@ -44,103 +44,103 @@
 	.st38{fill:#9EF0F0;}
 </style>
 <g id="Layer_1">
-	<rect x="599" y="30" class="st0" width="150" height="47"/>
+	<rect x="599" y="67.2" class="st0" width="150" height="47"/>
 </g>
 <g id="Layer_2">
-	<text transform="matrix(1 0 0 1 637.2705 60.3601)" class="st1 st2">Account</text>
+	<text transform="matrix(1 0 0 1 637.2705 97.5201)" class="st1 st2">Account</text>
 </g>
 <g id="Layer_12">
-	<rect x="602" y="150" class="st0" width="150" height="47"/>
+	<rect x="602" y="187.2" class="st0" width="150" height="47"/>
 </g>
 <g id="Layer_54">
-	<rect x="352" y="221" class="st0" width="181" height="47"/>
+	<rect x="352" y="258.2" class="st0" width="181" height="47"/>
 </g>
 <g id="Layer_55">
-	<text transform="matrix(1 0 0 1 377.8705 249.3601)" class="st1 st2">Access groups</text>
+	<text transform="matrix(1 0 0 1 377.8705 286.5201)" class="st1 st2">Access groups</text>
 </g>
 <g id="Layer_58">
-	<rect x="17" y="221" class="st0" width="181" height="47"/>
+	<rect x="17" y="258.2" class="st0" width="181" height="47"/>
 </g>
 <g id="Layer_57">
-	<text transform="matrix(1 0 0 1 69.8603 251.78)" class="st1 st2">Services</text>
+	<text transform="matrix(1 0 0 1 69.8603 288.94)" class="st1 st2">Services</text>
 </g>
 <g id="Layer_56">
-	<text transform="matrix(1 0 0 1 485.4781 294.7491)"><tspan x="0" y="0" class="st3 st4">Users and service IDs can </tspan><tspan x="0" y="14.4" class="st3 st4">be granted access to individual </tspan><tspan x="0" y="28.8" class="st3 st4">resources or all resources </tspan><tspan x="0" y="43.2" class="st3 st4">within a resource group. </tspan></text>
+	<text transform="matrix(1 0 0 1 485.4781 331.9091)"><tspan x="0" y="0" class="st3 st4">Users and service IDs can </tspan><tspan x="0" y="14.4" class="st3 st4">be granted access to individual </tspan><tspan x="0" y="28.8" class="st3 st4">resources or all resources </tspan><tspan x="0" y="43.2" class="st3 st4">within a resource group. </tspan></text>
 </g>
 <g id="Layer_59">
-	<text transform="matrix(1 0 0 1 47.6927 537.3409)"><tspan x="0" y="0" class="st1 st5">Key</tspan><tspan x="25.2" y="0" class="st1 st4"> </tspan></text>
+	<text transform="matrix(1 0 0 1 47.6927 574.5009)"><tspan x="0" y="0" class="st1 st5">Key</tspan><tspan x="25.2" y="0" class="st1 st4"> </tspan></text>
 </g>
 <g id="Layer_60">
-	<text transform="matrix(1 0 0 1 91.9413 559.7399)" class="st3 st4">Membership</text>
+	<text transform="matrix(1 0 0 1 91.9413 596.8998)" class="st3 st4">Membership</text>
 </g>
 <g id="Layer_61">
-	<text transform="matrix(1 0 0 1 92.7825 578.4842)" class="st3 st4">Access</text>
+	<text transform="matrix(1 0 0 1 92.7825 615.6442)" class="st3 st4">Access</text>
 </g>
 <g id="Layer_13">
-	<text transform="matrix(1 0 0 1 651.0005 180.3601)" class="st1 st2">Users</text>
+	<text transform="matrix(1 0 0 1 651.0005 217.5201)" class="st1 st2">Users</text>
 </g>
 <g id="Layer_5">
-	<rect x="1001" y="80" class="st0" width="150" height="47"/>
+	<rect x="1001" y="117.2" class="st0" width="150" height="47"/>
 </g>
 <g id="Layer_4">
-	<text transform="matrix(1 0 0 1 1025.2905 110.78)" class="st1 st2">Service IDs</text>
+	<text transform="matrix(1 0 0 1 1025.2905 147.94)" class="st1 st2">Service IDs</text>
 </g>
 <g id="Layer_8">
-	<rect x="1001" y="174" class="st0" width="150" height="47"/>
+	<rect x="1001" y="211.2" class="st0" width="150" height="47"/>
 </g>
 <g id="Layer_7">
-	<text transform="matrix(1 0 0 1 1036.8804 202.8999)" class="st1 st2">API keys</text>
+	<text transform="matrix(1 0 0 1 1036.8804 240.0599)" class="st1 st2">API keys</text>
 </g>
 <g id="Layer_20">
-	<text transform="matrix(1 0 0 1 936.0057 362.7179)" class="st1 st6">Classic infrastructure</text>
+	<text transform="matrix(1 0 0 1 936.0057 399.8779)" class="st1 st6">Classic infrastructure</text>
 </g>
 <g id="Layer_21">
-	<text transform="matrix(1 0 0 1 1038.0773 280.1057)"><tspan x="0" y="0" class="st3 st4">You can grant users access to classic infrastructure </tspan><tspan x="0" y="14.4" class="st3 st4">services, specific devices or device types, and subnets. </tspan></text>
+	<text transform="matrix(1 0 0 1 1038.0773 317.2657)"><tspan x="0" y="0" class="st3 st4">You can grant users access to classic infrastructure </tspan><tspan x="0" y="14.4" class="st3 st4">services, specific devices or device types, and subnets. </tspan></text>
 </g>
 <g id="Layer_18">
 	<g>
 		<g>
-			<line class="st7" x1="833" y1="270.5" x2="835.5" y2="270.5"/>
-			<line class="st8" x1="840.7" y1="270.5" x2="848.6" y2="270.5"/>
-			<line class="st9" x1="851.2" y1="270.5" x2="1016.4" y2="270.5"/>
-			<line class="st7" x1="1019" y1="270.5" x2="1021.5" y2="270.5"/>
+			<line class="st7" x1="833" y1="307.7" x2="835.5" y2="307.7"/>
+			<line class="st8" x1="840.7" y1="307.7" x2="848.6" y2="307.7"/>
+			<line class="st9" x1="851.2" y1="307.7" x2="1016.4" y2="307.7"/>
+			<line class="st7" x1="1019" y1="307.7" x2="1021.5" y2="307.7"/>
 		</g>
 	</g>
 </g>
 <g id="Layer_10">
-	<text transform="matrix(1 0 0 1 1177.1926 131.7574)"><tspan x="0" y="0" class="st3 st4">Service IDs can be granted </tspan><tspan x="0" y="14.4" class="st3 st4">the same access as users for </tspan><tspan x="0" y="28.8" class="st3 st4">resource group-based services. </tspan></text>
+	<text transform="matrix(1 0 0 1 1177.1926 168.9174)"><tspan x="0" y="0" class="st3 st4">Service IDs can be granted </tspan><tspan x="0" y="14.4" class="st3 st4">the same access as users for </tspan><tspan x="0" y="28.8" class="st3 st4">resource group-based services. </tspan></text>
 </g>
 <g id="Layer_22">
-	<rect x="937" y="377" class="st10" width="170" height="47"/>
+	<rect x="937" y="414.2" class="st10" width="170" height="47"/>
 </g>
 <g id="Layer_23">
-	<text transform="matrix(1 0 0 1 950.3381 396.9597)"><tspan x="0" y="0" class="st1 st5">Classic infrastructure </tspan><tspan x="45.7" y="18" class="st1 st5">services</tspan></text>
+	<text transform="matrix(1 0 0 1 950.3381 434.1197)"><tspan x="0" y="0" class="st1 st5">Classic infrastructure </tspan><tspan x="45.7" y="18" class="st1 st5">services</tspan></text>
 </g>
 <g id="Layer_24">
-	<rect x="937" y="433" class="st10" width="170" height="47"/>
+	<rect x="937" y="470.2" class="st10" width="170" height="47"/>
 </g>
 <g id="Layer_25">
-	<text transform="matrix(1 0 0 1 995.4648 461.9598)" class="st1 st5">Devices</text>
+	<text transform="matrix(1 0 0 1 995.4648 499.1198)" class="st1 st5">Devices</text>
 </g>
 <g id="Layer_26">
-	<rect x="937" y="489" class="st10" width="170" height="47"/>
+	<rect x="937" y="526.2" class="st10" width="170" height="47"/>
 </g>
 <g id="Layer_27">
-	<text transform="matrix(1 0 0 1 979.161 517.96)" class="st1 st5">VPN subnets</text>
+	<text transform="matrix(1 0 0 1 979.161 555.1199)" class="st1 st5">VPN subnets</text>
 </g>
 <g id="Layer_28">
-	<text transform="matrix(1 0 0 1 617.0559 411.208)" class="st1 st6">Resource group</text>
+	<text transform="matrix(1 0 0 1 617.0559 448.368)" class="st1 st6">Resource group</text>
 </g>
 <g id="Layer_29">
 	<g id="Layer_19">
 		<g>
 			<g>
-				<line class="st7" x1="1021.5" y1="336.5" x2="1021.5" y2="334"/>
-				<line class="st11" x1="1021.5" y1="328.4" x2="1021.5" y2="320"/>
-				<line class="st12" x1="1021.5" y1="317.2" x2="1021.5" y2="275.3"/>
-				<line class="st7" x1="1021.5" y1="272.5" x2="1021.5" y2="270"/>
+				<line class="st7" x1="1021.5" y1="373.7" x2="1021.5" y2="371.2"/>
+				<line class="st11" x1="1021.5" y1="365.6" x2="1021.5" y2="357.2"/>
+				<line class="st12" x1="1021.5" y1="354.4" x2="1021.5" y2="312.5"/>
+				<line class="st7" x1="1021.5" y1="309.7" x2="1021.5" y2="307.2"/>
 				<g>
-					<polygon points="1025.2,333.7 1021.5,335.3 1017.8,333.7 1021.5,342.5 					"/>
+					<polygon points="1025.2,370.9 1021.5,372.5 1017.8,370.9 1021.5,379.7 					"/>
 				</g>
 			</g>
 		</g>
@@ -148,66 +148,66 @@
 	<g id="Layer_17">
 		<g>
 			<g>
-				<line class="st7" x1="832.5" y1="270" x2="832.5" y2="267.5"/>
-				<line class="st13" x1="832.5" y1="262.5" x2="832.5" y2="255"/>
-				<line class="st14" x1="832.5" y1="252.5" x2="832.5" y2="195"/>
-				<line class="st7" x1="832.5" y1="192.5" x2="832.5" y2="190"/>
+				<line class="st7" x1="832.5" y1="307.2" x2="832.5" y2="304.7"/>
+				<line class="st13" x1="832.5" y1="299.7" x2="832.5" y2="292.2"/>
+				<line class="st14" x1="832.5" y1="289.7" x2="832.5" y2="232.2"/>
+				<line class="st7" x1="832.5" y1="229.7" x2="832.5" y2="227.2"/>
 			</g>
 		</g>
 		<g>
 			<g>
-				<line class="st7" x1="107.5" y1="207.5" x2="107.5" y2="205"/>
-				<line class="st15" x1="107.5" y1="201" x2="107.5" y2="194.8"/>
-				<line class="st16" x1="107.5" y1="192.8" x2="107.5" y2="178.5"/>
-				<line class="st7" x1="107.5" y1="176.5" x2="107.5" y2="174"/>
+				<line class="st7" x1="107.5" y1="244.7" x2="107.5" y2="242.2"/>
+				<line class="st15" x1="107.5" y1="238.1" x2="107.5" y2="232"/>
+				<line class="st16" x1="107.5" y1="230" x2="107.5" y2="215.7"/>
+				<line class="st7" x1="107.5" y1="213.7" x2="107.5" y2="211.2"/>
 				<g>
-					<polygon points="111.2,204.7 107.5,206.3 103.8,204.7 107.5,213.5 					"/>
+					<polygon points="111.2,241.9 107.5,243.5 103.8,241.9 107.5,250.7 					"/>
 				</g>
 			</g>
 		</g>
 	</g>
 	<g id="Layer_16">
 		<g>
-			<line x1="912.5" y1="197.9" x2="995.5" y2="197.5"/>
+			<line x1="912.5" y1="235.1" x2="995.5" y2="234.7"/>
 			<g>
-				<line class="st7" x1="912.5" y1="197.9" x2="989.5" y2="197.5"/>
+				<line class="st7" x1="912.5" y1="235.1" x2="989.5" y2="234.7"/>
 				<g>
-					<polygon points="986.7,201.2 988.3,197.5 986.7,193.8 995.5,197.5 					"/>
+					<polygon points="986.7,238.4 988.3,234.7 986.7,231 995.5,234.7 					"/>
 				</g>
 			</g>
 		</g>
 		<g>
 			<g>
-				<line class="st7" x1="752.5" y1="189.5" x2="755" y2="189.5"/>
-				<line class="st13" x1="760" y1="189.5" x2="767.5" y2="189.5"/>
-				<line class="st14" x1="770" y1="189.5" x2="827.5" y2="189.5"/>
-				<line class="st7" x1="830" y1="189.5" x2="832.5" y2="189.5"/>
+				<line class="st7" x1="752.5" y1="226.7" x2="755" y2="226.7"/>
+				<line class="st13" x1="760" y1="226.7" x2="767.5" y2="226.7"/>
+				<line class="st14" x1="770" y1="226.7" x2="827.5" y2="226.7"/>
+				<line class="st7" x1="830" y1="226.7" x2="832.5" y2="226.7"/>
 			</g>
 		</g>
 	</g>
 	<g id="Layer_3">
-		<line class="st17" x1="749" y1="53" x2="1076" y2="53"/>
+		<line class="st17" x1="749" y1="90.2" x2="1076" y2="90.2"/>
 		<g>
 			<g>
-				<line class="st7" x1="1076.5" y1="52.5" x2="1076.5" y2="70.5"/>
+				<line class="st7" x1="1076.5" y1="89.7" x2="1076.5" y2="107.7"/>
 				<g>
-					<polygon points="1072.8,67.7 1076.5,69.3 1080.2,67.7 1076.5,76.5 					"/>
+					<polygon points="1072.8,104.9 1076.5,106.5 1080.2,104.9 1076.5,113.7 					"/>
 				</g>
 			</g>
 		</g>
 	</g>
 	<g id="Layer_14">
-		<line class="st17" x1="752" y1="173.5" x2="912.5" y2="173.5"/>
+		<line class="st17" x1="752" y1="210.7" x2="912.5" y2="210.7"/>
 	</g>
 	<g id="Layer_15">
-		<line class="st7" x1="912.9" y1="173.5" x2="912.5" y2="197.5"/>
+		<line class="st7" x1="912.9" y1="210.6" x2="912.5" y2="234.7"/>
 	</g>
 	<g id="Layer_6">
 		<g>
 			<g>
-				<line class="st7" x1="1076.5" y1="127" x2="1076.5" y2="163.5"/>
+				<line class="st7" x1="1076.5" y1="164.2" x2="1076.5" y2="200.7"/>
 				<g>
-					<polygon points="1072.8,160.7 1076.5,162.3 1080.2,160.7 1076.5,169.5 					"/>
+					<polygon points="1072.8,197.9 1076.5,199.5 1080.2,197.9 1076.5,206.7 					"/>
 				</g>
 			</g>
 		</g>
@@ -215,214 +215,214 @@
 	<g id="Layer_11">
 		<g>
 			<g>
-				<line class="st7" x1="676.5" y1="78.5" x2="676.9" y2="135"/>
+				<line class="st7" x1="676.5" y1="115.7" x2="676.9" y2="172.2"/>
 				<g>
-					<polygon points="673.2,132.2 676.9,133.8 680.6,132.2 676.9,141 					"/>
+					<polygon points="673.2,169.4 676.9,170.9 680.6,169.3 676.9,178.1 					"/>
 				</g>
 			</g>
 		</g>
 	</g>
 	<g id="Layer_9">
-		<line class="st17" x1="1151" y1="100.5" x2="1478" y2="100.5"/>
-		<line class="st17" x1="1476.5" y1="643.5" x2="1477.5" y2="101"/>
-		<line class="st17" x1="387.5" y1="643.5" x2="1476.5" y2="643.5"/>
+		<line class="st17" x1="1151" y1="137.7" x2="1478" y2="137.7"/>
+		<line class="st17" x1="1476.5" y1="680.7" x2="1477.5" y2="138.2"/>
+		<line class="st17" x1="387.5" y1="680.7" x2="1476.5" y2="680.7"/>
 		<g>
-			<line x1="387.5" y1="643.5" x2="387.5" y2="275.5"/>
+			<line x1="387.5" y1="680.7" x2="387.5" y2="312.7"/>
 			<g>
-				<line class="st7" x1="387.5" y1="643.5" x2="387.5" y2="281.5"/>
+				<line class="st7" x1="387.5" y1="680.7" x2="387.5" y2="318.6"/>
 				<g>
-					<polygon points="391.2,284.3 387.5,282.7 383.8,284.3 387.5,275.5 					"/>
+					<polygon points="391.2,321.4 387.5,319.9 383.8,321.4 387.5,312.7 					"/>
 				</g>
 			</g>
 		</g>
-		<line class="st17" x1="48" y1="556.5" x2="72.5" y2="556.5"/>
+		<line class="st17" x1="48" y1="593.7" x2="72.5" y2="593.7"/>
 	</g>
 	<g>
 		<g>
-			<line class="st7" x1="676.5" y1="383.5" x2="676.5" y2="381"/>
-			<line class="st18" x1="676.5" y1="375.9" x2="676.5" y2="368.1"/>
-			<line class="st19" x1="676.5" y1="365.5" x2="676.5" y2="202.6"/>
-			<line class="st7" x1="676.5" y1="200" x2="676.5" y2="197.5"/>
+			<line class="st7" x1="676.5" y1="420.7" x2="676.5" y2="418.2"/>
+			<line class="st18" x1="676.5" y1="413" x2="676.5" y2="405.3"/>
+			<line class="st19" x1="676.5" y1="402.7" x2="676.5" y2="239.7"/>
+			<line class="st7" x1="676.5" y1="237.2" x2="676.5" y2="234.7"/>
 			<g>
-				<polygon points="680.2,380.7 676.5,382.3 672.8,380.7 676.5,389.5 				"/>
+				<polygon points="680.2,417.9 676.5,419.5 672.8,417.9 676.5,426.7 				"/>
 			</g>
 		</g>
 	</g>
 	<g>
 		<g>
-			<line class="st7" x1="717.5" y1="274.5" x2="717.5" y2="272"/>
-			<line class="st20" x1="717.5" y1="267.2" x2="717.5" y2="260"/>
-			<line class="st21" x1="717.5" y1="257.6" x2="717.5" y2="202.4"/>
-			<line class="st7" x1="717.5" y1="200" x2="717.5" y2="197.5"/>
+			<line class="st7" x1="717.5" y1="311.7" x2="717.5" y2="309.2"/>
+			<line class="st20" x1="717.5" y1="304.4" x2="717.5" y2="297.2"/>
+			<line class="st21" x1="717.5" y1="294.8" x2="717.5" y2="239.6"/>
+			<line class="st7" x1="717.5" y1="237.2" x2="717.5" y2="234.7"/>
 		</g>
 	</g>
 	<g>
 		<g>
-			<line class="st7" x1="717.5" y1="275.5" x2="720" y2="275.5"/>
-			<line class="st22" x1="725.7" y1="275.5" x2="734.3" y2="275.5"/>
-			<line class="st23" x1="737.2" y1="275.5" x2="780.1" y2="275.5"/>
-			<line class="st7" x1="783" y1="275.5" x2="785.5" y2="275.5"/>
+			<line class="st7" x1="717.5" y1="312.7" x2="720" y2="312.7"/>
+			<line class="st22" x1="725.7" y1="312.7" x2="734.3" y2="312.7"/>
+			<line class="st23" x1="737.2" y1="312.7" x2="780.1" y2="312.7"/>
+			<line class="st7" x1="783" y1="312.7" x2="785.5" y2="312.7"/>
 		</g>
 	</g>
 	<g>
 		<g>
-			<line class="st7" x1="785.5" y1="416" x2="785.6" y2="413.5"/>
-			<line class="st24" x1="785.6" y1="408.6" x2="785.6" y2="401.2"/>
-			<line class="st25" x1="785.7" y1="398.7" x2="786.5" y2="282.5"/>
-			<line class="st7" x1="786.5" y1="280" x2="786.5" y2="277.5"/>
+			<line class="st7" x1="785.5" y1="453.2" x2="785.6" y2="450.7"/>
+			<line class="st24" x1="785.6" y1="445.7" x2="785.6" y2="438.3"/>
+			<line class="st25" x1="785.7" y1="435.9" x2="786.5" y2="319.6"/>
+			<line class="st7" x1="786.5" y1="317.2" x2="786.5" y2="314.7"/>
 			<g>
-				<polygon points="789.3,413.2 785.5,414.8 781.9,413.2 785.5,422 				"/>
+				<polygon points="789.3,450.4 785.5,452 781.9,450.4 785.5,459.2 				"/>
 			</g>
 		</g>
 	</g>
-	<line class="st7" x1="624.8" y1="197.4" x2="625.5" y2="244.5"/>
+	<line class="st7" x1="624.8" y1="234.6" x2="625.5" y2="281.7"/>
 	<g>
 		<g>
-			<line class="st7" x1="549.5" y1="245.4" x2="625.5" y2="244.5"/>
+			<line class="st7" x1="549.5" y1="282.6" x2="625.5" y2="281.7"/>
 			<g>
-				<polygon points="552.3,249.1 550.7,245.4 552.2,241.7 543.5,245.5 				"/>
-			</g>
-		</g>
-	</g>
-	<g>
-		<g>
-			<line class="st7" x1="442.5" y1="438.5" x2="442.5" y2="436"/>
-			<line class="st26" x1="442.5" y1="431.3" x2="442.5" y2="424.2"/>
-			<line class="st27" x1="442.5" y1="421.8" x2="442.5" y2="272.9"/>
-			<line class="st7" x1="442.5" y1="270.5" x2="442.5" y2="268"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<line class="st7" x1="784.5" y1="641" x2="784.5" y2="638.5"/>
-			<line class="st28" x1="784.5" y1="633.2" x2="784.5" y2="625.3"/>
-			<line class="st29" x1="784.5" y1="622.7" x2="784.5" y2="583.1"/>
-			<line class="st7" x1="784.5" y1="580.5" x2="784.5" y2="578"/>
-			<g>
-				<polygon points="788.2,580.8 784.5,579.2 780.8,580.8 784.5,572 				"/>
+				<polygon points="552.3,286.3 550.7,282.6 552.2,278.9 543.5,282.7 				"/>
 			</g>
 		</g>
 	</g>
 	<g>
 		<g>
-			<line class="st7" x1="677.5" y1="641" x2="677.5" y2="638.5"/>
-			<line class="st28" x1="677.5" y1="633.2" x2="677.5" y2="625.3"/>
-			<line class="st29" x1="677.5" y1="622.7" x2="677.5" y2="583.1"/>
-			<line class="st7" x1="677.5" y1="580.5" x2="677.5" y2="578"/>
+			<line class="st7" x1="442.5" y1="475.7" x2="442.5" y2="473.2"/>
+			<line class="st26" x1="442.5" y1="468.4" x2="442.5" y2="461.3"/>
+			<line class="st27" x1="442.5" y1="459" x2="442.5" y2="310"/>
+			<line class="st7" x1="442.5" y1="307.7" x2="442.5" y2="305.2"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st7" x1="784.5" y1="678.2" x2="784.5" y2="675.7"/>
+			<line class="st28" x1="784.5" y1="670.4" x2="784.5" y2="662.5"/>
+			<line class="st29" x1="784.5" y1="659.8" x2="784.5" y2="620.3"/>
+			<line class="st7" x1="784.5" y1="617.6" x2="784.5" y2="615.1"/>
 			<g>
-				<polygon points="681.2,580.8 677.5,579.2 673.8,580.8 677.5,572 				"/>
+				<polygon points="788.2,617.9 784.5,616.4 780.8,617.9 784.5,609.2 				"/>
 			</g>
 		</g>
 	</g>
 	<g>
 		<g>
-			<line class="st7" x1="214.5" y1="244.5" x2="217" y2="244.5"/>
-			<line class="st30" x1="221.9" y1="244.5" x2="229.2" y2="244.5"/>
-			<line class="st31" x1="231.6" y1="244.5" x2="346.6" y2="244.5"/>
-			<line class="st7" x1="349" y1="244.5" x2="351.5" y2="244.5"/>
+			<line class="st7" x1="677.5" y1="678.2" x2="677.5" y2="675.7"/>
+			<line class="st28" x1="677.5" y1="670.4" x2="677.5" y2="662.5"/>
+			<line class="st29" x1="677.5" y1="659.8" x2="677.5" y2="620.3"/>
+			<line class="st7" x1="677.5" y1="617.6" x2="677.5" y2="615.1"/>
 			<g>
-				<polygon points="217.3,248.2 215.7,244.5 217.3,240.8 208.5,244.5 				"/>
+				<polygon points="681.2,617.9 677.5,616.4 673.8,617.9 677.5,609.2 				"/>
 			</g>
 		</g>
 	</g>
 	<g>
 		<g>
-			<line class="st7" x1="107.5" y1="173.5" x2="110" y2="173.5"/>
-			<line class="st32" x1="114.9" y1="173.5" x2="122.3" y2="173.5"/>
-			<line class="st33" x1="124.8" y1="173.5" x2="595" y2="173.5"/>
-			<line class="st7" x1="597.5" y1="173.5" x2="600" y2="173.5"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<line class="st7" x1="49" y1="574.4" x2="51.5" y2="574.4"/>
-			<line class="st34" x1="54.1" y1="574.4" x2="58.1" y2="574.4"/>
-			<line class="st35" x1="59.4" y1="574.4" x2="68.7" y2="574.4"/>
-			<line class="st7" x1="70" y1="574.4" x2="72.5" y2="574.4"/>
-		</g>
-	</g>
-	<g>
-		<g>
-			<line class="st7" x1="442" y1="440.5" x2="444.5" y2="440.5"/>
-			<line class="st36" x1="450.3" y1="440.5" x2="458.9" y2="440.5"/>
-			<line class="st37" x1="461.8" y1="440.5" x2="505.1" y2="440.5"/>
-			<line class="st7" x1="508" y1="440.5" x2="510.5" y2="440.5"/>
+			<line class="st7" x1="214.5" y1="281.7" x2="217" y2="281.7"/>
+			<line class="st30" x1="221.9" y1="281.7" x2="229.2" y2="281.7"/>
+			<line class="st31" x1="231.6" y1="281.7" x2="346.6" y2="281.7"/>
+			<line class="st7" x1="349" y1="281.7" x2="351.5" y2="281.7"/>
 			<g>
-				<polygon points="507.7,444.2 509.3,440.5 507.7,436.8 516.5,440.5 				"/>
+				<polygon points="217.3,285.4 215.7,281.7 217.3,278 208.5,281.7 				"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st7" x1="107.5" y1="210.7" x2="110" y2="210.7"/>
+			<line class="st32" x1="114.9" y1="210.7" x2="122.3" y2="210.7"/>
+			<line class="st33" x1="124.8" y1="210.7" x2="595" y2="210.7"/>
+			<line class="st7" x1="597.5" y1="210.7" x2="600" y2="210.7"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st7" x1="49" y1="611.5" x2="51.5" y2="611.5"/>
+			<line class="st34" x1="54.1" y1="611.5" x2="58.1" y2="611.5"/>
+			<line class="st35" x1="59.4" y1="611.5" x2="68.7" y2="611.5"/>
+			<line class="st7" x1="70" y1="611.5" x2="72.5" y2="611.5"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line class="st7" x1="442" y1="477.7" x2="444.5" y2="477.7"/>
+			<line class="st36" x1="450.3" y1="477.7" x2="458.9" y2="477.7"/>
+			<line class="st37" x1="461.8" y1="477.7" x2="505.1" y2="477.7"/>
+			<line class="st7" x1="508" y1="477.7" x2="510.5" y2="477.7"/>
+			<g>
+				<polygon points="507.7,481.4 509.3,477.7 507.7,474 516.5,477.7 				"/>
 			</g>
 		</g>
 	</g>
 </g>
 <g id="Layer_30">
-	<rect x="522" y="427" class="st38" width="100" height="27"/>
+	<rect x="522" y="464.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_31">
-	<text transform="matrix(1 0 0 1 539.9827 445.6448)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 539.9827 482.8048)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_33">
-	<rect x="631" y="427" class="st38" width="100" height="27"/>
+	<rect x="631" y="464.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_32">
-	<text transform="matrix(1 0 0 1 648.9827 445.6451)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 648.9827 482.8051)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_34">
-	<rect x="738" y="427" class="st38" width="100" height="27"/>
+	<rect x="738" y="464.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_35">
-	<text transform="matrix(1 0 0 1 755.9827 445.6451)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 755.9827 482.8051)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_36">
-	<rect x="739.1" y="536.1" class="st38" width="100" height="27"/>
+	<rect x="739.1" y="573.3" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_37">
-	<text transform="matrix(1 0 0 1 757.0719 554.7876)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 757.0719 591.9476)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_38">
-	<rect x="631" y="536" class="st38" width="100" height="27"/>
+	<rect x="631" y="573.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_39">
-	<text transform="matrix(1 0 0 1 648.9828 554.6447)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 648.9828 591.8046)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_40">
-	<rect x="522" y="536" class="st38" width="100" height="27"/>
+	<rect x="522" y="573.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_41">
-	<text transform="matrix(1 0 0 1 539.9828 554.6454)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 539.9828 591.8054)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_42">
-	<rect x="738.1" y="499.1" class="st38" width="100" height="27"/>
+	<rect x="738.1" y="536.3" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_43">
-	<text transform="matrix(1 0 0 1 756.0718 517.7876)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 756.0718 554.9476)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_44">
-	<rect x="630" y="499" class="st38" width="100" height="27"/>
+	<rect x="630" y="536.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_45">
-	<text transform="matrix(1 0 0 1 647.9828 517.6447)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 647.9828 554.8046)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_46">
-	<rect x="522" y="499" class="st38" width="100" height="27"/>
+	<rect x="522" y="536.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_47">
-	<text transform="matrix(1 0 0 1 539.9828 517.6454)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 539.9828 554.8054)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_48">
-	<rect x="738" y="463" class="st38" width="100" height="27"/>
+	<rect x="738" y="500.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_49">
-	<text transform="matrix(1 0 0 1 755.9828 481.6452)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 755.9828 518.8052)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_50">
-	<rect x="630" y="462.5" class="st38" width="100" height="27"/>
+	<rect x="630" y="499.7" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_51">
-	<text transform="matrix(1 0 0 1 647.9828 481.1725)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 647.9828 518.3325)" class="st1 st5">Resource</text>
 </g>
 <g id="Layer_52">
-	<rect x="522" y="462" class="st38" width="100" height="27"/>
+	<rect x="522" y="499.2" class="st38" width="100" height="27"/>
 </g>
 <g id="Layer_53">
-	<text transform="matrix(1 0 0 1 539.9828 480.6454)" class="st1 st5">Resource</text>
+	<text transform="matrix(1 0 0 1 539.9828 517.8054)" class="st1 st5">Resource</text>
 </g>
 </svg>
