@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-10-03"
+lastupdated: "2024-10-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4299,6 +4299,7 @@ Review the available platform and service roles and the actions mapped to each t
 | KMS Key Purge Role | As a KMS Key Purge, the user is allowed to purge encryption keys. |
 | Key Custodian - Creator | Manages Keys. For a complete key lifecycle both Creator and Deployer roles are needed. To implement separaton of duties assign Creator and Deployer role to different people. Can create keys |
 | Key Custodian - Deployer | Manages Keys. For a complete key lifecycle both Creator and Deployer roles are needed. To implement separaton of duties assign Creator and Deployer role to different people. Can deploy keys |
+| Kmip Adapter Manager | The rights necessary to manage access to resources governed via the KMIP protocol |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Reader Plus | As a reader plus, you can perform read-only actions within the service such as viewing service-specific resources. You can also access key material of standard keys. |
@@ -4446,6 +4447,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.uko.initiate-paid-upgrade` | Start billing of UKO base price (by using external keystores) | Vault Administrator |
 | `hs-crypto.uko.add-paid-keystore` | Create a paid keystore (beyond free amount) | Vault Administrator |
 | `hs-crypto.secrets-with-policy-overrides.create` | hs-crypto.secrets-with-policy-overrides.create | Manager |
+| `hs-crypto.kmip-management.create` | hs-crypto.kmip-management.create | Kmip Adapter Manager, Manager |
+| `hs-crypto.kmip-management.list` | hs-crypto.kmip-management.list | Kmip Adapter Manager, Manager |
+| `hs-crypto.kmip-management.read` | hs-crypto.kmip-management.read | Kmip Adapter Manager, Manager |
+| `hs-crypto.kmip-management.delete` | hs-crypto.kmip-management.delete | Kmip Adapter Manager, Manager |
 {: caption="Table 68. Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="hs-crypto"}
