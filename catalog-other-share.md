@@ -2,7 +2,7 @@
 
 copyright:
   years: 2021, 2024
-lastupdated: "2024-06-28"
+lastupdated: "2024-09-26"
 
 keywords: account, publish, private catalog, allowlist, external
 
@@ -34,6 +34,64 @@ A different process is used if you want to share your product with users in your
 
    If you don't have access to the account, a user that does have access must share the ID with you.
    {: important}
+
+## Installing the {{site.data.keyword.cloud_notm}} Catalog command-line plug-in
+{: #install-command-line-cli}
+{: cli}
+
+Install the {{site.data.keyword.cloud_notm}} Catalog plug-in to manage private catalogs, manage your offerings, and explore products in the {{site.data.keyword.cloud_notm}} catalog.
+
+1. Install the {{site.data.keyword.cloud_notm}} Catalog command-line plug-in.
+    ```sh
+    ibmcloud plugin install catalogs-management
+    ```
+    {: pre}
+
+1. Verify that you can use the catalogs-management command-line plug-in by listing all supported commands. The command prefix to work with the catalogs-management command-line plug-in is `ibmcloud catalog`.
+    ```sh
+    ibmcloud catalog help
+    ```
+    {: pre}
+
+    Example output 
+    ```text
+    NAME:
+    ibmcloud catalog - Manage catalog
+
+    USAGE:
+    ibmcloud catalog command [arguments...] [command options]
+
+    COMMANDS:
+    account                Account commands
+    blocklist              Add the targeted account to the blocklist of the specified service
+    create                 Create a new catalog. It will use the currently targeted group.
+    delete                 Delete a catalog
+    entry                  Get a catalog entry
+    entry-copy             Create duplicate of existing entry, with ability to change key fields.
+    entry-create           Create a new catalog entry(catalog admin of an account only)
+    entry-delete           Delete a catalog entry(catalog admin of an account only)
+    entry-update           Update an existing catalog entry(catalog admin or editor of an account only)
+    entry-visibility       Get the visibility for a catalog entry(catalog admin of an account only)
+    entry-visibility-set   Update the visibility of an existing catalog entry (catalog admin of an account only)
+    filter                 View and Modify account and catalog filters.
+    get                    Get catalog details
+    install                Install a software version.
+    list                   List catalogs
+    locations              Get Choice Subset of Regions in Choice of Format
+    netrc                  Create or refresh the token in your .netrc file. This token is used by Terraform when referencing modules in the catalog.
+    object                 View and modify objects.
+    offering               View and Modify offering.
+    pricing                Get pricing information for catalog offerings
+    search                 search the public catalog for published offerings. This includes managed services, software, and software published from your own account.
+    service                Show details of a service catalog entry
+    service-marketplace    List service offerings in the marketplace
+    target-account         Manage catalog target accounts.
+    utility                Utility commands
+    help, h                Show help
+
+    Enter 'ibmcloud catalog help [command]' for more information about a command
+        ```
+    {: screen}
 
 ## Publishing products to specific accounts by using the console
 {: #other-publish-steps}

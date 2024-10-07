@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-12-29"
+  years: 2018, 2024
+lastupdated: "2024-9-30"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 
@@ -14,6 +14,8 @@ subcollection: account
 
 # Auditing events for account, IAM, catalog management
 {: #acct_iam_tracking}
+
+
 
 As a security officer, auditor, or manager, you can use the {{site.data.keyword.at_full}} service to track how users and applications interact with an {{site.data.keyword.Bluemix}} account, the {{site.data.keyword.Bluemix_notm}} catalog, private catalogs, and with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM).
 {: shortdesc}

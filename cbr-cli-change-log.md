@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-09-11"
+lastupdated: "2024-09-30"
 keywords: change log for CBR, updates to CBR, cli, context-based restrictions
 
 subcollection: account
@@ -16,10 +16,17 @@ subcollection: account
 
 In this change log, you can learn about the latest changes, improvements, and updates for the context-based restrictions CLI.
 
+## Version 1.8.0
+{: #cli-180}
+
+Version 1.8.0 of the CLI was released on 25 Sep 2024.
+
+Added **`ibmcloud cbr zone-patch`** and **`ibmcloud cbr rule-patch`** commands, allowing for partial updates instead of full replacements.
+
 ## Version 1.7.2
 {: #cli-172}
 
-Version 1.7.2 of the CLI was released on 23 August 2024.
+Version 1.7.2 of the CLI was released on 23 Aug 2024.
 
 - Updated the outputs of most commands to be more useful and readable
 - Added a mention of implicit global location
@@ -30,7 +37,6 @@ Version 1.7.2 of the CLI was released on 23 August 2024.
 Version 1.7.1 of the CLI was released on 24 Mar 2024.
 
 Updated plugin with compatibility fixes for alpine linux.
-
 
 ## Version 1.7.0
 {: #cli-170}

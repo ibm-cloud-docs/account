@@ -22,7 +22,7 @@ As the owner or administrator of an {{site.data.keyword.cloud}} account, you can
 Only Pay-As-You-Go and Subscription accounts can create multiple accounts by using one email. Lite accounts can create only one account per email.
 {: note}
 
-Managing multiple accounts with a single IBMid is different from using an enterprise account. With an enterprise account, you can have several child accounts attached to a parent account, and all associated charges roll up to the parent account in the enterprise. See [What is an enterprise?](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise) for more information.
+Managing multiple accounts with a single IBMid is different from using an enterprise account. With an enterprise account, you can have several child accounts attached to a parent account, and all associated charges roll up to the parent account in the enterprise. See [What is an enterprise?](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise) for more information.
 
 To create multiple accounts associated with your IBMid, complete the following steps:
 
@@ -32,4 +32,4 @@ To create multiple accounts associated with your IBMid, complete the following s
 
 After you create the accounts, you can switch to a specific account from the console menu bar as shown in the following image.
 
-![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Figure 1. Account selector" caption-side="bottom"}
+![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.]<production>(images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.")</production>{: caption="Figure 1. Account selector" caption-side="bottom"}

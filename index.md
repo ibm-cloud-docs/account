@@ -2,9 +2,9 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-07-18"
+lastupdated: "2024-09-19"
 
-keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
+keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan
 
 subcollection: account
 
@@ -41,9 +41,6 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 
 [^tabletext]: Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise. Pay-As-You-Go accounts that sign up through IBM Cloud Sales or Softlayer can't create an enterprise.
 
-New accounts as of 25 October 2021 are created as Pay-As-You-Go or Subscription accounts. You're asked to provide credit card information for identity verification or a code for a purchased subscription. If you created an account before this date, you might be using a [Lite account](#liteaccount) and Lite pricing plans, which aren't affected by the recent account registration update.
-{: note}
-
 ## Trial account
 {: #trial}
 
@@ -67,8 +64,6 @@ You can create multiple resource groups to easily manage quota and view billing 
 
 Basic support is included with your {{site.data.keyword.cloud_notm}} Pay-As-You-Go. It is provided for nonproduction environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. For more information, see [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
 
-A subset of Pay-As-You-Go accounts are eligible for the new Enterprise Savings Plan billing model. For more information, see [Enterprise Savings Plan billing model](/docs/billing-usage?topic=billing-usage-committed-use).
-
 ## Subscription account
 {: #subscription-account}
 
@@ -77,8 +72,6 @@ Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts,
 When you purchase a subscription, you commit to a minimum spending amount for a certain period of time and receive a discount on the overall cost. For example, if you commit to spend $1,000 a month for 6 months, you might get a 5% discount. For the duration of the subscription, you get $6,000 of usage but pay only $5,700 for it. The larger the subscription, the better the discount.
 
 Large organizations and other users with large cloud workloads can benefit from the savings and predictable billing that are provided by subscriptions. {{site.data.keyword.cloud_notm}} offers multiple types of subscriptions to fit your usage needs.
-
-A subset of subscription accounts are eligible for the new Enterprise Savings Plan billing model. For more information, see [Enterprise Savings Plan billing model](/docs/account?topic=account-accounts#commit-model-account).
 
 ### Platform subscriptions
 {: #platform-subscriptions}
@@ -114,12 +107,6 @@ After you purchase a service bundle subscription, you'll receive an email with a
 When your subscription is about to expire, you are notified by email 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After your subscription expires, your account is converted to a Pay-As-You-Go account, which means you pay only for billable services that you use with no contracts or commitments. In addition, the discounts that are associated with your subscription account won't apply to the Pay-As-You-Go account. Go to the [Subscriptions](/billing/subscriptions) page to check whether any of your subscriptions are approaching their expiration date.
 
 You can work with [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to renew your subscription account.
-
-## Enterprise Savings Plan billing model
-{: #commit-model-account}
-
-{{site.data.keyword.cloud_notm}} customers can sign up for the Enterprise Savings Plan billing model. With this billing model, you commit to spend a certain amount on {{site.data.keyword.cloud_notm}} and you also receive discounts across the platform. You are billed monthly based on your usage and you continue to receive a discount even after you reach your committed amount. For more information about the billing model, see [Enterprise Savings Plan billing model](/docs/billing-usage?topic=billing-usage-committed-use).
-
 
 ## Lite account
 {: #liteaccount}

@@ -4,10 +4,10 @@ copyright:
 
   years: 2020, 2024
 
-lastupdated: "2024-06-05"
+lastupdated: "2024-09-19"
 
 
-keywords: getting started, account, Subscription, Pay-As-You-Go, enterprise, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up
+keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up
 
 subcollection: account
 
@@ -23,11 +23,8 @@ completion-time: 60m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="60m"}
 
-This tutorial walks you through the steps for setting up an account in {{site.data.keyword.cloud}}. By completing this tutorial, you learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.
+This tutorial walks you through the steps for setting up a Pay-As-You-Go account in {{site.data.keyword.cloud}}. By completing this tutorial, you learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.
 {: shortdesc}
-
-This tutorial focuses on how to set up a Pay-As-You-Go account. For more information about setting up accounts in an enterprise hierarchy, see [Setting up an enterprise](/docs/secure-enterprise?topic=secure-enterprise-enterprise-tutorial).
-{: tip}
 
 ## Create your account
 {: #account-gs-create}
@@ -255,7 +252,7 @@ IAM access groups provide a way for you to quickly and easily assign access to m
    1. Select a single service or a group of services:
 
       * **All Identity and Access enabled services**: Assigns access to all catalog services that use IAM for access management.
-      * **All Account Management services**: Assigns access to manage platform services, such as billing, license and entitlements, and enterprises. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+      * **All Account Management services**: Assigns access to manage platform services, such as billing, and license and entitlements. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
       * **All IAM Account Management services**: Assigns access to a subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM User Management, IAM Groups, and future IAM services.
 
    1. Click **Next**.

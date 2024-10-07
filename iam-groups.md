@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-01-25"
+lastupdated: "2024-09-19"
 
 
 keywords: access groups, access group, create group, assign access to group, administrator, administrator role
@@ -35,9 +35,9 @@ To make assigning and managing access even easier, you can set up resource group
 
 To manage or create new access groups, you must have the following type of access:
 
-* Account owner
 * Administrator or editor on the IAM Access Groups account management service in the account
 * Administrator or editor for the All Account Management services
+* You must be the account owner
 
 Additionally, an administrator or editor can be assigned access to manage an individual group by creating an access policy where the resource is the Access group ID. For more information about access policies and roles for the IAM Access Groups service, see [IAM access](/docs/account?topic=account-userroles#userroles).
 

@@ -47,7 +47,6 @@ toc:
             - iam-quickstart.md
             - context-restrictions-tutorial.md
             - tagging-resources-tutorial.md
-      - dash-tutorial.md
       - trustedprofile-compute-tutorial.md
       - trustedprofile-fed-tutorial.md
       - topicgroup:
@@ -375,6 +374,7 @@ toc:
       - iam-service-roles.md
       - iam-login-flows.md
       - iam-condition-properties.md
+      - customer-incident-report.md
   - navgroup:
       id: help
       topics:
@@ -449,4 +449,3 @@ toc:
           topics:
           - ts-iam-public-vpc-endpoint.md
       - known-issues.md
-      - getting-help.md
