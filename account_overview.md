@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-09-19"
+lastupdated: "2024-10-07"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, API key, users
 
@@ -20,8 +20,6 @@ Your {{site.data.keyword.Bluemix}} account includes many interacting components 
 {: shortdesc}
 
 The following diagram contains two main concepts for the components in the account hierarchy that are important to understand. The use of the solid lines and the dotted lines help illustrate that some components are contained within others, for example, users are added to access groups. However, some components interact with others for providing access instead of membership. For example, users are given access to resource groups but are not members of a resource group the same way they are for access groups.
-
-![A diagram that shows the components in an account, including services, users, and the subcomponents of each.](images/account_diagram.svg){: caption="Figure 1. A diagram that shows the components in an account, including services, users, and the subcomponents of each." caption-side="bottom"}
 
 
 
