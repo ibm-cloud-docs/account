@@ -1,44 +1,47 @@
-{
-    "version": 2,
+
+  {
     "title": "Managing your account, resources, and access docs",
+    "lastupdated": "2024-06-04",
     "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
-    "product_page": "https://www.ibm.com/products/product-value",
-    "console_page": "https://cloud.ibm.com/account",
-    "section_topics": {
-      "links": [
-        {
-          "title": "Learn about different account types",
-          "href": "/docs/account?topic=account-accounts"
-        },
-        {
-          "title": "Setting up your IBM Cloud account",
-          "href": "/docs/account?topic=account-account-getting-started"
-        },
-        {
-          "title": "Assigning access to resources",
-          "href": "/docs/account?topic=account-access-getstarted"
-        }
-      ]
-    },
-    "section_highlights": [
-      {
-        "title": "Resource title",
-        "description": "Short description of resource content.",
-        "href": "https://www.example.ibm.com/link/to/resource",
-        "type": "blog"
-      },
-      {
-        "title": "Db2 Optimization Techniques for SAP Database Migration to the Cloud",
-        "description": "This IBM Redbook provides in-depth recommendations for the source system database export.",
-        "href": "https://www.redbooks.ibm.com/abstracts/sg248531.html",
-        "type": "redbook",
-        "recommended": true
-      }
-    ],
     "section_devtools": {
       "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
       "cli": "/docs/account?topic=account-manage-catalogs-plugin",
       "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs"
+    },
+    "section_recommended": [
+      {
+        "title": "Learn about different account types",
+        "description": "Learn about the differences between Trial, Pay-As-You-Go, and Subscription account types.",
+        "href": "/docs/account?topic=account-accounts"
+      },
+        {
+        "title": "Setting up your IBM Cloud account",
+        "description": "Learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.",
+        "href": "/docs/account?topic=account-account-getting-started"
+      },
+      {
+        "title": "Assigning access to resources",
+        "description": "Get up and running quickly with IBM Cloud Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.",
+        "href": "/docs/account?topic=account-access-getstarted"
+      }
+    ],
+    "section_videos": [
+      {
+        "title": "Controlling access by using tags in IBM Cloud",
+        "href": "/docs/account?topic=account-account_setup",
+        "thumbnail": "/images/landing-Controlling-access-by-using-tags.png"
+      },
+      {
+        "title": "Introducing IBM Cloud trusted profiles",
+        "href": "/docs/account?topic=account-iamoverview&interface=ui#trusted-profiles-feature-fedusers",
+        "thumbnail": "/images/landing-Trusted-profiles.png"
+      }
+    ],
+    "section_learn": {
+      "developer": "https://developer.ibm.com/depmodels/cloud/",
+      "architecture": "https://www.ibm.com/topics/public-cloud",
+      "training": "https://www.ibm.com/training/cloud",
+      "community": "https://community.ibm.com/community/user/cloud/home"
     },
     "section_updates": {
       "view_more": "/docs/overview?topic=overview-whatsnew",
