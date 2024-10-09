@@ -38,7 +38,7 @@ The following patterns represent the allowed condition permutations:
 | time-based-conditions:once | Temporary access on a specific day from 9 AM to 5 PM UTC-5. |
 | time-based-conditions:weekly:all-day | Recurring access Mon-Fri UTC-5 all day. |
 | time-based-conditions:weekly:custom-hours | Recurring access Mon-Fri 9 AM to 5 PM UTC-5. |
-{: caption="Table 1. Allowed condition patterns for time-based conditions." caption-side="top"}
+{: caption="Allowed condition patterns for time-based conditions." caption-side="top"}
 
 IAM prevents combining one-time temporary conditions with weekly recurring conditions in the same policy definition.
 {: note}

@@ -29,7 +29,7 @@ In an authorization, the source service is the service that is granted access to
 
 In some cases, you can authorize dependent services in addition to the source service. The source service that is enabled to access the target service depends on another service. The dependent service must be assigned access to complete the workflow. The following diagram illustrates the process of delegating access between source, target, and dependent services:
 
-![S2S authorizations with dependent services.](images/dependent-services.svg){: caption="Figure 1. How S2S authorizations work with dependent services" caption-side="bottom"}
+![S2S authorizations with dependent services.](images/dependent-services.svg){: caption="How S2S authorizations work with dependent services" caption-side="bottom"}
 
 For more information about roles, see [Service access roles](/docs/account?topic=account-userroles#service_access_roles).
 

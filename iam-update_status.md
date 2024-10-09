@@ -35,7 +35,7 @@ All account users are assigned a status that describes their user state. A user'
 | Processing                      | A rarely viewed state in which the user is added to an invite, the system creates the first instance of the user, but the invite hasn't been sent.    |
 | Suspended                       |  The account owner or a user with sufficient permissions can set another user as suspended, which is a temporary alternative to removing a user. Access grants that are associated with the user through policies, access groups, or trusted profiles are not removed. Suspended users can't log in to the console or use the CLI to access the account. They don't have access to resources in your account.|
 | VPN-only                        | A user that is created in the account, but is restricted to VPN access only for devices. This type of user doesn't have access to log in to the console.      |
-{: caption="Table 1. User status" caption-side="top"}
+{: caption="User status" caption-side="top"}
 
 ## Updating a user's status
 {: #update_user_status}

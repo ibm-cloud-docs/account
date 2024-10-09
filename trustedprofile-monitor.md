@@ -61,7 +61,7 @@ A compute resource that's applying trusted profile `compute-profile-1` has the f
 | initiator.authnId | `crn-crn:v1:bluemix:public:containers-kubernetes:satloc_wdc_c8gfp9ow)1il4mg:a/a319e5b2c84429a9a2ece7a7c9a8807:c8jrclfw0` |
 | initiator.authnName | `sat-kp-c8gfp9ow0gavb01il4mg:ibm-kp:default:key-management-crypto-7797c45798-mlbck` |
 | logsourceCRN | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::` |
-{: caption="Table 1. Sample trusted profile attributes and values in Activity Tracker" caption-side="top"}
+{: caption="Sample trusted profile attributes and values in Activity Tracker" caption-side="top"}
 
 A federated user that's applying trusted profile `fed-user-profile-1` has the following identifying attributes:
 
@@ -74,6 +74,6 @@ A federated user that's applying trusted profile `fed-user-profile-1` has the fo
 | initiator.credential.type | `profile` |
 | initiator.authnId | `IBMid11118967` |
 | initiator.authnName | `addison.martin@ibm.com` |
-{: caption="Table 2. Sample trusted profile attributes and values in Activity Tracker" caption-side="top"}
+{: caption="Sample trusted profile attributes and values in Activity Tracker" caption-side="top"}
 
 For more information, see [IAM Identities (Mapping to Activity Tracker fields)](/docs/observability?topic=observability-scenario-iam-identities#trusted-profile) (**internal only**).

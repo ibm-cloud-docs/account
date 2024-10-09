@@ -78,7 +78,7 @@ The following table lists the current upgrade promotional amounts for different 
 | New Zealand   | NZD        | 302.40                 |
 | Sweden        | SEK        | 1,781.34               |
 | South Africa  | ZAR        | 3,563.88               |
-{: caption="Table 1. Promo price for different currencies" caption-side="top"}
+{: caption="Promo price for different currencies" caption-side="top"}
 
 ## Upgrading to a Subscription account
 {: #upgrade-subscription}

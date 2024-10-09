@@ -28,8 +28,8 @@ If you are logged in to an account that has a private catalog, the [Catalog menu
 
 You can specify who can see your particular product by sharing a product from your private catalog with other accounts, enterprise groups, enterprises, and to the {{site.data.keyword.cloud_notm}} catalog.
 
-![The Catalog menu shows all catalogs that you have permissions to see and work with.](images/private-catalog-share-diagram.png){: caption="Figure 1. The Catalog menu shows all catalogs that you have permissions to see and work with." caption-side="bottom"}
+![The Catalog menu shows all catalogs that you have permissions to see and work with.](images/private-catalog-share-diagram.png){: caption="The Catalog menu shows all catalogs that you have permissions to see and work with." caption-side="bottom"}
 
 The {{site.data.keyword.cloud_notm}} catalog includes products that are published to the {{site.data.keyword.IBM}} public cloud, as well as products that are shared with you directly from private catalogs. The product tiles that are visible to you include products that have one or more versions that are in either the `ready` or `pre-release` state.
 
-![The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog.](images/private-catalog-share-visibility-public.png){: caption="Figure 2. The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog." caption-side="bottom"}
+![The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog.](images/private-catalog-share-visibility-public.png){: caption="The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog." caption-side="bottom"}

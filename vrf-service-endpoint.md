@@ -180,4 +180,4 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} | [Public and private network endpoints](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-service-endpoint.html?audience=wdp&context=cpdaas){: external} with {{site.data.keyword.pm_short}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.speechtotextshort}} | [Public and private network endpoints](/docs/speech-to-text?topic=speech-to-text-public-private-endpoints) with {{site.data.keyword.speechtotextshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.texttospeechshort}} | [Public and private network endpoints](/docs/text-to-speech?topic=text-to-speech-public-private-endpoints ) with {{site.data.keyword.texttospeechshort}} |
-{: caption="Table 1. Services that support using service endpoints" caption-side="top"}
+{: caption="Services that support using service endpoints" caption-side="top"}

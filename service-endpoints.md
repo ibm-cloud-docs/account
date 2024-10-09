@@ -25,7 +25,7 @@ Moving these workloads from the public network offers two advantages:
 
 The following figure shows how traffic is routed through {{site.data.keyword.cloud_notm}}'s private network when accessing cloud services through service endpoints:
 
-![IBM Cloud Service Endpoint](images/CSE.png "Traffic being routed through a service endpoint"){: caption="Figure 1. Traffic routed through a service endpoint" caption-side="bottom"}
+![IBM Cloud Service Endpoint](images/CSE.png "Traffic being routed through a service endpoint"){: caption="Traffic routed through a service endpoint" caption-side="bottom"}
 
 If you are using classic infrastructure, you must enable virtual routing and forwarding (VRF) in your account first. Then, you can enable the use of service endpoints. After both options are enabled, you can start creating services that support the use of VRF and service endpoints from the catalog. If you are using {{site.data.keyword.vpc_full}}, then you don't need to enable VRF for your cloud account.
 

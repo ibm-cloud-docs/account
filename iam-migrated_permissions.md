@@ -38,7 +38,7 @@ You can continue to manage these migrated classic infrastructure permissions for
 | Edit cases                            | Edit any support case.                                                                         | Support Center                     | Editor         |
 | Search cases                          | Search all support cases if the view cases permission is also assigned.                        | Support Center                     | Viewer         |
 | View cases                            | View all support cases.                                                                        | Support Center and User Management | Viewer, Viewer |
-{: caption="Table 1. Migrated infrastructure permissions that are mapped to IAM roles" caption-side="top"}
+{: caption="Migrated infrastructure permissions that are mapped to IAM roles" caption-side="top"}
 
 For the view cases access, create two separate policies with the viewer role for the Support Center and User Management services. The policy on the User Management service ensures that the user views all cases in the account regardless of who opened them. Without the policy on the User Management service, if the account owner has restricted users' ability to view other users in the account, the user's view of cases might be limited to only the ones they opened themselves.
 {: note}

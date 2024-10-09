@@ -25,7 +25,7 @@ Review the following login sequence flows to understand the details about how fe
 
 The standard login sequence for users in {{site.data.keyword.cloud_notm}} that are not federated works according to the following sequence:
 
-![Login process for non-federated users with an IBMid](images/login-nonfed-id.svg "Login process for non-federated users with an IBMid"){: caption="Figure 1. Login process for non-federated users with an IBMid" caption-side="bottom"}
+![Login process for non-federated users with an IBMid](images/login-nonfed-id.svg "Login process for non-federated users with an IBMid"){: caption="Login process for non-federated users with an IBMid" caption-side="bottom"}
 
 
 1. The user starts by visiting the URL https://cloud.ibm.com with a browser. The {{site.data.keyword.cloud_notm}} console  sends back a login page to the browser.
@@ -44,7 +44,7 @@ The standard login sequence for users in {{site.data.keyword.cloud_notm}} that a
 
 IBMid allows enterprise customers to federate their user authentication and authorization system with IBMid. This way, users don't need to manage another user ID. Instead, they are able to log in into {{site.data.keyword.cloud_notm}} using their well-known customer-managed user ID. The login sequence for federated users in {{site.data.keyword.cloud_notm}} works according to the following sequence:
 
-![Login process for federated users with an IBMid](images/login-fed-id.svg "Login process for federated users with an IBMid"){: caption="Figure 2. Login process for federated users with an IBMid" caption-side="bottom"}
+![Login process for federated users with an IBMid](images/login-fed-id.svg "Login process for federated users with an IBMid"){: caption="Login process for federated users with an IBMid" caption-side="bottom"}
 
 1. The user starts by visiting the URL https://cloud.ibm.com with a browser. The {{site.data.keyword.cloud_notm}} console sends back a login page to the browser.
 2. On the login page, the user enters their username.
@@ -66,7 +66,7 @@ IBMid allows enterprise customers to federate their user authentication and auth
 
 If you choose to integrate with your external IdP to securely authenticate external users to your account by using an {{site.data.keyword.appid_short}} instance, the login sequence works according to the following sequence. For more information about this type of authentication, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
 
-![Login process for users who are connected from an App ID instance connected with a SAML partner](images/login-appid-saml.svg "Login process for users who are connected from an App ID instance connected with a SAML partner"){: caption="Figure 3. Login process for users who areconnected from an App ID instance connected with a SAML partner" caption-side="bottom"}
+![Login process for users who are connected from an App ID instance connected with a SAML partner](images/login-appid-saml.svg "Login process for users who are connected from an App ID instance connected with a SAML partner"){: caption="Login process for users who areconnected from an App ID instance connected with a SAML partner" caption-side="bottom"}
 
 1. The user starts the sequence by visiting an account-specific URL with their browser. This is either `https://cloud.ibm.com/authorize/<account id>` or `https://cloud.ibm.com/authorize/<account alias>`. The account alias can be configured on the IAM Identity Provider configuration pages in the {{site.data.keyword.cloud_notm}} console.
 

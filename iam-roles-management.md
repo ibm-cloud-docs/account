@@ -34,7 +34,7 @@ Anyone can view the available roles in the account on Roles page, but to create,
 |------|---------|
 | Editor |  Can edit and update the role display name, description, and the actions mapped to it.   |
 | Administrator | Create, edit, update, and delete custom roles and assign other users in the account access to the Role management service |
-{: caption="Table 1. Actions for Role management service" caption-side="top"}
+{: caption="Actions for Role management service" caption-side="top"}
 
 ## Creating custom roles in the console
 {: #custom-access-roles}

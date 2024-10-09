@@ -75,4 +75,4 @@ Each type of report does include the following information:
 
 For a simplified preview, see the following JSON example with comments added to help you understand the structure of the report.
 
-![Report example](images/json-report.svg "Report example"){: caption="Figure 1. JSON report example" caption-side="bottom"}
+![Report example](images/json-report.svg "Report example"){: caption="JSON report example" caption-side="bottom"}

@@ -45,7 +45,7 @@ To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated wi
 |----------------------------------------------------|------------------------------------------------------------|--------------------------------------------|----------------------------|
 | My {{site.data.keyword.cloud_notm}} API keys       | Your IBM Cloud API keys                                    | No access required                         | View, create, edit, delete |
 | All user {{site.data.keyword.cloud_notm}} API keys | All IBM Cloud API keys created by all users in the account | Administrator role on IAM Identity service | View, edit, and delete     |
-{: caption="Table 1. Required access for API key management on the API keys page" caption-side="top"}
+{: caption="Required access for API key management on the API keys page" caption-side="top"}
 
 ## Creating an API key in the console
 {: #create_user_key}

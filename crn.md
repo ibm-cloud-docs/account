@@ -87,7 +87,7 @@ The value of the `scope` segment must be formatted as `{scopePrefix}`/`{id}`. Th
 | Account      | a/`{account id}` | The account that the resource was created in.                                           | `a/292558`                               |
 | Organization | o/`{org guid}`   | The {{site.data.keyword.Bluemix_notm}} Organization to which the resource was assigned. | `o/4716e2d1-35b7-431f-891a-b552bf0b3c66` |
 | Space        | s/`{space guid}` | The {{site.data.keyword.Bluemix_notm}} Space to which the resource was assigned.        | `s/48b3cdcd-e804-4398-9032-73065863ad7c` |
-{: caption="Table 1. Scope usage" caption-side="top"}
+{: caption="Scope usage" caption-side="top"}
 
 
 ## service-instance
@@ -130,4 +130,4 @@ The following table provides a list of CRN examples.
 | Service instance  | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::` |
 | Bucket            | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4:bucket:mybucket` |
 | Child service     | `crn:v1:staging:public:resource-catalog::a/9d67f37fdf745e1b3cbef0ee4e6f2eda::composite:is.vpn` |
-{: caption="Table 2. CRN examples" caption-side="top"}
+{: caption="CRN examples" caption-side="top"}

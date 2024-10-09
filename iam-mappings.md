@@ -44,7 +44,7 @@ The following mappings of {{site.data.keyword.cloud_notm}} IAM concepts to those
 | Auditing | Audit with Activity Tracker | Audit with AWS CloudTrail | Azure Logging and Auditing Activity logs | Audit with Audit logging |
 | Enterprise-managed IAM | Centrally administer access and security settings for an {{site.data.keyword.cloud_notm}} multi-account environment. | AWS Control Tower |  |   |
 {: row-headers}
-{: caption="Table 1. {{site.data.keyword.cloud_notm}} IAM concept comparison" caption-side="top"}
+{: caption="{{site.data.keyword.cloud_notm}} IAM concept comparison" caption-side="top"}
 {: summary="The first column is {{site.data.keyword.cloud_notm}} IAM concept. Then, each of the following columns has details as that concept relates the specific cloud provider that is listed in the column header."}
 
 {{_include-segments/federating-segment.md}}

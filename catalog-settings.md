@@ -204,7 +204,7 @@ The following table lists the filters that you can use to customize which produc
 | Networking | Products that support or augment the linking of computers so they can operate interactively. |
 | Security | Products that provide the protection of stored data from theft, leakage, and deletion. |
 | Storage  | Products that support data to be created, read, updated, and deleted. |
-{: caption="Table 1. Options for filtering by category" caption-side="top"}
+{: caption="Options for filtering by category" caption-side="top"}
 {: #category-custom}
 {: tab-title="Category"}
 {: tab-group="customcatalogfilters"}
@@ -218,7 +218,7 @@ The following table lists the filters that you can use to customize which produc
 | HIPAA Enabled | The service is designated as HIPAA ready, meaning processing, storing, and handling Protected Health Information (PHI) in the service is supported. |
 | IAM-enabled | The service is enabled to use {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) for access control. Access policies are used to assign users and service IDs access to specific resources in an account.|
 | Service Endpoint Supported | The service can be connected to over the {{site.data.keyword.cloud_notm}} private network instead of the public network. Connecting directly to service endpoints doesn't require internet access, providing increased security. |
-{: caption="Table 1. Options for filtering by compliance" caption-side="top"}
+{: caption="Options for filtering by compliance" caption-side="top"}
 {: #compliance-custom}
 {: tab-title="Compliance"}
 {: tab-group="customcatalogfilters"}
@@ -233,7 +233,7 @@ The following table lists the filters that you can use to customize which produc
 | OVA Images | Open Virtual Appliance that contains a compressed installable version of a virtual machine. |
 | Server Images | A template that is used to create instances of virtual servers. |
 | Terraform |  Infrastructure as code to deploy your application. |
-{: caption="Table 1. Options for filtering by delivery method" caption-side="top"}
+{: caption="Options for filtering by delivery method" caption-side="top"}
 {: #software-custom}
 {: tab-title="Delivery method"}
 {: tab-group="customcatalogfilters"}
@@ -248,7 +248,7 @@ The following table lists the filters that you can use to customize which produc
 | Red Hat OpenShift | Used to create a {{site.data.keyword.openshiftshort}} cluster of compute hosts to deploy and manage containerized apps on {{site.data.keyword.cloud_notm}}. |
 | VMware vCenter Server | Provides deployment and management of VMware virtualized environments. |
 | Virtual Private Cloud | Deploy and manage your server images on virtual private cloud as your infrastructure target. |
-{: caption="Table 1. Options for filtering by deployment target" caption-side="top"}
+{: caption="Options for filtering by deployment target" caption-side="top"}
 {: #swdeploymenttargetfilters}
 {: tab-title="Deployment target"}
 {: tab-group="customcatalogfilters"}
@@ -259,7 +259,7 @@ The following table lists the filters that you can use to customize which produc
 |--------------|-------|
 | Free | The service includes monthly free allowances for only Pay-As-You-Go or Subscription accounts. |
 | Lite | The pricing plan for the service is structured as a free quota. The quota might operate for a specific time period, for example, a month or on a one-off usage basis. |
-{: caption="Table 1. Options for filtering by pricing plan" caption-side="top"}
+{: caption="Options for filtering by pricing plan" caption-side="top"}
 {: #pricingplan-svc}
 {: tab-title="Pricing plan"}
 {: tab-group="customcatalogfilters"}
@@ -270,7 +270,7 @@ The following table lists the filters that you can use to customize which produc
 |--------------|-------|
 | Beta | The product is available for evaluation and testing purposes. Beta products are not intended for production use. |
 | Deprecated | The product is supported but no longer recommended and that might become obsolete. |
-{: caption="Table 1. Options for filtering by release" caption-side="top"}
+{: caption="Options for filtering by release" caption-side="top"}
 {: #release-custom}
 {: tab-title="Release"}
 {: tab-group="customcatalogfilters"}
@@ -284,7 +284,7 @@ The following table lists the filters that you can use to customize which produc
 | SAP Certified | An infrastructure service that is certified by SAP to run production SAP workloads. For more information, see [{{site.data.keyword.ibm_cloud_sap}}](/docs/sap).|
 | Satellite Enabled | A service that is enabled for use with {{site.data.keyword.cloud_notm}} Satellite. You can run apps consistently across on-premises, edge computing, and public cloud environments. For more information, see [{{site.data.keyword.cloud_notm}} {{site.data.keyword.satelliteshort}}](https://www.ibm.com/products/satellite){: external}. |
 | Quantum Technologies | A service that is compatible with quantum technologies. For more information, see [{{site.data.keyword.IBM_notm}} Quantum services](http://cloud.ibm.com/quantum){: external}. |
-{: caption="Table 1. Options for filtering by runtime environment" caption-side="top"}
+{: caption="Options for filtering by runtime environment" caption-side="top"}
 {: #works-with-custom}
 {: tab-title="Works with"}
 {: tab-group="customcatalogfilters"}
@@ -297,7 +297,7 @@ The following table lists the filters that you can use to customize which produc
 | {{site.data.keyword.IBM_notm}} supported | Products that are supported by {{site.data.keyword.cloud_notm}}. |
 | Third party supported | Products that are provided by individual service entities. |
 | Community supported | Products that are provided by open source communities. |
-{: caption="Table 1. Options for filtering by support type" caption-side="top"}
+{: caption="Options for filtering by support type" caption-side="top"}
 {: #support-type-custom}
 {: tab-title="Support"}
 {: tab-group="customcatalogfilters"}

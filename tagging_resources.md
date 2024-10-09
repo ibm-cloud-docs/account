@@ -64,7 +64,7 @@ You can apply tags to help you organize and manage your resources, service IDs, 
 | `project:lw-wizard`, `app:poc-app` | Use to identify or even manage access to a project |
 | `dataresidency:germany`, `compliance:hipaa`, `compliance:pii` | Use to define compliance requirements |
 | `schedule:24x7`, `maxruntime:12days` | Use to help you automate optimization |
-{: caption="Table 1. Tag syntax" caption-side="top"}
+{: caption="Tag syntax" caption-side="top"}
 
 
 ## Creating tags

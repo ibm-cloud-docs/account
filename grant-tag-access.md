@@ -44,7 +44,7 @@ Any user in an account can view tags. When a resource is tagged, all users that 
 | IBM Cloud Load Balancer | Manage Load Balancers |
 | Gateway Appliance | Manage Network Gateways |
 | Service IDs | To attach or detach user tags, editor or administrator on the IAM Identity service  \n To attach or detach access management tags, administrator on the IAM Identity service |
-{: caption="Table 1. Required roles for attaching and detaching tags" caption-side="top"}
+{: caption="Required roles for attaching and detaching tags" caption-side="top"}
 {: summary="This is a simple data table."}
 
 

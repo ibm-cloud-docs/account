@@ -23,7 +23,7 @@ You can share your product from your private catalog with any account, enterpris
 
 The following flowchart shows the use cases for sharing your product. Each pathway addresses who you want to share your product with, how to share it, and if you need approval through Partner Center. If you need approval from Partner Center, see [Selling on {{site.data.keyword.cloud_notm}}](/docs/sell). 
 
-![A flow chart of sharing a product to other accounts, enterprises, or account groups within enterprises, or publishing with Partner Center approval.](images/share-product-private-catalog.svg){: caption="Figure 1. Flow chart of sharing a product to other ccounts, enterprises, or account groups within enterprises, or publishing with Partner Center approval" caption-side="bottom"}
+![A flow chart of sharing a product to other accounts, enterprises, or account groups within enterprises, or publishing with Partner Center approval.](images/share-product-private-catalog.svg){: caption="Flow chart of sharing a product to other ccounts, enterprises, or account groups within enterprises, or publishing with Partner Center approval" caption-side="bottom"}
 
 A `pre-release` version does not need to be validated before you can share it from your private catalog. However, a `pre-release` version must be validated if you are going through Partner Center. A `ready` version must be validated before you can share it. For more information, see [Validating the software](/docs/account?topic=account-create-private-catalog&interface=ui#catalog-validate-product).
 {: note}

@@ -28,7 +28,7 @@ The following patterns represent the allowed condition permutations:
 | Pattern | Example |
 |---------|---------|
 | `attribute-based-condition:resource:literal-and-wildcard` |	Conditions based on resource attributes with literal or wildcard values (based on the operator used) |
-{: caption="Table 1. Allowed condition patterns for resource attribute-based conditions." caption-side="top"}
+{: caption="Allowed condition patterns for resource attribute-based conditions." caption-side="top"}
 
 
 

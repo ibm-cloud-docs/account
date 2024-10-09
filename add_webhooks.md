@@ -132,7 +132,7 @@ Fields that are sent inside the payload can be either required or optional. Opti
 |**componentNames**: notification.componentNames |Optional|
 |**subCategory**: notification.subCategory|Optional|
 |**severity**: notification.severity|Optional|
-{: caption="Table 1. Fields in a payload" caption-side="top"}
+{: caption="Fields in a payload" caption-side="top"}
 
 Additional fields might be added in the future without a major version change. This means that any code that is processing notifications should be prepared to ignore the fields that it does not recognize.
 {: note}

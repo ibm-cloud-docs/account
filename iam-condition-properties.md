@@ -64,7 +64,7 @@ You can think of a dynamic rule or trusted profile condition as a key:value pair
 | Not Equals Ignore Case | Negated case-insensitive string comparison. Boolean or number values are converted into a string before comparison.	 | is_teamlead NotEqualsIgnoreCase “TrUe” |
 | Contains               | If the attribute is an array of strings, numbers, or Booleans, `Contains` determines by using the comparator `Equals` if the value that is provided is part of the array in the login message. If the attribute is a single string instead, `Contains` determines whether the value that is provided is contained in the string attribute in the login message. | `group` contains “Admins” |
 | In                     | Short notation for multiple Equal operators. Compares the value in the login message attribute with the list of potential values in this rule. Boolean or numbers are converted to a string before comparison. | jobRole in [“Manager”,”Director”,”Team-Lead”] |
-{: caption="Table 1. Available operators for conditions" caption-side="top"}
+{: caption="Available operators for conditions" caption-side="top"}
 
 #### Example
 {: #example-values}
@@ -79,7 +79,7 @@ The following table includes values for each of the fields for a dynamic rule or
 | Allow users when (attribute name) | `isManager`                       |
 | Operator                      | `Equals`                          |
 | Value                           | `true`                            |
-{: caption="Table 2. Example values" caption-side="top"}
+{: caption="Example values" caption-side="top"}
 
 ### Compute resource attribute names
 {: #cr-attribute-names}
@@ -98,7 +98,7 @@ To establish trust with a compute resource in a trusted profile, you can use the
 | Namespace              | `namespace`           | Namespace of the service account that is used to retrieve a Compute Resource token and get an IAM token. |
 | Service account        | `name`                | Name of the service account that is used to retrieve a Compute Resource token and get an IAM token. |
 | Pod                    | `pod`                 | The name of the Kubernetes pod that runs the code that wants to retrieve an IAM token. |
-{: caption="Table 3. Kubernetes and Red Hat OpenShift attribute names" caption-side="top"}
+{: caption="Kubernetes and Red Hat OpenShift attribute names" caption-side="top"}
 
 #### Virtual server for VPC attribute names
 {: #cr-vpc}
@@ -113,7 +113,7 @@ To establish trust with a compute resource in a trusted profile, you can use the
 | Subnet                 | `subnet_id`           | The subnet ID of the virtual server for VPC, if one is available. |
 | VPC ID                 | `vpc_id`              | The VPC ID of the virtual server for VPC, if one is available. |
 | Zone                   | `zone`                | Zone name in which this virtual server is deployed to. |
-{: caption="Table 4. Virtual server for VPC attribute names" caption-side="top"}
+{: caption="Virtual server for VPC attribute names" caption-side="top"}
 
 
 ### {{site.data.keyword.cloud_notm}} CLI command examples
@@ -179,7 +179,7 @@ The following table lists the operators available for creating time-based condit
 | `timeLessThanOrEquals` | The time that the condition terminates access. Time is calculated by `<time>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals). |
 | `dateTimeGreaterThanOrEquals` | The date and time that the condition begins granting access. Date is calculated by `<datetime>±<time_zone_offset>`. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeGreaterThanOrEquals-dateTimeLessThanOrEquals). |
 | `dateTimeLessThanOrEquals` | The date and time that the condition terminates access. Date is calculated by `<datetime>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeGreaterThanOrEquals-dateTimeLessThanOrEquals). |
-{: caption="Table 6. The operators available to time-based conditions for access policies." caption-side="top"}
+{: caption="The operators available to time-based conditions for access policies." caption-side="top"}
 
 When you define a condition with a `GreaterThanOrEquals` operator, always include a condition with a `LessThanOrEquals` operator. This way, there is a clearly defined duration, whether it is temporary, recurring all day, or recurring with custom hours. For more information, see [Condition patterns](/docs/account?topic=account-iam-time-based&interface=ui#condition-patterns).
 
@@ -193,7 +193,7 @@ Use the following variables to represent the `key` that specifies the client’s
 | `environment.attributes.current_time` | The client's current time. | `timeGreaterThanOrEquals`, `timeLessThanOrEquals` |
 | `environment.attributes.current_date_time` | The client's current date and time. | `dateTimeGreaterThanOrEquals`, `dateTimeLessThanOrEquals` |
 | `environment.attributes.day_of_week` | The client's current day of the week. | `dayOfWeekAnyOf`, `dayOfWeekEquals` |
-{: caption="Table 7. Variable notation for time-based conditions." caption-side="top"}
+{: caption="Variable notation for time-based conditions." caption-side="top"}
 
 #### Example: dayOfWeekAnyOf, timeGreaterThanOrEquals, and timeLessThanOrEquals
 {: #dayOfWeekAnyOf-timeGreaterThanOrEquals-timeLessThanOrEquals}
@@ -273,7 +273,7 @@ The following table lists the operators available for creating resource attribut
 | `stringMatch`  | Case-sensitive string match is performed between the pattern and the target string by using either an asterisk (`*`), question mark (`?`), both, or none (same as literal value). An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#example-stringExists). |
 | `stringEqualsAnyOf` | Case-sensitive exact string matching any of the strings in an array of strings. Limit of 10 values. |  See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#example-stringMatchAnyOf-stringEqualsAnyOf). |
 | `stringMatchAnyOf` | Case-sensitive string matching any of the strings in an array of strings. The string values can include either an asterisk (`*`), question mark (`?`), both, or none (same as literal value). An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. Limit of 10 values. |
-{: caption="Table 8. The operators available to resource attribute-based conditions for access policies." caption-side="top"}
+{: caption="The operators available to resource attribute-based conditions for access policies." caption-side="top"}
 
 The `key` represents the resource attribute that is supported by the chosen service. A `key` takes the form of `resource.attributes.<attribute-name>`. For example, in the case of Cloud Object Storage, the supported `prefix` attribute can be represented as the key with the `resource.attributes.prefix` notation. The following table lists example variables and is not all inclusive.
 
@@ -282,7 +282,7 @@ The `key` represents the resource attribute that is supported by the chosen serv
 | `resource.attributes.prefix` | Defines the prefix that this condition should allow for listing objects or folders. | `stringMatchAnyOf` |
 | `resource.attributes.path` | Scopes all read, write, and management access on objects. | `stringMatchAnyOf` |
 | `resource.attributes.delimiter` | Restricts the type of folder structure that the user can generate and helps the user navigate the bucket like a file hierarchy.   | `stringEquals` |
-{: caption="Table 9. Variable notation for resource attribute-based conditions." caption-side="top"}
+{: caption="Variable notation for resource attribute-based conditions." caption-side="top"}
 
 For more information, see [Condition patterns](/docs/account?topic=account-iam-resource-based&interface=ui#attribute-condition-patterns).
 

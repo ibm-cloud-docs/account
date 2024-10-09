@@ -73,7 +73,7 @@ Tokens expiration settings apply only if there is no connected login session. If
 | {{site.data.keyword.cloud}} Console | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | {{site.data.keyword.cloud}} CLI | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | API call                        |                                                |                                                |
-{: caption="Table 1. Sessions and refresh token availability - Users" caption-side="bottom"}
+{: caption="Sessions and refresh token availability - Users" caption-side="bottom"}
 {: summary="When a session is created or not depends on a combination of the identity type and login type."}
 {: #table01}
 {: tab-title="Users"}
@@ -86,7 +86,7 @@ Tokens expiration settings apply only if there is no connected login session. If
 | {{site.data.keyword.cloud}} Console | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | {{site.data.keyword.cloud}} CLI | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | API call                        |                                                |                                                |
-{: caption="Table 1. Sessions and refresh token availability - Trusted profiles for federated users" caption-side="bottom"}
+{: caption="Sessions and refresh token availability - Trusted profiles for federated users" caption-side="bottom"}
 {: summary="When a session is created or not depends on a combination of the identity type and login type."}
 {: #table02}
 {: tab-title="Trusted profiles - federated users"}
@@ -99,7 +99,7 @@ Tokens expiration settings apply only if there is no connected login session. If
 | {{site.data.keyword.cloud}} Console | N/A | N/A |
 | {{site.data.keyword.cloud}} CLI |         | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | API call                        |         |                                                |
-{: caption="Table 1. Sessions and refresh token availability - Service IDs" caption-side="bottom"}
+{: caption="Sessions and refresh token availability - Service IDs" caption-side="bottom"}
 {: summary="When a session is created or not depends on a combination of the identity type and login type."}
 {: #table03}
 {: tab-title="Service IDs"}

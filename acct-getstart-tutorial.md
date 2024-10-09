@@ -38,7 +38,7 @@ First, create an account by using your existing IBMid or a new IBMid. If your co
 |New IBMid        | If you don't yet have an IBMid, you can create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}. |
 |Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
 |Google ID | If you already have a Google account, you can use the credentials for Google to sign-up or log in to {{site.data.keyword.IBM_notm}}. |
-{: caption="Table 1. ID options for creating an account" caption-side="top"}
+{: caption="ID options for creating an account" caption-side="top"}
 
 ### Using your IBMid
 {: #signup-ibmid}
@@ -76,7 +76,7 @@ The following table shows the countries where personal use of our platform that 
 | Seychelles |
 | Tanzania |
 | Uganda |
-{: caption="Table 2. Countries in Africa that are not supported" caption-side="bottom"}
+{: caption="Countries in Africa that are not supported" caption-side="bottom"}
 {: #Africa}
 {: tab-title="Africa"}
 {: tab-group="not-supported-countries"}
@@ -93,7 +93,7 @@ The following table shows the countries where personal use of our platform that 
 | United Arab Emirates |
 | Uzbekistan|
 | Vietnam |
-{: caption="Table 2. Countries in Asia that are not supported" caption-side="bottom"}
+{: caption="Countries in Asia that are not supported" caption-side="bottom"}
 {: #Asia}
 {: tab-title="Asia"}
 {: tab-group="not-supported-countries"}
@@ -108,7 +108,7 @@ The following table shows the countries where personal use of our platform that 
 | Serbia |
 | Switzerland |
 | Ukraine|
-{: caption="Table 2. Countries in Europe that are not supported" caption-side="bottom"}
+{: caption="Countries in Europe that are not supported" caption-side="bottom"}
 {: #Europe}
 {: tab-title="Europe"}
 {: tab-group="not-supported-countries"}

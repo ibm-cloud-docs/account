@@ -18,7 +18,7 @@ subcollection: account
 Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud}} resources based on a rule's criteria. The criteria include the network location of access requests, the endpoint type from where the request is sent, the multifactor authentication level of an identity, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide another layer of protection. Since both IAM policies and context-based restrictions enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
 {: shortdesc}
 
-![A diagram that shows how context-based restrictions work.](images/CBR-diagram.svg){: caption="Figure 1. A diagram that shows how context-based restrictions work." caption-side="bottom"}
+![A diagram that shows how context-based restrictions work.](images/CBR-diagram.svg){: caption="A diagram that shows how context-based restrictions work." caption-side="bottom"}
 
 For an example scenario on creating context-based restrictions, follow the tutorial for [Leveraging context-based restrictions to secure your resources](/docs/account?topic=account-context-restrictions-tutorial).
 
@@ -145,7 +145,7 @@ The following is a list of services that you can add to a network zone as a serv
 | [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled | |
 | [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | `schematics` |
 | [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-pipeline-subnet-ranges) | IAM-enabled | `toolchain` |
-{: caption="Table 1. Services that are compatible with service references." caption-side="top"}
+{: caption="Services that are compatible with service references." caption-side="top"}
 
 In table 1, **All Account Management services** refers to the grouping of Account Management type services that are listed in the table. For example, if there are two Account Management services listed in table 1, **All Account Management services** includes those two services. As more Account Management services become available as service references, network zones that specify **All Account Management services** as a service reference automatically include the newly added account management services.
 {: note}
@@ -202,7 +202,7 @@ To manage network zones, you must be assigned an IAM policy with a specific role
 | Viewer        | View network zones|
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
-{: caption="Table 2. Roles and actions for the Context-based restrictions service" caption-side="top"}
+{: caption="Roles and actions for the Context-based restrictions service" caption-side="top"}
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
 
@@ -219,7 +219,7 @@ To manage rules, you must be assigned an IAM policy with the Administrator role 
 | Viewer        | View rules |
 | Editor        | View rules |
 | Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules |
-{: caption="Table 3. Roles and example actions for target service" caption-side="top"}
+{: caption="Roles and example actions for target service" caption-side="top"}
 
 
 ## Services integrated with context-based restrictions
@@ -263,7 +263,7 @@ You can create context-based restrictions for the following services if you are 
 | [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-cbr) | IAM-enabled | No | `transit` |
 | [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-cbr) | IAM-enabled | No | `is` |
 | [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | No | `schematics` |
-{: caption="Table 4. Services that are compatible with context-based restrictions." caption-side="top"}
+{: caption="Services that are compatible with context-based restrictions." caption-side="top"}
 
 Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions).
 {: important}
@@ -285,7 +285,7 @@ If you have a specific use case that requires an extended limit, you can request
 | Network zones per account              | 500 |
 | IP addresses per network zone              | 1000 |
 | IP addresses per rule             | 1000 |
-{: caption="Table 5. Context-based restrictions limits" caption-side="top"}
+{: caption="Context-based restrictions limits" caption-side="top"}
 
 [^tabletext2]: IAM policies and context-based restrictions rules share a combined limit of 4020.
 

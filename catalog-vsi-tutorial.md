@@ -92,7 +92,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
 | `vsi_instance_name` | The name of the virtual server instance. | `True` | `False` |
 | `vsi_profile` | The profile of compute CPU and memory resources to use when creating the virtual server instance. | `False` | `False` |
 | `vsi_security_group` | The name of the security group that is created. | `True` | `False` |
-{: caption="Table 1. Parameters that you need to configure" caption-side="bottom"}
+{: caption="Parameters that you need to configure" caption-side="bottom"}
 
 {{_include-segments/edit-output-segment.md}}
 

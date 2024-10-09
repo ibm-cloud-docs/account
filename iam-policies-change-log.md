@@ -38,7 +38,7 @@ The following table shows the behavior changes for each version.
 |---|---|
 |`v2`| New schema to support conditions and advanced operators dealing with date and time|
 |`v1`| Initial version of IAM Policy Management API |
-{: caption="Table 1. IAM Policy Management API versions" caption-side="top"}
+{: caption="IAM Policy Management API versions" caption-side="top"}
 
 The `v1` API is not forwards compatible with the `v2` API. You can't add conditions to a policy that is created with the `v1` API. To add conditions, you must delete the `v1` policy and replace it with a new access policy that includes conditions.
 {: important}
