@@ -374,7 +374,6 @@ toc:
       - iam-service-roles.md
       - iam-login-flows.md
       - iam-condition-properties.md
-      - customer-incident-report.md
   - navgroup:
       id: help
       topics:
