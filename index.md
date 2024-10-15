@@ -4,7 +4,7 @@ copyright:
   years: 2015, 2024
 lastupdated: "2024-09-19"
 
-keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan
+keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
 subcollection: account
 

@@ -60,7 +60,7 @@ When you close a Pay-As-You-Go account, all usage stops across all services that
 
 To close a Subscription account, a support case is required for account security and documentation purposes. Closing your account can't be undone, and your data is unrecoverable. The support case documents your acknowledgment that the account and its data cannot be recovered after closure.
 
-You can request to cancel your Subscription account before the end of the term, but whether the subscription can be canceled early is at the discretion of IBM. A subscription is a contract between you and IBM that commits you to use {{site.data.keyword.cloud_notm}} for a specific term and spending amount. For more information, see [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions).
+You can request to cancel your Subscription account before the end of the term, but whether the subscription can be canceled early is at the discretion of IBM. A subscription is a contract between you and IBM that commits you to use {{site.data.keyword.cloud_notm}} for a specific term and spending amount. For more information, see [Managing subscriptions](/docs/account?topic=account-subscriptions).
 
 To create the support case, use the following steps:
 1. Go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center.
