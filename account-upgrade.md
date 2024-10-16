@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-06-28"
+  years: 2015, [{CURRENT_YEAR}]
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -47,7 +47,7 @@ After your payment information is processed, your account is upgraded and you ca
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
-If you can't upgrade your account because of an issue with your credit card, see [Troubleshooting credit card error messages](/docs/account?topic=account-cc-error-messages) for more information.
+If you can't upgrade your account because of an issue with your credit card, see [Troubleshooting credit card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages) for more information.
 {: tip}
 
 ## Promotional credit for upgrading your account
@@ -96,7 +96,7 @@ To upgrade from a Lite account to a Subscription account, complete the following
 
 1. Review your subscription details, and then enter your payment information.
 
-   After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/account?topic=account-subscriptions) for more information.
+   After your payment information is processed, your subscription credit is added to your account. You can monitor your subscription usage on this same Subscriptions page. See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
 
 Your subscription renews automatically. If you want to discontinue your subscription renewal, [contact support](/unifiedsupport/supportcenter).
 {: note}

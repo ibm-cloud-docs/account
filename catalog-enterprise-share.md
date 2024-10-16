@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2022, 2024
+  years: 2022, [{CURRENT_YEAR}]
 lastupdated: "2024-06-03"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in

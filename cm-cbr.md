@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2023, 2024
+  years: 2023, [{CURRENT_YEAR}]
 lastupdated: "2024-04-05"
 
 keywords: context-based restrictions, protecting catalog resources, security, catalog management

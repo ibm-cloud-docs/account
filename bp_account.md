@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-09-19"
+  years: 2018, [{CURRENT_YEAR}]
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -45,7 +45,7 @@ A default resource group is created for your account. If you have a Lite account
 ### Searching for resources
 {: #tags}
 
-You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [Exporting your usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv).
+You can use user tags to easily organize and search for the resources in your account. You can also use user tags to help identify specific team usage or cost allocation when you view your [Exporting your usage details to a CSV file](/docs/billing-usage?topic=billing-usage-viewingusage&interface=ui#export-csv).
 
 For more information, see [Working with tags](/docs/account?topic=account-tag).
 
