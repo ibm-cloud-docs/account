@@ -139,4 +139,4 @@ The following example includes values for each of the fields for a dynamic rule.
 | Add users when (attribute name) | isManager                       |
 | Comparator                      | Equals                          |
 | Value                           | true                            |
-{: caption="Table 1. Example dynamic rule for access groups" caption-side="top"}
+{: caption="Example dynamic rule for access groups" caption-side="top"}

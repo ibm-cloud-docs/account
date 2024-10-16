@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-09-19"
+  years: 2015, [{CURRENT_YEAR}]
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
-keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan
+keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
 subcollection: account
 
@@ -36,7 +36,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 | Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg) |                     |
 {: row-headers}
 {: class="comparison-table"}
-{: caption="Table 1. Comparison of {{site.data.keyword.cloud_notm}} accounts" caption-side="top"}
+{: caption="Comparison of {{site.data.keyword.cloud_notm}} accounts" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
 [^tabletext]: Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise. Pay-As-You-Go accounts that sign up through IBM Cloud Sales or Softlayer can't create an enterprise.
@@ -58,7 +58,7 @@ Support for a trial account is limited to nontechnical support issues that are r
 
 With a Pay-As-You-Go account, you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. You pay only for billable services that you use and monthly commitments, with no long-term contracts or commitments. When you register with {{site.data.keyword.cloud_notm}}, you get a Pay-As-You-Go account, and you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started. You can use the $200 credit on {{site.data.keyword.cloud_notm}} products.
 
-Your resource usage consists of recurring and fluctuating costs. If you purchase classic infrastructure services, you're billed on an hourly or monthly recurring basis in advance of use, like a rent bill. If you purchase platform services, your invoice fluctuates as your resource usage fluctuates, similar to a utility bill. You will receive invoices for recurring resources in your account until you cancel them. Turning a resource "off" does not cancel the resource in your account. See [Cancelling your billing items](/docs/billing-usage?topic=billing-usage-cancel-billing-items) for more information.
+Your resource usage consists of recurring and fluctuating costs. If you purchase classic infrastructure services, you're billed on an hourly or monthly recurring basis in advance of use, like a rent bill. If you purchase platform services, your invoice fluctuates as your resource usage fluctuates, similar to a utility bill. You will receive invoices for recurring resources in your account until you cancel them. Turning a resource "off" does not cancel the resource in your account. See [Canceling your billing items](/docs/billing-usage?topic=billing-usage-cancel-billing-items) for more information.
 
 You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.cloud_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges. You can [set up spending notifications](/docs/billing-usage?topic=billing-usage-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 

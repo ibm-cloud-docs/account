@@ -1,64 +1,58 @@
 {
+    "version": 2,
     "title": "Managing your account, resources, and access docs",
-    "lastupdated": "2024-06-04",
-    "introduction": "Leverage the interacting components and systems in your account for resource, user, and access management. Get started by setting up your IBM cloud account, learn about setting up an enterprise, or explore assigning access to resources quickly with IBM Cloud Identity and Access Management (IAM).",
+    "introduction": "Discover the end-to-end journey for managing your account by leveraging the docs. Start by setting up your IBM Cloud account, learn how to effectively manage your costs and usage, and gain insights into assigning access to resources with IBM Cloud Identity and Access Management (IAM). Explore best practices for resource management and find out how to get the support you need.",
+    "console_page": "/account",
+    "section_topics": {
+      "links": [
+        {
+          "title": "Learn about different account types",
+          "href": "/docs/account?topic=account-accounts"
+        },
+        {
+          "title": "Setting up your IBM Cloud account",
+          "href": "/docs/account?topic=account-account-getting-started"
+        },
+        {
+          "title": "Assigning access to resources",
+          "href": "/docs/account?topic=account-assign-access-resources&interface=ui#assign-new-access"
+        }
+      ]
+    },
+    "section_highlights": [
+      {
+        "title": "Catalog management in IBM Cloud",
+        "description": "Learn how to create private catalogs and access catalog settings.",
+        "href": "https://www.ibm.com/blog/announcement/enhanced-catalog-management-in-ibm-cloud/",
+        "type": "blog"
+      },
+      {
+        "title": "Introduction to IBM Cloud billing and usage",
+        "description": "Learn about the costs of any billable services that you use in your account.",
+        "href": "https://mediacenter.ibm.com/media/Introduction%20to%20IBM%20Cloud%20billing%20and%20usage/1_w31ph24n",
+        "type": "video",
+        "recommended": true
+      }
+    ],
     "section_devtools": {
-      "api": "/docs?tab=api-docs&subCategory=account&category=platform_services",
+      "api": "/apidocs/resource-catalog/private-catalog",
       "cli": "/docs/account?topic=account-manage-catalogs-plugin",
       "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs"
-    },
-    "section_recommended": [
-      {
-        "title": "Learn about different account types",
-        "description": "Learn about the differences between Trial, Pay-As-You-Go, and Subscription account types.",
-        "href": "/docs/account?topic=account-accounts"
-      },
-        {
-        "title": "Setting up your IBM Cloud account",
-        "description": "Learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.",
-        "href": "/docs/account?topic=account-account-getting-started"
-      },
-      {
-        "title": "Assigning access to resources",
-        "description": "Get up and running quickly with IBM Cloud Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.",
-        "href": "/docs/account?topic=account-access-getstarted"
-      }
-    ],
-    "section_videos": [
-      {
-        "title": "Controlling access by using tags in IBM Cloud",
-        "href": "/docs/account?topic=account-account_setup",
-        "thumbnail": "/images/landing-Controlling-access-by-using-tags.png"
-      },
-      {
-        "title": "Introducing IBM Cloud trusted profiles",
-        "href": "/docs/account?topic=account-iamoverview&interface=ui#trusted-profiles-feature-fedusers",
-        "thumbnail": "/images/landing-Trusted-profiles.png"
-      }
-    ],
-    "section_learn": {
-      "developer": "https://developer.ibm.com/depmodels/cloud/",
-      "architecture": "https://www.ibm.com/topics/public-cloud",
-      "training": "https://www.ibm.com/training/cloud",
-      "community": "https://community.ibm.com/community/user/cloud/home"
     },
     "section_updates": {
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
           "date": "31 May 2024",
-          "title": "Onboarding software with usage-based pricing plans",
-          "description": "In addition to free and bring your own license plans, you can now add usage-based pricing plans to software onboarded with the virtual server image delivery method, offering it as a paid integrated product in the IBM Cloud catalog. After adding a plan to your software in Partner Center, you can also manage it in your private catalog. This includes adding features, changing the plan’s state, deprecating it, or updating plan details."
+          "title": "Onboarding software with usage-based pricing plans"
         },
         {
           "date": "06 December 2023",
-          "title": "Limit access with resource attribute-based conditions",
-          "description": "You can now create a single IAM policy that grants access based on multiple resource attribute-based conditions."
+          "title": "Limit access with resource attribute-based conditions"
         },
         {
           "date": "17 November 2023",
-          "title": "Protect your private catalog and private products",
-          "description": "Add an extra layer of protection to your private catalogs with context-based restrictions. Users can view the catalogs that you protect only if they satisfy your rule."
+          "title": "Protect your private catalog and private products"
         }
       ]
     }

@@ -1,5 +1,4 @@
 includes:
-  - https://github.ibm.com/cloud-docs/billing-usage
   - https://github.ibm.com/cloud-docs/cli
   - https://github.ibm.com/cloud-docs/sell
-
+  - https://github.ibm.com/cloud-docs/billing-usage

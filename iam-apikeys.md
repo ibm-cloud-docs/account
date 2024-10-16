@@ -78,4 +78,4 @@ If you are the account owner or a user with the required access, you can access 
 | All {{site.data.keyword.cloud_notm}} user API keys | All {{site.data.keyword.cloud_notm}} API keys created by all users in the account | Administrator role on the IAM Identity service | View, edit, and delete |
 | All service ID API keys | All API keys created for service IDs in the account | Administrator role on the IAM Identity service | View, edit, and delete |
 | Classic infrastructure API keys | Your classic infrastructure API key and any classic infrastructure API keys for users who you are ancestor of in the user hierarchy | No access required other than being an ancestor in the user hierarchy | View details and delete | 
-{: caption="Table 1. Required access for API key management on the API keys page" caption-side="top"}
+{: caption="Required access for API key management on the API keys page" caption-side="top"}

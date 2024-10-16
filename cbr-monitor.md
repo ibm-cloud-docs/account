@@ -82,4 +82,4 @@ A context-based restriction rule that protects `Example service` has the followi
 | requestData | `ipAddress`, `resource`, `subject` | Contains the details of the resource that the requester is trying to access, the identity of the requester and from what IP address they are requesting access.|
 | responseData | `decision`, `isEnforced` | The decision and enforcement mode. When `isEnforced=false`, the rule is in report-only mode. |
 | correlationId | `4a03eafdefed4f059dc9cad29d28513cxacml` | Used for debug interactions and tracing the request with support. |
-{: caption="Table 1. Sample context-based restriction attributes and values in Activity Tracker" caption-side="top"}
+{: caption="Sample context-based restriction attributes and values in Activity Tracker" caption-side="top"}

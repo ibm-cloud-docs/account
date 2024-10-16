@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2017, 2024
+  years: 2017, [{CURRENT_YEAR}]
 lastupdated: "2024-09-19"
 
 keywords: create connection, connect a service, bind, alias

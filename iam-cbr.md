@@ -70,7 +70,7 @@ To protect a specific IAM service or the group of all IAM Account Management ser
 | [IAM Identity service](/docs/account?topic=account-iam-services-cbr&interface=api#cbr-iam-identity) | `serviceName` | `iam-identity` |
 | [User Management service](/docs/account?topic=account-iam-services-cbr&interface=api#cbr-user-management) | `serviceName` | `user-management` |
 | [All IAM Account Management services](/docs/account?topic=account-iam-services-cbr&interface=api#cbr-iam-all) | `service_group_id` | `IAM`
-{: caption="Table 1. Attribute name value pairs that identify a service" caption-side="bottom"}
+{: caption="Attribute name value pairs that identify a service" caption-side="bottom"}
 
 To protect all actions associated with the service, create a rule without scoping it to specific resources or APIs. For more information, see [Creating rules](/docs/account?topic=account-context-restrictions-create&interface=ui#context-restrictions-create-rules). To protect only a specific set of actions, review the following sections, which are linked in Table 1.
 

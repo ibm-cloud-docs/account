@@ -69,7 +69,7 @@ For IAM to work correctly with your external IdP, you must ensure that the {{sit
 | firstname (recommended) | given_name if available, otherwise "notset" as default  | Mapped from SAML assertion "given_name", "givenname", "givenName", "first_name", "firstname" or "firstName" if available, otherwise IAM uses the constant "notset" | The first name of the user that logs in. |
 | lastname (recommended)  | family_name if available, otherwise "notset" as default | Mapped from SAML assertion "family_name", "familyname", "familyName", "last_name", "lastname" or "lastName" if available, otherwise IAM uses the constant "notset" | The last name of the user that logs in. |
 | name (optional)         | name if present, otherwise built by the firstname, a space, and the last name | There is no automatic mapping from SAML | Full name, including middle initial, title, or anything that is not covered by first name and last name |
-{: caption="Table 1.  Required attributes for App ID tokens" caption-side="bottom"}
+{: caption="Required attributes for App ID tokens" caption-side="bottom"}
 
 
 When a user authenticates successfully by using the {{site.data.keyword.appid_short}} service instance in the {{site.data.keyword.cloud_notm}} account, the user is automatically added to the account. Added users don't get any access policies assigned by default. However, by using [access groups](/docs/account?topic=account-groups) and [dynamic rules](/docs/account?topic=account-rules), you can set up automatically assigned access policies.

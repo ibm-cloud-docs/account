@@ -37,7 +37,7 @@ You can use API keys to [log in to the {{site.data.keyword.Bluemix_notm}} comman
 
 To retrieve an IAM access token, the API client must first invoke an {{site.data.keyword.Bluemix_notm}} IAM API to authenticate and retrieve that token. The preferred way for {{site.data.keyword.Bluemix_notm}} service API clients is to use an {{site.data.keyword.Bluemix_notm}} API key to get an IAM access token. The IAM access token, which was implemented as a [JSON Web Token](https://www.ibm.com/blog/json-web-tokens-as-building-blocks-for-cloud-security){: external}, can be used for multiple invocations of {{site.data.keyword.Bluemix_notm}} services that accept IAM access tokens as an authentication method. As IAM access tokens are digitally signed with asymmetric keys, {{site.data.keyword.Bluemix_notm}} services can validate an IAM access token without invoking any external service. This dramatically improves the performance of invoking an API.
 
-![Authenticating with a service API by using an access token](images/tokenauth.svg "Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials"){: caption="Figure 1. Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials" caption-side="bottom"}
+![Authenticating with a service API by using an access token](images/tokenauth.svg "Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials"){: caption="Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials" caption-side="bottom"}
 
 To authenticate with a service's API by using an access token, complete the following steps:
 
@@ -167,7 +167,7 @@ It is recommended that in all cases of passing an API key to a service API that 
 
 The target service API must introspect the {{site.data.keyword.Bluemix_notm}} API key by using the {{site.data.keyword.Bluemix_notm}} IAM service. The following graphic shows three API interactions. The {{site.data.keyword.Bluemix_notm}} API key is passed to every target service’s API, so each target service must look up the {{site.data.keyword.Bluemix_notm}} API key details by invoking {{site.data.keyword.Bluemix_notm}} IAM.
 
-![Authenticating with a service API by using an API key](images/APIkeyauth.svg "Passing API keys to target services which then pass the API key to IAM to validate credentials"){: caption="Figure 2. Passing API keys to target services which then pass the API key to IAM to validate credentials" caption-side="bottom"}
+![Authenticating with a service API by using an API key](images/APIkeyauth.svg "Passing API keys to target services which then pass the API key to IAM to validate credentials"){: caption="Passing API keys to target services which then pass the API key to IAM to validate credentials" caption-side="bottom"}
 
 Using an {{site.data.keyword.Bluemix_notm}} API key is convenient, and it makes it easy to discover new APIs and quickly try out prototypes. This method requires you to send the {{site.data.keyword.Bluemix_notm}} API key to the target service‘s API in a readable format, which unnecessarily compromises the API key. Additionally, as the target service’s API must always introspect the API key, this method is less performant and therefore not recommended for production work loads.
 

@@ -22,7 +22,7 @@ A policy grants a subject one or multiple roles to a set of resources so that sp
 
 The following graphic helps to explain how the IAM policy is created. Policies are always created by specifying the subject first. The subject is a specific user, service ID, access group, or a trusted profile. Next, the target of the policy is selected which is what you are allowing the user to access, for example: all services in a resource group, all IAM-enabled services in the account, account management services, or a particular service instance. Finally, you complete your access policy by selecting from the available roles. These roles define exactly what actions that a user can complete. More configuration options might be available, depending on the service you select.
 
-![Creating IAM policies by using a subject, target, and role](images/IAM.svg){: caption="Figure 1. How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
+![Creating IAM policies by using a subject, target, and role](images/IAM.svg){: caption="How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
 
 You can assign and manage policies if you have the proper role. The following table shows policy management tasks and the role that is required for each.
 
@@ -31,7 +31,7 @@ You can assign and manage policies if you have the proper role. The following ta
 | Create a policy in an account for all services and instances | Account owner or administrator on all account management services and all Identity and Access enabled services           |
 | Create a policy on a service in an account                   | Account owner, administrator on all Identity and Access enabled services, or administrator on the service in the account |
 | Create a policy on a service instance                        | Account owner, administrator on all Identity and Access enabled services, administrator on the service in the account, administrator on all services in the relevant resource group, or administrator on the service instance |
-{: caption="Table 1. Users allowed to create access policies" caption-side="top"}
+{: caption="Users allowed to create access policies" caption-side="top"}
 
 
 ## Common access policy types

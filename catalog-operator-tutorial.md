@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2021, 2024
+  years: 2021, [{CURRENT_YEAR}]
 lastupdated: "2024-02-01"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file

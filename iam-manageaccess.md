@@ -29,7 +29,7 @@ If you have a combination of resource types, you manage each type separately:
 
 While each type of access is managed separately, all access policies are made up of a subject you want to assign access to, a target for the policy to scope what the subject has access to, and then finally an IAM role or classic infrastructure permission to determine the level of access the subject has on the target.
 
-![Access management policies by using IAM or classic infrastructure permissions.](images/access-management.svg "How assigning policies works by starting with a subject, selecting a target, then assigning a role or permission"){: caption="Figure 1. Access management policies by using IAM or classic infrastructure permissions" caption-side="bottom"}
+![Access management policies by using IAM or classic infrastructure permissions.](images/access-management.svg "How assigning policies works by starting with a subject, selecting a target, then assigning a role or permission"){: caption="Access management policies by using IAM or classic infrastructure permissions" caption-side="bottom"}
 
 For IAM policies, the subject can be an access group, user, service ID, or trusted profile. And, the target can be an account management service, resource group, service in the account, specific service instance, or resource type within a service. Platform and service roles can be selected to scope the level of access for the subject. For classic infrastructure, a user is selected, and then the access can be scoped to a service or device with specific permissions assigned. For classic infrastructure that doesn't support the use of IAM policies for managing access, see [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra#how-classic-infra-permissions-work).
 
@@ -59,7 +59,7 @@ If you have a specific use case that requires an extended limit, you can request
 | Trusted profiles per account           | 2000 |
 | Users per trial account                | 100  |
 | Users per billable account             | 7500 |
-{: caption="Table 1. IAM account limits" caption-side="top"}
+{: caption="IAM account limits" caption-side="top"}
 
 [^tabletext]: IAM policies and context-based restrictions rules share a combined limit of 4020.
 

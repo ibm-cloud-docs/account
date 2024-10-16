@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-04-05"
+  years: 2018, [{CURRENT_YEAR}]
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -20,8 +20,6 @@ You can apply feature codes to take advantage of {{site.data.keyword.Bluemix}} r
 
 Are you looking for details about adding subscription credit to your account? See [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions) for more information.
 {: tip}
-
-
 
 You must have the Editor role or higher for all account management services to apply a feature code. The resources or capabilities that are provided vary depending on the particular code but include one or more of the following items in general:
 

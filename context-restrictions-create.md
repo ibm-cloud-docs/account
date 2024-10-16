@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2021, 2024
+  years: 2021, [{CURRENT_YEAR}]
 lastupdated: "2024-02-08"
 
 

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-09-19"
+  years: 2018, [{CURRENT_YEAR}]
+lastupdated: "[{LAST_UPDATED_DATE}]"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -67,7 +67,7 @@ A policy consists of a subject, target, and role. The subject in this case is th
 
 The following diagram shows how an access policy works:
 
-![What is an access policy](images/Access-Policy.svg "What is an access policy"){: caption="Figure 1. What is an Access Policy" caption-side="bottom"}
+![What is an access policy](images/Access-Policy.svg "What is an access policy"){: caption="What is an Access Policy" caption-side="bottom"}
 
 The most commonly used roles are viewer, editor, operator, and administrator platform roles.
 
@@ -118,7 +118,7 @@ Users with the Administrator role on access groups can grant or revoke access by
 
 The following diagram shows how access is assigned to resource groups:
 
-![Assigning access to resource groups](images/Access-and-Resource-Groups.svg "Assigning access to resource groups"){: caption="Figure 2. Assigning access to resource groups" caption-side="bottom"}
+![Assigning access to resource groups](images/Access-and-Resource-Groups.svg "Assigning access to resource groups"){: caption="Assigning access to resource groups" caption-side="bottom"}
 
 For more best practices from IBM Garage for Cloud, see [Managing access to resources in {{site.data.keyword.cloud_notm}}](https://develop.cloudnativetoolkit.dev/resources/ibm-cloud/access-control/){: external}.
 
@@ -152,7 +152,7 @@ A trusted profile, like other IAM identities, can be granted access by using a p
 
 The following diagram shows how access is assigned to trusted profiles:
 
-![Assigning access to trusted profiles](images/trusted-profiles.svg "Assigning access to trusted profiles"){: caption="Figure 3. Assigning access to trusted profiles" caption-side="bottom"}
+![Assigning access to trusted profiles](images/trusted-profiles.svg "Assigning access to trusted profiles"){: caption="Assigning access to trusted profiles" caption-side="bottom"}
 
 You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
@@ -190,7 +190,7 @@ Use the following table to understand the differences between using access group
 | Service ID                      | Yes                             | No                              |
 | Compute resource identities     | No                              | Yes                             |
 | User management is primarily done in| {{site.data.keyword.cloud_notm}} account           | Corporate user directory        |
-{: caption="Table 1. Compare access groups and trusted profiles" caption-side="top"}
+{: caption="Compare access groups and trusted profiles" caption-side="top"}
 
 Access groups and trusted profiles can be used separately or hand-in-hand for user and access management, depending on your organization's needs.
 

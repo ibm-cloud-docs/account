@@ -148,6 +148,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 |-------------------|-------------------------------|
 | {{site.data.keyword.appconfig_short}} | [Regions and endpoints](/docs/app-configuration?topic=app-configuration-ac-regions-endpoints) |
 | {{site.data.keyword.cloudcerts_short}} | [Regions and endpoints](/docs/secrets-manager?topic=secrets-manager-endpoints) |
+| {{site.data.keyword.logs_full_notm}} | [Service API endpoints]([/docs/cloud-logs?topic=cloud-logs-endpoints_api)) |
 | {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_basics#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
 | {{site.data.keyword.contdelivery_short}} | [Regions and endpoints](/docs/ContinuousDelivery?topic=ContinuousDelivery-regions#service-endpoints) |
 | {{site.data.keyword.databases-for-elasticsearch}} | [{{site.data.keyword.databases-for-elasticsearch}} service endpoints integration](/docs/cloud-databases?topic=cloud-databases-service-endpoints&interface=ui) |
@@ -180,4 +181,4 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} | [Public and private network endpoints](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-service-endpoint.html?audience=wdp&context=cpdaas){: external} with {{site.data.keyword.pm_short}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.speechtotextshort}} | [Public and private network endpoints](/docs/speech-to-text?topic=speech-to-text-public-private-endpoints) with {{site.data.keyword.speechtotextshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.texttospeechshort}} | [Public and private network endpoints](/docs/text-to-speech?topic=text-to-speech-public-private-endpoints ) with {{site.data.keyword.texttospeechshort}} |
-{: caption="Table 1. Services that support using service endpoints" caption-side="top"}
+{: caption="Services that support using service endpoints" caption-side="top"}

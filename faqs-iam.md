@@ -45,7 +45,7 @@ An IAM access policy is how users, services IDs, trusted profiles, and access gr
 
 A subject is a user, service ID, trusted profile, or access group. A target can be a service in the account, a resource group in the account, a specific resource instance or type, or an account management service. And, the roles that are provided as choices depend on your selected target. Some services have service-specific roles that are defined, and some use platform roles only. To understand this concept visually, check out the following graphic with an outline of the options for creating an IAM policy:
 
-![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role"){: caption="Figure 1. How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
+![Creating IAM policies](images/IAM.svg "How IAM access policies are created by using a subject, target, and role"){: caption="How IAM access policies are created by using a subject, target, and role" caption-side="bottom"}
 
 ## How do I find out what I have access to?
 {: #iam-access}

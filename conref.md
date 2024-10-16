@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2022, 2024
+  years: 2022, [{CURRENT_YEAR}]
 
 lastupdated: "2024-02-29"
 
@@ -76,7 +76,7 @@ The following table lists the string comparison operators that you can use to bu
 | `stringExists`  |  Boolean where `true` indicates that the string must be present and can be empty. `false` indicates that the string must not be present. |
 | `stringEqualsAnyOf` | Case-sensitive exact string matching any of the strings in an array of strings. Limit of 10 values. |
 | `stringMatchAnyOf` | Case-sensitive string matching any of the strings in an array of strings. The string values can include either an asterisk (`*`), question mark (`?`), both, or none (same as literal value). An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. Limit of 10 values. |
-{: caption="Table 3. The string comparison operators available for conditions in access policies." caption-side="top"}
+{: caption="The string comparison operators available for conditions in access policies." caption-side="top"}
 {: #string-compare-table-reuse}
 
 * H3 - **Federating users to IBM Cloud** is used in the following files:
