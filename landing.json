@@ -2,7 +2,6 @@
     "version": 2,
     "title": "Managing your account, resources, and access docs",
     "introduction": "Discover the end-to-end journey for managing your account by leveraging the docs. Start by setting up your IBM Cloud account, learn how to effectively manage your costs and usage, and gain insights into assigning access to resources with IBM Cloud Identity and Access Management (IAM). Explore best practices for resource management and find out how to get the support you need.",
-    "product_page": "https://www.ibm.com/products/product-value",
     "console_page": "/account",
     "section_topics": {
       "links": [
