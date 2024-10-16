@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-10-11"
+lastupdated: "2024-10-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2006,6 +2006,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/install_v3` | Installs Db2 audit v3 | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/db2audit/process_report` | db2audit process report | Administrator, Editor, Operator, Viewer |
 | `PATCH /v6/:platform/deployments/:deployment_id/availability` | Update deployment availability | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/iops_range` | retrieve the disk range and the corresponding iops range | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/instance_types` | Retrieve the list of available instance types | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Db2 on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}
@@ -7344,190 +7346,190 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `power-iaas.dashboard.view` | View Dashboard | Manager, Reader |
-| `power-iaas.cloud-instance.modify` | Power IaaS Cloud Instance Modify | Manager |
-| `power-iaas.cloud-instance.read` | Power IaaS Cloud Instance Read | Manager, Reader |
-| `power-iaas.pod-capacity.view` | Provides the ability to view Satellite POD capacity details. | Manager |
-| `power-iaas.cloud-connection-vpc.list` | vpc cloud connections for a given cloud instance | Manager, Reader |
-| `power-iaas.cloud-connection.read` | cloud connection for a given cloud instance | Manager, Reader |
-| `power-iaas.cloud-connection.list` | cloud connections for a given cloud instance | Manager, Reader |
-| `power-iaas.cloud-connection.create` | create a new cloud connection | Manager |
-| `power-iaas.cloud-connection.update` | update an existing cloud connection | Manager |
-| `power-iaas.cloud-connection.delete` | delete an existing cloud connection | Manager |
-| `power-iaas.cloud-connection-network.update` | attach a network to a cloud connection | Manager |
-| `power-iaas.cloud-connection-network.delete` | detach a network from a cloud connection | Manager |
-| `power-iaas.cloud-instance.list` | get the status of a power cloud instance | Manager, Reader |
-| `power-iaas.cos-image.read` | the latest cos-image import job for a cloud instance | Manager, Reader |
-| `power-iaas.cos-image.create` | creates an cos-image import job for a cloud instance | Manager |
-| `power-iaas.event.read` | get the corresponding event translated into the specified language | Manager, Reader |
-| `power-iaas.event.list` | list all corresponding events between specific time(s) | Manager, Reader |
-| `power-iaas.image-export.create` | create a image export job | Manager |
-| `power-iaas.image-export.read` | get the lastest image export job | Manager, Reader |
-| `power-iaas.stock-image.read` | get the info of an available stock image | Manager, Reader |
-| `power-iaas.stock-image.list` | list the available stock images in a cloud instance | Manager, Reader |
-| `power-iaas.cloud-instance-image.read` | get an image in a cloud instance | Manager, Reader |
-| `power-iaas.cloud-instance-image.list` | list the images in a cloud instance | Manager, Reader |
-| `power-iaas.cloud-instance-image.create` | create (copies) an image into a Cloud Instance | Manager |
-| `power-iaas.cloud-instance-image.delete` | delete an image from a cloud instance | Manager |
-| `power-iaas.job.read` | get the info for a job | Manager, Reader |
-| `power-iaas.job.list` | list recent jobs initiated by the cloud instance | Manager, Reader |
-| `power-iaas.job.delete` | delete the requested job | Manager |
-| `power-iaas.network-port.delete` | delete a port on a network | Manager |
-| `power-iaas.network-port.read` | get the information of a network port | Manager, Reader |
-| `power-iaas.network-port.list` | list the information of all a network's ports | Manager, Reader |
-| `power-iaas.network-port.create` | create a network port | Manager |
-| `power-iaas.network-port.update` | update a network port | Manager |
-| `power-iaas.network.delete` | delete a network | Manager |
-| `power-iaas.network.read` | get a network | Manager, Reader |
-| `power-iaas.network.list` | list all networks in a cloud instance | Manager, Reader |
-| `power-iaas.network.create` | create a network | Manager |
-| `power-iaas.network.update` | update a network | Manager |
-| `power-iaas.pvm-instance-console.create` | get the console url for an instance | Manager |
-| `power-iaas.pvm-instance-console.read` | get console languages for an instance | Manager, Reader |
-| `power-iaas.pvm-instance-console.update` | update a instance console required codepage | Manager |
-| `power-iaas.pvm-instance-network.delete` | remove a network from a pvm-instance | Manager |
-| `power-iaas.pvm-instance-network.read` | get network information of a pvm-instance | Manager, Reader |
-| `power-iaas.pvm-instance-network.list` | list all networks on a pvm-instance | Manager, Reader |
-| `power-iaas.pvm-instance-network.create` | add a network to a pvm-instance | Manager |
-| `power-iaas.pvm-instance.read` | get an instance | Manager, Reader |
-| `power-iaas.pvm-instance.delete` | delete an instance | Manager |
-| `power-iaas.pvm-instance.list` | list all instances | Manager, Reader |
-| `power-iaas.pvm-instance.create` | create an instance | Manager |
-| `power-iaas.pvm-instance.update` | update an instance | Manager |
-| `power-iaas.pvm-instance.action` | perform an action on an instance | Manager |
-| `power-iaas.pvm-instance.operation` | perform an operation on an instance | Manager |
-| `power-iaas.pvm-instance-capture.create` | create an instance capture job | Manager |
-| `power-iaas.pvm-instance-capture.read` | get the latest instance capture job | Manager, Reader |
-| `power-iaas.pvm-instance-clone.create` | clone an instance | Manager |
-| `power-iaas.pvm-instance-snapshot.create` | create a snapshot of an instance | Manager |
-| `power-iaas.pvm-instance-snapshot.list` | list of all the snapshots for an instance | Manager, Reader |
-| `power-iaas.pvm-instance-snapshot.restore` | restores a snapshot for an instance | Manager |
-| `power-iaas.placement-group.read` | get a placement group | Manager, Reader |
-| `power-iaas.placement-group.list` | list all placement groups from a cloud instance | Manager, Reader |
-| `power-iaas.placement-group.delete` | delete a placement group | Manager |
-| `power-iaas.placement-group.create` | create a placement group | Manager |
-| `power-iaas.placement-group-member.create` | add a server to a placement group | Manager |
-| `power-iaas.placement-group-member.delete` | remove a server from a placement group | Manager |
-| `power-iaas.shared-processor-pool.create` | create a shared processor pool | Manager |
-| `power-iaas.shared-processor-pool.delete` | delete a shared processor pool | Manager |
-| `power-iaas.shared-processor-pool.list` | list all shared processor pool for a cloud instance | Manager, Reader |
-| `power-iaas.shared-processor-pool.read` | get a shared processor pool | Manager, Reader |
-| `power-iaas.shared-processor-pool.update` | update a shared processor pool | Manager |
-| `power-iaas.spp-placement-group.create` | create a spp placement group | Manager |
-| `power-iaas.spp-placement-group.read` | get a spp placement group | Manager, Reader |
-| `power-iaas.spp-placement-group.list` | list all spp placement group for a cloud instance | Manager, Reader |
-| `power-iaas.spp-placement-group-member.create` | add spp placement group members | Manager |
-| `power-iaas.spp-placement-group-member.delete` | delete spp placement group members | Manager |
-| `power-iaas.spp-placement-group.delete` | delete a spp placement group | Manager |
-| `power-iaas.sap.read` | get a sap profile | Manager, Reader |
-| `power-iaas.sap.list` | list all sap profiles | Manager, Reader |
-| `power-iaas.sap.create` | create a sap pvm-instance | Manager |
-| `power-iaas.dhcp-service.read` | get a DHCP server | Manager, Reader |
-| `power-iaas.dhcp-service.list` | list all DHCP servers in a cloud instance | Manager, Reader |
-| `power-iaas.dhcp-service.delete` | delete a DHCP server | Manager |
-| `power-iaas.dhcp-service.create` | create a DHCP server | Manager |
-| `power-iaas.cloud-instance-snapshot.read` | get the details of a snapshot in a cloud instance | Manager, Reader |
-| `power-iaas.cloud-instance-snapshot.list` | list all snapshots in a cloud instance | Manager, Reader |
-| `power-iaas.cloud-instance-snapshot.update` | update a cloud instance snapshot | Manager |
-| `power-iaas.cloud-instance-snapshot.delete` | delete a cloud instance snapshot | Manager |
-| `power-iaas.storage-capacity-type.list` | get the storage capacity for all supported storage types for a region | Manager, Reader |
-| `power-iaas.storage-capacity-type.read` | get the storage capacity for a region supported storage type | Manager, Reader |
-| `power-iaas.storage-capacity-pool.list` | gets the storage capacity for all storage pools for a region | Manager, Reader |
-| `power-iaas.storage-capacity-pool.read` | gets the storage capacity for a storage pools for a region | Manager, Reader |
-| `power-iaas.storage-tier.read` | get the supported storage tiers for a data center | Manager, Reader |
-| `power-iaas.system-pool.list` | list of available system pools within a particular datacenter | Manager, Reader |
-| `power-iaas.task.read` | get the info for a task | Manager, Reader |
-| `power-iaas.task.delete` | delete a task | Manager |
-| `power-iaas.volume-clone.create` | create a volume clone | Manager |
-| `power-iaas.volume-clone.read` | get the details for a volumes-clone request | Manager, Reader |
-| `power-iaas.volume-clone.list` | list all volume clone requests | Manager, Reader |
-| `power-iaas.volume-clone.start` | start action for a volume clone request | Manager |
-| `power-iaas.volume-clone.execute` | execute action for a volume clone request | Manager |
-| `power-iaas.volume-clone.cancel` | cancel action for a volume clone request | Manager |
-| `power-iaas.volume-clone.delete` | delete a volume clone request | Manager |
-| `power-iaas.cloud-instance-volume.create` | create a data volume into a cloud instance | Manager |
-| `power-iaas.pvm-instance-volume.delete` | detach volumes from a pvm instance | Manager |
-| `power-iaas.volume-group.list` | list all volume groups in cloud instance | Manager, Reader |
-| `power-iaas.volume-group.read` | get a volume group in a cloud instance | Manager, Reader |
-| `power-iaas.volume-group.delete` | delete a volume group | Manager |
-| `power-iaas.volume-group.create` | create a volume group | Manager |
-| `power-iaas.volume-group.update` | update a volume group | Manager |
-| `power-iaas.volume-group.action` | perfoms action on a volume group | Manager |
-| `power-iaas.volume-group-remote-copy.read` | get list of remote copy volumes relationships | Manager, Reader |
-| `power-iaas.volume-group-storage.read` | get storage details of volume group | Manager, Reader |
-| `power-iaas.volume-onboarding.list` | list of all volume onboardings in a cloud instance | Manager, Reader |
-| `power-iaas.volume-onboarding.read` | get a volume onboarding operation information | Manager, Reader |
-| `power-iaas.volume-onboarding.create` | create a volume onboarding operation | Manager |
-| `power-iaas.cloud-instance-volume.read` | gets the info of an volume in a cloud instance | Manager, Reader |
-| `power-iaas.cloud-instance-volume.list` | list all volumes in a cloud instance | Manager, Reader |
-| `power-iaas.cloud-instance-volume.update` | update a volume in a cloud instance | Manager |
-| `power-iaas.cloud-instance-volume.delete` | deletes a volume from a cloud instance | Manager |
-| `power-iaas.pvm-instance-volume.list` | list all the volumes attached to a pvm instance | Manager, Reader |
-| `power-iaas.pvm-instance-volume.read` | get the info of an volume attached to a pvm instance | Manager, Reader |
-| `power-iaas.pvm-instance-volume.create` | attach volumes to a pvm instance | Manager |
-| `power-iaas.pvm-instance-volume.update` | update a volume attached to a pvm instance | Manager |
-| `power-iaas.pvm-instance-boot-volume.update` | set a pvm instance volume as the boot volume | Manager |
-| `power-iaas.volume-remote-copy.read` | get the info of remote copy volume | Manager, Reader |
-| `power-iaas.volume-flash-copy.read` | get the flash copy mappings of a volume | Manager, Reader |
-| `power-iaas.vpn-connection-network.delete` | detaches a local subnet from a vpn connection | Manager |
-| `power-iaas.vpn-connection-network.read` | list all local subnets attached to a vpn connection | Manager, Reader |
-| `power-iaas.vpn-connection-network.update` | attaches a local subnet to a vpn connection | Manager |
-| `power-iaas.vpn-connection-peer-subnet.delete` | detaches a peer subnet from a vpn connection | Manager |
-| `power-iaas.vpn-connection-peer-subnet.read` | list all peer subnets attached to a vpn connection | Manager, Reader |
-| `power-iaas.vpn-connection-peer-subnet.update` | attach a peer subnet to a vpn connection | Manager |
-| `power-iaas.vpn-connection-ike-policy.delete` | delete an IKE policy in a cloud instance | Manager |
-| `power-iaas.vpn-connection-ike-policy.read` | get an IKE policy in a cloud instance | Manager, Reader |
-| `power-iaas.vpn-connection-ike-policy.list` | list all IKE policies in a cloud instance | Manager, Reader |
-| `power-iaas.vpn-connection-ike-policy.create` | create an IKE policy in a cloud instance | Manager |
-| `power-iaas.vpn-connection-ike-policy.update` | update an IKE policy in a cloud instance | Manager |
-| `power-iaas.vpn-connection-ipsec-policy.delete` | delete an IPSec policy in a cloud instance | Manager |
-| `power-iaas.vpn-connection-ipsec-policy.read` | get an IPSec policy in a cloud instance | Manager, Reader |
-| `power-iaas.vpn-connection-ipsec-policy.list` | list all IPSec policies in a cloud instance | Manager, Reader |
-| `power-iaas.vpn-connection-ipsec-policy.create` | create a new IPSec policy in a cloud instance | Manager |
-| `power-iaas.vpn-connection-ipsec-policy.update` | update an IPSec policy in a cloud instance | Manager |
-| `power-iaas.vpn-connection.delete` | delete a VPN connection in a cloud instance | Manager |
-| `power-iaas.vpn-connection.read` | get a VPN connection in a cloud instance | Manager, Reader |
-| `power-iaas.vpn-connection.list` | list all VPN connections in a cloud instance | Manager, Reader |
-| `power-iaas.vpn-connection.create` | create a VPN connection for a cloud instance | Manager |
-| `power-iaas.vpn-connection.update` | update a VPN connection for a cloud instance | Manager |
-| `power-iaas.disaster-recovery.read` | get the disaster recovery location details for a cloud instance | Manager, Reader |
-| `power-iaas.available-hosts.list` | get a list of  available hosts | Manager, Reader |
-| `power-iaas.host-group.create` | creates a new hostgroup | Manager |
-| `power-iaas.host-group.list` | the list of all the hostgroups accessible from the workspace | Manager, Reader |
-| `power-iaas.host-group.read` | details about a specific hostgroup | Manager, Reader |
-| `power-iaas.cloud-instance-volume.action` | perform an action on a volume | Manager |
-| `power-iaas.tenant-sshkey.list` | list all of a tenants ssh keys | Manager, Reader |
-| `power-iaas.tenant-sshkey.create` | add a new ssh key to the tenant | Manager |
-| `power-iaas.tenant-sshkey.read` | get a tenant ssh key | Manager, Reader |
-| `power-iaas.tenant-sshkey.update` | update a tenant ssh key | Manager |
-| `power-iaas.tenant-sshkey.delete` | delete a tenant ssh key | Manager |
-| `power-iaas.tenant.read` | get the status of a tenant | Manager, Reader |
-| `power-iaas.tenant.update` | updates a tenant | Manager |
-| `power-iaas.host-group.update` | update the sharing status of a host group | Manager |
-| `power-iaas.host.create` | adds a host to an existing host group | Manager |
-| `power-iaas.host.delete` | removes the host from its host group | Manager |
-| `power-iaas.host.list` | list of all the hosts the workspace has access to | Manager, Reader |
-| `power-iaas.host.read` | Get the details about a host | Manager, Reader |
-| `power-iaas.host.update` | Modify the display name of a host | Manager |
-| `power-iaas.per-connection.migrate` | Perform a Power Edge Router actions on a workspace | Manager |
-| `power-iaas.snapshot.list` | Get a list of all the snapshots on a workspace | Manager, Reader |
-| `power-iaas.snapshot.read` | Get the detail of a snapshot | Manager, Reader |
-| `power-iaas.network-address-group.create` | Create a new Network Address Group | Manager |
-| `power-iaas.network-address-group.list` | Get the list of Network Address Groups for a workspace | Manager, Reader |
-| `power-iaas.network-address-group.read` | Get the details of a Network Address Group | Manager, Reader |
-| `power-iaas.network-address-group.update` | Update a Network Address Group | Manager |
-| `power-iaas.network-address-group.delete` | Delete a Network Address Group | Manager |
-| `power-iaas.network-security-group.list` | Get the list of Network Security Groups for a workspace | Manager, Reader |
-| `power-iaas.network-security-group.create` | Create a new Network Security Group | Manager |
-| `power-iaas.network-security-group.enable` | Perform a Network Security Groups action (enable, disable) | Manager |
-| `power-iaas.network-security-group.delete` | Delete a Network Security Group from a workspace | Manager |
-| `power-iaas.network-security-group.read` | Get the detail of a Network Security Group | Manager, Reader |
-| `power-iaas.network-security-group.update` | Update a Network Security Group | Manager |
-| `power-iaas.network-interfaces.list` | Get all Network Interfaces for a network | Manager, Reader |
-| `power-iaas.network-interfaces.create` | Perform Network Interface creation | Manager |
-| `power-iaas.network-interfaces.delete` | Delete a Network Interface | Manager |
-| `power-iaas.network-interfaces.read` | Get a Network Interface's information | Manager, Reader |
-| `power-iaas.network-interfaces.update` | Update a Network Interface's information | Manager |
+| `power-iaas.dashboard.view` | The ability to view the dashboard | Manager, Reader |
+| `power-iaas.cloud-instance.modify` | The ability to modify a cloud instance | Manager |
+| `power-iaas.cloud-instance.read` | The ability to get a cloud instance | Manager, Reader |
+| `power-iaas.pod-capacity.view` | The ability to view infrastructure capacity details | Manager |
+| `power-iaas.cloud-connection-vpc.list` | The ability to list VPC cloud connections for a cloud instance | Manager, Reader |
+| `power-iaas.cloud-connection.read` | The ability to get a cloud connection for a cloud instance | Manager, Reader |
+| `power-iaas.cloud-connection.list` | The ability to list cloud connections for a cloud instance | Manager, Reader |
+| `power-iaas.cloud-connection.create` | The ability to create a cloud connection for a cloud instance | Manager |
+| `power-iaas.cloud-connection.update` | The ability to update a cloud connection for a cloud instance | Manager |
+| `power-iaas.cloud-connection.delete` | The ability to delete a cloud connection for a cloud instance | Manager |
+| `power-iaas.cloud-connection-network.update` | The ability to attach a network to a cloud connection | Manager |
+| `power-iaas.cloud-connection-network.delete` | The ability to delete a network from a cloud connection | Manager |
+| `power-iaas.cloud-instance.list` | The ability to read status of a cloud instance | Manager, Reader |
+| `power-iaas.cos-image.read` | The ability to get a cos-image import job of a cloud instance | Manager, Reader |
+| `power-iaas.cos-image.create` | The ability to create a cos-image import job for a cloud instance | Manager |
+| `power-iaas.event.read` | The ability to get a corresponding event | Manager, Reader |
+| `power-iaas.event.list` | The ability to list corresponding events | Manager, Reader |
+| `power-iaas.image-export.create` | The ability to create an image export job | Manager |
+| `power-iaas.image-export.read` | The ability to read an image export job | Manager, Reader |
+| `power-iaas.stock-image.read` | The ability to read information for a stock image | Manager, Reader |
+| `power-iaas.stock-image.list` | The ability to list stock images in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-image.read` | The ability to read information for an image in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-image.list` | The ability to list images in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-image.create` | The ability to create (copies) an image into a cloud instance | Manager |
+| `power-iaas.cloud-instance-image.delete` | The ability to delete an image from a cloud instance | Manager |
+| `power-iaas.job.read` | The ability to get the details of a job | Manager, Reader |
+| `power-iaas.job.list` | The ability to list recent jobs initiated by the cloud instance | Manager, Reader |
+| `power-iaas.job.delete` | The ability to delete the requested job | Manager |
+| `power-iaas.network-port.delete` | The ability to delete a port on a network | Manager |
+| `power-iaas.network-port.read` | The ability to get the details of a network port | Manager, Reader |
+| `power-iaas.network-port.list` | The ability to list the information of all ports of a network | Manager, Reader |
+| `power-iaas.network-port.create` | The ability to create a network port | Manager |
+| `power-iaas.network-port.update` | The ability to update a network port | Manager |
+| `power-iaas.network.delete` | The ability to delete a network | Manager |
+| `power-iaas.network.read` | The ability to get a network | Manager, Reader |
+| `power-iaas.network.list` | The ability to list all networks in a cloud instance | Manager, Reader |
+| `power-iaas.network.create` | The ability to create a network | Manager |
+| `power-iaas.network.update` | The ability to update a network | Manager |
+| `power-iaas.pvm-instance-console.create` | The ability to get the console url for an instance | Manager |
+| `power-iaas.pvm-instance-console.read` | The ability to get console languages for an instance | Manager, Reader |
+| `power-iaas.pvm-instance-console.update` | The ability to update an instance console required codepage | Manager |
+| `power-iaas.pvm-instance-network.delete` | The ability to delete a network from a pvm instance | Manager |
+| `power-iaas.pvm-instance-network.read` | The ability to get network information of a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance-network.list` | The ability to list all networks on a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance-network.create` | The ability to add a network to a pvm instance | Manager |
+| `power-iaas.pvm-instance.read` | The ability to get a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance.delete` | The ability to delete a pvm instance | Manager |
+| `power-iaas.pvm-instance.list` | The ability to list all pvm instances | Manager, Reader |
+| `power-iaas.pvm-instance.create` | The ability to create a pvm instance | Manager |
+| `power-iaas.pvm-instance.update` | The ability to update a pvm instance | Manager |
+| `power-iaas.pvm-instance.action` | The ability to perform an action on an pvm instance | Manager |
+| `power-iaas.pvm-instance.operation` | The ability to perform an operation on a pvm instance | Manager |
+| `power-iaas.pvm-instance-capture.create` | The ability to create a pvm instance capture job | Manager |
+| `power-iaas.pvm-instance-capture.read` | The ability to get the latest pvm instance capture job | Manager, Reader |
+| `power-iaas.pvm-instance-clone.create` | The ability to clone a pvm instance | Manager |
+| `power-iaas.pvm-instance-snapshot.create` | The ability to create a snapshot of a pvm instance | Manager |
+| `power-iaas.pvm-instance-snapshot.list` | The ability to list all snapshots for a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance-snapshot.restore` | The ability to restores a snapshot for a pvm instance | Manager |
+| `power-iaas.placement-group.read` | The ability to get a placement group | Manager, Reader |
+| `power-iaas.placement-group.list` | The ability to list all placement groups from a cloud instance | Manager, Reader |
+| `power-iaas.placement-group.delete` | The ability to delete a placement group | Manager |
+| `power-iaas.placement-group.create` | The ability to create a placement group | Manager |
+| `power-iaas.placement-group-member.create` | The ability to add a server to a placement group | Manager |
+| `power-iaas.placement-group-member.delete` | The ability to delete a server from a placement group | Manager |
+| `power-iaas.shared-processor-pool.create` | The ability to create a shared processor pool | Manager |
+| `power-iaas.shared-processor-pool.delete` | The ability to delete a shared processor pool | Manager |
+| `power-iaas.shared-processor-pool.list` | The ability to list all shared processor pools for a cloud instance | Manager, Reader |
+| `power-iaas.shared-processor-pool.read` | The ability to get a shared processor pool | Manager, Reader |
+| `power-iaas.shared-processor-pool.update` | The ability to update a shared processor pool | Manager |
+| `power-iaas.spp-placement-group.create` | The ability to create a spp placement group | Manager |
+| `power-iaas.spp-placement-group.read` | The ability to get a spp placement group | Manager, Reader |
+| `power-iaas.spp-placement-group.list` | The ability to list all spp placement groups for a cloud instance | Manager, Reader |
+| `power-iaas.spp-placement-group-member.create` | The ability to add spp placement group members | Manager |
+| `power-iaas.spp-placement-group-member.delete` | The ability to delete spp placement group members | Manager |
+| `power-iaas.spp-placement-group.delete` | The ability to delete a spp placement group | Manager |
+| `power-iaas.sap.read` | The ability to get a sap profile | Manager, Reader |
+| `power-iaas.sap.list` | The ability to list all sap profiles | Manager, Reader |
+| `power-iaas.sap.create` | The ability to create a sap pvm instance | Manager |
+| `power-iaas.dhcp-service.read` | The ability to get a DHCP server | Manager, Reader |
+| `power-iaas.dhcp-service.list` | The ability to list all DHCP servers in a cloud instance | Manager, Reader |
+| `power-iaas.dhcp-service.delete` | The ability to delete a DHCP server | Manager |
+| `power-iaas.dhcp-service.create` | The ability to create a DHCP server | Manager |
+| `power-iaas.cloud-instance-snapshot.read` | The ability to get the details of a snapshot in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-snapshot.list` | The ability to list all snapshots in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-snapshot.update` | The ability to update a cloud instance snapshot | Manager |
+| `power-iaas.cloud-instance-snapshot.delete` | The ability to delete a cloud instance snapshot | Manager |
+| `power-iaas.storage-capacity-type.list` | The ability to get the storage capacity for all supported storage types for a region | Manager, Reader |
+| `power-iaas.storage-capacity-type.read` | The ability to get the storage capacity for a region supported storage type | Manager, Reader |
+| `power-iaas.storage-capacity-pool.list` | The ability to list the storage capacity for all storage pools for a region | Manager, Reader |
+| `power-iaas.storage-capacity-pool.read` | The ability to get the storage capacity for a storage pools for a region | Manager, Reader |
+| `power-iaas.storage-tier.read` | The ability to get the supported storage tiers for a datacenter | Manager, Reader |
+| `power-iaas.system-pool.list` | The ability to list available system pools within a datacenter | Manager, Reader |
+| `power-iaas.task.read` | The ability to get the details of a task | Manager, Reader |
+| `power-iaas.task.delete` | The ability to delete a task | Manager |
+| `power-iaas.volume-clone.create` | The ability to create a volume clone | Manager |
+| `power-iaas.volume-clone.read` | The ability to get the details of a volume clone request | Manager, Reader |
+| `power-iaas.volume-clone.list` | The ability to list all volume clone requests | Manager, Reader |
+| `power-iaas.volume-clone.start` | The ability to perform start action for a volume clone request | Manager |
+| `power-iaas.volume-clone.execute` | The ability to perform execute action for a volume clone request | Manager |
+| `power-iaas.volume-clone.cancel` | The ability to perform cancel action for a volume clone request | Manager |
+| `power-iaas.volume-clone.delete` | The ability to delete a volume clone request | Manager |
+| `power-iaas.cloud-instance-volume.create` | The ability to create a data volume into a cloud instance | Manager |
+| `power-iaas.pvm-instance-volume.delete` | The ability to detach volumes from a pvm instance | Manager |
+| `power-iaas.volume-group.list` | The ability to list all volume groups in cloud instance | Manager, Reader |
+| `power-iaas.volume-group.read` | The ability to get a volume group in a cloud instance | Manager, Reader |
+| `power-iaas.volume-group.delete` | The ability to delete a volume group | Manager |
+| `power-iaas.volume-group.create` | The ability to create a volume group | Manager |
+| `power-iaas.volume-group.update` | The ability to update a volume group | Manager |
+| `power-iaas.volume-group.action` | The ability to perfoms action on a volume group | Manager |
+| `power-iaas.volume-group-remote-copy.read` | The ability to get list of remote copy volume relationships | Manager, Reader |
+| `power-iaas.volume-group-storage.read` | The ability to get storage details of volume group | Manager, Reader |
+| `power-iaas.volume-onboarding.list` | The ability to list all volume onboardings in a cloud instance | Manager, Reader |
+| `power-iaas.volume-onboarding.read` | The ability to get a volume onboarding operation information | Manager, Reader |
+| `power-iaas.volume-onboarding.create` | The ability to create a volume onboarding operation | Manager |
+| `power-iaas.cloud-instance-volume.read` | The ability to get information of a volume in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-volume.list` | The ability to list all volumes in a cloud instance | Manager, Reader |
+| `power-iaas.cloud-instance-volume.update` | The ability to update a volume in a cloud instance | Manager |
+| `power-iaas.cloud-instance-volume.delete` | The ability to delete a volume from a cloud instance | Manager |
+| `power-iaas.pvm-instance-volume.list` | The ability to list all the volumes attached to a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance-volume.read` | The ability to get the details of a volume attached to a pvm instance | Manager, Reader |
+| `power-iaas.pvm-instance-volume.create` | The ability to attach volumes to a pvm instance | Manager |
+| `power-iaas.pvm-instance-volume.update` | The ability to update a volume attached to a pvm instance | Manager |
+| `power-iaas.pvm-instance-boot-volume.update` | The ability to set a pvm instance volume as the boot volume | Manager |
+| `power-iaas.volume-remote-copy.read` | The ability to get the details of remote copy volume | Manager, Reader |
+| `power-iaas.volume-flash-copy.read` | The ability to get the flash copy mappings of a volume | Manager, Reader |
+| `power-iaas.vpn-connection-network.delete` | The ability to detach a local subnet from a vpn connection | Manager |
+| `power-iaas.vpn-connection-network.read` | The ability to list all local subnets attached to a vpn connection | Manager, Reader |
+| `power-iaas.vpn-connection-network.update` | The ability to attach a local subnet to a vpn connection | Manager |
+| `power-iaas.vpn-connection-peer-subnet.delete` | The ability to detach a peer subnet from a vpn connection | Manager |
+| `power-iaas.vpn-connection-peer-subnet.read` | The ability to list all peer subnets attached to a vpn connection | Manager, Reader |
+| `power-iaas.vpn-connection-peer-subnet.update` | The ability to attach a peer subnet to a vpn connection | Manager |
+| `power-iaas.vpn-connection-ike-policy.delete` | The ability to delete an IKE policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ike-policy.read` | The ability to get an IKE policy in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ike-policy.list` | The ability to list all IKE policies in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ike-policy.create` | The ability to create an IKE policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ike-policy.update` | The ability to update an IKE policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ipsec-policy.delete` | The ability to delete an IPSec policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ipsec-policy.read` | The ability to get an IPSec policy in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ipsec-policy.list` | The ability to list all IPSec policies in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection-ipsec-policy.create` | The ability to create an IPSec policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection-ipsec-policy.update` | The ability to update an IPSec policy in a cloud instance | Manager |
+| `power-iaas.vpn-connection.delete` | The ability to delete a VPN connection in a cloud instance | Manager |
+| `power-iaas.vpn-connection.read` | The ability to get a VPN connection in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection.list` | The ability to list all VPN connections in a cloud instance | Manager, Reader |
+| `power-iaas.vpn-connection.create` | The ability to create a VPN connection for a cloud instance | Manager |
+| `power-iaas.vpn-connection.update` | The ability to update a VPN connection for a cloud instance | Manager |
+| `power-iaas.disaster-recovery.read` | The ability to get the disaster recovery location details of a cloud instance | Manager, Reader |
+| `power-iaas.available-hosts.list` | The ability to get a list of available hosts | Manager, Reader |
+| `power-iaas.host-group.create` | The ability to create a new hostgroup | Manager |
+| `power-iaas.host-group.list` | The ability to list all the hostgroups accessible from the workspace | Manager, Reader |
+| `power-iaas.host-group.read` | The ability to get the details about a specific hostgroup | Manager, Reader |
+| `power-iaas.cloud-instance-volume.action` | The ability to perform an action on a volume | Manager |
+| `power-iaas.tenant-sshkey.list` | The ability to list all of a tenants ssh keys | Manager, Reader |
+| `power-iaas.tenant-sshkey.create` | The ability to add a new ssh key to the tenant | Manager |
+| `power-iaas.tenant-sshkey.read` | The ability to get a tenant ssh key | Manager, Reader |
+| `power-iaas.tenant-sshkey.update` | The ability to update a tenant ssh key | Manager |
+| `power-iaas.tenant-sshkey.delete` | The ability to delete a tenant ssh key | Manager |
+| `power-iaas.tenant.read` | The ability to get the status of a tenant | Manager, Reader |
+| `power-iaas.tenant.update` | The ability to updates a tenant | Manager |
+| `power-iaas.host-group.update` | The ability to update the sharing status of a hostgroup | Manager |
+| `power-iaas.host.create` | The ability to add a host to an existing hostgroup | Manager |
+| `power-iaas.host.delete` | The ability to delete the host from its hostgroup | Manager |
+| `power-iaas.host.list` | The ability to list all the hosts the workspace has access to | Manager, Reader |
+| `power-iaas.host.read` | The ability to get the details about a host | Manager, Reader |
+| `power-iaas.host.update` | The ability to update the display name of a host | Manager |
+| `power-iaas.per-connection.migrate` | The ability to perform power edge router actions on a workspace | Manager |
+| `power-iaas.snapshot.list` | The ability to get a list of all snapshots on a workspace | Manager, Reader |
+| `power-iaas.snapshot.read` | The ability to get the details of a snapshot | Manager, Reader |
+| `power-iaas.network-address-group.create` | The ability to create a network address group | Manager |
+| `power-iaas.network-address-group.list` | The ability to list network address groups for a workspace | Manager, Reader |
+| `power-iaas.network-address-group.read` | The ability to get the details of a network address group | Manager, Reader |
+| `power-iaas.network-address-group.update` | The ability to update a network address group | Manager |
+| `power-iaas.network-address-group.delete` | The ability to delete a network address group | Manager |
+| `power-iaas.network-security-group.list` | The ability to list network security groups for a workspace | Manager, Reader |
+| `power-iaas.network-security-group.create` | The ability to create network security group | Manager |
+| `power-iaas.network-security-group.enable` | The ability to perform a network security groups action | Manager |
+| `power-iaas.network-security-group.delete` | The ability to delete a network security group from a workspace | Manager |
+| `power-iaas.network-security-group.read` | The ability to get the details of a network security group | Manager, Reader |
+| `power-iaas.network-security-group.update` | The ability to update a network security group | Manager |
+| `power-iaas.network-interfaces.list` | The ability to list network interfaces for a network | Manager, Reader |
+| `power-iaas.network-interfaces.create` | The ability to create a network interface | Manager |
+| `power-iaas.network-interfaces.delete` | The ability to delete a network interface | Manager |
+| `power-iaas.network-interfaces.read` | The ability to get information of a network interface | Manager, Reader |
+| `power-iaas.network-interfaces.update` | The ability to update information of a network interface | Manager |
 {: caption="Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-iaas"}
