@@ -283,7 +283,7 @@ Credits for {{site.data.keyword.IBM_notm}} corporate programs, such as Startup w
 {: #contactsupport}
 {: faq}
 
-Go to the [Support Center](/unifiedsupport/supportcenter){: external} page by clicking the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar. From there, review the list of common FAQs. If you don't find the answers that you need, review the **Contact Support** section. For more information on account types and support products, see [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
+Go to the [Support Center](/unifiedsupport/supportcenter){: external} page by clicking the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar. From there, review the list of common FAQs. If you don't find the answers that you need, review the **Contact Support** section. For more information on account types and support products, see [Basic, Advanced, and Premium Support plans](/docs/account?topic=account-support-plans).
 
 ## Where can I view the billing address for my account?
 {: #billing-address}
