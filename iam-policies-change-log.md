@@ -46,7 +46,7 @@ The `v1` API is not forwards compatible with the `v2` API. You can't add conditi
 ## 31 August 2023
 {: #31-aug-2023}
 
-This change log introduces new capabilities for the `v2` IAM Policy Management API that aren't compatible with `v1`. This new release adds the ability to create IAM policy templates in enterprise accounts, which you can reference to assign access in access group templates and trusted profile templates. For more information, see [Creating enterprise-managed policy templates](/docs/secure-enterprise?topic=secure-enterprise-policy-template-create&interface=api) and [How enterprise-managed IAM works](/docs/secure-enterprise?topic=secure-enterprise-access-enterprises#how-enterprise-iam).
+This change log introduces new capabilities for the `v2` IAM Policy Management API that aren't compatible with `v1`. This new release adds the ability to create IAM policy templates in enterprise accounts, which you can reference to assign access in access group templates and trusted profile templates. For more information, see [Creating enterprise-managed policy templates](/docs/enterprise-management?topic=enterprise-management-policy-template-create&interface=api) and [How enterprise-managed IAM works](/docs/enterprise-management?topic=enterprise-management-access-enterprises#how-enterprise-iam).
 
 
 ## 24 January 2023

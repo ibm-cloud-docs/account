@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2019, [{CURRENT_YEAR}]
+  years: 2019, 2024
 
 lastupdated: "2024-05-16"
 
@@ -47,7 +47,7 @@ Some products aren't affected by catalog visibility settings. Users can create i
 {: #set-account-filters}
 {: ui}
 
-You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type. If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/secure-enterprise?topic=secure-enterprise-catalog-enterprise-restrict&interface=ui).
+You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type. If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/enterprise-management?topic=enterprise-management-catalog-enterprise-restrict&interface=ui).
 
 
 1. Go to **Manage** > **Catalogs** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
@@ -96,7 +96,7 @@ ibmcloud catalog filter hide-ibm-public-catalog
 
 You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type.
 
-If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/secure-enterprise?topic=secure-enterprise-catalog-enterprise-restrict&interface=ui).
+If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/enterprise-management?topic=enterprise-management-catalog-enterprise-restrict&interface=ui).
 {: tip}
 
 1. Create a new filter.
@@ -149,7 +149,7 @@ See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=
 
 You can use filters to manage which products in the public catalog are available to all users in your account. For example, you might want to restrict access to third-party products. Or, you might want users to work with a specific software type.
 
-If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/secure-enterprise?topic=secure-enterprise-catalog-enterprise-restrict&interface=ui).
+If your account is a parent account in an {{site.data.keyword.cloud_notm}} enterprise, the filters that you set apply to all child account groups and accounts. For more information, see [Customizing the {{site.data.keyword.cloud_notm}} catalog for an enterprise](/docs/enterprise-management?topic=enterprise-management-catalog-enterprise-restrict&interface=ui).
 {: tip}
 
 ```bash
