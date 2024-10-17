@@ -177,7 +177,7 @@ manifest.json
 For more information about the usage snapshot API, see [Setup the snapshot configuration](/apidocs/metering-reporting#create-reports-snapshot-config){: external}.
 
 ## Understanding CSV table headings and JSON report fields
-{: #understand-reports}
+{: #understand-CSV-reports}
 
 The following tables shows the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
 

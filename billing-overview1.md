@@ -13,7 +13,7 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 # Video - How can I manage billing and usage in {{site.data.keyword.cloud_notm}}?
-{: #overview}
+{: #overview-billing}
 
 Learn about the {{site.data.keyword.cloud}} billing options and tools that you can use to track your usage and manage invoicing and payments.
 {: shortdesc}
@@ -100,4 +100,3 @@ New {{site.data.keyword.cloud_notm}} Pay-As-You-Go accounts for US customers wit
 {: note}
 
 For more information about invoices, see [Managing your invoices](/docs/account?topic=account-managing-invoices).
-

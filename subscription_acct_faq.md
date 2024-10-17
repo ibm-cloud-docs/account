@@ -15,7 +15,7 @@ content-type: faq
 {{site.data.keyword.attribute-definition-list}}
 
 # FAQs for subscription accounts
-{: #subscription-account}
+{: #faq-subscription-account}
 
 FAQs for subscription accounts include entries about subscription credit, subscription terms, and other subscription-related self-help information.
 {: shortdesc}
@@ -68,4 +68,3 @@ Yes, your subscription must have a combined minimum spending and term commitment
 A subscription is a contract between you and {{site.data.keyword.IBM_notm}} that commits you to use {{site.data.keyword.Bluemix_notm}} for a specific term and spending amount. You can request to cancel your subscription before the end of the term, but whether the subscription can be canceled is at the discretion of {{site.data.keyword.IBM_notm}}. Any remaining credit on your subscription might be forfeited. For more information, contact [Support](/unifiedsupport/supportcenter){: external}. Make sure that you provide details about why you need to cancel your subscription.
 
 To close a Pay-As-You-Go account or a Lite account, see [How can I close my account?](/docs/account?topic=account-accountfaqs#cancelaccount).
-

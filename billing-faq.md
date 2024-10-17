@@ -54,7 +54,7 @@ With Pay-As-You-Go accounts, you're billed monthly for your resource usage. Your
 With Subscription accounts, you buy a subscription for an amount of credit to spend on resource usage within a certain time period. In exchange for this spending commitment, you get a discount on your usage costs. For more information about the differences between account types, see [Account types](/docs/account?topic=account-accounts).
 
 ## What happens if my Lite plan instance reaches the monthly quota?
-{: #monthlyquota}
+{: #monthlyquota-billing}
 {: faq}
 {: support}
 

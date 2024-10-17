@@ -76,7 +76,7 @@ ibmcloud resource tag-attach --tag-names 'env:production' --resource-name 'MyRes
 {: codeblock}
 
 ## Replacing all tags of a resource with a new set of tags by using the CLI
-{: #update-key-value-cli}
+{: #replace-key-value-cli}
 {: cli}
 
 Log in to [{{site.data.keyword.cloud}} CLI](/docs/cli?topic=cli-getting-started) and select your account to run the appropriate CLI command.
@@ -1138,4 +1138,3 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
-

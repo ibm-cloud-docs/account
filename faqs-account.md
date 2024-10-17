@@ -217,7 +217,7 @@ If you believe that your account was deactivated in error, contact support by ca
 To make a payment and reactivate your account, contact support by calling 1-866-325-0045 and selecting the third option.
 
 ## What are my options for contacting {{site.data.keyword.cloud_notm}} Support?
-{: #contactsupport}
+{: #contactsupport-account}
 {: faq}
 
 From the {{site.data.keyword.Bluemix_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).

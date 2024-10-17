@@ -38,7 +38,7 @@ To cancel all devices, use the following steps:
 1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
 
 ## Step 3: Canceling all billing items
-{: #cancel-billing-items}
+{: #cancel-billing-items-account}
 
 To cancel all billing items, use the following steps:
 1. From the {{site.data.keyword.cloud_notm}} console, select **Manage** > **Billing and usage**.

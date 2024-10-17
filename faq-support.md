@@ -49,7 +49,7 @@ Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the con
 
 
 ## What are my options for contacting {{site.data.keyword.cloud_notm}} Support?
-{: #contactsupport}
+{: #contactsupport-faq}
 {: faq}
 
 From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
