@@ -18,7 +18,7 @@ subcollection: account
 
 {{site.data.keyword.cloud}} provides credit opportunities for customers to access more than 130 unparalleled services at a reduced cost. You can easily manage your billing and credits. For more information, see [Centrally managing billing and usage with enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise).
 
-
+{{site.data.keyword.Bluemix_notm}} offers a variety of codes and credits. A code is shared with the customers, when applied they receive credits, a certain amount that can be spent for {{site.data.keyword.Bluemix_notm}} services and support.
 
 ## Onboarding credits
 {: #onboard-credits}
