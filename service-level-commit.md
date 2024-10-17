@@ -77,4 +77,4 @@ Set a spending notification to make sure that your usage is on track to fulfill 
 
 You can get Advanced or Premium support with your service-level commitment. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center. To get support, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 
-For more information about {{site.data.keyword.Bluemix_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
+For more information about {{site.data.keyword.Bluemix_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/account?topic=account-support-plans).

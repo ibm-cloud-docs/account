@@ -45,16 +45,16 @@ Before you open a support case, explore the following resources:
 {: #open-support-case}
 {: faq}
 
-Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the console, and click **Create a case** from the Contact Support section. After your support case is created, you can follow its progress on the [Manage cases](/unifiedsupport/cases/manage){: external} page. For more information about creating a case, see [Creating support cases](/docs/get-support?topic=get-support-open-case).
+Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the console, and click **Create a case** from the Contact Support section. After your support case is created, you can follow its progress on the [Manage cases](/unifiedsupport/cases/manage){: external} page. For more information about creating a case, see [Creating support cases](/docs/account?topic=account-open-case).
 
 
 ## What are my options for contacting {{site.data.keyword.cloud_notm}} Support?
 {: #contactsupport-faq}
 {: faq}
 
-From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
+From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
-Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), chat with the Virtual Cloud Assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
+Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), chat with the Virtual Cloud Assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 
 ## How do I escalate support cases?
@@ -63,9 +63,9 @@ Lite and Trial account support is limited to non-technical support issues that a
 
 As an {{site.data.keyword.cloud_notm}} customer, you can escalate support cases to surface critical issues. To escalate a case, go to the [Support Center](/unifiedsupport/supportcenter){: external} and contact IBM Cloud Support by phone or chat. Provide your existing case number, the business impact of your issue, and a request to escalate the case.
 
-If you have a Basic support plan, access to support is through cases only. If your support inquiry requires a more immediate response, consider [upgrading to a Premium or Advanced support plan](/docs/get-support?topic=get-support-get-supportfaq#support-plan).
+If you have a Basic support plan, access to support is through cases only. If your support inquiry requires a more immediate response, consider [upgrading to a Premium or Advanced support plan](/docs/account?topic=account-get-supportfaq#support-plan).
 
-For more information, see [Escalating support cases](/docs/get-support?topic=get-support-escalation).
+For more information, see [Escalating support cases](/docs/account?topic=account-escalation).
 
 ## How do I change my email preferences for notifications?
 {: #email_preferences_gs}
@@ -92,7 +92,7 @@ To view your support costs, you need an access policy with the Administrator rol
 {: #support-plan}
 {: faq}
 
-If you want to upgrade your support plan, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Basic, Advanced, and Premium support plans](/docs/get-support?topic=get-support-support-plans).
+If you want to upgrade your support plan, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans).
 
 
 ## Why can't I see my support cases? 
@@ -123,7 +123,7 @@ The [{{site.data.keyword.IBM_notm}} SkillsBuild Software Downloads](https://www.
 {: #watchlist}
 {: faq}
 
-As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](/docs/get-support?topic=get-support-contact-watchlist).
+As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](/docs/account?topic=account-contact-watchlist).
 
 ## Can I find support cases that are created by specific users?
 {: #case_list_user}
@@ -150,7 +150,7 @@ If your account has classic infrastructure cases, you can download a list of cre
 {: #support-case-deactivated}
 {: faq}
 
-If your account is deactivated, you have 30 days to log in to the console and [create a support case](/docs/get-support?topic=get-support-open-case&interface=ui). If you can't access your account, you can create a support case by completing the [Create an Account, Login or Billing Request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create) form.
+If your account is deactivated, you have 30 days to log in to the console and [create a support case](/docs/account?topic=account-open-case&interface=ui). If you can't access your account, you can create a support case by completing the [Create an Account, Login or Billing Request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create) form.
 
 ## Do watchlists apply account-wide or to a specific case?
 {: #watchlist-specific}

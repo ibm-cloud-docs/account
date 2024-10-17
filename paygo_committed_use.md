@@ -74,4 +74,4 @@ For more information about product-level discounts through your Enterprise Savin
 
 You can get Advanced or Premium support with your Enterprise Savings Plan. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center. Both support plans cost just 10% of your annual commitment and usage. To get support, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 
-For more information about {{site.data.keyword.Bluemix_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
+For more information about {{site.data.keyword.Bluemix_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/account?topic=account-support-plans).

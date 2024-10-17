@@ -21,7 +21,7 @@ If you experience problems with {{site.data.keyword.Bluemix}}, you have several 
 As a classic infrastructure user, you might be familiar with support tickets. Tickets are now called cases in {{site.data.keyword.Bluemix_notm}}.
 {: note}
 
-Three different types of support plan are offered. For more information, see [Basic, Advanced, and Premium support plans](/docs/get-support?topic=get-support-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
+Three different types of support plan are offered. For more information, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
 
 {{site.data.keyword.IBM_notm}} periodically sends surveys to {{site.data.keyword.Bluemix_notm}} customers to get feedback on recent experiences with customer support. The survey focuses on the support quality and the overall experience. {{site.data.keyword.IBM_notm}} management reviews the survey results to improve the support experience.
 {: note}
@@ -41,7 +41,7 @@ The following are the methods that you can find in the Contact support section i
      * Contact support by phone using the number in the [Support Center](/unifiedsupport/supportcenter){: external}.
 * If you have technical questions, you can follow a link to ask questions of others in online communities.
 
-Users in the account need assigned access to create, update, search, or view cases. For more information, see [Assigning user access for working with support center](/docs/get-support?topic=get-support-access&interface=ui).
+Users in the account need assigned access to create, update, search, or view cases. For more information, see [Assigning user access for working with support center](/docs/account?topic=account-access&interface=ui).
 {: note}
 
 ### Asking a question
@@ -81,7 +81,7 @@ Enabling the EU Support setting for your account applies to all future cases tha
 ## {{site.data.keyword.IBM_notm}} generally available service
 {: #s-services-gaorcont}
 
-Support is provided for problems that are determined to be a defect for services or container images that are generally available (GA) and provided by {{site.data.keyword.IBM_notm}}. The case is addressed based on the severity that you assign. For more information, see [Case severity and initial response times](/docs/get-support?topic=get-support-support-case-severity).
+Support is provided for problems that are determined to be a defect for services or container images that are generally available (GA) and provided by {{site.data.keyword.IBM_notm}}. The case is addressed based on the severity that you assign. For more information, see [Case severity and initial response times](/docs/account?topic=account-support-case-severity).
 
 You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
 {: tip}

@@ -33,4 +33,4 @@ Check your inbox and your spam folder for the email. The confirmation email is s
 
 After you unblock the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} console](/){: external} and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
 
-If you still can't activate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-using-avatar).  
+If you still can't activate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/account?topic=account-using-avatar).  

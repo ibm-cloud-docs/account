@@ -347,7 +347,7 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 {: #accepting-invitations-ui}
 {: ui}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Managing invitation notifications](/docs/account?topic=account-email-prefs#invite-notifications) and [Viewing notifications](/docs/get-support?topic=get-support-viewing-notifications).
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Managing invitation notifications](/docs/account?topic=account-email-prefs#invite-notifications) and [Viewing notifications](/docs/account?topic=account-viewing-notifications).
 
 ## Accepting invitations by using the CLI
 {: #cli-accepting}
@@ -492,4 +492,3 @@ After the user ensures that the new IBMid exists, complete the following steps t
 3. Enter the new IBMid, and click **Update**.
 
 The user can now log in to ibm.com with their new IMBid and continue working in the {{site.data.keyword.Bluemix_notm}} account with the access assigned to their previously used IBMid.
-

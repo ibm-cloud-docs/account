@@ -15,7 +15,7 @@ subcollection: account
 
 {{site.data.keyword.cloud_notm}} is transitioning its Managed Services support offering, a legacy offering, from managed by IBM to managed by Wanclouds, an IBM partner, or to self-managed by the client. The effective date for this change is 1 January 2025. In most cases, changes, where changes may be needed, will be minor and should not interrupt your operations.
 
-If you use the Managed Services offering, you should [open a support case](/docs/get-support?topic=get-support-open-case&interface=ui) in the Support Center no later than 1 November 2024 to provide information on which transition option you choose and to coordinate with IBM on the changes. Because IBM requires a minimum of eight weeks to transition or enable the clients, either opting in or out, IBM requests your decision by November 1st.
+If you use the Managed Services offering, you should [open a support case](/docs/account?topic=account-open-case&interface=ui) in the Support Center no later than 1 November 2024 to provide information on which transition option you choose and to coordinate with IBM on the changes. Because IBM requires a minimum of eight weeks to transition or enable the clients, either opting in or out, IBM requests your decision by November 1st.
 
 As this transition approaches, help is available to assist you. If you have questions, contact us by opening a support case or by reaching out to your IBM representative in Technical Account Management (TAMs), Client Services (CSMs), or Sales for assistance.
 

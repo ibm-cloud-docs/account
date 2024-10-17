@@ -23,7 +23,7 @@ content-type: faq
 {: #dc-required-move}
 {: faq}
 
-To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/get-support?topic=get-support-dc-closure).
+To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/account?topic=account-dc-closure).
 
 
 ## Do I need to be fully migrated on the date my data center is consolidated?

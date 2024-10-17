@@ -15,7 +15,7 @@ subcollection: account
 # Case severity and initial response times
 {: #support-case-severity}
 
-How quickly your support cases are addressed depends on the assigned severity. You assign the severity of the issue when you open the case. With your agreement, the support team adjusts the assigned severity if an incorrect severity level is selected. For more information about support plans, see [Basic, Advanced, and Premium support plans](/docs/get-support?topic=get-support-support-plans).
+How quickly your support cases are addressed depends on the assigned severity. You assign the severity of the issue when you open the case. With your agreement, the support team adjusts the assigned severity if an incorrect severity level is selected. For more information about support plans, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans).
 
 The following table lists some common examples of support issues, suggested severity levels, and the initial response time objectives. The initial response time objectives are used to describe IBM goals only, and don't represent a performance guarantee.
 
@@ -48,4 +48,3 @@ Initial response Service Level Objectives (SLO) do not apply to any billing, inv
 
 We work with you 24 hours a day and seven days a week to resolve Severity 1 problems if you have a technical resource available to work during those hours. You must reasonably assist with any problem diagnosis and resolution.
 {: note}
-

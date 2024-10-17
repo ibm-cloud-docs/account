@@ -54,6 +54,6 @@ To manually apply the subscription code to a new account, complete the following
 1. Click **Register with a code** instead of entering your credit card information.
 1. Click **Create account**.
 
-If you don't know your seller, the codes are applied in the wrong order, or you experience issues with applying the codes, [contact {{site.data.keyword.Bluemix_notm}} Support](/docs/get-support?topic=get-support-using-avatar).
+If you don't know your seller, the codes are applied in the wrong order, or you experience issues with applying the codes, [contact {{site.data.keyword.Bluemix_notm}} Support](/docs/account?topic=account-using-avatar).
 
 For information about other codes and credits that can be applied to different account types, see [Applying feature codes to a Lite account](/docs/account?topic=account-codes) or [Applying promo codes](/docs/account?topic=account-applying-promo-codes). 
