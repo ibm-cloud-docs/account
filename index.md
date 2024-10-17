@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, [{CURRENT_YEAR}]
-lastupdated: "[{LAST_UPDATED_DATE}]"
+  years: 2015, 2024
+lastupdated: "2024-09-19"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -58,16 +58,16 @@ Support for a trial account is limited to nontechnical support issues that are r
 
 With a Pay-As-You-Go account, you can access the full {{site.data.keyword.cloud_notm}} catalog, including all Free and Lite plans. You pay only for billable services that you use and monthly commitments, with no long-term contracts or commitments. When you register with {{site.data.keyword.cloud_notm}}, you get a Pay-As-You-Go account, and you receive a [$200 credit](/docs/account?topic=account-upgrading-account) to help get you started. You can use the $200 credit on {{site.data.keyword.cloud_notm}} products.
 
-Your resource usage consists of recurring and fluctuating costs. If you purchase classic infrastructure services, you're billed on an hourly or monthly recurring basis in advance of use, like a rent bill. If you purchase platform services, your invoice fluctuates as your resource usage fluctuates, similar to a utility bill. You will receive invoices for recurring resources in your account until you cancel them. Turning a resource "off" does not cancel the resource in your account. See [Canceling your billing items](/docs/billing-usage?topic=billing-usage-cancel-billing-items) for more information.
+Your resource usage consists of recurring and fluctuating costs. If you purchase classic infrastructure services, you're billed on an hourly or monthly recurring basis in advance of use, like a rent bill. If you purchase platform services, your invoice fluctuates as your resource usage fluctuates, similar to a utility bill. You will receive invoices for recurring resources in your account until you cancel them. Turning a resource "off" does not cancel the resource in your account. See [Cancelling your billing items](/docs/account?topic=account-cancel-billing-items) for more information.
 
-You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.cloud_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges. You can [set up spending notifications](/docs/billing-usage?topic=billing-usage-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
+You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.cloud_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges. You can [set up spending notifications](/docs/account?topic=account-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
 Basic support is included with your {{site.data.keyword.cloud_notm}} Pay-As-You-Go. It is provided for nonproduction environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get extra help with your production workloads. For more information, see [Basic, Advanced, and Premium Support plans](/docs/get-support?topic=get-support-support-plans).
 
 ## Subscription account
 {: #subscription-account}
 
-Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts, including access to the full {{site.data.keyword.cloud_notm}} catalog and the ability to create multiple resource groups. In addition, Subscription accounts provide discounts for platform services and support and more consistent billing through subscriptions. You can also [set up spending notifications](/docs/billing-usage?topic=billing-usage-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
+Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts, including access to the full {{site.data.keyword.cloud_notm}} catalog and the ability to create multiple resource groups. In addition, Subscription accounts provide discounts for platform services and support and more consistent billing through subscriptions. You can also [set up spending notifications](/docs/account?topic=account-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
 When you purchase a subscription, you commit to a minimum spending amount for a certain period of time and receive a discount on the overall cost. For example, if you commit to spend $1,000 a month for 6 months, you might get a 5% discount. For the duration of the subscription, you get $6,000 of usage but pay only $5,700 for it. The larger the subscription, the better the discount.
 
@@ -78,7 +78,7 @@ Large organizations and other users with large cloud workloads can benefit from 
 
 When you purchase a subscription for the {{site.data.keyword.cloud_notm}} platform, you get discounted credit that pays for services and other resources that you create from the [{{site.data.keyword.cloud_notm}} catalog](/catalog){: external}.
 
-Your resource usage is deducted from your total subscription amount. Even if your usage varies from month to month, you get predictable, consistent billing. If your usage exceeds your total subscription amount, you're charged the nondiscounted rate for the overage. For more information about tracking your subscription usage, see [Managing subscriptions](/docs/billing-usage?topic=billing-usage-subscriptions).
+Your resource usage is deducted from your total subscription amount. Even if your usage varies from month to month, you get predictable, consistent billing. If your usage exceeds your total subscription amount, you're charged the nondiscounted rate for the overage. For more information about tracking your subscription usage, see [Managing subscriptions](/docs/account?topic=account-subscriptions).
 
 Your subscription applies to most services in the catalog. However, some services use a specific pricing plan that requires you to purchase it separately.
 
@@ -87,7 +87,7 @@ Your subscription applies to most services in the catalog. However, some service
 
 Basic support is included with your Subscription account. If you want to enhance your support experience for production-critical resources, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to purchase a support subscription for an Advanced or Premium support plan. With a support subscription, you commit to a monthly spending amount that goes toward your support costs.
 
-Support subscription credit is separate from any platform or service subscription credit in your account and can't be spent on resource usage. For more information, see [How subscription credit is spent](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-basics).
+Support subscription credit is separate from any platform or service subscription credit in your account and can't be spent on resource usage. For more information, see [How subscription credit is spent](/docs/account?topic=account-subscriptions#subscription-basics).
 
 ### Service bundle subscriptions
 {: #service-subscriptions}
@@ -99,7 +99,7 @@ You can add services bundles to any type of existing account, including Lite acc
 Service bundle subscriptions aren't available through the {{site.data.keyword.cloud_notm}} console. To learn more and purchase a service bundle, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 {: tip}
 
-After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Subscription credit](/docs/billing-usage?topic=billing-usage-subscriptions#subscription-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
+After you purchase a service bundle subscription, you'll receive an email with a subscription code that you apply to add the bundle to your account. For more information about how to apply subscription codes, see [Subscription credit](/docs/account?topic=account-subscriptions#subscription-codes). When your service bundle expires or you use all of the credit, you can continue to use any of the services, with usage charged at the Pay-As-You Go rate.
 
 ### Expiring subscriptions
 {: #expiring-subscription-account}

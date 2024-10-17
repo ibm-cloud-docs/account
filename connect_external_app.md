@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2015, [{CURRENT_YEAR}]
+  years: 2015, 2024
 lastupdated: "2024-04-05"
 
 keywords: service keys, api keys, using services outside IBM cloud, external apps

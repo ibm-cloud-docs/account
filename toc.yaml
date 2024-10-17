@@ -13,12 +13,13 @@ toc:
   - navgroup:
       id: learn
       topics:
-      - acct-getstart-tutorial.md
       - topicgroup:
           label: Learning about accounts
           topics:
           - index.md
           - account_overview.md
+          - cm-video.md
+          - billing-overview1.md
       - topicgroup:
           label: Learning about access management
           topics:
@@ -36,94 +37,79 @@ toc:
       - topicgroup:
           label: Best practices
           topics:
+          - bp_billing1.md
           - bp_account.md
-          - iam-cross-acc-access.md
+          - cc-bp1.md
   - navgroup:
       id: tutorial
       topics:
+      - acct-getstart-tutorial.md
+      - trustedprofile-compute-tutorial.md
       - topicgroup:
             label: Securing access to resources
             topics:
-            - iam-quickstart.md
-            - context-restrictions-tutorial.md
-            - tagging-resources-tutorial.md
-      - trustedprofile-compute-tutorial.md
+            - tagging-resources-tutorial1.md
       - trustedprofile-fed-tutorial.md
-      - topicgroup:
-          label: Sharing software with users in your account
-          topics:
-          - catalog-vsi-tutorial.md
-          - catalog-vsivpc-tutorial.md
-          - catalog-vsivpc-plans-tutorial.md
-          - catalog-vsipower-tutorial.md
-          - catalog-operator-tutorial.md
-          - catalog-opbundle-tutorial.md
-          - catalog-terraform-template-tutorial.md
-          - catalog-terraform-template-cli.md
+      - reconcile-tutorial1.md
   - navgroup:
       id: howto
       topics:
-      - iam-login_fedid.md
+      - topicgroup:
+          label: Managing your account
+          topics:
+          - account_settings.md
+          - account-upgrade.md
+          - dashboard-manage1.md
+          - topicgroup:
+                label: Updating account settings for compliance
+                topics:
+                - create-mult-accounts.md
+                - update-your-profile1.md
+                - distribution_list1.md
+                - update-account-ownership1.md
+                - iam-policy-number.md
+                - feature_codes.md
+                - shell-settings.md
+                - iam-leave-account.md
+                - account-close.md
       - topicgroup:
           label: Securing your account
           topics:
           - topicgroup:
-              label: Setting up multifactor authentication
-              topics:
-              - iam-mfatypes.md
-              - iam-mfa.md
-              - iam-mfa-report.md
-              - iam-ver-auth.md
-              - legacy-mfa.md
-              - migrate-mfa.md
+                label: Setting up multifactor authentication and other authentication methods
+                topics:
+                - iam-enable-manage-mfa1.md
+                - migrate-mfa.md
+                - legacy-mfa.md
+                - iam-federation-guide.md
+                - iam-idp-integration.md
+                - iam-saml-federation.md
           - topicgroup:
-              label: Setting up other authentication options
-              topics:
-              - iam-federation-guide.md
-              - iam-idp-integration.md
-              - iam-saml-federation.md
+                label: Managing access and identities
+                topics:
+                - iam-groups.md
+                - iam-mng-access.md
+                - iam-manage-user-account1.md
+                - iam-serviceid.md
+                - iam-account_management.md
+                - iam-public_access.md
+                - iam-migrated_permissions.md
+                - iam-wildcard.md
+                - iam-mnginfra.md
+                - iam-audit-policies.md
+                - iam-based-conditions1.md
+                - iam-authorizations.md
+                - iam-roles-management.md
+                - iam-accessgroup_rules.md
+                - iam-identify-inactive.md
           - topicgroup:
-              label: Managing access
-              topics:
-              - iam-groups.md
-              - iam-roles-management.md
-              - iam-accessgroup_rules.md
-              - iam-mng-access.md
-              - iam-cross-acct-restriction.md
-              - iam-account_management.md
-              - iam-wildcard.md
-              - iam-time-based.md
-              - iam-resource-based.md
-              - iam-public_access.md
-              - iam-mnginfra.md
-              - iam-migrated_permissions.md
-              - iam-authorizations.md
-              - iam-cbr.md
-              - iam-audit-policies.md
-          - topicgroup:
-              label: Administering trusted profiles
-              topics:
-              - trustedprofile-create.md
-              - trustedprofile-update.md
-              - trustedprofile-remove.md
-              - trustedprofile-iam-token.md
-          - topicgroup:
-              label: Controlling context-based restrictions
-              topics:
-              - context-restrictions-create.md
-              - context-restrictions-update.md
-              - context-restrictions-remove.md
-              - context-restrictions-cbr.md
-              - cm-cbr.md
-          - topicgroup:
-              label: Managing identities
-              topics:
-              - iam-userinv.md
-              - iam-remove-users.md
-              - iam-serviceid.md
-              - iam-identify-inactive.md
-              - iam-ibmid-change.md
-              - iam-audit-user-access.md
+                label: Administering and controlling security
+                topics:
+                - trustedprofile-create.md
+                - trustedprofile-manage1.md
+                - trustedprofile-iam-token.md
+                - context-restrictions-create.md
+                - context-restrictions-manage1.md
           - topicgroup:
               label: Administering settings
               topics:
@@ -137,163 +123,121 @@ toc:
               - sessions-settings.md
               - iam-token-exp.md
           - topicgroup:
-              label: Using API keys
-              topics:
-              - iam-apikeys.md
-              - iam-userid_keys.md
-              - iam-serviceid_keys.md
-              - iam-classic_infra_keys.md
-              - iam-apikey_iamtoken.md
-              - iam-apikeys_services.md
+                label: Using API keys
+                topics:
+                - iam-apikeys.md
+                - iam-userid_keys.md
+                - iam-serviceid_keys.md
+                - iam-classic_infra_keys.md
+                - iam-apikey_iamtoken.md
+                - iam-apikeys_services.md
       - topicgroup:
-          label: Working with resources
+          label: Working with resources and tags
+          topics:
+          - manage_resource_group1.md
+          - manage_resource1.md
+          - rg-access.md
+          - iam-access-report.md
+          - reclaim-resource.md
+          - tagging_resources.md
+          - manage_tags1.md
+          - grant-tag-access.md
+          - data-center-migration.md
+          - quotas.md
+          - resource-quota.md
+          - topicgroup:
+                label: Connecting resources to apps
+                topics:
+                - connecting_apps.md
+                - connect_external_app.md
+                - service_credentials.md
+                - using-services.md
+                - vrf-service-endpoint.md
+                - service-endpoints.md
+                - service_in_other_regions.md
+      - topicgroup:
+          label: Billing and usage for your account
           topics:
           - topicgroup:
-              label: Managing resource groups
-              topics:
-              - resourcegroups.md
-              - rg-access.md
-              - rg-delete.md
+                label: Managing your costs and usage
+                topics:
+                - how_charged.md
+                - estimating_costs.md
+                - change_pricing_plan.md
+                - getting-pricing-api.md
+                - notifications.md
+                - viewing_usage1.md
+                - understand-invoice.md
+                - manage_billing.md
+                - quotas.md
+                - invoices.md
+                - cancel-billing-items.md
           - topicgroup:
-              label: Managing resources
-              topics:
-              - manage_resource.md
-              - delete-resources.md
-              - reclaim-resource.md
-              - searching.md
-              - iam-access-report.md
+                label: Exporting your usage data for continual insights
+                topics:
+                - exporting-usage.md
+                - usage-report.md
           - topicgroup:
-              label: Tagging resources
-              topics:
-              - tagging_resources.md
-              - attach-detach-tags.md
-              - delete-tags.md
-              - grant-tag-access.md
-          - service_in_other_regions.md
-          - using-services.md
+                label: Managing subscriptions and commitments
+                topics:
+                - subscriptions.md
+                - paygo_committed_use.md
+                - service-level-commit.md
           - topicgroup:
-              label: Connecting resources to apps
-              topics:
-              - connect_external_app.md
-              - connecting_apps.md
-              - service_credentials.md
+                label: Working with codes and credits
+                topics:
+                - feature_codes.md
+                - subscription_codes.md
+                - promo_codes.md
           - topicgroup:
-              label: Connecting resources over a private network
-              topics:
-              - service-endpoints.md
-              - vrf-service-endpoint.md
-          - topicgroup:
-              label: Migrating resources
-              topics:
-              - data-center-migration.md
-          - topicgroup:
-              label: Working with software
-              topics:
-              - catalog-scans.md
-              - catalog-run-local.md
-              - catalog-embed-code.md
-              - sw-instance-details.md
+                label: Working with IBM Cloud's carbon calculator
+                topics:
+                - cc-working-with.md
+                - tracking-emission.md
+                - zero-emission-dc.md
+                - cc-terms.md
+          - support.md
+          - migrate-billing.md
+          - migrate-bp-billing.md
       - topicgroup:
-          label: Centrally managing products with catalogs
+          label: Catalog management in IBM Cloud
           topics:
           - cm-video.md
+          - topic: catalog-custom-private.md
+            navtitle: Customizing catalogs
+          - catalog-settings1.md
+          - catalog-product-details.md
+          - catalog-translate-details.md
+          - catalog-control-format.md
+          - catalog-manage-sw-plans.md
           - topicgroup:
-              label: Customizing access to products
-              topics:
-              - catalog-custom-private.md
-              - catalog-custom-private-object.md
-          - topicgroup:
-              label: Managing catalogs
-              topics:
-              - catalog-settings.md
-              - catalog-audit-logs.md
-          - topicgroup:
-              label: Validating products in a target account
-              topics:
-              - catalog-cross-account.md
-              - catalog-cross-validation.md
-          - topicgroup:
-              label: Onboarding products
-              topics:
-              - catalog-add-private.md
-              - catalog-product-details.md
-              - catalog-translate-details.md
-              - catalog-control-format.md
-              - catalog-manage-sw-plans.md
-          - topicgroup:
-              label: Sharing products
-              topics:
-              - catalog-enterprise-share-overview.md
-              - catalog-enterprise-share.md
-              - catalog-enterprise-share-accept.md
-              - catalog-other-share.md
-          - topicgroup:
-              label: Managing product versions
-              topics:
-              - catalog-reload-version.md
-              - catalog-helm-targets.md
-              - catalog-update-private.md
-              - catalog-dep-restore.md
-              - catalog-deprecate.md
-              - catalog-restore.md
-              - catalog-suspend-version.md
-          - topicgroup:
-              label: Managing Virtual Private Endpoints in your private catalogs
-              topics:
-              - object-onboard-catalog.md
-              - object-publish.md
-              - sharing-products-objects.md
-              - object-deprecate.md
-              - object-manage.md
-          - software-license.md
-          - catalog-access-reqs.md
-      - topicgroup:
-          label: Working with scoped dashboards
-          topics:
-          - scope-dash.md
-          - scope-dash-edit.md
-          - scope-dash-remove-delete.md
-      - topicgroup:
-          label: Managing your account
-          topics:
-          - topicgroup:
-              label: Managing notifications
-              topics:
-              - email.md
-              - distribution_list.md
-              - add_webhooks.md
-          - account_settings.md
-          - account-upgrade.md
-          - create-mult-accounts.md
-          - topicgroup:
-                label: Updating account ownership
+                label: Validating products in a target account
                 topics:
-                 - transfer.md
-                 - owner-classic.md
-          - profile.md
-          - contact_info.md
-          - feature_codes.md
-          - shell-settings.md
+                - catalog-cross-account.md
+                - catalog-cross-validation.md
+                - catalog-add-private.md
+                - catalog-enterprise-share-overview.md
+                - catalog-enterprise-share.md
+                - catalog-access-reqs.md
+                - catalog-other-share.md
+                - software-license.md
           - topicgroup:
-              label: Updating account settings for compliance
-              topics:
-              - eu-supported.md
-              - financial-services-validated.md
-              - hipaa-supported.md
-          - iam-policy-number.md
-          - iam-leave-account.md
-          - account-close.md
+                label: Managing product versions
+                topics:
+                - catalog-reload-version.md
+                - catalog-helm-targets.md
+                - catalog-update-private.md
+                - catalog-deprecate.md
+                - catalog-restore.md
+                - catalog-suspend-version.md
       - topicgroup:
-          label: Logging and monitoring
+          label: Logging and monitoring updated topics
           topics:
           - monitoring.md
           - audit_log.md
-          - topicgroup:
-              label: Monitoring login sessions
-              topics:
-              - sessions-users.md
-              - sessions-your-login.md
-              - trustedprofile-monitor.md
+          - sessions-users.md
+          - sessions-your-login.md
+          - trustedprofile-monitor.md
           - cbr-monitor.md
   - navgroup:
       id: reference
@@ -307,9 +251,6 @@ toc:
           - link:
                label: Context-based restrictions
                href: https://{DomainName}/apidocs/context-based-restrictions
-          - link:
-              label: Enterprise Management
-              href: https://{DomainName}/apidocs/enterprise-apis/enterprise
           - link:
               label: Global Catalog
               href: https://{DomainName}/apidocs/resource-catalog/global-catalog
@@ -341,26 +282,32 @@ toc:
           - link:
               label: User Management
               href: https://{DomainName}/apidocs/user-management
+          - link:
+              label: Usage Metering
+              href: https://{DomainName}/apidocs/usage-metering
+          - link:
+              label: Usage Reports
+              href: https://{DomainName}/apidocs/metering-reporting
+          - link:
+              label: Case Management
+              href: https://{DomainName}/apidocs/support-center/case-management
       - topicgroup:
           label: Command reference
           topics:
           - include: ../cli/plugins/catalogs/manage-catalogs.md
           - include: ../cli/reference/ibmcloud/cli_acct.md
-          - include: ../cli/reference/ibmcloud/cli_enterprise.md
           - include: ../cli/reference/ibmcloud/cli_api_policy.md
           - include: ../cli/reference/ibmcloud/cli_catalog.md
           - include: ../cli/reference/ibmcloud/cli_resource_group.md
           - include: ../cli/plugins/cbr/context-based-restrictions.md
-          - cbr-cli-change-log.md
+          - include: ../cli/reference/ibmcloud/cli_billing.md
+          - include: ../cli/reference/ibmcloud/cli_order.md
       - topicgroup:
           label: Terraform reference
           links:
           - link:
               label: Catalog Management
               href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/cm_catalog
-          - link:
-              label: Enterprise Management
-              href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/enterprise
           - link:
               label: Global Tagging
               href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_tag
@@ -374,6 +321,10 @@ toc:
       - iam-service-roles.md
       - iam-login-flows.md
       - iam-condition-properties.md
+      - credit-types.md
+      - data-center-closures.md
+      - managed-services-transition.md
+      - bxnui.md
   - navgroup:
       id: help
       topics:
@@ -386,6 +337,11 @@ toc:
           - faqs-migration.md
           - faqs-cbr.md
           - faqs-vrf.md
+          - billing-faq.md
+          - subscription_acct_faq.md
+          - invoice_faqs.md
+          - cc-faqs.md
+          - faq-support.md
       - topicgroup:
           label: Troubleshooting accessing IBM Cloud
           topics:
@@ -447,4 +403,37 @@ toc:
           label: Troubleshooting context-based restrictions
           topics:
           - ts-iam-public-vpc-endpoint.md
+      - topicgroup:
+          label: Troubleshooting billing
+          topics:
+          - ts_billinginfo.md
+          - ts_subscriptioncode.md
+          - ts_payment_console.md
+          - ts_invoice_trouble.md
+          - ts_apply_feature_code.md
+          - ts_service_feature_code.md
+          - ts_billing_address.md
+          - ts_section-error.md
+          - ts_charge-limit.md
+          - ts-cc-error-messages.md
+      - topicgroup:
+          label: Troubleshooting the Support Center
+          topics:
+          - ts_create-case.md
+          - ts_help-info-services.md
+          - ts_service-broker.md
+          - ts_view-archived-cases.md
+          - ts_view-case-details.md
+      - topicgroup:
+          label: Getting account support
+          topics:
+          - getting-help.md
+          - using-support-center.md
+          - support-plans.md
+          - create-case.md
+          - assign-user-access-cases.md
+          - manage-case.md
+          - monitor-notification-status.md
+          - report-security.md
+          - case-severity-response-times.md
       - known-issues.md

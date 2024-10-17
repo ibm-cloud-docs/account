@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, [{CURRENT_YEAR}]
+  years: 2020, 2024
 
-lastupdated: "[{LAST_UPDATED_DATE}]"
+lastupdated: "2024-09-19"
 
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up
@@ -219,7 +219,7 @@ Complete the following steps to set your preferences for receiving various types
 
 1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
 
-   You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when set up your spending notification. For more information, see [Setting spending notifications](/docs/billing-usage?topic=billing-usage-spending).
+   You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when set up your spending notification. For more information, see [Setting spending notifications](/docs/account?topic=account-spending).
 
 
 ## Create your resource groups

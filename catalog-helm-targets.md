@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2020, [{CURRENT_YEAR}]
+  years: 2020, 2024
 lastupdated: "2024-01-05"
 
 keywords: onboard software, Helm chart, software, private catalog, target, deployment target
