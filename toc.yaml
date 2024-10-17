@@ -163,6 +163,7 @@ toc:
                 topics:
                 - how_charged.md
                 - estimating_costs.md
+                - scenario1.md
                 - change_pricing_plan.md
                 - getting-pricing-api.md
                 - notifications.md
