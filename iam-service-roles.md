@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-10-16"
+lastupdated: "2024-10-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6795,17 +6795,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table117}
 
-| Role | Description |
-| ----- | :----- |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
-{: row-headers}
-{: caption="Service roles - Metrics Router" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="metrics-router"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table117}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `metrics-router.target.read` | Read target | Administrator, Editor, Operator, Viewer |
@@ -6825,7 +6814,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `metrics-router.setting.get` | Get settings | Administrator, Editor, Operator, Viewer |
 | `metrics-router.onboarding.create` | Create onboarding config for services only. | Administrator |
 | `metrics-router.onboarding.list` | List onboarding config for services only. | Viewer |
-| `metrics-router.onboarding.update` | Update onboarding config for services only. | Reader |
+| `metrics-router.onboarding.update` | Update onboarding config for services only. | Administrator |
 | `metrics-router.destination.search` | Search for target destinations. | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Metrics Router" caption-side="top"}
 {: tab-title="Actions"}
