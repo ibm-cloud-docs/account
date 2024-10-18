@@ -168,6 +168,7 @@ toc:
                 - getting-pricing-api.md
                 - notifications.md
                 - viewing_usage1.md
+                - infra_usage.md
                 - understand-invoice.md
                 - manage_billing.md
                 - quotas.md
@@ -415,5 +416,7 @@ toc:
           - ts_billing_address.md
           - ts_section-error.md
           - ts_charge-limit.md
+          - ts_commit_access_page.md
+          - ts_commit_cannot_apply.md
           - ts-cc-error-messages.md
       - known-issues.md
