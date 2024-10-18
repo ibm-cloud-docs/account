@@ -342,7 +342,6 @@ toc:
           - subscription_acct_faq.md
           - invoice_faqs.md
           - cc-faqs.md
-          - faq-support.md
       - topicgroup:
           label: Troubleshooting accessing IBM Cloud
           topics:
