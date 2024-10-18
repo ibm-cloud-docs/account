@@ -39,7 +39,7 @@ Consider using a project to organize and track resources across accounts. Resour
 Service tags
 :   Service tags are attached by services. No users are authorized to attach or detach service tags on a resource, even if they have access to manage tags on the resource.
 
-Resources that are created by deploying a project are automatically tagged with the project ID and configuration ID, which is available on your usage report. Use projects to help you track spending for projects. For more information, see [Tracking usage and spend for projects](/docs/secure-enterprise?topic=secure-enterprise-project-usage-spend).
+Resources that are created by deploying a project are automatically tagged with the project ID and configuration ID, which is available on your usage report. Use projects to help you track spending for projects. For more information, see [Tracking usage and spend for projects](/docs/enterprise-management?topic=enterprise-management-project-usage-spend).
 {: note}
 
 Access management tags

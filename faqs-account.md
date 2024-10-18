@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, [{CURRENT_YEAR}]
-lastupdated: "[{LAST_UPDATED_DATE}]"
+  years: 2015, 2024
+lastupdated: "2024-07-26"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -33,7 +33,7 @@ Feature codes aren't supported in some countries. For more information, see [per
 {: #authorize-account}
 {: faq}
 
-A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/billing-usage?topic=billing-usage-cc-error-messages).
+A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/account?topic=account-cc-error-messages).
 
 ## How do I get help with issues with creating an account?
 {: #account-error}
@@ -86,7 +86,7 @@ See [Upgrading your account](/docs/account?topic=account-upgrading-account) for 
 {: #nochange}
 {: faq}
 
-Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can continue to use the instances that you created with your Lite account. However, if you want to use the capabilities that are not available in a service's Lite plan, you must [upgrade the plan](/docs/billing-usage?topic=billing-usage-changing) for the specific service. After you change a service plan, it might be necessary to restage your application.
+Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can continue to use the instances that you created with your Lite account. However, if you want to use the capabilities that are not available in a service's Lite plan, you must [upgrade the plan](/docs/account?topic=account-changing) for the specific service. After you change a service plan, it might be necessary to restage your application.
 
 ## Can I convert my account?
 {: #convertacct}
@@ -154,7 +154,7 @@ If you created a Lite account before 12 August 2021, you can build and deploy ap
 
 Reaching any quota limit for Lite plan instances suspends the service for that month. Quota limits are per org, not instance. New instances that you create in the same org reflect any usage from previous instances. The quota limits reset on the first of every month.
 
-You can check your usage by going to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/billing-usage?topic=billing-usage-viewingusage).
+You can check your usage by going to **Manage** > **Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and selecting **Usage**. For more information, see [Viewing your usage](/docs/account?topic=account-viewingusage).
 
 ## How many resource groups, orgs, or spaces can I create?
 {: #resourcelimit}
@@ -217,14 +217,14 @@ If you believe that your account was deactivated in error, contact support by ca
 To make a payment and reactivate your account, contact support by calling 1-866-325-0045 and selecting the third option.
 
 ## What are my options for contacting {{site.data.keyword.cloud_notm}} Support?
-{: #contactsupport}
+{: #contactsupport-account}
 {: faq}
 
-From the {{site.data.keyword.Bluemix_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/get-support?topic=get-support-support-plans).
+From the {{site.data.keyword.Bluemix_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
 To contact support, you can use the following methods:
 * If you have a valid Pay-As-You-Go or Subscription account, you can click **Live chat with support** to chat with a support engineer.
-* Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/get-support?topic=get-support-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
+* Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}

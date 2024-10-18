@@ -1,7 +1,7 @@
 ---
 
 copyright:
-  years: 2021, [{CURRENT_YEAR}]
+  years: 2021, 2024
 lastupdated: "2024-09-26"
 
 keywords: account, publish, private catalog, allowlist, external

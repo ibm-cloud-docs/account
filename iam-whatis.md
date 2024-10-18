@@ -104,7 +104,7 @@ Your enterprise can easily scale access management and ensure consistent account
 
 For example, there might be a certain job role in every child account that requires the same permissions. You can create an access group template with the necessary access polices and assign the template to all of the child accounts in your enterprise. This way, you reduce policy drift and can be certain that users with that job role have only the access that is necessary in each account.
 
-For more information, see [How enterprise-managed IAM works](/docs/secure-enterprise?topic=secure-enterprise-access-enterprises#how-enterprise-iam).
+For more information, see [How enterprise-managed IAM works](/docs/enterprise-management?topic=enterprise-management-access-enterprises#how-enterprise-iam).
 
 ### API keys for user authentication
 {: #apikey-feature}

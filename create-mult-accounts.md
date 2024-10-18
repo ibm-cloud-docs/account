@@ -22,7 +22,7 @@ As the owner or administrator of an {{site.data.keyword.cloud}} account, you can
 Only Pay-As-You-Go and Subscription accounts can create multiple accounts by using one email. Lite accounts can create only one account per email.
 {: note}
 
-Managing multiple accounts with a single IBMid is different from using an enterprise account. With an enterprise account, you can have several child accounts attached to a parent account, and all associated charges roll up to the parent account in the enterprise. See [What is an enterprise?](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise) for more information.
+Managing multiple accounts with a single IBMid is different from using an enterprise account. With an enterprise account, you can have several child accounts attached to a parent account, and all associated charges roll up to the parent account in the enterprise. See [What is an enterprise?](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) for more information.
 
 To create multiple accounts associated with your IBMid, complete the following steps:
 
