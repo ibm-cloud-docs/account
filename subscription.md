@@ -13,7 +13,7 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 # Managing subscriptions
-{: #subscriptions}
+{: #subscription}
 
 With an {{site.data.keyword.cloud}} subscription, you get discounted usage for platform services and support by committing to a minimum spending commitment for a certain period of time. You can buy your first subscription, add more subscriptions, and monitor subscription usage on the Subscriptions page in the {{site.data.keyword.cloud_notm}} console.
 {: shortdesc}

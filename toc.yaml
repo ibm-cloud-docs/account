@@ -194,7 +194,7 @@ toc:
           - topicgroup:
                 label: Managing subscriptions and commitments
                 topics:
-                - subscriptions.md
+                - subscription.md
                 - paygo_committed_use.md
                 - service-level-commit.md
           - topicgroup:
