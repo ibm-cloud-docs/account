@@ -46,9 +46,20 @@ toc:
       - acct-getstart-tutorial.md
       - trustedprofile-compute-tutorial.md
       - topicgroup:
-            label: Securing access to resources
-            topics:
-            - tagging-resources-tutorial1.md
+          label: Securing access to resources
+          topics:
+          - tagging-resources-tutorial1.md
+      - topicgroup:
+          label: Sharing software with users in your account
+          topics:
+          - catalog-vsi-tutorial.md
+          - catalog-vsivpc-tutorial.md
+          - catalog-vsivpc-plans-tutorial.md
+          - catalog-vsipower-tutorial.md
+          - catalog-operator-tutorial.md
+          - catalog-opbundle-tutorial.md
+          - catalog-terraform-template-tutorial.md
+          - catalog-terraform-template-cli.md      
       - trustedprofile-fed-tutorial.md
       - reconcile-tutorial1.md
   - navgroup:
