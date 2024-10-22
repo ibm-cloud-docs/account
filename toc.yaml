@@ -75,6 +75,8 @@ toc:
                 label: Updating account settings for compliance
                 topics:
                 - eu-supported.md
+                - financial-services-validated.md
+                - hipaa-supported.md
                 - create-mult-accounts.md
                 - update-your-profile1.md
                 - distribution_list1.md
