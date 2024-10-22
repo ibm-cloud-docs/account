@@ -59,7 +59,7 @@ toc:
           - catalog-operator-tutorial.md
           - catalog-opbundle-tutorial.md
           - catalog-terraform-template-tutorial.md
-          - catalog-terraform-template-cli.md      
+          - catalog-terraform-template-cli.md
       - trustedprofile-fed-tutorial.md
       - context-restrictions-tutorial.md
       - reconcile-tutorial1.md
@@ -360,6 +360,7 @@ toc:
           - subscription_acct_faq.md
           - invoice_faqs.md
           - cc-faqs.md
+          - faq-support.md
       - topicgroup:
           label: Troubleshooting accessing IBM Cloud
           topics:
@@ -436,4 +437,24 @@ toc:
           - ts_commit_access_page.md
           - ts_commit_cannot_apply.md
           - ts-cc-error-messages.md
+      - topicgroup:
+          label: Troubleshooting the Support Center
+          topics:
+          - ts_create-case.md
+          - ts_help-info-services.md
+          - ts_service-broker.md
+          - ts_view-archived-cases.md
+          - ts_view-case-details.md
+      - topicgroup:
+          label: Getting account support
+          topics:
+          - getting-help.md
+          - using-support-center.md
+          - support-plans.md
+          - create-case.md
+          - assign-user-access-cases.md
+          - manage-case.md
+          - monitor-notification-status.md
+          - report-security.md
+          - case-severity-response-times.md
       - known-issues.md
