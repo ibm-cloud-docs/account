@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-22"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -168,7 +168,7 @@ Estimated Monthly log volume: 1 KB per request * 5,000,000 requests/month * 1 mo
 ```
 
 ## {{site.data.keyword.cloud_notm}} Calculation details
-{: #calculation details}
+{: #calculation-detail}
 
 ### Standard plan (us-south)
 {: #standardplan}
