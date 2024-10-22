@@ -61,6 +61,7 @@ toc:
           - catalog-terraform-template-tutorial.md
           - catalog-terraform-template-cli.md      
       - trustedprofile-fed-tutorial.md
+      - context-restrictions-tutorial.md
       - reconcile-tutorial1.md
   - navgroup:
       id: howto
