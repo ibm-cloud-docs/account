@@ -51,7 +51,7 @@ Lite accounts can have only the default resource group, so you can't create any 
 {: #delete-resource-group}
 {: faq}
 
-Yes, you can delete a resource group only if it doesn't contain any resources, and it's not the default resource group. See [Deleting a resource group](/docs/account?topic=account-delete_rgs) for more information.
+Yes, you can delete a resource group only if it doesn't contain any resources, and it's not the default resource group. See [Deleting a resource group](/docs/account?topic=account-rgs#delete_rgs) for more information.
 
 ## How do I add users to a resource group?
 {: #add-users-resource-group}

@@ -74,6 +74,9 @@ toc:
           - topicgroup:
                 label: Updating account settings for compliance
                 topics:
+                - eu-supported.md
+                - financial-services-validated.md
+                - hipaa-supported.md
                 - create-mult-accounts.md
                 - update-your-profile1.md
                 - distribution_list1.md
@@ -89,6 +92,7 @@ toc:
           - topicgroup:
                 label: Setting up multifactor authentication and other authentication methods
                 topics:
+                - iam-mfatypes.md
                 - iam-enable-manage-mfa1.md
                 - migrate-mfa.md
                 - legacy-mfa.md

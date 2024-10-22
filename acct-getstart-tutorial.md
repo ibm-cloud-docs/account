@@ -117,7 +117,7 @@ The following table shows the countries where personal use of our platform that 
 {{site.data.keyword.IBM}} Norway and {{site.data.keyword.IBM}} Switzerland are able to contract with local customers to offer personal use accounts.
 {: note}
 
-To work with a local Business Partner, go to the [IBM Business Partner Directory](https://www.ibm.com/partnerplus/directory){: external}. Customers are not required to have a VAT ID to work with a local Business Partner.
+To work with a local Business Partner, go to the [IBM Business Partner Directory](https://www.ibm.com/partnerplus/directory/companies){: external}. Customers are not required to have a VAT ID to work with a local Business Partner.
 
 ### Using a federated ID
 {: #signup-federated}

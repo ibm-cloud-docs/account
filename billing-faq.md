@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-22"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -299,7 +299,7 @@ As a self-managed platform, the security of an account is the responsibility of 
 
 To prevent unauthorized access, change your password regularly and require the use of multifactor authentication by all users on your account. These options include the use of time-based one-time passcode authentication, security questions, third-party authentication mechanisms, and password expiration rules. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
 
-You can regularly review the list of account users and remove users who don't need access to the account. For more information, see [Removing users from an account](/docs/account?topic=account-remove-user-access).
+You can regularly review the list of account users and remove users who don't need access to the account. For more information, see [Removing users from an account](/docs/account?topic=account-iamuserinv#remove-user-access).
 {: tip}
 
 ## Can I have a service-level commitment for third-party products?
