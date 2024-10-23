@@ -361,6 +361,7 @@ toc:
           - invoice_faqs.md
           - cc-faqs.md
           - faq-support.md
+          - commitment-faqs.md
       - topicgroup:
           label: Troubleshooting accessing IBM Cloud
           topics:
@@ -434,6 +435,7 @@ toc:
           - ts_billing_address.md
           - ts_section-error.md
           - ts_charge-limit.md
+          - ts-view-commit.md
           - ts_commit_access_page.md
           - ts_commit_cannot_apply.md
           - ts-cc-error-messages.md
