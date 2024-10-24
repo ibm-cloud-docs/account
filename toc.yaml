@@ -72,21 +72,20 @@ toc:
           - account_settings.md
           - account-upgrade.md
           - dashboard-manage1.md
+          - create-mult-accounts.md
+          - update-your-profile1.md
+          - distribution_list1.md
+          - update-account-ownership1.md
+          - iam-policy-number.md
+          - shell-settings.md
+          - iam-leave-account.md
+          - account-close.md
           - topicgroup:
                 label: Updating account settings for compliance
                 topics:
                 - eu-supported.md
                 - financial-services-validated.md
                 - hipaa-supported.md
-                - create-mult-accounts.md
-                - update-your-profile1.md
-                - distribution_list1.md
-                - update-account-ownership1.md
-                - iam-policy-number.md
-                - feature_codes.md
-                - shell-settings.md
-                - iam-leave-account.md
-                - account-close.md
       - topicgroup:
           label: Securing your account
           topics:
