@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-24"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -37,7 +37,7 @@ In the enterprise level view, you can filter your emissions data down to a speci
 * Emissions by account group: GHG emissions broken down by account group. This widget is displayed if the entity being viewed contains account groups. Miscellaneous emissions do not belong to an account group.
 * Emissions by account: GHG emissions are broken down by account. This widget is displayed if the entity that is being viewed contains only accounts.
 
-Learn more about setting up and managing [Enterprise accounts](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise).
+Learn more about setting up and managing [Enterprise accounts](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise).
 
 ## Working with the carbon calculator API
 {: #tracking-emissions-api}
