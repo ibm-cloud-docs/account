@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-10-22"
+lastupdated: "2024-10-24"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -124,7 +124,7 @@ Yes, you can. When you request to change your payment method, a support case is 
 {: #removecard}
 {: faq}
 
-For Pay-As-you-Go accounts, you must have an active credit card on file. You can replace an existing credit card with a new one.
+For Pay-As-you-Go accounts, you must have an active credit card on file. You can remove an existing credit card on file by replacing it with a new credit card.
 
 * If you're using a new US-based Pay-As-You-Go account with credit card billing, you can add a new credit card in the Monthly Payment Method form on the [Payments](/billing/payments){: external} page.
 * For all other accounts, you can remove a credit card and switch to a different payment method by clicking **Pay with Other** > **Submit change request**. To complete the change, review and update the support case that is created for you.
@@ -319,5 +319,5 @@ A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_no
 ## Why did I receive multiple invoices in one month?
 {: #invoices}
 {: faq}
-  
+
 You might receive multiple invoices if you have an Enterprise Savings Plan and service-level commitment on different orders. If you have multiple service-level commitments (for multiple sites), you receive separate invoices for each.
