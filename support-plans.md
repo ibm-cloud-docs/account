@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2024
 
-lastupdated: "2024-10-22"
+lastupdated: "2024-10-24"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -95,7 +95,7 @@ Users with a Lite or Trial account can create support cases but are limited to n
 ## Support level and enterprises
 {: #support_level_enterprise}
 
-The level of support that is assigned to an [{{site.data.keyword.Bluemix_notm}} enterprise](/docs/secure-enterprise?topic=secure-enterprise-what-is-enterprise) defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.
+The level of support that is assigned to an [{{site.data.keyword.Bluemix_notm}} enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.
 
 ## Technical support team
 {: #tech_support_team}

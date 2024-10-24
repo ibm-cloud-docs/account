@@ -72,21 +72,20 @@ toc:
           - account_settings.md
           - account-upgrade.md
           - dashboard-manage1.md
+          - create-mult-accounts.md
+          - update-your-profile1.md
+          - distribution_list1.md
+          - update-account-ownership1.md
+          - iam-policy-number.md
+          - shell-settings.md
+          - iam-leave-account.md
+          - account-close.md
           - topicgroup:
                 label: Updating account settings for compliance
                 topics:
                 - eu-supported.md
                 - financial-services-validated.md
                 - hipaa-supported.md
-                - create-mult-accounts.md
-                - update-your-profile1.md
-                - distribution_list1.md
-                - update-account-ownership1.md
-                - iam-policy-number.md
-                - feature_codes.md
-                - shell-settings.md
-                - iam-leave-account.md
-                - account-close.md
       - topicgroup:
           label: Securing your account
           topics:
@@ -119,11 +118,14 @@ toc:
                 - iam-accessgroup_rules.md
                 - iam-identify-inactive.md
           - topicgroup:
-                label: Administering and controlling security
+                label: Administering trusted profiles
                 topics:
                 - trustedprofile-create.md
                 - trustedprofile-manage1.md
                 - trustedprofile-iam-token.md
+          - topicgroup:
+                label: Controlling context-based restrictions
+                topics:
                 - context-restrictions-create.md
                 - context-restrictions-manage1.md
           - topicgroup:
@@ -168,9 +170,12 @@ toc:
                 - connect_external_app.md
                 - service_credentials.md
                 - using-services.md
-                - vrf-service-endpoint.md
-                - service-endpoints.md
                 - service_in_other_regions.md
+          - topicgroup:
+              label: Connecting resources over a private network
+              topics:
+              - service-endpoints.md
+              - vrf-service-endpoint.md
       - topicgroup:
           label: Billing and usage for your account
           topics:
