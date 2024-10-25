@@ -3,7 +3,7 @@
 copyright:
 years: 2019, 2024
 
-lastupdated: "2024-09-19"
+lastupdated: "2024-10-25"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
@@ -323,74 +323,3 @@ curl -X "GET" \
 {: codeblock}
 
 Each event in the audit logs table by default identifies each change with the email of the user that made the change, the type of change, a description of the change, and the date that the change was made.
-
-## Understanding audit logs descriptions
-{: #audit-logs-descriptions}
-
-There are several descriptions that could be used to identify the type of update that was performed on your private catalog.
-
-| Description                        | Type       | Definition |
-|------------------------------------|------------|------------|
-| Update Version Validation Status   | Product    | ??         |
-| Get Preinstall Status              | Product    | ??         |
-| Validate Version                   | Product    | ??         |
-| Install Version                    |            |            |
-| Preinstall Version                 | Product    |            |
-| Request Datastores                 | | |
-| Install Operator                   | | |
-| Update Operator                    | | |
-| Get Operator Status                | | |
-| Delete Operator                    | | |
-| Create Catalog                     | | |
-| Product and parent catalog deleted | | |
-| Enable Catalog                     | | |
-| Disable Catalog                    | | |
-| Get Syndication Status             | | |
-| Get Catalog Operators              | | |
-| Get Catalog Context                | | |
-| Get Catalogs                       | | |
-| Publish Version to IBM             | | |
-| Get Enterprises                    | | |
-| Create Catalog                     | | |
-| Get Account Settings               | | |
-| Set Account Settings               | | |
-| Get Account Filters                | | |
-| Get Enterprise                     | | |
-| Set Enterprise                     | | |
-| Get Catalog                        | | |
-| Update Catalog                     | | |
-| Product deprecated                 | | |
-| Syndicate Catalog                  | | |
-| Get Catalogs                       | | |
-| Create Offering                    | | |
-| Import Version                     | | |
-| Import Offering                    | | |
-| Reload Offering                    | | |
-| Get Offering                       | | |
-| Update Offering                    | | |
-| Update Icon                        | Product | The icon for the product was updated. |
-| Delete Offering                    | | |
-| Search Offerings                   | | |
-| Set Allow Publish Offering         | | |
-| Publish Version to Account         | | |
-| Publish Version to IBM             | | |
-| Publish Version to Public          | | |
-| Deprecate Version                  | | |
-| Create Draft                       | | |
-| Update part numbers                | | |
-| Commit Draft                       | | |
-| Copy Version                       | | |
-| Delete Version                     | | |
-| Validate Version                   | | |
-| Get Offerings                      | | |
-| Get Version About                  | | |
-| Get Version Updates                | | |
-| Get Version License                | | |
-| Get Version                        | | |
-| Get Catalog Log(s)                 | | |
-| Get Offering Log(s)                | | |
-| Get Account Log(s)                 | | |
-| Get Enterprise Log(s)              | | |
-| Update Offering from Public        | | |
-{: caption="Audit log description definitions" caption-side="top"}
-
