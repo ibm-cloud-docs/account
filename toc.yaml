@@ -227,25 +227,31 @@ toc:
       - topicgroup:
           label: Catalog management in IBM Cloud
           topics:
-          - cm-video.md
+          - catalog-settings1.md
           - topic: catalog-custom-private.md
             navtitle: Customizing catalogs
-          - catalog-settings1.md
-          - catalog-product-details.md
-          - catalog-translate-details.md
-          - catalog-control-format.md
-          - catalog-manage-sw-plans.md
+          - catalog-custom-private-preset.md
+          - catalog-custom-private-object.md
           - topicgroup:
                 label: Validating products in a target account
                 topics:
                 - catalog-cross-account.md
                 - catalog-cross-validation.md
+          - topicgroup:
+                label: Onboarding products
+                topics:
                 - catalog-add-private.md
+                - catalog-product-details.md
+                - catalog-translate-details.md
+                - catalog-control-format.md
+                - catalog-manage-sw-plans.md
+          - topicgroup:
+                label: Sharing products
+                topics:
                 - catalog-enterprise-share-overview.md
                 - catalog-enterprise-share.md
-                - catalog-access-reqs.md
+                - catalog-enterprise-share-accept.md
                 - catalog-other-share.md
-                - software-license.md
           - topicgroup:
                 label: Managing product versions
                 topics:
@@ -255,6 +261,15 @@ toc:
                 - catalog-deprecate.md
                 - catalog-restore.md
                 - catalog-suspend-version.md
+          - topicgroup:
+                label: Working with software
+                topics:
+                - catalog-scans.md
+                - catalog-run-local.md
+                - catalog-embed-code.md
+                - sw-instance-details.md
+          - catalog-access-reqs.md
+          - software-license.md
       - topicgroup:
           label: Logging and monitoring updated topics
           topics:
