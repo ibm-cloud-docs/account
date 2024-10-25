@@ -364,6 +364,7 @@ toc:
       - data-center-closures.md
       - managed-services-transition.md
       - bxnui.md
+      - customer-incident-report.md
   - navgroup:
       id: help
       topics:

@@ -4,11 +4,11 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-10-22"
+lastupdated: "2024-10-25"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR, status page, status query, incident, maintenance, search query, notifications, view notifications, set notifications,
 
-subcollection: get-support
+subcollection: account
 
 ---
 
