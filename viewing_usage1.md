@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-25"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -78,9 +78,6 @@ The account owner of a billable account can set spending notifications against t
 
 ### Viewing usage details from the cost analysis page
 {: #cost-analysis-page}
-
-This is a beta feature that is available for evaluation and testing purposes.
-{: beta}
 
 From the cost analysis page you can view your accounts usage by comparing costs over several months as well as filtering the usage to view cost by region, service, plan, instance, instance ID, and resource group.
 
