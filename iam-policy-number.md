@@ -153,7 +153,7 @@ ibmcloud iam service-policies <service-id> -f --output JSON | jq '. | length'
 To get count of policies for a username(email):
 
 ```bash
-ibmcloud iam user-policies <username> -f --output JSON | jq '. | length'
+ibmcloud iam user-policies <username> --output JSON | jq '. | length'
 ```
 {: codeblock}
 
