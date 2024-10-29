@@ -6,7 +6,7 @@ lastupdated: "2024-04-29"
 
 keywords: troubleshoot account, invoiced for commitment, unused commitment, commitment bill
 
-subcollection: billing-usage
+subcollection: account
 
 content-type: troubleshoot
 
