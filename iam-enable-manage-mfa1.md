@@ -49,7 +49,7 @@ You can also enable and disable MFA in your account on the [Verification methods
 
 Enabling MFA does not affect users that are already logged in because MFA takes effect only at the time of login. Make sure that you notify your account users that MFA is enabled, and describe the impact to users at their next login.
 
-The first time that you log in to your account after MFA settings are updated, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up your authentication factors. If you need to update your verification methods or authentication factors later, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication).
+The first time that you log in to your account after MFA settings are updated, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up your authentication factors. If you need to update your verification methods or authentication factors later, see [Managing verification methods and MFA factors](/docs/account?topic=account-enablemfa#verification-authentication).
 {: note}
 
 ### Enabling MFA for an account
@@ -138,7 +138,7 @@ To view the MFA status of users in the console, complete the following steps:
    Only the most recent report is available. When you generate a new report, any reports older than a day are deleted.
    {: note}
 
-3. Contact the users in your account who don't satisfy the MFA requirements. Ask them to comply by logging in and setting up factors. For more information, see [Managing your authentication factors](/docs/account?topic=account-verification-authentication#auth-factors).
+3. Contact the users in your account who don't satisfy the MFA requirements. Ask them to comply by logging in and setting up factors. For more information, see [Managing your authentication factors](/docs/account?topic=account-enablemfa#verification-authentication#auth-factors).
 
 ## Managing verification methods and MFA factors
 {: #verification-authentication}

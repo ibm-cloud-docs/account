@@ -6,7 +6,7 @@ lastupdated: "2024-02-01"
 
 keywords: IBM Cloud billing, commitment model, using commitments, FAQs, enterprise savings plan, savings plan, pay as you go with committed use
 
-subcollection: billing-usage
+subcollection: account
 
 content-type: faq
 

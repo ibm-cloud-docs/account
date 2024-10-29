@@ -277,7 +277,7 @@ The first time that you log in to your account after MFA settings are updated, y
 {: #authenticaiton-factors}
 {: faq}
 
-These factors can be something that you have, like a U2F security key, or that you receive, like a time-based one time passcode (TOTP) or OTP. If an administrator enables MFA in at least one of the accounts you are a member of, you must provide two or more factors each time you log in. If you are a member in multiple accounts and at least one of the accounts uses MFA, MFA is required each time that you log in. This applies regardless of the account that you are trying to access. For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication).
+These factors can be something that you have, like a U2F security key, or that you receive, like a time-based one time passcode (TOTP) or OTP. If an administrator enables MFA in at least one of the accounts you are a member of, you must provide two or more factors each time you log in. If you are a member in multiple accounts and at least one of the accounts uses MFA, MFA is required each time that you log in. This applies regardless of the account that you are trying to access. For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-enablemfa#verification-authentication).
 
 ## How do I reset a verification method?
 {: #reset-verification}

@@ -2,8 +2,7 @@
 
 copyright:
   years: 2020, 2024
-
-lastupdated: "2024-01-05"
+lastupdated: "2024-10-29"
 
 keywords: restrict api keys, block users from creating api keys, restrict api key creation
 
@@ -22,7 +21,7 @@ By default, all members of an account can create {{site.data.keyword.cloud}} API
 Restricting the ability to create API keys makes sense if you want users in your account to always log in interactively, meaning you don't want automation scripts to run that can log in users automatically by using an API key. For more information about API keys, see [Managing user API keys](/docs/account?topic=account-userapikey).
 
 
-## Enabling the API key creation setting
+## Restricting API key creation in the console
 {: #allow-all-api-create}
 {: ui}
 
@@ -30,19 +29,19 @@ To turn on the setting to restrict users from creating user API keys, you must h
 
 * An IAM policy with the `Administrator`, `Operator`, or `Editor` role on the [IAM Identity Service](/docs/account?topic=account-account-services#identity-service-account-management).
 
-If you turn on the API key creation setting, users in your account require specific access to create API keys, including the account owner. To restrict who can create API keys, use the following steps:
+If you turn on the Restrict API key creation setting, users in your account require specific access to create API keys, including the account owner. To restrict who can create API keys, use the following steps:
 
 Enabling this setting affects only the creation of user API keys. It does not affect API keys for service IDs.
 {: note}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Settings**.
-1. In the Account section, enable the **API key creation** setting.
+1. In the Account section, enable the **Restrict API key creation** setting.
 1. Click **Yes** to confirm.
 
 Now that the setting is enabled to restrict users from creating API keys, you can assign the required access to enable specific users to continue creating user API keys. Remember, the account owner is also required to be assigned this explicit access.
 {: important}
 
-## Enabling the API key creation setting by using Terraform
+## Restricting API key creation by using Terraform
 {: #allow-all-api-create-terraform}
 {: terraform}
 
