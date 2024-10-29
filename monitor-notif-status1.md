@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2024
+  years: 2015, 2024
 
-lastupdated: "2024-10-25"
+lastupdated: "2024-09-20"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR, status page, status query, incident, maintenance, search query, notifications, view notifications, set notifications,
 
@@ -234,3 +234,4 @@ For SaaS offerings, IBM Cloud provides advanced notice that's dependent on the s
 | Disruptive            | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 7 days |
 | Nondisruptive                | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | None |
 {: caption="SaaS offerings impact possibility definitions" caption-side="top"}
+

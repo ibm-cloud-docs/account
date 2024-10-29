@@ -19,7 +19,7 @@ subcollection: account
 Default maximum limits are set on entities in your account such as access policies, service IDs, trusted profiles, identity providers (IdPs), and API keys. However, specific use cases can require an extended limit and you must request an increase for your chosen entity. You must be the account owner or administrator for all account management services to check how many policies exist in the account.
 {: shortdesc}
 
-To review the default limits for your account, see [Known issues and limitations](/docs/account?topic=account-known-issues#iam_limits).
+To review the default limits for your account, see [Known issues and limitations](/docs/account?topic=account-known-issues).
 
 ## Increasing limits for IAM identity entities
 {: #increase-entity-limit}
@@ -153,7 +153,7 @@ ibmcloud iam service-policies <service-id> -f --output JSON | jq '. | length'
 To get count of policies for a username(email):
 
 ```bash
-ibmcloud iam user-policies <username> -f --output JSON | jq '. | length'
+ibmcloud iam user-policies <username> --output JSON | jq '. | length'
 ```
 {: codeblock}
 
