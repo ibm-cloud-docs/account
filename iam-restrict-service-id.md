@@ -3,8 +3,7 @@
 copyright:
 
   years: 2020, 2024
-
-lastupdated: "2024-01-05"
+lastupdated: "2024-10-29"
 
 keywords: restrict service id, block users from creating service id, restrict service id creation
 
@@ -29,10 +28,10 @@ To enable the setting to restrict users from creating service IDs, you must have
 
 * An IAM policy with the `Administrator`, `Operator`, or `Editor` role on the [IAM Identity Service](/docs/account?topic=account-account-services#identity-service-account-management).
 
-If you enable the Service ID creation setting, users in your account require specific access to create service IDs, including the account owner. To restrict who can create service IDs, use the following steps:
+If you enable the Restrict service ID creation setting, users in your account require specific access to create service IDs, including the account owner. To restrict who can create service IDs, use the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Settings**.
-1. In the Account section, enable the **Service ID creation** setting.
+1. In the Account section, enable **Restrict service ID creation**.
 1. Click **Yes** to confirm.
 
 Now that the setting is enabled to restrict users from creating service IDs, you can assign the required access to enable specific users to continue creating service IDs. Remember, the account owner is also required to be assigned this explicit access.
@@ -42,7 +41,7 @@ Now that the setting is enabled to restrict users from creating service IDs, you
 {: #enable-restrict-create-serviceid-terra}
 {: terraform}
 
-If you enable the Service ID creation setting, users in your account require specific access to create service IDs, including the account owner.
+If you enable the Restrict service ID creation setting, users in your account require specific access to create service IDs, including the account owner.
 
 To enable the setting to restrict users from creating service IDs, you must have the following assigned access:
 

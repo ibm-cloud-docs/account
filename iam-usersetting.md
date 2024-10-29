@@ -1,10 +1,8 @@
 ---
 
 copyright:
-
-  years: 2018, 2023
-
-lastupdated: "2023-06-01"
+  years: 2018, 2024
+lastupdated: "2024-10-29"
 
 keywords: user list visibility, users page setting, user view access, limit access to users list, user list access, parent user, update parent
 
@@ -34,7 +32,7 @@ When the setting is disabled, any user in the account can view other users from 
 By default, the setting is disabled for your account. To update this setting, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
-1. From the Account section, enable the **User list visibility** setting.
+1. From the Account section, enable **Restrict user list visibility**.
 1. Click **Yes** to confirm.
 
 ## Updating a user's parent user

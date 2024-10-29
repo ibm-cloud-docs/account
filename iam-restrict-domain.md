@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-10-26"
+  years: 2021, 2024
+lastupdated: "2024-10-29"
 
 
 keywords: restrict domain, restrict invitation, account member restrict, invitation, invite users, account restriction
@@ -28,7 +28,7 @@ Let's take a closer look at the example `**@*.ibm.com`. The username part of the
 To enable domain restrictions for account invitations, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **Settings**.
-1. In the Account section, enable the **User domains** setting.
+1. In the Account section, enable **Restrict user domains**.
 1. Enter the domains that can access the account. Any domain that isn't added to this list is restricted.
 1. Click **Add**.
 1. Click **Save**.
@@ -40,7 +40,7 @@ To enable domain restrictions for account invitations, complete the following st
 When you disable the User domains setting, you can send account invitations to any domain, which removes the previously set allowed domain access. To disable restrictions on specific domains, complete the following steps:
 
 1. Go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
-1. In the Account section, disable the **User domains** setting.
+1. In the Account section, disable the **Restrict user domains** setting.
 1. Select an option for disabling the setting.
    1. To disable the setting and save the allowlist of domains, select **Disable and save domains**.
    1. To disable the setting and delete the allowlist, select **Disable and delete domains**.
