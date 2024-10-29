@@ -339,7 +339,6 @@ For more information, see [Working with tags](/docs/account?topic=account-tag).
 You must be the account owner or have the following roles:
 
 * Administrator on all account management services
-* Administrator on the tagging service
 
 For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).
 

@@ -27,7 +27,7 @@ Access management tags are metadata that are added to resources to help organize
 
 Let's assume you are the lead of a project for your team that needs an {{site.data.keyword.cos_full}} instance for storing sensitive, project-specific data for analytics. You only want the members of this project to have access to the service instance and work with the project data.
 
-This tutorial applies to IAM-enabled resources only. You need to have an administrator role on the tagging service to create and delete access management tags. To attach and detach access management tags, you need at least an administrator role on the resources to which the tag is added.
+This tutorial applies to IAM-enabled resources only. You need to have administrator role on all account management services to create and delete access management tags. To attach and detach access management tags, you need at least an administrator role on the resources to which the tag is added.
 {: note}
 
 ## Before you begin
