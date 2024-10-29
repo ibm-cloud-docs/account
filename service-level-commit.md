@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-29"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -11,6 +11,7 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
+
 
 
 # Purchasing services deployed on-premises
@@ -33,8 +34,7 @@ All of your service usage in the bundle is discounted with a service-level commi
 ## Before you begin
 {: #before-service-commit}
 
-
-
+- You can have commitments for services that are deployed on-premises in a stand-alone account or an enterprise account. With a service-level commitment at the enterprise level, usage from child accounts contributes to your committed spend. A service-level commitment cannot be shared across multiple stand-alone accounts.
 - You can have commitments for services that are deployed on-premises only in an individual account, such as a stand-alone account or an account within an enterprise.
 - Service-level commitments cannot be shared across multiple accounts.
 - The discount that you receive with a service-level commitment does not combine with other discounts, such as account-level discounts from an Enterprise Savings Plan or a Subscription. Your usage counts toward only one commitment at a time, and a service-level commitment supersedes an account-level discount.
@@ -49,7 +49,6 @@ You can have multiple commitments for different services active at the same time
 
 After you accept the commitment quote, you receive an email to confirm that your payment information is processed and that the commitment is added to your account. When the contract term ends, service commitments are automatically converted to Pay-As-You-Go and you're charged on-demand pricing for those services.
 
-
 ### Ordering managed hardware
 {: #ordering-slc}
 
@@ -57,12 +56,29 @@ Managed hardware is physical hardware like servers, storage, and networking equi
 
 After you agree to the commitment terms and sign the commitment contract, your hardware order is placed. Your commitment start date begins after the hardware is delivered and set up in your data center. When the hardware is deployed, the commitment is active and you can begin monitoring your hardware usage, service charges, and any additional costs within the {{site.data.keyword.Bluemix_notm}} console.
 
+Learn about the shared responsibilities for using IBM Cloud products by reviewing [IBM Hybrid Cloud](/docs/overview?topic=overview-shared-responsibilities#hybrid-responsibilities).
+
 ## Viewing your commitment usage
 {: #slc-services}
 
 To view your service-level commitment usage, go to **Manage > Billing and usage > Commitments** and click **Service-level commitments**. To access this information, you need an access policy with the viewer role or higher on the billing account management service.
 
+For more details, download your usage report by [Exporting your account usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv) or [Exporting your enterprise usage details to a .csv file](/docs/enterprise-management?topic=enterprise-management-enterprise-usage&interface=ui#export-enterprise-csv).
 
+In the usage report, **Credit Pool Type** and **Category** help you identify a service-level commitment.
+
+| Credit Pool Type | Category               | Commitment |
+|-------------------|------------------------|------------|
+| `PLATFORM`       | `SERVICE_SUBSCRIPTION` | Service-level commitment |
+{: caption="Identify a service-level commitment in your usage .csv" caption-side="top"}
+
+To view usage for an on-premises resource, like {{site.data.keyword.powerSys_notm}} Private Cloud, complete the following steps:
+1. Go to the **Pricing region** column and filter to the {{site.data.keyword.satelliteshort}} location associated with your pod.
+1. Go to the **Service name** column and filter to {{site.data.keyword.powerSys_notm}}. The sum of the **Cost** column gives you this month's usage towards a service-level commitment, which matches the value in the **Used credits** column.
+
+To map commitment usage in your enterprise back to child accounts, complete the following steps:
+1. Go to the **Entity ID** column and filter on an account ID.
+1. Go to the **Cost** column. The sum of the **Cost** column gives you this month's usage towards a service-level commitment in a specific account.
 
 ## Minimum spending
 {: #spending-min-slc}
