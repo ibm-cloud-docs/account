@@ -28,7 +28,7 @@ You can't create access management tags in an account of which you are a member.
 This problem can commonly occur by one of the following reasons:
 {: tsCauses}
 
-* You might not be assigned the appropriate access to complete the action. You must have the Administrator role on the Tagging Service that is listed under the Account management services or Administrator role on all Account management services.
+* You might not be assigned the appropriate access to complete the action. You must have the Administrator role on all Account management services.
 * You reached the limit of 250 access management tags per account.
 * Some services don't have full support for access management tags on their UI, so when you're creating an instance of those services, you can only attach user tags. To learn how you can work with access management tags, see the tutorial about [controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 
