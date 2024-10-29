@@ -339,6 +339,7 @@ toc:
           - include: ../cli/reference/ibmcloud/cli_catalog.md
           - include: ../cli/reference/ibmcloud/cli_resource_group.md
           - include: ../cli/plugins/cbr/context-based-restrictions.md
+          - cbr-cli-change-log.md
           - include: ../cli/reference/ibmcloud/cli_billing.md
           - include: ../cli/reference/ibmcloud/cli_order.md
       - topicgroup:
