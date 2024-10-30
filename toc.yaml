@@ -90,6 +90,7 @@ toc:
       - topicgroup:
           label: Securing your account
           topics:
+          - iam-login_fedid.md
           - topicgroup:
                 label: Setting up multifactor authentication and other authentication methods
                 topics:

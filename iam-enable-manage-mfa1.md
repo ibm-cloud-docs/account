@@ -22,7 +22,7 @@ As an administrator on the IAM Identity Service or All IAM Account Management se
 Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli)
 {: important}
 
-View the MFA requirement for each user in your account to determine if they fulfill the requirement by generating an MFA status report. For more information, see [Identifying a user's MFA status](/docs/account?topic=account-id-user-mfa).
+View the MFA requirement for each user in your account to determine if they fulfill the requirement by generating an MFA status report. For more information, see [Identifying a user's MFA status](/docs/account?topic=account-enablemfa#id-user-mfa).
 
 ## Before you begin
 {: #considerations}
@@ -137,8 +137,7 @@ To view the MFA status of users in the console, complete the following steps:
 
    Only the most recent report is available. When you generate a new report, any reports older than a day are deleted.
    {: note}
-
-3. Contact the users in your account who don't satisfy the MFA requirements. Ask them to comply by logging in and setting up factors. For more information, see [Managing your authentication factors](/docs/account?topic=account-enablemfa#verification-authentication#auth-factors).
+3. Contact the users in your account who don't satisfy the MFA requirements. Ask them to comply by logging in and setting up factors. For more information, see [Managing your authentication factors](/docs/account?topic=account-enablemfa#auth-factors).
 
 ## Managing verification methods and MFA factors
 {: #verification-authentication}

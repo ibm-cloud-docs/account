@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-10-25"
+lastupdated: "2024-10-30"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -123,7 +123,7 @@ The [{{site.data.keyword.IBM_notm}} SkillsBuild Software Downloads](https://www.
 {: #watchlist}
 {: faq}
 
-As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](/docs/account?topic=account-contact-watchlist).
+As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](docs/account?topic=account-managing-support-cases&interface=ui#contact-watchlist).
 
 ## Can I find support cases that are created by specific users?
 {: #case_list_user}

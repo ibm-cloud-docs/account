@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-10-30"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -54,7 +54,7 @@ The following table maps your SoftLayer Partner account type to the equivalent I
 ### Resellers
 {: #reseller-migrate}
 
-SoftLayer Resellers or partners of SoftLayer Resellers can apply to become an IBM Cloud Marketplace Reseller and continue to support end customers. For more information, see the [CMR agreement](https://ibm.seismic.com/Link/Content/DC8bm264qQjb88QBp8fcc7bXbX68){: external}.
+SoftLayer Resellers or partners of SoftLayer Resellers can apply to become an IBM Cloud Marketplace Reseller and continue to support end customers. For more information, see the [CMR agreement](https://ibm.seismic.com/app){: external}.
 
 Cloud Marketplace Resellers can work with an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to migrate your account hierarchy during your move to {{site.data.keyword.IBM_notm}} Partner Programs.
 
