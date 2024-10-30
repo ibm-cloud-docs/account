@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2022
+  years: 2022, 2024
+lastupdated: "2024-10-30"
 
-lastupdated: "2022-09-22"
 
 keywords: context-based restrictions, enabled, disabled, report-only, monitor, monitor cbr, cbr, activity tracker, cbr events, context-based restrictions events, denied access
 
@@ -17,25 +17,27 @@ subcollection: account
 # Monitoring context-based restrictions
 {: #cbr-monitor}
 
-Context-based restrictions protect your resources by denying access to identities that don't satisfy context requirements, such as making access requests from the network zones and endpoint types that you define. You can enable context-based restrictions upon creation, or choose to set the rule to report-only mode. Use {{site.data.keyword.cloudaccesstrailshort}} to monitor enabled rules and report-only rules to view how the rule affects your users, applications, and workflows without enforcing the rule.
+Context-based restrictions protect your resources by denying access to identities that don't satisfy context requirements, such as making access requests from the network zones and endpoint types that you define. You can enable context-based restrictions upon creation, or choose to set the rule to report-only mode. Use {{site.data.keyword.logs_full_notm}} to monitor enabled rules and report-only rules to view how the rule affects your users, applications, and workflows without enforcing the rule.
 {: shortdesc}
 
-Monitoring is available depending on the service and APIs that you target in your rule. Review each service's documentation to learn more about how they integrate with context-based restrictions.
+Monitoring is available depending on the service and APIs that you target in your rule. Review each service's documentation to learn more about how it integrates with context-based restrictions.
 {: tip}
+
+For more information, see [Activity tracking events for context-based restrictions](/docs/account?topic=account-at_events_cbr).
 
 ## Before you begin
 {: #before-monitor-cbr}
 
-You must create an instance of the {{site.data.keyword.cloudaccesstrailshort}} service in the Frankfurt (eu-de) region to monitor events for context-based restrictions. For more information, see [Provisioning an instance](/docs/activity-tracker?topic=activity-tracker-provision).
+You must create an instance of the {{site.data.keyword.logs_full_notm}} service in the `Frankfurt (eu-de)` region to monitor events for context-based restrictions. [Creating an IBM Cloud Logs service instance](/docs/cloud-logs?topic=cloud-logs-getting-started#gs-creating-instance).
 
 ## Determining how rules would affect access by using report-only mode
 {: #report-only-access}
 
 It can be difficult to predict exactly how your rules might affect users, applications, and workflows. At first, you might create rules that are too stringent and break your workflows. Or, they are too accessible and might allow more users than you intend to access your resources. The recommendation is to first set your rule to report-only mode for at least 30 days before you enable it so that you can monitor the rule's impact.
 
-Complete the following steps to view how rules affect your users' and applications' access in report-only mode by using {{site.data.keyword.cloudaccesstrailshort}}:
+Complete the following steps to view how rules affect your users' and applications' access in report-only mode by using {{site.data.keyword.logs_full_notm}}:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **Logging** > **Instances** > **Cloud Logs**.
 1. Click **Open dashboard** on the dashboard that you use to monitor context-based restrictions.
 1. Use the search field to narrow the results to report-only context-based restrictions events.
    1. To view potentially blocked access requests, search for `action:context-based-restrictions.policy.eval responseData.isEnforced:==false responseData.decision:Deny`.
@@ -55,11 +57,11 @@ Complete the following steps to view how rules affect your users' and applicatio
 ## Determining how enabled rules affect access
 {: #enabled-access}
 
-When you enable a rule, some users, applications, and workflows might be affected. If your users or applications can't access something that they previously had access to, you can search in {{site.data.keyword.cloudaccesstrailshort}} and view what rules are denying the requests. You can further refine the search by filtering on the subject or resource to identify the implicated rule, which is represented by the `target id`. Then, you can update the rule to allow access so that your workflows don't break. For more information, see [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update).
+When you enable a rule, some users, applications, and workflows might be affected. If your users or applications can't access something that they previously had access to, you can search in {{site.data.keyword.logs_full_notm}} and view what rules are denying the requests. You can further refine the search by filtering on the subject or resource to identify the implicated rule, which is represented by the `target id`. Then, you can update the rule to allow access so that your workflows don't break. For more information, see [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update).
 
-Complete the following steps to view how enabled rules affect your users' and applications' access by using {{site.data.keyword.cloudaccesstrailshort}}:
+Complete the following steps to view how enabled rules affect your users' and applications' access by using {{site.data.keyword.logs_full_notm}}:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **{{site.data.keyword.cloudaccesstrailshort}}**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **Logging** > **Instances** > **Cloud Logs**..
 1. Click **Open dashboard** on the dashboard that you use to monitor context-based restrictions.
 1. Use the search field to narrow the results to enabled context-based restrictions events.
    1. To view blocked access request, search for `action:context-based-restrictions.policy.eval responseData.isEnforced:==true responseData.decision:Deny`.
@@ -71,7 +73,7 @@ Complete the following steps to view how enabled rules affect your users' and ap
 ### Examples
 {: #cbr-monitor-example}
 
-A context-based restriction rule that protects `Example service` has the following identifying attributes in Activity Tracker:
+A context-based restriction rule that protects `Example service` has the following identifying attributes from {{site.data.keyword.atracker_full_notm}}:
 
 | Attribute    | Value      | Description |
 |---------------|------------|-----------|
@@ -82,4 +84,4 @@ A context-based restriction rule that protects `Example service` has the followi
 | requestData | `ipAddress`, `resource`, `subject` | Contains the details of the resource that the requester is trying to access, the identity of the requester and from what IP address they are requesting access.|
 | responseData | `decision`, `isEnforced` | The decision and enforcement mode. When `isEnforced=false`, the rule is in report-only mode. |
 | correlationId | `4a03eafdefed4f059dc9cad29d28513cxacml` | Used for debug interactions and tracing the request with support. |
-{: caption="Sample context-based restriction attributes and values in Activity Tracker" caption-side="top"}
+{: caption="Sample context-based restriction attributes and values from {{site.data.keyword.atracker_full_notm}}" caption-side="top"}
