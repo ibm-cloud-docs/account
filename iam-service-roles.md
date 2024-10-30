@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-10-22"
+lastupdated: "2024-10-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -584,6 +584,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.analytics.create` | The ability to submit featureflag evaluation & metric events for an ongoing experiment. | Client SDK, Config Operator, Manager, Reader, Writer |
 | `apprapp.analytics.list` | The ability to view or download the metadata associated with the experiment. | Manager |
 | `apprapp.config-aggregator-scope.read` | Retrieve the account scope of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
+| `apprapp.clientsdk-apikey.encrypt` | The ability to obtain the encrypted ClientSDK apikey for a given plain ClientSDK apikey. | Manager |
 {: caption="Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
