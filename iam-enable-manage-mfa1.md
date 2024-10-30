@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2024
-lastupdated: "2024-09-19"
+lastupdated: "2024-10-30"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key, MFA requirement, MFA report
 
@@ -23,6 +23,8 @@ Starting 3 May 2023, by default CLI logins with only a username and password are
 {: important}
 
 View the MFA requirement for each user in your account to determine if they fulfill the requirement by generating an MFA status report. For more information, see [Identifying a user's MFA status](/docs/account?topic=account-enablemfa#id-user-mfa).
+
+
 
 ## Before you begin
 {: #considerations}
@@ -133,7 +135,7 @@ You must have the Administrator role on the IAM Identity Service to view and upd
 To view the MFA status of users in the console, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **MFA status**.
-2. Click **Update report** to view the most recent report in your account. 
+2. Click **Update report** to view the most recent report in your account.
 
    Only the most recent report is available. When you generate a new report, any reports older than a day are deleted.
    {: note}
