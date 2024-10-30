@@ -275,6 +275,8 @@ toc:
           label: Logging and monitoring updated topics
           topics:
           - monitoring.md
+          - at-events-am.md
+          - at-events-cm.md
           - audit_log.md
           - sessions-your-login.md
           - trustedprofile-monitor.md
