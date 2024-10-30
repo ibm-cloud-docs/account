@@ -272,10 +272,12 @@ toc:
           - catalog-access-reqs.md
           - software-license.md
       - topicgroup:
-          label: Logging and monitoring updated topics
+          label: Observability
           topics:
           - monitoring.md
           - at-events-am.md
+          - at-events-iam.md
+          - at-events-cbr.md
           - at-events-cm.md
           - audit_log.md
           - sessions-your-login.md
