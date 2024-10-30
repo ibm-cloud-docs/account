@@ -347,7 +347,7 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 {: #accepting-invitations-ui}
 {: ui}
 
-If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Managing invitation notifications](/docs/account?topic=account-email-prefs#invite-notifications) and [Viewing notifications](/docs/account?topic=account-viewing-notifications).
+If the invited user is already a member of {{site.data.keyword.cloud_notm}}, they receive an invitation link in their notifications and by email. On the [Notifications page](https://cloud.ibm.com/user/notifications){: external}, users can use the search field to locate an invitation or filter by the notification type called `account`. For more information, see [Managing invitation notifications](/docs/account?topic=account-email-prefs#invite-notifications) and [Viewing notifications](/docs/account?topic=account-viewing-cloud-status#viewing-notifications).
 
 ## Accepting invitations by using the CLI
 {: #cli-accepting}

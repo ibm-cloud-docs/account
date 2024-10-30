@@ -41,8 +41,8 @@ Before you delete an identity, confirm that they are inactive for at least 30 da
 {: note}
 
 To learn more about the implications of removing or deleting identities in your account, review the following documentation:
-   - [Removing users from an account](/docs/account?topic=account-remove&interface=ui)
+   - [Removing users from an account](/docs/account?topic=account-iamuserinv&interface=ui#remove-user-acount-ui)
    - [Deleting service IDs](/docs/account?topic=account-serviceids&interface=ui#delete_serviceid)
-   - [Removing trusted profiles](/docs/account?topic=account-trusted-profile-remove)
+   - [Removing trusted profiles](/docs/account?topic=account-trusted-profile-update&interface=ui#remove-tp-console)
    - [Deleting an API key](/docs/account?topic=account-userapikey&interface=ui#delete_user_key)
    - [Deleting an API key for a service ID](/docs/account?topic=account-serviceidapikeys&interface=ui#delete_service_key)
