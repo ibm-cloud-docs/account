@@ -490,5 +490,6 @@ toc:
               - status-bps.md
               - view-notifications.md
               - status_search.md
+          - report-security.md
           - case-severity-response-times.md
       - known-issues.md
