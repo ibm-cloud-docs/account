@@ -484,7 +484,11 @@ toc:
           - create-case.md
           - assign-user-access-cases.md
           - manage-case.md
-          - monitor-notif-status1.md
-          - report-security.md
+          - topicgroup:
+              label: Monitoring notifications and status
+              topics:
+              - status-bps.md
+              - view-notifications.md
+              - status_search.md
           - case-severity-response-times.md
       - known-issues.md
