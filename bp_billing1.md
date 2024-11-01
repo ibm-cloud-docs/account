@@ -13,7 +13,7 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 # Best practices for billing and usage
-{: #best-practices}
+{: #billing-best-practices}
 
 Follow our best practices to learn about {{site.data.keyword.cloud}} billing options and tools that you can use to track your usage and manage invoicing and payments.
 {: shortdesc}
