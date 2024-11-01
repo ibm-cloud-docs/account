@@ -80,7 +80,6 @@ toc:
               topics:
               - email.md
               - distribution_list1.md
-          - email.md
           - update-account-ownership1.md
           - iam-policy-number.md
           - shell-settings.md
