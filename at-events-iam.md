@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-30"
+lastupdated: "2024-11-01"
 
 keywords: activity tracking, IAM events, Identity and Access Management, observibility
 
@@ -114,56 +114,14 @@ IAM sends activity tracking events by {{site.data.keyword.atracker_full_notm}} i
 {: class="simple-tab-table"}
 {: row-headers}
 
-### Enabling activity tracking events for IAM
-{: #at-enable-iam}
 
 
 
 
 
 
-IAM generates [global activity tracking events](/docs/atracker?topic=atracker-event_types#event_types_global) for the actions that are listed in this document. To track and log those events for auditing in your account, complete the following steps:
 
-1. Create an instance of {{site.data.keyword.logs_full_notm}}.
-   1. Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** to access the *Observability* dashboard.
-   1. Click **Logging > Instances > Cloud logs > Create**.
-   1. Select the `Frankfurt (eu-de)` region for high availability.
-   1. Accept the terms and click **Create**.
 
-1. Create an Activity Tracker target.
-   1. Go to **Observability > Activity Tracker > Routing > Targets**.
-   1. Click **Create**.
-   1. Select the {{site.data.keyword.logs_full_notm}} instance that you created in the `Frankfurt (eu-de)`.
-   1. Click **Create target**.
-
-1. Create an Activity Tracker route.
-   1. Go to **Observability > Activity Tracker > Routing > Routes**.
-   1. Click **Create**.
-   1. Select `Platform events (global)` as the location to send audit events from.
-   1. Select the target {{site.data.keyword.logs_full_notm}} instance that you created in the `Frankfurt (eu-de)` region.
-
-1. Create {{site.data.keyword.cos_full_notm}} buckets in the `Frankfurt (eu-de)` region.
-   - A [data bucket](/docs/cloud-logs?topic=cloud-logs-configure-data-bucket)
-   - A [metrics bucket](/docs/cloud-logs?topic=cloud-logs-configure-metrics-bucket&interface=cli)
-
-   The same bucket cannot be used as both your data bucket and your metrics bucket.
-   {: note}
-
-1. Connect your storage buckets to your {{site.data.keyword.logs_full_notm}} instance.
-   1. Go to **Observability > Logging > Instances** and select your {{site.data.keyword.logs_full_notm}} instance.
-   1. Click **Storage**
-   1. For **Logs data**, click **Connect**.
-      1. Click **Authorize now** to allow {{site.data.keyword.logs_full_notm}} and {{site.data.keyword.cos_full_notm}} to connect.
-
-      You can view the authorization policy that this creates on the [Authorizations](/iam/authorizations){: external} page.
-      {: note}
-
-      1. Select the logs bucket that you created.
-      1. Click **Connect**.
-   1. For **Events to metrics data**, click **Connect**.
-      1. Click **Authorize now** to allow {{site.data.keyword.logs_full_notm}} and {{site.data.keyword.cos_full_notm}} to connect.
-      1. Select the metrics bucket that you created.
-      1. Click **Connect**.
 
 ### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
 {: #log-launch-standalone-iam}
@@ -178,6 +136,9 @@ For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [L
 
 
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
+
+The IAM service generates [global activity tracking events](/docs/atracker?topic=atracker-event_types#event_types_global) for the actions that are listed in this document. Select `Platform events (global)` as the location to send audit events from when you configure an Activity Tracker route.
+{: tip}
 
 To view IAM events in the {{site.data.keyword.logs_full_notm}} dashboard, go to the **Subsystems** filter and select the values with the prefix `iam-`. For example, `iam-am`, `iam-identity`, or `iam-groups`.
 
