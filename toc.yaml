@@ -272,9 +272,13 @@ toc:
           - catalog-access-reqs.md
           - software-license.md
       - topicgroup:
-          label: Logging and monitoring updated topics
+          label: Observability
           topics:
           - monitoring.md
+          - at-events-am.md
+          - at-events-iam.md
+          - at-events-cbr.md
+          - at-events-cm.md
           - audit_log.md
           - sessions-your-login.md
           - trustedprofile-monitor.md
@@ -480,7 +484,12 @@ toc:
           - create-case.md
           - assign-user-access-cases.md
           - manage-case.md
-          - monitor-notif-status1.md
+          - topicgroup:
+              label: Monitoring notifications and status
+              topics:
+              - status-bps.md
+              - view-notifications.md
+              - status_search.md
           - report-security.md
           - case-severity-response-times.md
       - known-issues.md

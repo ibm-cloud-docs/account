@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2024
-lastupdated: "2024-10-29"
+lastupdated: "2024-10-30"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -18,6 +18,8 @@ subcollection: account
 
 By default, all IP addresses can be used to log in to the {{site.data.keyword.cloud}} console and access classic infrastructure APIs. You can specify which IP addresses have access and which IP addresses are restricted. You can specify this access at the user level or at the account level. Currently, only public IP addresses are supported.
 {: shortdesc}
+
+
 
 ## Before you begin
 {: #before-allowing-ips}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-10-22"
+lastupdated: "2024-10-31"
 
 keywords: security, reporting, vulnerability
 

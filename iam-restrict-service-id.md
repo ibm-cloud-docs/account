@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2024
-lastupdated: "2024-10-29"
+lastupdated: "2024-10-30"
 
 keywords: restrict service id, block users from creating service id, restrict service id creation
 
@@ -18,6 +18,7 @@ subcollection: account
 
 By default, all members of an account can create service IDs. However, access can be restricted so that only members with the correct access can create service IDs by using the Service ID creation setting. For more information about Service IDs, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 {: shortdesc}
+
 
 
 ## Enabling the restriction to create service IDs in the console

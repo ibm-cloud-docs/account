@@ -3,8 +3,7 @@
 copyright:
 
   years: 2021, 2024
-
-lastupdated: "2024-01-05"
+lastupdated: "2024-10-30"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -23,6 +22,8 @@ Improve the security of your account by requiring account users to enter their l
 
 To review and end active sessions to help maintain the security of your account, see [Monitoring your login sessions](/docs/account?topic=account-monitor-your-session).
 {: tip}
+
+
 
 ## Before you begin
 {: #work-sessions-access}
