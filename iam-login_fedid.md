@@ -24,7 +24,7 @@ By using federated IDs, you don't need to set up new login credentials specific 
 
 When a user logs in, the user gets an IAM token, which is a temporary credential that expires after 1 hour. After that time, the token must be refreshed to secure the connection and to continue accessing account resources to which they are assigned access. For more information about using federated IDs, see [Setting up your {{site.data.keyword.cloud_notm}} account](/docs/account?topic=account-account-getting-started).
 
-Google login isn't available for users with federated IDs. For more information, see [known issues and limitations](/docs/account?topic=account-known-issues&interface=ui). 
+Google login isn't available for users with federated IDs. For more information, see [known issues and limitations](/docs/account?topic=account-known-issues&interface=ui).
 {: note}
 
 ## Using the console to log in
