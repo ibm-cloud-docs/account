@@ -139,14 +139,14 @@ To view the Incident reports page and check RCAs, complete the following steps:
 ## Viewing notifications
 {: #viewing-notifications}
 
-Access essential account notifications by clicking the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) in the console menu bar. When a new notification is available, a visual indicator is displayed next to the icon to help you stay up-to-date with the latest announcements, maintenance plans, and other impacts to your account experience. Notifications are scoped to the specific account in which you are working. 
+Access essential account information by clicking the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) in the console menu bar. To help you stay up-to-date with the latest announcements, maintenance plans, and other impacts to your account experience, a visual indicator is displayed next to the icon when a new notification is available. 
   
-Use the list of accounts that's displayed in the console menu bar to view notifications related to other accounts you have access to.
+Notifications are scoped to the specific account in which you are working. Use the list of accounts that's displayed in the console menu bar to view notifications related to other accounts you have access to.
 {: tip}
 
-* The severity or impact is listed for each notification type. Depending on the notification, you might see severity 1 listed for an unplanned incident notification and high impact that is listed for a planned maintenance notification.
-* To access a specific notification, search or filter by notification type. After your search or filter options are applied, make sure you save the URL to access your scoped view in the future. 
-* Navigate to a specific notification by using the unique URL that is associated with each notification. You can save and share the URL with users in the account.
+* The severity or impact is listed for each notification and will vary by type. 
+* To access a specific notification, search or filter by notification type. To access the scoped view in the future, make sure you save the URL after your search or filter options are applied. 
+* Navigate to a specific notification by using the unique URL that's associated with each notification. You can save and share the URL with users in the account.
 * To receive future updates about a specific type of notification, click the **Email** icon that's displayed next to each notification item in the list.
 
 ### Notification types
