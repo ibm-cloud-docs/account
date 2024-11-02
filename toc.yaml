@@ -71,7 +71,6 @@ toc:
           label: Managing your account
           topics:
           - account_settings.md
-          - account-upgrade.md
           - dashboard-manage1.md
           - create-mult-accounts.md
           - update-your-profile1.md
@@ -80,17 +79,30 @@ toc:
               topics:
               - email.md
               - distribution_list1.md
-          - update-account-ownership1.md
           - iam-policy-number.md
-          - shell-settings.md
-          - iam-leave-account.md
-          - account-close.md
           - topicgroup:
                 label: Updating account settings for compliance
                 topics:
                 - eu-supported.md
                 - financial-services-validated.md
                 - hipaa-supported.md
+          - shell-settings.md
+          - account-upgrade.md
+          - update-account-ownership1.md
+          - iam-leave-account.md
+          - account-close.md
+          - topicgroup:
+              label: Getting help with your account
+              topics:
+              - getting-help.md
+              - using-support-center.md
+              - support-plans.md
+              - create-case.md
+              - assign-user-access-cases.md
+              - manage-case.md
+              - monitor-notification-status.md
+              - report-security.md
+              - case-severity-response-times.md
       - topicgroup:
           label: Securing your account
           topics:
@@ -479,21 +491,4 @@ toc:
           - ts_service-broker.md
           - ts_view-archived-cases.md
           - ts_view-case-details.md
-      - topicgroup:
-          label: Getting account support
-          topics:
-          - getting-help.md
-          - using-support-center.md
-          - support-plans.md
-          - create-case.md
-          - assign-user-access-cases.md
-          - manage-case.md
-          - topicgroup:
-              label: Monitoring notifications and status
-              topics:
-              - status-bps.md
-              - view-notifications.md
-              - status_search.md
-          - report-security.md
-          - case-severity-response-times.md
       - known-issues.md

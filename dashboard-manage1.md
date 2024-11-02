@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-09-20"
+  years: 2019, 2024
+lastupdated: "2024-11-02"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -12,10 +12,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Creating and managing a dashboard
+# Customizing dashboards for your account
 {: #custom-dashboard}
 
-You can customize your dashboard in the {{site.data.keyword.cloud}} console to ensure that what is displayed is relevant to you. The dashboards that you create can be scoped to specific resources. You can share the dashboards with users in your account as a way to group resources for specific projects or teams. When you create a new dashboard, you can start from scratch with a blank template or choose one of the other available templates.
+You can customize your dashboard in the {{site.data.keyword.cloud}} console to ensure that what is displayed is relevant to you and the users in your account. The dashboards that you create can be scoped to specific resources. You can share the dashboards with users in your account as a way to group resources for specific projects or teams. When you create a new dashboard, you can start from scratch with a blank template or choose one of the other available templates.
 
 {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) access policies are not required for users in your account to view a dashboard. You can share the dashboard link with users so they can view your dashboard.
 
