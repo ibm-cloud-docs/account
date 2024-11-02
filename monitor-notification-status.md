@@ -139,17 +139,15 @@ To view the Incident reports page and check RCAs, complete the following steps:
 ## Viewing notifications
 {: #viewing-notifications}
 
-Access and view notifications by clicking the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) in the console menu bar.
+Access essential account notifications by clicking the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) in the console menu bar. When a new notification is available, a visual indicator is displayed next to the icon to help you stay up-to-date with the latest announcements, maintenance plans, and other impacts to your account experience. Notifications are scoped to the specific account in which you are working. 
+  
+Use the list of accounts that's displayed in the console menu bar to view notifications related to other accounts you have access to.
+{: tip}
 
-The notification experience provides enhancements to how users are notified about important changes on the {{site.data.keyword.Bluemix_notm}} platform:
-
-* The **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) on the {{site.data.keyword.Bluemix_notm}} console shows a red indicator that is only visible when a new notification is available. You can see the details and interact with new and archived notifications.
-* The Notifications page is account that is scoped and shows only notifications for the account that is selected on the menu bar. You can switch accounts to view notifications that are affecting a different account.
 * The severity or impact is listed for each notification type. Depending on the notification, you might see severity 1 listed for an unplanned incident notification and high impact that is listed for a planned maintenance notification.
-* You can use the search field to locate a specific notification or filter by a notification type.
+* To access a specific notification, search or filter by notification type. After your search or filter options are applied, make sure you save the URL to access your scoped view in the future. 
 * Navigate to a specific notification by using the unique URL that is associated with each notification. You can save and share the URL with users in the account.
-* You can access the Notifications page with the applied filters to view only applicable notifications. Make sure to save the URL to view the Notifications page with the applied filters.
-* If you want to receive future updates about a specific type of notification, click the **Email** icon next to each notification item in the list.
+* To receive future updates about a specific type of notification, click the **Email** icon that's displayed next to each notification item in the list.
 
 ### Notification types
 {: #notification-types}
