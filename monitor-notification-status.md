@@ -139,7 +139,7 @@ To view the Incident reports page and check RCAs, complete the following steps:
 ## Viewing notifications
 {: #viewing-notifications}
 
-To view the page, log in to the {{site.data.keyword.Bluemix_notm}} console, and click the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) on the menu bar.
+Access and view notifications by clicking the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) in the console menu bar.
 
 The notification experience provides enhancements to how users are notified about important changes on the {{site.data.keyword.Bluemix_notm}} platform:
 
