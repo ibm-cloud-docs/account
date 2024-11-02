@@ -91,18 +91,6 @@ toc:
           - update-account-ownership1.md
           - iam-leave-account.md
           - account-close.md
-          - topicgroup:
-              label: Getting help with your account
-              topics:
-              - getting-help.md
-              - using-support-center.md
-              - support-plans.md
-              - create-case.md
-              - assign-user-access-cases.md
-              - manage-case.md
-              - monitor-notification-status.md
-              - report-security.md
-              - case-severity-response-times.md
       - topicgroup:
           label: Securing your account
           topics:
@@ -168,80 +156,6 @@ toc:
                 - iam-apikey_iamtoken.md
                 - iam-apikeys_services.md
       - topicgroup:
-          label: Working with resources and tags
-          topics:
-          - manage_resource_group1.md
-          - manage_resource1.md
-          - rg-access.md
-          - iam-access-report.md
-          - reclaim-resource.md
-          - tagging_resources.md
-          - manage_tags1.md
-          - grant-tag-access.md
-          - data-center-migration.md
-          - quotas.md
-          - resource-quota.md
-          - topicgroup:
-                label: Connecting resources to apps
-                topics:
-                - connecting_apps.md
-                - connect_external_app.md
-                - service_credentials.md
-                - using-services.md
-                - service_in_other_regions.md
-          - topicgroup:
-              label: Connecting resources over a private network
-              topics:
-              - service-endpoints.md
-              - vrf-service-endpoint.md
-      - topicgroup:
-          label: Billing and usage for your account
-          topics:
-          - topicgroup:
-                label: Managing your costs and usage
-                topics:
-                - how_charged.md
-                - estimating_costs.md
-                - scenario1.md
-                - change_pricing_plan.md
-                - getting-pricing-api.md
-                - notifications.md
-                - viewing_usage1.md
-                - project-spend.md
-                - infra_usage.md
-                - understand-invoice.md
-                - manage_billing.md
-                - quotas.md
-                - invoices.md
-                - cancel-billing-items.md
-          - topicgroup:
-                label: Exporting your usage data for continual insights
-                topics:
-                - exporting-usage.md
-                - usage-report.md
-          - topicgroup:
-                label: Managing subscriptions and commitments
-                topics:
-                - subscriptions.md
-                - paygo_committed_use.md
-                - service-level-commit.md
-          - topicgroup:
-                label: Working with codes and credits
-                topics:
-                - feature_codes.md
-                - subscription_codes.md
-                - promo_codes.md
-          - topicgroup:
-                label: Working with IBM Cloud's carbon calculator
-                topics:
-                - cc-working-with.md
-                - tracking-emission.md
-                - zero-emission-dc.md
-                - cc-terms.md
-          - support.md
-          - migrate-billing.md
-          - migrate-bp-billing.md
-      - topicgroup:
           label: Catalog management in IBM Cloud
           topics:
           - catalog-settings1.md
@@ -288,6 +202,80 @@ toc:
           - catalog-access-reqs.md
           - software-license.md
       - topicgroup:
+          label: Working with resources and tags
+          topics:
+          - manage_resource_group1.md
+          - manage_resource1.md
+          - rg-access.md
+          - iam-access-report.md
+          - reclaim-resource.md
+          - tagging_resources.md
+          - manage_tags1.md
+          - grant-tag-access.md
+          - data-center-migration.md
+          - quotas.md
+          - resource-quota.md
+          - topicgroup:
+                label: Connecting resources to apps
+                topics:
+                - connecting_apps.md
+                - connect_external_app.md
+                - service_credentials.md
+                - using-services.md
+                - service_in_other_regions.md
+          - topicgroup:
+              label: Connecting resources over a private network
+              topics:
+              - service-endpoints.md
+              - vrf-service-endpoint.md
+      - topicgroup:
+          label: Managing your account billing and usage
+          topics:
+          - topicgroup:
+                label: Managing your costs and usage
+                topics:
+                - how_charged.md
+                - estimating_costs.md
+                - scenario1.md
+                - change_pricing_plan.md
+                - getting-pricing-api.md
+                - notifications.md
+                - viewing_usage1.md
+                - project-spend.md
+                - infra_usage.md
+                - understand-invoice.md
+                - manage_billing.md
+                - quotas.md
+                - invoices.md
+                - cancel-billing-items.md
+          - topicgroup:
+                label: Exporting your usage data for continual insights
+                topics:
+                - exporting-usage.md
+                - usage-report.md
+          - topicgroup:
+                label: Managing subscriptions and commitments
+                topics:
+                - subscriptions.md
+                - paygo_committed_use.md
+                - service-level-commit.md
+          - topicgroup:
+                label: Working with codes and credits
+                topics:
+                - feature_codes.md
+                - subscription_codes.md
+                - promo_codes.md
+          - topicgroup:
+                label: Working with IBM Cloud's carbon calculator
+                topics:
+                - cc-working-with.md
+                - tracking-emission.md
+                - zero-emission-dc.md
+                - cc-terms.md
+          - support.md
+          - migrate-billing.md
+          - migrate-bp-billing.md
+      - topicgroup:
           label: Observability
           topics:
           - monitoring.md
@@ -299,6 +287,18 @@ toc:
           - sessions-your-login.md
           - trustedprofile-monitor.md
           - cbr-monitor.md
+      - topicgroup:
+          label: Getting help when you run into account issues
+          topics:
+          - getting-help.md
+          - using-support-center.md
+          - support-plans.md
+          - create-case.md
+          - assign-user-access-cases.md
+          - manage-case.md
+          - monitor-notification-status.md
+          - report-security.md
+          - case-severity-response-times.md
   - navgroup:
       id: reference
       topics:
