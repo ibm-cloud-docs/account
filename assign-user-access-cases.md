@@ -4,7 +4,7 @@ copyright:
 
   years: 2021, 2024
 
-lastupdated: "2024-10-22"
+lastupdated: "2024-11-02"
 
 keywords: access to cases, get access for cases, assign cases, assign access, access support center
 
@@ -14,7 +14,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Assigning user access for working with support cases
+# Managing access to support cases
 {: #access-cases}
 
 By default, users in your account don't have access to create, update, search, or view cases. The account owner must provide users access by assigning an Identity and Access Management (IAM) access policy. Use the Support Center account management service to assign users access to work with support cases.
