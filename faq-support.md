@@ -123,7 +123,7 @@ The [{{site.data.keyword.IBM_notm}} SkillsBuild Software Downloads](https://www.
 {: #watchlist}
 {: faq}
 
-As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](docs/account?topic=account-managing-support-cases#contact-watchlist).
+As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](/docs/account?topic=account-managing-support-cases#contact-watchlist).
 
 ## Can I find support cases that are created by specific users?
 {: #case_list_user}
