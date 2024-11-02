@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-10-30"
+lastupdated: "2024-11-02"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -65,13 +65,13 @@ As an {{site.data.keyword.cloud_notm}} customer, you can escalate support cases 
 
 If you have a Basic support plan, access to support is through cases only. If your support inquiry requires a more immediate response, consider [upgrading to a Premium or Advanced support plan](/docs/account?topic=account-get-supportfaq#support-plan).
 
-For more information, see [Escalating support cases](/docs/account?topic=account-escalation).
+For more information, see [Escalating support cases](/docs/account?topic=account-managing-support-cases#escalation).
 
 ## How do I change my email preferences for notifications?
 {: #email_preferences_gs}
 {: faq}
 
-You can change which email notifications you receive for planned events, unplanned events, and announcements in your profile settings. To change your email preferences, choose one of the following options:
+You can change which email notifications you receive for planned events, unplanned events, and announcements in your profile settings. To change your email preferences, use one of the following options:
 
 * Go to [Notifications](/user/notifications) in your profile settings.
 * For `control.softlayer.com`, you can change your email preferences by going to **Account** > **Users** > **Email Preferences**.
@@ -123,7 +123,7 @@ The [{{site.data.keyword.IBM_notm}} SkillsBuild Software Downloads](https://www.
 {: #watchlist}
 {: faq}
 
-As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](docs/account?topic=account-managing-support-cases&interface=ui#contact-watchlist).
+As the account owner or as an administrator or editor on the Support Center service, you can add users in the account to the watchlist. Users on the watchlist can view and follow the support case's progress. For more information, see [Updating your support case's watchlist](docs/account?topic=account-managing-support-cases#contact-watchlist).
 
 ## Can I find support cases that are created by specific users?
 {: #case_list_user}
