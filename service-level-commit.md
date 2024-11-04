@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-30"
+lastupdated: "2024-11-04"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -27,7 +27,7 @@ Service-level commitments include a service or bundle of services, a term, disco
 - 3-year term
 - 30% discount on {{site.data.keyword.powerSys_notm}}
 - $360,000 total commitment
-- $1,000 minimum usage per month
+- $1,000 committed usage per month
 
 All of your service usage in the bundle is discounted with a service-level commitment.
 
