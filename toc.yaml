@@ -99,9 +99,11 @@ toc:
                 label: Setting up multifactor authentication and other authentication methods
                 topics:
                 - iam-mfatypes.md
-                - iam-enable-manage-mfa1.md
+                - iam-mfa.md
+                - iam-mfa-report.md
                 - migrate-mfa.md
                 - legacy-mfa.md
+                - iam-ver-auth.md
                 - iam-federation-guide.md
                 - iam-idp-integration.md
                 - iam-saml-federation.md

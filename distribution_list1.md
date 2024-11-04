@@ -12,7 +12,7 @@ subcollection: account
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding users to a notification distribution list
+# Using the notification distribution list
 {: #add-users-distribution-list}
 
 The {{site.data.keyword.Bluemix_notm}} [Notification distribution list page](/account/notifications-distribution-list){: external} provides a way for you to specify a set of email addresses or webhooks to set suitable destinations for notifications about account-wide events.
