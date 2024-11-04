@@ -98,11 +98,11 @@ toc:
           - topicgroup:
                 label: Setting up multifactor authentication and other authentication methods
                 topics:
+                - iam-mfatypes.md
                 - iam-mfa.md
                 - iam-mfa-report.md
-                - legacy-mfa.md
                 - migrate-mfa.md
-                - iam-mfatypes.md
+                - legacy-mfa.md
                 - iam-ver-auth.md
                 - iam-federation-guide.md
                 - iam-idp-integration.md
