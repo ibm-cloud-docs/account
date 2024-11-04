@@ -226,7 +226,6 @@ Complete the following steps to define which federated users can access specific
 
    For more information, see the [CLI reference](/docs/account?topic=account-ibmcloud_commands_iam#ibmcloud_iam_trusted_profile_policy_create).
 
-
 ## Establishing trust with compute resources by using the CLI
 {: #create-profile-compute-cli}
 {: cli}
