@@ -291,9 +291,7 @@ toc:
       - topicgroup:
           label: Getting help when you run into issues
           topics:
-          - getting-help.md
           - using-support-center.md
-          - support-plans.md
           - topicgroup:
                 label: Working with support cases
                 topics:
@@ -392,9 +390,11 @@ toc:
       - managed-services-transition.md
       - bxnui.md
       - customer-incident-report.md
+      - support-plans.md
   - navgroup:
       id: help
       topics:
+      - getting-help.md
       - topicgroup:
           label: FAQs
           topics:
