@@ -289,18 +289,18 @@ toc:
           - trustedprofile-monitor.md
           - cbr-monitor.md
       - topicgroup:
-          label: Getting help when you run into issues
+          label: Getting support
           topics:
-          - using-support-center.md
-          - topicgroup:
+            - using-support-center.md
+            - topicgroup:
                 label: Working with support cases
                 topics:
                 - assign-user-access-cases.md
                 - create-case.md
                 - case-severity-response-times.md
                 - manage-case.md
-          - report-security.md
-          - monitor-notification-status.md
+            - report-security.md
+            - monitor-notification-status.md
   - navgroup:
       id: reference
       topics:
