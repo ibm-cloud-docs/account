@@ -261,7 +261,6 @@ toc:
                 label: Managing subscriptions and commitments
                 topics:
                 - subscriptions.md
-                - paygo_committed_use.md
                 - service-level-commit.md
           - topicgroup:
                 label: Working with codes and credits
