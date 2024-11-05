@@ -136,6 +136,8 @@ toc:
                 topics:
                 - context-restrictions-create.md
                 - context-restrictions-manage1.md
+                - cm-cbr.md
+                - iam-cbr.md
           - topicgroup:
               label: Administering settings
               topics:
