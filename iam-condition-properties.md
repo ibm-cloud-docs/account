@@ -20,7 +20,7 @@ subcollection: account
 
 Dynamic rules and trusted profiles both use conditional IAM statements that you specify to automatically add federated users to access groups or trusted profiles. When users log in with a federated ID, the data from the identity provider (IdP) dynamically maps them to an access group based on conditions that you set. For more information, see [Creating dynamic rules for access groups](/docs/account?topic=account-rules) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
 
-You can also assign conditional IAM access policies to designate temporary access to resources in your account or allow access to resources during specific time windows. For more information, see [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based) and review the section [Conditions in `/v2/policies` access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
+You can also assign conditional IAM access policies to designate temporary access to resources in your account or allow access to resources during specific time windows. For more information, see [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based&interface=ui) and review the section [Conditions in `/v2/policies` access policies](/docs/account?topic=account-iam-condition-properties&interface=ui#policy-condition-properties).
 
 ## Dynamic rule and trusted profile details
 {: #general-details}
@@ -181,7 +181,7 @@ The following table lists the operators available for creating time-based condit
 | `dateTimeLessThanOrEquals` | The date and time that the condition terminates access. Date is calculated by `<datetime>±<time_zone_offset>`. | See [example](/docs/account?topic=account-iam-condition-properties&interface=ui#dateTimeGreaterThanOrEquals-dateTimeLessThanOrEquals). |
 {: caption="The operators available to time-based conditions for access policies." caption-side="top"}
 
-When you define a condition with a `GreaterThanOrEquals` operator, always include a condition with a `LessThanOrEquals` operator. This way, there is a clearly defined duration, whether it is temporary, recurring all day, or recurring with custom hours. For more information, see [Condition patterns](/docs/account?topic=account-iam-time-based&interface=ui#condition-patterns).
+When you define a condition with a `GreaterThanOrEquals` operator, always include a condition with a `LessThanOrEquals` operator. This way, there is a clearly defined duration, whether it is temporary, recurring all day, or recurring with custom hours. For more information, see [Condition patterns](/docs/account?topic=account-iam-time-based&interface=ui#advanced-condition-service).
 
 For date and time operators, policies support the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format `hh:mm:ss±hh:mm`. The time zone offset refers to Coordinated Universal Time.
 {: note}
@@ -284,7 +284,7 @@ The `key` represents the resource attribute that is supported by the chosen serv
 | `resource.attributes.delimiter` | Restricts the type of folder structure that the user can generate and helps the user navigate the bucket like a file hierarchy.   | `stringEquals` |
 {: caption="Variable notation for resource attribute-based conditions." caption-side="top"}
 
-For more information, see [Condition patterns](/docs/account?topic=account-iam-resource-based&interface=ui#attribute-condition-patterns).
+For more information, see [Condition patterns](/docs/account?topic=account-iam-time-based&interface=ui).
 
 #### Example: stringMatchAnyOf and stringEqualsAnyOf
 {: #example-stringMatchAnyOf-stringEqualsAnyOf}
