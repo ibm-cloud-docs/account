@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-11-05"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -19,17 +19,19 @@ The following table shows the locations that are considered to be zero-emissions
 
 | Data Center | Location      |
 |-------------|---------------|
-| DAL02	      | Dallas        |
-| DAL06       | Dallas        |
+| DAL05	      | Dallas        |
+| DAL07       | Dallas        |
+| DAL08	      | Dallas        |
+| DAL09	      | Dallas        |
 | DAL10	      | Dallas        |
-| DAL12	      | Dallas        |
+| DAL12       | Dallas        |
 | DAL13	      | Dallas        |
-| MON01       |	Montreal      |
+| DAL14       | Dallas        |
 | SAO01       |	Sao Paulo     |
 | SAO04       | Sao Paulo     |
 | SAO05       |	Sao Paulo     |
+| WDC03       | Washington DC |
 | WDC04       | Washington DC |
-| WDC06       | Washington DC |
 | WDC07       | Washington DC |
 {: caption="Table 1. Carbon intensity of data centers in North and South America" caption-side="bottom"}
 {: #americas}
@@ -39,7 +41,6 @@ The following table shows the locations that are considered to be zero-emissions
 
 | Data Center | Location      |
 |-------------|---------------|
-| AMS01	      | Amsterdam     |
 | AMS03	      | Amsterdam     |
 | FRA02	      | Frankfurt     |
 | FRA04	      | Frankfurt     |
@@ -62,7 +63,7 @@ The following table shows the locations that are considered to be zero-emissions
 
 | Data Center | Location      |
 |-------------|---------------|
-| OSA22       |	Osaka	        |
+| SYD04       |	Sydney	      |
 {: caption="Table 1. Carbon intensity of data centers in Asia Pacific" caption-side="bottom"}
 {: #asia-pacific}
 {: tab-title="Asia Pacific"}
