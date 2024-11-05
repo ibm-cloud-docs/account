@@ -207,7 +207,7 @@ To assign a user in your account full administrator access, go to **Manage > Acc
 
 * The Super user permission set for classic infrastructure, which includes all of the available classic infrastructure permissions
 
-* A trusted profile set as the alternative account owner has the highest level of classic infrastructure permissions and has both IAM policies that grant full access. For more information, see [Setting an alternative account owner](/docs/account?topic=account-classic-infra-owner&interface=ui).
+* A trusted profile set as the alternative account owner has the highest level of classic infrastructure permissions and has both IAM policies that grant full access. For more information, see [Setting an alternative account owner](/docs/account?topic=account-transfer&interface=ui#grant-alt-owner).
 
 ## Can every user in my account see all the other users?
 {: #users}
