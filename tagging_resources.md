@@ -266,13 +266,13 @@ The same tag can be attached to multiple resources and service IDs by different 
 {: #search-tags-cli-link}
 {: cli}
 
-To search for tags by using the CLI, see [Searching for resources](/docs/account?topic=account-searching-for-resources#searching-cl).
+To search for tags by using the CLI, see [Searching for resources](/docs/account?topic=account-manage_resource&interface=cli#searching-cl).
 
 ## Searching for tags by using the API
 {: #search-tags-api-link}
 {: api}
 
-To search for tags by using the API, see [Searching for resources](/docs/account?topic=account-searching-for-resources#searching-api).
+To search for tags by using the API, see [Searching for resources](/docs/account?topic=account-manage_resource&interface=api#searching-api).
 
 A common use case for searching for tags by using the API is retrieving the tags that are attached to a resource. There are a couple of options for doing that.
 

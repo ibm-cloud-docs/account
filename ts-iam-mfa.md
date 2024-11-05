@@ -41,4 +41,4 @@ One or more of the authentication factors that you use are inaccessible. For exa
       1. Click the checkbox next to the MFA method that you want to reset and click Remove.
       1. Set up your new MFA factor the next time that you login to {{site.data.keyword.cloud}}.
 
-For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-enablemfa#verification-authentication).
+For more information, see [Managing verification methods and MFA factors](/docs/account?topic=account-verification-authentication&interface=ui).
