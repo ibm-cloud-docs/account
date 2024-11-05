@@ -40,6 +40,7 @@ toc:
           - bp_billing1.md
           - bp_account.md
           - cc-bp1.md
+          - status-bps.md
   - navgroup:
       id: tutorial
       topics:
@@ -74,11 +75,6 @@ toc:
           - dashboard-manage1.md
           - create-mult-accounts.md
           - update-your-profile1.md
-          - topicgroup:
-              label: Managing notifications
-              topics:
-              - email.md
-              - distribution_list1.md
           - iam-policy-number.md
           - topicgroup:
                 label: Updating account settings for compliance
@@ -242,7 +238,6 @@ toc:
                 - scenario1.md
                 - change_pricing_plan.md
                 - getting-pricing-api.md
-                - notifications.md
                 - viewing_usage1.md
                 - project-spend.md
                 - infra_usage.md
@@ -300,7 +295,14 @@ toc:
                 - case-severity-response-times.md
                 - manage-case.md
             - report-security.md
-            - monitor-notification-status.md
+      - topicgroup:
+          label: Monitoring notifications
+          topics:
+          - view_notifications.md
+          - notifications.md
+          - email.md
+          - distribution_list1.md
+      - ViewStatus.md
   - navgroup:
       id: reference
       topics:
