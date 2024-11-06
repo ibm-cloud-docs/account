@@ -15,7 +15,7 @@ subcollection: account
 # Zero-emissions data centers
 {: #zero-emission-data-centers}
 
-The following table shows the availability zones that are considered to be zero-emissions data centers, in accordance to the market-based emissions calculation method, for 2024. Data centers are considered zero-emissions because IBM Cloud invested in, or benefit from, bundled renewable electricity contracts or direct power purchase agreements. Renewable electricity contracts or power purchase agreements may be added to our portfolio periodically. For information about IBM’s Position on Scope 3 GHG emissions, see [What are Scope 3 emissions](https://www.ibm.com/topics/scope-3-emissions) or visit www.ibm.com/environment for more information on IBM’s environmental programs and performance.
+The following table shows the availability zones that are considered to be zero-emissions data centers, in accordance to the market-based emissions calculation method, for 2024. Data centers are considered zero-emissions because IBM Cloud invested in, or benefit from, bundled renewable electricity contracts or direct power purchase agreements. Renewable electricity contracts or power purchase agreements may be added to our portfolio periodically. For information about IBM’s Position on Scope 3 GHG emissions, see [What are Scope 3 emissions](https://www.ibm.com/topics/scope-3-emissions){: external} or visit [www.ibm.com/environmen](www.ibm.com/environmen){: external} for more information on IBM’s environmental programs and performance.
 
 | Data Center | Location      |
 |-------------|---------------|
