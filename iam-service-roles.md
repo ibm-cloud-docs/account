@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-10-30"
+lastupdated: "2024-11-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1842,6 +1842,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v5/:platform/deployments/:deployment_id/user_policy` | Create user policy | Administrator, Editor, Operator |
 | `PATCH /v5/:platform/deployments/:deployment_id/user_policy` | Update existing user policy | Administrator, Editor, Operator |
 | `DELETE /v5/:platform/deployments/:deployment_id/user_policy` | Delete existing user policy | Administrator, Editor, Operator |
+| `GET /v4/:platform/deployments/:deployment_id/backup_records` | Read all backup history records | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}

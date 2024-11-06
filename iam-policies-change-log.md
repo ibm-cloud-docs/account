@@ -54,7 +54,7 @@ This change log introduces new capabilities for the `v2` IAM Policy Management A
 
 This change log introduces a new version (`v1 -> v2`) of the IAM Policy Management API. This version adds a new JSON schema to support a conditional policy construct and several time-based comparison operators. These operators provide the capability to restrict access based on time and date. With time-based access control, customers can establish granular policy enforcement based on a specified time period.
 
-To get started, see [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based&interface=ui).
+To get started, see [Limiting access with time-based conditions](//docs/account?topic=account-iam-time-based&interface=ui).
 
 For detailed operator descriptions and examples, see: [Conditions in `v2` access policies](/docs/account?topic=account-iam-condition-properties#policy-condition-properties)
 

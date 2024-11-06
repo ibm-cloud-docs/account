@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-30"
+lastupdated: "2024-11-05"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -21,13 +21,13 @@ Hybrid cloud services that can be deployed on-premises, like {{site.data.keyword
 
 Your on-premises usage data is sent to {{site.data.keyword.Bluemix_notm}} when your service-level commitment is activated, which allows you to monitor hardware usage alongside your cloud-based usage. Gain a complete view of your resource usage trends across both on-premises and cloud environments to help you make informed decisions.
 
-Workloads that you deploy to your on-premises or edge environment are managed through {{site.data.keyword.satellitelong}}. For more information, see [Getting started with {{site.data.keyword.satellitelong}}](/docs/satellite?topic=satellite-getting-started).
+Workloads that you deploy to your on-premises or edge environment are enabled through {{site.data.keyword.satellitelong}}. For more information, see [Getting started with {{site.data.keyword.satellitelong}}](/docs/satellite?topic=satellite-getting-started).
 
 Service-level commitments include a service or bundle of services, a term, discount rate, and total commitment amount. You might also have a monthly or yearly minimum spend if applicable. A term might be 6 months, 1 year, or 5 years. For example, you might have a commitment with the following provisions:
 - 3-year term
 - 30% discount on {{site.data.keyword.powerSys_notm}}
 - $360,000 total commitment
-- $1,000 minimum usage per month
+- $1,000 committed usage per month
 
 All of your service usage in the bundle is discounted with a service-level commitment.
 

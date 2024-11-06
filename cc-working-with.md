@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-10-24"
+lastupdated: "2024-11-04"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -20,12 +20,28 @@ Output that is provided by the carbon calculator is provided “as-is” for inf
 
 {{site.data.keyword.cloud_notm}}'s carbon calculator displays the greenhouse gas (GHG) emissions for an account by monitoring your electricity consumption for services, resources, and the location and efficiency of your data centers. Tracking your GHG emissions is important so that you can know how much GHG emissions your account is associated with, and it helps you manage and mitigate your carbon footprint over time.
 
+All service workloads across all sites are metered for electricity consumption or estimations based on hardware profiles. Service usage is also tracked by account, location, and over time. Data is then processed to produce a standards-based GHG emission estimate for each account per service, per location, and resource group. {{site.data.keyword.cloud_notm}} has a resilient global network of locations to host data center workloads and provides three tiers of regions: multizone regions, single-campus multizone regions, and data centers. For more information, see [IBM Cloud global data centers](https://www.ibm.com/cloud/data-centers){: external}.
+
+The carbon calculator provides a wide range of features to track your GHG emissions:
+
+* View total emissions by service, resource group, and location.
+* View total emissions for an enterprise account.
+* Filter emissions data by time period, service, or location.
+* Best practices for cloud sustainability.
+* Export the data as a CSV file for additional analyses.
+* View emissions data by using [the API](/apidocs/carbon-calculator).
+
+## Services
+{: #work-with-services}
+
+Emissions data is currently tracked for a subset of services, but more services are under consideration to be added.
+
 If service data is not displayed, it might be because:
 * Emissions data isn't tracked for the service.
 * Data for newly added services and current quarter results are not yet available because it can take approximately two months to populate.
-* Some service instances might be running on [zero-emissions data centers](/docs/account?topic=account-zero-emission-dc).
+* Some service instances might be running on [zero-emissions data centers](/docs/account?topic=account-zero-emission-data-centers).
 
-Emissions data is currently tracked for a subset of services, but more services are under consideration to be added. Emission data is available for the following services:
+Emission data is available for the following services:
 
 * {{site.data.keyword.iae_short}}                               
 * {{site.data.keyword.appconfig_short}}                         
@@ -88,16 +104,6 @@ Emissions data is currently tracked for a subset of services, but more services 
 
 [^tabletext1]: Contains multiple services that are not tracked individually but are combined into one service. IBM Cloud Platform includes the following: Command line interface, Billing and usage, Identity and access management, Global catalog, Global search & tagging, Console, Cloud shell, Projects, Paywall, Schematics, and Carbon calculator.
 
-All service workloads across all sites are metered for electricity consumption or estimations based on hardware profiles. Service usage is also tracked by account, location, and over time. Data is then processed to produce a standards-based GHG emission estimate for each account per service, per location, and resource group. {{site.data.keyword.cloud_notm}} has a resilient global network of locations to host data center workloads and provides three tiers of regions: multizone regions, single-campus multizone regions, and data centers. For more information, see [IBM Cloud global data centers](https://www.ibm.com/cloud/data-centers){: external}.
-
-The carbon calculator provides a wide range of features to track your GHG emissions:
-
-* View total emissions by service, resource group, and location.
-* View total emissions for an enterprise account.
-* Filter emissions data by time period, service, or location.
-* Best practices for cloud sustainability.
-* Export the data as a CSV file for additional analyses.
-* View emissions data by using [the API](/apidocs/carbon-calculator).
 
 ## Before you begin
 {: #carbon-calc-prereq}
@@ -136,6 +142,6 @@ The goal of the calculation method is to associate electricity consumption and c
 * Per client account, cloud service, and location where the service is running
 * Per client account and resource group
 
-The carbon calculation methodology has been independently validated by Bureau Veritas for the following key services: Virtual Private Cloud (VPC) and Virtual Servers for VPC, Cloud Object Storage, and Kubernetes Service. [View validation](https://cloud.ibm.com/media/docs/downloads/billing-usage/bureau-veritas-validation.pdf){: external}.
+The carbon calculation methodology has been independently validated by Bureau Veritas for the following key services: Virtual Private Cloud (VPC) and Virtual Servers for VPC, Cloud Object Storage, and Kubernetes Service. [View validation](https://cloud.ibm.com/media/docs/downloads/account/bureau-veritas-validation.pdf){: external}.
 
-For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/billing-usage/carbon-calc-method-v2.pdf){: external}.
+For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v3.pdf){: external}.

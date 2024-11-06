@@ -29,4 +29,4 @@ You might already have an alternative account owner trusted profile in the accou
 Delete the trusted profile that has an error. Check the account for an existing trusted profile with alternative account owner access, which is indicated by an `alt account owner` tag. If no such profile exists, try creating the trusted profile again.
 {: tsResolve}
 
-For more information, see [Setting an alternative account owner](/docs/account?topic=account-classic-infra-owner).
+For more information, see [Setting an alternative account owner](/docs/account?topic=account-transfer).

@@ -4,7 +4,7 @@ copyright:
 
   years: 2018, 2024
 
-lastupdated: "2024-02-07"
+lastupdated: "2024-11-05"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -30,8 +30,9 @@ Verification methods and authentication factors add an extra layer of security t
 
 1. Go to the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
 1. Validate your identity with two different verification methods.
-   You must verify your identity each time that you access the Verification methods and authentication factors page.
-   {: note}
+
+    You must verify your identity each time that you access the Verification methods and authentication factors page.
+    {: note}
 
 1. Enter the one-time password (OTP) that is sent to the method you choose, and click **Verify**. Complete this step for each method.
 

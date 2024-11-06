@@ -40,6 +40,7 @@ toc:
           - bp_billing1.md
           - bp_account.md
           - cc-bp1.md
+          - status-bps.md
   - navgroup:
       id: tutorial
       topics:
@@ -74,11 +75,6 @@ toc:
           - dashboard-manage1.md
           - create-mult-accounts.md
           - update-your-profile1.md
-          - topicgroup:
-              label: Managing notifications
-              topics:
-              - email.md
-              - distribution_list1.md
           - iam-policy-number.md
           - topicgroup:
                 label: Updating account settings for compliance
@@ -94,7 +90,6 @@ toc:
       - topicgroup:
           label: Securing your account
           topics:
-          - iam-login_fedid.md
           - topicgroup:
                 label: Setting up multifactor authentication and other authentication methods
                 topics:
@@ -136,6 +131,8 @@ toc:
                 topics:
                 - context-restrictions-create.md
                 - context-restrictions-manage1.md
+                - cm-cbr.md
+                - iam-cbr.md
           - topicgroup:
               label: Administering settings
               topics:
@@ -241,13 +238,11 @@ toc:
                 - scenario1.md
                 - change_pricing_plan.md
                 - getting-pricing-api.md
-                - notifications.md
                 - viewing_usage1.md
                 - project-spend.md
                 - infra_usage.md
                 - understand-invoice.md
                 - manage_billing.md
-                - quotas.md
                 - invoices.md
                 - cancel-billing-items.md
           - topicgroup:
@@ -259,7 +254,6 @@ toc:
                 label: Managing subscriptions and commitments
                 topics:
                 - subscriptions.md
-                - paygo_committed_use.md
                 - service-level-commit.md
           - topicgroup:
                 label: Working with codes and credits
@@ -290,20 +284,25 @@ toc:
           - trustedprofile-monitor.md
           - cbr-monitor.md
       - topicgroup:
-          label: Getting help when you run into issues
+          label: Getting support
           topics:
-          - getting-help.md
-          - using-support-center.md
-          - support-plans.md
-          - topicgroup:
+            - using-support-center.md
+            - topicgroup:
                 label: Working with support cases
                 topics:
                 - assign-user-access-cases.md
                 - create-case.md
                 - case-severity-response-times.md
                 - manage-case.md
-          - report-security.md
-          - monitor-notification-status.md
+            - report-security.md
+      - topicgroup:
+          label: Monitoring notifications
+          topics:
+          - view_notifications.md
+          - notifications.md
+          - email.md
+          - distribution_list1.md
+      - ViewStatus.md
   - navgroup:
       id: reference
       topics:
@@ -393,9 +392,11 @@ toc:
       - managed-services-transition.md
       - bxnui.md
       - customer-incident-report.md
+      - support-plans.md
   - navgroup:
       id: help
       topics:
+      - getting-help.md
       - topicgroup:
           label: FAQs
           topics:

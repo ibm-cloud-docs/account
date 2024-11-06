@@ -59,7 +59,7 @@ The functional ID is used to create service instances, like {{site.data.keyword.
 
 {{site.data.keyword.cloud_notm}} API keys for users can be created and associated with a functional ID. If a service requires a user API key for interacting with other services or applications, use the functional ID API key. By using the API key that is associated with the functional ID, you can provide only the access that is needed for that service.
 
-If you're using a functional ID as the account owner, instead consider [Setting an alternative account owner](/docs/account?topic=account-classic-infra-owner&interface=ui). This is available only for classic infrastructure accounts.
+If you're using a functional ID as the account owner, instead consider [Setting an alternative account owner](/docs/account?topic=account-transfer&interface=ui#grant-alt-owner). This is available only for classic infrastructure accounts.
 {: tip}
 
 ## Service IDs
