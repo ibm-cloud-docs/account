@@ -19,7 +19,7 @@ toc:
           - index.md
           - account_overview.md
           - cm-video.md
-          - billing-overview1.md
+          - billing-overview.md
       - topicgroup:
           label: Learning about access management
           topics:
@@ -37,9 +37,9 @@ toc:
       - topicgroup:
           label: Best practices
           topics:
-          - bp_billing1.md
+          - bp_billing.md
           - bp_account.md
-          - cc-bp1.md
+          - cc-bp.md
           - status-bps.md
   - navgroup:
       id: tutorial
@@ -50,7 +50,7 @@ toc:
           label: Securing access to resources
           topics:
           - iam-quickstart.md
-          - tagging-resources-tutorial1.md
+          - tagging-resources-tutorial.md
       - topicgroup:
           label: Sharing software with users in your account
           topics:
@@ -72,9 +72,9 @@ toc:
           label: Managing your account
           topics:
           - account_settings.md
-          - dashboard-manage1.md
+          - dashboard-manage.md
           - create-mult-accounts.md
-          - update-your-profile1.md
+          - update-your-profile.md
           - iam-policy-number.md
           - topicgroup:
                 label: Updating account settings for compliance
@@ -84,7 +84,7 @@ toc:
                 - hipaa-supported.md
           - shell-settings.md
           - account-upgrade.md
-          - update-account-ownership1.md
+          - update-account-ownership.md
           - iam-leave-account.md
           - account-close.md
       - topicgroup:
@@ -107,7 +107,7 @@ toc:
                 topics:
                 - iam-groups.md
                 - iam-mng-access.md
-                - iam-manage-user-account1.md
+                - iam-manage-user-account.md
                 - iam-serviceid.md
                 - iam-account_management.md
                 - iam-public_access.md
@@ -115,7 +115,7 @@ toc:
                 - iam-wildcard.md
                 - iam-mnginfra.md
                 - iam-audit-policies.md
-                - iam-based-conditions1.md
+                - iam-based-conditions.md
                 - iam-authorizations.md
                 - iam-roles-management.md
                 - iam-accessgroup_rules.md
@@ -124,13 +124,13 @@ toc:
                 label: Administering trusted profiles
                 topics:
                 - trustedprofile-create.md
-                - trustedprofile-manage1.md
+                - trustedprofile-manage.md
                 - trustedprofile-iam-token.md
           - topicgroup:
                 label: Controlling context-based restrictions
                 topics:
                 - context-restrictions-create.md
-                - context-restrictions-manage1.md
+                - context-restrictions-manage.md
                 - cm-cbr.md
                 - iam-cbr.md
           - topicgroup:
@@ -157,7 +157,7 @@ toc:
       - topicgroup:
           label: Catalog management in IBM Cloud
           topics:
-          - catalog-settings1.md
+          - catalog-settings.md
           - topic: catalog-custom-private.md
             navtitle: Customizing catalogs
           - catalog-custom-private-preset.md
@@ -203,13 +203,13 @@ toc:
       - topicgroup:
           label: Working with resources and tags
           topics:
-          - manage_resource_group1.md
-          - manage_resource1.md
+          - manage_resource_group.md
+          - manage_resource.md
           - rg-access.md
           - iam-access-report.md
           - reclaim-resource.md
           - tagging_resources.md
-          - manage_tags1.md
+          - manage_tags.md
           - grant-tag-access.md
           - data-center-migration.md
           - quotas.md
@@ -235,10 +235,10 @@ toc:
                 topics:
                 - how_charged.md
                 - estimating_costs.md
-                - scenario1.md
+                - scenario.md
                 - change_pricing_plan.md
                 - getting-pricing-api.md
-                - viewing_usage1.md
+                - viewing_usage.md
                 - project-spend.md
                 - infra_usage.md
                 - understand-invoice.md
@@ -301,7 +301,7 @@ toc:
           - view_notifications.md
           - notifications.md
           - email.md
-          - distribution_list1.md
+          - distribution_list.md
       - ViewStatus.md
   - navgroup:
       id: reference

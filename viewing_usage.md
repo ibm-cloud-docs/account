@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2024
-lastupdated: "2024-10-25"
+lastupdated: "2024-11-06"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 

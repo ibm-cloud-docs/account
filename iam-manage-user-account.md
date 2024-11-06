@@ -492,3 +492,4 @@ After the user ensures that the new IBMid exists, complete the following steps t
 3. Enter the new IBMid, and click **Update**.
 
 The user can now log in to ibm.com with their new IMBid and continue working in the {{site.data.keyword.Bluemix_notm}} account with the access assigned to their previously used IBMid.
+

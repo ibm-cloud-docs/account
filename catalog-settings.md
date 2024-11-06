@@ -323,3 +323,5 @@ curl -X "GET" \
 {: codeblock}
 
 Each event in the audit logs table by default identifies each change with the email of the user that made the change, the type of change, a description of the change, and the date that the change was made.
+
+

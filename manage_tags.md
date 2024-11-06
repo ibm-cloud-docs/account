@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2021, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-11-06"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -1138,3 +1138,4 @@ fmt.Println(string(b))
 ```
 {: codeblock}
 {: go}
+
