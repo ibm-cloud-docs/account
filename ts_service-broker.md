@@ -4,7 +4,7 @@ copyright:
 
   years: 2015, 2024
 
-lastupdated: "2024-10-22"
+lastupdated: "2024-11-06"
 
 keywords: help managing cases, resolve issues managing cases, trouble working with cases, support center, help support center, resolve issues support center, help getting support, help support
 
@@ -17,7 +17,7 @@ content-type: troubleshoot
 {{site.data.keyword.attribute-definition-list}}
 
 # Why can't I create or edit support cases?
-{: #ts_service_broker}
+{: #ts-edit-case}
 
 You can't create or edit an {{site.data.keyword.Bluemix_notm}} support case, and you receive an error message that you don't have the appropriate access.
 {: shortdesc}

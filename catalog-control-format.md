@@ -70,11 +70,11 @@ Scan your source code with Code Risk Analyzer to identify any security vulnerabi
 ### Adding a {{site.data.keyword.compliance_short}} scan
 {: #submit-scc-scan}
 
-To include controls with your product, you must add scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
+To include controls with your product, you must add scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Running a scan on demand](/docs/security-compliance?topic=security-compliance-attachments#scan-ondemand).
 
 1. On the Manage compliance page go to **Add Security and Compliance Center scan** and select a profile that you previously scanned.
 1. Select a Security and Compliance Center scan.
-   If you don't see any scans, you need to run a scan in Security and Compliance Center. For more information, see [Scheduling a scan](/docs/security-compliance?topic=security-compliance-scan-resources&interface=ui#scan-schedule-ui).
+   If you don't see any scans, you need to run a scan in Security and Compliance Center. For more information, see [Running a scan on demand](/docs/security-compliance?topic=security-compliance-attachments#scan-ondemand)..
 1. Click **Add scan**.
 
 
