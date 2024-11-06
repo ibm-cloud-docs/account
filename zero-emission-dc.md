@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-11-05"
+lastupdated: "2024-11-06"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -15,7 +15,7 @@ subcollection: account
 # Zero-emissions data centers
 {: #zero-emission-data-centers}
 
-The following table shows the locations that are considered to be zero-emissions data centers for 2024. Data centers are considered zero-emissions because they are powered by renewable energy. Additional data centers can be added periodically.
+The following table shows the availability zones that are considered to be zero-emissions data centers, in accordance to the market-based emissions calculation method, for 2024. Data centers are considered zero-emissions because IBM Cloud invested in, or benefit from, bundled renewable electricity contracts or direct power purchase agreements. Renewable electricity contracts or power purchase agreements may be added to our portfolio periodically. For information about IBM’s Position on Scope 3 GHG emissions, see [What are Scope 3 emissions](https://www.ibm.com/topics/scope-3-emissions){: external} or visit [www.ibm.com/environmen](www.ibm.com/environmen){: external} for more information on IBM’s environmental programs and performance.
 
 | Data Center | Location      |
 |-------------|---------------|
@@ -33,7 +33,7 @@ The following table shows the locations that are considered to be zero-emissions
 | WDC03       | Washington DC |
 | WDC04       | Washington DC |
 | WDC07       | Washington DC |
-{: caption="Table 1. Carbon intensity of data centers in North and South America" caption-side="bottom"}
+{: caption="Zero-emissions data centers in North and South America" caption-side="bottom"}
 {: #americas}
 {: tab-title="Americas"}
 {: tab-group="carbon-intesity"}
@@ -55,7 +55,7 @@ The following table shows the locations that are considered to be zero-emissions
 | MIL01       |	Milan         |
 | PAR01       | Paris         |
 | PAR04       | Paris         |
-{: caption="Table 1. Carbon intensity of data centers in Europe" caption-side="bottom"}
+{: caption="Zero-emissions data centers data centers in Europe" caption-side="bottom"}
 {: #europe}
 {: tab-title="Europe"}
 {: tab-group="carbon-intesity"}
@@ -64,11 +64,11 @@ The following table shows the locations that are considered to be zero-emissions
 | Data Center | Location      |
 |-------------|---------------|
 | SYD04       |	Sydney	      |
-{: caption="Table 1. Carbon intensity of data centers in Asia Pacific" caption-side="bottom"}
+{: caption="Zero-emissions data centers data centers in Asia Pacific" caption-side="bottom"}
 {: #asia-pacific}
 {: tab-title="Asia Pacific"}
 {: tab-group="carbon-intesity"}
 {: class="simple-tab-table"}
 
-Carbon intensity is the emission rate for grams of carbon dioxide-equivalent emissions that are released per unit of energy produced.
+Renewable electricity consumption includes renewable electricity in the grid mix that IBM received from utilities, for which IBM contracts over and above what is contained in the grid mix, and generated on site, if applicable, and includes the following sources: wind, solar, hydropower, biomass, and geothermal energy.
 {: note}

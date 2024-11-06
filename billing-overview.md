@@ -100,3 +100,4 @@ New {{site.data.keyword.cloud_notm}} Pay-As-You-Go accounts for US customers wit
 {: note}
 
 For more information about invoices, see [Managing your invoices](/docs/account?topic=account-managing-invoices).
+
