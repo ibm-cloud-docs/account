@@ -240,6 +240,7 @@ toc:
                 - change_pricing_plan.md
                 - getting-pricing-api.md
                 - viewing_usage.md
+                - infra_usage.md
                 - project-spend.md
                 - understand-invoice.md
                 - manage_billing.md
