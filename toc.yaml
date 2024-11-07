@@ -82,6 +82,7 @@ toc:
                 - eu-supported.md
                 - financial-services-validated.md
                 - hipaa-supported.md
+                - dora-designated.md
           - shell-settings.md
           - account-upgrade.md
           - update-account-ownership.md
@@ -239,8 +240,8 @@ toc:
                 - change_pricing_plan.md
                 - getting-pricing-api.md
                 - viewing_usage.md
-                - project-spend.md
                 - infra_usage.md
+                - project-spend.md
                 - understand-invoice.md
                 - manage_billing.md
                 - invoices.md
@@ -382,6 +383,10 @@ toc:
           - link:
               label: Resource Management
               href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group
+      - topicgroup:
+          label: Data portability
+          topics:
+          - data_portability_tags.md
       - crn.md
       - iam-service-roles.md
       - iam-login-flows.md

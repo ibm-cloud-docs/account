@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2024
 
-lastupdated: "2024-11-02"
+lastupdated: "2024-11-07"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -65,7 +65,7 @@ As an {{site.data.keyword.cloud_notm}} customer, you can escalate support cases 
 
 If you have a Basic support plan, access to support is through cases only. If your support inquiry requires a more immediate response, consider [upgrading to a Premium or Advanced support plan](/docs/account?topic=account-get-supportfaq#support-plan).
 
-For more information, see [Escalating support cases](/docs/account?topic=account-managing-support-cases#escalation).
+For more information, see [Escalating support cases](/docs/account?topic=account-managing-support-cases&interface=ui#escalation).
 
 ## How do I change my email preferences for notifications?
 {: #email_preferences_gs}
