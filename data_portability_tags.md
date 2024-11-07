@@ -33,18 +33,20 @@ The customer is responsible for the use of the exported data and configuration f
 ## Data export procedures
 {: #data-portability-procedures}
 
-Global Search and Tagging provides the mechanisms to export your content that's uploaded, stored, and processed when you use the service. 
+Global Search and Tagging provides the mechanisms to export your content that's uploaded, stored, and processed when you use the service.
 
 ```sh
-ibmcloud resources --output json | jq -r '["CRN","RESOURCE NAME", "TAGS", "ACCESS TAGS"], ["---","-------------","---","-----------"], (.items[] | [.crn, .name, (.tags | join(",")), (.access_tags | join(","))]) | @csv' > report.csv 
+ibmcloud resources --output json | jq -r '["CRN","RESOURCE NAME", "TAGS", "ACCESS TAGS"], ["---","-------------","---","-----------"], (.items[] | [.crn, .name, (.tags | join(",")), (.access_tags | join(","))]) | @csv' > report.csv
 ```
 
 ## Exported data formats
 {: #data-portability-data-formats}
 
-Global Search and Tagging supports the following data format and schema of the exported data, configuration, and application: 
+Global Search and Tagging supports the following data format and schema of the exported data, configuration, and application:
 
 ### CSV file
+{: #portability-csv}
+
 This file contains 4 columns indicating the CRN, the name, the user tags, and the access tags for each resource.
 
 ## Data ownership
