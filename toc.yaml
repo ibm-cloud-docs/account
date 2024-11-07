@@ -382,6 +382,10 @@ toc:
           - link:
               label: Resource Management
               href: https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group
+      - topicgroup:
+          label: Data portability
+          topics:
+          - data_portability_tags.md 
       - crn.md
       - iam-service-roles.md
       - iam-login-flows.md
