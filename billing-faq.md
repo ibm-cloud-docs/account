@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-10-24"
+lastupdated: "2024-11-08"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -301,6 +301,12 @@ To prevent unauthorized access, change your password regularly and require the u
 
 You can regularly review the list of account users and remove users who don't need access to the account. For more information, see [Removing users from an account](/docs/account?topic=account-iamuserinv#remove-user-access).
 {: tip}
+
+## Can I use my Pay-As-You-Go account to create an enterprise?
+{: #paygo-enterprise}
+{: faq}
+
+Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise. When you upgrade a Pay-As-You-Go account to an enterprise, you keep the Pay-As-You-Go billing model. For more information, see [Managing your enterprise](/docs/enterprise-management).
 
 ## Can I have a service-level commitment for third-party products?
 {: #serviceleve-thirdparty}
