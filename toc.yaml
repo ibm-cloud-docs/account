@@ -215,6 +215,7 @@ toc:
           - data-center-migration.md
           - quotas.md
           - resource-quota.md
+          - iam-cross-acct-restriction.md
           - topicgroup:
                 label: Connecting resources to apps
                 topics:
@@ -259,6 +260,7 @@ toc:
           - topicgroup:
                 label: Working with codes and credits
                 topics:
+                - credit-types.md
                 - feature_codes.md
                 - subscription_codes.md
                 - promo_codes.md
@@ -301,6 +303,7 @@ toc:
           topics:
           - view_notifications.md
           - notifications.md
+          - monitor-notification-status.md
           - email.md
           - distribution_list.md
       - ViewStatus.md
@@ -392,7 +395,6 @@ toc:
       - iam-login-flows.md
       - iam-login_fedid.md
       - iam-condition-properties.md
-      - credit-types.md
       - data-center-closures.md
       - managed-services-transition.md
       - bxnui.md
