@@ -3,7 +3,7 @@
 copyright:
   years: 2024
 
-lastupdated: "2024-10-17"
+lastupdated: "2024-11-11"
 
 keywords: pricing, global catalog api
 
@@ -49,7 +49,7 @@ You can use {{site.data.keyword.cloud-shell_full}} to enter commands. For more i
 
    ```sh
    curl --request GET
-   --url 'https://globalcatalog.test.cloud.ibm.com/api/v1/744bfc56-d12c-4866-88d5-dac9139e0e5d:global/pricing?deployment_region=us-south'
+   --url 'https://globalcatalog.cloud.ibm.com/api/v1/744bfc56-d12c-4866-88d5-dac9139e0e5d:global/pricing?deployment_region=us-south'
    --header 'accept: application/json'
    ```
    {: codeblock}
@@ -70,7 +70,7 @@ The following is an example response for the curl command from the previous step
   "deployment_region": "us-south",
   "origin": "pricing_catalog",
   "type": "paygo",
-  "url": "https://globalcatalog.test.cloud.ibm.com/api/v1/744bfc56-d12c-4866-88d5-dac9139e0e5d:global/pricing?deployment_region=us-south",
+  "url": "https://globalcatalog.cloud.ibm.com/api/v1/744bfc56-d12c-4866-88d5-dac9139e0e5d:global/pricing?deployment_region=us-south",
   "i18n": {},
   "starting_price": {},
   "effective_from": "2024-09-01T00:00:00Z",
