@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-11-13"
+lastupdated: "2024-11-14"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5490,6 +5490,48 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table92}
 
+## Private Path Service for VPC
+{: #is.private-path-service-gateway-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.private-path-service-gateway` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Administrator | As an administrator you can create, delete, update and view private path service gateway service instances, and assign access policies to other users. |
+| Editor | As an editor you can create, delete, update and view private path service gateway service instance. |
+| Operator | As an operator you can view the properties of private path service gateways but you cannot modify them. |
+| Viewer | As a viewer you can view the properties of private path service gateway service instances, but you cannot modify them. |
+{: row-headers}
+{: caption="Platform roles - Private Path Service for VPC" caption-side="top"}
+{: tab-title="Platform roles"}
+{: tab-group="is.private-path-service-gateway"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
+{: #platform-roles-table93}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `is.private-path-service-gateway.private-path-service-gateway.read` | [BETA] View Private Path services | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.private-path-service-gateway.list` | [BETA] List Private Path services | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.private-path-service-gateway.create` | [BETA] Create Private Path service | Administrator, Editor |
+| `is.private-path-service-gateway.private-path-service-gateway.delete` | [BETA] Delete Private Path service | Administrator, Editor |
+| `is.private-path-service-gateway.private-path-service-gateway.update` | [BETA] Update Private Path service | Administrator, Editor |
+| `is.private-path-service-gateway.private-path-service-gateway.operate` | [BETA] Operate Private Path service | Administrator, Editor, Operator |
+| `is.private-path-service-gateway.account-policy.read` | Get Private Path Service Gateway Account Policy | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.account-policy.list` | List Account Policies | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.account-policy.manage` | Manage Account Policy | Administrator, Editor, Operator |
+| `is.private-path-service-gateway.endpoint-gateway-binding.list` | List Endpoint Gateway Bindings | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.endpoint-gateway-binding.read` | View Endpoint Gateway Binding | Administrator, Editor, Operator, Viewer |
+| `is.private-path-service-gateway.endpoint-gateway-binding.manage` | Manage Endpoint Gateway Binding | Administrator, Editor, Operator |
+| `is.private-path-service-gateway.private-path-service-gateway.publish` | Publish Private Path service | Administrator, Editor |
+| `is.private-path-service-gateway.private-path-service-gateway.unpublish` | Unpublish Private Path service | Administrator, Editor |
+{: caption="Service actions - Private Path Service for VPC" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="is.private-path-service-gateway"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table93}
+
 ## Public Gateway
 {: #is.public-gateway-roles}
 
@@ -5507,7 +5549,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.public-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table93}
+{: #platform-roles-table94}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5522,7 +5564,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.public-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table93}
+{: #actions-table94}
 
 ## Reservations for VPC
 {: #is.reservation-roles}
@@ -5541,7 +5583,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.reservation"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table94}
+{: #platform-roles-table95}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5558,7 +5600,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.reservation"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table94}
+{: #actions-table95}
 
 ## Security Group for VPC
 {: #is.security-group-roles}
@@ -5577,7 +5619,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.security-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table95}
+{: #platform-roles-table96}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5591,7 +5633,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.security-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table95}
+{: #actions-table96}
 
 ## File Storage for VPC
 {: #is.share-roles}
@@ -5610,7 +5652,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.share"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table96}
+{: #platform-roles-table97}
 
 | Role | Description |
 | ----- | :----- |
@@ -5623,7 +5665,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.share"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table96}
+{: #service-roles-table97}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5645,7 +5687,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.share"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table96}
+{: #actions-table97}
 
 ## Block Storage Snapshots for VPC
 {: #is.snapshot-roles}
@@ -5664,7 +5706,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.snapshot"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table97}
+{: #platform-roles-table98}
 
 | Role | Description |
 | ----- | :----- |
@@ -5676,7 +5718,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.snapshot"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table97}
+{: #service-roles-table98}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5697,7 +5739,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.snapshot"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table97}
+{: #actions-table98}
 
 ## Multi Volume Snapshots for VPC
 {: #is.snapshot-consistency-group-roles}
@@ -5716,7 +5758,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.snapshot-consistency-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table98}
+{: #platform-roles-table99}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5730,7 +5772,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.snapshot-consistency-group"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table98}
+{: #actions-table99}
 
 ## Subnet
 {: #is.subnet-roles}
@@ -5749,7 +5791,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.subnet"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table99}
+{: #platform-roles-table100}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5764,7 +5806,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.subnet"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table99}
+{: #actions-table100}
 
 ## Virtual Network Interface
 {: #is.virtual-network-interface-roles}
@@ -5783,7 +5825,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.virtual-network-interface"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table100}
+{: #platform-roles-table101}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5801,7 +5843,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.virtual-network-interface"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table100}
+{: #actions-table101}
 
 ## Block Storage for VPC
 {: #is.volume-roles}
@@ -5820,7 +5862,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table101}
+{: #platform-roles-table102}
 
 | Role | Description |
 | ----- | :----- |
@@ -5832,7 +5874,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table101}
+{: #service-roles-table102}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5850,7 +5892,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.volume"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table101}
+{: #actions-table102}
 
 ## Virtual Private Cloud
 {: #is.vpc-roles}
@@ -5869,7 +5911,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table102}
+{: #platform-roles-table103}
 
 | Role | Description |
 | ----- | :----- |
@@ -5880,7 +5922,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table102}
+{: #service-roles-table103}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5909,7 +5951,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table102}
+{: #actions-table103}
 
 ## VPN for VPC
 {: #is.vpn-roles}
@@ -5928,7 +5970,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table103}
+{: #platform-roles-table104}
 
 | Role | Description |
 | ----- | :----- |
@@ -5939,7 +5981,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table103}
+{: #service-roles-table104}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -5955,7 +5997,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table103}
+{: #actions-table104}
 
 ## VPN Server for VPC
 {: #is.vpn-server-roles}
@@ -5974,7 +6016,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpn-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table104}
+{: #platform-roles-table105}
 
 | Role | Description |
 | ----- | :----- |
@@ -5986,7 +6028,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpn-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table104}
+{: #service-roles-table105}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6008,7 +6050,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="is.vpn-server"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table104}
+{: #actions-table105}
 
 ## IBM Key Protect
 {: #kms-roles}
@@ -6030,7 +6072,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="kms"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table105}
+{: #service-roles-table106}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6091,7 +6133,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="kms"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table105}
+{: #actions-table106}
 
 ## Knowledge Studio
 {: #knowledge-studio-roles}
@@ -6109,7 +6151,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table106}
+{: #platform-roles-table107}
 
 | Role | Description |
 | ----- | :----- |
@@ -6122,7 +6164,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table106}
+{: #service-roles-table107}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6132,7 +6174,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="knowledge-studio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table106}
+{: #actions-table107}
 
 ## IBM Lakehouse
 {: #lakehouse-roles}
@@ -6151,7 +6193,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="lakehouse"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table107}
+{: #platform-roles-table108}
 
 | Role | Description |
 | ----- | :----- |
@@ -6164,7 +6206,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="lakehouse"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table107}
+{: #service-roles-table108}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6180,7 +6222,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="lakehouse"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table107}
+{: #actions-table108}
 
 ## Language Translator
 {: #language-translator-roles}
@@ -6198,7 +6240,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="language-translator"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table108}
+{: #service-roles-table109}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6210,7 +6252,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="language-translator"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table108}
+{: #actions-table109}
 
 ## IBM Log Analysis with LogDNA
 {: #logdna-roles}
@@ -6226,7 +6268,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logdna"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table109}
+{: #platform-roles-table110}
 
 | Role | Description |
 | ----- | :----- |
@@ -6239,7 +6281,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logdna"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table109}
+{: #service-roles-table110}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6252,7 +6294,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logdna"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table109}
+{: #actions-table110}
 
 ## IBM Cloud Activity Tracker with LogDNA
 {: #logdnaat-roles}
@@ -6268,7 +6310,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logdnaat"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table110}
+{: #platform-roles-table111}
 
 | Role | Description |
 | ----- | :----- |
@@ -6281,7 +6323,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logdnaat"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table110}
+{: #service-roles-table111}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6294,7 +6336,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logdnaat"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table110}
+{: #actions-table111}
 
 ## Cloud Logs
 {: #logs-roles}
@@ -6314,7 +6356,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table111}
+{: #service-roles-table112}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6393,7 +6435,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table111}
+{: #actions-table112}
 
 ## IBM Cloud Logs Routing
 {: #logs-router-roles}
@@ -6411,7 +6453,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logs-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table112}
+{: #platform-roles-table113}
 
 | Role | Description |
 | ----- | :----- |
@@ -6424,7 +6466,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logs-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table112}
+{: #service-roles-table113}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6439,7 +6481,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="logs-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table112}
+{: #actions-table113}
 
 ## Managed Solutions
 {: #managed-solutions-roles}
@@ -6458,7 +6500,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="managed-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table113}
+{: #platform-roles-table114}
 
 | Role | Description |
 | ----- | :----- |
@@ -6471,7 +6513,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="managed-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table113}
+{: #service-roles-table114}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6503,7 +6545,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="managed-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table113}
+{: #actions-table114}
 
 ## Master Data Connect
 {: #mdm-oc-roles}
@@ -6522,7 +6564,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="mdm-oc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table114}
+{: #platform-roles-table115}
 
 | Role | Description |
 | ----- | :----- |
@@ -6554,7 +6596,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="mdm-oc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table114}
+{: #service-roles-table115}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6580,7 +6622,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="mdm-oc"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table114}
+{: #actions-table115}
 
 ## Event Streams
 {: #messagehub-roles}
@@ -6599,7 +6641,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="messagehub"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table115}
+{: #service-roles-table116}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6620,7 +6662,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="messagehub"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table115}
+{: #actions-table116}
 
 ## Messages for RabbitMQ
 {: #messages-for-rabbitmq-roles}
@@ -6639,7 +6681,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="messages-for-rabbitmq"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table116}
+{: #platform-roles-table117}
 
 | Role | Description |
 | ----- | :----- |
@@ -6650,7 +6692,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="messages-for-rabbitmq"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table116}
+{: #service-roles-table117}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6776,7 +6818,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="messages-for-rabbitmq"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table116}
+{: #actions-table117}
 
 ## Metrics Router
 {: #metrics-router-roles}
@@ -6795,7 +6837,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="metrics-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table117}
+{: #platform-roles-table118}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6823,7 +6865,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="metrics-router"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table117}
+{: #actions-table118}
 
 ## Migration Services for IBM Cloud
 {: #migrationtool-from-wanclds-roles}
@@ -6842,7 +6884,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="migrationtool-from-wanclds"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table118}
+{: #platform-roles-table119}
 
 | Role | Description |
 | ----- | :----- |
@@ -6853,7 +6895,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="migrationtool-from-wanclds"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table118}
+{: #service-roles-table119}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6863,7 +6905,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="migrationtool-from-wanclds"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table118}
+{: #actions-table119}
 
 ## Minio
 {: #minio-roles}
@@ -6882,7 +6924,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="minio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table119}
+{: #platform-roles-table120}
 
 | Role | Description |
 | ----- | :----- |
@@ -6893,7 +6935,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="minio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table119}
+{: #service-roles-table120}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6903,7 +6945,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="minio"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table119}
+{: #actions-table120}
 
 ## IBM Cloud Monitoring Service
 {: #monitoring-roles}
@@ -6922,7 +6964,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="monitoring"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table120}
+{: #platform-roles-table121}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6942,7 +6984,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="monitoring"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table120}
+{: #actions-table121}
 
 ## IBM MQ
 {: #mqcloud-roles}
@@ -6960,7 +7002,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="mqcloud"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table121}
+{: #platform-roles-table122}
 
 | Role | Description |
 | ----- | :----- |
@@ -6972,7 +7014,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="mqcloud"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table121}
+{: #service-roles-table122}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -6982,7 +7024,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="mqcloud"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table121}
+{: #actions-table122}
 
 ## Natural Language Understanding
 {: #natural-language-understanding-roles}
@@ -7000,7 +7042,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="natural-language-understanding"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table122}
+{: #platform-roles-table123}
 
 | Role | Description |
 | ----- | :----- |
@@ -7013,7 +7055,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="natural-language-understanding"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table122}
+{: #service-roles-table123}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7027,7 +7069,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="natural-language-understanding"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table122}
+{: #actions-table123}
 
 ## NeuralSeek
 {: #neuralseek-roles}
@@ -7046,7 +7088,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="neuralseek"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table123}
+{: #platform-roles-table124}
 
 | Role | Description |
 | ----- | :----- |
@@ -7057,7 +7099,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="neuralseek"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table123}
+{: #service-roles-table124}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7067,7 +7109,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="neuralseek"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table123}
+{: #actions-table124}
 
 ## OpenPages with Watson
 {: #openpages-roles}
@@ -7086,7 +7128,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="openpages"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table124}
+{: #platform-roles-table125}
 
 | Role | Description |
 | ----- | :----- |
@@ -7097,7 +7139,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="openpages"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table124}
+{: #service-roles-table125}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7108,7 +7150,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="openpages"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table124}
+{: #actions-table125}
 
 ## Personality Insights
 {: #personality-insights-roles}
@@ -7126,7 +7168,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="personality-insights"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table125}
+{: #platform-roles-table126}
 
 | Role | Description |
 | ----- | :----- |
@@ -7139,7 +7181,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="personality-insights"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table125}
+{: #service-roles-table126}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7151,7 +7193,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="personality-insights"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table125}
+{: #actions-table126}
 
 ## Planning Analytics
 {: #planning-analytics-roles}
@@ -7170,7 +7212,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="planning-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table126}
+{: #platform-roles-table127}
 
 | Role | Description |
 | ----- | :----- |
@@ -7181,7 +7223,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="planning-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table126}
+{: #service-roles-table127}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7192,7 +7234,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="planning-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table126}
+{: #actions-table127}
 
 ## Watson Machine Learning
 {: #pm-20-roles}
@@ -7209,7 +7251,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table127}
+{: #platform-roles-table128}
 
 | Role | Description |
 | ----- | :----- |
@@ -7221,7 +7263,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table127}
+{: #service-roles-table128}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7232,7 +7274,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="pm-20"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table127}
+{: #actions-table128}
 
 ## Portworx Enterprise
 {: #portworx-roles}
@@ -7250,7 +7292,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="portworx"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table128}
+{: #platform-roles-table129}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7260,7 +7302,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="portworx"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table128}
+{: #actions-table129}
 
 ## Portworx Test
 {: #portworx-test-roles}
@@ -7278,7 +7320,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="portworx-test"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table129}
+{: #platform-roles-table130}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7288,7 +7330,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="portworx-test"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table129}
+{: #actions-table130}
 
 ## PowerAI
 {: #power-ai-roles}
@@ -7306,7 +7348,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="power-ai"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table130}
+{: #platform-roles-table131}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7316,7 +7358,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="power-ai"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table130}
+{: #actions-table131}
 
 ## Power Systems Virtual Server
 {: #power-iaas-roles}
@@ -7333,7 +7375,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="power-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table131}
+{: #service-roles-table132}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7526,7 +7568,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="power-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table131}
+{: #actions-table132}
 
 ## Power Virtual Server Dedicated Host
 {: #power-iaas.dedicated-host-roles}
@@ -7580,7 +7622,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="power-iaas.shared-processor-pool"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table138}
+{: #platform-roles-table139}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7590,7 +7632,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="power-iaas.shared-processor-pool"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table138}
+{: #actions-table139}
 
 ## PowerVS Snapshot
 {: #power-iaas.snapshot-roles}
@@ -7627,7 +7669,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="primaryio-hdm-workload-migrator"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table142}
+{: #platform-roles-table143}
 
 | Role | Description |
 | ----- | :----- |
@@ -7638,7 +7680,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="primaryio-hdm-workload-migrator"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table142}
+{: #service-roles-table143}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7648,7 +7690,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="primaryio-hdm-workload-migrator"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table142}
+{: #actions-table143}
 
 ## Privileged Access Gateway
 {: #privileged-access-gateway-roles}
@@ -7666,7 +7708,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="privileged-access-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table143}
+{: #platform-roles-table144}
 
 | Role | Description |
 | ----- | :----- |
@@ -7679,7 +7721,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="privileged-access-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table143}
+{: #service-roles-table144}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7721,7 +7763,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="privileged-access-gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table143}
+{: #actions-table144}
 
 ## Product Lifecycle
 {: #product-lifecycle-roles}
@@ -7739,7 +7781,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="product-lifecycle"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table144}
+{: #platform-roles-table145}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7754,7 +7796,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="product-lifecycle"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table144}
+{: #actions-table145}
 
 ## Project
 {: #project-roles}
@@ -7773,7 +7815,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="project"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table145}
+{: #platform-roles-table146}
 
 | Role | Description |
 | ----- | :----- |
@@ -7784,7 +7826,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="project"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table145}
+{: #service-roles-table146}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7847,7 +7889,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="project"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table145}
+{: #actions-table146}
 
 ## PX-Backup By Portworx
 {: #px-backup-roles}
@@ -7866,7 +7908,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="px-backup"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table146}
+{: #platform-roles-table147}
 
 | Role | Description |
 | ----- | :----- |
@@ -7877,7 +7919,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="px-backup"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table146}
+{: #service-roles-table147}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7887,7 +7929,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="px-backup"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table146}
+{: #actions-table147}
 
 ## Quantum Services
 {: #quantum-computing-roles}
@@ -7905,7 +7947,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="quantum-computing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table147}
+{: #service-roles-table148}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7933,7 +7975,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="quantum-computing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table147}
+{: #actions-table148}
 
 ## Raxak Protect
 {: #raxak-protect-roles}
@@ -7951,7 +7993,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="raxak-protect"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table148}
+{: #platform-roles-table149}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -7961,7 +8003,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="raxak-protect"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table148}
+{: #actions-table149}
 
 ## Robin CNS
 {: #robin-storage-roles}
@@ -7980,7 +8022,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="robin-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table149}
+{: #platform-roles-table150}
 
 | Role | Description |
 | ----- | :----- |
@@ -7991,7 +8033,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="robin-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table149}
+{: #service-roles-table150}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8001,7 +8043,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="robin-storage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table149}
+{: #actions-table150}
 
 ## IBM Cloud Satellite
 {: #satellite-roles}
@@ -8020,7 +8062,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="satellite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table150}
+{: #platform-roles-table151}
 
 | Role | Description |
 | ----- | :----- |
@@ -8037,7 +8079,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="satellite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table150}
+{: #service-roles-table151}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8096,7 +8138,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="satellite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table150}
+{: #actions-table151}
 
 ## Satellite Infrastructure Services 
 {: #satellite-iaas-roles}
@@ -8114,7 +8156,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="satellite-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table151}
+{: #platform-roles-table152}
 
 | Role | Description |
 | ----- | :----- |
@@ -8126,7 +8168,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="satellite-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table151}
+{: #service-roles-table152}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8139,7 +8181,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="satellite-iaas"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table151}
+{: #actions-table152}
 
 ## Schematics
 {: #schematics-roles}
@@ -8158,7 +8200,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="schematics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table152}
+{: #platform-roles-table153}
 
 | Role | Description |
 | ----- | :----- |
@@ -8172,7 +8214,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="schematics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table152}
+{: #service-roles-table153}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8214,7 +8256,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="schematics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table152}
+{: #actions-table153}
 
 ## Secrets Manager
 {: #secrets-manager-roles}
@@ -8232,7 +8274,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="secrets-manager"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table153}
+{: #platform-roles-table154}
 
 | Role | Description |
 | ----- | :----- |
@@ -8246,7 +8288,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="secrets-manager"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table153}
+{: #service-roles-table154}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8302,7 +8344,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="secrets-manager"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table153}
+{: #actions-table154}
 
 ## Secure Gateway
 {: #securegateway-roles}
@@ -8320,7 +8362,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="securegateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table154}
+{: #platform-roles-table155}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8330,7 +8372,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="securegateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table154}
+{: #actions-table155}
 
 ## IBM Verify
 {: #security-verify-roles}
@@ -8349,7 +8391,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="security-verify"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table155}
+{: #platform-roles-table156}
 
 | Role | Description |
 | ----- | :----- |
@@ -8360,7 +8402,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="security-verify"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table155}
+{: #service-roles-table156}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8370,7 +8412,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="security-verify"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table155}
+{: #actions-table156}
 
 ## Simulated Instruments Analytics API
 {: #sia-roles}
@@ -8388,7 +8430,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sia"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table156}
+{: #platform-roles-table157}
 
 | Role | Description |
 | ----- | :----- |
@@ -8399,7 +8441,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sia"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table156}
+{: #service-roles-table157}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8410,7 +8452,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sia"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table156}
+{: #actions-table157}
 
 ## Skytap On IBM Cloud
 {: #skytap-roles}
@@ -8428,7 +8470,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="skytap"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table157}
+{: #platform-roles-table158}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8438,7 +8480,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="skytap"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table157}
+{: #actions-table158}
 
 ## Software Billing
 {: #software-billing-roles}
@@ -8457,7 +8499,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="software-billing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table158}
+{: #platform-roles-table159}
 
 | Role | Description |
 | ----- | :----- |
@@ -8468,7 +8510,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="software-billing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table158}
+{: #service-roles-table159}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8478,7 +8520,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="software-billing"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table158}
+{: #actions-table159}
 
 ## Speech to Text
 {: #speech-to-text-roles}
@@ -8496,7 +8538,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="speech-to-text"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table159}
+{: #platform-roles-table160}
 
 | Role | Description |
 | ----- | :----- |
@@ -8509,7 +8551,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="speech-to-text"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table159}
+{: #service-roles-table160}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8524,7 +8566,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="speech-to-text"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table159}
+{: #actions-table160}
 
 ## sql-query
 {: #sql-query-roles}
@@ -8542,7 +8584,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sql-query"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table160}
+{: #service-roles-table161}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8556,7 +8598,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sql-query"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table160}
+{: #actions-table161}
 
 ## streaming-analytics
 {: #streaming-analytics-roles}
@@ -8573,7 +8615,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="streaming-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table161}
+{: #service-roles-table162}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8597,7 +8639,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="streaming-analytics"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table161}
+{: #actions-table162}
 
 ## Support Center
 {: #support-roles}
@@ -8615,7 +8657,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="support"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table162}
+{: #platform-roles-table163}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8628,7 +8670,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="support"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table162}
+{: #actions-table163}
 
 ## IBM Cloud Monitoring with Sysdig
 {: #sysdig-monitor-roles}
@@ -8644,7 +8686,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sysdig-monitor"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table163}
+{: #platform-roles-table164}
 
 | Role | Description |
 | ----- | :----- |
@@ -8658,7 +8700,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sysdig-monitor"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table163}
+{: #service-roles-table164}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8727,7 +8769,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sysdig-monitor"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table163}
+{: #actions-table164}
 
 ## IBM Cloud Security
 {: #sysdig-secure-roles}
@@ -8743,7 +8785,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sysdig-secure"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table164}
+{: #platform-roles-table165}
 
 | Role | Description |
 | ----- | :----- |
@@ -8756,7 +8798,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sysdig-secure"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table164}
+{: #service-roles-table165}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8768,7 +8810,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="sysdig-secure"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table164}
+{: #actions-table165}
 
 ## Text to Speech
 {: #text-to-speech-roles}
@@ -8786,7 +8828,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="text-to-speech"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table165}
+{: #platform-roles-table166}
 
 | Role | Description |
 | ----- | :----- |
@@ -8799,7 +8841,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="text-to-speech"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table165}
+{: #service-roles-table166}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8814,7 +8856,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="text-to-speech"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table165}
+{: #actions-table166}
 
 ## Toolchain
 {: #toolchain-roles}
@@ -8833,7 +8875,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="toolchain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table166}
+{: #platform-roles-table167}
 
 | Role | Description |
 | ----- | :----- |
@@ -8846,7 +8888,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="toolchain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table166}
+{: #service-roles-table167}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8864,7 +8906,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="toolchain"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table166}
+{: #actions-table167}
 
 ## Transit Gateway
 {: #transit-roles}
@@ -8881,7 +8923,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="transit"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table167}
+{: #service-roles-table168}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8892,7 +8934,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="transit"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table167}
+{: #actions-table168}
 
 ## Transit Gateway
 {: #transit.gateway-roles}
@@ -8911,7 +8953,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="transit.gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table168}
+{: #platform-roles-table169}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8922,7 +8964,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="transit.gateway"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table168}
+{: #actions-table169}
 
 ## IBM Cloud Platform User Management Service
 {: #user-management-roles}
@@ -8941,7 +8983,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="user-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table169}
+{: #platform-roles-table170}
 
 | Role | Description |
 | ----- | :----- |
@@ -8952,7 +8994,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="user-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table169}
+{: #service-roles-table170}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -8972,7 +9014,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="user-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table169}
+{: #actions-table170}
 
 ## VMware Solutions on VPC
 {: #vmware-roles}
@@ -8997,7 +9039,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table171}
+{: #platform-roles-table172}
 
 | Role | Description |
 | ----- | :----- |
@@ -9018,7 +9060,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table171}
+{: #service-roles-table172}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9047,7 +9089,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="vmware-solutions"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table171}
+{: #actions-table172}
 
 ## VMware Cloud Director
 {: #vmware.directorsite-roles}
@@ -9066,7 +9108,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="vmware.directorsite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table172}
+{: #platform-roles-table173}
 
 | Role | Description |
 | ----- | :----- |
@@ -9087,7 +9129,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="vmware.directorsite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table172}
+{: #service-roles-table173}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9120,7 +9162,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="vmware.directorsite"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table172}
+{: #actions-table173}
 
 ## Organization Virtual Data Center
 {: #vmware.vdc-roles}
@@ -9144,7 +9186,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table174}
+{: #platform-roles-table175}
 
 | Role | Description |
 | ----- | :----- |
@@ -9157,7 +9199,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table174}
+{: #service-roles-table175}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9173,7 +9215,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table174}
+{: #actions-table175}
 
 ## watsonx Orchestrate
 {: #watsonx-orchestrate-roles}
@@ -9192,7 +9234,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="watsonx-orchestrate"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table175}
+{: #platform-roles-table176}
 
 | Role | Description |
 | ----- | :----- |
@@ -9206,7 +9248,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="watsonx-orchestrate"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table175}
+{: #service-roles-table176}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9229,7 +9271,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="watsonx-orchestrate"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table175}
+{: #actions-table176}
 
 ## WebSphere Application Server
 {: #websphereappsvr-roles}
@@ -9247,7 +9289,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table176}
+{: #platform-roles-table177}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9257,7 +9299,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table176}
+{: #actions-table177}
 
 ## Annotator for Clinical Data
 {: #wh-acd-roles}
@@ -9275,7 +9317,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table177}
+{: #platform-roles-table178}
 
 | Role | Description |
 | ----- | :----- |
@@ -9288,7 +9330,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table177}
+{: #service-roles-table178}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9306,4 +9348,4 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table177}
+{: #actions-table178}
