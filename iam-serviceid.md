@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-05-09"
+lastupdated: "2024-11-18"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -39,6 +39,7 @@ If the Restrict service ID creation IAM account setting is enabled, then everyon
 To create a service ID, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+
 1. Click **Create**.
 1. Follow the process to create a name and description for your service ID.
 1. Click **Create**.
@@ -48,6 +49,8 @@ Then, hover on the row of a service ID to click the **Actions** icon ![Actions i
 ## Creating a service ID by using the CLI
 {: #create_serviceid-cli}
 {: cli}
+
+ 
 
 To create a service ID, use the [**`ibmcloud iam service-id-create`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_create) command:
 
@@ -91,6 +94,8 @@ ibmcloud iam service-id-create sample-test -d 'hello, world!' --lock
 ## Creating a service ID by using the API
 {: #create_serviceid-api}
 {: api}
+
+ 
 
 To create a service ID, call the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-service-id) as shown in the following example:
 
@@ -175,7 +180,7 @@ For more information, see the [IAM Identity Services API](https://cloud.ibm.com/
 
 List the service IDs in your account to review the applications that have access to your services by completing the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**. 
 1. Review the list of service IDs.
 
 ## Listing service IDs by using the CLI
