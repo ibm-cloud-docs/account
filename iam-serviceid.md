@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-11-18"
+lastupdated: "2024-11-20"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -285,7 +285,7 @@ You can view the details of a service ID, including the access groups, assigned 
 
 To view service ID details, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**. 
 1. Identify the row of the service ID that you want to view the details of, and click it.
 1. Review the details of access groups, access policies, and API keys.
 
@@ -412,6 +412,8 @@ For more information, see the [IAM Identity Services API](/apidocs/iam-identity-
 You can update a service ID by changing the name and description at any time. You can also delete and create new API keys as needed or update the assigned access policies. Hover on the row of a service ID to click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") to manage your service ID.
 
 Any changes that you make to an existing service ID, such as changing the assigned policies or deleting an API key that is used, might cause service interruptions to applications that use that service ID.
+
+
 
 ## Updating a service ID by using the CLI
 {: #update_serviceid-cli}

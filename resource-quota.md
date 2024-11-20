@@ -1,3 +1,4 @@
+---
 
 copyright:
   years: 2024
@@ -30,7 +31,3 @@ If your resource associated with the infrastructure service is at capacity and y
 
 You can't adjust the quota limit for resources that are associated with IAM. For more information on the maximum limits for IAM resources, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/account?topic=account-known-issues#access-tag-limits).
 {: note}
-
-
-
-
