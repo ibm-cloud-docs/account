@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-11-19"
 
 keywords: apptio, cost benefit analysis
 
@@ -201,20 +201,20 @@ For more information about the usage snapshot API, see [Setup the snapshot confi
 The following tables shows the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
 
 ### Understanding your account summary report
-{: #export-csv-api-table-account-summary-csv}
+{: #export-csv-api-table-account-summarycsv}
 
 The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- July 2024 to present is [version 1.2](#account-summary-csv-version-1-2)
-- March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-1-1)
-- October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-1-0)
-- February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-0-2)
-- Before February 2023 is [version 0.1](#account-summary-csv-version-0-1).
+- July 2024 to present is [version 1.2](#account-summary-csv-version-12)
+- March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-11)
+- October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-10)
+- February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-02)
+- Before February 2023 is [version 0.1](#account-summary-csv-version-01).
 
 #### Account summary CSV version 1.2
-{: #account-summary-csv-version-1-2}
+{: #account-summary-csv-version-12}
 
 The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from July 2024 to present.
 
@@ -321,7 +321,7 @@ The following table is version 1.2 and the most recent CSV version. You get this
 
 
 #### Account summary CSV version 1.1
-{: #account-summary-csv-version-1-1}
+{: #account-summary-csv-version-11}
 
 You will get CSV version 1.1 if the data that you're viewing is from March 2024 to June 2024.
 
@@ -426,7 +426,7 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 {: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 1.0
-{: #account-summary-csv-version-1-0}
+{: #account-summary-csv-version-10}
 
 You will get CSV version 1.0 if the data that you're viewing is from October 2023 to March 2024.
 
@@ -530,7 +530,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 {: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 0.2
-{: #account-summary-csv-version-0-2}
+{: #account-summary-csv-version-02}
 
 You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2023.
 
@@ -631,7 +631,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 {: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 0.1
-{: #account-summary-csv-version-0-1}
+{: #account-summary-csv-version-01}
 
 You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
 
@@ -1030,7 +1030,7 @@ For tags that are of `key:value` format, a new column is added for each and ever
 
 
 #### Service tags
-{: #acct-instance-service-tags}
+{: #acct-instance-servicetags}
 
 If the account has [Projects](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) provisioned in it, then all the resource instances that are part of a project will have some service tags attached to them. These service tags are also of `key:value` type and they indicate the `project_id` and `config_id` that the project resource instance belongs to. Similar to the `key:value` user tags, a new column is added for each and every unique service tag `key`, with the `key` as the column name and the `value` as the column value for the corresponding instance usage row.
 
@@ -1048,7 +1048,7 @@ Tags are shown for both active and deleted resources. It might take up to 24 hou
 {: note}
 
 ### Understanding your enterprise account summary
-{: #enterprise-usage-table-account-summary-csv}
+{: #enterprise-usage-table-account-summarycsv}
 
 The following tables show the correlation between the heading titles in your CSV report and JSON report fields. The usage in the **Enterprise Resource Usage** section is aggregated by each metric of a service plan.
 
@@ -1060,15 +1060,15 @@ The following are the JSON report section APIs for the different CVS headings:
 
 You can view other versions of the CSV if you have earlier enterprise account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- July 2024 to present is [version 1.2](#enterprise-account-summary-csv-version-1-2)
-- March 2024 to June 2024 is [version 1.1](#enterprise-account-summary-csv-version-1-1)
-- October 2024 to March 2024 is [version 1.0](#enterprise-account-summary-csv-version-1-0)
-- February 2023 to October 2024 is [version 0.2](#enterprise-account-summary-csv-version-0-2)
-- Before February 2023 is [version 0.1](#enterprise-account-summary-csv-version-0-1).
+- July 2024 to present is [version 1.2](#enterprise-account-summary-csv-version-12)
+- March 2024 to June 2024 is [version 1.1](#enterprise-account-summary-csv-version-11)
+- October 2024 to March 2024 is [version 1.0](#enterprise-account-summary-csv-version-10)
+- February 2023 to October 2024 is [version 0.2](#enterprise-account-summary-csv-version-02)
+- Before February 2023 is [version 0.1](#enterprise-account-summary-csv-version-01).
 
 
 #### Enterprise account summary CSV version 1.2
-{: #enterprise-account-summary-csv-version-1-2}
+{: #enterprise-account-summary-csv-version-12}
 
 The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from July 2024 to present.
 
@@ -1186,7 +1186,7 @@ The following table is version 1.2 and the most recent CSV version. You get this
 {: tab-title="Enterprise Resource Usage"}
 
 #### Enterprise account summary CSV version 1.1
-{: #enterprise-account-summary-csv-version-1-1}
+{: #enterprise-account-summary-csv-version-11}
 
 The following table is version 1.1. You get this version if the data that you're viewing is from March 2024 to June 2024.
 
@@ -1304,7 +1304,7 @@ The following table is version 1.1. You get this version if the data that you're
 
 
 #### Enterprise account summary CSV version 1.0
-{: #enterprise-account-summary-csv-version-1-0}
+{: #enterprise-account-summary-csv-version-10}
 
 You will get CSV version 1.0 if the data that you're viewing is from October 2024 to March 2024.
 
@@ -1420,7 +1420,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 {: tab-title="Enterprise Resource Usage"}
 
 #### Enterprise account summary CSV version 0.2
-{: #enterprise-account-summary-csv-version-0-2}
+{: #enterprise-account-summary-csv-version-02}
 
 You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2024.
 
@@ -1534,7 +1534,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 {: tab-title="Enterprise Resource Usage"}
 
 #### Enterprise account summary CSV version 0.1
-{: #enterprise-account-summary-csv-version-0-1}
+{: #enterprise-account-summary-csv-version-01}
 
 You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
 

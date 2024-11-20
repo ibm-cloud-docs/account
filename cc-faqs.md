@@ -1,7 +1,7 @@
 ---
 copyright:
  years: 2023, 2024
-lastupdated: "2024-10-11"
+lastupdated: "2024-11-20"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -107,10 +107,8 @@ Talk to your customer success manager (CSM) or create case on support center. Wh
 
 
 
-## How do I view the carbon intensity of my data center?
+## How do I view the carbon emissions factor of my data center?
 {: #carbon-intensity}
 {: faq}
 
-In the carbon calculator, on the locations widget, you can hover over the location of their data center to see carbon intensity. For more information, see [Working with IBM Cloud's carbon calculator](/docs/account?topic=account-what-is-cloud-calc).
-
-
+In the carbon calculator, on the locations widget, you can hover over the location of their data center to see carbon emissions factor. For more information, see [Working with IBM Cloud's carbon calculator](/docs/account?topic=account-what-is-cloud-calc).

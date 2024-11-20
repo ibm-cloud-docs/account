@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-11-02"
+lastupdated: "2024-11-19"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -131,7 +131,7 @@ The invitations expire after 30 days. New users can accept an invitation only by
 ## Managing marketing communications
 {: #marcom-notifications}
 
-You might receive notifications about significant technical enhancements, changes to the terms of service, plan changes, pricing changes, and the future removal of a product from the {{site.data.keyword.cloud_notm}} catalog. With a few exceptions, these announcements are available on the [{{site.data.keyword.cloud_notm}} blog](https://www.ibm.com/cloud/blog/announcements){: external}.
+You might receive notifications about significant technical enhancements, changes to the terms of service, plan changes, pricing changes, and the future removal of a product from the {{site.data.keyword.cloud_notm}} catalog. With a few exceptions, these announcements are available on the [{{site.data.keyword.cloud_notm}} blog](https://www.ibm.com/blog/announcements/){: external}.
 
 Use the following steps to update your preferences:
 

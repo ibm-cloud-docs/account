@@ -79,7 +79,7 @@ You don't need to create user tags to attach them to resources or service IDs. F
 {: #create-access-console}
 {: ui}
 
-Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you must have the administrator role on either the **Tagging Service** or on **All Account management services**.
+Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you must have the administrator role on **All Account management services**.
 
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
@@ -94,7 +94,7 @@ Next, see [Attaching and detaching tags](/docs/account?topic=account-attaching-a
 {: #create-access-cli}
 {: cli}
 
-Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on either the Tagging Service that is listed under the Account management services or on all Account management services.
+Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on all Account management services.
 
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
@@ -126,7 +126,7 @@ Next, see [Attaching and detaching tags](/docs/account?topic=account-attaching-a
 {: #create-access-api}
 {: api}
 
-Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on either the Tagging Service that is listed under the Account management services or on all Account management services.
+Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on all Account management services.
 
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
@@ -209,7 +209,7 @@ Before you can create access management tags by using Terraform, make sure that 
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
-- Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on either the Tagging Service that is listed under the Account management services or on all Account management services.
+- Before you can attach your access management tags to individual resources or service IDs, you need to create them first. To create access management tags, you need to have administrator role on all Account management services.
 
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
