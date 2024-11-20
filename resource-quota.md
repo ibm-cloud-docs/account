@@ -25,7 +25,7 @@ Check the resource quotas in your account to make sure that you optimize your re
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage > Account > Account resources > Resource quotas**.
 1. In the **Resource quotas and service limits** page, select the category that your resource is associated with. You can filter the resources by regions, and by whether the resource quotas are adjustable.
-1. Click the ![Actions icon](../icons/action-menu-icon.svg "Actions") of a specific resource and select **View quota details**. You can find more details on the **Resource quota details** side panel, including the default quota metric, quota type, default quota limit, current quota limit, current utilization, and whether the resource quota is adjustable.
+1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") of a specific resource and select **View quota details**. You can find more details on the **Resource quota details** side panel, including the default quota metric, quota type, default quota limit, current quota limit, current utilization, and whether the resource quota is adjustable.
 
 If your resource associated with the infrastructure service is at capacity and you reached the default quota limit, you can create a case in the Support Center to adjust the quota limit. Click **Create a case** on the **Resource quota details** side panel. 
 
