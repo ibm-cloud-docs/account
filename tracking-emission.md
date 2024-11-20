@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-10-24"
+lastupdated: "2024-11-20"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -21,7 +21,7 @@ Emissions from key greenhouse gases are measured in metric tons of carbon dioxid
 
 * Total emissions: The total emissions are calculated by comparing the energy-related usage with data center energy sources. You can download the total emissions data in CSV format.
 
-* Emissions by location: The energy consumption is calculated by using usage units such as CPU. Two or more resources are required to display the location data. The size represents how much energy is generated and the color represents the carbon intensity that is the emission rate for grams of carbon dioxide-equivalent emissions that are released per unit of energy produced.
+* Emissions by location: The energy consumption is calculated by using usage units such as CPU. Two or more resources are required to display the location data. The size represents how much energy is generated and the color represents the carbon emissions factor that is the emission rate for grams of carbon dioxide-equivalent emissions that are released per unit of energy produced.
 
 * Emissions by service: The GHG emissions are broken down by service.
 
