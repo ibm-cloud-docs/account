@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-10-30"
+lastupdated: "2024-11-21"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -18,10 +18,9 @@ subcollection: account
 Each support case is assigned a unique number and severity level based on the details in the case description. You can use the case number to track the progress of your reported issue, leave feedback, or update the support case. Updates and feedback are recorded in the case notes, which you can find by selecting the specific support case. You can also add users in your account to a watchlist so they can receive alerts about a case. For more information, see [Updating your support case's watchlist](/docs/account?topic=account-managing-support-cases&interface=ui#contact-watchlist).
 {: shortdesc}
 
-To view and manage your support cases, go to the [Manage cases page](/unifiedsupport/cases).
+To view and manage your support cases, go to the [Manage cases page](/unifiedsupport/cases). If you're a classic infrastructure user, and you don't see a listing of a previous case, click **View classic infrastructure cases**.
 
-If you're a classic infrastructure user, and you don't see a listing of a previous case, click **View classic infrastructure cases**.
-{: tip}
+
 
 
 ## Searching for support cases
