@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-01-02"
+lastupdated: "2024-11-21"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 
@@ -413,6 +413,8 @@ fmt.Println(string(b))
 You can assign access to a group of services. To assign access to **All Identity and Access enabled services**, specify `serviceType` for the `name` attribute, and use the `value` `service`. To assign access to **All Account Management services**, specify `serviceType` for the `name` attribute, and use the `value` `platform_service`. To assign access to the subset of account management services **All IAM Account Management services**, specify `service_group_id` for the `name` attribute, and use the `value` `IAM`.
 {: tip}
 
+
+
 ### Assigning access within a resource group by using the API
 {: #access-resourcegroups-api}
 {: api}
@@ -449,6 +451,8 @@ To assign access to resources by using Terraform, use the following steps:
    }
    ```
    {: codeblock}
+
+   
 
    You can specify the name of the service for which you want to assign access to on the `service` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
 
