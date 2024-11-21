@@ -3,7 +3,7 @@
 copyright:
   years: 2024
 
-lastupdated: "2024-11-11"
+lastupdated: "2024-11-21"
 
 keywords: pricing, global catalog api
 
@@ -334,53 +334,97 @@ The following is an example response that only lists the first metric:
 
 ```
 {
-  "offset": 0,
-  "limit": 50,
-  "count": 2,
-  "resource_count": 2,
-  "resources": [
-    {
-      "deployment_id": "1e4e33e4-cfa6-4f12-9016-be594a6d5f87:global",
-      "deployment_location": "global",
-      "deployment_region": "global",
-      "origin": "pricing_catalog",
-      "type": "paygo",
-      "url": "https://globalcatalog.cloud.ibm.com/api/v1/1e4e33e4-cfa6-4f12-9016-be594a6d5f87:global/pricing",
-      "i18n": {},
-      "starting_price": {},
-      "effective_from": "2024-07-01T00:00:00Z",
-      "effective_until": "9999-12-31T00:00:00Z",
-      "metrics": [
-        {
-          "part_ref": "",
-          "metric_id": "COSARCVRSTR",
-          "tier_model": "Simple Tier",
-          "resource_display_name": "Archive restore",
-          "charge_unit_display_name": "GIGABYTE",
-          "charge_unit_name": "ARCHIVE_RESTORE",
-          "charge_unit": "GIGABYTE",
-          "charge_unit_quantity": 1,
-          "amounts": [
+   "offset":0,
+   "limit":50,
+   "count":5,
+   "resource_count":5,
+   "resources":[
+      {
+         "deployment_id":"f165dd34-3a40-423b-9d95-e90a23f724dd:eu-de-114101",
+         "deployment_location":"eu-de-1",
+         "deployment_region":"eu-de-1",
+         "origin":"pricing_catalog",
+         "type":"Paid",
+         "i18n":{
+
+         },
+         "starting_price":{
+
+         },
+         "effective_from":"2024-11-01T00:00:00Z",
+         "effective_until":"9999-09-30T00:00:00Z",
+         "metrics":[
             {
-              "country": "USA",
-              "currency": "USD",
-              "prices": [
-                {
-                  "quantity_tier": 999999999,
-                  "price": 0.02299
-                }
-              ]
-            }
-          ],
-          "usage_cap_qty": 0,
-          "display_cap": 0,
-          "effective_from": "2024-07-01T00:00:00Z",
-          "effective_until": "9999-12-31T00:00:00Z"
-        }
-      ]
-    }
-  ]
-}
+               "part_ref":"",
+               "metric_id":"ibm-i-rds",
+               "tier_model":"Linear Tier",
+               "resource_display_name":"APPLICATION_INSTANCES",
+               "charge_unit_display_name":"IBM i RDS License/user-hour",
+               "charge_unit_name":"IBMIRDS_APPLICATION_INSTANCES",
+               "charge_unit":"Application Instance",
+               "charge_unit_quantity":1,
+               "amounts":[
+                  {
+                     "country":"USA",
+                     "currency":"USD",
+                     "prices":[
+                        {
+                           "quantity_tier":1,
+                           "price":0.1808
+                        }
+                     ]
+                  },
+                  {
+                     "country":"USD",
+                     "currency":"USD",
+                     "prices":[
+                        {
+                           "quantity_tier":1,
+                           "price":0.1808
+                        }
+                     ]
+                  },
+                  {
+                     "country":"CAN",
+                     "currency":"CAD",
+                     "prices":[
+                        {
+                           "quantity_tier":1,
+                           "price":0.24962151999999999
+                        }
+                     ]
+                  },
+                  {
+                     "country":"AUS",
+                     "currency":"AUD",
+                     "prices":[
+                        {
+                           "quantity_tier":1,
+                           "price":0.2696696184
+                        }
+                     ]
+                  },
+                  {
+                     "country":"ISA",
+                     "currency":"USD",
+                     "prices":[
+                        {
+                           "quantity_tier":1,
+                           "price":0.1808
+                        }
+                     ]
+                  },
+               "usage_cap_qty":0,
+               "display_cap":0,
+               "effective_from":"2024-11-01T00:00:00Z",
+               "effective_until":"9999-12-31T00:00:00Z",
+               "additional_properties":{
+                  "included_quantities":{
+                     "account":0,
+                     "instance":0
+                  }
+               }
+            },
 ```
 {: codeblock}
 
@@ -424,7 +468,7 @@ This is the example response:
   "deployment_region": "eu-de",
   "origin": "pricing_catalog",
   "type": "paygo",
-  "url": "https://globalcatalog.test.cloud.ibm.com/api/v1/744bfc56-d12c-4866-88d5-dac9139e0e5d:global/pricing?deployment_region=eu-de",
+  "url": "https://globalcatalog.cloud.ibm.com/api/v1/744bfc56-d12c-4866-88d5-dac9139e0e5d:global/pricing?deployment_region=eu-de",
   "i18n": {},
   "starting_price": {},
   "effective_from": "2024-09-01T00:00:00Z",
@@ -632,6 +676,7 @@ The following table shows the response body fields and their descriptions. For m
 | `currency`                 | Currency for the prices. |
 | `quantity_tier`            | Level of usage for that price in that tier. |
 | `price`                    | Price per unit for this tier. |
+| `included_quanitities`     | The total number of available free objects. |
 {: caption="Example response JSON fields" caption-side="bottom"}
 
 [^tabletext]: For tiered pricing, you pay based on your runtime and service consumption. However, tiered charges add more pricing levels, often offering discounted rates on products for higher consumption tiers. Tiered pricing is offered in simple, graduated, linear, or block.
