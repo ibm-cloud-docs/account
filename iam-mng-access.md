@@ -79,6 +79,8 @@ To assign access to all resources in a resource group or to just one service wit
 1. Click **Add** to add your policy configuration to your policy summary.
 1. Click **Assign**.
 
+
+
 ### Assigning access to manage a resource group
 {: #access-to-resource-group}
 {: ui}
