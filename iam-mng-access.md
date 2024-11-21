@@ -63,6 +63,8 @@ To assign access to an individual resource in the account or access to all resou
 If a user doesn't have a role on the resource group that contains the resources, they can see the resources, but can't access the resources by going to the Resource list page in the account to start working with them. Assign the Viewer role or higher on the resource group itself to ensure that a user can access the resource.
 {: note}
 
+
+
 ### Assigning access within a resource group in the console
 {: #access-to-resources-console}
 {: ui}
@@ -78,8 +80,6 @@ To assign access to all resources in a resource group or to just one service wit
 1. Select any combination of roles to assign, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
 1. Click **Assign**.
-
-
 
 ### Assigning access to manage a resource group
 {: #access-to-resource-group}
