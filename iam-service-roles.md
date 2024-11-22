@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-11-21"
+lastupdated: "2024-11-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1291,6 +1291,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.scopes.delete` | Delete a scope | Administrator, Editor, Manager, Operator, Writer |
 | `compliance.scopes.read` | View scopes | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
 | `compliance.scopes.update` | Edit a scope | Administrator, Editor, Manager, Operator, Writer |
+| `compliance.ticket-configurations.create` | Create Ticket Configuration | Manager, Writer |
+| `compliance.ticket-configurations.update` | Update Ticket Configuration | Manager, Writer |
+| `compliance.ticket-configurations.delete` | Delete Ticket Configuration | Manager, Writer |
+| `compliance.ticket-configurations.read` | Read Ticket Configuration | Manager, Reader, Writer |
+| `compliance.tickets.read` | Read Tickets Metadata | Manager, Reader, Writer |
 {: caption="Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
@@ -1867,6 +1872,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/backup_records` | Read all backup history records | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/hibernate` | Pause the instance through a disablement | Administrator, Editor, Operator |
 | `DELETE /v4/:platform/deployments/:deployment_id/hibernate` | Resume the instance by removing a disablement | Administrator, Editor, Operator |
+| `dashdb.console.pause` | Pause the instance | Administrator, Editor, Operator |
+| `dashdb.console.resume` | Resume the instance | Administrator, Editor, Operator |
 {: caption="Service actions - Db2 Warehouse" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb"}
@@ -8028,16 +8035,16 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `quantum-computing.program.read` | Read a program definition | Manager, Reader |
+| `quantum-computing.program.read` | Read a program definition | Manager, Reader, Writer |
 | `quantum-computing.program.delete` | Delete a program | Manager, Writer |
 | `quantum-computing.job.create` | Create a job to run a program | Manager, Writer |
-| `quantum-computing.job.read` | User ability to read a job | Manager, Reader |
+| `quantum-computing.job.read` | User ability to read a job | Manager, Reader, Writer |
 | `quantum-computing.job.delete` | Delete a Job | Manager, Writer |
 | `quantum-computing.job.cancel` | Cancel a Job | Manager, Writer |
-| `quantum-computing.device.read` | Read information about a quantum device | Manager, Reader |
+| `quantum-computing.device.read` | Read information about a quantum device | Manager, Reader, Writer |
 | `quantum-computing.user.logout` | Clears authorization cache | Manager, Reader, Writer |
 | `quantum-computing.job.update` | Update a job. | Manager, Writer |
-| `quantum-computing.session.read` | Read session details. | Manager, Reader |
+| `quantum-computing.session.read` | Read session details. | Manager, Reader, Writer |
 | `quantum-computing.session.update` | Update a session. | Manager, Writer |
 | `quantum-computing.instance.configuration.read` | Instance configuration read | Manager |
 | `quantum-computing.instance.configuration.update` | Instance configuration update | Manager |
@@ -8045,8 +8052,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.instance.read` | Instance read | Manager, Reader, Writer |
 | `quantum-computing.session.create` | Create a Session | Manager, Writer |
 | `quantum-computing.account-configuration.read` | Read Account Configuration. Must be granted by a policy that does not specify service instance. | Manager |
-| `quantum-computing.workload.read` | Access to read workload which includes sessions and jobs | Manager, Reader |
-| `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader |
+| `quantum-computing.workload.read` | Access to read workload which includes sessions and jobs | Manager, Reader, Writer |
+| `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader, Writer |
+| `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
+| `quantum-computing.account-analytics-filter.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}
