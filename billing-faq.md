@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-11-08"
+lastupdated: "2024-11-22"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -308,11 +308,11 @@ You can regularly review the list of account users and remove users who don't ne
 
 Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise. When you upgrade a Pay-As-You-Go account to an enterprise, you keep the Pay-As-You-Go billing model. For more information, see [Managing your enterprise](/docs/enterprise-management).
 
-## Can I have a service-level commitment for third-party products?
+## Can I have a service commitment for third-party products?
 {: #serviceleve-thirdparty}
 {: faq}
 
-No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to learn more about the {{site.data.keyword.cloud_notm}} services that qualify for a service-level commitment.
+No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to learn more about the {{site.data.keyword.cloud_notm}} services that qualify for a service commitment.
 
 ## What is a manual credit?
 {: #manual-credit}
@@ -326,4 +326,4 @@ A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_no
 {: #invoices}
 {: faq}
 
-You might receive multiple invoices if you have an Enterprise Savings Plan and service-level commitment on different orders. If you have multiple service-level commitments (for multiple sites), you receive separate invoices for each.
+You might receive multiple invoices if you have an Enterprise Savings Plan and service commitment on different orders. If you have service commitments at multiple sites, you receive separate invoices for each.

@@ -22,7 +22,7 @@ content-type: troubleshoot
 You are unable to view your account's commitments in the {{site.data.keyword.Bluemix}} console.
 {: shortdesc}
 
-You try to view the Enterprise Savings Plan or Service-level commitments page, but a message is displayed that says *Looks like you don't have access to view this page*.
+You try to view the Enterprise Savings Plan or Service commitments page, but a message is displayed that says *Looks like you don't have access to view this page*.
 {: tsSymptoms}
 
 You don't have the correct access to view this information. To access this information, you need an access policy with the Viewer role or higher on the Billing account management service.
