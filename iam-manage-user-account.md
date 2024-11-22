@@ -3,7 +3,7 @@ copyright:
 
   years: 2015, 2024
 
-lastupdated: "2024-09-19"
+lastupdated: "2024-11-22"
 
 keywords: invite, invite users, invitation access, vpn-only user, remove user, delete user, IBMid change, credentials, ID, new ID
 
@@ -18,7 +18,7 @@ subcollection: account
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to manage users in your account. You can invite users, cancel invitations, remove a user from an account, or update a user's IBMid.
 {: shortdesc}
 
-All users must accept an invitation to become an active user within a new account. [Learn more.](/docs/account?topic=account-iamuserinv#pending-invitations)
+All users must accept an invitation to become an active user within a new account. [Learn more.](#pending-invitations)
 {: important}
 
 ## Before you begin
@@ -492,4 +492,3 @@ After the user ensures that the new IBMid exists, complete the following steps t
 3. Enter the new IBMid, and click **Update**.
 
 The user can now log in to ibm.com with their new IMBid and continue working in the {{site.data.keyword.Bluemix_notm}} account with the access assigned to their previously used IBMid.
-
