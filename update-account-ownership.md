@@ -54,8 +54,8 @@ When the ownership is transferred to the new owner, be aware that the previous a
    When you're logged in to the account, you can find the account number in the {{site.data.keyword.cloud_notm}} menu bar next to the account name. For example, you might see `1234567 - IBM`, where the account number is 1234567.
    {: tip}
 
-   ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption}
-   
+   ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-switcher.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption}
+
 To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**. Attach the official request document to the case before you submit it.
 
 ## Granting alternative account owner access
