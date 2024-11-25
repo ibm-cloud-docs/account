@@ -52,4 +52,4 @@ This file contains 4 columns that indicate the CRN, the name, the user tags, and
 ## Data ownership
 {: #data-portability-ownership}
 
-All exported data is classified as customer content. Apply the full customer ownership and licensing rights, as stated in the [IBM Cloud Service Agreement](https://www.ibm.com/terms/?id=Z126-6304_WS).
+All exported data is classified as customer content. Apply the full customer ownership and licensing rights, as stated in the [IBM Cloud Service Agreement](https://www.ibm.com/support/customer/csol/terms/?id=Z126-6304_WS).

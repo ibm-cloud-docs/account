@@ -3,7 +3,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-09-19"
+lastupdated: "2024-11-25"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -210,7 +210,7 @@ ibmcloud resource group-update Default [-n, --name Admin]
 {: #rename_rgs-api}
 {: api}
 
-The variable `name` identifies the new name of the resource group. For m ore details, see the [API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group).
+The variable `name` identifies the new name of the resource group. For m ore details, see the [Update a resource group](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#update-resource-group).
 
 ```bash
 curl -X PATCH https://resource-controller.cloud.ibm.com/v2/resource_groups/09f8c1c0742c493f80baaf7835212345 -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -460,7 +460,7 @@ ibmcloud resource group-delete example-group -f
 {: #delete-rg-api}
 {: api}
 
-You can programmatically delete a resource group by calling the Resource Manager API as shown in the following sample request. For detailed information about the API, see [Resource Manager API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager#delete-resource-group){: external}.
+You can programmatically delete a resource group by calling the Resource Manager API as shown in the following sample request. For detailed information about the API, see [Resource Manager API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager?code=java#related-apis){: external}.
 
 ```bash
 curl -X DELETE \
@@ -562,4 +562,3 @@ You can also delete a resource group by running the following `terraform destroy
 terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
 ```
 {: pre}
-
