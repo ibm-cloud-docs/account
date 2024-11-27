@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-11-26"
+lastupdated: "2024-11-27"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8062,7 +8062,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.workload.read` | Access to read workload which includes sessions and jobs | Manager, Reader, Writer |
 | `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
-| `quantum-computing.account-analytics-filter.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
+| `quantum-computing.account-analytics-filters.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}
