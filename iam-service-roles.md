@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-11-27"
+lastupdated: "2024-12-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1297,6 +1297,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.ticket-configurations.delete` | Delete Ticket Configuration | Manager, Writer |
 | `compliance.ticket-configurations.read` | Read Ticket Configuration | Manager, Reader, Writer |
 | `compliance.tickets.read` | Read Tickets Metadata | Manager, Reader, Writer |
+| `compliance.documents.create` | Create Document | Manager, Writer |
+| `compliance.documents.read` | View Document | Manager, Reader, Writer |
+| `compliance.facts.read` | View Facts | Manager, Reader, Writer |
 {: caption="Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
