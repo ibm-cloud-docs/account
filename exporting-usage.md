@@ -2,11 +2,11 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-11-19"
+lastupdated: "2024-12-03"
 
 keywords: apptio, cost benefit analysis
 
-subcollection: account
+subcollection: billing-usage
 
 ---
 
@@ -15,7 +15,7 @@ subcollection: account
 # Exporting your usage data for continual insights
 {: #exporting-your-usage}
 
-You can export your account's usage data to a {{site.data.keyword.cos_full_notm}} bucket for continual visibility, optimization, governance and more across cloud environments. For example, if you are an account administrator and want to learn more about your account's usage and get cost optimization analysis, you can integrate your account with a third party provider to gain insights about your accounts usage.
+You can export your account's usage data to a Cloud Object Storage (COS) bucket for continual visibility, optimization, governance and more across cloud environments. For example, if you are an account administrator and want to learn more about your account's usage and get cost optimization analysis, you can integrate your account with a third party provider to gain insights about your accounts usage.
 {: shortdesc}
 
 When you set up your account to export usage report to a {{site.data.keyword.cos_full_notm}} bucket you are enabling your account to continually export that data. To export data on a one time basis, see [Exporting your usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv).
@@ -63,6 +63,7 @@ To request access to historical data, use the following steps:
 
 After your support case is created, you can follow its progress on the [Manage cases page](/unifiedsupport/cases).
 {: tip}
+
 
 ## Enabling your account to export usage data by using Terraform
 {: #attach-terraform}
@@ -196,25 +197,25 @@ manifest.json
 For more information about the usage snapshot API, see [Setup the snapshot configuration](/apidocs/metering-reporting#create-reports-snapshot-config){: external}.
 
 ## Understanding CSV table headings and JSON report fields
-{: #understand-CSV-reports}
+{: #understand-reports}
 
 The following tables shows the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
 
 ### Understanding your account summary report
-{: #export-csv-api-table-account-summarycsv}
+{: #export-csv-api-table-account-summary-csv}
 
 The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- July 2024 to present is [version 1.2](#account-summary-csv-version-12)
-- March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-11)
-- October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-10)
-- February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-02)
-- Before February 2023 is [version 0.1](#account-summary-csv-version-01).
+- July 2024 to present is [version 1.2](#account-summary-csv-version-1-2)
+- March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-1-1)
+- October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-1-0)
+- February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-0-2)
+- Before February 2023 is [version 0.1](#account-summary-csv-version-0-1).
 
 #### Account summary CSV version 1.2
-{: #account-summary-csv-version-12}
+{: #account-summary-csv-version-1-2}
 
 The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from July 2024 to present.
 
@@ -321,7 +322,7 @@ The following table is version 1.2 and the most recent CSV version. You get this
 
 
 #### Account summary CSV version 1.1
-{: #account-summary-csv-version-11}
+{: #account-summary-csv-version-1-1}
 
 You will get CSV version 1.1 if the data that you're viewing is from March 2024 to June 2024.
 
@@ -426,7 +427,7 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 {: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 1.0
-{: #account-summary-csv-version-10}
+{: #account-summary-csv-version-1-0}
 
 You will get CSV version 1.0 if the data that you're viewing is from October 2023 to March 2024.
 
@@ -530,7 +531,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 {: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 0.2
-{: #account-summary-csv-version-02}
+{: #account-summary-csv-version-0-2}
 
 You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2023.
 
@@ -631,7 +632,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 {: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 0.1
-{: #account-summary-csv-version-01}
+{: #account-summary-csv-version-0-1}
 
 You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
 
@@ -1030,7 +1031,7 @@ For tags that are of `key:value` format, a new column is added for each and ever
 
 
 #### Service tags
-{: #acct-instance-servicetags}
+{: #acct-instance-service-tags}
 
 If the account has [Projects](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) provisioned in it, then all the resource instances that are part of a project will have some service tags attached to them. These service tags are also of `key:value` type and they indicate the `project_id` and `config_id` that the project resource instance belongs to. Similar to the `key:value` user tags, a new column is added for each and every unique service tag `key`, with the `key` as the column name and the `value` as the column value for the corresponding instance usage row.
 
@@ -1048,7 +1049,7 @@ Tags are shown for both active and deleted resources. It might take up to 24 hou
 {: note}
 
 ### Understanding your enterprise account summary
-{: #enterprise-usage-table-account-summarycsv}
+{: #enterprise-usage-table-account-summary-csv}
 
 The following tables show the correlation between the heading titles in your CSV report and JSON report fields. The usage in the **Enterprise Resource Usage** section is aggregated by each metric of a service plan.
 
@@ -1060,17 +1061,137 @@ The following are the JSON report section APIs for the different CVS headings:
 
 You can view other versions of the CSV if you have earlier enterprise account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- July 2024 to present is [version 1.2](#enterprise-account-summary-csv-version-12)
-- March 2024 to June 2024 is [version 1.1](#enterprise-account-summary-csv-version-11)
-- October 2024 to March 2024 is [version 1.0](#enterprise-account-summary-csv-version-10)
-- February 2023 to October 2024 is [version 0.2](#enterprise-account-summary-csv-version-02)
-- Before February 2023 is [version 0.1](#enterprise-account-summary-csv-version-01).
+- October 2024 to present is [version 1.3](#enterprise-account-summary-csv-version-1-3)
+- July 2024 to September 2024 is [version 1.2](#enterprise-account-summary-csv-version-1-2)
+- March 2024 to June 2024 is [version 1.1](#enterprise-account-summary-csv-version-1-1)
+- October 2024 to March 2024 is [version 1.0](#enterprise-account-summary-csv-version-1-0)
+- February 2023 to October 2024 is [version 0.2](#enterprise-account-summary-csv-version-0-2)
+- Before February 2023 is [version 0.1](#enterprise-account-summary-csv-version-0-1).
 
+#### Enterprise account summary CSV version 1.3
+{: #enterprise-account-summary-csv-version-1-3}
+
+The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from October 2024 to present.
+
+| CSV Header         | Description        |
+|--------------------|--------------------|
+| Entity ID          | ID of the requested entity (`enterprise_id`/`account_group_id`/`account_id`) |
+| Entity Type        | Type of the requested entity (enterprise/account_group/account) |
+| Billing Month      | The month in which usages were incurred. Represented in `yyyy-mm` format |
+| Currency Rate      | Currency Exchange Rate with USD as the base |
+| Created Time       | Timestamp at which the CSV report was generated |
+| Version            | The version number of the enterprise summary CSV |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for entity metadata" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-metadata-1-3}
+{: tab-title="Entity Metadata"}
+
+| CSV Header      | Description |
+|--------------------|-------------|
+| Entity ID          | ID of the hierarchy entity |
+| Entity Type        | Type of the hierarchy entity |
+| Entity Name        | Name of the hierarchy entity |
+| Parent Entity ID   | ID of the parent of this hierarchy entity |
+| Parent Entity Name | Name of the parent of the current hierarchy entity |
+| Parent Entity Type | Type of the parent of the current hierarchy entity |
+| Entity CreatedOn   | Timestamp at which the hierarchy entity was created |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for entity hierarchy" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-hierarchy-1-3}
+{: tab-title="Entity Hierarchy"}
+
+| CSV Header Header          | JSON Report Fields        | Description        |
+|------------------------|---------------------------|--------------------|
+| Billing Unit ID        | `resources.id`         | The ID of the DEFAULT billing unit of the requested entity, which is a globally unique identifier (GUID) |
+| Billing Unit Name      | `resources.name`       | The name of the billing unit |
+| Billing Unit CreatedOn | `resources.created_at` | The creation date of the billing unit |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for billing units" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #billing-unit-id-enterprise-1-3}
+{: tab-title="Billing Units"}
+
+| CSV Header Header     | JSON Report Fields                        | Description        |
+|-------------------|-------------------------------------------|--------------------|
+| Credit Pool Type  | `resources.type`                          | The type of credit, either `PLATFORM` or `SUPPORT` |
+| Currency Code     | `resources.currency_code`                 | The currency code of the associated billing unit |
+| Billing Option ID | `resources.term_credits.billing_option_id`| The ID of the billing option from which the subscription term is derived |
+| Category          | `resources.term_credits.category`         | The category of the credit pool. \n For platform credit the valid values are `PLATFORM`, `OFFER`, or `SERVICE` \n For support credit the valid value is `SUPPORT` |
+| Start Date        | `resources.term_credits.start_date`       | The start date of the term in ISO format |
+| End Date          | `resources.term_credits.end_date`         | The end date of the term in ISO format  |
+| Total Credits     | `resources.term_credits.total_credits`    | The total credit available in this term |
+| Starting Balance  | `resources.term_credits.starting_balance` | The balance of available credit at the start of the current month |
+| Used Credits      | `resources.term_credits.used_credits`     | The amount of credit used during the current month |
+| Current Balance   | `resources.term_credits.current_balance`  | The balance of remaining credit in the subscription term |
+| True Up           | `resources.term_credits.true_up`          | The credits remaining after the end of the term |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for credit pools" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #credit-pool-type-enterprise-1-3}
+{: tab-title="Credit Pools"}
+
+| CSV Header Header     | JSON Report Fields       | Description        |
+|-------------------|--------------------------|--------------------|
+| Credit Pool Type  | `resources.type`         | The type of credit, either `PLATFORM` or `SUPPORT` |
+| Currency Code     | `resources.currency_code`| The currency code of the associated billing unit |
+| Billing Option ID | `resources.overage.billing_option_id` | The ID of the billing option from which the subscription term incurring the overage is derived. |
+| Category          | `resources.overage.category` | The category of the credit pool that has incurred the overage. The valid values are `PLATFORM`, `OFFER`, or `SERVICE` for platform credit and `SUPPORT` for support credit. |
+| Overage           | `resources.overage.cost` | The number of credits that are used as overage |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for overages" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #overages-enterprise-1-3}
+{: tab-title="Overages"}
+
+| CSV Header Header      | JSON Report Fields  | Description        |
+|--------------------|---------------------|--------------------|
+| Entity ID          | `reports.entity_id`         | The ID of the entity |
+| Entity Type        | `reports.entity_type`       | The type of the entity  \n Possible values: `enterprise` , `account-group`, or `account` |
+| Entity Name        | `reports.entity_name`       | A user-defined name for the entity, such as the enterprise name or account group name |
+| Billing Unit ID    | `reports.billing_unit_id`   | The ID of the billing unit  |
+| Billing Unit Name  | `reports.billing_unit_name` | The name of the billing unit |
+| Country Code       | `reports.country_code`      | The country code of the billing unit |
+| Currency Code      | `reports.currency_code`     | The currency code of the billing unit |
+| Billable Cost      | `reports.billable_cost`     | Billable charges that are aggregated from all entities in the report |
+| Non Billable Cost  | `reports.non_billable_cost` | Non-billable charges that are aggregated from all entities in the report |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for enterprise usage summary" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-resource-usage1-1-3}
+{: tab-title="Enterprise Usage Summary"}
+
+| CSV Header Header    | JSON Report Fields                       | Description        |
+|------------------|------------------------------------------|--------------------|
+| Entity ID        | `reports.entity_id`                      | The ID of the entity |
+| Entity Type      | `reports.entity_type`                    | The type of the entity. \n Possible values: `enterprise`, `account-group`, or `account` |
+| Parent Entity ID | `reports.parent_entity_id`               | The ID of the parent of the requested entity |
+| Billing Unit ID  | `reports.billing_unit_id`                | The ID of the billing unit  |
+| Currency Code    | `reports.currency_code`                  | The currency code of the billing unit |
+| Service Name     | `reports.resources.resource_name`        | The name of the resource |
+| Service ID       | `reports.resources.resource_id`          | The ID of the resource |
+| Billable         | `reports.resources.plans.billable`       | Whether the plan charges are billed to the customer |
+| Plan Name        | `reports.resources.plan_name`            | The name of the plan |
+| Plan ID          | `reports.resources.plan_id`              | The ID of the plan |
+| Pricing Region   | `reports.resources.plans.pricing_region` | The pricing region for the plan |
+| Metric           | `reports.resources.plans.usage.metric`   | The name of the metric |
+| Unit             | `reports.resources.plans.usage.unit`     | A unit to qualify the quantity |
+| Quantity         | `reports.resources.plans.usage.quantity` | The aggregated value for the metric |
+| Cost             | `reports.resources.plans.usage.cost`     | The cost that was incurred by the metric |
+| Pending          | `reports.resources.plans.pending`        | Pending charge from classic infrastructure |
+| Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
+| Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for enterprise resource usage" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-resource-usage2-1-3}
+{: tab-title="Enterprise Resource Usage"}
 
 #### Enterprise account summary CSV version 1.2
-{: #enterprise-account-summary-csv-version-12}
+{: #enterprise-account-summary-csv-version-1-2}
 
-The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from July 2024 to present.
+The following table is for version 1.2. You get this version if the data that you're viewing is from July 2024 to September 2024.
 
 | CSV Header         | Description        |
 |--------------------|--------------------|
@@ -1186,7 +1307,7 @@ The following table is version 1.2 and the most recent CSV version. You get this
 {: tab-title="Enterprise Resource Usage"}
 
 #### Enterprise account summary CSV version 1.1
-{: #enterprise-account-summary-csv-version-11}
+{: #enterprise-account-summary-csv-version-1-1}
 
 The following table is version 1.1. You get this version if the data that you're viewing is from March 2024 to June 2024.
 
@@ -1304,7 +1425,7 @@ The following table is version 1.1. You get this version if the data that you're
 
 
 #### Enterprise account summary CSV version 1.0
-{: #enterprise-account-summary-csv-version-10}
+{: #enterprise-account-summary-csv-version-1-0}
 
 You will get CSV version 1.0 if the data that you're viewing is from October 2024 to March 2024.
 
@@ -1420,7 +1541,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 {: tab-title="Enterprise Resource Usage"}
 
 #### Enterprise account summary CSV version 0.2
-{: #enterprise-account-summary-csv-version-02}
+{: #enterprise-account-summary-csv-version-0-2}
 
 You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2024.
 
@@ -1534,7 +1655,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 {: tab-title="Enterprise Resource Usage"}
 
 #### Enterprise account summary CSV version 0.1
-{: #enterprise-account-summary-csv-version-01}
+{: #enterprise-account-summary-csv-version-0-1}
 
 You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
 
