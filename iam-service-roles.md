@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-11-22"
+lastupdated: "2024-12-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -980,6 +980,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.couchdbextension-instance.write` | Make changes to an Extension for Apache CouchDB instance | Manager |
 | `cloudantnosqldb.legacy-root-credential.revoke` | Revoke legacy credential tied to your instance URL | Administrator, Manager |
 | `cloudantnosqldb.legacy-credentials.revoke` | Migrate instance to IAM only  | Administrator, Manager |
+| `cloudantnosqldb.account-current-dbs.read` | Read the current number of databases | Manager, Monitor, Reader, Writer |
 {: caption="Service actions - Cloudant" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloudantnosqldb"}
@@ -1296,6 +1297,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.ticket-configurations.delete` | Delete Ticket Configuration | Manager, Writer |
 | `compliance.ticket-configurations.read` | Read Ticket Configuration | Manager, Reader, Writer |
 | `compliance.tickets.read` | Read Tickets Metadata | Manager, Reader, Writer |
+| `compliance.documents.create` | Create Document | Manager, Writer |
+| `compliance.documents.read` | View Document | Manager, Reader, Writer |
+| `compliance.facts.read` | View Facts | Manager, Reader, Writer |
 {: caption="Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
@@ -2042,6 +2046,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/iops_range` | retrieve the disk range and the corresponding iops range | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/instance_types` | Retrieve the list of available instance types | Administrator, Editor, Operator, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/availability` | Update deployment availability | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/external_restore` | Restore the backup from customer COS bucket(external) to IBM Db2 SaaS. | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/custom_setting` | custom db settings | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Db2 on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}
@@ -5743,6 +5749,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Share Broker | The role to create and delete the bindings between the real and shadow share. |
 | Share Remote Account Accessor | To create cross account accessor from origin share belonging to another account |
+| Share Snapshot Operator | The role provides the ability to manage share snapshots |
 {: row-headers}
 {: caption="Service roles - File Storage for VPC" caption-side="top"}
 {: tab-title="Service roles"}
@@ -5766,6 +5773,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.share.accessor-binding.read` | Get Share Accessor Binding | Administrator, Editor, Operator, Viewer |
 | `is.share.accessor-binding.list` | List Share Accessor Bindings | Administrator, Editor, Operator, Viewer |
 | `is.share.share.allow-remote-account-access` | To create accessor share pointing to origin share in another account. | Share Remote Account Accessor |
+| `is.share.snapshot.create` | Create share snapshot | Administrator, Share Snapshot Operator |
+| `is.share.snapshot.read` | Read share snapshot | Administrator, Share Snapshot Operator, Viewer |
+| `is.share.snapshot.list` | List Share Snapshots | Administrator, Share Snapshot Operator, Viewer |
+| `is.share.snapshot.update` | Patch Share Snapshot | Administrator, Share Snapshot Operator |
+| `is.share.snapshot.delete` | Delete Share Snapshot | Administrator, Share Snapshot Operator |
 {: caption="Service actions - File Storage for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.share"}
@@ -8055,7 +8067,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.workload.read` | Access to read workload which includes sessions and jobs | Manager, Reader, Writer |
 | `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
-| `quantum-computing.account-analytics-filter.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
+| `quantum-computing.account-analytics-filters.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}

@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-11-20"
+lastupdated: "2024-12-03"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -32,6 +32,8 @@ You can assign any identity access to view or manage a service ID by using acces
 If the Restrict service ID creation IAM account setting is enabled, then everyone in the account, including account owners, is blocked from creating service IDs unless they are assigned explicit access. For more information, see [Restricting users from creating service IDs](/docs/account?topic=account-restrict-service-id-create).
 {: important}
 
+
+
 ## Creating a service ID by using the console
 {: #create_serviceid}
 {: ui}
@@ -39,7 +41,6 @@ If the Restrict service ID creation IAM account setting is enabled, then everyon
 To create a service ID, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
-
 1. Click **Create**.
 1. Follow the process to create a name and description for your service ID.
 1. Click **Create**.
@@ -49,8 +50,6 @@ Then, hover on the row of a service ID to click the **Actions** icon ![Actions i
 ## Creating a service ID by using the CLI
 {: #create_serviceid-cli}
 {: cli}
-
- 
 
 To create a service ID, use the [**`ibmcloud iam service-id-create`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_create) command:
 
@@ -94,8 +93,6 @@ ibmcloud iam service-id-create sample-test -d 'hello, world!' --lock
 ## Creating a service ID by using the API
 {: #create_serviceid-api}
 {: api}
-
- 
 
 To create a service ID, call the [IAM Identity Services API](/apidocs/iam-identity-token-api#create-service-id) as shown in the following example:
 
@@ -180,7 +177,7 @@ For more information, see the [IAM Identity Services API](https://cloud.ibm.com/
 
 List the service IDs in your account to review the applications that have access to your services by completing the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**. 
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
 1. Review the list of service IDs.
 
 ## Listing service IDs by using the CLI
@@ -285,7 +282,7 @@ You can view the details of a service ID, including the access groups, assigned 
 
 To view service ID details, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**. 
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
 1. Identify the row of the service ID that you want to view the details of, and click it.
 1. Review the details of access groups, access policies, and API keys.
 
@@ -412,8 +409,6 @@ For more information, see the [IAM Identity Services API](/apidocs/iam-identity-
 You can update a service ID by changing the name and description at any time. You can also delete and create new API keys as needed or update the assigned access policies. Hover on the row of a service ID to click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") to manage your service ID.
 
 Any changes that you make to an existing service ID, such as changing the assigned policies or deleting an API key that is used, might cause service interruptions to applications that use that service ID.
-
-
 
 ## Updating a service ID by using the CLI
 {: #update_serviceid-cli}
@@ -550,10 +545,10 @@ For more information, see the [IAM Identity Services API](https://cloud.ibm.com/
 {: #delete_serviceid}
 {: ui}
 
-To delete a service ID, complete the following steps: 
+To delete a service ID, complete the following steps: 
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
-1. Identify the row of the service ID that you want to remove, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove**. 
+1. Identify the row of the service ID that you want to remove, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Remove**. 
 1. Click **Remove**.
 
 Deleting a service ID also deletes all associated API keys and assigned policies. This action can't be undone, and might cause disruptions between dependent services.

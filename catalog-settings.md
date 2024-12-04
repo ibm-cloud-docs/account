@@ -2,8 +2,7 @@
 
 copyright:
 years: 2019, 2024
-
-lastupdated: "2024-10-25"
+lastupdated: "2024-11-25"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
@@ -34,7 +33,10 @@ All private catalogs that are in an account inherit filters that are set by the 
 {: ui}
 
 Users in your account have access to all products in the public catalog by default. If you turn off the visibility of the public {{site.data.keyword.cloud_notm}} catalog, users can't use the console to create instances of products unless you give them access to a private catalog in your account.
-To update what products are visible to users, go to **Manage** > **Catalogs** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
+To update what products are visible to users, go to **Manage** > **Catalogs** > **Settings > Set the visibility of the {{site.data.keyword.cloud_notm}} catalog in this account** in the {{site.data.keyword.cloud_notm}} console.
+
+This setting also controls visibility of the {{site.data.keyword.IBM}} module registry and community registry. For more information, see [Open source offerings](/docs/overview?topic=overview-whatis-platform#solutions-open-source).
+
 Some products aren't affected by catalog visibility settings. Users can create instances of these products by using an API or the CLI. For more information, see [Known issues and limitations](/docs/account?topic=account-known-issues).
 {: important}
 
@@ -76,7 +78,12 @@ For more detailed examples of how you can leverage filtering at the private cata
 {: #set-public-visibility-cli}
 {: cli}
 
-Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs. Use the following command to turn off visibility of the public catalog to all users in your account.
+Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs.
+
+This setting also controls visibility of the {{site.data.keyword.IBM}} module registry and community registry. For more information, see [Open source offerings](/docs/overview?topic=overview-whatis-platform#solutions-open-source).
+
+Use the following command to turn off visibility of the public catalog to all users in your account.
+
 ```bash
 ibmcloud catalog filter hide-ibm-public-catalog
 ```
@@ -121,7 +128,12 @@ Set filters at a private catalog level for fine-grained control of which product
 {: #set-public-visibility-api}
 {: api}
 
-Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs. Use the following command to turn off visibility of the public catalog to all users in your account.
+Users in your account have access to all products in the {{site.data.keyword.cloud_notm}} public catalog by default. You can make products available only to the users you choose by turning off visibility to the {{site.data.keyword.cloud_notm}} catalog and adding the products to your private catalogs.
+
+This setting also controls visibility of the {{site.data.keyword.IBM}} module registry and community registry. For more information, see [Open source offerings](/docs/overview?topic=overview-whatis-platform#solutions-open-source).
+
+Use the following command to turn off visibility of the public catalog to all users in your account.
+
 ```bash
 curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount"
 -H "accept: */*"
@@ -323,5 +335,3 @@ curl -X "GET" \
 {: codeblock}
 
 Each event in the audit logs table by default identifies each change with the email of the user that made the change, the type of change, a description of the change, and the date that the change was made.
-
-

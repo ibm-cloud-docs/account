@@ -15,7 +15,7 @@ subcollection: account
 # Updating account ownership
 {: #transfer}
 
-You can update your {{site.data.keyword.cloud}} account's ownership and transfer your account to a different owner by creating a support case with information about the new owner. You can transfer only Pay-As-You-Go or Subscription accounts. If you're the owner of an account with classic infrastructure, you can also set a [trusted profile](/docs/account?topic=account-create-trusted-profile) as the alternative account owner. The alternative account owner has the highest level of classic infrastructure permissions and more capabilities. An alternative account owner ensures that you always have a secure way to manage account ownership if the primary account owner leaves your organization or isn't available.
+You can update your {{site.data.keyword.cloud}} account's ownership and transfer your account to a different owner by creating a support case with information about the new owner. You can transfer only Pay-As-You-Go or Subscription accounts. If you're the owner of an account with classic infrastructure, you can also set a [trusted profile](/docs/account?topic=account-create-trusted-profile) as the alternative account owner. The alternative account owner has the highest level of classic infrastructure permissions and more capabilities. An alternative account owner helps ensure that you always have a secure way to manage account ownership. For example, if the primary account owner leaves your organization or isn't available.
 {: shortdesc}
 
 Every {{site.data.keyword.cloud_notm}} account must have a valid account owner. Accounts without a valid account owner are subject to suspension and possible termination.
@@ -24,11 +24,11 @@ Every {{site.data.keyword.cloud_notm}} account must have a valid account owner. 
 ## Transferring an account that you own
 {: #transfer-own}
 
-As the account owner, you can transfer the account ownership only by creating a support case. This cannot be done by self-service.  The new owner must be an existing user within the account. If the person that you want to own the account isn't an existing user, [invite them to the account](/docs/account?topic=account-iamuserinv)before you create the support case.
+As the account owner, you can transfer the account ownership only by creating a support case. The new owner must be an existing user within the account. If the person that you want to own the account isn't an existing user, [invite them to the account](/docs/account?topic=account-iamuserinv) before you create the support case.
 
 To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**. In the case description, include the full name and IBMid of the user that is to be the new account owner. {{site.data.keyword.cloud_notm}} Support completes the ownership change as directed by the account owner.
 
-When you transfer your account to a new owner, the previous account owner is automatically removed from the account. The new owner can invite the account's previous owner back to the transferred account as necessary. To ensure the security of the account, {{site.data.keyword.cloud_notm}} Support cannot modify the account's user list.
+When you transfer your account to a new owner, the previous account owner is automatically removed from the account. The new owner can invite the account's previous owner back to the transferred account as necessary. To help ensure the security of the account, {{site.data.keyword.cloud_notm}} Support cannot modify the account's user list.
 {: note}
 
 ## Transferring an account from another owner
@@ -48,15 +48,14 @@ In the support case to request an account transfer, you must attach an official 
 - A signature of an executive at your company
 - The account number of the account to transfer
 
-When the ownership is transferred to the new owner, be aware that the previous account owner will be automatically removed from that account, and the new owner will have full access to the account. The new owner needs to invite the account's previous owner back to the account to keep them within it.
+To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**. Attach the official request document to the case before you submit it.
+
+When the ownership is transferred to the new owner, the previous account owner is automatically removed from that account, and the new owner has full access to the account. The new owner needs to invite the account's previous owner to the account if they still need access.
 {: note}
 
-   When you're logged in to the account, you can find the account number in the {{site.data.keyword.cloud_notm}} menu bar next to the account name. For example, you might see `1234567 - IBM`, where the account number is 1234567.
-   {: tip}
+When you're logged in to the account, you can find the account number in the {{site.data.keyword.cloud_notm}} menu bar next to the account name. For example, you might see `1234567 - IBM`, where the account number is 1234567.
 
-   ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-faq.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption}
-   
-To create the support case, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar, and click **Create a case**. Attach the official request document to the case before you submit it.
+![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-switcher.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="How to switch between trusted profiles and accounts" caption-side="bottom"}
 
 ## Granting alternative account owner access
 {: #grant-alt-owner}
@@ -66,7 +65,7 @@ Alternative account owner access grants the following assignments:
 - Administrator role on All Account Management services
 - A classic infrastructure flag that indicates the trusted profile is the alternative account owner
 
-You can set only one trusted profile as the alternative account owner. A trusted profile with alternative account owner access can't be modified after creation. If you create an additional alternative account owner, an error occurs. For more informaiton, see [troubleshooting](/docs/account?topic=account-ts_alt-owner).
+You can set only one trusted profile as the alternative account owner. A trusted profile with alternative account owner access can't be modified after creation. If you create another alternative account owner, an error occurs. For more information, see [troubleshooting](/docs/account?topic=account-ts_alt-owner).
 {: important}
 
 To set a trusted profile as the alternative account owner, complete the following steps.
@@ -81,7 +80,7 @@ To set a trusted profile as the alternative account owner, complete the followin
 1. Review the policies and permissions that the trusted profile is assigned.
 1. Click **Create**.
 
-The trusted profile with alternative account owner access is indicated by `alt owner` in the trusted profiles table.
+The `alt owner` label indicates the trusted profile with alternative account owner access in the trusted profiles table.
 
 Users with the administrator, operator, or editor role on the IAM Identity service can grant or revoke access to the trusted profile at any time by [updating the trust relationship](/docs/account?topic=account-trusted-profile-update&interface=ui#trust).
 {: note}
