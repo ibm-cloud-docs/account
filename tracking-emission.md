@@ -1,13 +1,11 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-11-20"
-
+lastupdated: "2024-12-05"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
 subcollection: account
-
 ---
 
 {{site.data.keyword.attribute-definition-list}}
@@ -15,13 +13,15 @@ subcollection: account
 # Tracking account emissions with carbon calculator
 {: #tracking-emissions-account}
 
+
+
 To view emissions data for your account, you must be assigned the viewer or higher role on the billing service to view and export the emissions data for the entire account. An account or billing administrator role is required to grant other users access to the Billing service. For more information about assigning access, see [Assigning access to account management services](/docs/account?topic=account-account-services&interface=api#billing-acct-mgmt-api).
 
 Emissions from key greenhouse gases are measured in metric tons of carbon dioxide-equivalent (kgCO~2~e). You can view your account's emissions data in the {{site.data.keyword.cloud_notm}} console. Go to **Manage** > **Billing and Usage** > **Carbon Calculator** to view the following widgets:
 
 * Total emissions: The total emissions are calculated by comparing the energy-related usage with data center energy sources. You can download the total emissions data in CSV format.
 
-* Emissions by location: The energy consumption is calculated by using usage units such as CPU. Two or more resources are required to display the location data. The size represents how much energy is generated and the color represents the carbon emissions factor that is the emission rate for grams of carbon dioxide-equivalent emissions that are released per unit of energy produced.
+* Emissions by location: The energy consumption is calculated by using usage units such as CPU. Two or more resources are required to display the location data.
 
 * Emissions by service: The GHG emissions are broken down by service.
 
