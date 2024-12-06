@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-12-03"
+lastupdated: "2024-12-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2048,6 +2048,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `PATCH /v5/:platform/deployments/:deployment_id/availability` | Update deployment availability | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/external_restore` | Restore the backup from customer COS bucket(external) to IBM Db2 SaaS. | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/custom_setting` | custom db settings | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/external_rollforward` | roll forwarding database based on the options provided by clients | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Db2 on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}
