@@ -23,7 +23,7 @@ With an {{site.data.keyword.cloud}} subscription, you get discounted usage for p
 If you buy a subscription, your account is converted to a Subscription account type. For more details about other benefits of Subscription accounts, see [Account types](/docs/account?topic=account-accounts).
 {: tip}
 
-If you are looking for information about software subscriptions, see [Managing software subscriptions](/docs-draft/account?topic=account-software-subscription).
+
 
 ## How subscription credit is spent
 {: #subscription-basics}
