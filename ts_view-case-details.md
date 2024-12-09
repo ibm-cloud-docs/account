@@ -16,8 +16,8 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I view all cases in the account v2?
-{: #ts_viewcasedetails-v2}
+# Why can't I view all cases in the account?
+{: #ts_viewcasedetails}
 
 You can't view all of the cases in the account because you don't have access to view all users in the account.
 {: shortdesc}

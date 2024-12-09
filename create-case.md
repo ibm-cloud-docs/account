@@ -51,8 +51,7 @@ Complete the following steps to create a support case:
 
 After your support case is created, you can follow its progress on the [Manage cases page](/unifiedsupport/cases).
 
-IBM support cases can also be opened in the cloud console as well as in the [IBM support portal](https://www.ibm.com/mysupport/s/){: external}. These cases can only be managed in the IBM support portal and access is controlled in the IBM support portal. For more information about access, see [Managing Your Support Account Access](https://www.ibm.com/mysupport/s/article/Managing-Your-Support-Account-Access?language=en_US){: external}.
-{: note}
+
 
 ## Creating a support case by using the API
 {: #create-case-api}
