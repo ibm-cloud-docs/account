@@ -18,7 +18,7 @@ subcollection: account
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to manage users in your account. You can invite users, cancel invitations, remove a user from an account, or update a user's IBMid.
 {: shortdesc}
 
-All users must accept an invitation to become an active user within a new account. [Learn more.](#pending-invitations)
+All users must accept an invitation to become an active user within a new account. For more information, see [Canceling or resending pending invitations](/docs/account?topic=account-iamuserinv&interface=ui#pending-invitations)
 {: important}
 
 ## Before you begin

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-11-08"
+lastupdated: "2024-12-09"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -19,9 +19,6 @@ The following table shows the availability zones that are considered to be zero-
 
 | Data Center | Location      |
 |-------------|---------------|
-| DAL05	      | Dallas        |
-| DAL07       | Dallas        |
-| DAL08	      | Dallas        |
 | DAL09	      | Dallas        |
 | DAL10	      | Dallas        |
 | DAL12       | Dallas        |
@@ -30,7 +27,6 @@ The following table shows the availability zones that are considered to be zero-
 | SAO01       |	Sao Paulo     |
 | SAO04       | Sao Paulo     |
 | SAO05       |	Sao Paulo     |
-| WDC03       | Washington DC |
 | WDC04       | Washington DC |
 | WDC07       | Washington DC |
 {: caption="Zero-emissions data centers in North and South America" caption-side="bottom"}
@@ -54,7 +50,6 @@ The following table shows the availability zones that are considered to be zero-
 | MAD05       | Madrid        |
 | MIL01       |	Milan         |
 | PAR01       | Paris         |
-| PAR04       | Paris         |
 {: caption="Zero-emissions data centers data centers in Europe" caption-side="bottom"}
 {: #europe}
 {: tab-title="Europe"}

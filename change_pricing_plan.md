@@ -18,10 +18,12 @@ subcollection: account
 You can update the pricing plan of an {{site.data.keyword.Bluemix}} service if plan updates are enabled for the specific service. For example, you might want to upgrade or reduce your pricing plan. You can update the service's pricing plan from the service instance dashboard.
 {: shortdesc}
 
+You can update the pricing plan only for certain services. Pricing plans for some services cannot be reduced, or downgraded, to a prior plan. See the documentation for the specific service for information about what plan changes are allowed.
+
+If plan updates are enabled for the service, a **Plan** option is displayed on the service instance dashboard. Each service has a different set of steps to follow if you update your plan. For more information, see section [How you're charged](/docs/account?topic=account-charges).
+
 Are you looking for details about upgrading your account type? See [Upgrading your account](/docs/account?topic=account-upgrading-account) for more information.
 {: note}
-
-You can update the pricing plan only for certain services. If plan updates are enabled for the service, a **Plan** option is displayed on the service instance dashboard. Each service has a different set of steps to follow if you update your plan. For more information, see section [How you're charged](/docs/account?topic=account-charges).
 
 ## Updating a plan in the console
 {: #changing-plan-ui}

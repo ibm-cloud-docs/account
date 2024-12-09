@@ -157,7 +157,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.databases-for-postgresql}} | [{{site.data.keyword.databases-for-postgresql}} service endpoints integration](/docs/databases-for-postgresql?topic=databases-for-postgresql-service-endpoints)|
 | {{site.data.keyword.databases-for-redis}} | [{{site.data.keyword.databases-for-redis}} service endpoints integration](/docs/databases-for-redis?topic=databases-for-redis-service-endpoints)|
 | {{site.data.keyword.Db2_on_Cloud_short}} | [Connectivity options](/docs/Db2onCloud?topic=Db2onCloud-connect_options) |
-| {{site.data.keyword.dashdbshort}} | [Connecting to a private endpoint](/docs/Db2whc?topic=Db2whc-connect_options#priv_endpt) |
+| {{site.data.keyword.dashdbshort}} | [Connecting to a private endpoint: {{site.data.keyword.cloud_notm}} service endpoint](/docs/Db2whc?topic=Db2whc-connect_options#priv_endpt) |
 | {{site.data.keyword.en_short}} | [Regions and endpoints](/docs/event-notifications?topic=event-notifications-en-regions-endpoints) |
 |{{site.data.keyword.messagehub}} | [Restricting network access using the Enterprise plan](/docs/EventStreams?topic=EventStreams-restrict_access) |
 | {{site.data.keyword.hscrypto}} | [{{site.data.keyword.hscrypto}} service endpoints integration](/docs/services/hs-crypto?hs-crypto-private-endpoints=hs-crypto-private-endpoints)|

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-11-22"
+lastupdated: "2024-12-09"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -327,3 +327,18 @@ A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_no
 {: faq}
 
 You might receive multiple invoices if you have an Enterprise Savings Plan and service commitment on different orders. If you have service commitments at multiple sites, you receive separate invoices for each.
+
+
+## Why doesn't the usage report that I downloaded match what I see on the usage page?
+{: #usage-report-vs-usage-ui}
+{: faq}
+
+The amount that is displayed on the **Usage** page is updated more regularly than the downloaded csv usage report. The discrepancy in the usage amount might be because of the time delay between processing the data that is seen on the usage page and the csv reports. Though there is a discrepancy throughout the month, the usage amount must be the same, when all reports are finalized after the sixth of the subsequent month. If the billing discrepancy persists, the amount that is shown in the {{site.data.keyword.Bluemix_notm}} console is the accurate amount. 
+
+To resolve any billing discrepancy issues, contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
+
+## Why do my costs on the **Cost Analysis** page differ from the usage page?
+{: #usage-report-vs-cost-analysis}
+{: faq}
+
+The data that is used by the **Cost Analysis** page is based on the downloadable [csv usage reports](/docs/account?topic=account-viewingusage&interface=ui#export-csv). Therefore, it is vulnerable to the same billing discrepancies that arise between the console's **Usage** page and the CSV file, as detailed [here](#usage-report-vs-usage-ui).
