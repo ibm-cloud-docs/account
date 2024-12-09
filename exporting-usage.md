@@ -47,7 +47,7 @@ If you convert your account to an enterprise account, you'll need to follow thes
 ## Requesting access to historical data
 {: #access-historical-data}
 
-When you enable your account to export usage data, the COS bucket, by default, collects data from the current month, but it can collect data from as far back as a year. So if it's June 2024, you can only view usage as early as June 2023, but you'll always be able to view data from that far back. Meaning that if you enabled this feature in June 2023, and it is now June 2024, you can view usage data from June 2022 to June 2024. To get historical data, you need to create a support case.
+When you enable your account to export usage data, the COS bucket, by default, collects data from the current month as provided by the automatic daily export from the Billing service, but it can contain data from as far back as a year if you request historical data. So if it's June 2024, you can only view usage as early as June 2023, but you'll always be able to view data from that far back. Meaning that if you enabled this feature in June 2023, and it is now June 2024, you can view usage data from June 2022 to June 2024. To get historical data, you need to create a support case.
 
 To request access to historical data, use the following steps:
 
