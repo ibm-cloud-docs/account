@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-11-21"
+lastupdated: "2024-12-09"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -19,7 +19,6 @@ Each support case is assigned a unique number and severity level based on the de
 {: shortdesc}
 
 To view and manage your support cases, go to the [Manage cases page](/unifiedsupport/cases). If you're a classic infrastructure user, and you don't see a listing of a previous case, click **View classic infrastructure cases**.
-
 
 
 

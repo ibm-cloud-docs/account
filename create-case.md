@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2024
-lastupdated: "2024-11-21"
+lastupdated: "2024-12-09"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -50,7 +50,6 @@ Complete the following steps to create a support case:
 1. Click **Next**, review your case summary, and click **Submit case**. After you receive email verification for the case, follow the instructions for further communication on the issue.
 
 After your support case is created, you can follow its progress on the [Manage cases page](/unifiedsupport/cases).
-
 
 
 

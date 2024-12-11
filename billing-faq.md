@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2024
-lastupdated: "2024-11-22"
+lastupdated: "2024-12-09"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -18,14 +18,14 @@ content-type: faq
 # FAQs for billing and usage
 {: #billusagefaqs}
 
-FAQs for billing and usage might include questions about credit cards, promo codes, or other billing-related issues. To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+FAQs for billing and usage might include questions about credit cards, promo codes, or other billing-related issues. To find all FAQs for {{site.data.keyword.cloud}}, see the [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## What is a GB-hour?
 {: #gb-hour}
 {: faq}
 
-Runtime and container usage is charged based on the following variables:
+Runtime and container usage are charged based on the following variables:
 
 * How much memory your runtime or container uses, in gigabytes (GB).
 * The duration that memory is used.
@@ -43,13 +43,13 @@ Multiply the two values together, and the result is the GB-hour.
 {: #bandwidth-usage-overages}
 {: faq}
 
-If you provision multiple servers, you can potentially reduce future bandwidth overage charges by pooling your servers' bandwidth. For more information, see [Optimizing your bandwidth usage](/docs/bare-metal?topic=bare-metal-bm-view-bandwidth-graphs#bm-optimize-bandwidth-usage). Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to request a quote for more server bandwidth.
+If you provision multiple servers, you can potentially reduce bandwidth overage charges in the future by pooling your servers' bandwidth. For more information, see [Optimizing your bandwidth usage](/docs/bare-metal?topic=bare-metal-bm-view-bandwidth-graphs#bm-optimize-bandwidth-usage). Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to request a quote for more server bandwidth.
 
 ##  What's the difference between a Pay-As-You-Go and a Subscription account?
 {: #billable-account-types}
 {: faq}
 
-With Pay-As-You-Go accounts, you're billed monthly for your resource usage. Your resource usage consists of recurring and fluctuating costs. This account type is a good fit for developers or companies that want to explore the entire {{site.data.keyword.cloud_notm}} catalog but have low-volume or variable workloads. You pay only for what you use or commit to on a monthly basis, with no long-term contracts. Usage consists of products, services, and resources.
+With Pay-As-You-Go accounts, you're billed monthly for your resource usage. Your resource usage consists of recurring and fluctuating costs. This account type is a good fit for developers or companies that want to explore the entire {{site.data.keyword.cloud_notm}} catalog but have low-volume or variable workloads. You pay only for what you use or commit to monthly, with no long-term contracts. Usage consists of products, services, and resources.
 
 With Subscription accounts, you buy a subscription for an amount of credit to spend on resource usage within a certain time period. In exchange for this spending commitment, you get a discount on your usage costs. For more information about the differences between account types, see [Account types](/docs/account?topic=account-accounts).
 
@@ -82,7 +82,7 @@ If your payments are managed outside of the console, go to [{{site.data.keyword.
 {: #pay-method}
 {: faq}
 
-For a Pay-As-You-Go account, you must have an active credit card on file. Our Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types might enable you to use other payment options. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to inquire about payment options.
+For a Pay-As-You-Go account, you must have an active credit card on file. With the Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types, you might be able to use other payment options. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to inquire about payment options.
 
 ## How do I pay an invoice?
 {: #pay-invoice}
@@ -99,9 +99,9 @@ To make your payment outside of the console, complete these steps:
    An option to save this information for future use is available.
    {: note}
 
-A confirmation and a transaction number is displayed when the transaction is complete.
+A confirmation and a transaction number are displayed when the transaction is complete.
 
-The credit card payment option is available only for the US and Canada.
+The option for credit card payment is available only for the US and Canada.
 {: note}
 
 ## Why didn't my credit card process?
@@ -262,11 +262,11 @@ Credit might take a few hours to appear in your account. To see whether a credit
 
 If the credit isn't on the Usage page, go to **Invoices** and click link with the date for your next recurring invoice. If you don't see the credit on the next recurring invoice, it is not yet added to your account. Check back later to verify that you received the credit.
 
-## How do I get answers to my Startup with IBM questions?
+## How do I get answers to my Startup with {{site.data.keyword.IBM}} questions?
 {: #startup-ibm}
 {: faq}
 
-Startup with IBM Program, which was formerly the IBM Global Entrepreneur Program (GEP), is available by going to the [Startup with IBM Program](https://www.ibm.com/partnerplus/isv){: external}. The awarding and extension of credits through this IBM corporate program isn't directly supported by {{site.data.keyword.cloud_notm}} Support. If your application to the program is approved, credits might be referred to as the Technology Incubator Program on an {{site.data.keyword.cloud_notm}} Invoice.
+Startup with IBM Program, which was formerly the {{site.data.keyword.IBM}} Global Entrepreneur Program (GEP), is available by going to the [Startup with {{site.data.keyword.IBM}} Program](https://www.ibm.com/partnerplus/isv){: external}. The awarding and extension of credits through this {{site.data.keyword.IBM}} corporate program isn't directly supported by {{site.data.keyword.cloud_notm}} Support. If your application to the program is approved, credits might be referred to as the Technology Incubator Program on an {{site.data.keyword.cloud_notm}} Invoice.
 
 ## Where can I find my credits for {{site.data.keyword.IBM_notm}} corporate programs?
 {: #ibm-corporate-credits}
@@ -291,7 +291,7 @@ Go to the [Support Center](/unifiedsupport/supportcenter){: external} page by cl
 
 You can view the primary contact and address that is associated with an account by going to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and selecting **Company profile**.
 
-## How can I ensure that my account is secure to avoid charges due to unauthorized access?
+## How can I help ensure that my account is secure to avoid charges due to unauthorized access?
 {: #unauth-charges}
 {: faq}
 
@@ -318,7 +318,7 @@ No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/clou
 {: #manual-credit}
 {: faq}
 
-A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_notm}} as part of a special program, reimbursement from an illegitimate charge, or other reasons unrelated to a promotion. Manual credits are issued by {{site.data.keyword.Bluemix_notm}} and no customer action is necessary. You can view any manual credits that are applied to your account completing the following steps:
+A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_notm}} as part of a special program, reimbursement from an illegitimate charge, or other reasons unrelated to a promotion. Manual credits are issued by {{site.data.keyword.Bluemix_notm}} and no customer action is necessary. You can view any manual credits that are applied to your account by completing the following steps:
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions and credits**.
 1. From the **Type** dropdown, select **Manual credit**.
 
@@ -327,3 +327,18 @@ A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_no
 {: faq}
 
 You might receive multiple invoices if you have an Enterprise Savings Plan and service commitment on different orders. If you have service commitments at multiple sites, you receive separate invoices for each.
+
+
+## Why doesn't the usage report that I downloaded match what I see on the usage page?
+{: #usage-report-vs-usage-ui}
+{: faq}
+
+The amount that is displayed on the [Usage](/billing/usage) page is updated more regularly than the downloaded CSV usage report. The discrepancy in the usage amount might be because of the time delay between processing the data that you see on the Usage page and the information in the CSV reports. The discrepancy during the current month resolves when all reports finalize after the sixth of the subsequent month. If the billing discrepancy persists, the amount that is shown in the {{site.data.keyword.Bluemix_notm}} console is the accurate amount.
+
+To resolve any billing issues, contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
+
+## Why do my costs on the Cost analysis page differ from the usage page?
+{: #usage-report-vs-cost-analysis}
+{: faq}
+
+The data that the [Cost analysis](/billing/costanalysis) page uses is based on the downloadable [CSV usage reports](/docs/account?topic=account-viewingusage&interface=ui#export-csv). During the current month, the Cost analysis page is vulnerable to the same billing discrepancies that arise between the Usage page and the CSV usage reports. For more information, see [Why doesn't the usage report that I downloaded match what I see on the usage page?](#usage-report-vs-usage-ui).
