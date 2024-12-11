@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-11-21"
+lastupdated: "2024-12-11"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 
@@ -63,7 +63,8 @@ To assign access to an individual resource in the account or access to all resou
 If a user doesn't have a role on the resource group that contains the resources, they can see the resources, but can't access the resources by going to the Resource list page in the account to start working with them. Assign the Viewer role or higher on the resource group itself to ensure that a user can access the resource.
 {: note}
 
-
+Increased policy limits for service IDs are available for select accounts. To take advantage of the increased policy limits, assign access to {{site.data.keyword.messagehub}} or {{site.data.keyword.cos_full_notm}} services. You must also scope the access policies to a specific service instance, resource type, and resource ID.
+{: preview}
 
 ### Assigning access within a resource group in the console
 {: #access-to-resources-console}
@@ -143,6 +144,16 @@ You can repeat this type of policy as needed for each available resource group i
 
     ```bash
     ibmcloud iam service-policy-create name@example.com --roles Administrator --attributes service_group_id=IAM
+    ```
+    {: codeblock}
+
+   Increased policy limits for service IDs are available for select accounts. To take advantage of the increased policy limits, assign access to {{site.data.keyword.messagehub}} or {{site.data.keyword.cos_full_notm}} services. You must also scope the access policies to a specific service instance, resource type, and resource ID.
+   {: preview}
+
+    * This example assigns access to **{{site.data.keyword.cos_short}}** with the `Manager` role. It scopes the access to a specific service instance, resource type, and resource ID:
+
+    ```bash
+    ibmcloud iam service-policy-create SERVICE_ID service-name cloud-object-storage --service-instance SERVICE_INSTANCE_GUID --resource-type RESOURCE_TYPE --resource RESOURCE --roles Manager 
     ```
     {: codeblock}
 
@@ -415,7 +426,62 @@ fmt.Println(string(b))
 You can assign access to a group of services. To assign access to **All Identity and Access enabled services**, specify `serviceType` for the `name` attribute, and use the `value` `service`. To assign access to **All Account Management services**, specify `serviceType` for the `name` attribute, and use the `value` `platform_service`. To assign access to the subset of account management services **All IAM Account Management services**, specify `service_group_id` for the `name` attribute, and use the `value` `IAM`.
 {: tip}
 
+Increased policy limits for service IDs are available for select accounts. To take advantage of the increased policy limits, assign access to {{site.data.keyword.messagehub}} or {{site.data.keyword.cos_full_notm}} services. You must also scope the access policies to a specific service instance, resource type, and resource ID.
+{: preview}
 
+The following sample request gives a service ID `Reader` role access to an instance of {{site.data.keyword.cos_short}}. It scopes the access to a specific service instance, resource type, and resource ID:
+
+```bash
+curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
+  "type": "access",
+  "description": "Reader role for SERVICE_NAME's RESOURCE_NAME",
+  "subjects": [
+    {
+      "attributes": [
+        {
+          "name": "iam_id",
+          "value": "$SERVICE_ID"
+        }
+      ]
+    }'
+  ],
+  "roles":[
+    {
+      "role_id": "crn:v1:bluemix:public:iam::::serviceRole:Reader"
+    }
+  ],
+  "resources":[
+    {
+      "attributes": [
+        {
+          "name": "accountId",
+          "value": "$ACCOUNT_ID"
+        },
+        {
+          "name": "serviceName",
+          "value": "cloud-object-storage"
+        },,
+        {
+          "name": "serviceInstance",
+          "value": "$INSTANCE_ID",
+          "operator": "stringEquals"
+        }
+        {
+          "name": "resourceType",
+          "value": "$RESOURCE_TYPE",
+          "operator": "stringEquals"
+        },
+        {
+          "name": "resource",
+          "value": "$RESOURCE_NAME",
+          "operator": "stringEquals"
+        }
+      ]
+    }
+  ]
+}'
+```
+{: codeblock}
 
 ### Assigning access within a resource group by using the API
 {: #access-resourcegroups-api}
@@ -454,7 +520,26 @@ To assign access to resources by using Terraform, use the following steps:
    ```
    {: codeblock}
 
+  
+   Increased policy limits for service IDs are available for select accounts. To take advantage of the increased policy limits, assign access to {{site.data.keyword.messagehub}} or {{site.data.keyword.cos_full_notm}} services. You must also scope the access policies to a specific service instance, resource type, and resource ID.
+   {: preview}
+
+   The following example gives a service ID the `Reader` role access to an instance of {{site.data.keyword.cos_short}} by using [ibm_iam_user_policy](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy). It scopes the access to a specific service instance, resource type, and resource ID:
    
+   ```terraform
+   resource "ibm_iam_service_policy" "policy" {
+    iam_service_id = "$SERVICE_ID"
+    roles          = ["Reader"]
+
+   resources {
+    service              = "cloud_object_storage"
+    resource_instance_id = "$SERVICE_INSTANCE_ID"
+    resource_type = "$RESOURCE_TYPE"
+    resource      = "$RESOURCE"
+   }
+   }
+   ```
+   {: codeblock}
 
    You can specify the name of the service for which you want to assign access to on the `service` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
 
