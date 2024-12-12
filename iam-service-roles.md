@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-12-06"
+lastupdated: "2024-12-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7660,6 +7660,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `power-iaas.network-interfaces.delete` | The ability to delete a network interface | Manager |
 | `power-iaas.network-interfaces.read` | The ability to get information of a network interface | Manager, Reader |
 | `power-iaas.network-interfaces.update` | The ability to update information of a network interface | Manager |
+| `power-iaas.datacenter-private.read` | The ability to get information of a private datacenter | Manager, Reader |
+| `power-iaas.datacenter-private.list` | The ability to list information of a private datacenter | Manager, Reader |
 {: caption="Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-iaas"}
