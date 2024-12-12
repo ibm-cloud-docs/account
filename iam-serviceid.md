@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-12-03"
+lastupdated: "2024-12-12"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -20,7 +20,10 @@ subcollection: account
 A service ID identifies a service or application similar to how a user ID identifies a user. You can create a service ID and use it to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user leaves an organization and is deleted from the account, the service ID remains. This way, your application or service stays up and running.
 {: shortdesc}
 
-When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the UI. After you create your service ID, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies that are assigned to each service ID that you create.
+For some examples of how a service ID can be used, go to [Using HMAC credentials]((/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main)) in the {{site.data.keyword.objectstorageshort}} documentation, or this {{site.data.keyword.sqlquery_notm}} video on [How to use the {{site.data.keyword.sqlquery_notm}} REST API](https://www.youtube.com/watch?v=jDZKF0CnUvU){: external}.
+{: tip}
+
+When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the console. After you create your service ID, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies that are assigned to each service ID that you create.
 
 The access policies that are associated with a service ID enable specific actions that can be taken when that service ID is used to access a specific service. A service ID can be assigned multiple policies for different Identity and access-enabled services, and even different instances of a single service. For example, you have two services with two service instances each. You might assign the Viewer role for all available instances of one service and assign the Editor role for only one instance of a second service. This way, you can customize access to multiple services, but use a single API key for authentication to all.
 
@@ -29,7 +32,7 @@ All users have access to create a service ID in an account to which they are a m
 You can assign any identity access to view or manage a service ID by using access management tags. For more information, see [Attaching tags to a service ID](/docs/account?topic=account-attaching-and-detaching-tags-on-a-resource&interface=ui#am-tags-serviceid-ui).
 {: tip}
 
-If the Restrict service ID creation IAM account setting is enabled, then everyone in the account, including account owners, is blocked from creating service IDs unless they are assigned explicit access. For more information, see [Restricting users from creating service IDs](/docs/account?topic=account-restrict-service-id-create).
+If **Restrict service ID creation** is enabled in your IAM account settings, then everyone in the account, including account owners, is blocked from creating service IDs unless they are assigned explicit access. For more information, see [Restricting users from creating service IDs](/docs/account?topic=account-restrict-service-id-create).
 {: important}
 
 
@@ -908,11 +911,3 @@ if err != nil {
 {: go}
 
 For more information, see the [IAM Identity Services API](https://cloud.ibm.com/apidocs/iam-identity-token-api#unlock-service-id).
-
-## Examples of how to use a service ID
-{: #examples_serviceid}
-
-The following are examples of how a Service ID is used with the {{site.data.keyword.objectstorageshort}} and {{site.data.keyword.sqlquery_notm}} services.
-
-* {{site.data.keyword.objectstorageshort}} - [Use the {{site.data.keyword.Bluemix_notm}} CLI](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main).
-* {{site.data.keyword.sqlquery_notm}} - [How to use the {{site.data.keyword.sqlquery_notm}} REST API](https://www.youtube.com/watch?v=jDZKF0CnUvU){: external}.
