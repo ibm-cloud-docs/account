@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-12-05"
+lastupdated: "2024-12-13"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -13,7 +13,8 @@ subcollection: account
 # Tracking account emissions with carbon calculator
 {: #tracking-emissions-account}
 
-
+The carbon emissions factor, a ratio of emissions per unit of energy, is being updated for higher accuracy and is temporarily unavailable. For urgent inquiries related to carbon emissions factor data, contact support.
+{: important}
 
 To view emissions data for your account, you must be assigned the viewer or higher role on the billing service to view and export the emissions data for the entire account. An account or billing administrator role is required to grant other users access to the Billing service. For more information about assigning access, see [Assigning access to account management services](/docs/account?topic=account-account-services&interface=api#billing-acct-mgmt-api).
 
