@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2022, 2024
-lastupdated: "2024-11-04"
+lastupdated: "2024-12-13"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -39,7 +39,6 @@ Emissions data is currently tracked for a subset of services, but more services 
 If service data is not displayed, it might be because:
 * Emissions data isn't tracked for the service.
 * Data for newly added services and current quarter results are not yet available because it can take approximately two months to populate.
-* Some service instances might be running on [zero-emissions data centers](/docs/account?topic=account-zero-emission-data-centers).
 
 Emission data is available for the following services:
 

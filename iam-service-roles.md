@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-12-06"
+lastupdated: "2024-12-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -585,6 +585,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.analytics.list` | The ability to view or download the metadata associated with the experiment. | Manager |
 | `apprapp.config-aggregator-scope.read` | Retrieve the account scope of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
 | `apprapp.clientsdk-apikey.encrypt` | The ability to obtain the encrypted ClientSDK apikey for a given plain ClientSDK apikey. | Manager |
+| `apprapp.config-aggregator.reconcile` | Perform the reconciliation of the resources metadata | Manager |
 {: caption="Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
@@ -4756,6 +4757,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.serviceid-group.create` | Create a new service ID group. | Administrator, Operator |
 | `iam-identity.serviceid-group.update` | Update the details of an existing service ID group. | Administrator, Editor, Operator |
 | `iam-identity.serviceid-group.delete` | Delete a service ID group. | Administrator, Operator |
+| `iam-identity.serviceid-group.list` | List service ID groups of an account. | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - IAM Identity Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-identity"}
@@ -7660,6 +7662,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `power-iaas.network-interfaces.delete` | The ability to delete a network interface | Manager |
 | `power-iaas.network-interfaces.read` | The ability to get information of a network interface | Manager, Reader |
 | `power-iaas.network-interfaces.update` | The ability to update information of a network interface | Manager |
+| `power-iaas.datacenter-private.read` | The ability to get information of a private datacenter | Manager, Reader |
+| `power-iaas.datacenter-private.list` | The ability to list information of a private datacenter | Manager, Reader |
 {: caption="Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-iaas"}
