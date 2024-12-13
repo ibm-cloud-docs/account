@@ -256,6 +256,7 @@ toc:
                 label: Managing subscriptions and commitments
                 topics:
                 - subscriptions.md
+                - software-subscription.md
                 - service-level-commit.md
           - topicgroup:
                 label: Working with codes and credits
