@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-30"
+lastupdated: "2024-12-13"
 
 keywords: restrict api keys, block users from creating api keys, restrict api key creation
 
@@ -20,7 +20,7 @@ By default, all members of an account can create {{site.data.keyword.cloud}} API
 
 Restricting the ability to create API keys makes sense if you want users in your account to always log in interactively, meaning you don't want automation scripts to run that can log in users automatically by using an API key. For more information about API keys, see [Managing user API keys](/docs/account?topic=account-userapikey).
 
-
+If API key creation is [enterprise-managed]{: tag-cyan}, the setting defined at the account-level applies if the enterprise-managed setting is less strict or removed.
 
 ## Restricting API key creation in the console
 {: #allow-all-api-create}
