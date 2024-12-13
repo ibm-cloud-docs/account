@@ -12,10 +12,8 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing subscriptions
+# Managing platform and support subscriptions
 {: #subscriptions}
-
-
 
 With an {{site.data.keyword.cloud}} subscription, you get discounted usage for platform services and support by committing to a minimum spending commitment for a certain period of time. You can buy your first subscription, add more subscriptions, and monitor subscription usage on the Subscriptions page in the {{site.data.keyword.cloud_notm}} console.
 {: shortdesc}
@@ -23,7 +21,7 @@ With an {{site.data.keyword.cloud}} subscription, you get discounted usage for p
 If you buy a subscription, your account is converted to a Subscription account type. For more details about other benefits of Subscription accounts, see [Account types](/docs/account?topic=account-accounts).
 {: tip}
 
-
+If you are looking for information about SaaS subscriptions, see [Managing SaaS subscriptions](/docs/account?topic=account-software-subscription).
 
 ## How subscription credit is spent
 {: #subscription-basics}
