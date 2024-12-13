@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2024
-lastupdated: "2024-10-30"
+lastupdated: "2024-12-13"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -23,7 +23,7 @@ Improve the security of your account by requiring account users to enter their l
 To review and end active sessions to help maintain the security of your account, see [Monitoring your login sessions](/docs/account?topic=account-monitor-your-session).
 {: tip}
 
-
+If limits for login sessions are [enterprise-managed]{: tag-cyan}, the setting defined at the account-level applies if the enterprise-managed setting is less strict or removed.
 
 ## Before you begin
 {: #work-sessions-access}
