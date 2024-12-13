@@ -41,7 +41,7 @@ Depending on the service, your commitment might be in terms of dollars or metric
 ## Signing up for a commitment
 {: #signup-slc}
 
-Most account types can order a service commitment. Work with [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/cloud?contactmodule){: external} to create a commitment quote based on your hardware, software, or service needs and the spending amount for the period that you want to commit to.
+Most account types can order a service commitment. Work with [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/cloud?contactmodule){: external} to create a commitment quote based on your hardware or service needs and the spending amount for the period that you want to commit to.
 
 You can have multiple commitments for different services active at the same time.
 {: note}
