@@ -4,7 +4,7 @@ copyright:
 
   years: 2017, 2024
 
-lastupdated: "2024-12-13"
+lastupdated: "2024-12-30"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -20,7 +20,7 @@ subcollection: account
 A service ID identifies a service or application similar to how a user ID identifies a user. You can create a service ID and use it to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user leaves an organization and is deleted from the account, the service ID remains. This way, your application or service stays up and running.
 {: shortdesc}
 
-For some examples of how a service ID can be used, go to [Using HMAC credentials]((/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main)) in the {{site.data.keyword.objectstorageshort}} documentation, or this {{site.data.keyword.sqlquery_notm}} video on [How to use the {{site.data.keyword.sqlquery_notm}} REST API](https://www.youtube.com/watch?v=jDZKF0CnUvU){: external}.
+For some examples of how a service ID can be used, go to [Using HMAC credentials](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main) in the {{site.data.keyword.objectstorageshort}} documentation, or this {{site.data.keyword.sqlquery_notm}} video on [How to use the {{site.data.keyword.sqlquery_notm}} REST API](https://www.youtube.com/watch?v=jDZKF0CnUvU){: external}.
 {: tip}
 
 When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the console. After you create your service ID, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies that are assigned to each service ID that you create.
