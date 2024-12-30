@@ -3,7 +3,7 @@
 copyright:
   years: 2024
 
-lastupdated: "2024-11-21"
+lastupdated: "2024-12-30"
 
 keywords: pricing, global catalog api
 
@@ -665,7 +665,7 @@ The following table shows the response body fields and their descriptions. For m
 | `metrics`                  | Specifications of resources or operations that determine usage for pricing. |
 | `part_ref`                 | The IBM assigned part reference number for the metric. |
 | `metric_id`                | The metric ID or part number. |
-| `tier_model`               | The tier pricing model [^tabletext]. Possible values are `Simple Tier`, `Graduated Tier`, `Linear Tier`, or `Block (Step) Tier`. For this example it's `Linear Tier`. For more information, see [How you're charged](/docs/billing-usage?topic=billing-usage-charges#charges-services). |
+| `tier_model`               | The tier pricing model [^tabletext]. Possible values are `Simple Tier`, `Graduated Tier`, `Linear Tier`, or `Block (Step) Tier`. For this example it's `Linear Tier`. For more information, see [How you're charged](/docs/account?topic=account-charges). |
 | `resource_display_name`    | Display name of the resource. This is how the metric appears in the catalog. |
 | `charge_unit_display_name` | Display name of the charge unit. Unit friendly display name for the `charge_unit`. |
 | `charge_unit_name`         | An assigned name for the charge unit. This is the ID that is used to measure usages for the metric. |
@@ -682,7 +682,7 @@ The following table shows the response body fields and their descriptions. For m
 [^tabletext]: For tiered pricing, you pay based on your runtime and service consumption. However, tiered charges add more pricing levels, often offering discounted rates on products for higher consumption tiers. Tiered pricing is offered in simple, graduated, linear, or block.
 
 ### Interpreting pricing API results
-{: #graduated_tier}
+{: #interpreting_pricing}
 
 In the following table, we're showing an example of what the linear tier pricing could be. For linear tier, the total amount is the result of multiplication of the unit price per resource and usage quantity.
 

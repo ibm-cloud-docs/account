@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-10-17"
+lastupdated: "2024-12-30"
 
 keywords: apptio, cost benefit analysis
 
@@ -620,7 +620,6 @@ The following table is version 1.2 and the most recent CSV version. You get this
 {: tab-group="account-instance-1-2"}
 {: #service-name-instance-1-2}
 {: tab-title="Account Instance Usage"}
-
 
 ### Instances CSV version 1.1
 {: #instances-csv-version-1-1}

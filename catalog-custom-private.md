@@ -108,6 +108,7 @@ You can enhance the look and feel of your private catalog to match your brand by
 1. Go to **Manage** > **Catalogs**, then click **Private catalogs**.
 1. Click the **Overflow menu** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") on the row of the private catalog that you want to add a banner for, then click **Edit**.
 1. Add a URL to your custom banner in the **Catalog banner** field, or you can click **Upload** to add an image directly.
+   
    The maximum recommended image size is 944 x 260 pixels.
    {: tip}
 
