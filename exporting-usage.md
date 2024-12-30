@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2024
-lastupdated: "2024-12-09"
+lastupdated: "2024-12-30"
 
 keywords: apptio, cost benefit analysis
 
@@ -59,14 +59,14 @@ To request access to historical data, use the following steps:
 
    To maintain security, do not include any personal information, sensitive data, or device or service credentials in case responses. For example, don't include passwords, API keys, secrets, or credit card information.
    {: important}
+
 1. Click **Next**, review your case summary, and click **Submit case**. After you receive email verification for the case, follow the instructions for further communication on the issue.
 
 After your support case is created, you can follow its progress on the [Manage cases page](/unifiedsupport/cases).
 {: tip}
 
-
 ## Enabling your account to export usage data by using Terraform
-{: #attach-terraform}
+{: #enabling-account-terraform}
 {: terraform}
 
 Before you can attach enable your account to export usage data by using Terraform, make sure that you have completed the following:
@@ -197,7 +197,7 @@ manifest.json
 For more information about the usage snapshot API, see [Setup the snapshot configuration](/apidocs/metering-reporting#create-reports-snapshot-config){: external}.
 
 ## Understanding CSV table headings and JSON report fields
-{: #understand-reports}
+{: #understand-JSON-reports}
 
 The following tables shows the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
 
@@ -804,7 +804,6 @@ The following table is version 1.2 and the most recent CSV version. You get this
 {: tab-group="account-instance-1-2"}
 {: #service-name-instance-1-2}
 {: tab-title="Account Instance Usage"}
-
 
 #### Instances CSV version 1.1
 {: #instances-csv-version-1-1}

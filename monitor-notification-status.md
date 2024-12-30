@@ -4,7 +4,7 @@ copyright:
 
   years: 2024
 
-lastupdated: "2024-11-11"
+lastupdated: "2024-12-30"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR, status page, status query, incident, maintenance, search query, notifications, view notifications, set notifications,
 
@@ -137,7 +137,7 @@ To view the Incident reports page and check RCAs, complete the following steps:
 1. See the table for the incident reports and click the **Download** icon ![Download icon](../icons/download.svg "Download") to download each report.
 
 ## Viewing notifications
-{: #viewing-notifications}
+{: #view-notifications}
 
 Access essential account information by clicking the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) in the console menu bar. To help you stay up to date with the latest announcements, maintenance plans, and other impacts to your account experience, a visual indicator is displayed next to the icon when a new notification is available. 
   

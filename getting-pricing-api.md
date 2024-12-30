@@ -682,7 +682,7 @@ The following table shows the response body fields and their descriptions. For m
 [^tabletext]: For tiered pricing, you pay based on your runtime and service consumption. However, tiered charges add more pricing levels, often offering discounted rates on products for higher consumption tiers. Tiered pricing is offered in simple, graduated, linear, or block.
 
 ### Interpreting pricing API results
-{: #graduated_tier}
+{: #interpreting_pricing}
 
 In the following table, we're showing an example of what the linear tier pricing could be. For linear tier, the total amount is the result of multiplication of the unit price per resource and usage quantity.
 

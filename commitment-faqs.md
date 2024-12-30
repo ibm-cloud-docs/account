@@ -65,7 +65,7 @@ Contact your [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/clou
 Since you committed to a certain amount for a certain period of time and you didn't reach it, {{site.data.keyword.Bluemix}} have the rights to charge you with the remaining amount.
 
 ## Can I convert my US-based USD Pay-As-You-Go to a Subscription account? If so, what kind of impact does the commitment model have?
-{: #paygo-to-subscription}
+{: #payasyougo-to-subscription-account}
 {: faq}
 
 Yes, you can convert your account from US-based USD Pay-As-You-Go to an Enterprise Savings Plan, but it will be only effective after the term end of your former plan.
