@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-12-30"
+  years: 2023, 2025
+lastupdated: "2025-01-02"
 
 keywords: apptio, cost benefit analysis
 
@@ -870,8 +870,8 @@ The following tables show the correlation between the heading titles in your CSV
 
 The following are the JSON report section APIs for the different CVS headings:
 
-* Billing Units: [Enterprise Billing Units: List billing units](/apidocs/enterprise-apis/billing-unit#list-billing-units){: external}
-* Credit Pools and Overages: [Enterprise Billing Units: Get credit pools](/apidocs/enterprise-apis/billing-unit#get-credit-pools){: external}
+* Billing Units: [Enterprise Billing Units: List billing units](/apidocs/enterprise-apis/billing-unit?code=go#list-billing-units){: external}
+* Credit Pools and Overages: [Enterprise Billing Units: Get credit pools](/apidocs/enterprise-apis/billing-unit?code=go#get-credit-pools){: external}
 * Enterprise Usage Summary and Enterprise Resource Usage: [Enterprise Usage Reports API: Get usage reports for enterprise entities](/apidocs/enterprise-apis/resource-usage-reports#get-resource-usage-report){: external}
 
 You can view other versions of the CSV if you have earlier enterprise account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
