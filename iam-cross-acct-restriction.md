@@ -26,7 +26,7 @@ If you want to know which identities in your account access a specific resource,
 
 Anticipating the name and number of users who are impacted by limiting identity interactions can be difficult. To turn on report-only mode and observe the potential impact of limiting access to resources in your account, complete the following steps:
 
-1. Create an instance of {{site.data.keyword.at_full_notm}} in the [catalog](/catalog/services/ibm-cloud-activity-tracker){: external}. For more information, see [Getting started with IBM Cloud Activity Tracker](/docs/activity-tracker?topic=activity-tracker-getting-started).
+1. Create an instance of {{site.data.keyword.at_full_notm}} in the [catalog](/catalog/services/ibm-cloud-activity-tracker){: external}. For more information, see [Getting started with {{site.data.keyword.cloud_notm}} Activity Tracker](/docs/activity-tracker?topic=activity-tracker-getting-started).
 
    You must create an instance of the Activity Tracker service in the `eu-de` region to start tracking events.
    {: important}
