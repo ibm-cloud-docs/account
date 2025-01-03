@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2023-02-07"
+  years: 2022, 2025
+lastupdated: "2025-01-03"
 
 keywords: catalog, restrict visibility, hide object, restrict by user, filter catalog, private catalog, catalog management service, public catalog, preset configuration, preset
 
@@ -37,6 +37,6 @@ Complete the following steps to create a catalog for your preset configurations:
 1. Click **Create**.
 
 ## Authorizing access to private catalogs
-{: #customcatalog-access-object}
+{: #authorize-access-catalog}
 
 To authorize users to work with the preset configurations in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
