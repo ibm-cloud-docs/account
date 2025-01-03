@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2020, 2021
+  years: 2020, 2025
 
-lastupdated: "2021-08-24"
+lastupdated: "2025-01-03"
 
 keywords: migrate, migrating data center, migrate resources, data center
 
@@ -12,12 +12,7 @@ subcollection: account
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:gif: data-image-type='gif'}
-{:tip: .tip}
-{:external: target="_blank" .external}
+{{site.data.keyword.attribute-definition-list}}
 
 # Migrating resources to a different data center
 {: #migrate-data-center}
@@ -49,7 +44,7 @@ Complete the following steps to migrate resources to a new data center:
 * [Planning for VPC instances](/docs/vpc?topic=vpc-vsi_best_practices)
 * [Getting started with virtual servers](/docs/virtual-servers?topic=virtual-servers-getting-started-tutorial)
 * [Getting started with bare metal servers](/docs/bare-metal?topic=bare-metal-getting-started)
-* [Comparing {{site.data.keyword.cloud_notm}} Classic and VPC infrastructure environments](/docs/cloud-infrastructure?topic=cloud-infrastructure-compare-infrastructure)
+* [Comparing {{site.data.keyword.cloud_notm}} Classic and VPC infrastructure environments](/docs/infrastructure-hub?topic=infrastructure-hub-compare-infrastructure)
 
 1. Copy your data to a new server by using the following methods. You must establish connectivity between the old and new servers and have sufficient storage in the new server.
 

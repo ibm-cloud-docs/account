@@ -1,9 +1,9 @@
 ---
 copyright:
 
-  years: 2017, 2024
+  years: 2017, 2025
 
-lastupdated: "2024-11-25"
+lastupdated: "2025-01-03"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -345,7 +345,7 @@ To add the resources to a resource group, complete the following steps:
 {: #add_to_rgs_api}
 {: api}
 
-See [Managing catalog settings](/docs/account?topic=account-filter-account#set-public-visibility-api) to set the visibility of the {{site.data.keyword.cloud}} catalog and to control access to products in the public catalog and private catalogs for users in your account.
+See [Managing catalog settings](/docs/account?topic=account-filter-account&interface=api#set-public-visibility-api) to set the visibility of the {{site.data.keyword.cloud}} catalog and to control access to products in the public catalog and private catalogs for users in your account.
 
 ## Viewing resources in a resource group
 {: #view_rg_resources}
