@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-12-19"
+  years: 2023, 2025
+lastupdated: "2025-01-03"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -91,7 +91,7 @@ Retrieve the CRN associated with your private catalog. You need this to establis
    {: note}
 
 1. Click **Continue**.
-1. [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile#tp-access) with at least the Viewer role on the Schematic service and resource groups in the account.
+1. [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=ui#tp-access) with at least the Viewer role on the Schematic service and resource groups in the account.
 
    To determine any other necessary permissions for your specific use case, look at the template to see what resources it creates. For example, if the template creates VPC resources, then the trusted profile requires permission to create those VPC resources as well.
    {: tip}

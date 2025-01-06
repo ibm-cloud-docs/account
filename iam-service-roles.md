@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2024-12-21"
+lastupdated: "2025-01-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7940,7 +7940,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.public-ca-key.get` | retrieves the public CA key  | Manager, Reader, Writer |
 | `privileged-access-gateway.ssh.login` | ssh login | Manager, Writer |
 | `privileged-access-gateway.kube.login` | kube login action that allows users to get kube config details of a cluster  | Manager, Writer |
-| `privileged-access-gateway.rdp.login` | privileged-access-gateway.ssh.login | Manager, Writer |
 | `privileged-access-gateway.session-all.list` | list all the active sessions | Manager |
 | `privileged-access-gateway.instance.upgrade` | Perform a software update of the gateway associated an instance. | Administrator, Editor, Operator |
 | `privileged-access-gateway.info` | get PAG Info | Manager, Reader, Writer |
@@ -7958,14 +7957,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.break-glass-cluster.add` | add breakglass cluster config | Manager, Writer |
 | `privileged-access-gateway.break-glass-cluster.remove` | remove a breakglass cluster config | Manager, Writer |
 | `privileged-access-gateway.break-glass-cluster-all.list` | privileged-access-gateway.break-glass-cluster-all.list | Manager |
-| `privileged-access-gateway.https.login` | privileged-access-gateway.https.login | Manager, Writer |
-| `privileged-access-gateway.https.logout` | privileged-access-gateway.https.logout | Manager, Writer |
+| `privileged-access-gateway.https.authorize` | privileged-access-gateway.https.authorize | Manager, Writer |
 | `privileged-access-gateway.https.add` | privileged-access-gateway.https.add | Manager, Writer |
 | `privileged-access-gateway.https.remove` | privileged-access-gateway.https.remove | Manager, Writer |
-| `privileged-access-gateway.https.enable` | privileged-access-gateway.https.enable | Manager, Writer |
-| `privileged-access-gateway.https.disable` | privileged-access-gateway.https.disable | Manager, Writer |
-| `privileged-access-gateway.https.all.list` | privileged-access-gateway.https.all.list | Manager |
-| `privileged-access-gateway.https.get` | privileged-access-gateway.https.get | Manager, Writer |
+| `privileged-access-gateway.https.all.list` | privileged-access-gateway.https.all.list | Manager, Reader, Writer |
+| `privileged-access-gateway.https.get` | privileged-access-gateway.https.get | Manager, Reader, Writer |
 | `privileged-access-gateway.https.update` | privileged-access-gateway.https.update | Manager, Writer |
 | `privileged-access-gateway.pagtoken.revoke` | privileged-access-gateway.pagtoken.revoke | Manager, Writer |
 {: caption="Service actions - Privileged Access Gateway" caption-side="top"}
