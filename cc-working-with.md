@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-12-13"
+  years: 2022, 2025
+lastupdated: "2025-01-07"
 
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
@@ -143,4 +143,4 @@ The goal of the calculation method is to associate electricity consumption and c
 
 The carbon calculation methodology has been independently validated by Bureau Veritas for the following key services: Virtual Private Cloud (VPC) and Virtual Servers for VPC, Cloud Object Storage, and Kubernetes Service. [View validation](https://cloud.ibm.com/media/docs/downloads/account/bureau-veritas-validation.pdf){: external}.
 
-For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v3.pdf){: external}.
+For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v4.pdf){: external}.
