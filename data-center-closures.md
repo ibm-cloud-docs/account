@@ -28,7 +28,6 @@ The following table shows the location with the associated data center that is s
 
 | Location | Data Center to Close |  Recommended Data Centers | Migration Deadline |
 |----------|----------------------|---------------------------|--------------------|
-| Milan    | MIL01                | Frankfurt, Madrid, London, Amsterdam, or any WW IBM Cloud data center | 10 December 2025 |
 | Dallas   | DAL09: POD3 and POD4 | DAL10, DAL12, DAL13       | 4 March 2025       |
 {: caption="Data center that is closing in 2025" caption-side="top"}
 
