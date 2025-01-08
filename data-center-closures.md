@@ -4,7 +4,7 @@ copyright:
 
   years: 2020, 2025
 
-lastupdated: "2025-01-07"
+lastupdated: "2025-01-08"
 
 keywords: data centers, data center support, datacenter, data center closure
 
@@ -28,10 +28,9 @@ The following table shows the location with the associated data center that is s
 
 | Location | Data Center to Close |  Recommended Data Centers | Migration Deadline |
 |----------|----------------------|---------------------------|--------------------|
+| Milan    | MIL01                | Frankfurt, Madrid, London, Amsterdam, or any WW IBM Cloud data center | 10 December 2025 |
 | Dallas   | DAL09: POD3 and POD4 | DAL10, DAL12, DAL13       | 4 March 2025       |
 {: caption="Data center that is closing in 2025" caption-side="top"}
-
-
 
 The following table describes important dates that you need to be aware of if you have services that run in the DAL09 data center. You receive notifications if you have services in the data center that is closing.
 
@@ -44,3 +43,16 @@ The following table describes important dates that you need to be aware of if yo
 | 10 February 2025 | Last date to submit migration assistance request. |
 | 04 March 2025    | Last date to migrate before consolidation of DAL09 - POD3 and POD4 datacenter begins. |
 {: caption="Timeline for DAL09 data center migration" caption-side="top"}
+
+
+The following table describes important dates that you need to be aware of if you have services that run in the MIL01 data center. You receive notifications if you have services in the data center that is closing.
+
+| Date             | Data Center Migration Milestone |
+|------------------|---------------------------------|
+| 07 January 2025   | Official Announcement for all impacted customers in MIL01 datacenter. |
+| 07 January 2025   | No New Account provisioning in impacted datacenter. |
+| 10 June 2025  | Last date to provision services in impacted datacenter. |
+| 09 September 2025 | Network maintenance MIL01: 10:AM US Eastern Time (14:00 GMT). |
+| 10 November 2025 | Last date to submit migration assistance request. |
+| 10 December 2025    | Last date to migrate before closure of MIL01 datacenter. |
+{: caption="Timeline for MIL01 data center migration" caption-side="top"}

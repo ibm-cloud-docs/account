@@ -16,14 +16,14 @@ subcollection: account
 # Managing user API keys
 {: #userapikey}
 
-A federated user or non-federated user can create an API key to use in the CLI or as part of automation to log in as your user identity. You can use the console, CLI, or API to manage your {{site.data.keyword.cloud}} API keys by listing your keys, creating keys, updating keys, or deleting keys.
+A federated user or nonfederated user can create an API key to use in the CLI or as part of automation to log in as your user identity. You can use the console, CLI, or API to manage your {{site.data.keyword.cloud}} API keys by listing your keys, creating keys, updating keys, or deleting keys.
 {: shortdesc}
 
 The API key inherits all assigned access for the user identity for which it is created, and the access is not limited to just the account where the API key is created because it inherits any policies that are assigned to the user. So, if the user has access to resources from multiple accounts, then the API key inherits the access from all accounts. Therefore, it is possible that a user's API key can be used to generate a token and access resources that a user has access to outside of the account where the API key was created.
 
 
 
-To avoid this, you can enable cross-account restrictions. With cross-account restrictions, you can specify an allowlist of accounts that can access resources in your account. You can also leave the allowlist empty. This way, if a user tries to access resources in your account with an API key that is created in different account, they are denied access For more information, see [Managing cross-account restrictions](/docs/account?topic=account-cross-acct).
+
 
 
 
@@ -58,10 +58,10 @@ As an {{site.data.keyword.Bluemix_notm}} user you might want to use an API key w
 To create an API key for your user identity in the UI, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
-2. Click **Create an {{site.data.keyword.Bluemix_notm}} API key**.
-3. Enter a name and description for your API key.
-4. Click **Create**.
-5. Then, click **Show** to display the API key. Or, click **Copy** to copy and save it for later, or click **Download**.
+1. Click **Create an {{site.data.keyword.Bluemix_notm}} API key**.
+1. Enter a name and description for your API key.
+1. Click **Create**.
+1. Then, click **Show** to display the API key. Or, click **Copy** to copy and save it for later, or click **Download**.
 
 For security reasons, the API key is only available to be copied or downloaded at the time of creation. If the API key is lost, you must create a new API key.
 {: tip}
@@ -164,7 +164,7 @@ apikeyID = *apiKey.ID
 {: #before-you-begin-userapikey}
 {: terraform}
 
-Before you can manage user API keys by using Terraform, make sure that you have completed the following:
+Before you can manage user API keys by using Terraform, make sure that you complete the following steps:
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
@@ -353,7 +353,7 @@ For more information, see the [Terraform documentation](https://registry.terrafo
 {: #lock-user-key-ui}
 {: ui}
 
-For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key is indicated by the **Locked** icon ![Locked icon](images/locked.svg "Locked").
+For platform API keys that represent your user identity you can prevent the API key from being deleted by locking it. A locked API key has the **Locked** icon ![Locked icon](images/locked.svg "Locked").
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
 2. Identify the row of the API key that you want to lock, and click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Lock**.
@@ -377,7 +377,7 @@ ibmcloud iam api-key-lock (NAME|UUID) [-f, --force]
 **Command options**:
 
 NAME (required)
-:   Name of the API key to be locked, exclusive with UUID.
+:   The name of the API key to be locked, exclusive with UUID.
 
 UUID (required)
 :   UUID of the API key to be locked, exclusive with NAME.
@@ -551,7 +551,7 @@ if err != nil {
 {: codeblock}
 {: go}
 
-## Locking and unlocking an API key by using the API
+## Locking and unlocking an API key by using the Terraform
 {: #lock-user-key-terra}
 {: terraform}
 
