@@ -99,6 +99,7 @@ curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys' -H 'Authorization: Bearer TO
   "account_id": "ACCOUNT_ID"
   "store_value": false
   "action_when_leaked": "delete"
+  "support_sessions": false
 }'
 ```
 {: codeblock}
@@ -170,6 +171,10 @@ For `action_when_leaked`, possible values are "none", "disable", or "delete". Th
 - **disable**: Disabling the key immediately blocks its ability to authenticate and access services. You can re-enable the key later if necessary.
 - **delete**: The API key is permanently deleted from your account and can no longer be used to authenticate. This action cannot be undone.
 - **none**: The key remains active and can still be used to access resources.
+
+For `support_sessions`, define whether you can manage CLI login sessions for the API key:
+- **true**: Create login sessions for this API key, which you can manage by reviewing or revoking sessions. For more information, see [Monitoring your login sessions](/docs/account?topic=account-monitor-your-session).
+- **false**: No sessions are created or tracked. You can't revoke or review any logins and you must delete or rotate the API key itself to block access.
 
 ## Before you begin
 {: #before-you-begin-userapikey}
