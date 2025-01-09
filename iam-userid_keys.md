@@ -73,12 +73,17 @@ For security reasons, the API key is only available to be copied or downloaded a
 
 To create an API key by using the CLI, use the following command:
 
-1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE]`, and specify a name, description, and file for saving your key. See the following example:
+1. Enter `ibmcloud iam api-key-create NAME [-d DESCRIPTION] [-f, --file FILE] [--action-if-leaked VALUE]`, and specify a name, description, and file for saving your key. See the following example:
 
 ```bash
-ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file
+ibmcloud iam api-key-create MyKey -d "this is my API key" --file key_file --action-if-leaked "DELETE"
 ```
 {: codeblock}
+
+For `--action-if-leaked`, possible values are "NONE", "DISABLE", or "DELETE". The default action is "DISABLE".
+- **DISABLE**: Disabling the key immediately blocks its ability to authenticate and access services. You can re-enable the key later if necessary.
+- **DELETE**: The API key is permanently deleted from your account and can no longer be used to authenticate. This action cannot be undone.
+- **NONE**: The key remains active and can still be used to access resources.
 
 ## Creating an API key by using the API
 {: #create_user_key-api}
@@ -93,6 +98,7 @@ curl -X POST 'https://iam.cloud.ibm.com/v1/apikeys' -H 'Authorization: Bearer TO
   "iam_id": "IBMid-123WEREW",
   "account_id": "ACCOUNT_ID"
   "store_value": false
+  "action_when_leaked": "delete"
 }'
 ```
 {: codeblock}
@@ -159,6 +165,11 @@ apikeyID = *apiKey.ID
 ```
 {: codeblock}
 {: go}
+
+For `action_when_leaked`, possible values are "none", "disable", or "delete". The default action is "disable".
+- **disable**: Disabling the key immediately blocks its ability to authenticate and access services. You can re-enable the key later if necessary.
+- **delete**: The API key is permanently deleted from your account and can no longer be used to authenticate. This action cannot be undone.
+- **none**: The key remains active and can still be used to access resources.
 
 ## Before you begin
 {: #before-you-begin-userapikey}
