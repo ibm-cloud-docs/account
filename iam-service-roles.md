@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2025-01-08"
+lastupdated: "2025-01-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8139,7 +8139,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.instance.read` | Instance read | Manager, Reader, Writer |
 | `quantum-computing.session.create` | Create a Session | Manager, Writer |
 | `quantum-computing.account-configuration.read` | Read Account Configuration. Must be granted by a policy that does not specify service instance. | Manager |
-| `quantum-computing.workload.read` | Access to read workload which includes sessions and jobs | Manager, Reader, Writer |
 | `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-filters.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
