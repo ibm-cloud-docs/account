@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2025-01-10"
+lastupdated: "2025-01-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7925,7 +7925,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.https.authorize` | privileged-access-gateway.https.authorize | Manager, Writer |
 | `privileged-access-gateway.https.add` | privileged-access-gateway.https.add | Manager, Writer |
 | `privileged-access-gateway.https.remove` | privileged-access-gateway.https.remove | Manager, Writer |
-| `privileged-access-gateway.https.all.list` | privileged-access-gateway.https.all.list | Manager, Reader, Writer |
+| `privileged-access-gateway.https-all.list` | privileged-access-gateway.https-all.list | Manager, Reader, Writer |
 | `privileged-access-gateway.https.get` | privileged-access-gateway.https.get | Manager, Reader, Writer |
 | `privileged-access-gateway.https.update` | privileged-access-gateway.https.update | Manager, Writer |
 | `privileged-access-gateway.pagtoken.revoke` | privileged-access-gateway.pagtoken.revoke | Manager, Writer |
