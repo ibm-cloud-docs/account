@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-13"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -46,7 +46,7 @@ To restrict a user to using only specific IP addresses, complete the following s
 4. For **Cloud platform**, enter the IP addresses. The IP addresses listed are the only ones from which this user can log in to {{site.data.keyword.Bluemix}}.
 5. For **Classic infrastructure**, enter the IP addresses. The IP addresses listed are the only ones from which the user can call a classic infrastructure API.
 
-      You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
+      You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma.
       {: note}
 
 6. Click **Save**.
@@ -67,9 +67,9 @@ If you are assigned the following access, you can update the restricted IP addre
 To restrict all users to using only specific IP addresses, complete the following steps:
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
 1. From the Account section, enable **Restrict IP address access**.
-1. Enter the IP addresses. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
+1. Enter the IP addresses. The IP addresses listed are the only ones from which users and service IDs using an API key in the account can log in to {{site.data.keyword.Bluemix}}.
 
-   You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
+   You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma.
    {: note}
 
 1. Click **Save**.
@@ -85,7 +85,8 @@ If you are assigned the following access, you can update the restricted IP addre
 To restrict all users to using only specific IP addresses, complete the following steps:
 
 1. In your Terraform configuration file, find the Terraform code that you used to create the `iam_account_settings_instance`.
-1. Enter the IP addresses that you want to restrict all users to using. The IP addresses listed are the only ones from which users in the account can log in to {{site.data.keyword.Bluemix}}.
+1. Enter the IP addresses that you want to restrict all users to using. The IP addresses listed are the only ones from which users and service IDs using an API key in the account can log in to {{site.data.keyword.Bluemix}}.
+
    ```terraform
     resource "ibm_iam_account_settings" "iam_account_settings_instance" {
       allowed_ip_addresses = "17.5.7.8, 17.5.7.8 - 17.5.9.5, 17.5.7.8.0/16"
@@ -111,5 +112,5 @@ To restrict all users to using only specific IP addresses, complete the followin
 
 For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_account_settings#allowed_ip_addresses).
 
-You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma. If there is already an IP address restriction that exists, the resource overrides the restriction.
+You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma.
 {: note}
