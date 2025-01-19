@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-12-09"
+  years: 2015, 2025
+lastupdated: "2025-01-07"
 
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
@@ -333,7 +333,7 @@ You might receive multiple invoices if you have an Enterprise Savings Plan and s
 {: #usage-report-vs-usage-ui}
 {: faq}
 
-The amount that is displayed on the [Usage](/billing/usage) page is updated more regularly than the downloaded CSV usage report. The discrepancy in the usage amount might be because of the time delay between processing the data that you see on the Usage page and the information in the CSV reports. The discrepancy during the current month resolves when all reports finalize after the sixth of the subsequent month. If the billing discrepancy persists, the amount that is shown in the {{site.data.keyword.Bluemix_notm}} console is the accurate amount.
+The amount that is displayed on the [Usage](/billing/usage) page is updated more regularly than the downloaded CSV usage report. The discrepancy in the usage amount might be because of the time delay between processing the data that you see on the Usage page and the information in the CSV reports. The discrepancy during the current month resolves when all reports finalize after the ninth of the subsequent month. If the billing discrepancy persists, the amount that is shown in the {{site.data.keyword.Bluemix_notm}} console is the accurate amount.
 
 To resolve any billing issues, contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
 

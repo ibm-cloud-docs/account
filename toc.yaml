@@ -215,6 +215,7 @@ toc:
           - quotas.md
           - resource-quota.md
           - iam-cross-acct-restriction.md
+          - locations-management.md
           - topicgroup:
                 label: Connecting resources to apps
                 topics:

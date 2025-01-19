@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-08"
 
 keywords: apptio, cost benefit analysis
 
@@ -741,16 +741,19 @@ Regular account CSV reports are not real time and can be incomplete. Complete CS
 
 You can view other versions of the CSV if you have earlier instances reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- June 2024 to present is [version 1.2](#instances-CSV-version-1-2)
+
+- June 2024 to December 2024 is [version 1.2](#instances-CSV-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#instances-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#instances-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#instances-csv-version-0-2)
 - Before February 2023 is [version 0.1](#instances-csv-version-0-1).
 
+
+
 #### Instances CSV version 1.2
 {: #instances-CSV-version-1-2}
 
-The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from June 2024 to present.
+You will get CSV version 1.1 if the data that you're viewing is from June 2024 to December 2024.
 
 | CSV Header       | Description                                     |
 |------------------|-------------------------------------------------|
@@ -1032,7 +1035,9 @@ For tags that are of `key:value` format, a new column is added for each and ever
 #### Service tags
 {: #acct-instance-service-tags}
 
-If the account has [Projects](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) provisioned in it, then all the resource instances that are part of a project will have some service tags attached to them. These service tags are also of `key:value` type and they indicate the `project_id` and `config_id` that the project resource instance belongs to. Similar to the `key:value` user tags, a new column is added for each and every unique service tag `key`, with the `key` as the column name and the `value` as the column value for the corresponding instance usage row.
+If the account has [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) provisioned in it, then all the resource instances that are part of a project will have some service tags attached to them. These service tags are also of `key:value` type and they indicate the `project_id` and `config_id` that the project resource instance belongs to. Similar to the `key:value` user tags, a new column is added for each and every unique service tag `key`, with the `key` as the column name and the `value` as the column value for the corresponding instance usage row.
+
+
 
 For example, if there are two instances, `i1` and `i2`, with service tags `project::config_id:123` and `project::project_id:321` on `i1`, and service tags `schematics::config_id:456` and `schematics::project_id:654` on `i2`, there would be four additional columns named `service_tag::project::config_id`, `service_tag::project::project_id`, `service_tag::schematics::config_id` and `service_tag::schematics::project_id`. So, they would have the service tag keys with a prefix `service_tag::` prepended to it, which helps in visual distinction between user tag keys and service tag keys. And eventually, the `i1` row will have values `123` and `321` under the first two columns, and `i2` row will have values `456` and `654` under the next two columns respectively.
 
