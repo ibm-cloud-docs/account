@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-09-19"
+  years: 2018, 2025
+lastupdated: "2025-01-17"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -186,8 +186,8 @@ Use the following table to understand the differences between using access group
 | Inviting users to the {{site.data.keyword.cloud_notm}} account required|  Yes            | No                              |
 | Access can be defined before user is added to the account | Yes, by using dynamic rules | Yes       |
 | Federated users                 | Yes                             | Yes                             |
-| Non-federated users             | Yes                             | No                              |
-| Service ID                      | Yes                             | No                              |
+| Non-federated users             | Yes                             | Yes                              |
+| Service ID                      | Yes                             | Yes                              |
 | Compute resource identities     | No                              | Yes                             |
 | User management is primarily done in| {{site.data.keyword.cloud_notm}} account           | Corporate user directory        |
 {: caption="Compare access groups and trusted profiles" caption-side="top"}
