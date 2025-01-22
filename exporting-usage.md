@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-01-08"
+lastupdated: "2025-01-21"
 
 keywords: apptio, cost benefit analysis
 
@@ -742,7 +742,7 @@ Regular account CSV reports are not real time and can be incomplete. Complete CS
 You can view other versions of the CSV if you have earlier instances reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
 
-- June 2024 to December 2024 is [version 1.2](#instances-CSV-version-1-2)
+- June 2024 to January 2025 is [version 1.2](#instances-CSV-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#instances-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#instances-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#instances-csv-version-0-2)
@@ -753,7 +753,7 @@ You can view other versions of the CSV if you have earlier instances reports in 
 #### Instances CSV version 1.2
 {: #instances-CSV-version-1-2}
 
-You will get CSV version 1.1 if the data that you're viewing is from June 2024 to December 2024.
+You will get CSV version 1.2 if the data that you're viewing is from June 2024 to January 2025.
 
 | CSV Header       | Description                                     |
 |------------------|-------------------------------------------------|
