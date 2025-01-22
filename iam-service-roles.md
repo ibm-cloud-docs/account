@@ -3,7 +3,7 @@
 copyright:
   years: 2019, 2022
 
-lastupdated: "2025-01-17"
+lastupdated: "2025-01-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4191,6 +4191,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description |
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
 {: caption="Platform roles - GhoST Tagging Service" caption-side="top"}
 {: tab-title="Platform roles"}
