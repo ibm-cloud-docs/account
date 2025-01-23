@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-01-21"
+lastupdated: "2025-01-23"
 
 keywords: apptio, cost benefit analysis
 
@@ -1037,7 +1037,8 @@ For tags that are of `key:value` format, a new column is added for each and ever
 
 If the account has [Projects](/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) provisioned in it, then all the resource instances that are part of a project will have some service tags attached to them. These service tags are also of `key:value` type and they indicate the `project_id` and `config_id` that the project resource instance belongs to. Similar to the `key:value` user tags, a new column is added for each and every unique service tag `key`, with the `key` as the column name and the `value` as the column value for the corresponding instance usage row.
 
-
+Service tags are also attached to resource instances that are part of a [Deployable Architecture (DA)](/docs/secure-enterprise?topic=secure-enterprise-understand-module-da#what-is-da). These service tags are also of `key:value` type and they indicate the `da_locator` that the resource instance belongs to. For example, `project::da_locator:XXXXX` or `schematics::da_locator:XXXXX`.
+{: note}
 
 For example, if there are two instances, `i1` and `i2`, with service tags `project::config_id:123` and `project::project_id:321` on `i1`, and service tags `schematics::config_id:456` and `schematics::project_id:654` on `i2`, there would be four additional columns named `service_tag::project::config_id`, `service_tag::project::project_id`, `service_tag::schematics::config_id` and `service_tag::schematics::project_id`. So, they would have the service tag keys with a prefix `service_tag::` prepended to it, which helps in visual distinction between user tag keys and service tag keys. And eventually, the `i1` row will have values `123` and `321` under the first two columns, and `i2` row will have values `456` and `654` under the next two columns respectively.
 
