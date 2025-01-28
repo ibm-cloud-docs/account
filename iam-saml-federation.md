@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2019, 2024
-
-lastupdated: "2024-06-28"
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: enterprise SSO
 

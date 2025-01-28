@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2015, 2024
-
-lastupdated: "2024-05-01"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 

@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2019, 2022
-
-lastupdated: "2022-10-07"
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 

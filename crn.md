@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2017, 2022
-
-lastupdated: "2022-01-26"
+  years: 2017, 2025
+lastupdated: "2025-01-28"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 

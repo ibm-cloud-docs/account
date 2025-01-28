@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-22"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help
 
@@ -60,7 +61,6 @@ If your account is either {{site.data.keyword.Bluemix_dedicated_notm}} or {{site
 * Open a new case by using the [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} page and click **Create a case**. Mention that your account is either **{{site.data.keyword.Bluemix_dedicated_notm}}** or **{{site.data.keyword.Bluemix_local_notm}}** in the Subject and Description of the support case.
 * If you don't have an {{site.data.keyword.ibmid}}, contact someone in your organization that does, or work with your {{site.data.keyword.IBM_notm}} representative.
 
-
 ## Requesting support for resources in the European Union
 {: #eusupported}
 
@@ -77,7 +77,6 @@ You can specify that you want EU support for your account if the following crite
 
 Enabling the EU Support setting for your account applies to all future cases that you open for issues on any service or data center that is hosted in the EU region. However, if you add resources outside of an EU data center or Frankfurt location, issues for those resources are not necessarily handled by a support team in Europe. Any cases that are opened before you enable the EU Supported setting aren't affected.
 
-
 ## {{site.data.keyword.IBM_notm}} generally available service
 {: #s-services-gaorcont}
 
@@ -86,7 +85,6 @@ Support is provided for problems that are determined to be a defect for services
 You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
 {: tip}
 
-
 ## {{site.data.keyword.IBM_notm}} beta service
 {: #s-services-betaorcont}
 
@@ -94,14 +92,12 @@ You can change your current support plan at any time by contacting a [{{site.dat
 
 If the root cause analysis determines the issue is a defect in the beta service or container image, {{site.data.keyword.IBM_notm}} isn't required to provide a fix. Additionally, the case is assigned the appropriate 3 or 4 severity level.
 
-
 ## Third-party services
 {: #s-services-3p}
 
 Third-party services are provided by vendors outside of {{site.data.keyword.IBM_notm}}. These services are provided by individual software entities, {{site.data.keyword.IBM_notm}} Business Partners, or independent software vendors (ISV).
 
 Support for third-party services is provided by the service provider. This includes third-party products that are deployed by using the {{site.data.keyword.terraform-provider_full_notm}}. If the root cause analysis determines that the issue is a defect in a third-party service, {{site.data.keyword.IBM_notm}} isn't required to provide a fix. However, {{site.data.keyword.IBM_notm}} shares analysis with the third-party service provider, if needed, and can work through Marketplace with the third-party service to help solve the issue.
-
 
 ## Open source or community service
 {: #s-services-osorcomserv}

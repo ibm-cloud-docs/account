@@ -2,8 +2,9 @@
 
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-01-02"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: software instance, logs, delete, resource list, operator, operator bundle
 

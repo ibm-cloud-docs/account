@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-09-09"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: data security, FS-ready, Financial Services, encryption
 

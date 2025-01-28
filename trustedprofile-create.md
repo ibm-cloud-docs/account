@@ -2,10 +2,8 @@
 
 copyright:
 
-  years: 2021, 2023
-
-
-lastupdated: "2023-12-29"
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 

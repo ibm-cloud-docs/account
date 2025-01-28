@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-06-01"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, account problem, IBM location, IBM Cloud location, create location
 

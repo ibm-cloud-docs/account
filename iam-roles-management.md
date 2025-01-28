@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2020, 2024
-
-lastupdated: "2024-09-19"
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: custom access, custom role, create a role, combine actions
 

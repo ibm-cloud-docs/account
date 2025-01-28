@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-17"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot billing, feature code, can't apply code, can't apply feature code, lite account, trial account
 

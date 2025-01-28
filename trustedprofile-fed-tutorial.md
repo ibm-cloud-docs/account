@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2021, 2023
-
-lastupdated: "2023-07-27"
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account

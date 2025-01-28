@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2018, 2024
-
-lastupdated: "2024-09-17"
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 

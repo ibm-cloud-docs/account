@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-01-12"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, infrastructure access, infrastructure services 
 
@@ -28,7 +29,6 @@ There are multiple reasons why the message is displayed:
 
 * You have a [Lite account](/docs/account?topic=account-accounts#liteaccount), which does not allow access to infrastructure services.
 * Your account is not linked to an infrastructure account.
-
 
 To resolve this issue, you must upgrade to a Pay-As-You-Go or Subscription account. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
 {: tsResolve}

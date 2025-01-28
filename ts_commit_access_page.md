@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-04-29"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot, billing, commitment
 
 subcollection: account
 
 content-type: troubleshoot
-
 
 ---
 

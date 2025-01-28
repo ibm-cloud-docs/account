@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-01"
+
+  years: 2019, 2025
+llastupdated: "2025-01-28"
 
 keywords: IBM Cloud billing, payments, costs, usage, spending
 
@@ -100,4 +101,3 @@ New {{site.data.keyword.cloud_notm}} Pay-As-You-Go accounts for US customers wit
 {: note}
 
 For more information about invoices, see [Managing your invoices](/docs/account?topic=account-managing-invoices).
-

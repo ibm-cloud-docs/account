@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-07-24"
+
+  years: 2023, 2025
+lastupdated: "2025-01-28"
 
 keywords: login session, end login session, monitor session, your login session, end all login sessions
 

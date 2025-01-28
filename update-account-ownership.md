@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-09-19"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner, classic infrastructure, account owner, second account owner, two account owners, alternative account owner, trusted profile
 

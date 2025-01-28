@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-12-16"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: create case, manage case, open case, start case, ticket
 

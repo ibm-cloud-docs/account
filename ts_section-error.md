@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-06-26"
+
+  years: 2023, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot billing
 
@@ -31,4 +32,3 @@ A network issue might affect the loading of this section of the form.
 
 You can troubleshoot potential network problems by using a private or incognito window, by trying without a VPN or with a different VPN, or by using a browser on a different computer or device.
 {: tsResolve}
-

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2023-10-18"
+
+  years: 2023, 2025
+lastupdated: "2025-01-28"
 
 keywords: iam, context-based restrictions, protecting iam resources, security
 

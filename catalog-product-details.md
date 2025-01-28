@@ -1,9 +1,9 @@
 ---
 
-
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-10-09"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: onboard software, catalog details, software, catalog entry, about, product page, catalog listing
 

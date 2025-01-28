@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-10-06"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot manage service id, can't manage service id
 

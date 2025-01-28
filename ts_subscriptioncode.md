@@ -1,8 +1,9 @@
 ---
 
 copyright:
+
   years: 2020, 2024
-lastupdated: "2024-08-13"
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot billing, subscription code, subscription code error, can't apply subscription code, code applied 
 
@@ -19,7 +20,7 @@ content-type: troubleshoot
 {: #cannot-apply-subscription-code}
 {: troubleshoot}
 
-To successfully apply a subscription code, make sure the code is valid and you have the required access.
+To successfully apply a subscription code, make sure that the code is valid and you have the required access.
 {: shortdesc}
 
 When you try to apply a subscription code, you see an error that states that the code cannot be applied.
@@ -33,4 +34,3 @@ Use the following options:
 
 - Verify that you have access to apply the code. To apply any code, you must have an Editor role or higher on all account management services. To view or change roles, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 - Contact the person who provided the code for help with reissuing an expired code.
-

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-02-22"
+
+  years: 2023, 2025
+lastupdated: "2025-01-28"
 
 keywords: catalog, catalog management, manage catalogs, video
 

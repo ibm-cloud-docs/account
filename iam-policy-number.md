@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2023
-lastupdated: "2023-12-19"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies, increase account limit
 

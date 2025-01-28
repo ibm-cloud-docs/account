@@ -1,8 +1,9 @@
 ---
 
 copyright:
+
   years: 2022, 2025
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-28"
 
 keywords: catalog, restrict visibility, hide object, restrict by user, filter catalog, private catalog, catalog management service, public catalog, preset configuration, preset
 

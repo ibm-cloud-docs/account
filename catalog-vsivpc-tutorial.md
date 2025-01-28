@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-02-01"
+
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 

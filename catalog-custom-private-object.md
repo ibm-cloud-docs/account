@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-02-18"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: catalog, restrict visibility, hide object, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -51,15 +52,3 @@ Complete the following steps to create a catalog for your objects:
 {: #customcatalog-access-object}
 
 To authorize users to work with the objects in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).  
-
-
-
-
-
-
-
-
-
-
-
-

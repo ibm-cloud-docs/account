@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-22"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: managed services transition, managed services
 

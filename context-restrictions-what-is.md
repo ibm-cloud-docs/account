@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-08-23"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 

@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2015, 2021
-
-lastupdated: "2021-06-22"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, migrate, migration error, migrate all services
 
@@ -13,7 +12,6 @@ subcollection: account
 content-type: troubleshoot
 
 ---
-
 
 {{site.data.keyword.attribute-definition-list}}
 

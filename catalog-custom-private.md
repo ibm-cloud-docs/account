@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-02-05"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 

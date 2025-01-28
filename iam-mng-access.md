@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2017, 2024
-
-lastupdated: "2024-12-11"
+  years: 2017, 2025
+lastupdated: "2025-01-28"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 

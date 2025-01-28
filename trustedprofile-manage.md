@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2021, 2024
-
-lastupdated: "2024-09-19"
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust,  trust policy, trusted entity, assume access, apply access, remove trusted profile
 
@@ -362,4 +361,3 @@ curl -X DELETE 'https://iam.cloud.ibm.com/v1/profiles/PROFILE_ID' -H 'Authorizat
 {: codeblock}
 
 For more information, see the [IAM Identity Services API](/apidocs/iam-identity-token-api).
-

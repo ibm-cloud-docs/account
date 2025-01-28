@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-07-24"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 

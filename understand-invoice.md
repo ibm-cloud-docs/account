@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2023
 
-lastupdated: "2023-08-24"
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: invoices, understanding invoice, iaas invoice, paas invoice, IBM invoices, invoice information, currency change
 
@@ -37,5 +37,3 @@ Third-party services, such as SendGrid, don't bill for their service through {{s
 {: note}
 
 An {{site.data.keyword.Bluemix_notm}} service might provide a free allocation before the start of your billing period. To determine whether your service instance provides a free allocation, go to the [Resources list](/resources) in the {{site.data.keyword.cloud_notm}} console. Click the service name, and then click **Plan**. Review the feature description for each plan to see whether the service offers free allocations. Free allocations are applied to the account level and not the organization level.
-
-

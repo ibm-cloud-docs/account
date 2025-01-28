@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-02-07"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot MFA, multifactor authentication, verification method, authentication factor
 
 subcollection: account
 
 content-type: troubleshoot
-
 
 ---
 

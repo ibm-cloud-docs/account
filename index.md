@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-09-19"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 

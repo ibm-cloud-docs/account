@@ -2,10 +2,8 @@
 
 copyright:
 
-  years: 2018, 2024
-
-lastupdated: "2024-09-19"
-
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: access groups, access group, create group, assign access to group, administrator, administrator role
 

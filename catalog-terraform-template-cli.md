@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2022, 2023
-
-lastupdated: "2023-12-28"
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 

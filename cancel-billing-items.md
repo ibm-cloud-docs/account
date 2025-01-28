@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2021
-lastupdated: "2024-10-11"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: billing items, cancel, cancel billing items, cancel resources, delete resource, delete billing items
 

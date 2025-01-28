@@ -1,8 +1,9 @@
 ---
 
 copyright:
-years: 2019, 2024
-lastupdated: "2024-11-25"
+
+years: 2019, 2025
+lastupdated: "2025-01-28"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict

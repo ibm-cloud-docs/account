@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2023
-lastupdated: "2023-12-29"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: audit log, user access, account log, system events, monitor system events, user access logs
 
@@ -17,7 +18,6 @@ subcollection: account
 
 If you have a classic infrastructure account, you can monitor storage replication events by viewing audit logs. Audit logs track the interactions of each user, like login attempts, port speed updates, power restarts, and interactions made by {{site.data.keyword.BluSoftlayer_notm}} infrastructure support staff.
 {: shortdesc}
-
 
 ## Viewing your audit log in the console
 {: #view-audit-log}

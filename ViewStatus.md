@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2015, 2023
-
-lastupdated: "2023-04-20"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR
 
@@ -83,7 +82,6 @@ To subscribe to the {{site.data.keyword.Bluemix_notm}} Notifications RSS feed, c
     {: pre}
 
 1. Optional: Apply notification filters and rules if your reader supports them.
-
 
 ## Checking incident reports
 {: #status-incident-report}

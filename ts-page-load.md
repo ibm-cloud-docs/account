@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-06-01"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, page load, page error, console page error
 
@@ -25,9 +26,7 @@ One of the following error messages might be displayed:
 {: tsSymptoms}
 
 > BXNUI0001E: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.
-
 > BXNUI0016E: The apps and services weren't retrieved because an {{site.data.keyword.Bluemix_notm}} page didn't load.
-
 > 500 internal server error
 
 An issue with the browser is causing a console page to not load. Or, there might be a temporary issue with connectivity.

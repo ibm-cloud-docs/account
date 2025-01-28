@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2021, 2024
-
-lastupdated: "2024-04-28"
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
 

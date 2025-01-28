@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-12-13"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: IBM Cloud billing, software subscription, SaaS subscription
 

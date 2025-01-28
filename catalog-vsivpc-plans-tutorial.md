@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-05-29"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: onboard software, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud, software plan, plan, usage-based plan, partner center
 

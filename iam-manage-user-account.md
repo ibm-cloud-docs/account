@@ -1,9 +1,8 @@
 ---
 copyright:
 
-  years: 2015, 2024
-
-lastupdated: "2024-11-22"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: invite, invite users, invitation access, vpn-only user, remove user, delete user, IBMid change, credentials, ID, new ID
 

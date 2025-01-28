@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-12-19"
-
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot maximum policies, what do I do when I reach too many policies, exceed policies count
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2023
-lastupdated: "2023-03-07"
+
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: credit card, payment method, error credit card, credit card error, payment issue, card issue, card error, card error message, payment error message
 
@@ -11,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Why am I facing issues with my credit card?
 {: #cc-error-messages}

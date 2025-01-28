@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-02-06"
 
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot invite users, access to invite users, access to add users
 

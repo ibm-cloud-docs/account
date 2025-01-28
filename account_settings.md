@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2018, 2022
-
-lastupdated: "2024-02-05"
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: account settings, edit account name, view account type, find account type
 

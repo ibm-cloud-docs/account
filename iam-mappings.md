@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2022, 2023
-
-lastupdated: "2023-12-19"
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: IAM, what is IAM, comparing IAM concepts
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-09-17"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 

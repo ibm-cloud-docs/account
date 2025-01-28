@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2025
-lastupdated: "2025-01-07"
 
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -37,7 +37,6 @@ Multiply the two values together, and the result is the GB-hour.
 {: faq}
 
 {{site.data.keyword.cloud_notm}} systems monitor all inbound and outbound traffic for a server regardless of the type of traffic. Based on the allocated bandwidth for a server, overages are assessed for excess traffic, which is monitored at the network switch level. Monitor your bandwidth usage with bandwidth graphs. For more information, see [Viewing bandwidth graphs](/docs/bare-metal?topic=bare-metal-bm-view-bandwidth-graphs).
-
 
 ## How do I prevent bandwidth overages?
 {: #bandwidth-usage-overages}
@@ -194,7 +193,6 @@ If you think your invoice didn't include your promotion credits, first determine
 
 After you complete these steps, if you still believe that the invoice amount is an error, create a support case. Go to the [Support Center](/unifiedsupport/supportcenter) and click **Create a case**.
 
-
 ## How do I apply a feature code?
 {: #entercode}
 {: faq}
@@ -203,7 +201,6 @@ After you complete these steps, if you still believe that the invoice amount is 
 Feature codes add more capabilities in an account and are typically provided for educational initiatives or special events. To redeem your code, go to the [Account settings](/account/settings) page in the console, and click **Apply code**. You can also apply your code to a new account by clicking **Register with a code** when you [sign up for a new account](/registration).
 
 You might be looking for information about promo codes and subscription codes, which are available for certain account types. For more information, see [Managing promotions](/docs/account?topic=account-applying-promo-codes) and [Applying subscription codes](/docs/account?topic=account-subscription_code).
-
 
 ## Why did my account get billed for additional services charges?
 {: #getting-billed}
@@ -220,7 +217,6 @@ If you believe that charges on your invoice are incorrect, [contact Support](/un
 {: faq}
 
 A [resource](#x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You're billed for resources in your account until you cancel them. If you deleted a resource or have resources in your account that are no longer used, make sure to cancel all billing items associated with those resources. Billing items can't be recovered after they are canceled. For more information, see [Cancelling your billing items](/docs/account?topic=account-cancel-billing-items).
-
 
 ## Can I add a tax identification number to my account?
 {: #tax-assessment}
@@ -278,7 +274,6 @@ Credits for {{site.data.keyword.IBM_notm}} corporate programs, such as Startup w
 1. Select an applicable invoice.
 1. Find the name of the program listed in the Current Payment Method section to see the monthly credit, applied credit, and remaining credit information.
 
-
 ## How can I get help with billing and usage?
 {: #contactsupport}
 {: faq}
@@ -327,7 +322,6 @@ A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_no
 {: faq}
 
 You might receive multiple invoices if you have an Enterprise Savings Plan and service commitment on different orders. If you have service commitments at multiple sites, you receive separate invoices for each.
-
 
 ## Why doesn't the usage report that I downloaded match what I see on the usage page?
 {: #usage-report-vs-usage-ui}

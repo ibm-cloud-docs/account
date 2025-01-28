@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2024
+  years: 2024, 2025
 
-lastupdated: "2024-09-17"
+lastupdated: "2025-01-28"
 
 keywords: close account, cancel account, delete account, terminate account
 
@@ -13,7 +13,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Closing an account
 {: #account-close}

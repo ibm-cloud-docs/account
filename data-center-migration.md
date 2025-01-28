@@ -3,8 +3,7 @@
 copyright:
 
   years: 2020, 2025
-
-lastupdated: "2025-01-03"
+lastupdated: "2025-01-28"
 
 keywords: migrate, migrating data center, migrate resources, data center
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-01-05"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 

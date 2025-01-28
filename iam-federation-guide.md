@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2023, 2024
-
-lastupdated: "2024-06-28"
+  years: 2023, 2025
+lastupdated: "2025-01-28"
 
 keywords: SAML federation, federation option, federated IBMid, SAML fed, federated 
 

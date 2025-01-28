@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-06-13"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot permission to attach and detach access management tags
 

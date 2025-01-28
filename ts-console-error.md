@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2021
-lastupdated: "2021-10-06"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, browser issue, console error 
 
