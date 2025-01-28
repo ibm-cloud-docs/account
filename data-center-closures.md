@@ -3,8 +3,7 @@
 copyright:
 
   years: 2020, 2025
-
-lastupdated: "2025-01-08"
+lastupdated: "2025-01-28"
 
 keywords: data centers, data center support, datacenter, data center closure
 

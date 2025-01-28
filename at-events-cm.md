@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-10-30"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords:
 
@@ -210,4 +211,3 @@ The following table lists the actions that generate an event for software instan
 
 You can find the value `unavailable` in catalog events. This value indicates when an update is made, but specific details about the update aren't included.
 {: important}
-

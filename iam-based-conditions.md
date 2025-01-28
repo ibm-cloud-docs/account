@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2023, 2024
-lastupdated: "2024-09-19"
+
+  years: 2023, 2025
+lastupdated: "2025-01-28"
 
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions, resource attribute
 

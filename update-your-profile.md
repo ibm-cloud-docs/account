@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-09-19"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile, company information, company details, company account, company profile, company contact
 
@@ -86,4 +87,3 @@ Ensure that the company contacts are the appropriate people to be contacted for 
 
 Verify the information before you make the update. After you submit the new contact information, the company contacts are updated immediately.
 {: important}
-

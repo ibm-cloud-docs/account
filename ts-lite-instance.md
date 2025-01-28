@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-01-12"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, account problem, lite plan, lite plan instance, extra instance, create instance
 
@@ -24,9 +24,7 @@ You receive the following error message when you try to create a new Lite plan i
 {: tsSymptoms}
 
 > Unable to provision new Lite instance
-> 
 > The account already has an instance created with the Lite plan
-
 
 There's a limit of one instance per Lite plan to ensure that these plans stay free. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
 {: tsCauses}

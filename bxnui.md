@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-22"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: error messages, errors, platform errors, message ID
 
@@ -18,15 +19,12 @@ subcollection: account
 When you receive an error message from {{site.data.keyword.Bluemix}}, you can use the message ID to find more information about how to resolve the problem.
 {: shortdesc}
 
-
 ## BXNUI0001E
 {: #bxnui0001e}
 
 **Message**: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.
 
 For instructions to fix this problem, see the [Why do I encounter console pages that don't load?](/docs/account?topic=account-ts_err) troubleshooting topic.
-
-
 
 ## BXNUI0016E
 {: #bxnui0016e}
@@ -35,16 +33,12 @@ For instructions to fix this problem, see the [Why do I encounter console pages 
 
 For instructions to fix this problem, see the [Why do I encounter console pages that don't load?](/docs/account?topic=account-ts_err) troubleshooting
 
-
-
 ## BXNUI0039E
 {: #bxnui0039e}
 
 **Message**: The route associations for the '{0}' domain must be deleted.
 
 On the app's Overview page, click **Routes and domains** drop-down, and select **Edit routes**.
-
-
 
 ## BXNUI0059E
 {: #bxnui0059e}

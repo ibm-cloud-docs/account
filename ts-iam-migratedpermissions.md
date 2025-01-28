@@ -1,9 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-02-21"
-
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot migrated softlayer permissions, migrated billing permission, migrated support permission
 

@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2019, 2024
-
-lastupdated: "2024-11-07"
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 

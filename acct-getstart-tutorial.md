@@ -2,10 +2,8 @@
 
 copyright:
 
-  years: 2020, 2024
-
-lastupdated: "2024-09-19"
-
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up
 

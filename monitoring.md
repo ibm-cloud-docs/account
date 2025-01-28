@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-10-30"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: manage account, account events, track events, account tracking, monitoring, catalog tracking, catalog management
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-02-21"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, account problem, add user to org, org, invite user to org
 subcollection: account
@@ -35,7 +36,6 @@ Collaborator
 
 Member
 :   If you don't have an {{site.data.keyword.Bluemix_notm}} account, but then someone invites you to the organization and you sign up for {{site.data.keyword.Bluemix_notm}} from the invitation.
-
 
 You can't invite users to your organization if you're a collaborator of the organization, even if you're assigned as an organization manager.
 

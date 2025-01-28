@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-12-19"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot, billing, payment limit, charge limit
 
 subcollection: account
 
 content-type: troubleshoot
-
 
 ---
 
@@ -25,7 +25,7 @@ You can't make a full payment on your invoice because of a charge limit.
 You try to make a payment on an invoice that is over $1,000.00 USD, but you get the following error message:
 {: tsSymptoms}
 
-> Manual payment request cannot be processed. Payment amount is higher than the limit allowed.
+> Manual payment request cannot be processed. The payment amount is higher than the limit allowed.
 
 By default, credit card payments in US Dollars cannot exceed $1,000.00 USD, which might cause you to make multiple payments to pay your invoice.
 {: tsCauses}

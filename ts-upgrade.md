@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2021, 2023
-lastupdated: "2023-06-27"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account

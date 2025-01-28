@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-10-11"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot billing, manage invoice, can't view invoice
 
 subcollection: account
 
 content-type: troubleshoot
-
 
 ---
 

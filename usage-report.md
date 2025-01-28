@@ -1,8 +1,9 @@
 ---
 
 copyright:
+
   years: 2023, 2025
-lastupdated: "2025-01-02"
+lastupdated: "2025-01-28"
 
 keywords: apptio, cost benefit analysis
 
@@ -881,7 +882,6 @@ You can view other versions of the CSV if you have earlier enterprise account su
 - October 2024 to March 2024 is [version 1.0](#enterprise-account-summary-csv-version-1-0)
 - February 2023 to October 2024 is [version 0.2](#enterprise-account-summary-csv-version-0-2)
 - Before February 2023 is [version 0.1](#enterprise-account-summary-csv-version-0-1).
-
 
 ### Enterprise account summary CSV version 1.2
 {: #enterprise-account-summary-csv-version-1-2}

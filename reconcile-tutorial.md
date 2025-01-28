@@ -1,8 +1,9 @@
 ---
 
 copyright:
-   years: 2022, 2024
-lastupdated: "2024-02-26"
+
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: invoice reconciliation, non-subscription invoice, map invoice, map usage, one time charges, recurring invoice, recurring charges
 
@@ -15,7 +16,6 @@ completion-time: 45m
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Reconciling usage for nonsubscription multi-year account invoices
 {: #tutorial-reconcile-invoice}
@@ -103,4 +103,3 @@ On the Excel version of your recurring invoice that you downloaded in step 2, cl
 {: #cd-kube-step-next}
 
 To continue your learning about your billing and usage, see [Managing payments](/docs/account?topic=account-linkedusage).
-

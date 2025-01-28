@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-11-20"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: resources, resource quota, quota, service limit
 

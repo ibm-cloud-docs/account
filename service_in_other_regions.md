@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2022
-lastupdated: "2022-10-26"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: service availability, service location, using services across regions
 

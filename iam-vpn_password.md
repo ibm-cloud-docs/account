@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2018, 2021
-
-lastupdated: "2021-08-06"
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: VPN password, update VPN password, classic infrastructure VPN
 

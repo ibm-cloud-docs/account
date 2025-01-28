@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2021
-
-lastupdated: "2021-08-31"
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshooting software, troubleshooting resources, software instance, suspended, removed, deleted
 
@@ -13,7 +12,6 @@ subcollection: account
 content-type: troubleshoot
 
 ---
-
 
 {{site.data.keyword.attribute-definition-list}}
 

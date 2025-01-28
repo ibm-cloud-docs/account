@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2022, 2024
-
-lastupdated: "2024-02-29"
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, time-based, resource attribute
 
@@ -13,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # IAM condition properties
 {: #iam-condition-properties}

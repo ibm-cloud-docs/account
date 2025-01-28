@@ -1,8 +1,9 @@
 ---
 
 copyright:
-   years: 2021, 2024
-lastupdated: "2024-10-24"
+
+   years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2022
-lastupdated: "2022-02-21"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: private catalog, account catalogs, software, reload, version
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2022
-lastupdated: "2022-05-25"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: IAM token, token, API key, generate token, access token, temporary credential
 

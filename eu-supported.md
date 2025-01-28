@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-04-05"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: GDPR, europe, ACS, EU, EU Supported
 

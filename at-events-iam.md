@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-11-07"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: activity tracking, IAM events, Identity and Access Management, observibility
 
@@ -32,7 +33,6 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 
 As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.at_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Activity tracking events are the same for both services. For information about migrating from {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [migration planning](/docs/cloud-logs?topic=cloud-logs-migration-intro).
 {: important}
-
 
 ## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
 {: #at-legacy-locations-iam}
@@ -156,8 +156,6 @@ The following table lists the actions that generate an event:
 | `iam-groups.account-settings.update` | An event is generated when an initiator updates their account settings for the access groups service. |
 {: caption="Events that are generated for access groups" caption-side="top"}
 
-
-
 ### Access groups events
 {: #at_events_iam_access_groups}
 
@@ -224,8 +222,6 @@ The following table lists the actions that generate an event:
 | `iam-am.policy.delete` | An event is generated when an initiator deletes a policy that is assigned to a user or access group. |
 {: caption="Events that are generated for policy actions" caption-side="top"}
 
-
-
 ## Service ID events
 {: #at_events_iam_serviceids}
 
@@ -237,7 +233,6 @@ The following table lists the actions that generate an event:
 | `iam-identity.account-serviceid.update` | An event is generated when an initiator renames a service ID or modifies its description. |
 | `iam-identity.account-serviceid.delete` | An event is generated when an initiator deletes a service ID. |
 {: caption="Events that are generated for service IDs actions" caption-side="top"}
-
 
 ## API key events
 {: #at_events_iam_apikeys}
@@ -360,10 +355,8 @@ The following fields include extra information:
 * The `initiator.name` includes information about the user that logs in to the account.
 * The `X-Global-Transaction-Id` includes an ID that you can use when you open a support ticket if you need to get more information.
 
-
 #### Log in from the {{site.data.keyword.cloud_notm}} UI
 {: #at_events_iam_analyze_login_events-1}
-
 
 When a user logs in from the {{site.data.keyword.cloud_notm}} UI, you get an event in the account with action `iam-identity.user-refreshtoken.login`.
 
@@ -387,7 +380,6 @@ When a user [logs in with a federated ID by using trusted profiles](/docs/accoun
 
 #### Failed log in actions
 {: #at_events_iam_analyze_login_events-3}
-
 
 When a user logs in to the {{site.data.keyword.cloud_notm}}, the user ID (IBMid) and credentiasls are validated first. At this point, the user has not selected an account. Notice that a user can belong to multiple accounts.
 
@@ -513,7 +505,6 @@ To find out the user who has tried to modify an API key or a service ID, complet
     The output of this command returns 2 fields. The `ibmUniqueId` field shows the ID of the user that matched the event `initiator.name` field. The `email` field shows the email address associated with that ID.
 
 To get the API key on which the action has been requested and failed, see the field `prev_instance_name` in requestData.
-
 
 ### Resource is locked. Request to update Service ID or API key fails
 {: #an_fail_locked}

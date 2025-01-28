@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-11-06"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: tags, dora, data portability, Global Search and Tagging
 

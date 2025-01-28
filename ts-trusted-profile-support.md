@@ -1,15 +1,15 @@
 ---
 
 copyright:
-  years: 2022, 2024
-lastupdated: "2024-11-04"
+
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot trusted profile, classic infrastructure, trusted profile application, support center, getting support
 
 subcollection: account
 
 content-type: troubleshoot
-
 
 ---
 

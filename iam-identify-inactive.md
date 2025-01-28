@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2022
-lastupdated: "2023-12-27"
+
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords: inactive identity, inactive identities, inactive, inactive users, inactive service IDs, inactive trusted profiles, inactive API keys
 

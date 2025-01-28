@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2019, 2024
-
-lastupdated: "2024-03-05"
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: notifications, view notifications, set notifications, iaas notifications, notification icon, header bell, bell icon, email notification history, communication history
 
@@ -28,7 +27,6 @@ Notifications are scoped to the specific account in which you are working. Use t
 * Navigate to a specific notification by using the unique URL that's associated with each notification. You can save and share the URL with users in the account.
 * To receive future updates about a specific type of notification, click the **Email** icon that's displayed next to each notification item in the list.
 
-
 ## Notification types
 {: #notification-types}
 
@@ -42,7 +40,6 @@ The following table describes the different types of notifications that are disp
 | Incidents | Unexpected impacting events that can cause an outage or restrict functionality. |
 | Account | Invitation email, or console notifications for inviting users to the {{site.data.keyword.Bluemix_notm}} platform.  |
 {: caption="Notification types" caption-side="top"}
-
 
 ## Subscribing to email notifications
 {: #subscribe-email-notifications}

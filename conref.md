@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2022, 2024
 
-lastupdated: "2024-02-29"
+  years: 2022, 2025
+lastupdated: "2025-01-28"
 
 keywords:
 
@@ -20,8 +20,6 @@ content-type: conref
 
 The following H2s and H3s are going to be reused in several different topics that need identical information.
 {: shortdesc}
-
-
 
 * H2 - **Define IAM access** is used in the following files:
    * catalog-vsi-tutorial.md

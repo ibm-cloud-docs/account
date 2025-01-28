@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-11-06"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 

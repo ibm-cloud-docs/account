@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-02-07"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 

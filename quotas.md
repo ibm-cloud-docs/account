@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2020, 2024
-lastupdated: "2024-01-26"
+
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: quotas, resource group quotas
 

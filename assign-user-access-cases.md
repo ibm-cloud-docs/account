@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2021, 2024
-
-lastupdated: "2024-11-02"
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: access to cases, get access for cases, assign cases, assign access, access support center
 

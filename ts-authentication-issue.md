@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-02-07"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot account, incomplete login, authentication issue
 

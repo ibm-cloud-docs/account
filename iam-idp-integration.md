@@ -2,10 +2,8 @@
 
 copyright:
 
-  years: 2020, 2023
-
-
-lastupdated: "2023-12-29"
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider
 

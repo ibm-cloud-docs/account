@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2021, 2023
-
-lastupdated: "2023-12-26"
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: auditing IAM policies, last permit information, restore policies, inactive policies
 

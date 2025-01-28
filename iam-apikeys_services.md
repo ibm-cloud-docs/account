@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2018, 2024
-
-lastupdated: "2024-11-25"
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 

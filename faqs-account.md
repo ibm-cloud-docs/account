@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-07-26"
+
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 

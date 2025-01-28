@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-11-01"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: activity tracking, context-based restrictions events, events, observibility
 
@@ -156,7 +157,6 @@ The following table lists the actions that generate nerwork zone events:
 | context-based-restrictions.zone.delete | An event is generated when an initiator deletes a CBR zone. |
 {: caption="Events that are generated for network zone events" caption-side="top"}
 
-
 ## Context-based restrictions rules events
 {: #restriction_rules_events}
 
@@ -171,7 +171,6 @@ The following table lists the actions that generate context-based restricitons r
 | context-based-restrictions.policy.delete | An event is generated when an initiator deletes a CBR rule. |
 {: caption="Events that are generated for context-based restrictions rules" caption-side="top"}
 
-
 ## Account settings events
 {: #account_setting_events}
 
@@ -181,7 +180,6 @@ The following table lists the actions that generate account settings events:
 | -----  | ----------- |
 | context-based-restrictions.account-settings.read | An event is generated when an initiator looks at information that is related with account settings. |
 {: caption="Events that are generated for context-based restrictions account settings events" caption-side="top"}
-
 
 ## Analyzing context-based restrictions activity tracking events
 {: #at_events_cbr_analyze}

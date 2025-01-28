@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-10-29"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: user list visibility, users page setting, user view access, limit access to users list, user list access, parent user, update parent
 

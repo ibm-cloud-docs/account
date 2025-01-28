@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2022
-lastupdated: "2022-03-11"
+  years: 2018, 2025
+lastupdated: lastupdated: "2025-01-28"
 
 keywords: classic infrastructure assets, application development, services that work with classic infrastructure
 

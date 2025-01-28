@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2024
-lastupdated: "2024-01-03"
 
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: payment method, credit card, payment, billing method, pay, pay my bill, billing items, ibm billing,
 

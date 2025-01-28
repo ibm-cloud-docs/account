@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2019, 2024
-
-lastupdated: "2024-01-05"
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 

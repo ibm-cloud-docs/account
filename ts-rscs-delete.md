@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2015, 2023
-
-lastupdated: "2023-01-12"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, delete service, delete instance, delete service instance
 
@@ -13,7 +12,6 @@ subcollection: account
 content-type: troubleshoot
 
 ---
-
 
 {{site.data.keyword.attribute-definition-list}}
 

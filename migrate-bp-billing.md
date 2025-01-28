@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2024-10-30"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-05-07"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 

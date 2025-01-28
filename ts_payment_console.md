@@ -2,15 +2,14 @@
 
 copyright:
 
-  years: 2020, 2024
-lastupdated: "2024-10-17"
+  years: 2020, 2025
+lastupdated: "2025-01-28"
 
 keywords: troubleshoot billing, add card, payment outside console, myibm.com/billing, manage payment
 
 subcollection: account
 
 content-type: troubleshoot
-
 
 ---
 

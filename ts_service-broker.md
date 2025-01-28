@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2015, 2024
-
-lastupdated: "2024-11-06"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: help managing cases, resolve issues managing cases, trouble working with cases, support center, help support center, resolve issues support center, help getting support, help support
 
@@ -31,7 +30,7 @@ General problems with accessing and managing support cases might be caused by
 not having the Identity and Access Management (IAM) access policy for the Support Center account management service. You must be assigned the editor or administrator role on the support center account management service to create cases.
 {: tsCauses}
 
-The account owner, an administrator on the support center service, or the administrator on all account management services can assign an IAM policy on support center to manage cases.
+The account owner, an administrator on the support center service, or the administrator on all account management services can assign an IAM policy on the support center to manage cases.
 {: tsResolve}
 
 If you're the account owner or an administrator of the Support Center, complete the following steps to create an access policy for working with support cases:

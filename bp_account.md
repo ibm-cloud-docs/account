@@ -1,8 +1,9 @@
 ---
 
 copyright:
+
   years: 2018, 2025
-lastupdated: "2025-01-17"
+lastupdated: "2025-01-28"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 

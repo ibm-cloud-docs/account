@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2018, 2024
-lastupdated: "2024-10-17"
+
+  years: 2018, 2025
+lastupdated: "2025-01-28"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 

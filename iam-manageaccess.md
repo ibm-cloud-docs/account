@@ -2,9 +2,8 @@
 
 copyright:
 
-  years: 2017, 2024
-
-lastupdated: "2024-09-19"
+  years: 2017, 2025
+lastupdated: "2025-01-28"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 

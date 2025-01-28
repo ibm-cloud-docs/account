@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-10-29"
 
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: restrict domain, restrict invitation, account member restrict, invitation, invite users, account restriction
 

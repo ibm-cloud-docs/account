@@ -2,8 +2,9 @@
 
 
 copyright:
-  years: 2024
-lastupdated: "2024-05-29"
+
+  years: 2024, 2025
+lastupdated: "2025-01-28"
 
 keywords: onboard software, pricing plans, manage plans, usage-based plan, software, catalog, partner center, catalog, private catalog, catalog management
 

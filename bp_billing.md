@@ -1,8 +1,9 @@
 ---
 
 copyright:
-  years: 2019, 2024
-lastupdated: "2024-10-01"
+
+  years: 2019, 2025
+lastupdated: "2025-01-28"
 
 keywords: best practice billing, best practice usage, automate billing, track costs
 

@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2021, 2024
-lastupdated: "2024-02-08"
 
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: create network access, network access rule, network zone
 

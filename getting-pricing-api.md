@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2024
 
-lastupdated: "2024-12-30"
+  years: 2025
+lastupdated: "2025-01-28"
 
 keywords: pricing, global catalog api
 

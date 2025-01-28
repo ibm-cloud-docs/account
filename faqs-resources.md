@@ -1,9 +1,9 @@
 ---
 
 copyright:
-  years: 2015, 2024
 
-lastupdated: "2024-04-23"
+  years: 2015, 2025
+lastupdated: "2025-01-28"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -13,9 +13,7 @@ content-type: faq
 
 ---
 
-
 {{site.data.keyword.attribute-definition-list}}
-
 
 # FAQs about managing resources
 {: #resources-faq}

@@ -1,9 +1,9 @@
 ---
 
-
 copyright:
-  years: 2021, 2022
-lastupdated: "2022-04-20"
+
+  years: 2021, 2025
+lastupdated: "2025-01-28"
 
 keywords: onboard software, third-party software, suspend, support, software, sellers, catalog, Partner Center - Sell, remove, delete, deprecate, restore, private catalog, catalogs
 
