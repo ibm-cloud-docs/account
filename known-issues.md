@@ -20,6 +20,9 @@ subcollection: account
 Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}} catalog, and the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources.
 {: shortdesc}
 
+To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/account?topic=account-cloudaccess#iam_limits).
+{: note}
+
 ## Google login doesn't support federated IDs
 {: #google-fed-id}
 
