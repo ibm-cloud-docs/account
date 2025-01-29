@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-01-29"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies, increase account limit
 
@@ -20,7 +20,8 @@ subcollection: account
 Default maximum limits are set on entities in your account such as access policies, service IDs, trusted profiles, identity providers (IdPs), and API keys. However, specific use cases can require an extended limit and you must request an increase for your chosen entity. You must be the account owner or administrator for all account management services to check how many policies exist in the account.
 {: shortdesc}
 
-To review the default limits for your account, see [Known issues and limitations](/docs/account?topic=account-known-issues).
+To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/account?topic=account-cloudaccess#iam_limits).
+{: note}
 
 ## Increasing limits for IAM identity entities
 {: #increase-entity-limit}

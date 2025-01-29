@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-01-29"
 
 keywords: access, users, service IDs, access group, IAM, policy, characters, wildcard, operators, asterisk, question mark, *, ?, JSON document, policy document
 
@@ -214,6 +214,6 @@ The following two examples represent the same evaluation where a case-sensitive 
 ## String comparisons
 {: #string-comparisons}
 
-{{site.data.content.string-compare-intro-reuse}}
+{{_include-segments/string-compare-intro-reuse.md}}
 
-{{site.data.content.string-compare-table-reuse}}
+{{_include-segments/string-compare-table-reuse.md}}

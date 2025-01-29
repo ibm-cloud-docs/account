@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-01-29"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -19,6 +19,9 @@ subcollection: account
 
 Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}} catalog, and the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources.
 {: shortdesc}
+
+To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/account?topic=account-cloudaccess#iam_limits).
+{: note}
 
 ## Google login doesn't support federated IDs
 {: #google-fed-id}
@@ -79,11 +82,12 @@ As of 25 January 2023, IAM supports two versions of the IAM Policy Management AP
 ### String comparisons
 {: #policy-string-comparison}
 
-{{site.data.content.string-compare-intro-reuse}}
+{{_include-segments/string-compare-intro-reuse.md}}
 
-You can have up to 10 conditions and nesting up to 2 levels. {: important}
+You can have up to 10 conditions and nesting up to 2 levels.
+{: important}
 
-{{site.data.content.string-compare-table-reuse}}
+{{_include-segments/string-compare-table-reuse.md}}
 
 For example, the following statement contains an `operator` element that uses `stringEquals` to specify that the account ID and service name must exactly match the `value` element. The statement also contains an `operator` element that uses `stringMatch` to specify a naming pattern for {{site.data.keyword.messagehub}} topics that you might use to organize access to those specific resources. This way, you can assign one policy to all topics in your account that begin with `messagehub-topic-dev`.
 
