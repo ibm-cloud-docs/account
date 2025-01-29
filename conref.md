@@ -56,7 +56,7 @@ The following H2s and H3s are going to be reused in several different topics tha
    * iam-wildcard.md
    * iam-condition-properties.md
 
-{{_include-segments/string-compare-intro-reuse}}
+{{_include-segments/string-compare-intro-reuse.md}}
 
 The following table lists the string comparison operators that you can use to build access policies with `/v2/policies` syntax. For more information about each version, see [Comparing `/v1/policies` and `/v2/policies` syntax](/docs/account?topic=account-known-issues#compare-syntax). For example use cases of the operators, see [Resource attribute-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#resource-based-conditions).
 {: #string-compare-intro-reuse}
@@ -65,7 +65,7 @@ The following table lists the string comparison operators that you can use to bu
    * known-issues.md
    * iam-wildcard.md
 
-{{_include-segments/string-compare-table-reuse}}
+{{_include-segments/string-compare-table-reuse.md}}
 
 | Operator   | Description  |
 |------------|--------------|

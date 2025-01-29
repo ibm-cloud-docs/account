@@ -79,12 +79,12 @@ As of 25 January 2023, IAM supports two versions of the IAM Policy Management AP
 ### String comparisons
 {: #policy-string-comparison}
 
-{{_include-segments/string-compare-intro-reuse}}
+{{_include-segments/string-compare-intro-reuse.md}}
 
 You can have up to 10 conditions and nesting up to 2 levels.
 {: important}
 
-{{_include-segments/string-compare-table-reuse}}
+{{_include-segments/string-compare-table-reuse.md}}
 
 For example, the following statement contains an `operator` element that uses `stringEquals` to specify that the account ID and service name must exactly match the `value` element. The statement also contains an `operator` element that uses `stringMatch` to specify a naming pattern for {{site.data.keyword.messagehub}} topics that you might use to organize access to those specific resources. This way, you can assign one policy to all topics in your account that begin with `messagehub-topic-dev`.
 

@@ -214,6 +214,6 @@ The following two examples represent the same evaluation where a case-sensitive 
 ## String comparisons
 {: #string-comparisons}
 
-{{_include-segments/string-compare-intro-reuse}}
+{{_include-segments/string-compare-intro-reuse.md}}
 
-{{_include-segments/string-compare-table-reuse}}
+{{_include-segments/string-compare-table-reuse.md}}
