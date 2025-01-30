@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2024
-lastupdated: "2024-11-05"
+  years: 2021, 2025
+lastupdated: "2025-01-30"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
 
@@ -53,7 +53,7 @@ When an event of interest occurs on the {{site.data.keyword.Bluemix_notm}} platf
 {: #event-notifications-add-ui}
 
 Before you can add any {{site.data.keyword.en_short}} instance to the notification distribution list, make sure that you already have an [{{site.data.keyword.en_short}} service instance](/catalog/services/event-notifications){: external} that is in the same account as the distribution list.
-If you don't have an {{site.data.keyword.en_short}} service instance, see [Create an Event Notifications service instance](/docs/event-notifications?topic=event-notifications-en-create-en-instance).
+If you don't have an {{site.data.keyword.en_short}} service instance, see [Getting started with Event Notifications](/docs/event-notifications?topic=event-notifications-getting-started).
 To add an existing {{site.data.keyword.en_short}} service instance to the notification distribution list, complete the following steps:
 1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**.
 1. Click **Add** > **{{site.data.keyword.en_short}}**.

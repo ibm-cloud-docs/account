@@ -2,16 +2,15 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-01-30"
 
 keywords: location management, locations, region
 
-subcollection: hybrid-workloads
+subcollection: account
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Managing workload deployment locations
 {: #managing_locations}
@@ -48,7 +47,7 @@ To set the location filters, complete the following steps:
    * Click **More filters** to refine your search to different location parameters, like geography or country.
    * Manually query the filter locations search bar and specify a combination of location parameters.
 
-   The toggles and filters are most effective for straightforward location combinations or for grasping the workings of the filtering syntax. You can see how the advanced syntax develops in the search bar as you adjust the toggles and filters. To create more complex combinations, see [Filtering syntax](/docs-draft/hybrid-workloads?topic=hybrid-workloads-managing_locations#filtering_syntax).
+   The toggles and filters are most effective for straightforward location combinations or for grasping the workings of the filtering syntax. You can see how the advanced syntax develops in the search bar as you adjust the toggles and filters. To create more complex combinations, see [Filtering syntax](/docs/account?topic=account-managing_locations#filtering_syntax).
    {: note}
 
 1. Click **Revert to saved filter** if you want to keep exploring all available deployment locations.
