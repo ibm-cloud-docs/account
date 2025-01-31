@@ -218,7 +218,6 @@ toc:
           - topicgroup:
                 label: Connecting resources to apps
                 topics:
-                - connect_external_app.md
                 - service_credentials.md
                 - using-services.md
                 - service_in_other_regions.md
