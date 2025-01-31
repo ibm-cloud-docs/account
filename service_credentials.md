@@ -2,10 +2,10 @@
 
 copyright:
 
-  years: 2015, 2024
-lastupdated: "2024-09-13"
+  years: 2015, 2025
+lastupdated: "2025-01-31"
 
-keywords: service key, api key, bind, credential
+keywords: service key, api key, credential, connect resources to apps
 
 subcollection: account
 
@@ -13,58 +13,55 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding and viewing credentials
+# Connecting services to apps
 {: #service_credentials}
 
-You can generate a new set of credentials for times when you want to manually connect an app or external consumer to an {{site.data.keyword.Bluemix}} service. For example, if you're trying to bind an AWS app to a Watson service, you need to generate a new credential that can be used to bind them together. After your credential is created, you can [manually add](/docs/app-configuration?topic=app-configuration-ac-service-credentials) it to your {{site.data.keyword.Bluemix_notm}} app or other [external consumer](/docs/account?topic=account-externalapp) to connect your service.
+Connect your apps or third-party tools to {{site.data.keyword.cloud_notm}} services by generating a new set of service credentials. These credentials act as the bridge between your app, whether it’s hosted on {{site.data.keyword.Bluemix}} or an external platform like AWS, and the {{site.data.keyword.Bluemix}} service that you want to use. For example, if you’re integrating an AWS-hosted app with {{site.data.keyword.conversationshort}}, you generate a service credential that provides the necessary access. Then, you can add it to your app’s configuration to establish the connection.
 
-To manually add credentials to your apps, refer to the documentation for the type of app or compute option that you are using.
+To add credentials to your apps, refer to the documentation for the type of app or compute option that you are using.
 {: tip}
 
-## Adding a credential when binding an IAM-enabled service
+## Creating a service credential
 {: #IAM_credential-ui}
 {: ui}
 
-Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL, however the contents of each credential is unique to the service that generates it.
+Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
 Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
 
-Complete the following steps to add a credential to a service that is managed by IAM:
+Complete the following steps to add a credential to a service:
 
-1. From the Resource list page, select the name of the service to open the service details page. Then, click **Service credentials > New Credential+**.
-1. Provide a **Name**.
-1. Specify the role. This value sets the IAM service access role. If no additional access is required, specify `None`. For more information, see [IAM Access](/docs/account?topic=account-userroles).
-1. Optionally, you can provide a Service ID by either allowing IAM to generate a unique value for you, or by providing an existing Service ID. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
-1. Optionally, you can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
+1. From the **Resource list**, select the name of the service to open the service details page.
+1. Click **Service credentials > New Credential+**.
+1. Enter a **Name**.
+1. Assign an IAM service access role. For more information about roles, see [IBM Cloud IAM roles](/docs/account?topic=account-userroles).
+   1. Specify `None` to assign no role to the new credential if you want to manage access by associating a new or existing service ID with the service credential.
+1. (Optional) Click **Advanced options**
+   1. Select an existing service ID or **Create New Service ID** to associate with the credential. This way, you can manage access directly within IAM by going to **Manage > Access (IAM) > Service IDs**. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 
-   Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service.
-   {: note}
+      For services that have finer grain resource access, you might want to use a service ID to grant access only to a subresource, such as a {{site.data.keyword.cos_short}} bucket.
+      {: tip}
+
+   1. You can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
+
+      Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service.
+      {: note}
 
 1. Click **Add** to generate the new service credential.
+1. Expand the details of your new service credential. Copy the credential properties that your app or external consumer needs. For example, the API key or password and URL.
 
-### Creating a service credential without an IAM service role
-{: #no-service-role}
-
-Services managed by IAM that generate new credentials can assign an IAM Service access role. This role grants access to the entire service instance. For services that have fine-grained resource access, you might want to grant access only to a subresource, such as a Cloud {{site.data.keyword.cos_short}} bucket. In this case, you can choose to continue without selecting a role so that the new credential is created without an IAM Service role. This way, you can manage the fine-grained access by creating an IAM policy that you scope to a specific resource, like a bucket. To create the credential without an IAM service role, complete the following steps:
-
-1. From the Resource list page, select the name of the service to open the service details page. Then, click **Service credentials > New Credential+**.
-1. Provide a **Name**.
-2. Select **None** as the role so that the new credential is created without an IAM Service role.
-3. Next, go to **Manage > Access (IAM) > Service IDs**.
-4. Select the service ID with the same name as the service credential key, and click **Assign access**.
-
-## Adding a credential when binding an IAM-enabled service by using the API
+## Creating a service credential by using the API
 {: #IAM_credential-api}
 {: api}
 
-Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a user name, password, host name, port, and a URL, however the contents of each credential is unique to the service that generates it.
+{{site.data.keyword.cloud_notm}} services can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
 Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
 
-Services managed by IAM that generate new credentials can assign an IAM Service access role. This role grants access to the entire service instance. For services that have finer grain resource access, you might want to grant access only to a sub-resource, such as a Cloud {{site.data.keyword.cos_short}} bucket. In this case, select **None** as the role so that the new credential is created without an IAM Service role. This way, you can manage fine grain access by creating an IAM policy that you scope to a specific resource, like a bucket. To do so, go to **Manage > Access (IAM) > Service IDs**. Select the service ID with the same name as the service credential key, and click **Assign access**.
+You can assign an IAM service access role to new credentials that you generate for an {{site.data.keyword.cloud_notm}} service. This role grants access to the entire service instance, not a specific resource. For services that have finer grain resource access, you might want to grant access only to a subresource, such as a {{site.data.keyword.cos_short}} bucket. In this case, assign no role to the new credential. This way, you can manage fine grain access by associating the credential with a service ID and create an IAM policy that you scope to a specific resource, like a bucket. To do so, go to **Manage > Access (IAM) > Service IDs**. Select the service ID with the same name as the service credential key, and click **Assign access**.
 {: tip}
 
-To create a resource key, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example:
+To create a resource key, call the [Resource Controller API](/apidocs/resource-controller/resource-controller#create-resource-key) as shown in the following example:
 
 ```bash
 curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_keys -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json' -d '{
@@ -153,16 +150,18 @@ fmt.Printf("\nCreateResourceKey() response:\n%s\n", string(b))
 {: codeblock}
 {: go}
 
-## Adding a credential when binding an IAM-enabled service by using Terraform
+Use the API key or other credential properties to connect the service instance to your app or other external consumer.
+
+## Creating a service credential by using Terraform
 {: #iam-credential-terraform}
 {: terraform}
 
-Before you can add a credential when binding an IAM-enabled service by using Terraform, make sure that you have completed the following:
+Before you can create a credential to connect your app or external consumer to an {{site.data.keyword.cloud_notm}} service by using Terraform, make sure that you have completed the following:
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
 
-Use the following steps to add a credential when binding an IAM-enabled service:
+Use the following steps to create a credential for connecting your app or external consumer to an {{site.data.keyword.cloud_notm}} service:
 
 1. Create an argument in your `main.tf` file. The following example creates credentials for a resource without a service ID by using the `ibm_resource_instance` resource, where `name` is a unique name to identify the credential.
 
@@ -213,80 +212,7 @@ Use the following steps to add a credential when binding an IAM-enabled service:
       ```
       {: pre}
 
-
-
-### Example Request to create an App Credential Binding
-{: #app-cred-binding-api}
-
-```bash
-curl "https://api.example.org/v3/service_credential_bindings" \
-  -X POST \
-  -H "Authorization: bearer [token]" \
-  -H "Content-type: application/json" \
-  -d '{
-    "type": "app",
-    "name": "some-binding-name",
-    "relationships": {
-      "service_instance": {
-        "data": {
-          "guid": "7304bc3c-7010-11ea-8840-48bf6bec2d78"
-        }
-      },
-      "app": {
-        "data": {
-          "guid": "e0e4417c-74ee-11ea-a604-48bf6bec2d78"
-        }
-      }
-    },
-    "parameters": {
-      "key1": "value1",
-      "key2": "value2"
-    },
-    "metadata": {
-      "labels": {
-        "foo": "bar"
-      },
-      "annotations": {
-        "baz": "qux"
-      }
-    }
-  }'
-```
-{: codeblock}
-
-### Example Request to create a Key Credential Binding
-{: #key-cred-binding-api}
-
-```bash
-curl "https://api.example.org/v3/service_credential_bindings" \
-  -X POST \
-  -H "Authorization: bearer [token]" \
-  -H "Content-type: application/json" \
-  -d '{
-    "type": "key",
-    "name": "some-binding-name",
-    "relationships": {
-      "service_instance": {
-        "data": {
-          "guid": "7304bc3c-7010-11ea-8840-48bf6bec2d78"
-        }
-      }
-    },
-    "parameters": {
-      "key1": "value1",
-      "key2": "value2"
-    },
-    "metadata": {
-      "labels": {
-        "foo": "bar"
-      },
-      "annotations": {
-        "baz": "qux"
-      }
-    }
-  }'
-```
-{: codeblock}
+Use the API key or other credential properties to connect the service instance to your app or other external consumer.
 
 ## Viewing a credential
 {: #viewing-credentials-ui}
@@ -307,7 +233,7 @@ The credential has a `onetime_credentials` property that determines whether you 
 
 
 
-This property is set when the credential is created and is determined by the `onetime_credentials` property on the service. To change this property by using the API, see the [Resource Controller API](/apidocs/resource-controller/resource-controller#update-resource-instance). 
+This property is set when the credential is created and is determined by the `onetime_credentials` property on the service. To change this property by using the API, see the [Resource Controller API](/apidocs/resource-controller/resource-controller#update-resource-instance).
 {: api}
 
 Existing credentials created before this property change are not affected.
@@ -339,14 +265,13 @@ When the credential level access can't be determined by comparing the access of 
 
 To view the credential, the user must have the IAM level access action `resource-controller.credential.retrieve_all`. This action is given with the Administrator role, and overrides any credential level access enabling the user to view the credential.
 
-
 ## Viewing a credential by using the API
 {: #viewing-credentials-api}
 {: api}
 
 After a credential is created for a service that has `onetime_credentials` configured to `false`, it can be viewed at any time for users that need the credential values. However, all users must have the correct level of access to see the details of a credential that includes the API key value. The access of the user must be equal to or greater than that of the service credential. For example, if the credential has the IAM service role `Writer`, then the user that is trying to view the credential must have the IAM service role `Writer` or `Manager` for that particular service assigned.
 
-To get a list of all of the resource keys, call the [Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#list-resource-keys) as shown in the following example:
+To get a list of all of the resource keys, call the [Resource Controller API](/apidocs/resource-controller/resource-controller#list-resource-keys) as shown in the following example:
 
 ```bash
 curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_keys -H 'Authorization: Bearer <IAM_TOKEN>'
