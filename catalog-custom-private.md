@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-01-30"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 
@@ -19,8 +19,7 @@ subcollection: account
 Private catalogs provide a way to centrally manage access to products in the {{site.data.keyword.cloud}} catalog and your own catalogs. You can customize the public catalog and your private catalogs to make specific solutions available to users in your account. By doing so, you can ensure that your catalogs are relevant to your business.
 {: shortdesc}
 
-To create catalogs to centrally manage your objects, such as Virtual Private Endpoints, see [Create objects for your private catalog](/docs/account?topic=account-object-onboard-catalog).
-{: note}
+
 
 ## Before you begin
 {: #prereq-restrict-ui}

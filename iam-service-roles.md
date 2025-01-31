@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-01-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -533,13 +533,13 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.segments.update` | Update segments | Manager, Writer |
 | `apprapp.segments.create` | Create segments | Manager, Writer |
 | `apprapp.segments.delete` | Delete segments | Manager, Writer |
-| `apprapp.features.patch` | Patch features | Writer |
+| `apprapp.features.patch` | Patch features | Manager, Writer |
 | `apprapp.features.toggle` | Toggle feature | Config Operator, Manager, Writer |
 | `apprapp.properties.list` | List properties | Config Operator, Manager, Reader, Writer |
 | `apprapp.properties.update` | Update properties | Manager |
 | `apprapp.properties.create` | Create properties | Manager |
 | `apprapp.properties.delete` | Delete properties | Manager |
-| `apprapp.properties.patch` | Patch properties | Writer |
+| `apprapp.properties.patch` | Patch properties | Manager, Writer |
 | `apprapp.environments.create` | Create environments | Manager |
 | `apprapp.environments.update` | Update environments | Manager |
 | `apprapp.environments.delete` | Delete environments | Manager |
@@ -570,7 +570,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.config-aggregator-settings.update` | Update the settings for the Configuration aggregator | Manager |
 | `apprapp.config-aggregator-settings.list` | Retrieve the settings for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
 | `apprapp.config-aggregator-status.read` | Retrieve the status of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
-| `apprapp.config-aggregator.query` | Query API to retrieve resource metadata from Config Aggregator | Configuration Aggregator Reader |
+| `apprapp.config-aggregator.query` | Query API to retrieve resource metadata from Config Aggregator | Configuration Aggregator Reader, Manager |
 | `apprapp.metrics.list` | The ability to see metrics. | Config Operator, Manager, Reader, Writer |
 | `apprapp.metrics.create` | The ability to create metrics. | Manager |
 | `apprapp.metrics.update` | The ability to edit or update existing metrics. | Manager |

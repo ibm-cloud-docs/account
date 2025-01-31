@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2024
-lastupdated: "2024-01-02"
+  years: 2015, 2025
+lastupdated: "2025-01-30"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -23,7 +23,8 @@ After you create a service ID, you can start creating API keys and assigning ser
 
 Each API key that is associated with a service ID inherits the policy that is assigned to the service ID. For example, if you want one application to view resources within a service, you need to use an API key that is associated with a service ID that has a policy that is assigned with the Viewer role. If you want another application to be able to have full access within a service, then you need to use an API key that is associated with a second service ID that has a policy that is assigned with the Administrator role.
 
-For more information, see [Examples of how to use a service ID](/docs/account?topic=account-serviceids#examples_serviceid).
+For some examples of how a service ID can be used, go to [Using HMAC credentials](/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main) in the {{site.data.keyword.objectstorageshort}} documentation, or this {{site.data.keyword.sqlquery_notm}} video on [How to use the {{site.data.keyword.sqlquery_notm}} REST API](https://www.youtube.com/watch?v=jDZKF0CnUvU){: external}.
+{: tip}
 
 ## Required access for managing service ID API keys
 {: #required-access-serviceid-keys}
