@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-05"
 
 keywords: apptio, cost benefit analysis
 
@@ -800,8 +800,8 @@ The following table is version 1.3 and the most recent CSV version. You get this
 | Non Chargeable  | `resources.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
 | Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
 | Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
-| Created At | `resources.created_at` | Created at timestamp of the instance. |
-| Deleted At | `resources.deleted_at` | Deleted at timestamp of the instance. |
+| Created At [New]{: tag-new} | `resources.created_at` | Created at timestamp of the instance. |
+| Deleted At [New]{: tag-new} | `resources.deleted_at` | Deleted at timestamp of the instance. |
 | Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
 | Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
 {: class="simple-tab-table"}
