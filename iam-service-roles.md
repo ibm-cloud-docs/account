@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-05"
+lastupdated: "2025-02-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4130,6 +4130,9 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Fraud Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Fraud Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Fraud Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -4143,22 +4146,33 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `gatekeeper.frauddashboard.read` | ability to view gatekeeper fraud landing page dashboard as a reader | Manager, Reader, Writer |
-| `gatekeeper.fraudcase.read` | searching or viewing a case | Manager, Reader, Writer |
-| `gatekeeper.fraudcasenotes.create` | Ability to create and edit fraud case  | Manager, Writer |
-| `gatekeeper.fraudagents.create` | Ability to view, create, edit and delete agents | Manager |
-| `gatekeeper.fraudhyperwarp.read` | Ability to view hyperwarp  | Manager, Reader, Writer |
-| `gatekeeper.fraudhyperwarp.create` | Ability to view, create, edit and delete hyperwarp | Manager |
-| `gatekeeper.fraudmetrics.read` | Ability to view Metrics | Manager, Reader, Writer |
-| `gatekeeper.fraudrules.read` | Ability to view assignment rules | Manager, Reader, Writer |
-| `gatekeeper.fraudrules.create` | The ability to create, edit and Delete assignment Rules | Manager |
+| `gatekeeper.frauddashboard.read` | ability to view gatekeeper fraud landing page dashboard as a reader | Fraud Manager, Fraud Reader, Fraud Writer |
+| `gatekeeper.fraudcase.read` | searching or viewing a case | Fraud Manager, Fraud Reader, Fraud Writer |
+| `gatekeeper.fraudcasenotes.create` | Ability to create and edit fraud case  | Fraud Manager, Fraud Writer |
+| `gatekeeper.fraudagents.create` | Ability to view, create, edit and delete agents | Fraud Manager |
+| `gatekeeper.fraudhyperwarp.read` | Ability to view hyperwarp  | Fraud Manager, Fraud Reader, Fraud Writer |
+| `gatekeeper.fraudhyperwarp.create` | Ability to view, create, edit and delete hyperwarp | Fraud Manager |
+| `gatekeeper.fraudmetrics.read` | Ability to view Metrics | Fraud Manager, Fraud Reader, Fraud Writer |
+| `gatekeeper.fraudrules.read` | Ability to view assignment rules | Fraud Manager, Fraud Reader, Fraud Writer |
+| `gatekeeper.fraudrules.create` | The ability to create, edit and Delete assignment Rules | Fraud Manager |
 | `gatekeeper.abusedashboard.read` | ability to view gatekeeper abuse landing page dashboard as a reader | Manager, Reader, Writer |
 | `gatekeeper.abusereport.read` | This role is for searching or viewing a ticket | Manager, Reader, Writer |
 | `gatekeeper.abusereport.update` | This role is for updating a ticket
  | Manager, Writer |
 | `gatekeeper.abuseadmin.read` | This role is for viewing abuse rules, playbook, queue, types and boilerplate | Manager |
 | `gatekeeper.abuseadmin.create` | This role is for creating or deleting abuse rules, playbook, queue, types and boilerplate | Manager |
-| `gatekeeper.fraudagents.read` | Ability to view agents only | Manager, Reader, Writer |
+| `gatekeeper.fraudagents.read` | Ability to view agents only | Fraud Manager, Fraud Reader, Fraud Writer |
+| `gatekeeper.fraudartifact.create` | Ability to create artifacts | Fraud Manager, Fraud Writer |
+| `gatekeeper.fraudartifact.read` | Ability to view artifacts | Fraud Manager, Fraud Reader, Fraud Writer |
+| `gatekeeper.fraudartifacttype.create` | Manager role to create additional artifact type | Fraud Manager |
+| `gatekeeper.abuseboilerplate.read` | Ability to read boilerplates | Manager, Reader, Writer |
+| `gatekeeper.abuseboilerplate.create` | Ability to create boilerplates | Manager |
+| `gatekeeper.abusequeuesandtypes.read` | The ability to read Queues and Types | Manager, Reader, Writer |
+| `gatekeeper.abuseplaybooks.read` | ability to read playbooks | Manager, Reader, Writer |
+| `gatekeeper.abuseplaybooks.create` | the ability to create playbooks | Manager |
+| `gatekeeper.abuseagents.read` | ability to read abuse agents | Manager, Reader, Writer |
+| `gatekeeper.abuseagents.create` | ability to create abuse agents | Manager |
+| `gatekeeper.abusequeuesandtypes.create` | Ability to create queues and types | Manager |
 {: caption="Service actions - gatekeeper" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="gatekeeper"}
