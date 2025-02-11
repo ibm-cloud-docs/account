@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-06"
+lastupdated: "2025-02-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8076,8 +8076,17 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.session.create` | Create a Session | Manager, Writer |
 | `quantum-computing.account-configuration.read` | Read Account Configuration. Must be granted by a policy that does not specify service instance. | Manager |
 | `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader, Writer |
+| `quantum-computing.direct-access-backend.read` | Get backend accessible via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-job.cancel` | Cancel job via Direct Access API. | Manager, Writer |
+| `quantum-computing.direct-access-job.create` | Create job via Direct Access API. | Manager, Writer |
+| `quantum-computing.direct-access-job.delete` | Delete job via Direct Access API. | Manager, Writer |
+| `quantum-computing.direct-access-job.list` | List jobs via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-filters.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-backend.list` | List backends, get backend status, configuration, properties or pulse defaults via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-backend-configuration.read` | Get backend configuration via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-backend-properties.read` | Get backend properties via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-backend-defaults.read` | Get backend defaults via Direct Access API. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}
