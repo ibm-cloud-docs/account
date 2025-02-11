@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2023-12-19"
+lastupdated: "2025-02-05"
 
 keywords: IAM access, access policy, IAM roles, platform management roles, service access roles, types of access policies
 
@@ -25,7 +25,7 @@ All services that are organized in a resource group in your account are managed 
 
 You can manage and define access based on specific roles for users and resources in your account.
 
-* Platform management roles cover a range of actions, including the ability to create and delete instances, manage aliases, bindings, and credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to [account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles) that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.
+* Platform management roles cover a range of actions, including the ability to create and delete instances, manage credentials, and manage access. The platform roles are administrator, editor, operator, viewer. Platform management roles also apply to [account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles) that enable users to invite users, manage service IDs, access policies, catalog entries, and track billing and usage depending on their assigned role on an account management service.
 
 * Service access roles define a user or service’s ability to perform actions on a service instance, such as accessing the console or performing API calls. The most common service access roles are manager, writer, and reader. Each service maps particular actions for working with the service to each of these roles.
 
@@ -50,9 +50,9 @@ The following table provides examples for some of the platform management action
 
 | Platform management role | One or all IAM-enabled services                                                      | Selected service in a resource group                | Resource group access |
 |--------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------|-------------------------|
-| Viewer role        | View instances, aliases, bindings, and credentials                                   | View only specified instances in the resource group | View resource group     |
-| Operator role      |  View instances and manage aliases, bindings, and credentials                        |  Not applicable                                     | Not applicable          |
-| Editor role        |  Create, delete, edit, and view instances. Manage aliases, bindings, and credentials | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View and edit name of resource group |
+| Viewer role        | View instances and credentials                                   | View only specified instances in the resource group | View resource group     |
+| Operator role      |  View instances and manage credentials                        |  Not applicable                                     | Not applicable          |
+| Editor role        |  Create, delete, edit, and view instances. Manage credentials | Create, delete, edit, suspend, resume, view, and bind only specified instances in the resource group | View and edit name of resource group |
 | Administrator role |  All management actions for services                                                 | All management actions for the specified instances in the resource group | View, edit, and manage access for the resource group |
 {: row-headers}
 {: caption="Example platform management roles and actions for services in an account" caption-side="top"}

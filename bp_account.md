@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-05"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -73,7 +73,7 @@ The following diagram shows how an access policy works:
 The most commonly used roles are viewer, editor, operator, and administrator platform roles.
 
 * The viewer role provides the least amount of access for viewing instances and resource groups in an account.
-* The operator role includes actions such as the ability to view instances and manage aliases, bindings, and credentials.
+* The operator role includes actions such as the ability to view instances and manage credentials.
 * The editor role includes actions the same actions of an operator role but also actions for creating, editing, deleting, and binding service instances.
 * The administrator role includes everything for working with a service instance and assigning access to others for that service or instance that the policy is for.
 

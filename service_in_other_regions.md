@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-05"
 
 keywords: service availability, service location, using services across regions
 
@@ -19,7 +19,7 @@ subcollection: account
 If you have a service instance that is created and bound to apps in one region, you can use this service instance in another region by one of the following methods:
 {: shortdesc}
 
-* Use the service credentials to configure your app instance directly. See [Connecting services to external apps](/docs/account?topic=account-externalapp) for details.
+* Use the service credentials to configure your app instance directly. See [Connecting services to apps](/docs/account?topic=account-service_credentials) for details.
 * Create a user-provided service as a bridge.
 
 To use a service instance that exists in another region, complete the following steps:
