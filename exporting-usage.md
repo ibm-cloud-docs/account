@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-02-05"
+lastupdated: "2025-02-12"
 
 keywords: apptio, cost benefit analysis
 
@@ -208,16 +208,19 @@ The following table shows the correlation between the heading titles in your CSV
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- July 2024 to present is [version 1.2](#account-summary-csv-version-1-2)
+
+- July 2024 to March 2025 is [version 1.2](#account-summary-csv-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-0-2)
 - Before February 2023 is [version 0.1](#account-summary-csv-version-0-1).
 
+
+
 #### Account summary CSV version 1.2
 {: #account-summary-csv-version-1-2}
 
-The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from July 2024 to present.
+The following table is version 1.2. You get this version if the data that you're viewing is from July 2024 to March 2025.
 
 | CSV Header          | Description                                        |
 |---------------------|-------------------------------------------------|
@@ -742,7 +745,7 @@ Regular account CSV reports are not real time and can be incomplete. Complete CS
 You can view other versions of the CSV if you have earlier instances reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
 
-- February 2025 to present is [version 1.3](#instances-CSV-version-1-3)
+- February 2025 to March 2025 is [version 1.3](#instances-CSV-version-1-3)
 - June 2024 to January 2025 is [version 1.2](#instances-CSV-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#instances-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#instances-csv-version-1-0)
@@ -750,10 +753,11 @@ You can view other versions of the CSV if you have earlier instances reports in 
 - Before February 2023 is [version 0.1](#instances-csv-version-0-1).
 
 
+
 #### Instances CSV version 1.3
 {: #instances-CSV-version-1-3}
 
-The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from February 2025 to present.
+The following table is version 1.3. You get this version if the data that you're viewing is from February 2025 to March 2025.
 
 | CSV Header       | Description                                     |
 |------------------|-------------------------------------------------|
@@ -800,8 +804,8 @@ The following table is version 1.3 and the most recent CSV version. You get this
 | Non Chargeable  | `resources.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
 | Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
 | Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
-| Created At [New]{: tag-new} | `resources.created_at` | Created at timestamp of the instance. |
-| Deleted At [New]{: tag-new} | `resources.deleted_at` | Deleted at timestamp of the instance. |
+| Created At  | `resources.created_at` | Created at timestamp of the instance. |
+| Deleted At  | `resources.deleted_at` | Deleted at timestamp of the instance. |
 | Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
 | Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
 {: class="simple-tab-table"}
@@ -852,9 +856,9 @@ You will get CSV version 1.2 if the data that you're viewing is from June 2024 t
 | Usage Unit          | `resources.usage.unit`             | Unit that qualifies the quantity |
 | Usage Quantity      | `resources.usage.quantity`         | Aggregated value for the metric |
 | Original Cost       | `resources.usage.rated_cost`       | The starting cost of a resource within your account |
-| Volume Discount [New]{: tag-new}  | `resources.usage.volume_discount` | This percentage reflects the reduction to the original cost that you receive under a volume based pricing structure |
-| Volume Cost [New]{: tag-new} | `resources.usage.volume_cost` | The original cost adjusted for volume based discounts that are applied at the account level |
-| Cost [New]{: tag-new} |  `resources.usage.cost`   |  The pre-tax cost after accounting for any applicable discounts |
+| Volume Discount   | `resources.usage.volume_discount` | This percentage reflects the reduction to the original cost that you receive under a volume based pricing structure |
+| Volume Cost  | `resources.usage.volume_cost` | The original cost adjusted for volume based discounts that are applied at the account level |
+| Cost  |  `resources.usage.cost`   |  The pre-tax cost after accounting for any applicable discounts |
 | Pending             | `resources.pending`            | 	Pending charge from classic infrastructure |
 | Discount (%)        | `resources.plans.usage.discounts.discount`, semicolon(;) delimited | Discount percentage that is applied to the account |
 | Discount ID         | `resources.plans.usage.discounts.ref`, semicolon(;) delimited | Reference ID of the discount |
