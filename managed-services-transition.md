@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: managed services transition, managed services
 
@@ -82,10 +82,10 @@ You can expect the following tasks to be part of the transition to a self-manage
 - Effective January 1st, 2025, IBM will no longer be able to log into client devices with our Administrative domain accounts, and any remaining domain-based resources will begin to experience failures as the infrastructure is disabled.
 - On January 31st, 2025 IBM will demote and remove our controllers and servers from the domain as part of our decommission, and the domain will remain on the Wanclouds controllers without impact or interruption.
 
-## FAQs about managed services transition
+## FAQ about managed services transition
 {: #faqs-managed-services}
 
-The following are FAQs about managed services transition.
+The following are FAQ about managed services transition.
 
 ### What does this transition mean to clients
 {: #transition-clients}

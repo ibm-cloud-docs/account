@@ -2,7 +2,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -14,7 +14,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs for IBM Cloud Carbon Calculator
+# FAQ for {{site.data.keyword.cloud_notm}} Carbon Calculator
 {: #carboncalcfaqs}
 
 ## Why can't I see my emissions data?

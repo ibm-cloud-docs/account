@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: migrate, migrating data center, migrate resources, data center
 
@@ -52,7 +52,7 @@ Complete the following steps to migrate resources to a new data center:
 * Migrate your virtual server instance [from one classic data center to another](/docs/virtual-servers?account=virtual-servers-migrating-vsi-new-datacenter).
 * Migrate your [virtual server instance](/docs/vpc?topic=vpc-migrate-vsi-to-vpc) by creating an image template and deploying it in a new {{site.data.keyword.vpc_short}}.
 * Migrate your [VMware cluster](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-migrations) to a new data center by using HCX.
-* Migrate a local load balancer to [IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started). For more information, see [FAQs for IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer).
+* Migrate a local load balancer to [IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started). For more information, see [FAQ for IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer).
 * Migrate your [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-migrate-data-center#migrating-your-resources) data to a new {{site.data.keyword.cloud_notm}} data center.
 
 Copy only applications and application data between systems. Copying older versions of operating system files to a newer version can cause problems. Shut down databases before you copy them between the systems to ensure that the data is consistent. When migrating database data, migrate the data in a way that doesn’t limit your options to import it into the new system. Rather than copying database data from system to system, consider exporting it to a format so you can import it to a newer database. Flat text files, CSV files, and other files provide more options than using proprietary or closed file formats when it comes to moving data between systems. Always test your data migration approaches on a small set of test data before officially copying.

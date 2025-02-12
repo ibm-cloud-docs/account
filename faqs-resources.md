@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -15,7 +15,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs about managing resources
+# FAQ about managing resources
 {: #resources-faq}
 
 ## What is a resource group?
@@ -132,8 +132,8 @@ After the instance is deleted from the console, you can view it in your account 
 
 You can restore a resource from a deleted resource group. [Create a support case](/unifiedsupport/cases/add){: external} in the {{site.data.keyword.Bluemix_notm}} Support Center and specify in the description of the case that you want to restore the resource that's in a deleted resource group.
 
-## How can I share a product or location with my entire enterprise? 
+## How can I share a product or location with my entire enterprise?
 {: #visibility-enterprise}
 {: faq}
 
-You can share a product, a specific pricing plan within that product, or its deployment with the whole enterprise account or with a specific group within the enterprise. Similarly, you can do the same with any private or public location. If your product or location is managed by using a private catalog, you can [share your product by using the console](/docs/account?topic=account-catalog-share&interface=ui#ent-share-steps). If your product or location is not managed by private catalogs or you aren’t sure, contact your {{site.data.keyword.IBM_notm}} focal to help you get the appropriate information allowlisted into your locations. The same prefixes apply in this scenario and can be done programmatically or in the console. Enterprise IDs are prefixed by `-ent-`, and account groups are prefixed by `-entgrp-`. If you add any new accounts or account groups to the enterprise, they inherit the visibility of that product or location. 
+You can share a product, a specific pricing plan within that product, or its deployment with the whole enterprise account or with a specific group within the enterprise. Similarly, you can do the same with any private or public location. If your product or location is managed by using a private catalog, you can [share your product by using the console](/docs/account?topic=account-catalog-share&interface=ui#ent-share-steps). If your product or location is not managed by private catalogs or you aren’t sure, contact your {{site.data.keyword.IBM_notm}} focal to help you get the appropriate information allowlisted into your locations. The same prefixes apply in this scenario and can be done programmatically or in the console. Enterprise IDs are prefixed by `-ent-`, and account groups are prefixed by `-entgrp-`. If you add any new accounts or account groups to the enterprise, they inherit the visibility of that product or location.

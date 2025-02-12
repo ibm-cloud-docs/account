@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: frequently asked questions, cbr faqs, cbr and iam, context-based restrictions, access restrictions
 
@@ -15,13 +15,13 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs about Context-based restrictions
+# FAQ about Context-based restrictions
 {: #cbrfaq}
 
-FAQs for {{site.data.keyword.cloud}} Context-based restrictions might include questions about access restrictions for {{site.data.keyword.cloud_notm}} resources.
+FAQ for {{site.data.keyword.cloud}} Context-based restrictions might include questions about access restrictions for {{site.data.keyword.cloud_notm}} resources.
 {: shortdesc}
 
-To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 
 ## What are {{site.data.keyword.cloud_notm}} Context-based restrictions?
 {: #whatiscbr}
