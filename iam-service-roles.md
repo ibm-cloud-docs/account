@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-11"
+lastupdated: "2025-02-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1876,6 +1876,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/backup_records` | Read all backup history records | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/hibernate` | Pause the instance through a disablement | Administrator, Editor, Operator |
 | `DELETE /v4/:platform/deployments/:deployment_id/hibernate` | Resume the instance by removing a disablement | Administrator, Editor, Operator |
+| `POST /v5/:platform/deployments/:deployment_id/hibernate` | Pause the instance through a disablement | Administrator, Editor, Operator |
+| `DELETE /v5/:platform/deployments/:deployment_id/hibernate` | Resume the instance by removing a disablement | Administrator, Editor, Operator |
 | `dashdb.console.pause` | Pause the instance | Administrator, Editor, Operator |
 | `dashdb.console.resume` | Resume the instance | Administrator, Editor, Operator |
 {: caption="Service actions - Db2 Warehouse" caption-side="top"}
