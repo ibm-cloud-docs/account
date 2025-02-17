@@ -3,9 +3,9 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-17"
 
-keywords: SAML federation, federation option, federated IBMid, SAML fed, federated 
+keywords: SAML federation, federation option, federated IBMid, SAML fed, federated
 
 subcollection: account
 
@@ -25,6 +25,8 @@ Federating to your own directory simplifies the process of adding users to your 
 This topic explains the differences between the following two methods:
    * Federating with IBMid.
    * Federating with your own instance of {{site.data.keyword.appid_full_notm}}.
+
+
 
 To decide which option is applicable to your use case, review the following sections.
 
