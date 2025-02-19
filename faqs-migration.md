@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: migration FAQs, data centers
 
@@ -15,7 +15,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs about migrating resources to a different data center
+# FAQ about migrating resources to a different data center
 {: #faqs-migrating-resources}
 
 

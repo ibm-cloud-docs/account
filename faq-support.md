@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -15,7 +15,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs for getting support
+# FAQ for getting support
 {: #get-supportfaq}
 
 ## How do I check for planned maintenance?

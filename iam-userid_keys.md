@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2024
-lastupdated: "2024-01-02"
+  years: 2015, 2025
+lastupdated: "2025-02-12"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -31,7 +31,7 @@ The API key that is associated with your user identity has all of the access you
 
 A functional ID is a user ID created to represent a program, application, or service. The functional ID can be invited to an account and assigned only the access for a particular purpose, such as interacting with a specific resource or application. The functional ID should be granted only the minimum level access in a single account that is needed for the specific function for which it was created.
 
-If you are applying a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys. For more information, see the [FAQs about IAM](/docs/account?topic=account-iamfaq#tp-apikey).
+If you are applying a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys. For more information, see the [FAQ about IAM](/docs/account?topic=account-iamfaq#tp-apikey).
 {: note}
 
 

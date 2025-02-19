@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-11"
 
 keywords: login, how login works, login flow, login diagram, login sequence
 
@@ -69,8 +69,8 @@ If you choose to integrate with your external IdP to securely authenticate exter
 
 1. The user starts the sequence by visiting an account-specific URL with their browser. This is either `https://cloud.ibm.com/authorize/<account id>` or `https://cloud.ibm.com/authorize/<account alias>`. The account alias can be configured on the IAM Identity Provider configuration pages in the {{site.data.keyword.cloud_notm}} console.
 
-Using a specific URL is required to address the correct federated SAML partner.
-{: note}
+   Using a specific URL is required to address the correct federated SAML partner.
+   {: note}
 
 2. The {{site.data.keyword.cloud_notm}} console (console) redirects the user's browser to {{site.data.keyword.cloud_notm}}'s IAM component. As part of the redirect, the account ID or alias is sent to IAM.
 3. With the help of the account ID or alias, IAM determines the {{site.data.keyword.appid_short}} instance that is needed to run the login sequence. Therefore, IAM sends back a redirect request to the user's browser.

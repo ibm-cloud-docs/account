@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -15,10 +15,10 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs about accounts
+# FAQ about accounts
 {: #accountfaqs}
 
-FAQs for your {{site.data.keyword.cloud}} account might include questions about upgrading an account, reassigning users, resolving account errors, or tagging resources in an account. To find all FAQs for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
+FAQ for your {{site.data.keyword.cloud}} account might include questions about upgrading an account, reassigning users, resolving account errors, or tagging resources in an account. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## How do I create an {{site.data.keyword.Bluemix_notm}} account?

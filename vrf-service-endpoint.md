@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -22,7 +22,7 @@ When using the classic infrastructure, you connect to resources in your account 
 Virtual Private Clouds (VPCs) are automatically enabled for virtual routing and forwarding (VRF). To enable service endpoints for your VPC, continue to [Enabling service endpoints](#service-endpoint).
 {: note}
 
-By default, classic accounts that were established before 30 November 2023, are included in the {{site.data.keyword.cloud_notm}} general routing table. Previously, if you wanted to convert a classic account to a VRF-style account, you were required to open a support case with {{site.data.keyword.IBM}} Support. Beginning 30 November 2023, any new classic account or any existing classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, see [FAQs about VRF account migration](/docs/account?topic=account-vrf-faqs).
+By default, classic accounts that were established before 30 November 2023, are included in the {{site.data.keyword.cloud_notm}} general routing table. Previously, if you wanted to convert a classic account to a VRF-style account, you were required to open a support case with {{site.data.keyword.IBM}} Support. Beginning 30 November 2023, any new classic account or any existing classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, see [FAQ about VRF account migration](/docs/account?topic=account-vrf-faqs).
 {: attention}
 
 ## Before you begin
@@ -45,7 +45,7 @@ Enabling VRF permanently alters the networking for your account. Be sure that yo
 To enable VRF:
 
 1. In the console, go to **Manage > Account**, then click **Account settings**.
-2. Go to **Virtual routing and forwarding**, and click **On**. 
+2. Go to **Virtual routing and forwarding**, and click **On**.
 
 For most accounts, this action immediately converts the private network to VRF. For a select few accounts, coordination with {{site.data.keyword.cloud_notm}} support might be required. To create the support case, complete the following steps:
 
@@ -80,7 +80,7 @@ Before you can enable service endpoints, VRF must be enabled for your account. V
 1. From the Service endpoints section, click **On**.
 
    If you can't click **On**, VRF might not be enabled for your account. Verify that it's enabled by checking the virtual routing and forwarding section.
-   
+
 1. Review the impacts to your account, and click **On**.
 
 It might take a few minutes for this change to take effect.

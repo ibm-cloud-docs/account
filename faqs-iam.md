@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-12"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -15,13 +15,13 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQs about IAM
+# FAQ about IAM
 {: #iamfaq}
 
-FAQs for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) might include questions about access control for resources, resource groups, account management, classic infrastructure resources, and access groups.
+FAQ for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) might include questions about access control for resources, resource groups, account management, classic infrastructure resources, and access groups.
 {: shortdesc}
 
-To find all FAQs for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 
 ## What is {{site.data.keyword.cloud_notm}} Identity and Access Management?
 {: #whatisiam}

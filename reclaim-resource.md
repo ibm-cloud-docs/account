@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2023
-lastupdated: "2023-06-19"
+  years: 2020, 2025
+lastupdated: "2025-02-12"
 
 keywords: account resources, reclaim resource, restore resource, reclamation
 
@@ -16,7 +16,7 @@ subcollection: account
 # Using resource reclamations
 {: #resource-reclamation}
 
-You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources. For more information, see [FAQs about resources](/docs/account?topic=account-resources-faq&interface=cli)
+You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources. For more information, see [FAQ about resources](/docs/account?topic=account-resources-faq&interface=cli)
 {: shortdesc}
 
 ## Listing reclaimed resources by using the CLI
