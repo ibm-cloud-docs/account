@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-18"
+lastupdated: "2025-02-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -9431,7 +9431,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `watsonx-orchestrate.logs.read` | Can view skill analytics and access user conversation logs. | Manager |
 | `watsonx-orchestrate.environment.write` | Can rename, edit or delete an environment | Manager, Writer |
 | `watsonx-orchestrate.environment.read` | Can open and view an environment | Manager, Writer |
-| `watsonx-orchestrate.release.write` | Can create or delete a Release for an Assistant | Manager |
+| `watsonx-orchestrate.release.write` | Can create or delete a Release for an Assistant | Manager, Writer |
 | `watsonx-orchestrate.dashboard.view` | Can view dashboard | Administrator, Editor, Manager, Operator, Service Configuration Reader, Viewer, WO User, Writer |
 | `watsonx-orchestrate.credentials.write` | Can assign and set credentials | Manager |
 {: caption="Service actions - watsonx Orchestrate" caption-side="top"}
