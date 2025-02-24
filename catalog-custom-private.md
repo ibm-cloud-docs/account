@@ -96,7 +96,7 @@ Now that you've created your private catalogs, complete the following steps to t
 2. Click **Settings**.
 3. Set **{{site.data.keyword.cloud_notm}} catalog** to **Off**.
 
-    
+   
 
 4. Confirm that your filters and settings are correctly applied by going to the public catalog, and expanding the catalog switcher. Only the private catalogs in your account should be displayed in the list.
 
