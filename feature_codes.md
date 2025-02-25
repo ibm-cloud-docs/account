@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-25"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -31,10 +31,9 @@ You must have the Editor role or higher for all account management services to a
 * Use premium service plans
 * Convert a Lite account to a trial account, which provides access to more services but only within a limited trial period
 
-Complete the following steps to apply a feature code to your existing account:
+If you don't have an account yet, you can add your feature code when you [register](/registration) for a new account by clicking **Register with a code** instead of entering your credit card information. If you do have an account, complete the following steps to apply a feature code to your existing account:
 
-If you don't have an account yet, you can add your feature code when you [register](/registration) for a new account by clicking **Register with a code** instead of entering your credit card information.
-{: tip}
+
 
 1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
 1. Click **Apply code**.
