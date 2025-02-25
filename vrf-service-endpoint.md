@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-02-25"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -148,7 +148,7 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | Service | Documentation |
 |-------------------|-------------------------------|
 | {{site.data.keyword.appconfig_short}} | [Regions and endpoints](/docs/app-configuration?topic=app-configuration-ac-regions-endpoints) |
-| {{site.data.keyword.cloudcerts_short}} | [Regions and endpoints](/docs/secrets-manager?topic=secrets-manager-endpoints) |
+| {{site.data.keyword.secrets-manager_short}} | [Regions and endpoints](/docs/secrets-manager?topic=secrets-manager-endpoints) |
 | {{site.data.keyword.logs_full_notm}} | [Service API endpoints](/docs/cloud-logs?topic=cloud-logs-endpoints_api) |
 | {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_basics#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
 | {{site.data.keyword.contdelivery_short}} | [Regions and endpoints](/docs/ContinuousDelivery?topic=ContinuousDelivery-regions#service-endpoints) |
