@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-22"
+lastupdated: "2025-02-25"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -981,6 +981,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.legacy-root-credential.revoke` | Revoke legacy credential tied to your instance URL | Administrator, Manager |
 | `cloudantnosqldb.legacy-credentials.revoke` | Migrate instance to IAM only  | Administrator, Manager |
 | `cloudantnosqldb.account-current-dbs.read` | Read the current number of databases | Manager, Monitor, Reader, Writer |
+| `cloudantnosqldb.account-capacity-dbs.read` | Read the maximum number of databases allowed | Manager, Monitor, Reader, Writer |
 {: caption="Service actions - Cloudant" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloudantnosqldb"}
