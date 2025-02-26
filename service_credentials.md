@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-24"
+lastupdated: "2025-02-26"
 
 keywords: service key, api key, credential, connect resources to apps
 
@@ -223,7 +223,7 @@ After a credential is created for a service that has `onetime_credentials` confi
 To view an existing service credential for a service, complete the following steps:
 
 1. From the Resource list page, select the name of the service to open the service details page.
-2. Click **Service credentials**
+2. Click **Service credentials**.
 3. Expand **View credentials** on the row for an existing credential.
 
 ### One-time credentials
