@@ -232,8 +232,6 @@ To view an existing service credential for a service, complete the following ste
 
 The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, you can view the at any time for users that need the credential values.
 
-
-
 Existing credentials created before this property change are not affected.
 {: note}
 
