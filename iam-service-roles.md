@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-25"
+lastupdated: "2025-02-26"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8139,6 +8139,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.direct-access-backend-configuration.read` | Get backend configuration via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-properties.read` | Get backend properties via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-defaults.read` | Get backend defaults via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.instance-cycle.read` | Read instance cycle details. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}
