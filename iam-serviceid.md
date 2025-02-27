@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-30"
+lastupdated: "2025-02-27"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -21,9 +21,11 @@ A service ID identifies a service or application similar to how a user ID identi
 
 When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the console. After you create your service ID, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies that are assigned to each service ID that you create.
 
-The access policies that are associated with a service ID enable specific actions that can be taken when that service ID is used to access a specific service. A service ID can be assigned multiple policies for different Identity and access-enabled services, and even different instances of a single service. For example, you have two services with two service instances each. You might assign the Viewer role for all available instances of one service and assign the Editor role for only one instance of a second service. This way, you can customize access to multiple services, but use a single API key for authentication to all.
+The access policies that are associated with a service ID enable specific actions that can be taken when that service ID is used to access a specific service. A service ID can have multiple policies assigned to it for different Identity and access-enabled services, and even different instances of a single service. For example, you have two services with two service instances each. You might assign the Viewer role for all available instances of one service and assign the Editor role for only one instance of a second service. This way, you can customize access to multiple services, but use a single API key for authentication to all.
 
 All users have access to create a service ID in an account to which they are a member. However, to allow a user in an account access to view or manage a service ID that they did not personally create, they must have access with a role on the IAM Identity account management service. For more information, see [IAM Identity service](/docs/account?topic=account-account-services#identity-service-account-management).
+
+Service ID groups organize service IDs more effectively into groups, improving the efficiency of listing operations by reducing the number of service IDs that need to be processed. Service ID groups don't integrate with access management, so they cannot be used in IAM policies to control access.
 
 You can assign any identity access to view or manage a service ID by using access management tags. For more information, see [Attaching tags to a service ID](/docs/account?topic=account-attaching-and-detaching-tags-on-a-resource&interface=ui#am-tags-serviceid-ui).
 {: tip}

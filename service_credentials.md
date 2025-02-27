@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-31"
+lastupdated: "2025-02-26"
 
 keywords: service key, api key, credential, connect resources to apps
 
@@ -223,18 +223,14 @@ After a credential is created for a service that has `onetime_credentials` confi
 To view an existing service credential for a service, complete the following steps:
 
 1. From the Resource list page, select the name of the service to open the service details page.
-2. Click **Service credentials**
+2. Click **Service credentials**.
 3. Expand **View credentials** on the row for an existing credential.
 
 ### One-time credentials
 {: #onetime-credentials}
+{: ui}
 
-The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, it can be viewed at any time for users that need the credential values.
-
-
-
-This property is set when the credential is created and is determined by the `onetime_credentials` property on the service. To change this property by using the API, see the [Resource Controller API](/apidocs/resource-controller/resource-controller#update-resource-instance).
-{: api}
+The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, you can view the at any time for users that need the credential values.
 
 Existing credentials created before this property change are not affected.
 {: note}

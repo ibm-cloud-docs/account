@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-18"
+lastupdated: "2025-02-26"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -981,6 +981,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloudantnosqldb.legacy-root-credential.revoke` | Revoke legacy credential tied to your instance URL | Administrator, Manager |
 | `cloudantnosqldb.legacy-credentials.revoke` | Migrate instance to IAM only  | Administrator, Manager |
 | `cloudantnosqldb.account-current-dbs.read` | Read the current number of databases | Manager, Monitor, Reader, Writer |
+| `cloudantnosqldb.account-capacity-dbs.read` | Read the maximum number of databases allowed | Manager, Monitor, Reader, Writer |
 {: caption="Service actions - Cloudant" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cloudantnosqldb"}
@@ -8138,6 +8139,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.direct-access-backend-configuration.read` | Get backend configuration via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-properties.read` | Get backend properties via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-defaults.read` | Get backend defaults via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.instance-cycle.read` | Read instance cycle details. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}
@@ -9431,7 +9433,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `watsonx-orchestrate.logs.read` | Can view skill analytics and access user conversation logs. | Manager |
 | `watsonx-orchestrate.environment.write` | Can rename, edit or delete an environment | Manager, Writer |
 | `watsonx-orchestrate.environment.read` | Can open and view an environment | Manager, Writer |
-| `watsonx-orchestrate.release.write` | Can create or delete a Release for an Assistant | Manager |
+| `watsonx-orchestrate.release.write` | Can create or delete a Release for an Assistant | Manager, Writer |
 | `watsonx-orchestrate.dashboard.view` | Can view dashboard | Administrator, Editor, Manager, Operator, Service Configuration Reader, Viewer, WO User, Writer |
 | `watsonx-orchestrate.credentials.write` | Can assign and set credentials | Manager |
 {: caption="Service actions - watsonx Orchestrate" caption-side="top"}
