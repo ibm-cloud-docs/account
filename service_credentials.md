@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-26"
+lastupdated: "2025-02-27"
 
 keywords: service key, api key, credential, connect resources to apps
 
@@ -230,7 +230,7 @@ To view an existing service credential for a service, complete the following ste
 {: #onetime-credentials}
 {: ui}
 
-The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, you can view the at any time for users that need the credential values.
+The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, users with access can view the credential values at any time.
 
 Existing credentials created before this property change are not affected.
 {: note}
