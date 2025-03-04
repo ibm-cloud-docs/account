@@ -109,7 +109,7 @@ Customers can specify the IP addresses they know that they want to be able to se
 #### VPCs
 {: #vpc-attribute}
 
-If you have apps that are deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone. To do so, select the target VPC in your network zone and add that network zone to your rule. This way, you don’t have to find the IP addresses that the VPC uses. Resources that are contacted see that the request is coming from a set of allowed IP addresses.
+If you have apps that are deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone. To do so, select the target VPC in your network zone and add that network zone to your rule. This way, you don’t must find the IP addresses that the VPC uses. Resources that are contacted see that the request is coming from a set of allowed IP addresses.
 
 #### Service references
 {: #service-attribute}
@@ -148,7 +148,7 @@ The following is a list of services that you can add to a network zone as a serv
 | [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-pipeline-subnet-ranges) | IAM-enabled | `toolchain` |
 {: caption="Services that are compatible with service references." caption-side="top"}
 
-In table 1, **All Account Management services** refers to the grouping of Account Management type services that are listed in the table. For example, if there are two Account Management services listed in table 1, **All Account Management services** includes those two services. As more Account Management services become available as service references, network zones that specify **All Account Management services** as a service reference automatically include the newly added account management services.
+In table 1, **All Account Management services** refers to the grouping of Account Management type services that are listed in the table. For example, if there are two Account Management services that are listed in table 1, **All Account Management services** includes those two services. As more Account Management services become available as service references, network zones that specify **All Account Management services** as a service reference automatically include the newly added account management services.
 {: note}
 
 Refer to each service offering's documentation for more information about which services to add as a service reference for the service offering that you target in a rule.
@@ -162,13 +162,13 @@ An endpoint type represents the connection over which an access request is recei
 
 The three common endpoint types are as follows:
 * Public endpoints can accept requests from anywhere.
-* Private endpoints are available for most requests, that originate from within {{site.data.keyword.cloud}}.
-* Direct endpoints are used in Bring-Your-Own-IP scenarios, generally for requests, that originate from resources within VPCs.
+* Private endpoints are available for most requests that originate from within {{site.data.keyword.cloud}}.
+* Direct endpoints are used in Bring-Your-Own-IP scenarios, generally for requests that originate from resources within VPCs.
 
 Some endpoint types might not be supported by the selected service.
 {: note}
 
-To access virtual private endpoints, the CLI users must log in using the command `ibmcloud login -a private.cloud.ibm.com --vpc`​. For more information, see [Creating a private endpoint gateway (required for VPC use)](/docs/cli?topic=cli-service-connection#cli-private-vpc)
+To access virtual private endpoints, the CLI users must log in using the command `ibmcloud login -a private.cloud.ibm.com --vpc`​. For more information, see [Creating a private endpoint gateway (required for VPC use)](/docs/cli?topic=cli-service-connection#cli-private-vpc). 
 {: note}
 
 ### Multifactor authentication
