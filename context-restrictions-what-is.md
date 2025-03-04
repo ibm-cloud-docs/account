@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-03-04"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -168,6 +168,8 @@ The three common endpoint types are as follows:
 Some endpoint types might not be supported by the selected service.
 {: note}
 
+To access virtual private endpoints, the CLI users must log in using the command `ibmcloud login -a private.cloud.ibm.com --vpc`​. For more information, see [Creating a private endpoint gateway (required for VPC use)](/docs/cli?topic=cli-service-connection#cli-private-vpc)
+{: note}
 
 ### Multifactor authentication
 {: #context-restrictions-mfa}
