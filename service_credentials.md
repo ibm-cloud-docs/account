@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-27"
+lastupdated: "2025-03-05"
 
 keywords: service key, api key, credential, connect resources to apps
 
@@ -156,7 +156,7 @@ Use the API key or other credential properties to connect the service instance t
 {: #iam-credential-terraform}
 {: terraform}
 
-Before you can create a credential to connect your app or external consumer to an {{site.data.keyword.cloud_notm}} service by using Terraform, make sure that you have completed the following:
+ Before you can create a credential to connect your app or external consumer to an {{site.data.keyword.cloud_notm}} service by using Terraform, make sure that you have completed the following:
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
