@@ -25,6 +25,8 @@ To add credentials to your apps, refer to the documentation for the type of app 
 {: #IAM_credential-ui}
 {: ui}
 
+
+
 Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
 Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
@@ -53,6 +55,8 @@ Complete the following steps to add a credential to a service:
 ## Creating a service credential by using the API
 {: #IAM_credential-api}
 {: api}
+
+
 
 {{site.data.keyword.cloud_notm}} services can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
