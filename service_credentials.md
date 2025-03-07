@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-26"
+lastupdated: "2025-03-05"
 
 keywords: service key, api key, credential, connect resources to apps
 
@@ -24,6 +24,8 @@ To add credentials to your apps, refer to the documentation for the type of app 
 ## Creating a service credential
 {: #IAM_credential-ui}
 {: ui}
+
+
 
 Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
@@ -53,6 +55,8 @@ Complete the following steps to add a credential to a service:
 ## Creating a service credential by using the API
 {: #IAM_credential-api}
 {: api}
+
+
 
 {{site.data.keyword.cloud_notm}} services can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
@@ -156,7 +160,7 @@ Use the API key or other credential properties to connect the service instance t
 {: #iam-credential-terraform}
 {: terraform}
 
-Before you can create a credential to connect your app or external consumer to an {{site.data.keyword.cloud_notm}} service by using Terraform, make sure that you have completed the following:
+ Before you can create a credential to connect your app or external consumer to an {{site.data.keyword.cloud_notm}} service by using Terraform, make sure that you have completed the following:
 
 - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
 - Create a Terraform configuration file that is named `main.tf`. In this file, you define resources by using HashiCorp Configuration Language. For more information, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language){: external}.
@@ -230,7 +234,7 @@ To view an existing service credential for a service, complete the following ste
 {: #onetime-credentials}
 {: ui}
 
-The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, you can view the at any time for users that need the credential values.
+The credential has a `onetime_credentials` property that determines whether you can retrieve and view the credential after its initial creation. If the property is `false`, users with access can view the credential values at any time.
 
 Existing credentials created before this property change are not affected.
 {: note}

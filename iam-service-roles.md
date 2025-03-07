@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-02-26"
+lastupdated: "2025-03-04"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4745,70 +4745,68 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `iam-identity.serviceid.get` | Get the details of an existing service ID. | Administrator, Editor, Operator, Viewer |
-| `iam-identity.serviceid.create` | Create a new service ID. | Service ID creator |
-| `iam-identity.serviceid.update` | Update the details of an existing service ID. | Administrator, Editor, Operator |
-| `iam-identity.serviceid.delete` | Delete a service ID. | Administrator, Operator |
-| `iam-identity.apikey.manage` | Manage the API keys of an account. | Administrator |
-| `iam-identity.apikey.get` | Get the details of an existing API key. | Administrator, Editor, Operator |
-| `iam-identity.apikey.list` | List API keys based on properties. | Administrator, Editor, Operator |
-| `iam-identity.apikey.review` | List metadata of API keys based on properties. | API key reviewer, Administrator, Editor, Operator, Service Configuration Reader |
-| `iam-identity.apikey.create` | Create a new API key. | Administrator, Operator |
-| `iam-identity.apikey.update` | Update the details of an existing API key. | Administrator, Editor, Operator |
-| `iam-identity.apikey.delete` | Delete an API key. | Administrator, Operator |
-| `iam-identity.user-apikey.create` | Ability to create IBM Cloud API keys associated with a user identity. | User API key creator |
-| `iam-identity.profile.create` | Create a new Trusted Profile. | Administrator |
-| `iam-identity.profile.update` | Update the details of an existing Trusted Profile. | Administrator, Editor, Operator |
-| `iam-identity.profile.delete` | Delete a Trusted Profile. | Administrator, Operator |
-| `iam-identity.profile.get` | Get the details of an existing Trusted Profile. | Administrator, Editor, Operator, Viewer |
-| `iam-identity.profile.get_session` | Get sessions associated to a Trusted Profile. | Administrator, Operator |
-| `iam-identity.profile.revoke_session` | Revoke sessions associated to Trusted Profile | Administrator, Operator |
-| `iam-identity.profile.linkToResource` | Link a trusted profile to a resource | Administrator, Editor, Operator |
-| `iam-identity.idp.get` | Get the details of an existing Identity Provider configuration. | Administrator, Editor, Operator |
-| `iam-identity.idp.list` | List Identity Provider configurations. | Administrator, Editor, Operator |
-| `iam-identity.idp.create` | Create a new Identity Provider configuration. | Administrator, Operator |
-| `iam-identity.idp.update` | Update an existing Identity Provider configuration. | Administrator, Editor, Operator |
-| `iam-identity.idp.delete` | Delete an Identity Provider configuration. | Administrator, Operator |
-| `iam-identity.idp.test` | Test an Identity Provider configuration. | Administrator, Editor, Operator |
-| `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
-| `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
-| `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
-| `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
-| `iam-identity.account.enable_idp` | Enable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
-| `iam-identity.account.disable_idp` | Disable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
-| `iam-identity.account.delete` | Delete an account configuration. | Administrator, Operator |
-| `iam-identity.session.manage` | Manage the user sessions of an account. | Administrator |
-| `iam-identity.crnmapping.create` | Create a CRN mapping for an account | Administrator |
-| `iam-identity.crnmapping.read` | Read CRN mappings of an account | Administrator |
-| `iam-identity.crnmapping.delete` | Delete a CRN mapping for an account | Administrator |
-| `iam-identity.activity.get` | Get authentication activity information | Administrator, Editor, Operator, Viewer |
-| `iam-identity.report.create` | Trigger report creation for an account | Administrator |
-| `iam-identity.report.get` | Get a report for an account | Administrator |
-| `iam-identity.profile-template.create` | Create a new Trusted Profile template | Template Administrator |
-| `iam-identity.profile-template.read` | Get the details of an existing Trusted Profile template | Assignment Administrator, Template Administrator |
-| `iam-identity.profile-template.update` | Update the details of a Trusted Profile template | Template Administrator |
-| `iam-identity.profile-template.delete` | Delete a Trusted Profile template | Template Administrator |
-| `iam-identity.account-settings-template.create` | Create a new Account Settings template | Template Administrator |
 | `iam-identity.account-settings-template.read` | Get the details of an Account Settings template | Assignment Administrator, Template Administrator |
-| `iam-identity.account-settings-template.update` | Update an existing Account Settings template | Template Administrator |
-| `iam-identity.account-settings-template.delete` | Delete an Account Settings template | Template Administrator |
-| `iam-identity.mfa-status.get` | Get MFA Enrollment Status | Administrator |
+| `iam-identity.serviceid.create` | Create a new service ID. | Service ID creator |
+| `iam-identity.apikey.delete` | Delete an API key. | Administrator, Operator |
+| `iam-identity.crnmapping.read` | Read CRN mappings of an account | Administrator |
+| `iam-identity.apikey.update` | Update the details of an existing API key. | Administrator, Editor, Operator |
+| `iam-identity.account.create` | Create a new account configuration. | Administrator, Operator |
+| `iam-identity.serviceid.get` | Get the details of an existing service ID. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.idp.get` | Get the details of an existing Identity Provider configuration. | Administrator, Editor, Operator |
+| `iam-identity.account-settings-assignment.update` | Update an assignment of Account Settings | Assignment Administrator |
+| `iam-identity.account.disable_idp` | Disable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
+| `iam-identity.account-settings-assignment.delete` | Delete an assignment of Account Settings | Assignment Administrator |
+| `iam-identity.idp.create` | Create a new Identity Provider configuration. | Administrator, Operator |
 | `iam-identity.profile-assignment.create` | Assign a Trusted Profile Template to a target Account or AccountGroup | Assignment Administrator |
-| `iam-identity.profile-assignment.delete` | Delete an assignment of a trusted profile | Assignment Administrator |
+| `iam-identity.apikey.list` | List API keys based on properties. | Administrator, Editor, Operator |
+| `iam-identity.idp.delete` | Delete an Identity Provider configuration. | Administrator, Operator |
+| `iam-identity.profile.delete` | Delete a Trusted Profile. | Administrator, Operator |
+| `iam-identity.serviceid-group.delete` | Delete a service ID group. | Administrator, Operator |
+| `iam-identity.apikey.manage` | Manage the API keys of an account. | Administrator |
+| `iam-identity.idp.list` | List Identity Provider configurations. | Administrator, Editor, Operator |
+| `iam-identity.idp.test` | Test an Identity Provider configuration. | Administrator, Editor, Operator |
+| `iam-identity.account-settings-template.create` | Create a new Account Settings template | Template Administrator |
+| `iam-identity.profile-template.create` | Create a new Trusted Profile template | Template Administrator |
+| `iam-identity.mfa-status.get` | Get MFA Enrollment Status | Administrator |
+| `iam-identity.apikey.create` | Create a new API key. | Administrator, Operator |
+| `iam-identity.user-apikey.create` | Ability to create IBM Cloud API keys associated with a user identity. | User API key creator |
+| `iam-identity.profile-template.update` | Update the details of a Trusted Profile template | Template Administrator |
+| `iam-identity.account-settings-template.update` | Update an existing Account Settings template | Template Administrator |
+| `iam-identity.report.create` | Trigger report creation for an account | Administrator |
 | `iam-identity.profile-assignment.read` | Get the details of a Trusted Profile Assignment | Assignment Administrator, Template Administrator |
 | `iam-identity.profile-assignment.update` | Update an assignment of a trusted profile | Assignment Administrator |
-| `iam-identity.account-settings-assignment.create` | Assign an Account Settings Template to a target Account or AccountGroup | Assignment Administrator |
-| `iam-identity.account-settings-assignment.delete` | Delete an assignment of Account Settings | Assignment Administrator |
-| `iam-identity.account-settings-assignment.read` | Get the details of an Account Settings Assignment | Assignment Administrator, Template Administrator |
-| `iam-identity.account-settings-assignment.update` | Update an assignment of Account Settings | Assignment Administrator |
-| `iam-identity.preferences.read` | Get an identity's preferences | Administrator |
-| `iam-identity.preferences.update` | Update an identity's preferences | Administrator |
 | `iam-identity.serviceid-group.get` | Get the details of an existing service ID group. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.account-settings-assignment.read` | Get the details of an Account Settings Assignment | Assignment Administrator, Template Administrator |
+| `iam-identity.apikey.get` | Get the details of an existing API key. | Administrator, Editor, Operator |
+| `iam-identity.apikey.review` | List metadata of API keys based on properties. | API key reviewer, Administrator, Editor, Operator, Service Configuration Reader |
 | `iam-identity.serviceid-group.create` | Create a new service ID group. | Administrator, Operator |
-| `iam-identity.serviceid-group.update` | Update the details of an existing service ID group. | Administrator, Editor, Operator |
-| `iam-identity.serviceid-group.delete` | Delete a service ID group. | Administrator, Operator |
+| `iam-identity.activity.get` | Get authentication activity information | Administrator, Editor, Operator, Viewer |
+| `iam-identity.profile.revoke_session` | Revoke sessions associated to Trusted Profile | Administrator, Operator |
+| `iam-identity.report.get` | Get a report for an account | Administrator |
+| `iam-identity.serviceid.delete` | Delete a service ID. | Administrator, Operator |
+| `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
+| `iam-identity.account.delete` | Delete an account configuration. | Administrator, Operator |
+| `iam-identity.crnmapping.create` | Create a CRN mapping for an account | Administrator |
+| `iam-identity.preferences.update` | Update an identity's preferences | Administrator |
+| `iam-identity.account.get` | Get the account configuration. | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
+| `iam-identity.profile.update` | Update the details of an existing Trusted Profile. | Administrator, Editor, Operator |
+| `iam-identity.account-settings-assignment.create` | Assign an Account Settings Template to a target Account or AccountGroup | Assignment Administrator |
 | `iam-identity.serviceid-group.list` | List service ID groups of an account. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.profile-assignment.delete` | Delete an assignment of a trusted profile | Assignment Administrator |
+| `iam-identity.profile.get` | Get the details of an existing Trusted Profile. | Administrator, Editor, Operator, Viewer |
+| `iam-identity.serviceid-group.update` | Update the details of an existing service ID group. | Administrator, Editor, Operator |
+| `iam-identity.idp.update` | Update an existing Identity Provider configuration. | Administrator, Editor, Operator |
+| `iam-identity.session.manage` | Manage the user sessions of an account. | Administrator |
+| `iam-identity.crnmapping.delete` | Delete a CRN mapping for an account | Administrator |
+| `iam-identity.serviceid.update` | Update the details of an existing service ID. | Administrator, Editor, Operator |
+| `iam-identity.profile.create` | Create a new Trusted Profile. | Administrator |
+| `iam-identity.preferences.read` | Get an identity's preferences | Administrator |
+| `iam-identity.account.enable_idp` | Enable an Identity Provider configuration for the account. | Administrator, Editor, Operator |
+| `iam-identity.account-settings-template.delete` | Delete an Account Settings template | Template Administrator |
+| `iam-identity.profile-template.read` | Get the details of an existing Trusted Profile template | Assignment Administrator, Template Administrator |
+| `iam-identity.profile-template.delete` | Delete a Trusted Profile template | Template Administrator |
+| `iam-identity.profile.get_session` | Get sessions associated to a Trusted Profile. | Administrator, Operator |
+| `iam-identity.profile.linkToResource` | Link a trusted profile to a resource | Administrator, Editor, Operator |
 {: caption="Service actions - IAM Identity Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="iam-identity"}
@@ -8128,14 +8126,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.session.create` | Create a Session | Manager, Writer |
 | `quantum-computing.account-configuration.read` | Read Account Configuration. Must be granted by a policy that does not specify service instance. | Manager |
 | `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader, Writer |
-| `quantum-computing.direct-access-backend.read` | Get backend accessible via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-backend.list` | List backends, get backend status, configuration, properties or pulse defaults via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-job.cancel` | Cancel job via Direct Access API. | Manager, Writer |
 | `quantum-computing.direct-access-job.create` | Create job via Direct Access API. | Manager, Writer |
 | `quantum-computing.direct-access-job.delete` | Delete job via Direct Access API. | Manager, Writer |
 | `quantum-computing.direct-access-job.list` | List jobs via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
 | `quantum-computing.account-analytics-filters.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
-| `quantum-computing.direct-access-backend.list` | List backends, get backend status, configuration, properties or pulse defaults via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-backend.read` | Get backend accessible via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-configuration.read` | Get backend configuration via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-properties.read` | Get backend properties via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-defaults.read` | Get backend defaults via Direct Access API. | Manager, Reader, Writer |

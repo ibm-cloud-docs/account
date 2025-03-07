@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-02-24"
+lastupdated: "2025-03-05"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 
@@ -96,7 +96,8 @@ Now that you've created your private catalogs, complete the following steps to t
 2. Click **Settings**.
 3. Set **{{site.data.keyword.cloud_notm}} catalog** to **Off**.
 
-   
+   If you turn off the visibility of the {{site.data.keyword.cloud_notm}} catalog, the **Highlights** page will also be hidden. This page helps you find top results across different product categories.
+    {: note}
 
 4. Confirm that your filters and settings are correctly applied by going to the public catalog, and expanding the catalog switcher. Only the private catalogs in your account should be displayed in the list.
 
