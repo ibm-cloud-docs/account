@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-03-10"
 
 keywords: HIPAA, PHI, HITECH
 
@@ -47,4 +47,4 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 
 4. Select **Accept**, and click **Submit**.
 
-    After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.Bluemix_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**. 
+    After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.Bluemix_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**.
