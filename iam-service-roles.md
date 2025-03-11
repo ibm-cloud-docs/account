@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7718,6 +7718,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `power-iaas.network-interfaces.update` | The ability to update information of a network interface | Manager |
 | `power-iaas.datacenter-private.read` | The ability to get information of a private datacenter | Manager, Reader |
 | `power-iaas.datacenter-private.list` | The ability to list information of a private datacenter | Manager, Reader |
+| `power-iaas.virtual-serial-number.read` | The ability to read a virtual serial number | Manager, Reader |
+| `power-iaas.virtual-serial-number.list` | The ability to list virtual serial numbers | Manager, Reader |
+| `power-iaas.network-security-group.clone` | The ability to clone a network security group in a cloud instance | Manager |
+| `power-iaas.workspace.read` | The ability to get the details of a workspace | Manager, Reader |
+| `power-iaas.workspace.list` | The ability to list the workspaces | Manager, Reader |
 {: caption="Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-iaas"}
