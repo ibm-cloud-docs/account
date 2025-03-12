@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -585,6 +585,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.config-aggregator-scope.read` | Retrieve the account scope of resource collection for the Configuration aggregator | Config Operator, Manager, Reader, Writer |
 | `apprapp.clientsdk-apikey.encrypt` | The ability to obtain the encrypted ClientSDK apikey for a given plain ClientSDK apikey. | Manager |
 | `apprapp.config-aggregator.reconcile` | Perform the reconciliation of the resources metadata | Manager |
+| `apprapp.features-rules.list` | The ability to list targeting rules of a feature flag. | Config Operator, Manager, Reader, Writer |
+| `apprapp.features-rules.create` | The ability to create a new rule in feature flag's targeting. | Manager, Writer |
+| `apprapp.features-rules.patch` | The ability to update an existing rule in feature flag's targeting. | Manager, Writer |
+| `apprapp.features-rules.delete` | The ability to delete an existing rule from feature flag's targeting. | Manager |
+| `apprapp.features-rules-order.patch` | The ability to re-order the rules of feature flag's targeting. | Manager, Writer |
 {: caption="Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
@@ -7718,6 +7723,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `power-iaas.network-interfaces.update` | The ability to update information of a network interface | Manager |
 | `power-iaas.datacenter-private.read` | The ability to get information of a private datacenter | Manager, Reader |
 | `power-iaas.datacenter-private.list` | The ability to list information of a private datacenter | Manager, Reader |
+| `power-iaas.virtual-serial-number.read` | The ability to read a virtual serial number | Manager, Reader |
+| `power-iaas.virtual-serial-number.list` | The ability to list virtual serial numbers | Manager, Reader |
+| `power-iaas.network-security-group.clone` | The ability to clone a network security group in a cloud instance | Manager |
+| `power-iaas.workspace.read` | The ability to get the details of a workspace | Manager, Reader |
+| `power-iaas.workspace.list` | The ability to list the workspaces | Manager, Reader |
 {: caption="Service actions - Power Systems Virtual Server" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-iaas"}
