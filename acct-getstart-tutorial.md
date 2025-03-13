@@ -45,10 +45,37 @@ With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM
 1. Click **Create account**.
 1. Confirm your account by clicking the link in the confirmation email that's sent to your provided email address.
 
-#### Personal use availability
+### Using a federated ID
+{: #signup-federated}
+
+A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider (IdP) through single sign-on (SSO).
+
+{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It’s an XML-based protocol that uses a security token that contains assertions to pass information between the organization's IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
+
+For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
+
+### Using a Google ID 
+{: #signup-google}
+
+Your Google credentials can be used to sign-up for a new {{site.data.keyword.Bluemix_notm}} account, or can be used to log in to an existing {{site.data.keyword.Bluemix_notm}} account. Users that log in with Google are treated like non-federated users, and multifactor authentication (MFA) is enabled for all users to add an extra layer of security.
+
+This functionality is only available for newly registered IBMids on any eligible domain and existing IBMids on the gmail.com and googlemail.com domains. Logging in with Google credentials is not available for IBMids that are federated with a corporate identity provider through SAML.
+{: note}
+
+You can log in with your Google from the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external} by clicking **Continue with Google** and entering your Google credentials. 
+
+To sign-up with your Google credentials, complete the following steps: 
+1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
+1. Click **Continue with Google**. 
+1. Review the IBMid account privacy notice, and click **Proceed**. 
+1. Select your country, and click **Next**. 
+1. Review the terms and conditions. 
+1. Click **Continue**.
+
+### Personal use availability
 {: #signup-personalaccts}
 
-The following table shows the countries where the personal use of our platform not related to business, trade, craft, or professional purposes is not supported.
+The following table shows the countries where personal use of the platform not related to business, trade, craft, or professional purposes is not supported.
 
 | Country |
 |---------|
@@ -106,34 +133,6 @@ The following table shows the countries where the personal use of our platform n
 {: note}
 
 To work with a local Business Partner, go to the [IBM Business Partner Directory](https://www.ibm.com/partnerplus/directory/companies){: external}. Customers are not required to have a VAT ID to work with a local Business Partner.
-
-### Using a federated ID
-{: #signup-federated}
-
-A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider (IdP) through single sign-on (SSO).
-
-{{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It’s an XML-based protocol that uses a security token that contains assertions to pass information between the organization's IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
-
-For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
-
-
-### Using a Google ID 
-{: #signup-google}
-
-Your Google credentials can be used to sign-up for a new {{site.data.keyword.Bluemix_notm}} account, or can be used to log in to an existing {{site.data.keyword.Bluemix_notm}} account. Users that log in with Google are treated like non-federated users, and multifactor authentication (MFA) is enabled for all users to add an extra layer of security.
-
-This functionality is only available for newly registered IBMids on any eligible domain and existing IBMids on the gmail.com and googlemail.com domains. Logging in with Google credentials is not available for IBMids that are federated with a corporate identity provider through SAML.
-{: note}
-
-You can log in with your Google from the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external} by clicking **Continue with Google** and entering your Google credentials. 
-
-To sign-up with your Google credentials, complete the following steps: 
-1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
-1. Click **Continue with Google**. 
-1. Review the IBMid account privacy notice, and click **Proceed**. 
-1. Select your country, and click **Next**. 
-1. Review the terms and conditions. 
-1. Click **Continue**.
 
 ## Set up account MFA settings
 {: #account-gs-mfa}
