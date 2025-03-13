@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-03-13"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up
 
@@ -28,20 +28,12 @@ This tutorial walks you through the steps for setting up a Pay-As-You-Go account
 {: #account-gs-create}
 {: step}
 
-First, create an account by using your existing IBMid or a new IBMid. If your company is registered to use a federated ID for single sign-on (SSO), you can use your federated ID instead.
-
-| Login ID | Details |
-|-----------------|---------|
-|Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other {{site.data.keyword.IBM}} products and services. |
-|New IBMid        | If you don't yet have an IBMid, you can create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}. |
-|Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
-|Google ID | If you already have a Google account, you can use the credentials for Google to sign-up or log in to {{site.data.keyword.IBM_notm}}. |
-{: caption="ID options for creating an account" caption-side="top"}
+You can use various types of credentials to create an account: an IBMid, a federated ID, or a Google ID. 
 
 ### Using your IBMid
 {: #signup-ibmid}
 
-If you're not a part of a company that uses a federated ID, use your IBMid to create your account.
+With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}.
 
 1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
 1. Enter your IBMid email address. If you don't have an existing IBMid, an ID is created based on the email that you enter.
@@ -53,12 +45,10 @@ If you're not a part of a company that uses a federated ID, use your IBMid to cr
 1. Click **Create account**.
 1. Confirm your account by clicking the link in the confirmation email that's sent to your provided email address.
 
-See [Account types](/docs/account?topic=account-accounts) to compare and choose an account type.
-
-### Personal use availability
+#### Personal use availability
 {: #signup-personalaccts}
 
-The following table shows the countries where personal use of our platform that is not related to business, trade, craft, or professional purposes are not supported
+The following table shows the countries where the personal use of our platform not related to business, trade, craft, or professional purposes is not supported.
 
 | Country |
 |---------|
