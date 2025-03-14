@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2025
-lastupdated: "2025-03-12"
+lastupdated: "2025-03-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8119,10 +8119,10 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `quantum-computing.program.read` | Read a program definition | Manager, Reader, Writer |
-| `quantum-computing.program.delete` | Delete a program | Manager, Writer |
+| `quantum-computing.program.delete` | Delete a program | Manager |
 | `quantum-computing.job.create` | Create a job to run a program | Manager, Writer |
 | `quantum-computing.job.read` | User ability to read a job | Manager, Reader, Writer |
-| `quantum-computing.job.delete` | Delete a Job | Manager, Writer |
+| `quantum-computing.job.delete` | Delete a Job | Manager |
 | `quantum-computing.job.cancel` | Cancel a Job | Manager, Writer |
 | `quantum-computing.device.read` | Read information about a quantum device | Manager, Reader, Writer |
 | `quantum-computing.user.logout` | Clears authorization cache | Manager, Reader, Writer |
@@ -9436,7 +9436,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `watsonx-orchestrate.skill.read` | Can open and view a skill. | Manager, Writer |
 | `watsonx-orchestrate.assistant.write` | Can rename, edit or delete an assistant. | Manager, Writer |
 | `watsonx-orchestrate.assistant.read` | Can open and view an assistant. | Manager, Writer |
-| `watsonx-orchestrate.assistant.list` | Can list assistant or skill | Manager, Writer |
+| `watsonx-orchestrate.assistant.list` | Can list assistant or skill | Manager, WO User, Writer |
 | `watsonx-orchestrate.assistant.default` | Default access for Assistant | Manager, Writer |
 | `watsonx-orchestrate.logs.read` | Can view skill analytics and access user conversation logs. | Manager |
 | `watsonx-orchestrate.environment.write` | Can rename, edit or delete an environment | Manager, Writer |
