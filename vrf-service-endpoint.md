@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-02-25"
+lastupdated: "2025-03-17"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -133,7 +133,6 @@ To enable service endpoints from the [{{site.data.keyword.cloud_notm}} CLI](/doc
     Ticket:        Private Network Question
     ```
     {: screen}
-
 
 After service endpoints are enabled, you can create resources that connect over the {{site.data.keyword.cloud_notm}} private network. For a list of services that support service endpoints and more information, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint).
 
