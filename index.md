@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-18"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -30,7 +30,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 | Feature | Trial              | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
 | Access to [Lite service plans](/catalog?search=label%3Alite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Access to all Free plans           | ![Feature available](../icons/icon_enabled.svg) |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
+| Access to all Free plans           |        |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Access to the full {{site.data.keyword.cloud_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
 | Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
 | Available for enterprise account hierarchy        |        |    ![Feature available](../icons/icon_enabled.svg) [^tabletext]   | ![Feature available](../icons/icon_enabled.svg) |
@@ -45,7 +45,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 ## Trial account
 {: #trial}
 
-Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without a financial commitment. You can access Lite service plans and Free plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select **Register with a Code** during {{site.data.keyword.cloud_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
+Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without a financial commitment. You can access Lite service plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select **Register with a Code** during {{site.data.keyword.cloud_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
 
 If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.cloud_notm}} trial accounts are available for faculty and students at accredited academic institutions. Trial accounts expire after 30 days. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
 
