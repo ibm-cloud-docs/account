@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-02-17"
+lastupdated: "2025-03-18"
 
 keywords: SAML federation, federation option, federated IBMid, SAML fed, federated
 
@@ -76,6 +76,8 @@ The following table compares characteristics of each federation option. In both 
 | Reliability| IBMid is a global service with a dedicated operations team. In case of an outage in a data center, IBMid can failover to a different data center.| Any {{site.data.keyword.appid_full_notm}} instance exists in one region. Failures in that region can prevent account members from being able to log in. Users that are already logged in are usually not affected by such a failure.|
 | Login behavior| Users log in by using the central login page.| You need to use a special URL to log in to your {{site.data.keyword.Bluemix_notm}} account. Your account administrator gets this URL from the IAM [Identity providers](/iam/identity-providers) page in the {{site.data.keyword.Bluemix_notm}} console.|
 
+
+
 ## Scenarios
 {: #scenarios}
 
@@ -98,7 +100,7 @@ The following links help you implement the federation that you choose:
 :   The publicly available IBMid federation guide gives you an overview about the steps that are required to federate your Identity Provider and whom to contact to get the federation implemented. Be aware that you need an "IBM Sponsor" (for example, an {{site.data.keyword.IBM_notm}} employee that works as main contact between you and the IBMid team).
 
 [{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/products){: external}.
-:   Announcement for the {{site.data.keyword.Bluemix_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}}.
+:   Announcement for the {{site.data.keyword.Bluemix_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}. 
 
 [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration)
 :   Follow the steps necessary to integrate an {{site.data.keyword.appid_full_notm}} service instance with {{site.data.keyword.Bluemix_notm}} IAM so that your users can use your {{site.data.keyword.Bluemix_notm}} account without creating IBMids. Review the section Setting IAM-specific attributes in {{site.data.keyword.appid_short}} tokens to make sure that your users are correctly onboarded and displayed inside your {{site.data.keyword.Bluemix_notm}} account.
