@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-03-18"
+ years: 2015, 2025
+lastupdated: "2025-03-19"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -45,7 +45,7 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 ## Trial account
 {: #trial}
 
-Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without a financial commitment. You can access Lite service plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select **Register with a Code** during {{site.data.keyword.cloud_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
+Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without a financial commitment. You can access Lite service plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select **Register with a Code** during {{site.data.keyword.cloud_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
 
 If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.cloud_notm}} trial accounts are available for faculty and students at accredited academic institutions. Trial accounts expire after 30 days. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
 
@@ -124,7 +124,6 @@ Lite accounts have access to a single resource group that is created for you wit
 
 Check out the following list of key features that are available in a Lite account:
 
-* The account is free - no credit card required.
 * The account never expires.
 * You receive email notifications about your account status and quota limits.
 * You can create one instance of any service in the [{{site.data.keyword.cloud_notm}} catalog](/catalog?search=label%3Alite){: external} that has a Lite plan.
