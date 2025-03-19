@@ -36,14 +36,14 @@ To access the Support Center, click the **Help** icon ![Help icon](../icons/help
 
 Review your product topics to get a quick overview of the {{site.data.keyword.Bluemix_notm}} documentation that offers common tasks based on what is provisioned on your account. You can search to view topics based on specific products. You can also view and search through Featured FAQs. If you experience problems with {{site.data.keyword.Bluemix}}, create and manage support cases from the Support Center.
 
-Try asking your question about the issue you're experiencing in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#ask-about-cloud) from the Help menu to get answers to your questions fast. Then, if you still need help, depending on your type of issue and support plan, you can request to chat with a live support agent by typing `agent` in the chat.
+Try asking your question about the issue you're experiencing in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#ask-about-cloud) from the Help menu to get answers to your questions fast. Then, if you still need help, depending on your type of issue and support plan, you can request to chat with a live agent by typing `agent` in the chat.
 {: tip}
 
 The following are the methods that you can find in the Contact support section if you need help:
 
 * Use the [Create a case](/unifiedsupport/cases/add){: external} page to open a support case.
 * If you have an Advanced or Premium support plan, you can
-     * Click **Chat with IBM** from the [Support Center](/unifiedsupport/supportcenter){: external} to connect with a support agent. You can also request to speak to a live support agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) that is available from the Help menu by typing `agent`.
+     * Click **Chat with IBM** from the [Support Center](/unifiedsupport/supportcenter){: external} to connect with a support agent. You can also request to speak to a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) that is available from the Help menu by typing `agent`.
      * Contact support by phone using the number in the [Support Center](/unifiedsupport/supportcenter){: external}.
 * If you have technical questions, you can follow a link to ask questions of others in online communities.
 
