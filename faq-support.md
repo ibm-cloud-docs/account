@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-19"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -34,6 +34,7 @@ You can check for upcoming maintenance from your dashboard in the {{site.data.ke
 
 Before you open a support case, explore the following resources:
 
+* Ask your question in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant).
 * Review the [documentation](/docs).
 * Review the [Featured FAQs](/unifiedsupport/supportcenter) on the Support Center.
 * Go to the [FAQ library](/docs/faqs).
@@ -51,7 +52,7 @@ Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the con
 {: #contactsupport-faq}
 {: faq}
 
-From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
+From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case. You can also start a chat with a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) by typing `agent` in the chat. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
 Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), chat with the Virtual Cloud Assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
@@ -161,4 +162,4 @@ Watchlists are specific to each case. You must manually add a user to each indiv
 {: #chat-with-support}
 {: faq}
 
-You can chat with support if you have an Advanced or Premium support plan. Go to the [Support Center](/unifiedsupport/supportcenter){: external} and click **Chat with {{site.data.keyword.IBM_notm}}**. Or, call the number provided in the Contact Support section. To upgrade your support plan, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
+You can chat with support if you have an Advanced or Premium support plan. Go to the [Support Center](/unifiedsupport/supportcenter){: external} and click **Chat with {{site.data.keyword.IBM_notm}}**. Alternatively, you can request to chat with a live agent by opening the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) from the Help menu and typing `agent` in the chat. Or, call the number provided in the Contact Support section. To upgrade your support plan, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.

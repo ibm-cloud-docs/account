@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-03-19"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -34,6 +34,9 @@ By default, account users don't have access to create, update, search, or view c
 {: ui}
 
 Complete the following steps to create a support case:
+
+As a classic infrastructure user, you might be familiar with support tickets. Support tickets are now called support cases in {{site.data.keyword.Bluemix_notm}}.
+{: tip}
 
 1. From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**.
 1. From the Contact support section, click **Create a case**.

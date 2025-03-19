@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-03-19"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help
 
@@ -16,13 +16,15 @@ subcollection: account
 # Using the Support Center
 {: #using-avatar}
 
-If you experience problems with {{site.data.keyword.Bluemix}}, you have several options to get help with determining the cause of the problem and finding a solution. If you're logged in, you can go directly to the [Support center](/unifiedsupport/supportcenter){: external} to review your product topics and featured FAQs, open or manage a support case, or search community content. If you can't log in to your account, start a chat by going to the [{{site.data.keyword.Bluemix_notm}} Support](https://www.ibm.com/cloud/support){: external} page and clicking **Let's talk**. Or you can complete the [Create an Account, Login, or Billing Request form](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create).
+If you experience problems with {{site.data.keyword.Bluemix}}, you have several options to get help with determining the cause of the problem and finding a solution. If you're logged in, you can go to the directly to the [Support center](/unifiedsupport/supportcenter){: external} to review your product topics and featured FAQs, open or manage a support case, or search community content. Alternatively, you use the [{{site.data.keyword.cloud_notm}} AI assistant](/docs/overview?topic=overview-ask-ai-assistant) to try to get answers to your questions quickly.
 {: shortdesc}
+
+If you can't log in to your account, start a chat by going to the [{{site.data.keyword.Bluemix_notm}} Support](https://www.ibm.com/cloud/support){: external} page and clicking **Let's talk**. Or you can complete the [Create an Account, Login, or Billing Request form](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create).
 
 As a classic infrastructure user, you might be familiar with support tickets. Tickets are now called cases in {{site.data.keyword.Bluemix_notm}}.
 {: note}
 
-Three different types of support plan are offered. For more information, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
+Three different types of support plans are offered. For more information, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
 
 {{site.data.keyword.IBM_notm}} periodically sends surveys to {{site.data.keyword.Bluemix_notm}} customers to get feedback on recent experiences with customer support. The survey focuses on the support quality and the overall experience. {{site.data.keyword.IBM_notm}} management reviews the survey results to improve the support experience.
 {: note}
@@ -34,11 +36,14 @@ To access the Support Center, click the **Help** icon ![Help icon](../icons/help
 
 Review your product topics to get a quick overview of the {{site.data.keyword.Bluemix_notm}} documentation that offers common tasks based on what is provisioned on your account. You can search to view topics based on specific products. You can also view and search through Featured FAQs. If you experience problems with {{site.data.keyword.Bluemix}}, create and manage support cases from the Support Center.
 
+Try asking your question about the issue you're experiencing in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#ask-about-cloud) from the Help menu to get answers to your questions fast. Then, if you still need help, depending on your type of issue and support plan, you can request to chat with a live agent by typing `agent` in the chat.
+{: tip}
+
 The following are the methods that you can find in the Contact support section if you need help:
 
 * Use the [Create a case](/unifiedsupport/cases/add){: external} page to open a support case.
 * If you have an Advanced or Premium support plan, you can
-     * Click **Chat with IBM** from the [Support Center](/unifiedsupport/supportcenter){: external} to connect with a support agent.
+     * Click **Chat with IBM** from the [Support Center](/unifiedsupport/supportcenter){: external} to connect with a support agent. You can also request to speak to a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) that is available from the Help menu by typing `agent`.
      * Contact support by phone using the number in the [Support Center](/unifiedsupport/supportcenter){: external}.
 * If you have technical questions, you can follow a link to ask questions of others in online communities.
 
@@ -47,6 +52,23 @@ Users in the account need assigned access to create, update, search, or view cas
 
 ### Asking a question
 {: #asking-a-question}
+
+You can try asking your question in the {{site.data.keyword.cloud_notm}} AI assistant or you can look in the online communities and forums for guidance on the issue you're experiencing.
+
+#### Asking a question in the AI assistant
+{: #ask-ai}
+
+You can get answers to your questions quickly by using the {{site.data.keyword.cloud_notm}} AI assistant. You can start the AI assistant from the {{site.data.keyword.cloud_notm}} console header from the Help menu anytime that you want to ask a question, and it follows along with you in the console until you close it. With each question that you ask, reference citations from the {{site.data.keyword.cloud_notm}} docs are provided. For more information, see [Getting help from the AI assistant](/docs/overview?topic=overview-ask-ai-assistant).
+
+1. From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **AI assistant**.
+1. Ask questions about working in your account, working with products and offerings from the catalog, and more to help you stay productive in {{site.data.keyword.cloud_notm}}.
+1. Use the supported documentation references that are returned to have access to additional information and the ability to verify responses.
+
+Content that is generated in the AI assistant might include mistakes or be incorrect.
+{: important}
+
+#### Checking online communities
+{: #online-communities}
 
 Online communities connect you with other users and provide a wide variety of searchable answers for your {{site.data.keyword.Bluemix_notm}} questions. If you don't find an existing answer, ask a new question. The Support Center gives you links to the following communities, in which {{site.data.keyword.Bluemix_notm}} development and support teams participate:
 * [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home){: external}

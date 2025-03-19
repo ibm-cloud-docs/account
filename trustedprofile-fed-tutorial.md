@@ -3,12 +3,12 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-03-19"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account
 content-type: tutorial
-account-plan: lite 
+account-plan: lite
 completion-time: 20m
 services: containers
 
@@ -18,7 +18,7 @@ services: containers
 
 # Managing access for federated users by using trusted profiles
 {: #trustedprofile-fedusers-tutorial}
-{: toc-content-type="tutorial"} 
+{: toc-content-type="tutorial"}
 {: toc-services="containers"}
 {: toc-completion-time="20m"}
 
@@ -27,12 +27,12 @@ This tutorial guides you through the steps to automatically grant federated user
 
 By using trusted profiles, you can establish a flexible, secure way for federated users to access the {{site.data.keyword.cloud}} resources they need to do their job. All federated users that share certain attributes that are defined in your corporate user directory are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the members of your organization that share access requirements automatic access to resources one time, rather than having to add each user to an account and then grant them access directly or by using access groups.
 
-Let's say that Marla is the manager of a dev team at an airline company. The team is planning to run a new chatbot app for their HR website on an {{site.data.keyword.containerlong_notm}} cluster. Marla wants the team to have access to IAM-enabled services in test environments so developers can do their daily work. Marla also wants to make sure that the team isn't unintentionally doing operations work in production environments. In this case, Marla would create two trusted profiles: one called `Chatbot Dev (test)` and one called `Chatbot Ops (prod)`. Marla manages many developers and it usually takes significant time out of her day to assign access to team members individually. With trusted profiles, Marla can automatically grant federated users access to the resources they need without having to invite them to an account and assign access one at a time. This tutorial uses fictitious identity provider attributes that might be different from your corporate user directory. 
+Let's say that Marla is the manager of a dev team at an airline company. The team is planning to run a new chatbot app for their HR website on an {{site.data.keyword.containerlong_notm}} cluster. Marla wants the team to have access to IAM-enabled services in test environments so developers can do their daily work. Marla also wants to make sure that the team isn't unintentionally doing operations work in production environments. In this case, Marla would create two trusted profiles: one called `Chatbot Dev (test)` and one called `Chatbot Ops (prod)`. Marla manages many developers and it usually takes significant time out of her day to assign access to team members individually. With trusted profiles, Marla can automatically grant federated users access to the resources they need without having to invite them to an account and assign access one at a time. This tutorial uses fictitious identity provider attributes that might be different from your corporate user directory.
 
 ## Before you begin
 {: #trusted-profile-federated-prereqs}
 
-* Make sure you're assigned the following access: 
+* Make sure you're assigned the following access:
    * Administrator role in the account to create a trusted profile
    * Administrator role on the specific resources to which you are assigning access
 * Enable authentication from an external identity provider. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
@@ -54,16 +54,16 @@ First, Marla creates the trusted profile for the test environment:
    2. Services: Reader
 5. Click **Continue**.
 
-## Establish trust with federated users 
+## Establish trust with federated users
 {: #trusted-profile-federated-trust}
 {: step}
 
-Now that Marla created a trusted profile, she wants to establish criteria for the federated users that can apply this profile. To do this, she creates conditions based on the attributes in her company's corporate user directory. Marla and half of the team members are based in the Ireland, and the other half are based in the United States. 
+Now that Marla created a trusted profile, she wants to establish criteria for the federated users that can apply this profile. To do this, she creates conditions based on the attributes in her company's corporate user directory. Marla and half of the team members are based in the Ireland, and the other half are based in the United States.
 
 1. For trusted entity type, select **Federated users**.
 1. For authentication method, select **Users federated by {{site.data.keyword.appid_full_notm}}** from the list.
 
-   If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, you should create the trusted profile as an App ID user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes and you should use your own only as a hint. To use attributes in a claim that are different than your own, input them manually. 
+   If the users that you are creating a trusted profile for use {{site.data.keyword.appid_full_notm}}, you should create the trusted profile as an App ID user, and likewise for IBMid. This way, your own SAML attributes can give you an idea of how to structure the trusted profile conditions. Other users with the same IdP can have different SAML attributes and you should use your own only as a hint. To use attributes in a claim that are different than your own, input them manually.
    {: tip}
 
 1. Select the default identity provider (IdP) you created.
@@ -77,9 +77,9 @@ Now that Marla created a trusted profile, she wants to establish criteria for th
     {: note}
 
 1. Click **Add a condition** and repeat steps 6-8. Instead of `us`, enter `ire`.
-1. Click **Add a condition** again and click **Add manually**. 
+1. Click **Add a condition** again and click **Add manually**.
     1. Let's say there's an attribute that is called `team` in the corporate user directory that identifies an employee's team by manager. Enter the condition `team` equals `marla`.
-1. Click **Add a condition** again and click **Add manually**. 
+1. Click **Add a condition** again and click **Add manually**.
     1. Let's say there's an attribute that is called `job-role` in the corporate user directory that identifies an employee's job role. Enter the condition `job-role` equals `dev`.
 1. Set the session duration to 8 hours.
 1. Click **Continue**.
@@ -94,16 +94,16 @@ Marla created narrow conditions that authenticate only the developers on the tea
 
 1. Select **Access policy**
 1. Select **{{site.data.keyword.containershort}}** from the list of services. Click **Next**.
-1. Scope the access to **Specific resources** based on selected attributes. 
+1. Scope the access to **Specific resources** based on selected attributes.
 1. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
-1. Select Viewer and Reader roles to define the scope of access, and click **Review**. 
+1. Select Viewer and Reader roles to define the scope of access, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
-1. Select **{{site.data.keyword.toneanalyzerfull}}** from the list of services. 
-1. Scope the access to **Specific resources** based on selected attributes. 
+1. Select **{{site.data.keyword.toneanalyzerfull}}** from the list of services.
+1. Scope the access to **Specific resources** based on selected attributes.
 1. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
-1. Select Viewer and Reader roles to define the scope of access, and click **Review**. 
+1. Select Viewer and Reader roles to define the scope of access, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
-1. Review the profile summary and click **Create**.  
+1. Review the profile summary and click **Create**.
 
 ## Next steps
 {: #iam-federated-next}
