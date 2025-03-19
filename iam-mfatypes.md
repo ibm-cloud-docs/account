@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2023
-lastupdated: "2023-07-26"
+  years: 2018, 2025
+lastupdated: "2025-03-19"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -30,14 +30,6 @@ As an administrator on the IAM Identity Service or All IAM Account Management se
 - You can update the MFA setting for your account by going to **Manage** > **Access (IAM)** > **Settings** > **Authentication** in the {{site.data.keyword.Bluemix}} console. For more information, see [Enabling MFA for an account](/docs/account?topic=account-enablemfa#enabling-account).
 - You can update the MFA setting for a specific user in your account by going to **Manage** > **Access (IAM)** > **Users** and clicking the user whose MFA you want to update. If you are a new user, use the ID-based MFA option to ensure that your login is secure. For more information, see [Enabling MFA for an individual user](/docs/account?topic=account-enablemfa#enabling-user).
 
-### None
-{: #mfa-none}
-
-All users log in by using only a standard ID and password, which offers the lowest level of security. To increase the level of security for this option, you can disable logging in to the CLI with only a username and password. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
-
-Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli)
-{: important}
-
 ### MFA for users with an IBMid
 {: #mfa-options-ibmid}
 
@@ -50,3 +42,11 @@ Users authenticate by using one of the following MFA factors. This option applie
 * Email-based MFA: Users authenticate by using a security passcode, which is sent by email.
 * TOTP MFA: Users authenticate by using a TOTP.
 * U2F MFA: Users authenticate by using a physical hardware-based security key. Based on the FIDO U2F standard, this factor offers the highest level of security.
+
+### None
+{: #mfa-none}
+
+All users log in by using only a standard ID and password, which offers the lowest level of security. To increase the level of security for this option, you can disable logging in to the CLI with only a username and password. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
+
+Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli). 
+{: important}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-03-04"
+lastupdated: "2025-03-19"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -174,16 +174,19 @@ To access virtual private endpoints, the CLI users must log in using the command
 ### Multifactor authentication
 {: #context-restrictions-mfa}
 
-Multifactor authentication (MFA) requires identities to authenticate by using another authentication factor beyond an ID and password. By setting a lower MFA level requirement, you’re allowing users who meet or exceed that requirement to authenticate. For example, if your rule requires users to authenticate with MFA Level 1, users that have MFA Level 2 are still compliant since Level 2 exceeds the security criteria for Level 1. The MFA levels below name the minimum MFA factor for each level. For more information, see [IBM Cloud multifactor authentication](/docs/account?topic=account-types).
+Multifactor authentication (MFA) requires identities to authenticate by using another authentication factor beyond an ID and password. By setting a lower MFA level requirement, you’re allowing users who meet or exceed that requirement to authenticate. For example, if your rule requires users to authenticate with MFA LEVEL1, users that have MFA LEVEL2 are still compliant since LEVEL2 exceeds the security criteria for LEVEL1. The following MFA levels name the minimum MFA factor for each level. For more information, see [IBM Cloud multifactor authentication](/docs/account?topic=account-types).
 
-* Level 1: Email-based MFA
-* Level 2: TOTP MFA
-* Level 3: U2F MFA
+* LEVEL1: Email-based MFA
+* LEVEL2: TOTP MFA
+* LEVEL3: U2F MFA
+
+In addition to LEVEL1, LEVEL2, and LEVEL3 MFA, the context-based restrictions rule also supports the value `IAM_ACCOUNT_SETTING`, which means that the rule's MFA value matches whatever you define as the MFA requirement for your account. This way, any changes to your account's MFA settings automatically applies to the rule. For more information, see [MFA options](/docs/account?topic=account-types#mfa-options).
+
+If an option is selected from the **MFA for users with an IBMid** section in the IAM authentication settings, the MFA value from IAM is mapped to LEVEL2 MFA in context-based restrictions. MFA is applied to both federated and nonfederated users, even if **Non-federated user** is selected.
+{: note}
 
 Only some services support the ability to specify MFA in a rule.
 {: preview}
-
-
 
 ## Access requirements
 {: #cbr-access-reqs}
