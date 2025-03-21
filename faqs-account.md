@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-21"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -370,6 +370,26 @@ If you still can't delete it, the tag might be attached to a reclaimed resource.
 
 When you delete an access management tag from the account, any associated IAM policies are also deleted with it.
 {: note}
+
+## Can I attach and detach tags from resource groups?
+{: #resource-group-tagging}
+{: faq}
+{: support}
+
+Yes, you can attach and detach user tags and service tags from resource groups. To do so, you must have at least the editor role on the resource group.
+
+The capability is available through [CLI](/docs/account?topic=account-ibmcloud_commands_resource#ibmcloud_resource_tag_attach) and [API](/apidocs/tagging#attach-tag).
+With the CLI you can first use `ibmcloud resource search type:resource-group` to list the resource groups in the account you are logged in, and record the name of the resource group(s) you want to attach tags to, and then finally use the `ibmcloud resource tag-attach` command.
+
+## Can I attach and detach tags from accounts?
+{: #account-tagging}
+{: faq}
+{: support}
+
+Yes, you can attach and detach user tags and service tags from accounts. To do so, you must have at least the editor role on the account.
+
+The capability is available through [CLI](/docs/account?topic=account-ibmcloud_commands_resource#ibmcloud_resource_tag_attach) and [API](/apidocs/tagging#attach-tag).
+With the CLI you can first use `ibmcloud resource search type:account` to get the details of the account you are logged in, and record the account name, and then finally use the `ibmcloud resource tag-attach` command.
 
 ## How do I view my dashboard role?
 {: #view-dashboard}
