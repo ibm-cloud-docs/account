@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-03-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -781,6 +781,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.backup-vault.get_metrics_monitoring` | Get backup vault metrics monitoring. | Backup Manager, Backup Reader |
 | `cloud-object-storage.backup-vault.put_activity_tracking` | Update backup vault activity tracking. | Backup Manager |
 | `cloud-object-storage.backup-vault.put_metrics_monitoring` | Update backup vault metrics monitoring. | Backup Manager |
+| `cloud-object-storage.backup-vault.put_retention` | Update backup vault retention policy. | Backup Manager |
 | `cloud-object-storage.backup-vault.get_crk_id` | LIST Backup Vault CRK id. | Backup Manager, Backup Reader |
 | `cloud-object-storage.backup-vault.get_recovery_range` | GET Backup Vault Recovery Range. | Backup Manager, Backup Reader |
 | `cloud-object-storage.backup-vault.list_recovery_ranges` | LIST Backup Vault Recovery Ranges. | Backup Manager, Backup Reader |
