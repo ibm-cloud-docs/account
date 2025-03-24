@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-03-24"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile, company information, company details, company account, company profile, company contact
 
@@ -81,7 +81,7 @@ If your account is for personal use, you can use your first and last name as the
 ## Editing a company contact
 {: #account-contact}
 
-Company contacts are created when certain products or services are ordered. For example, when a Regional Internet Registry (RIR) report is requested or a domain is ordered, a company contact is created. To edit a company contact, go to **Manage** > **Account** in the console, select **Company information**, and then select **Company contacts**. Keep the information about the company contacts complete and up-to-date in case an inquiry is required.
+Company contacts are created when certain products or services are ordered. To edit a company contact, go to **Manage** > **Account** in the console, select **Company information**, and then select **Company contacts**. Keep the information about the company contacts complete and up-to-date in case an inquiry is required.
 
 Ensure that the company contacts are the appropriate people to be contacted for each type of request. You might have multiple contact entries for each account, but only one contact for each type of service. Company-specific contact information doesn't include the account profile, which is the primary contact information that is associated with an account.
 
