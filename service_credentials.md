@@ -3,9 +3,9 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-03-05"
+lastupdated: "2025-03-24"
 
-keywords: service key, api key, credential, connect resources to apps
+keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
 subcollection: account
 
