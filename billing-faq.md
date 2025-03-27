@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-03-27"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -171,9 +171,9 @@ Feature codes are provided by {{site.data.keyword.Bluemix_notm}} sales and educa
 {: #how-apply-promo}
 {: faq}
 
-To apply your promo code, go to the [Promotions](/billing/promotions) page in the console, enter your promo code, and click **Apply**. For more information, see [Applying promo codes](/docs/account?topic=account-applying-promo-codes).
+To apply your promo code, go to the [Promotions and credits](/billing/promotions) page in the console, click **Apply promo code**, enter the code, and click **Verify**. Then you can review the details, and click **Apply**. For more information, see [Applying promo codes](/docs/account?topic=account-applying-promo-codes).
 
-You might be looking for information on feature codes and subscription codes. For more information, see [Applying feature codes](/docs/account?topic=account-codes) and [Applying subscription codes](/docs/account?topic=account-subscription_code).
+Promo codes are typically based on short phrases, like `PROMO200`. If you have an alphanumeric code, such as `a1b2c3def456`, it's a different type of code that is referred to as a feature code. You might be looking for information on feature codes and subscription codes. For more information, see [Applying feature codes](/docs/account?topic=account-codes) and [Applying subscription codes](/docs/account?topic=account-subscription_code).
 
 If you can't apply a promo code that you received from {{site.data.keyword.Bluemix_notm}} Sales or an educational provider, contact sales or the provider for more help.
 {: note}
