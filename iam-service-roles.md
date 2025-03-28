@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-22"
+lastupdated: "2025-03-28"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -755,7 +755,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Notifications Manager | As a Notifications Manager, the service can manage (view/modify/delete) configuration for notifications on a Cloud Object Storage bucket. |
 | Object Reader | As an Object Reader, one can read objects in the bucket. |
 | Object Writer | As an Object Writer, one can only write objects to a bucket. |
-| Reader | As a Reader, one can view bucket configuration and download the objects in the bucket. |
+| Reader | As a Reader, one can view the bucket configuration and download the objects in the bucket. |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a Writer, one can create/modify/delete buckets. In addition, one can upload and download the objects in the bucket. |
 {: row-headers}
@@ -1649,7 +1649,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `conversation.assistant.write` | Can rename, edit, or delete an assistant. | Manager, Writer |
 | `conversation.assistant.read` | Can open and view an assistant. | Manager, Reader, Writer |
 | `conversation.logs.read` | Can view skill analytics and access user conversation logs. | Logs Reader, Manager |
-| `conversation.assistant.list` | Can list assistant or skill | Manager, Reader, Viewer, Writer |
+| `conversation.assistant.list` | Can list an assistant or skill | Manager, Reader, Viewer, Writer |
 | `conversation.assistant.default` | Default access for Assistant | Manager, Reader, Viewer, Writer |
 | `conversation.environment.write` | Can rename, edit, or delete an environment | Manager, Writer |
 | `conversation.environment.read` | Can open and view an environment | Manager, Reader, Writer |
@@ -8712,7 +8712,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
 | Operator | As an operator, you can perform platform actions that are required to configure and operate deployments. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
-| Viewer | As a viewer, you can view deployments, but you can't modify them. In addition, you can also inspect, the s3 certificate and view quota. |
+| Viewer | As a viewer, you can view deployments, but you can't modify them. In addition, you can also inspect, the s3 certificate and view the quota. |
 {: row-headers}
 {: caption="Platform roles - SDS as a Service" caption-side="top"}
 {: tab-title="Platform roles"}
@@ -9490,17 +9490,17 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `watsonx-orchestrate.skill.run` | Can run skill | Manager, WO User, Writer |
 | `watsonx-orchestrate.assistant.legacy` | Can perform authoring methods for a workspace through v1 APIs. | Manager |
-| `watsonx-orchestrate.skill.write` | Can create, rename, edit or delete a skill.  | Manager, Writer |
+| `watsonx-orchestrate.skill.write` | Can create, rename, edit, or delete a skill.  | Manager, Writer |
 | `watsonx-orchestrate.skill.read` | Can open and view a skill. | Manager, Writer |
-| `watsonx-orchestrate.assistant.write` | Can rename, edit or delete an assistant. | Manager, Writer |
+| `watsonx-orchestrate.assistant.write` | Can rename, edit, or delete an assistant. | Manager, Writer |
 | `watsonx-orchestrate.assistant.read` | Can open and view an assistant. | Manager, Writer |
 | `watsonx-orchestrate.assistant.list` | Can list assistant or skill | Manager, WO User, Writer |
 | `watsonx-orchestrate.assistant.default` | Default access for Assistant | Manager, Writer |
 | `watsonx-orchestrate.logs.read` | Can view skill analytics and access user conversation logs. | Manager |
-| `watsonx-orchestrate.environment.write` | Can rename, edit or delete an environment | Manager, Writer |
+| `watsonx-orchestrate.environment.write` | Can rename, edit, or delete an environment | Manager, Writer |
 | `watsonx-orchestrate.environment.read` | Can open and view an environment | Manager, Writer |
 | `watsonx-orchestrate.release.write` | Can create or delete a Release for an Assistant | Manager, Writer |
-| `watsonx-orchestrate.dashboard.view` | Can view dashboard | Administrator, Editor, Manager, Operator, Service Configuration Reader, Viewer, WO User, Writer |
+| `watsonx-orchestrate.dashboard.view` | Can view the dashboard | Administrator, Editor, Manager, Operator, Service Configuration Reader, Viewer, WO User, Writer |
 | `watsonx-orchestrate.credentials.write` | Can assign and set credentials | Manager |
 {: caption="Service actions - watsonx Orchestrate" caption-side="top"}
 {: tab-title="Actions"}
@@ -9546,7 +9546,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Operator | As an operator, you can perform platform actions that are required to configure and operate service instances, such as viewing a service's dashboard. |
 {: row-headers}
 {: caption="Platform roles - Annotator for Clinical Data" caption-side="top"}
 {: tab-title="Platform roles"}
