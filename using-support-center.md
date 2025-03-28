@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-03-28"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help
 
@@ -71,7 +71,7 @@ Content that is generated in the AI assistant might include mistakes or be incor
 {: #online-communities}
 
 Online communities connect you with other users and provide a wide variety of searchable answers for your {{site.data.keyword.Bluemix_notm}} questions. If you don't find an existing answer, ask a new question. The Support Center gives you links to the following communities, in which {{site.data.keyword.Bluemix_notm}} development and support teams participate:
-* [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home){: external}
+* [IBM Cloud Community](https://community.ibm.com/community/user/my-community){: external}
 * IBM Cloud on [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}
      *  To indicate that a technical question on Stack Overflow is about developing apps with the {{site.data.keyword.Bluemix_notm}} platform and services, add the `ibm-cloud` tag to your question.
 

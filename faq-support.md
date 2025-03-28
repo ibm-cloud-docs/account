@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-03-28"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -54,7 +54,7 @@ Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the con
 
 From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case. You can also start a chat with a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) by typing `agent` in the chat. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
-Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), chat with the Virtual Cloud Assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
+Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), chat with the Virtual Cloud Assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/my-community), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 
 ## How do I escalate support cases?
