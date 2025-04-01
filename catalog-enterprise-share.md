@@ -35,7 +35,6 @@ A `pre-release` version does not need to be validated before you can share it fr
 {: #ent-share-prereq}
 {: ui}
 
-* Your account must be assigned the Publisher and Viewer access roles for the Catalog Management service to share products with other accounts, enterprises, or account groups within enterprises. For more information, see [Access management in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess). You don't need to be a member of a specific enterprise account to share products with that enterprise account.
 * You must be assigned the Publisher and Viewer access roles for the Catalog Management service to share products with other accounts, enterprises, or account groups within enterprises. For more information, see [Access management in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess). You don't need to be a member of a specific enterprise account to share products with that enterprise account.
 * Verify that at least one version of your product is in either the `pre-release` or `ready` state.
 * You need to know the ID for the accounts, enterprises, or account groups that you want to share with.
