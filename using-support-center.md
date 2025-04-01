@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-04-01"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help
 
@@ -42,8 +42,10 @@ Try asking your question about the issue you're experiencing in the [AI assistan
 The following are the methods that you can find in the Contact support section if you need help:
 
 * Use the [Create a case](/unifiedsupport/cases/add){: external} page to open a support case.
+* Click **Launch AI Assistant** from the [Support Center](/unifiedsupport/supportcenter){: external} to get help with questions about IBM Cloud
 * If you have an Advanced or Premium support plan, you can
-     * Click **Chat with IBM** from the [Support Center](/unifiedsupport/supportcenter){: external} to connect with a support agent. You can also request to speak to a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) that is available from the Help menu by typing `agent`.
+     * Click **Launch AI Assistant** and type `agent` to connect with a support agent.
+          * You can also type 'agent' to request to speak to a live agent when you start the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) from the Help menu.
      * Contact support by phone using the number in the [Support Center](/unifiedsupport/supportcenter){: external}.
 * If you have technical questions, you can follow a link to ask questions of others in online communities.
 
@@ -71,7 +73,7 @@ Content that is generated in the AI assistant might include mistakes or be incor
 {: #online-communities}
 
 Online communities connect you with other users and provide a wide variety of searchable answers for your {{site.data.keyword.Bluemix_notm}} questions. If you don't find an existing answer, ask a new question. The Support Center gives you links to the following communities, in which {{site.data.keyword.Bluemix_notm}} development and support teams participate:
-* [IBM Cloud Community](https://community.ibm.com/community/user/cloud/home){: external}
+* [IBM Cloud Community](https://community.ibm.com/community/user/my-community){: external}
 * IBM Cloud on [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}
      *  To indicate that a technical question on Stack Overflow is about developing apps with the {{site.data.keyword.Bluemix_notm}} platform and services, add the `ibm-cloud` tag to your question.
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-22"
+lastupdated: "2025-04-01"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2059,6 +2059,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/external_restore` | Restore the backup from customer COS bucket(external) to IBM Db2 SaaS. | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/custom_setting` | custom db settings | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/external_rollforward` | roll forwarding database based on the options provided by clients | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/clustermigration/db2_migration` | db2 v3 migration | Administrator, Editor, Operator, Viewer |
+| `POST /v4/ibm/deployments/:deployment_id/clustermigration/finalize_db2_migration` | Finalize db2 migration | Administrator, Editor, Operator, Viewer |
+| `POST /v4/ibm/deployments/:deployment_id/clustermigration/finalize_db2_source_migration` | Finalize db2 source migration | Administrator, Editor, Operator, Viewer |
+| `GET /v4/ibm/deployments/:deployment_id/clustermigration/source_resource_number` | Get the resource number from the db2 source | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Db2 on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}

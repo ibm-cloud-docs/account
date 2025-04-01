@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-01"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -89,7 +89,7 @@ Basic support is provided for non-production environments or workloads that don'
 ## Support for Lite or Trial accounts
 {: #free-support}
 
-Users with a Lite or Trial account can create support cases but are limited to non-technical issues associated with access, billing & usage, account, and invoice or sales inquiries.  For technical help if you have free support, Lite or Trial accounts can view the IBM Cloud documentation, chat with the Virtual Cloud Assistant, or use online communities such as the IBM Cloud Community or Stack Overflow.
+Users with a Lite or Trial account can create support cases but are limited to nontechnical issues associated with access, billing and usage, account, and invoice or sales inquiries. For technical help if you have free support, Lite or Trial accounts can view the IBM Cloud documentation, ask questions of the AI Assistant, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Support level and enterprises
 {: #support_level_enterprise}
