@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-04-01"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -376,7 +376,7 @@ You can use the escalation process to surface critical issues and voice your con
 To escalate a case, complete the following steps:
 
 1. Contact {{site.data.keyword.Bluemix_notm}} Support by chat or by phone.
-   * Click **Chat with {{site.data.keyword.IBM_notm}}** in the [Support Center](/unifiedsupport/supportcenter){: external} to connect with a support agent
+   * Click **Launch AI Assistant** in the [Support Center](/unifiedsupport/supportcenter){: external} and type `agent` to connect with a support agent
    * Connect by phone using the number in the [Support Center](/unifiedsupport/supportcenter){: external}.
 1. Provide your existing case number and a request to escalate the case.
 1. Provide the justification an escalation and explain the business impact of your problem or issue.

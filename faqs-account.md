@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-03-21"
+lastupdated: "2025-04-01"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -42,7 +42,7 @@ A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} acc
 
 If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
-* If you have advanced or premium support, click **Chat with IBM** to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
+* If you have advanced or premium support, click **Launch AI Assistant** and type `agent` to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
 * Create a support case by clicking **Create a case** from the "Need more help?" section.
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
@@ -223,9 +223,7 @@ To make a payment and reactivate your account, contact support by calling 1-866-
 
 From the {{site.data.keyword.Bluemix_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
-To contact support, you can use the following methods:
-* If you have a valid Pay-As-You-Go or Subscription account, you can click **Live chat with support** to chat with a support engineer.
-* Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), Chat with Watson, and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
+Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), ask questions of the AI Assistant, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
