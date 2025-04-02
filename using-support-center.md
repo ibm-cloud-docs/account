@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-02"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help
 
@@ -42,12 +42,11 @@ Try asking your question about the issue you're experiencing in the [AI assistan
 The following are the methods that you can find in the Contact support section if you need help:
 
 * Use the [Create a case](/unifiedsupport/cases/add){: external} page to open a support case.
-* Click **Launch AI Assistant** from the [Support Center](/unifiedsupport/supportcenter){: external} to get help with questions about IBM Cloud
-* If you have an Advanced or Premium support plan, you can
-     * Click **Launch AI Assistant** and type `agent` to connect with a support agent.
-          * You can also type 'agent' to request to speak to a live agent when you start the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) from the Help menu.
+* Click **Launch AI Assistant** from the [Support Center](/unifiedsupport/supportcenter){: external} to get help with questions about IBM Cloud.
+* If you have an Advanced or Premium support plan, you can contact support by using the following options:
+     * To chat with support, click **Launch AI Assistant** and type `agent` to connect with a support agent.
      * Contact support by phone using the number in the [Support Center](/unifiedsupport/supportcenter){: external}.
-* If you have technical questions, you can follow a link to ask questions of others in online communities.
+* If you have technical questions, you can follow a link in the Ask your IBM peers section to ask questions of others in online communities.
 
 Users in the account need assigned access to create, update, search, or view cases. For more information, see [Assigning user access for working with support center](/docs/account?topic=account-access&interface=ui).
 {: note}
