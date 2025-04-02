@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-01"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in, visibility
 
@@ -19,11 +19,11 @@ subcollection: account
 Learn about managing and sharing products from your private catalog and using products that are available in the {{site.data.keyword.cloud}} catalog. Learn why some product tiles are not visible to you, depending on your IAM access and the state of product versions.
 {: shortdesc}
 
-When you use {{site.data.keyword.cloud_notm}} products (deployable architectures, Helm charts, Operators, VSI images, VMware images), you typically use them from the {{site.data.keyword.cloud_notm}} catalog, where you can filter and search the product tiles that you want to work with.
+When you use {{site.data.keyword.cloud_notm}} products (deployable architectures, Terraform, Helm charts, Operators, VSI images, VMware images), you typically use them from the {{site.data.keyword.cloud_notm}} catalog, where you can filter and search the product tiles that you want to work with.
 
 When you create, edit, or manage software products, you do this from a private catalog. You share your product from a private catalog. You don't share catalogs or versions of a product.
 
-Catalog access is governed with [IAM](/iam/roles){: external}. Users who have Editor, Viewer, or Administrator IAM access to the Catalog Management service can see and manage all versions of a product in their private catalog.
+Catalog access is governed with [IAM](/iam/roles){: external}. Users who have Editor or Administrator IAM access to the Catalog Management service can see and manage all versions of a product in their private catalog.
 
 If you are logged in to an account that has a private catalog, the [Catalog menu](/catalog){: external} includes all catalogs that you have viewer or higher permissions for. When you select a private catalog, you can see all versions for a product tile.
 
