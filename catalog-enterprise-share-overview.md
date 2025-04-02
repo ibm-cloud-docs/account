@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-02"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in, visibility
 
@@ -31,6 +31,21 @@ You can specify who can see your particular product by sharing a product from yo
 
 ![The Catalog menu shows all catalogs that you have permissions to see and work with.](images/private-catalog-share-diagram.png){: caption="The Catalog menu shows all catalogs that you have permissions to see and work with." caption-side="bottom"}
 
-The {{site.data.keyword.cloud_notm}} catalog includes products that are published to the {{site.data.keyword.IBM}} public cloud, as well as products that are shared with you directly from private catalogs. The product tiles that are visible to you include products that have one or more versions that are in either the `ready` or `pre-release` state.
+The {{site.data.keyword.cloud_notm}} catalog includes products that are published to the {{site.data.keyword.IBM}} public cloud, as well as products that are shared with you directly from private catalogs. The product tiles that are visible to you include products that have one or more versions that are in either the `test`, `pre-release`, or `ready` state.
 
 ![The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog.](images/private-catalog-share-visibility-public.png){: caption="The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog." caption-side="bottom"}
+
+## Versioning workflow in your private catalogs
+{: #version-flow}
+
+The following table outlines the version states of a product, their sharing rules, and how they progress through the onboarding and release workflow. Understanding these states helps determine when you can share or publish a product.
+
+| Programmatic name | Display name | Sharing | Description |
+| ------------- | ---------------- | ------- | ----------- |
+| `new`           | Draft  | Not sharable | The initial version of the product. It is still in development and not yet reviewed or validated. |
+| `validated`     | Validated draft  | Not sharable | The product passed validation but is not yet available for sharing. |
+| `test` [New]{: tag-new} | Test | No validation required to share. Not included in share requests by default, but you can update the request to include test versions. | The product can be made available to a subset of allowlisted accounts for controlled testing. |
+| `prerelease`    | Pre-release | Must be validated before sharing only if you are going through Partner Center. Otherwise, no validation required to share. Included in all share requests. | The product is available for sharing or publishing before full release. It is included in all share requests, making it accessible to allowlisted users for early access and feedback. |
+| `consumable`    | Ready  | Must be validated before sharing. Included in all share requests. | The product is fully approved and available for broader sharing or publishing. It is included in all share requests, making it accessible to allowlisted users for use. |
+| `deprecated`    | Archived | Not sharable | The product is no longer actively supported or available for new users. |
+{: caption="Private catalog version states in the console and their programmatic names." caption-side="top"}
