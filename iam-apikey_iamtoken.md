@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-04"
 
 keywords: IAM token, token, API key, generate token, access token, temporary credential
 
@@ -119,10 +119,12 @@ service := exampleservicev1.NewExampleServiceV1(options)
 ```bash
 {
   "access_token": "eyJhbGciOiJIUz......sgrKIi8hdFs",
-  "refresh_token": "SPrXw5tBE3......KBQ+luWQVY=",
+  "refresh_token": "not_supported",
+  "ims_user_id": 118...90,
   "token_type": "Bearer",
   "expires_in": 3600,
-  "expiration": 1473188353
+  "expiration": 1473188353,
+  "scope": "ibm openid"
 }
 ```
 {: codeblock}
