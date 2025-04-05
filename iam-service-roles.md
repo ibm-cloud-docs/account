@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-03"
+lastupdated: "2025-04-05"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -617,17 +617,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table11}
 
-| Role | Description |
-| ----- | :----- |
-| Writer | The writer role is reserved for IBM internal use. |
-{: row-headers}
-{: caption="Service roles - Activity Tracker" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="atracker"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table11}
-
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `atracker.target.read` | read target | Administrator, Editor, Operator, Viewer |
@@ -642,7 +631,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `atracker.route.list` | List atracker routes | Administrator, Editor, Operator, Viewer |
 | `atracker.endpoint.set` | Set atracker endpoint properties | Administrator |
 | `atracker.endpoint.get` | Read atracker endpoint properties | Administrator, Editor, Operator, Viewer |
-| `atracker.service.ingest` | Send events to Atracker | Writer |
 | `atracker.setting.get` | Get Atracker setting | Administrator, Editor, Operator, Viewer |
 | `atracker.setting.update` | Update Atracker setting | Administrator |
 | `atracker.migration.post` | Post atracker migration | Administrator |
@@ -8137,7 +8125,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.session.update` | Update a session. | Manager, Writer |
 | `quantum-computing.instance.configuration.read` | Instance configuration read | Manager |
 | `quantum-computing.instance.configuration.update` | Instance configuration update | Manager |
-| `quantum-computing.instance.usage.read` | Instance usage read | Manager, Reader, Writer |
 | `quantum-computing.instance.read` | Instance read | Manager, Reader, Writer |
 | `quantum-computing.session.create` | Create a Session | Manager, Writer |
 | `quantum-computing.account-configuration.read` | Read Account Configuration. Must be granted by a policy that does not specify service instance. | Manager |
