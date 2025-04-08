@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 652.61">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-dasharray: 5.11 5.11;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-43, .cls-44, .cls-45, .cls-46, .cls-47 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25, .cls-26, .cls-27, .cls-28, .cls-29, .cls-30, .cls-31, .cls-32, .cls-33, .cls-34, .cls-35, .cls-36, .cls-37, .cls-38, .cls-39, .cls-40, .cls-41, .cls-42, .cls-44, .cls-45, .cls-46, .cls-47 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 4.95 4.95;
+      }
+
+      .cls-3 {
+        stroke-dasharray: 5.18 5.18;
+      }
+
+      .cls-4 {
+        stroke-dasharray: 5.17 5.17;
+      }
+
+      .cls-5 {
+        stroke-dasharray: 5.28 5.28;
+      }
+
+      .cls-6 {
+        stroke-dasharray: 4.89 4.89 4.89 4.89;
+      }
+
+      .cls-7 {
+        stroke-dasharray: 4.95 4.95 4.95 4.95;
+      }
+
+      .cls-8 {
+        stroke-dasharray: 5.09 5.09;
+      }
+
+      .cls-9 {
+        stroke-dasharray: 5.24 5.24;
+      }
+
+      .cls-10 {
+        stroke-dasharray: 2.93 2.93;
+      }
+
+      .cls-11 {
+        stroke-dasharray: 5.59 5.59 5.59 5.59;
+      }
+
+      .cls-12 {
+        stroke-dasharray: 5.73 5.73;
+      }
+
+      .cls-13 {
+        stroke-dasharray: 4.73 4.73 4.73 4.73;
+      }
+
+      .cls-14 {
+        stroke-dasharray: 5.5 5.5;
+      }
+
+      .cls-15 {
+        stroke-dasharray: 5.64 5.64;
+      }
+
+      .cls-16 {
+        stroke-dasharray: 5.59 5.59;
+      }
+
+      .cls-17 {
+        stroke-dasharray: 5 5 5 5;
+      }
+
+      .cls-18 {
+        stroke-dasharray: 4.8 4.8 4.8 4.8;
+      }
+
+      .cls-19 {
+        stroke-dasharray: 5.24 5.24 5.24 5.24;
+      }
+
+      .cls-20 {
+        stroke-dasharray: 4.9 4.9 4.9 4.9;
+      }
+
+      .cls-21 {
+        stroke-dasharray: 5.28 5.28 5.28 5.28;
+      }
+
+      .cls-22 {
+        stroke-dasharray: 5.78 5.78;
+      }
+
+      .cls-23 {
+        stroke-dasharray: 5.5 5.5 5.5 5.5;
+      }
+
+      .cls-24 {
+        stroke-dasharray: 4.95 4.95 4.95 4.95;
+      }
+
+      .cls-25 {
+        stroke-dasharray: 4.08 4.08;
+      }
+
+      .cls-26 {
+        stroke-dasharray: 2.64 2.64;
+      }
+
+      .cls-27 {
+        stroke-dasharray: 4.76 4.76 4.76 4.76;
+      }
+
+      .cls-28 {
+        stroke-dasharray: 4.73 4.73;
+      }
+
+      .cls-29 {
+        stroke-dasharray: 4.76 4.76;
+      }
+
+      .cls-30 {
+        stroke-dasharray: 4.95 4.95;
+      }
+
+      .cls-31 {
+        stroke-dasharray: 4.92 4.92;
+      }
+
+      .cls-32 {
+        stroke-dasharray: 4.89 4.89;
+      }
+
+      .cls-33 {
+        stroke-dasharray: 5 5;
+      }
+
+      .cls-34 {
+        stroke-dasharray: 4.9 4.9;
+      }
+
+      .cls-48, .cls-49 {
+        font-size: 12px;
+      }
+
+      .cls-50, .cls-51 {
+        font-size: 15px;
+      }
+
+      .cls-35 {
+        stroke-dasharray: 4.92 4.92 4.92 4.92;
+      }
+
+      .cls-36 {
+        stroke-dasharray: 4.8 4.8;
+      }
+
+      .cls-37 {
+        stroke-dasharray: 5.78 5.78 5.78 5.78;
+      }
+
+      .cls-38 {
+        stroke-dasharray: 5.11 5.11 5.11 5.11;
+      }
+
+      .cls-52, .cls-53, .cls-54, .cls-51 {
+        font-family: IBMPlexSans, 'IBM Plex Sans';
+      }
+
+      .cls-39 {
+        stroke-dasharray: 5.73 5.73 5.73 5.73;
+      }
+
+      .cls-41 {
+        stroke-dasharray: 5.18 5.18 5.18 5.18;
+      }
+
+      .cls-55 {
+        fill: #d4bbff;
+      }
+
+      .cls-42 {
+        stroke-dasharray: 5.09 5.09 5.09 5.09;
+      }
+
+      .cls-44 {
+        stroke-dasharray: 5.17 5.17 5.17 5.17;
+      }
+
+      .cls-45 {
+        stroke-dasharray: 2.64 2.64 2.64 2.64;
+      }
+
+      .cls-53 {
+        font-size: 20px;
+      }
+
+      .cls-54 {
+        font-size: 18px;
+      }
+
+      .cls-56 {
+        fill: #d0e2ff;
+      }
+
+      .cls-46 {
+        stroke-dasharray: 4.08 4.08 4.08 4.08;
+      }
+
+      .cls-49 {
+        font-family: IBMPlexSans-Light, 'IBM Plex Sans';
+        font-weight: 300;
+      }
+
+      .cls-57 {
+        fill: #9ef0f0;
+      }
+
+      .cls-47 {
+        stroke-dasharray: 5.64 5.64 5.64 5.64;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1">
+    <rect class="cls-56" x="589" y="19" width="150" height="47"/>
+    <rect class="cls-56" x="187" y="69" width="168" height="47"/>
+  </g>
+  <g id="Layer_2">
+    <text class="cls-53" transform="translate(627.27 49.36)"><tspan x="0" y="0">Account</tspan></text>
+    <text class="cls-53" transform="translate(201.12 100.37)"><tspan x="0" y="0">Trusted profiles</tspan></text>
+  </g>
+  <g id="Layer_12">
+    <rect class="cls-56" x="592" y="139" width="150" height="47"/>
+  </g>
+  <g id="Layer_54">
+    <rect class="cls-56" x="342" y="210" width="181" height="47"/>
+  </g>
+  <g id="Layer_55">
+    <text class="cls-53" transform="translate(367.87 238.36)"><tspan x="0" y="0">Access groups</tspan></text>
+  </g>
+  <g id="Layer_58">
+    <rect class="cls-56" x="7" y="210" width="181" height="47"/>
+  </g>
+  <g id="Layer_57">
+    <text class="cls-53" transform="translate(59.86 240.78)"><tspan x="0" y="0">Services</tspan></text>
+  </g>
+  <g id="Layer_56">
+    <text class="cls-49" transform="translate(475.48 283.75)"><tspan x="0" y="0">Users and service IDs can </tspan><tspan x="0" y="14.4">be granted access to individual </tspan><tspan x="0" y="28.8">resources or all resources </tspan><tspan x="0" y="43.2">within a resource group. </tspan></text>
+  </g>
+  <g id="Layer_59">
+    <text class="cls-52" transform="translate(37.69 526.34)"><tspan class="cls-50" x="0" y="0">Key</tspan><tspan class="cls-48" x="25.23" y="0"> </tspan></text>
+  </g>
+  <g id="Layer_60">
+    <text class="cls-49" transform="translate(81.94 548.74)"><tspan x="0" y="0">Membership</tspan></text>
+  </g>
+  <g id="Layer_61">
+    <text class="cls-49" transform="translate(82.78 567.48)"><tspan x="0" y="0">Access</tspan></text>
+  </g>
+  <g id="Layer_13">
+    <text class="cls-53" transform="translate(641 169.36)"><tspan x="0" y="0">Users</tspan></text>
+  </g>
+  <g id="Layer_5">
+    <rect class="cls-56" x="991" y="69" width="150" height="47"/>
+  </g>
+  <g id="Layer_4">
+    <text class="cls-53" transform="translate(1015.29 99.78)"><tspan x="0" y="0">Service IDs</tspan></text>
+  </g>
+  <g id="Layer_8">
+    <rect class="cls-56" x="991" y="163" width="150" height="47"/>
+  </g>
+  <g id="Layer_7">
+    <text class="cls-53" transform="translate(1026.88 191.9)"><tspan x="0" y="0">API keys</tspan></text>
+  </g>
+  <g id="Layer_20">
+    <text class="cls-54" transform="translate(926.01 351.72)"><tspan x="0" y="0">Classic infrastructure</tspan></text>
+  </g>
+  <g id="Layer_21">
+    <text class="cls-49" transform="translate(1028.08 269.11)"><tspan x="0" y="0">You can grant users access to classic infrastructure </tspan><tspan x="0" y="14.4">services, specific devices or device types, and subnets. </tspan></text>
+  </g>
+  <g id="Layer_18">
+    <g>
+      <line class="cls-40" x1="823" y1="259.5" x2="825.5" y2="259.5"/>
+      <line class="cls-9" x1="830.74" y1="259.5" x2="838.61" y2="259.5"/>
+      <line class="cls-19" x1="841.23" y1="259.5" x2="1006.38" y2="259.5"/>
+      <line class="cls-40" x1="1009" y1="259.5" x2="1011.5" y2="259.5"/>
+    </g>
+  </g>
+  <g id="Layer_10">
+    <text class="cls-49" transform="translate(1167.19 120.76)"><tspan x="0" y="0">Service IDs can be granted </tspan><tspan x="0" y="14.4">the same access as users for </tspan><tspan x="0" y="28.8">resource group-based services. </tspan></text>
+  </g>
+  <g id="Layer_22">
+    <rect class="cls-55" x="927" y="366" width="170" height="47"/>
+  </g>
+  <g id="Layer_23">
+    <text class="cls-51" transform="translate(940.34 385.96)"><tspan x="0" y="0">Classic infrastructure </tspan><tspan x="45.72" y="18">services</tspan></text>
+  </g>
+  <g id="Layer_24">
+    <rect class="cls-55" x="927" y="422" width="170" height="47"/>
+  </g>
+  <g id="Layer_25">
+    <text class="cls-51" transform="translate(985.46 450.96)"><tspan x="0" y="0">Devices</tspan></text>
+  </g>
+  <g id="Layer_26">
+    <rect class="cls-55" x="927" y="478" width="170" height="47"/>
+  </g>
+  <g id="Layer_27">
+    <text class="cls-51" transform="translate(969.16 506.96)"><tspan x="0" y="0">VPN subnets</tspan></text>
+  </g>
+  <g id="Layer_28">
+    <text class="cls-54" transform="translate(607.06 400.21)"><tspan x="0" y="0">Resource group</tspan></text>
+  </g>
+  <g id="Layer_29">
+    <g id="Layer_19">
+      <g>
+        <line class="cls-40" x1="1011.5" y1="325.53" x2="1011.5" y2="323.03"/>
+        <line class="cls-16" x1="1011.5" y1="317.44" x2="1011.5" y2="309.05"/>
+        <line class="cls-11" x1="1011.5" y1="306.25" x2="1011.5" y2="264.3"/>
+        <line class="cls-40" x1="1011.5" y1="261.5" x2="1011.5" y2="259"/>
+        <polygon points="1015.2 322.72 1011.5 324.29 1007.8 322.72 1011.5 331.5 1015.2 322.72"/>
+      </g>
+    </g>
+    <g id="Layer_17">
+      <g>
+        <line class="cls-40" x1="822.5" y1="259" x2="822.5" y2="256.5"/>
+        <line class="cls-33" x1="822.5" y1="251.5" x2="822.5" y2="244"/>
+        <line class="cls-17" x1="822.5" y1="241.5" x2="822.5" y2="184"/>
+        <line class="cls-40" x1="822.5" y1="181.5" x2="822.5" y2="179"/>
+      </g>
+      <g>
+        <line class="cls-40" x1="97.5" y1="196.53" x2="97.5" y2="194.03"/>
+        <line class="cls-25" x1="97.5" y1="189.95" x2="97.5" y2="183.84"/>
+        <line class="cls-46" x1="97.5" y1="181.8" x2="97.5" y2="167.54"/>
+        <line class="cls-40" x1="97.5" y1="165.5" x2="97.5" y2="163"/>
+        <polygon points="101.2 193.72 97.5 195.29 93.8 193.72 97.5 202.5 101.2 193.72"/>
+      </g>
+      <g>
+        <line class="cls-40" x1="82.5" y1="196.53" x2="82.5" y2="194.03"/>
+        <line class="cls-15" x1="82.5" y1="188.39" x2="82.5" y2="179.93"/>
+        <line class="cls-47" x1="82.5" y1="177.11" x2="82.5" y2="134.82"/>
+        <line class="cls-40" x1="82.5" y1="132" x2="82.5" y2="129.5"/>
+        <polygon points="86.2 193.72 82.5 195.29 78.8 193.72 82.5 202.5 86.2 193.72"/>
+      </g>
+    </g>
+    <g id="Layer_16">
+      <g>
+        <line x1="902.5" y1="186.91" x2="985.5" y2="186.5"/>
+        <g>
+          <line class="cls-40" x1="902.5" y1="186.91" x2="979.53" y2="186.53"/>
+          <polygon points="976.74 190.25 978.3 186.54 976.7 182.84 985.5 186.5 976.74 190.25"/>
+        </g>
+      </g>
+      <g>
+        <line class="cls-40" x1="742.5" y1="178.5" x2="745" y2="178.5"/>
+        <line class="cls-33" x1="750" y1="178.5" x2="757.5" y2="178.5"/>
+        <line class="cls-17" x1="760" y1="178.5" x2="817.5" y2="178.5"/>
+        <line class="cls-40" x1="820" y1="178.5" x2="822.5" y2="178.5"/>
+      </g>
+    </g>
+    <g id="Layer_3">
+      <line class="cls-43" x1="739" y1="42" x2="1066" y2="42"/>
+      <g>
+        <line class="cls-40" x1="1066.5" y1="41.5" x2="1066.5" y2="59.53"/>
+        <polygon points="1062.8 56.72 1066.5 58.29 1070.2 56.72 1066.5 65.5 1062.8 56.72"/>
+      </g>
+      <line class="cls-43" x1="269.5" y1="41.5" x2="589" y2="41.5"/>
+      <g>
+        <line class="cls-40" x1="269.5" y1="41" x2="269.5" y2="59.03"/>
+        <polygon points="265.8 56.22 269.5 57.79 273.2 56.22 269.5 65 265.8 56.22"/>
+      </g>
+      <line class="cls-43" x1="69.5" y1="211" x2="69.5" y2="104.5"/>
+      <line class="cls-43" x1="235.5" y1=".5" x2="1092" y2=".5"/>
+      <g>
+        <line class="cls-40" x1="235.5" y1="0" x2="235.5" y2="59.53"/>
+        <polygon points="231.8 56.72 235.5 58.29 239.2 56.72 235.5 65.5 231.8 56.72"/>
+      </g>
+    </g>
+    <g id="Layer_14">
+      <line class="cls-43" x1="742" y1="162.5" x2="902.5" y2="162.5"/>
+      <line class="cls-43" x1="272.5" y1="150.5" x2="591.85" y2="149.12"/>
+    </g>
+    <g id="Layer_15">
+      <line class="cls-40" x1="902.91" y1="162.47" x2="902.5" y2="186.5"/>
+    </g>
+    <g id="Layer_6">
+      <g>
+        <line class="cls-40" x1="1066.5" y1="116" x2="1066.5" y2="152.53"/>
+        <polygon points="1062.8 149.72 1066.5 151.29 1070.2 149.72 1066.5 158.5 1062.8 149.72"/>
+      </g>
+    </g>
+    <g id="Layer_11">
+      <g>
+        <line class="cls-40" x1="666.5" y1="67.5" x2="666.87" y2="124"/>
+        <polygon points="663.15 121.21 666.87 122.76 670.56 121.16 666.91 129.97 663.15 121.21"/>
+      </g>
+    </g>
+    <g id="Layer_9">
+      <line class="cls-43" x1="1141" y1="89.5" x2="1468" y2="89.5"/>
+      <line class="cls-43" x1="1466.5" y1="632.5" x2="1467.5" y2="90"/>
+      <line class="cls-43" x1="377.51" y1="632.5" x2="1466.52" y2="632.5"/>
+      <g>
+        <line x1="377.5" y1="632.5" x2="377.5" y2="264.5"/>
+        <g>
+          <line class="cls-40" x1="377.5" y1="632.5" x2="377.5" y2="270.47"/>
+          <polygon points="381.2 273.28 377.5 271.71 373.8 273.28 377.5 264.5 381.2 273.28"/>
+        </g>
+      </g>
+      <line class="cls-43" x1="38" y1="545.5" x2="62.5" y2="545.5"/>
+      <g>
+        <line x1="272.5" y1="150" x2="272.5" y2="120"/>
+        <g>
+          <line class="cls-40" x1="272.5" y1="150" x2="272.5" y2="125.97"/>
+          <polygon points="276.2 128.78 272.5 127.21 268.8 128.78 272.5 120 276.2 128.78"/>
+        </g>
+      </g>
+      <g>
+        <line x1="69" y1="104.5" x2="182" y2="103.5"/>
+        <g>
+          <line class="cls-40" x1="69" y1="104.5" x2="176.03" y2="103.55"/>
+          <polygon points="173.25 107.28 174.8 103.56 173.19 99.87 182 103.5 173.25 107.28"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <line class="cls-40" x1="666.5" y1="372.53" x2="666.5" y2="370.03"/>
+      <line class="cls-4" x1="666.5" y1="364.86" x2="666.5" y2="357.1"/>
+      <line class="cls-44" x1="666.5" y1="354.51" x2="666.5" y2="191.59"/>
+      <line class="cls-40" x1="666.5" y1="189" x2="666.5" y2="186.5"/>
+      <polygon points="670.2 369.72 666.5 371.29 662.8 369.72 666.5 378.5 670.2 369.72"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="707.5" y1="263.5" x2="707.5" y2="261"/>
+      <line class="cls-36" x1="707.5" y1="256.2" x2="707.5" y2="249"/>
+      <line class="cls-18" x1="707.5" y1="246.6" x2="707.5" y2="191.4"/>
+      <line class="cls-40" x1="707.5" y1="189" x2="707.5" y2="186.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="707.5" y1="264.5" x2="710" y2="264.5"/>
+      <line class="cls-12" x1="715.73" y1="264.5" x2="724.32" y2="264.5"/>
+      <line class="cls-39" x1="727.18" y1="264.5" x2="770.14" y2="264.5"/>
+      <line class="cls-40" x1="773" y1="264.5" x2="775.5" y2="264.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="775.54" y1="405.03" x2="775.56" y2="402.53"/>
+      <line class="cls-30" x1="775.59" y1="397.58" x2="775.64" y2="390.17"/>
+      <line class="cls-24" x1="775.66" y1="387.69" x2="776.47" y2="271.47"/>
+      <line class="cls-40" x1="776.48" y1="269" x2="776.5" y2="266.5"/>
+      <polygon points="779.26 402.25 775.55 403.8 771.86 402.2 775.5 411 779.26 402.25"/>
+    </g>
+    <line class="cls-40" x1="614.8" y1="186.44" x2="615.5" y2="233.5"/>
+    <g>
+      <line class="cls-40" x1="539.47" y1="234.43" x2="615.5" y2="233.5"/>
+      <polygon points="542.32 238.1 540.7 234.41 542.23 230.69 533.5 234.5 542.32 238.1"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="432.5" y1="427.5" x2="432.5" y2="425"/>
+      <line class="cls-28" x1="432.5" y1="420.27" x2="432.5" y2="413.18"/>
+      <line class="cls-13" x1="432.5" y1="410.81" x2="432.5" y2="261.86"/>
+      <line class="cls-40" x1="432.5" y1="259.5" x2="432.5" y2="257"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="774.5" y1="630" x2="774.5" y2="627.5"/>
+      <line class="cls-5" x1="774.5" y1="622.22" x2="774.5" y2="614.31"/>
+      <line class="cls-21" x1="774.5" y1="611.67" x2="774.5" y2="572.11"/>
+      <line class="cls-40" x1="774.5" y1="569.47" x2="774.5" y2="566.97"/>
+      <polygon points="778.2 569.78 774.5 568.21 770.8 569.78 774.5 561 778.2 569.78"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="667.5" y1="630" x2="667.5" y2="627.5"/>
+      <line class="cls-5" x1="667.5" y1="622.22" x2="667.5" y2="614.31"/>
+      <line class="cls-21" x1="667.5" y1="611.67" x2="667.5" y2="572.11"/>
+      <line class="cls-40" x1="667.5" y1="569.47" x2="667.5" y2="566.97"/>
+      <polygon points="671.2 569.78 667.5 568.21 663.8 569.78 667.5 561 671.2 569.78"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="204.47" y1="233.5" x2="206.97" y2="233.5"/>
+      <line class="cls-32" x1="211.86" y1="233.5" x2="219.19" y2="233.5"/>
+      <line class="cls-6" x1="221.64" y1="233.5" x2="336.55" y2="233.5"/>
+      <line class="cls-40" x1="339" y1="233.5" x2="341.5" y2="233.5"/>
+      <polygon points="207.28 237.2 205.7 233.5 207.28 229.8 198.5 233.5 207.28 237.2"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="97.5" y1="162.5" x2="100" y2="162.5"/>
+      <line class="cls-31" x1="104.92" y1="162.5" x2="112.31" y2="162.5"/>
+      <line class="cls-35" x1="114.77" y1="162.5" x2="585.04" y2="162.5"/>
+      <line class="cls-40" x1="587.5" y1="162.5" x2="590" y2="162.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="39" y1="563.37" x2="41.5" y2="563.37"/>
+      <line class="cls-26" x1="44.14" y1="563.37" x2="48.11" y2="563.37"/>
+      <line class="cls-45" x1="49.43" y1="563.37" x2="58.68" y2="563.37"/>
+      <line class="cls-40" x1="60" y1="563.37" x2="62.5" y2="563.37"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="432" y1="429.5" x2="434.5" y2="429.5"/>
+      <line class="cls-22" x1="440.28" y1="429.5" x2="448.94" y2="429.5"/>
+      <line class="cls-37" x1="451.83" y1="429.5" x2="495.14" y2="429.5"/>
+      <line class="cls-40" x1="498.03" y1="429.5" x2="500.53" y2="429.5"/>
+      <polygon points="497.72 433.2 499.29 429.5 497.72 425.8 506.5 429.5 497.72 433.2"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="83" y1="129.5" x2="85.5" y2="129.5"/>
+      <line class="cls-29" x1="90.26" y1="129.5" x2="97.4" y2="129.5"/>
+      <line class="cls-27" x1="99.77" y1="129.5" x2="230.62" y2="129.5"/>
+      <line class="cls-40" x1="233" y1="129.5" x2="235.5" y2="129.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="235.95" y1="115.73" x2="235.87" y2="118.23"/>
+      <line class="cls-10" x1="235.78" y1="121.15" x2="235.63" y2="125.54"/>
+      <line class="cls-40" x1="235.58" y1="127" x2="235.5" y2="129.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1=".5" y1="89.5" x2="3" y2="89.51"/>
+      <line class="cls-3" x1="8.17" y1="89.52" x2="15.94" y2="89.53"/>
+      <line class="cls-41" x1="18.53" y1="89.54" x2="181.54" y2="89.91"/>
+      <line class="cls-40" x1="184.13" y1="89.91" x2="186.63" y2="89.92"/>
+    </g>
+    <g>
+      <line class="cls-40" x1=".5" y1="89.5" x2=".5" y2="92"/>
+      <line class="cls-34" x1=".5" y1="96.9" x2=".5" y2="104.24"/>
+      <line class="cls-20" x1=".5" y1="106.69" x2=".5" y2="280.55"/>
+      <line class="cls-40" x1=".5" y1="283" x2=".5" y2="285.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1=".49" y1="286.27" x2="2.99" y2="286.26"/>
+      <line class="cls-2" x1="7.94" y1="286.25" x2="15.37" y2="286.23"/>
+      <line class="cls-7" x1="17.85" y1="286.23" x2="312.52" y2="285.51"/>
+      <line class="cls-40" x1="315" y1="285.51" x2="317.5" y2="285.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="317.75" y1="285.89" x2="317.75" y2="288.39"/>
+      <line class="cls-8" x1="317.75" y1="293.48" x2="317.74" y2="301.12"/>
+      <line class="cls-42" x1="317.74" y1="303.67" x2="317.5" y2="647.45"/>
+      <line class="cls-40" x1="317.5" y1="650" x2="317.5" y2="652.5"/>
+    </g>
+    <g>
+      <line class="cls-40" x1="317.41" y1="652.11" x2="319.91" y2="652.1"/>
+      <line class="cls-1" x1="325.02" y1="652.09" x2="332.68" y2="652.07"/>
+      <line class="cls-38" x1="335.24" y1="652.06" x2="557.45" y2="651.51"/>
+      <line class="cls-40" x1="560" y1="651.51" x2="562.5" y2="651.5"/>
+    </g>
+    <line class="cls-40" x1="1091.5" y1=".5" x2="1092.29" y2="69.42"/>
+    <g>
+      <line class="cls-40" x1="562.5" y1="651.5" x2="562.47" y2="649"/>
+      <line class="cls-14" x1="562.41" y1="643.5" x2="562.33" y2="635.24"/>
+      <line class="cls-23" x1="562.3" y1="632.49" x2="561.62" y2="569.22"/>
+      <line class="cls-40" x1="561.59" y1="566.47" x2="561.56" y2="563.97"/>
+      <polygon points="565.3 566.74 561.58 565.2 557.89 566.82 561.5 558 565.3 566.74"/>
+    </g>
+  </g>
+  <g id="Layer_30">
+    <rect class="cls-57" x="512" y="416" width="100" height="27"/>
+  </g>
+  <g id="Layer_31">
+    <text class="cls-51" transform="translate(529.98 434.64)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_33">
+    <rect class="cls-57" x="621" y="416" width="100" height="27"/>
+  </g>
+  <g id="Layer_32">
+    <text class="cls-51" transform="translate(638.98 434.65)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_34">
+    <rect class="cls-57" x="728" y="416" width="100" height="27"/>
+  </g>
+  <g id="Layer_35">
+    <text class="cls-51" transform="translate(745.98 434.65)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_36">
+    <rect class="cls-57" x="729.09" y="525.14" width="100" height="27"/>
+  </g>
+  <g id="Layer_37">
+    <text class="cls-51" transform="translate(747.07 543.79)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_38">
+    <rect class="cls-57" x="621" y="525" width="100" height="27"/>
+  </g>
+  <g id="Layer_39">
+    <text class="cls-51" transform="translate(638.98 543.64)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_40">
+    <rect class="cls-57" x="512" y="525" width="100" height="27"/>
+  </g>
+  <g id="Layer_41">
+    <text class="cls-51" transform="translate(529.98 543.65)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_42">
+    <rect class="cls-57" x="728.09" y="488.14" width="100" height="27"/>
+  </g>
+  <g id="Layer_43">
+    <text class="cls-51" transform="translate(746.07 506.79)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_44">
+    <rect class="cls-57" x="620" y="488" width="100" height="27"/>
+  </g>
+  <g id="Layer_45">
+    <text class="cls-51" transform="translate(637.98 506.64)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_46">
+    <rect class="cls-57" x="512" y="488" width="100" height="27"/>
+  </g>
+  <g id="Layer_47">
+    <text class="cls-51" transform="translate(529.98 506.65)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_48">
+    <rect class="cls-57" x="728" y="452" width="100" height="27"/>
+  </g>
+  <g id="Layer_49">
+    <text class="cls-51" transform="translate(745.98 470.65)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_50">
+    <rect class="cls-57" x="620" y="451.53" width="100" height="27"/>
+  </g>
+  <g id="Layer_51">
+    <text class="cls-51" transform="translate(637.98 470.17)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+  <g id="Layer_52">
+    <rect class="cls-57" x="512" y="451" width="100" height="27"/>
+  </g>
+  <g id="Layer_53">
+    <text class="cls-51" transform="translate(529.98 469.65)"><tspan x="0" y="0">Resource</tspan></text>
+  </g>
+</svg>
