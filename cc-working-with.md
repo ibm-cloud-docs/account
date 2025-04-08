@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-07"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -37,69 +37,71 @@ The carbon calculator provides a wide range of features to track your GHG emissi
 Emissions data is currently tracked for a subset of services, but more services are under consideration to be added.
 
 If service data is not displayed, it might be because:
-* Emissions data isn't tracked for the service.
+* Emissions data isn't tracked for the service or wasn't tracked during the selected time period.
 * Data for newly added services and current quarter results are not yet available because it can take approximately two months to populate.
 
-Emission data is available for the following services:
+The following tables shows the services that have emissions data and the timeframe when that information was available:
 
-* {{site.data.keyword.iae_short}}                               
-* {{site.data.keyword.appconfig_short}}                         
-* Application Load Balancer                                     
-* {{site.data.keyword.bm_is_short}}                             
-* {{site.data.keyword.baremetal_short}} for Classic             
-* {{site.data.keyword.blockstorageshort}}                       
-* {{site.data.keyword.block_storage_is_short}}                  
-* Block Storage Snapshots for VPC [New]{: tag-new}              
-* Cloud HSM                                                     
-* Cloud Object Storage                                          
-* Cloudant                                                      
-* Code Engine                                                   
-* {{site.data.keyword.registryshort}}                           
-* {{site.data.keyword.contdelivery_short}}                      
-* Data Engine (previously SQL Query)                            
-* {{site.data.keyword.databases-for-elasticsearch}}             
-* {{site.data.keyword.databases-for-enterprisedb}}              
-* {{site.data.keyword.databases-for-etcd}}                      
-* {{site.data.keyword.databases-for-mongodb}}                   
-* {{site.data.keyword.databases-for-mysql}}                     
-* {{site.data.keyword.databases-for-postgresql}}                
-* {{site.data.keyword.databases-for-redis}}                     
-* {{site.data.keyword.datastageshort}}                          
-* Db2                                                           
-* Db2 Warehouse                                                 
-* Dedicated Host for VPC [New]{: tag-new}                       
-* Direct Link Connect                                           
-* Direct Link Connect on Classic [New]{: tag-new}               
-* Direct Link Dedicated                                         
-* Direct Link Dedicated on Classic [New]{: tag-new}             
-* {{site.data.keyword.dns_short}}                               
-* {{site.data.keyword.en_short}}                                
-* {{site.data.keyword.messagehub}}                              
-* {{site.data.keyword.filestorage_short}}                       
-* {{site.data.keyword.filestorage_vpc_short}}                   
-* {{site.data.keyword.fsa10_full}}                              
-* Gateway Appliance                                             
-* IBM Cloud Activity Tracker                                    
-* IBM Cloud Monitoring                                          
-* IBM Cloud Platform - Core Services [^tabletext1]              
-* IBM Log Analysis                                              
-* {{site.data.keyword.keymanagementserviceshort}}               
-* {{site.data.keyword.containershort_notm}}                     
-* {{site.data.keyword.loadbalancer_short}} for Classic          
-* {{site.data.keyword.messages-for-rabbitmq}}                   
-* MQ                                                            
-* Network Load Balancer                                         
-* SAP on Classic Infrastructure                                 
-* SAP on VMware                                                 
-* {{site.data.keyword.satelliteshort}}                          
-* {{site.data.keyword.secrets-manager_short}}                   
-* {{site.data.keyword.compliance_short}}                        
-* Security and Compliance Center Workload Protection            
-* {{site.data.keyword.tg_short}}                                
-* VMware Solutions                                              
-* {{site.data.keyword.vpn_vpc_short}}                           
-* {{site.data.keyword.virtualmachinesshort}} for Classic        
-* Virtual Server for VPC                                        
+| Service | Added |
+|---------|-------|
+| {{site.data.keyword.iae_short}}                         |  Q4 2023 |
+| {{site.data.keyword.appconfig_short}}                   | Q3 2023 |
+| Application Load Balancer                               | Q2 2023 |
+| {{site.data.keyword.bm_is_short}}                       | Q1 2023 |
+| {{site.data.keyword.baremetal_short}} for Classic       | Q1 2023 |
+| {{site.data.keyword.blockstorageshort}}                 |  Q2 2023 |
+| {{site.data.keyword.block_storage_is_short}}            | Q2 2023 |
+| Block Storage Snapshots for VPC [New]{: tag-new}        | Q3 2024 |
+| Cloud HSM                                               | Q1 2023 |
+| Cloud Object Storage                                    | Q1 2023 |
+| Cloudant                                                | Q4 2023 |
+| Code Engine                                             | Q3 2023 |
+| {{site.data.keyword.registryshort}}                     | Q4 2023 |
+| {{site.data.keyword.contdelivery_short}}                | Q4 2023 |
+| Data Engine (previously SQL Query)                      | Q4 2023 |
+| {{site.data.keyword.databases-for-elasticsearch}}       | Q3 2023 |
+| {{site.data.keyword.databases-for-enterprisedb}}        | Q3 2023 |
+| {{site.data.keyword.databases-for-etcd}}                | Q3 2023 |
+| {{site.data.keyword.databases-for-mongodb}}             | Q3 2023 |
+| {{site.data.keyword.databases-for-mysql}}               | Q3 2023 |
+| {{site.data.keyword.databases-for-postgresql}}          | Q3 2023 |
+| {{site.data.keyword.databases-for-redis}}               | Q3 2023 |
+| {{site.data.keyword.datastageshort}}                    | Q4 2023 |
+| Db2                                                     | Q1 2024 |
+| Db2 Warehouse                                           | Q4 2023 |
+| Dedicated Host for VPC [New]{: tag-new}                 | Q3 2024 |
+| Direct Link Connect                                     | Q1 2024 |
+| Direct Link Connect on Classic [New]{: tag-new}         | Q3 2024 |
+| Direct Link Dedicated                                   | Q1 2024 |
+| Direct Link Dedicated on Classic [New]{: tag-new}       | Q3 2024 |
+| {{site.data.keyword.dns_short}}                         | Q2 2023 |
+| {{site.data.keyword.en_short}}                          | Q3 2023 |
+| {{site.data.keyword.messagehub}}                        | Q3 2023 |
+| {{site.data.keyword.filestorage_short}}                 | Q2 2023 |
+| {{site.data.keyword.filestorage_vpc_short}}             | Q2 2023 |
+| {{site.data.keyword.fsa10_full}}                        | Q1 2023 |
+| Gateway Appliance                                       | Q4 2023 |
+| IBM Cloud Activity Tracker                              | Q4 2023 |
+| IBM Cloud Monitoring                                    | Q4 2023 |
+| IBM Cloud Platform - Core Services [^tabletext1]        |  Q1 2024 |
+| IBM Log Analysis                                        | Q4 2023 |
+| {{site.data.keyword.keymanagementserviceshort}}         | Q3 2023 |
+| {{site.data.keyword.containershort_notm}}               | Q1 2023 |
+| {{site.data.keyword.loadbalancer_short}} for Classic    | Q1 2023 |
+| {{site.data.keyword.messages-for-rabbitmq}}             | Q3 2023 |
+| MQ                                                      | Q4 2023 |
+| Network Load Balancer                                   | Q2 2023 |
+| SAP on Classic Infrastructure                           | Q3 2023 |
+| SAP on VMware                                           | Q3 2023 |
+| {{site.data.keyword.satelliteshort}}                    | Q4 2023 |
+| {{site.data.keyword.secrets-manager_short}}             | Q3 2023 |
+| {{site.data.keyword.compliance_short}}                  |
+| Security and Compliance Center Workload Protection       | Q4 2023 |
+| {{site.data.keyword.tg_short}}                          |  Q1 2024 |
+| VMware Solutions                                        | Q3 2023 |
+| {{site.data.keyword.vpn_vpc_short}}                     | Q2 2023 |
+| {{site.data.keyword.virtualmachinesshort}} for Classic  | Q1 2023 |
+| Virtual Server for VPC                                  | Q1 2023 |
 
 [^tabletext1]: Contains multiple services that are not tracked individually but are combined into one service. IBM Cloud Platform includes the following: Command line interface, Billing and usage, Identity and access management, Global catalog, Global search & tagging, Console, Cloud shell, Projects, Paywall, Schematics, and Carbon calculator.
 

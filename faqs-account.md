@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-07"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -233,7 +233,7 @@ The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-switcher.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Account selector" caption-side="bottom"}
 
-You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a username indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility. Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
+You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a username indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting). Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the accounts that you own and any other accounts that are affiliated with your IBMid.
 
