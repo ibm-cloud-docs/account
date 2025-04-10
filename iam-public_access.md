@@ -285,7 +285,7 @@ When you disable public access, all existing policies for the Public Access grou
 
 To disable public access for the account, complete the following steps:
 1. Go to **Manage** > **Access (IAM)** > **Settings** in the {{site.data.keyword.cloud_notm}} console.
-1. Click Public access and disble the **Public access group**.
+1. Click Public access and disable the **Public access group**.
 
 ### Disabling access by using the CLI
 {: #disable-public-cli}
