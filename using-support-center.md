@@ -3,9 +3,9 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-02"
+lastupdated: "2025-04-14"
 
-keywords: support, support case, premium support, advanced support, basic support, support page, help
+keywords: support, support case, premium support, advanced support, basic support, support page, help, support agent, speak with agent, connect to agent, live agent, chat with human agent, talk to an agent
 
 subcollection: account
 
