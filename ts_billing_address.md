@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot billing, payment error, update billing address, billing address
 
@@ -18,6 +18,9 @@ content-type: troubleshoot
 # Why can't I update my billing address?
 {: #update-billing-address}
 {: troubleshoot}
+
+You're unable to update your billing address because editing it from the Payment methods page isn't supported.
+{: shortdesc}
 
 You can't update the billing address for the payment method that's used for your {{site.data.keyword.cloud}} account.
 {: tsSymptoms}

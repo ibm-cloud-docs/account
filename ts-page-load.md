@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, page load, page error, console page error
 
@@ -20,7 +20,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 A page in the {{site.data.keyword.Bluemix}} console might not load properly, and an error message is displayed.
-{: .shortdesc}
+{: shortdesc}
 
 One of the following error messages might be displayed:
 {: tsSymptoms}

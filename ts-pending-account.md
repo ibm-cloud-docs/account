@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, pending account, login issue 
 
@@ -20,6 +20,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 If your account is still pending, you can't log in to {{site.data.keyword.Bluemix}}.
+{: shortdesc}
 
 After you create an {{site.data.keyword.Bluemix_notm}} account, you might not be able to log in to {{site.data.keyword.Bluemix_notm}}. The `Your account is pending` message might be displayed.
 {: tsSymptoms}

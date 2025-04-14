@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, account problem, add user to org, org, invite user to org
 subcollection: account
@@ -19,6 +19,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You can invite users to your organization only if you're the account owner, or if you're both a manager and a member of the organization.
+{: shortdesc}
 
 You can't see the **Invite a New User** link in your **Manage Organizations** section.
 {: tsSymptoms}

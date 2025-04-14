@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, upgrade account, upgrade issue, 
 subcollection: account
@@ -19,6 +19,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You tried to upgrade to a Pay-As-You-Go account by using a credit card. 
+{: shortdesc}
 
 When you go **Manage** > **Account** > **Account Settings** in the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
 {: tsSymptoms}

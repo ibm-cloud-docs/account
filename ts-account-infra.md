@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, infrastructure access, infrastructure services 
 
@@ -19,7 +19,10 @@ content-type: troubleshoot
 {: #troubleshoot-infrastructure-access}
 {: troubleshoot}
 
-When you attempt to access infrastructure sections of the IBM Cloud console, the following message might be displayed:
+You're unable to access infrastructure services because your account isn't linked to an infrastructure account or it's a Lite account.
+{: shortdesc}
+
+When you attempt to access the infrastructure sections of the {{site.data.keyword.cloud}} console, the following message might be displayed:
 {: tsSymptoms}
 
 > This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.

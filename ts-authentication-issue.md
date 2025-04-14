@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, incomplete login, authentication issue
 
@@ -20,6 +20,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 If you log in to {{site.data.keyword.Bluemix_notm}} and the authentication of your IBMid doesn't complete, there might be a problem with the service.
+{: shortdesc}
 
 When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid doesn't complete.
 {: tsSymptoms}

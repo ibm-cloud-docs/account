@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, authentication, IBMid accounts, sign-up error 
 
@@ -19,7 +19,8 @@ content-type: troubleshoot
 {: #ts_unabletologin}
 {: troubleshoot}
 
-Your IBMid must be associated with an {{site.data.keyword.Bluemix}} account. 
+Your IBMid must be associated with an {{site.data.keyword.Bluemix}} account.
+{: shortdesc}
 
 When you log in to {{site.data.keyword.Bluemix_notm}}, the following message is displayed:
 {: tsSymptoms}

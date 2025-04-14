@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, invoiced for commitment, unused commitment, commitment bill
 
@@ -18,6 +18,9 @@ content-type: troubleshoot
 # Why can't I view any Enterprise Savings Plan commitments?
 {: #ts_view_commit}
 {: troubleshoot}
+
+You're unable to view any commitments because your account isn't enrolled in the Enterprise Savings Plan billing model.
+{: shortdesc}
 
 I can't view any commitments from the Enterprise Savings Plan page in the {{site.data.keyword.cloud}} console.
 {: tsSymptoms}

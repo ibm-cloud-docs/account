@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, account problem, view all orgs 
 
@@ -20,6 +20,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You can't submit your credit card information to upgrade your Lite account to a billable account.
+{: shortdesc}
 
 The **Upgrade account** button is disabled.
 {: tsSymptoms}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, account problem, lite plan, lite plan instance, extra instance, create instance
 
@@ -19,6 +19,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You try to create more than one instance in your Lite account.
+{: shortdesc}
 
 You receive the following error message when you try to create a new Lite plan instance:
 {: tsSymptoms}

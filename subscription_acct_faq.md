@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-14"
 
 keywords: GB-hour, container usage, runtime, charge
 
@@ -18,7 +18,7 @@ content-type: faq
 # FAQ for subscription accounts
 {: #faq-subscription-account}
 
-FAQ for subscription accounts include entries about subscription credit, subscription terms, and other subscription-related self-help information.
+FAQ for subscription accounts include entries about subscription credit, subscription terms, and other subscription-related self-help information. To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## How do I add subscription credit to my account?

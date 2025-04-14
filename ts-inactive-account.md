@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, account problem, inactive account
 subcollection: account
@@ -19,6 +19,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You can't create an app in {{site.data.keyword.Bluemix_notm}} if your account is inactive. You must contact the support team and open a request to fix this problem.
+{: shortdesc}
 
 When you try to create an app in {{site.data.keyword.Bluemix_notm}}, the following error message is displayed:
 {: tsSymptoms}

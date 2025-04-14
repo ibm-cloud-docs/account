@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, browser issue, console error 
 
@@ -18,6 +18,9 @@ content-type: troubleshoot
 # Why doesn't the console open when I log in with my IBMid?
 {: #ts_login_stalls}
 {: troubleshoot}
+
+You're unable to access the console after login because a browser issue is preventing the page from loading properly.
+{: shortdesc}
 
 When you log in to the {{site.data.keyword.Bluemix_notm}} console by using your IBMid, a login success message is displayed, but you don't return to the {{site.data.keyword.Bluemix_notm}} console.
 {: tsSymptoms}

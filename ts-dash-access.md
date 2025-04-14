@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, dashboard role, permission, view dashboard, dashboard
 
@@ -15,9 +15,12 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I view all the resources on dashboard that was shared?
+# Why can't I view all the resources on the dashboard that are shared?
 {: #ts_dash-access}
 {: troubleshoot}
+
+You're unable to view all resources on the shared dashboard because you lack the required IAM access or are blocked by context-based restrictions.
+{: shortdesc}
 
 The view of the scoped dashboard that was shared with you is different than the view for other users in the account.
 {: tsSymptoms}

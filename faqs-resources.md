@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-14"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -17,6 +17,9 @@ content-type: faq
 
 # FAQ about managing resources
 {: #resources-faq}
+
+FAQ about managing resources includes answers to common questions about resource groups in {{site.data.keyword.cloud_notm}}, including how they help organize resources, who can create and manage them, and how access is controlled. You will also learn about tagging, usage tracking, deleting services, and how resource groups integrate with access groups. To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+{: shortdesc}
 
 ## What is a resource group?
 {: #resource-group}
