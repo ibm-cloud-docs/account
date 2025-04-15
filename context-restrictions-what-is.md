@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-04-15"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -137,7 +137,6 @@ The following is a list of services that you can add to a network zone as a serv
 | [{{site.data.keyword.databases-for-postgresql}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-postgresql` |
 | [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | `databases-for-redis` |
 | {{site.data.keyword.dl_short}} | IAM-enabled | `directlink` |
-| [{{site.data.keyword.la_short}}](/docs/log-analysis?topic=log-analysis-cbr) | IAM-enabled |  `logdna` |
 | [{{site.data.keyword.en_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled | `event-notifications` |
 | [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled | `messagehub` |
 | [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) / [{{site.data.keyword.redhat_openshift_notm}}](/docs/openshift?topic=openshift-cbr&interface=ui) | IAM-enabled | `containers-kubernetes`|
@@ -259,7 +258,6 @@ You can create context-based restrictions for the following services if you are 
 | [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-cbr) | IAM-enabled | No | `directlink` |
 | [{{site.data.keyword.dns_short}}](/docs/dns-svcs?topic=dns-svcs-cbr) | IAM-enabled | No | `dns-svcs`|
 | [{{site.data.keyword.en_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled | No | `event-notifications` |
-| [{{site.data.keyword.la_short}}](/docs/log-analysis?topic=log-analysis-cbr) | IAM-enabled | Yes | `logdna` |
 | [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled | No | `messagehub` |
 | [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-access-control-with-cbr) | IAM-enabled | No | `kms` |
 | [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) / [{{site.data.keyword.redhat_openshift_notm}}](/docs/openshift?topic=openshift-cbr&interface=ui) | IAM-enabled | Yes | `containers-kubernetes` |
