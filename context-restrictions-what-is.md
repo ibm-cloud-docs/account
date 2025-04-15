@@ -73,7 +73,7 @@ Define the APIs that you want to protect to narrow the scope of a rule's restric
 For example, you might create a rule that targets a data plane API so that it is only accessible from a Kubernetes cluster, or wherever your compute infrastructure exists. Then, you can create a rule that targets your control plane API and all platform APIs to protect interactions with the cloud console so that it is only accessible from behind your organization's VPN.
 
 Only some services support the ability to scope a rule by API.
-{: preview}
+{: note}
 
 With some services, you can restrict the actions of all service APIs on your resources by default, which includes all current and future APIs that the service might support. Or, select specific APIs. For example, [Kubernetes](/docs/containers?topic=containers-cbr&interface=ui#cbr-overview) has custom service APIs that you can restrict access to based on the context of the request. Review each service's documentation to learn more about how they integrate with context-based restrictions.
 
@@ -81,7 +81,6 @@ Select services support the ability to scope a rule to protect all platform APIs
 
 Context-based restrictions default to protect all of the service and platform APIs the target service supports.
 {: tip}
-
 
 ## Contexts
 {: #restriction-context}
@@ -185,16 +184,16 @@ If an option is selected from the **MFA for users with an IBMid** section in the
 {: note}
 
 Only some services support the ability to specify MFA in a rule.
-{: preview}
+{: note}
 
 ## Access requirements
 {: #cbr-access-reqs}
 
 To complete rule actions, you must be assigned an IAM policy on the target service. To complete network zone actions, you must be assigned an IAM policy on the context-based restrictions service.
 
-To create a context-based restriction for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the Context-based restrictions** service.
+To create a context-based restriction for a service, you must be assigned an IAM policy with the Administrator role the service you are creating a rule against. For example, if you want to create a rule to protect a **Key Protect** instance, you must be assigned the Administrator role on the **Key Protect** service and the Viewer role or higher on the context-based restrictions service.
 
-The Viewer role on the Context-based restrictions service authorizes you to add network zones to your rule.
+The Viewer role on the context-based restrictions service authorizes you to add network zones to your rule.
 {: tip}
 
 ### Context-based restrictions roles and actions
@@ -207,7 +206,7 @@ To manage network zones, you must be assigned an IAM policy with a specific role
 | Viewer        | View network zones|
 | Editor        | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones  |
 | Administrator | View network zones   \n  \n Create network zones   \n  \n Update network zones   \n  \n Remove network zones |
-{: caption="Roles and actions for the Context-based restrictions service" caption-side="top"}
+{: caption="Roles and actions for the context-based restrictions service" caption-side="top"}
 
 For more information, see [Actions and roles for account management services](/docs/account?topic=account-account-services&interface=ui).
 
@@ -301,4 +300,4 @@ If you want to check the number of rules in your account, see [Viewing the total
 ### Eventual consistency
 {: #cbr-eventual-consistency}
 
-Context-based restrictions follow an [eventually consistent](https://en.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, Context-based restrictions remain highly available and performant across multiple global regions. Changes that are made to Context-based restrictions rules and network zones are recorded and propagated worldwide. Access changes might not take effect until the propagation process is complete, usually within a few minutes.
+Context-based restrictions follow an [eventually consistent](https://en.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, context-based restrictions remain highly available and performant across multiple global regions. Changes that are made to context-based restrictions rules and network zones are recorded and propagated worldwide. Access changes might not take effect until the propagation process is complete, usually within a few minutes.
