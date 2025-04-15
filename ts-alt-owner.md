@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, dashboard role, permission, view dashboard, dashboard
 
@@ -18,6 +18,9 @@ content-type: troubleshoot
 # Why did the creation of an alternative account owner trusted profile fail?
 {: #ts_alt-owner}
 {: troubleshoot}
+
+You're unable to create an alternative account owner trusted profile because only one can be set per account.
+{: shortdesc}
 
 A trusted profile is created without the classic infrastructure permissions that an alternative account owner is normally assigned. You receive an error after you create the trusted profile.
 {: tsSymptoms}

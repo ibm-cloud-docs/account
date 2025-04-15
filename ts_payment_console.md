@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot billing, add card, payment outside console, myibm.com/billing, manage payment
 
@@ -18,6 +18,9 @@ content-type: troubleshoot
 # How do I add a credit card when the option isn't available through the console?
 {: #ts-ccibm}
 {: troubleshoot}
+
+You're unable to add a credit card in the console because your payments are managed through IBM.com.
+{: shortdesc}
 
 If your payments are managed outside of the console, you can't use [Billing and usage](/billing){: external} to add a credit card.
 {: important}

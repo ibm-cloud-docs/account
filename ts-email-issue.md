@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2021
-lastupdated: "2021-08-24"
+  years: 2020, 2025
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
@@ -17,7 +17,8 @@ content-type: troubleshoot
 {: #ts_email_notifications}
 {: troubleshoot}
 
-You are having issues with receiving email notifications. 
+You are having issues with receiving email notifications.
+{: shortdesc}
 
 You completed the instructions required to set platform or infrastructure email notifications, but still are not receiving them.
 {: tsSymptoms}

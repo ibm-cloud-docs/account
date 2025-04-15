@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-14"
 
 keywords: migration FAQs, data centers
 
@@ -18,6 +18,7 @@ content-type: faq
 # FAQ about migrating resources to a different data center
 {: #faqs-migrating-resources}
 
+FAQ about migrating resources includes questions about resource and data center migrations in {{site.data.keyword.cloud_notm}}. You can find answers about why migrations are required, how to select new data centers and configurations, and what to expect during the transition period. You will also find answers about bandwidth, IP addresses, networking changes, and how to migrate your data smoothly. To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 
 ## Why am I required to migrate my resources?
 {: #dc-required-move}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-14"
 
 keywords: IBM Cloud billing, commitment model, using commitments, FAQs, enterprise savings plan, savings plan, pay as you go with committed use
 
@@ -17,6 +17,9 @@ content-type: faq
 
 # FAQ for Enterprise Savings Plan
 {: #commitmentfaqs}
+
+FAQ for Enterprise Savings Plan might include questions on how to view and manage your commitments, understand billing impacts, and handle account limitations when commitments are active. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
+{: #shortdesc}
 
 ## What is the difference between Enterprise Savings Plan and a Subscription account?
 {: #commitment-subscription}

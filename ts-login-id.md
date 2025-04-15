@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-01-12"
+  years: 2015, 2025
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, email login, IBMid help, troubleshoot IBMid
 
@@ -19,6 +19,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 To successfully log in to the {{site.data.keyword.Bluemix}} console, make sure that you have IBMid authentication for each account.
+{: shortdesc}
 
 When you log in to the console, the following message is displayed:
 {: tsSymptoms}

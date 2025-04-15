@@ -3,7 +3,7 @@
 copyright:
 
  years: 2015, 2025
-lastupdated: "2025-04-01"
+lastupdated: "2025-04-14"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -29,12 +29,12 @@ The following table provides a comparison of Trial, Pay-As-You-Go, and Subscript
 
 | Feature | Trial              | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| Access to [Lite service plans](/catalog?search=label%3Alite){: external} | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Access to all Free plans           |        |   ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Access to the full {{site.data.keyword.cloud_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg) |
-| Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg) | ![Feature available](../icons/icon_enabled.svg)|
-| Available for enterprise account hierarchy        |        |    ![Feature available](../icons/icon_enabled.svg) [^tabletext]   | ![Feature available](../icons/icon_enabled.svg) |
-| Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg) |                     |
+| Access to [Lite service plans](/catalog?search=label%3Alite){: external} | ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") |
+| Access to all Free plans           |        |   ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") |
+| Access to the full {{site.data.keyword.cloud_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") |
+| Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available")|
+| Available for enterprise account hierarchy        |        |    ![Feature available](../icons/icon_enabled.svg "Feature available") [^tabletext]   | ![Feature available](../icons/icon_enabled.svg "Feature available") |
+| Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg "Feature available") |                     |
 {: row-headers}
 {: class="comparison-table"}
 {: caption="Comparison of {{site.data.keyword.cloud_notm}} accounts" caption-side="top"}

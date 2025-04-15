@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, account password, incorrect password, password help
 
@@ -20,6 +20,8 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You must have a valid password that's associated with your IBMid or SoftLayer ID to log in to the {{site.data.keyword.Bluemix_notm}} console.
+{: shortdesc}
+
 
 When you try to log in to {{site.data.keyword.Bluemix_notm}}, the following error message is displayed:
 {: tsSymptoms}

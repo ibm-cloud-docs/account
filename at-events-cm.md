@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-15"
 
 keywords:
 
@@ -28,48 +28,6 @@ Activity tracking events report on activities that change the state of a service
 You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to route auditing events in your account to destinations of your choice by configuring targets and routes that define where activity tracking events are sent. For more information, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
 
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
-
-
-
-As of 28 March 2024, the {{site.data.keyword.at_full_notm}} service is deprecated and will no longer be supported as of 30 March 2025. Customers will need to migrate to {{site.data.keyword.logs_full_notm}} before 30 March 2025. During the migration period, customers can use {{site.data.keyword.at_full_notm}} along with {{site.data.keyword.logs_full_notm}}. Activity tracking events are the same for both services. For information about migrating from {{site.data.keyword.at_full_notm}} to {{site.data.keyword.logs_full_notm}} and running the services in parallel, see [migration planning](/docs/cloud-logs?topic=cloud-logs-migration-intro).
-{: important}
-
-## Locations where activity tracking events are sent to {{site.data.keyword.at_full_notm}} hosted event search
-{: #at-legacy-locations}
-
-
-
-Catalog management sends activity tracking events to {{site.data.keyword.at_full_notm}} hosted event search in the regions that are indicated in the following table.
-
-| Dallas (`us-south`) | Washington (`us-east`)  | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
-|---------------------|-------------------------|-------------------|----------------------|
-| [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} |
-{: caption="Regions where activity tracking events are sent in Americas locations" caption-side="top"}
-{: #at-table-1}
-{: tab-title="Americas"}
-{: tab-group="at"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Tokyo (`jp-tok`)    | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
-|---------------------|------------------|------------------|--------------------|
-| [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} |
-{: caption="Regions where activity tracking events are sent in Asia Pacific locations" caption-side="top"}
-{: #at-table-2}
-{: tab-title="Asia Pacific"}
-{: tab-group="at"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Frankfurt (`eu-de`)  | London (`eu-gb`) | Madrid (`eu-es`) |
-|---------------------------------------------------------------|---------------------|------------------|
-| [Yes]{: tag-green} | [No]{: tag-red} | [No]{: tag-red} |
-{: caption="Regions where activity tracking events are sent in Europe locations" caption-side="top"}
-{: #at-table-3}
-{: tab-title="Europe"}
-{: tab-group="at"}
-{: class="simple-tab-table"}
-{: row-headers}
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
 {: #atracker-locations}

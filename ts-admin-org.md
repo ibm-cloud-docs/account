@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, account problem, view all orgs 
 subcollection: account
@@ -19,6 +19,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 As an administrator, you can't display every organization to administer them when you use the {{site.data.keyword.Bluemix_notm}} console. You can display and administer only those organizations to which you belong.
+{: shortdesc}
 
 As an administrator, you can't view all the organizations from the console.
 {: tsSymptoms}

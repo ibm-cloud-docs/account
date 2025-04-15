@@ -2,7 +2,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-14"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -16,6 +16,9 @@ content-type: faq
 
 # FAQ for {{site.data.keyword.cloud_notm}} Carbon Calculator
 {: #carboncalcfaqs}
+
+FAQ for {{site.data.keyword.cloud}} Carbon Calculator might include questions on how to find guidance on accessing emissions reports, understanding how emissions are calculated, supported services, using data with ESG tools like IBM Envizi, and providing feedback. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
+{: shortdesc}
 
 ## Why can't I see my emissions data?
 {: #carboncalc-emissions}

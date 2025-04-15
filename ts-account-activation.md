@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, activate account, confirmation email
 
@@ -18,6 +18,9 @@ content-type: troubleshoot
 # Why didn’t I receive the confirmation email for creating my account?
 {: #ts_email}
 {: troubleshoot}
+
+You're unable to receive the confirmation email because it might be blocked or filtered by your email client or server.
+{: shortdesc}
 
 You didn't receive the confirmation email to activate your account.
 {: tsSymptoms}

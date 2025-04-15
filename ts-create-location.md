@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-14"
 
 keywords: troubleshoot account, account problem, IBM location, IBM Cloud location, create location
 
@@ -20,6 +20,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 You're unable to create a new location because your account type doesn't allow it.
+{: shortdesc}
 
 You receive an error message when you try to create a new {{site.data.keyword.Bluemix_notm}} location.
 {: tsSymptoms}
