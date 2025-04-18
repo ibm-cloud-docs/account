@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-04-10"
+lastupdated: "2025-04-18"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -305,7 +305,7 @@ You can update the email address that is used for MFA on the [Verification metho
 
 If you use a trusted profile, you can't create a user API key. You can still create and manage all other API keys. For example, service ID API keys.
 
-To create a user API key, your IAM ID and the IAM ID of the user that's requesting the user API key must be the same. When you apply a trusted profile, you take on the IAM ID of that profile. To create a user API key for your identity, log out of IBM Cloud and log back in without applying a trusted profile.
+To create a user API key, your IAM ID and the IAM ID of the user that's requesting the user API key must be the same. When you apply a trusted profile, you take on the IAM ID of that profile. To create a user API key for your identity, use the account switcher to switch from a trusted profile to an account where your IAM ID is a member.
 
 ## How can I check whether a user can apply a trusted profile?
 {: #tp-check}
@@ -344,3 +344,18 @@ To view a list of dynamic members in an access group, go to **Manage** > **Acces
 {: faq}
 
 To view a list of the inactive identities in your account, go to **Manage** > **Access (IAM)** > **Inactive identities**. You might want to remove inactive identities if they are no longer needed. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities).
+
+## How do I switch between trusted profiles and accounts?
+{: #switch-profile}
+
+You can switch between trusted profiles and accounts where you are a member by using the account switcher in the console menu bar.
+
+![A screen capture of the account switcher](images/account-profile-switcher.svg "How to switch between trusted profiles and accounts."){: caption="How to switch between trusted profiles and accounts" caption-side="bottom"}
+
+If you aren't a member of any account, you might have to log out and log back in to select a different trusted profile. To do so, complete the following steps.
+
+1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log out**.
+1. To confirm, click **Log out**.
+1. Go to `https://cloud.ibm.com/login` to log in again.
+1. Enter your credentials and click **Continue**.
+1. On the trusted profiles landing page, select a trusted profile.

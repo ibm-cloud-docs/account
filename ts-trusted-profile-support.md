@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-18"
 
 keywords: troubleshoot trusted profile, classic infrastructure, trusted profile application, support center, getting support
 
@@ -28,11 +28,5 @@ You're unable to view, manage, and create Support Center cases when you log in t
 The Support Center is not currently enabled for users that log in to {{site.data.keyword.cloud_notm}} by selecting a trusted profile.
 {: tsCauses}
 
-If you need to use the Support Center, log out and log back in without selecting a trusted profile. To do so, complete the following steps.
+If you need to use the Support Center, use the account switcher to switch from a trusted profile to an account where you are a member. For more information, see [How do I switch between trusted profiles and accounts?](/docs/account?topic=account-iamfaq#switch-profile).
 {: tsResolve}
-
-1. Go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log out**.
-1. To confirm, click **Log out**.
-1. Go to `https://cloud.ibm.com/login` to log in again.
-1. Enter your credentials and click **Continue**.
-1. On the trusted profiles landing page, click **Continue** without selecting a trusted profile.
