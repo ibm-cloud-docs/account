@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-18"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -52,7 +52,7 @@ If you are an IBMid user, complete the following steps to log in to the {{site.d
 1. Go to the [{{site.data.keyword.cloud_notm}} login page](/login).
 2. Enter your IBMid, or if you are using single sign-on (SSO), enter your company email address, and click **Continue**.
 3. Enter your password.
-4. Click **Select** to choose the trusted profile that your account administrator created for you.
+4. In the {{site.data.keyword.cloud_notm}} console, go to the account switcher and select the trusted profile that your account administrator created for you.
 
 ### Applying trusted profiles as an {{site.data.keyword.appid_short}} user
 {: #login-appid-users}
@@ -65,7 +65,7 @@ If you are an {{site.data.keyword.appid_short}} user, complete the following ste
     {: tip}
 
 2. Enter your credentials and log in.
-3. Click **Select** to choose the trusted profile that your account administrator created for you.
+3. In the {{site.data.keyword.cloud_notm}} console, go to the account switcher and select the trusted profile that your account administrator created for you.
 
 ## Using the CLI to log in
 {: #usingthecli_login}
