@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-21"
 
 keywords: upcoming maintenance, stay up-to-date, monitor status
 
@@ -16,7 +16,7 @@ subcollection: account
 # Monitoring status best practices
 {: #best-practices}
 
-To create a plan and stay informed, use the following best practices for monitoring the status of {{site.data.keyword.Bluemix}}. Ongoing incidents or planned maintenance windows that impact a finite set of accounts do not display on the Status page. The notifications for those events are published only to the customer [Notifications page](/notifications){: external}.
+To create a plan and stay informed, use the following best practices for monitoring the status of {{site.data.keyword.Bluemix}}. Ongoing incidents or planned maintenance windows that impact a finite set of accounts do not display on the Status page. The notifications for those events are published only to the customer [Notifications page](https://{DomainName}/notifications){: external}.
 {: shortdesc}
 
 ## Check for upcoming maintenance windows
