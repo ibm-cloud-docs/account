@@ -274,7 +274,6 @@ toc:
       - topicgroup:
           label: Observability
           topics:
-          - monitoring.md
           - at-events-am.md
           - at-events-iam.md
           - at-events-cbr.md
