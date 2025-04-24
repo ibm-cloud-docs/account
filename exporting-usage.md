@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-04-24"
 
 keywords: apptio, cost benefit analysis
 
@@ -209,7 +209,6 @@ The following table shows the correlation between the heading titles in your CSV
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
 
-- July 2024 to March 2025 is [version 1.2](#account-summary-csv-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-0-2)
@@ -745,7 +744,6 @@ Regular account CSV reports are not real time and can be incomplete. Complete CS
 You can view other versions of the CSV if you have earlier instances reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
 
-- February 2025 to March 2025 is [version 1.3](#instances-CSV-version-1-3)
 - June 2024 to January 2025 is [version 1.2](#instances-CSV-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#instances-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#instances-csv-version-1-0)
