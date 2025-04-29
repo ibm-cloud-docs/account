@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-26"
 
 keywords: change log for CBR, updates to CBR, cli, context-based restrictions
 
@@ -17,6 +17,18 @@ subcollection: account
 {: #cli-change-log}
 
 In this change log, you can learn about the latest changes, improvements, and updates for the context-based restrictions CLI.
+
+## Version 1.9.0
+{: #cli-190}
+
+Version 1.9.0 of the CLI was released on 24 Apr 2025.
+
+Added the **`ibmcloud cbr services`** command, allowing listing of services that CBR rules can be created for.
+Added the **`ibmcloud cbr service`** command, allowing querying of details of a particular CBR enabled service.
+Added the **`ibmcloud cbr rule-options`** commands, allowing listing of options available for creating a rule against a particular service.
+Created grouping for command listing for better visibility.
+Added aliases to **`ibmcloud cbr srts`** and **`ibmcloud cbr srt`** for the **`ibmcloud cbr service-ref-targets`** and **`ibmcloud cbr service-ref-target`** commands respectively.
+Deprecated the **`ibmcloud cbr api-types`** command.
 
 ## Version 1.8.0
 {: #cli-180}

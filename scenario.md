@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-29"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -222,11 +222,12 @@ In this scenario, assume 110 time-series metrics (50 for {{site.data.keyword.cod
 [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-monitor#metrics-by-plan) and [{{site.data.keyword.cloudant_short_notm}}](https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-monitor-ibm-cloud-pm#metrics_dictionary-pm) provide various platform metrics to monitor your applications. The number of time-series depends on the [cardinality](https://docs.sysdig.com/en/docs/sysdig-monitor/using-monitor/metrics/using-labels/#cardinality){: external}, or number of unique time series associated with a metric. In this scenario, we are assuming 60 time-series for {{site.data.keyword.codeengineshort}} and 50 time-series for {{site.data.keyword.cloudant_short_notm}}.
 
 ```text
-{{site.data.keyword.codeengineshort}}: 60 time-series/month
-{{site.data.keyword.cloudant_short_notm}}: 50 time-series/month
+Code Engine: 60 time-series/month
+IBM Cloudant: 50 time-series/month
 Total: 110 time-series/month * 730 hours/month = 
 110 * $0.08 per metric = $8.80
 ```
+{: codeblock}
 
 ## Conclusion
 {: #conclusion}
