@@ -3,7 +3,7 @@
 copyright:
 
   years: 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-04-29"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR, status page, status query, incident, maintenance, search query, notifications, view notifications, set notifications,
 
@@ -128,7 +128,7 @@ The downloadable reports are in PDF file formats. These reports are available fo
 
 The events can be region-specific, global, or they might have an unspecified location.
 
-To view the Incident reports page and check RCAs, complete the following steps:
+To view the incident reports page and check RCAs, complete the following steps:
 
 1. In the {{site.data.keyword.Bluemix_notm}} console, click the **Notifications** icon ![Notifications icon "Notifications"](../icons/Notification.svg) in the menu bar.
 1. Click **View cloud status**.
@@ -161,6 +161,21 @@ The following table describes the different types of notifications that are disp
 | Incidents | Unexpected impacting events that can cause an outage or restrict functionality. |
 | Account | Invitation email, or console notifications for inviting users to the {{site.data.keyword.Bluemix_notm}} platform.  |
 {: caption="Notification types" caption-side="top"}
+
+## Viewing impacted devices
+{: #viewing-impacted-devices}
+
+Identify which of your devices are affected by the scheduled or ongoing maintenance activity in {{site.data.keyword.cloud_notm}}.
+
+To obtain a list of devices impacted under the maintenance activity, complete the following steps: 
+
+1. Log in to {{site.data.keyword.cloud_notm}} by using your credentials. 
+1. Click the **Notifications** icon ![Notifications icon](../icons/Notification.svg "Notifications") to view a list of open and completed maintenance's for your account in the past 30 days. 
+
+You can directly go to the maintenance notification page through [{{site.data.keyword.cloud_notm}} Notifications](https://cloud.ibm.com/notifications){: external}
+{: note}
+
+1. Select the maintenance activity, and click **View all affected instances** to get a list of all your devices that are being impacted under maintenance.
 
 ## Subscribing to email notifications
 {: #subscribe-email-notifications}
