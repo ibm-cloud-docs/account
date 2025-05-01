@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-04-24"
+lastupdated: "2025-05-01"
 
 keywords: apptio, cost benefit analysis
 
@@ -208,14 +208,130 @@ The following table shows the correlation between the heading titles in your CSV
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-
-
+- May 2025 to present is [version 1.3](#account-summary-csv-version-1-3)
+- July 2024 to April 2025 is [version 1.2](#account-summary-csv-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-0-2)
 - Before February 2023 is [version 0.1](#account-summary-csv-version-0-1).
 
+#### Account summary CSV version 1.3
+{: #account-summary-csv-version-1-3}
 
+The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from March 2025 to present.
+
+| CSV Header          | Description                                        |
+|---------------------|-------------------------------------------------|
+| Account Owner ID    | ID of the account                               |
+| Account Name        | Name of the account                             |
+| Billing Month       | The month in which usages were incurred. Represented in `yyyy-mm` format |
+| Currency Rate       | Currency Exchange Rate with USD as the base     |
+| Created Time        | Timestamp at which the CSV report was generated |
+| Version             | The version number of the account summary CSV   |
+{: class="simple-tab-table"}
+{: caption="Account summary CSV header titles and descriptions for account metadata" caption-side="bottom"}
+{: tab-group="account-summary-1-3"}
+{: #account-owner-id-1-3}
+{: tab-title="Account Metadata"}
+
+| CSV Header       | JSON Report Fields                 | Description |
+|---------------------|-------------------------------|-------------|
+| Account ID          | `account_id`                  | ID of the account |
+| Month               | `month`                       | The month in which usages were incurred. Represented in `yyyy-mm` format |
+| Country Code        | `billing_country_code`        | Country the requested account is mapped to |
+| Currency Code       | `billing_currency_code`       | The currency in which the account is billed |
+| Billable Cost       | `resources.billable_cost`     | The billable charges for all cloud resources used in the account |
+| Non Billable Cost  | `resources.non_billable_cost` | Non-billable charges for all cloud resources used in the account |
+{: class="simple-tab-table"}
+{: caption="Account summary CSV header titles and JSON report fields for account usage summary" caption-side="bottom"}
+{: tab-group="account-summary-1-3"}
+{: #account-id-1-3}
+{: tab-title="Account Usage Summary"}
+
+| CSV Header       | JSON Report Fields                                          | Description |
+|---------------------|-------------------------------------------------------------|-------------|
+| Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription. |
+| CA                  | `subscription.subscriptions.charge_agreement_number`        | The charge agreement number of the subscription |
+| Type                | `subscription.subscriptions.type`                           | Type of subscription |
+| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits available in the subscription for the month |
+| Start               | `subscription.subscriptions.start` or \n `subscription.subscriptions.terms.start`| Pay-As-You-Go accounts: the date from which the subscription was active \n Subscription accounts: The start date of the term |
+| End                 | `subscription.subscriptions.end` or \n `subscription.subscriptions.terms.end`           | Pay-As-You-Go accounts: unavailable \n Subscription accounts: The end date of the term |
+| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the  subscription \n Subscription accounts: The total credits available for the term  |
+| Credits Starting    | `subscription.subscriptions.terms.credits.starting_balance` | The unused credits in the term at the beginning of the month |
+| Credits Used        | `subscription.subscriptions.terms.credits.used`             | The credits used in this month |
+| Credits Balance     | `subscription.subscriptions.terms.credits.balance`          | The remaining credits in this term |
+| True Up             | `subscription.subscriptions.terms.credits.true_up`          | The credits remaining after the end of the term |
+{: class="simple-tab-table"}
+{: caption="Account summary CSV header titles and JSON report fields for subscriptions" caption-side="bottom"}
+{: tab-group="account-summary-1-3"}
+{: #subscription-id-1-3}
+{: tab-title="Subscriptions"}
+
+| CSV Header       | JSON Report Fields                     | Description |
+|---------------------|-----------------------------------|-------------|
+| Subscription ID [New]{: tag-new} | `subscription.subscriptions.subscription_id` | The ID of the subscription. |
+| Type [New]{: tag-new} | `subscription.subscriptions.type` | The type of subscription. |
+| Category [New]{: tag-new} | `subscription.subscriptions.category` | The category of subscription. |
+| Overage [New]{: tag-new} | `subscription.subscriptions.overage.cost` | Additional subscription cost for the month. |
+{: class="simple-tab-table"}
+{: caption="Account summary CSV header titles and JSON report fields for subscriptions overage" caption-side="bottom"}
+{: tab-group="account-summary-1-3"}
+{: #offer-id-1-3}
+{: tab-title="Subscriptions overage"}
+
+| CSV Header       | JSON Report Fields                     | Description |
+|---------------------|-----------------------------------|-------------|
+| Offer ID            | `offers.offer_id`                 | The ID of the offer |
+| Credits Total       | `offers.credits_total`            | The total credits before applying the offer |
+| Offer Template      | `offers.offer_template`           | The template with which the offer was generated |
+| Valid From          | `offers.valid_from`               | The date from which the offer is valid |
+| Expire Date         | `offers.expires_on`               | The date until the offer is valid |
+| Recurring           | `offers.is_recurring`             | Indicates if a cost is recurring |
+| Starting Balance    | `offers.credits.starting_balance` | The available credits in the offer at the beginning of the month |
+| Used                | `offers.credits.used`             | The credits used in this month |
+| Balance             | `offers.credits.balance`          | The remaining credits in the offer |
+{: class="simple-tab-table"}
+{: caption="Account summary CSV header titles and JSON report fields for offers" caption-side="bottom"}
+{: tab-group="account-summary-1-3"}
+{: #offer-id-1-3}
+{: tab-title="Offers"}
+
+| CSV Header       | JSON Report Fields | Description |
+|---------------------|--------------------|-------------|
+| Support Cost        | `support.cost`     | The monthly support cost |
+| Support Type        | `support.type` \n (`STANDARD` > `Advanced` and \n `PREMIUM` > `Premium`) | The type of support  |
+| Support Overage     | `support.overage`  | Additional support cost for the month |
+{: class="simple-tab-table"}
+{: caption="Account summary CSV header titles and JSON report fields for support summary" caption-side="bottom"}
+{: tab-group="account-summary-1-3"}
+{: #support-cost-1-3}
+{: tab-title="Support Summary"}
+
+| CSV Header  | JSON Report Fields                 | Description |
+|----------------|------------------------------------|-------------|
+| Service Name   | `resources.resource_name`          | The name of the resource |
+| Service ID     | `resources.resource_id`            | The ID of the resource |
+| Currency       | `currency_code`                    | The currency for the cost fields in the resources, plans, and metrics |
+| Billable       | `resources.billable`               | Indicates if the plan charges are billed to the customer |
+| Plan Name      | `resources.plan_name`              | Name of the service plan |
+| Plan ID        | `resources.plan_id`                | ID of the service plan |
+| Pricing Region | `reports.resources.plans.pricing_region` | Pricing region for the plan |
+| Metric         | `resources.usage.metric`           | The ID of the metric |
+| Unit           | `resources.usage.unit`             | The unit that qualifies the quantity |
+| Quantity       | `resources.usage.quantity`         | The aggregated value for the metric |
+| Cost           | `resources.usage.cost`             | The cost incurred by the metric |
+| Original Cost  | `resources.usage.rated_cost`       | Pre-discounted cost incurred by the metric |
+| Pending        | `resources.pending`            | Pending charge from classic infrastructure |
+| Discount (%)   | `resources.plans.usage.discounts.discount`, semicolon(;) delimited | Discount percentage that is applied to the account |
+| Discount ID    | `resources.plans.usage.discounts.ref`, semicolon(;) delimited | Reference ID of the discount |
+| Non Chargeable  | `resources.plans.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
+| Classic Infrastructure Product ID | `resources.plans.usage.additional_properties.classic_infrastructure_product_id`| Product ID of classic infrastructure resource |
+| Classic Infrastructure Package ID | `resources.plans.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
+{: class="simple-tab-table"}
+{: caption="Account summary CSV header titles and JSON report fields for account resource usage" caption-side="bottom"}
+{: tab-group="account-summary-1-3"}
+{: #service-name-1-3}
+{: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 1.2
 {: #account-summary-csv-version-1-2}
@@ -744,15 +860,74 @@ Regular account CSV reports are not real time and can be incomplete. Complete CS
 
 You can view other versions of the CSV if you have earlier instances reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-
-
+- May 2025 to present is [version 1.4](#instances-CSV-version-1-4)
+- February 2025 to April 2025 is [version 1.3](#instances-CSV-version-1-3)
 - June 2024 to January 2025 is [version 1.2](#instances-CSV-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#instances-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#instances-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#instances-csv-version-0-2)
 - Before February 2023 is [version 0.1](#instances-csv-version-0-1).
 
+#### Instances CSV version 1.4
+{: #instances-CSV-version-1-4}
 
+The following table is version 1.4 and the most recent CSV version. You get this version if the data that you're viewing is from March 2025 to present.
+
+| CSV Header       | Description                                     |
+|------------------|-------------------------------------------------|
+| Account Owner ID | ID of the account                               |
+| Account Name     | Name of the account                             |
+| Billing Month    | The month in which usages were incurred. Represented in `yyyy-mm` format     |
+| Currency Rate    | Currency Exchange Rate with USD as the base     |
+| Created Time     | Timestamp at which the CSV report was generated |
+| Version          | The version number of the account instance CSV  |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and descriptions for account metadata" caption-side="bottom"}
+{: tab-group="account-instance-1-4"}
+{: #account-owner-id-instance-1-4}
+{: tab-title="Account Metadata"}
+
+| CSV Header       | JSON Report Fields                 | Description |
+|---------------------|------------------------------------|-------------|
+| Service Name        | `resources.resource_name`          | The name of the resource |
+| Service ID          | `resources.resource_id`            | The ID of the resource |
+| Instance Name       | `resources.resource_instance_name` | The name of the resource instance |
+| Instance ID         | `resources.resource_instance_id`   | The ID of the resource instance |
+| Plan Name           | `resources.plan_name`              | The name of the plan where the instance was provisioned and rated |
+| Plan ID             | `resources.plan_id`                | The ID of the plan where the instance was provisioned and rated |
+| Region              | `resources.region`                 | The region where instance was provisioned |
+| Consumer ID         | `resources.consumer_id`            | The ID of the consumer |
+| Resource Group Name | `resources.resource_group_name`    | The name of the resource group |
+| Resource Group ID   | `resources.resource_group_id`      | The ID of the resource group |
+| CF Org              | `resources.organization_name`      | The name of the CF organization |
+| Org ID              | `resources.organization_id`        | The ID of the CF organization |
+| CF Space            | `resources.space_name`             | The name of the CF space |
+| Space ID            | `resources.space_id`               | The ID of the CF space|
+| Currency            | `resources.currency_code`          | The currency for the cost fields in the resources, plans, and metrics |
+| Billable            | `resources.billable`               | Validates if a cost is charged to the account |
+| Usage Metric        | `resources.usage.metric`           | ID of the metric |
+| Usage Unit          | `resources.usage.unit`             | Unit that qualifies the quantity |
+| Usage Quantity      | `resources.usage.quantity`         | Aggregated value for the metric |
+| Original Cost       | `resources.usage.rated_cost`       | The starting cost of a resource within your account |
+| Volume Discount   | `resources.usage.volume_discount` | This percentage reflects the reduction to the original cost that you receive under a volume based pricing structure |
+| Volume Cost  | `resources.usage.volume_cost` | The original cost adjusted for volume based discounts that are applied at the account level |
+| Cost |  `resources.usage.cost`   |  The pre-tax cost after accounting for any applicable discounts |
+| Pending             | `resources.pending`            | 	Pending charge from classic infrastructure |
+| Discount (%)        | `resources.plans.usage.discounts.discount`, semicolon(;) delimited | Discount percentage that is applied to the account |
+| Discount ID         | `resources.plans.usage.discounts.ref`, semicolon(;) delimited | Reference ID of the discount |
+| Subscription ID [New]{: tag-new} | `resources.subscription_id` | The ID of the subscription. |
+| Non Chargeable  | `resources.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
+| Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
+| Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
+| Created At  | `resources.created_at` | Created at timestamp of the instance. |
+| Deleted At  | `resources.deleted_at` | Deleted at timestamp of the instance. |
+| Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
+| Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and JSON report fields for account instance usage" caption-side="bottom"}
+{: tab-group="account-instance-1-4"}
+{: #service-name-instance-1-4}
+{: tab-title="Account Instance Usage"}
 
 #### Instances CSV version 1.3
 {: #instances-CSV-version-1-3}
