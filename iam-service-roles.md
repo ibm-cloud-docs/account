@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-05"
+lastupdated: "2025-05-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -616,6 +616,17 @@ Review the available platform and service roles and the actions mapped to each t
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
 {: #platform-roles-table11}
+
+| Role | Description |
+| ----- | :----- |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Service roles - Activity Tracker" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="atracker"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table11}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -1296,6 +1307,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.documents.create` | Create Document | Manager, Writer |
 | `compliance.documents.read` | View Document | Manager, Reader, Writer |
 | `compliance.facts.read` | View Facts | Manager, Reader, Writer |
+| `compliance.vulnerability-tickets.read` | View Vulnerability Tickets | Manager, Reader, Writer |
+| `compliance.vulnerability-tickets-counts.read` | View Vulnerability Ticket Statistics | Manager, Reader, Writer |
 {: caption="Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
@@ -1674,6 +1687,10 @@ Review the available platform and service roles and the actions mapped to each t
 | CloudPak Data Source Administrator | Create data source definitions and see a list of all connections across the account |
 | CloudPak Data Source Creator | Create data source definitions |
 | CloudPak Data Steward | Create or view governance artifacts and curate data into catalogs. |
+| Data Product Consumer | Search and subscribe to data products, request for new data products, create connections, view domains |
+| Data Product Hub Administrator | Add or remove members to community, create top level domains, configure storage for data extract, custom properties, workflows, connections, view insights |
+| Data Product Hub Manager | Initialize Data Product Hub, create catalog, create functional admin user and assign policies to it |
+| Data Product Provider | Create data products, connections, sub-domains and approve data products, view insights |
 | Governance Artifacts Administrator | Manage governance artifacts |
 | Lineage Administrator | Perform actions related to managing data lineage, like importing lineage metadata, publishing new assets, managing external agents or updating mappings. |
 | Manager | Manage catalogs, governance artifacts, categories, and workflow. |
@@ -1714,6 +1731,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.data-lineage.manage` | Manage data lineage | Lineage Administrator, Manager |
 | `cp4d.data-lineage.access` | Access data lineage | Lineage Administrator, Manager, Reader |
 | `cp4d.governance-policy-decision.evaluate` | Permission required for an integration user to be allowed to evaluate data access requests on behalf of registered platform users | Policy Decision Operator |
+| `cp4d.data-product-hub.manage` | Initialize Data Product Hub | Data Product Hub Manager, Manager |
+| `cp4d.data-product-hub.admin` | Administer Data Product Hub | Data Product Hub Administrator, Manager |
+| `cp4d.data-product.provide` | Create data products | Data Product Provider |
+| `cp4d.data-product.consume` | Consume data products | Data Product Consumer |
 {: caption="Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
@@ -1769,6 +1790,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/task_infos/:task_id` | Read a Task metadata | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/backups/:backup_id` | Read a backup | Administrator, Editor, Operator, Viewer |
 | `DELETE /v4/:platform/backups/:backup_id` | Delete a backup | Administrator, Editor, Operator |
+| `DELETE /v4/:platform/deployments/:deployment_id/backups/:backup_id` | Delete a backup | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Viewer |
@@ -2048,9 +2070,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `POST /v4/:platform/deployments/:deployment_id/custom_setting` | custom db settings | Administrator, Editor, Operator, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/external_rollforward` | roll forwarding database based on the options provided by clients | Administrator, Editor, Operator, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/clustermigration/db2_migration` | db2 v3 migration | Administrator, Editor, Operator, Viewer |
-| `POST /v4/ibm/deployments/:deployment_id/clustermigration/finalize_db2_migration` | Finalize db2 migration | Administrator, Editor, Operator, Viewer |
-| `POST /v4/ibm/deployments/:deployment_id/clustermigration/finalize_db2_source_migration` | Finalize db2 source migration | Administrator, Editor, Operator, Viewer |
-| `GET /v4/ibm/deployments/:deployment_id/clustermigration/source_resource_number` | Get the resource number from the db2 source | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/clustermigration/finalize_db2_migration` | Finalize db2 migration | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/clustermigration/finalize_db2_source_migration` | Finalize db2 source migration | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/clustermigration/source_resource_number` | Get the resource number from the db2 source | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/clustermigration/add_source_annotation` | add source annotation in mcsp for cluster migration | Administrator, Editor, Operator, Viewer |
+| `POST /v4/:platform/deployments/:deployment_id/clustermigration/source_annotation` | update source annotation in classic for cluster migration | Administrator, Editor, Operator, Viewer |
+| `GET /v4/:platform/deployments/:deployment_id/clustermigration/can_finalize` | cluster migration is ready to be finalized | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Db2 on Cloud" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="dashdb-for-transactions"}
@@ -2644,162 +2669,6 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table41}
 
-## Databases for etcd
-{: #databases-for-etcd-roles}
-
-Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `databases-for-etcd` for the service name.
-
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions (including making configuration changes and managing credentials) except for managing the account and assigning access policies. |
-| Operator | As an operator, you can view database instances and make configuration changes including managing database credentials. |
-| Viewer | As a viewer, you can view database instances but you can't make configuration changes. |
-{: row-headers}
-{: caption="Platform roles - Databases for etcd" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="databases-for-etcd"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table42}
-
-| Role | Description |
-| ----- | :----- |
-| Service Configuration Reader | The ability to read services configuration for Governance management. |
-{: row-headers}
-{: caption="Service roles - Databases for etcd" caption-side="top"}
-{: tab-title="Service roles"}
-{: tab-group="databases-for-etcd"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table42}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `GET /2017-12/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `DELETE /2017-12/:platform/deployments/:deployment_id` | Remove a Deployment | Administrator, Editor, Operator |
-| `GET /2017-12/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /2017-12/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /2017-12/:platform/clusters/:cluster_id/deployments` | Create a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v4/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `POST /v4/:platform/deployments/:deployment_id/users` | Create a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id` | Read a DeploymentUser | Administrator, Editor, Operator, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/users/:user_id` | Update a DeploymentUser | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/users/:user_id` | Remove a DeploymentUser | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v4/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/users/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v4/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/regions` | Read Discover available regions | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/tasks/:task_id` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id` | Update a Deployment | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployables/:deployable_id/groups` | Read deployable group | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/point_in_time_recovery_data` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/remotes/resync` | Resync remote replica | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/management/database_connections` | Kill all database connections | Administrator, Editor, Operator |
-| `PATCH /v5/:platform/deployments/:deployment_id/configuration` | Update deployment configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/configuration/schema` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/network` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/groups` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id` | Update a Group | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/groups/:group_id/autoscaling` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Read Whitelisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Create a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses/:ip_address_id` | Remove a Whitelisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/whitelists/ip_addresses` | Bulk whitelist IP addresses | Administrator, Editor, Operator |
-| `POST /v5/:platform/capability/:capability_id` | Discover a supported capability | Administrator, Editor, Operator |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type` | Create a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `PATCH /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Update a type of user | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id` | Delete a type of user | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/users/:user_type/:user_id/connections/:endpoint_type` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `POST /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `DELETE /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses/:ip_address_id` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `PUT /v5/:platform/deployments/:deployment_id/allowlists/ip_addresses` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `GET /v5/:platform/deployments/:deployment_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `GET /v5/:platform/backups/:backup_id/capability/:capability_id` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `task.read` | Read a Task | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `backup.read` | Read a Backup | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.read` | Read a Deployment | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment.update` | Update a Deployment | Administrator, Editor, Operator |
-| `deployment-point-in-time-recovery-data.list` | Read all deployment point-in-time-recovery data | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
-| `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
-| `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
-| `deployment-remote-resync.create` | Resync remote replica | Administrator, Editor, Operator |
-| `deployment-database-connection.bulkdelete` | Kill all database connections | Administrator, Editor, Operator |
-| `deployment-configuration.update` | Update deployment configuration | Administrator, Editor, Operator |
-| `deployment-configuration-schema.read` | Read deployment configuration schema | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-network.read` | Read deployment network | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.list` | Read Groups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group.update` | Update a Group | Administrator, Editor, Operator |
-| `deployment-group-autoscaling.read` | Read autoscaling configuration | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-group-autoscaling.update` | Update autoscaling configuration | Administrator, Editor, Operator |
-| `capability.create` | Discover a supported capability | Administrator, Editor, Operator |
-| `deployment-user.create` | Create a type of user | Administrator, Editor, Operator |
-| `deployment-user.read` | Read a type of user | Administrator, Editor, Operator, Viewer |
-| `deployment-user.update` | Update a type of user | Administrator, Editor, Operator |
-| `deployment-user.delete` | Delete a type of user | Administrator, Editor, Operator |
-| `deployment-user-connection.list` | Read deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-user-connection.create` | Create deployment user connections | Administrator, Editor, Operator, Viewer |
-| `deployment-ip-address.list` | Read Allowlisted IP Addresses | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `deployment-ip-address.create` | Create a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-ip-address.delete` | Remove a Allowlisted IP Addresses | Administrator, Editor, Operator |
-| `deployment-allowlist-ip-addresses.update` | Bulk allowlist IP addresses | Administrator, Editor, Operator |
-| `deployment-capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `capability.read` | Read a capability | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-{: caption="Service actions - Databases for etcd" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="databases-for-etcd"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table42}
-
 ## Databases for MongoDB
 {: #databases-for-mongodb-roles}
 
@@ -2817,7 +2686,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-mongodb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table43}
+{: #platform-roles-table42}
 
 | Role | Description |
 | ----- | :----- |
@@ -2828,7 +2697,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-mongodb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table43}
+{: #service-roles-table42}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -2954,7 +2823,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-mongodb"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table43}
+{: #actions-table42}
 
 ## Databases for MySQL
 {: #databases-for-mysql-roles}
@@ -2973,7 +2842,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-mysql"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table44}
+{: #platform-roles-table43}
 
 | Role | Description |
 | ----- | :----- |
@@ -2984,7 +2853,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-mysql"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table44}
+{: #service-roles-table43}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3110,7 +2979,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-mysql"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table44}
+{: #actions-table43}
 
 ## Databases for PostgreSQL
 {: #databases-for-postgresql-roles}
@@ -3129,7 +2998,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-postgresql"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table45}
+{: #platform-roles-table44}
 
 | Role | Description |
 | ----- | :----- |
@@ -3140,7 +3009,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-postgresql"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table45}
+{: #service-roles-table44}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3272,7 +3141,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-postgresql"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table45}
+{: #actions-table44}
 
 ## Databases for Redis
 {: #databases-for-redis-roles}
@@ -3291,7 +3160,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-redis"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table46}
+{: #platform-roles-table45}
 
 | Role | Description |
 | ----- | :----- |
@@ -3302,7 +3171,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-redis"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table46}
+{: #service-roles-table45}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3428,7 +3297,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="databases-for-redis"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table46}
+{: #actions-table45}
 
 ## IBM Knowledge Catalog for Watson Data and AI
 {: #datacatalog-roles}
@@ -3444,7 +3313,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table47}
+{: #platform-roles-table46}
 
 | Role | Description |
 | ----- | :----- |
@@ -3457,7 +3326,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table47}
+{: #service-roles-table46}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3469,7 +3338,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="datacatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table47}
+{: #actions-table46}
 
 ## DataStage
 {: #datastage-roles}
@@ -3487,7 +3356,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="datastage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table48}
+{: #platform-roles-table47}
 
 | Role | Description |
 | ----- | :----- |
@@ -3498,7 +3367,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="datastage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table48}
+{: #service-roles-table47}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3508,7 +3377,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="datastage"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table48}
+{: #actions-table47}
 
 ## Direct Link
 {: #directlink-roles}
@@ -3524,7 +3393,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="directlink"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table49}
+{: #service-roles-table48}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3534,7 +3403,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="directlink"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table49}
+{: #actions-table48}
 
 ## Direct Link Connect
 {: #directlink.connect-roles}
@@ -3553,7 +3422,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="directlink.connect"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table50}
+{: #platform-roles-table49}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3564,7 +3433,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="directlink.connect"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table50}
+{: #actions-table49}
 
 ## Direct Link Dedicated
 {: #directlink.dedicated-roles}
@@ -3583,7 +3452,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="directlink.dedicated"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table51}
+{: #platform-roles-table50}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3594,7 +3463,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="directlink.dedicated"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table51}
+{: #actions-table50}
 
 ## Discovery
 {: #discovery-roles}
@@ -3612,7 +3481,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="discovery"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table52}
+{: #service-roles-table51}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3626,7 +3495,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="discovery"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table52}
+{: #actions-table51}
 
 ## DNS Services
 {: #dns-svcs-roles}
@@ -3644,7 +3513,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="dns-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table53}
+{: #platform-roles-table52}
 
 | Role | Description |
 | ----- | :----- |
@@ -3657,7 +3526,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="dns-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table53}
+{: #service-roles-table52}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3679,7 +3548,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="dns-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table53}
+{: #actions-table52}
 
 ## Dynamic Dashboard Embedded
 {: #dynamic-dashboard-embedded-roles}
@@ -3697,7 +3566,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="dynamic-dashboard-embedded"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table54}
+{: #service-roles-table53}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3707,7 +3576,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="dynamic-dashboard-embedded"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table54}
+{: #actions-table53}
 
 ## ibm-cloud-for-education
 {: #education-roles}
@@ -3732,7 +3601,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="enterprise"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table56}
+{: #platform-roles-table55}
 
 | Role | Description |
 | ----- | :----- |
@@ -3743,7 +3612,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="enterprise"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table56}
+{: #service-roles-table55}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3786,7 +3655,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="enterprise"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table56}
+{: #actions-table55}
 
 ## Enterprise Application Service
 {: #enterprise-app-java-roles}
@@ -3805,7 +3674,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="enterprise-app-java"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table57}
+{: #platform-roles-table56}
 
 | Role | Description |
 | ----- | :----- |
@@ -3818,7 +3687,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="enterprise-app-java"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table57}
+{: #service-roles-table56}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3855,7 +3724,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="enterprise-app-java"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table57}
+{: #actions-table56}
 
 ## License and Entitlement
 {: #entitlement-roles}
@@ -3872,7 +3741,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="entitlement"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table58}
+{: #platform-roles-table57}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -3883,7 +3752,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="entitlement"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table58}
+{: #actions-table57}
 
 ## Event Notifications
 {: #event-notifications-roles}
@@ -3901,7 +3770,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="event-notifications"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table59}
+{: #platform-roles-table58}
 
 | Role | Description |
 | ----- | :----- |
@@ -3923,7 +3792,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="event-notifications"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table59}
+{: #service-roles-table58}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4019,7 +3888,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="event-notifications"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table59}
+{: #actions-table58}
 
 ## Globalization Pipeline
 {: #g11n-pipeline-roles}
@@ -4037,7 +3906,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="g11n-pipeline"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table60}
+{: #platform-roles-table59}
 
 | Role | Description |
 | ----- | :----- |
@@ -4050,7 +3919,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="g11n-pipeline"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table60}
+{: #service-roles-table59}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4123,7 +3992,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="g11n-pipeline"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table60}
+{: #actions-table59}
 
 ## gatekeeper
 {: #gatekeeper-roles}
@@ -4144,7 +4013,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="gatekeeper"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table61}
+{: #service-roles-table60}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4180,7 +4049,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="gatekeeper"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table61}
+{: #actions-table60}
 
 ## GhoST API
 {: #ghost-api-roles}
@@ -4196,7 +4065,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ghost-api"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table62}
+{: #platform-roles-table61}
 
 ## GhoST Tagging Service
 {: #ghost-tags-roles}
@@ -4213,7 +4082,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ghost-tags"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table63}
+{: #platform-roles-table62}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4224,7 +4093,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ghost-tags"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table63}
+{: #actions-table62}
 
 ## Global Catalog
 {: #globalcatalog-roles}
@@ -4243,7 +4112,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="globalcatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table64}
+{: #platform-roles-table63}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4255,7 +4124,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="globalcatalog"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table64}
+{: #actions-table63}
 
 ## Personal Catalog
 {: #globalcatalog-collection-roles}
@@ -4271,7 +4140,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="globalcatalog-collection"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table65}
+{: #platform-roles-table64}
 
 | Role | Description |
 | ----- | :----- |
@@ -4286,7 +4155,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="globalcatalog-collection"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table65}
+{: #service-roles-table64}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4309,7 +4178,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="globalcatalog-collection"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table65}
+{: #actions-table64}
 
 ## Instance Management
 {: #globalcatalog-instance-roles}
@@ -4328,7 +4197,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="globalcatalog-instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table66}
+{: #platform-roles-table65}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4338,7 +4207,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="globalcatalog-instance"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table66}
+{: #actions-table65}
 
 ## HPCaaS from Rescale
 {: #hpcaas-from-rescale-prod-roles}
@@ -4356,7 +4225,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="hpcaas-from-rescale-prod"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table67}
+{: #platform-roles-table66}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4366,7 +4235,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="hpcaas-from-rescale-prod"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table67}
+{: #actions-table66}
 
 ## Hyper Protect Crypto Services
 {: #hs-crypto-roles}
@@ -4385,7 +4254,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="hs-crypto"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table68}
+{: #platform-roles-table67}
 
 | Role | Description |
 | ----- | :----- |
@@ -4407,7 +4276,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="hs-crypto"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table68}
+{: #service-roles-table67}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4550,7 +4419,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="hs-crypto"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table68}
+{: #actions-table67}
 
 ## IAM Access Management
 {: #iam-access-management-roles}
@@ -4568,7 +4437,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-access-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table69}
+{: #platform-roles-table68}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4580,7 +4449,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-access-management"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table69}
+{: #actions-table68}
 
 ## Role Management
 {: #iam-access-management.customRole-roles}
@@ -4599,7 +4468,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-access-management.customRole"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table70}
+{: #platform-roles-table69}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4612,7 +4481,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-access-management.customRole"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table70}
+{: #actions-table69}
 
 ## AM Insights
 {: #iam-access-management.insight-roles}
@@ -4629,7 +4498,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-access-management.insight"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table71}
+{: #platform-roles-table70}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4639,7 +4508,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-access-management.insight"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table71}
+{: #actions-table70}
 
 ## IAM Access Groups
 {: #iam-groups-roles}
@@ -4657,7 +4526,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-groups"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table72}
+{: #platform-roles-table71}
 
 | Role | Description |
 | ----- | :----- |
@@ -4671,7 +4540,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-groups"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table72}
+{: #service-roles-table71}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4705,7 +4574,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-groups"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table72}
+{: #actions-table71}
 
 ## IAM Identity Service
 {: #iam-identity-roles}
@@ -4724,7 +4593,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-identity"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table73}
+{: #platform-roles-table72}
 
 | Role | Description |
 | ----- | :----- |
@@ -4740,7 +4609,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-identity"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table73}
+{: #service-roles-table72}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4771,7 +4640,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.user-apikey.create` | Ability to create IBM Cloud API keys associated with a user identity. | User API key creator |
 | `iam-identity.profile-template.update` | Update the details of a Trusted Profile template | Template Administrator |
 | `iam-identity.account-settings-template.update` | Update an existing Account Settings template | Template Administrator |
-| `iam-identity.report.create` | Trigger report creation for an account | Administrator |
+| `iam-identity.report.create` | Trigger report creation for an account | Administrator, Service Configuration Reader |
 | `iam-identity.profile-assignment.read` | Get the details of a Trusted Profile Assignment | Assignment Administrator, Template Administrator |
 | `iam-identity.profile-assignment.update` | Update an assignment of a trusted profile | Assignment Administrator |
 | `iam-identity.serviceid-group.get` | Get the details of an existing service ID group. | Administrator, Editor, Operator, Viewer |
@@ -4781,7 +4650,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-identity.serviceid-group.create` | Create a new service ID group. | Administrator, Operator |
 | `iam-identity.activity.get` | Get authentication activity information | Administrator, Editor, Operator, Viewer |
 | `iam-identity.profile.revoke_session` | Revoke sessions associated to Trusted Profile | Administrator, Operator |
-| `iam-identity.report.get` | Get a report for an account | Administrator |
+| `iam-identity.report.get` | Get a report for an account | Administrator, Service Configuration Reader |
 | `iam-identity.serviceid.delete` | Delete a service ID. | Administrator, Operator |
 | `iam-identity.account.update` | Update an existing account configuration. | Administrator, Editor, Operator |
 | `iam-identity.account.delete` | Delete an account configuration. | Administrator, Operator |
@@ -4811,7 +4680,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-identity"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table73}
+{: #actions-table72}
 
 ## Identity and Access Management
 {: #iam-svcs-roles}
@@ -4830,7 +4699,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table74}
+{: #platform-roles-table73}
 
 | Role | Description |
 | ----- | :----- |
@@ -4841,7 +4710,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table74}
+{: #service-roles-table73}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4851,7 +4720,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="iam-svcs"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table74}
+{: #actions-table73}
 
 ## Analytics Engine
 {: #ibmanalyticsengine-roles}
@@ -4870,7 +4739,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ibmanalyticsengine"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table75}
+{: #platform-roles-table74}
 
 | Role | Description |
 | ----- | :----- |
@@ -4883,7 +4752,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ibmanalyticsengine"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table75}
+{: #service-roles-table74}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4922,7 +4791,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ibmanalyticsengine"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table75}
+{: #actions-table74}
 
 ## IBM Cloud Platform
 {: #ibmcloud-platform-roles}
@@ -4941,7 +4810,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ibmcloud-platform"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table76}
+{: #platform-roles-table75}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4954,7 +4823,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="ibmcloud-platform"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table76}
+{: #actions-table75}
 
 ## Human Intelligence
 {: #insight-specialist-ltd--msp-human-intelligence-roles}
@@ -4973,7 +4842,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="insight-specialist-ltd--msp-human-intelligence"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table77}
+{: #platform-roles-table76}
 
 | Role | Description |
 | ----- | :----- |
@@ -4984,7 +4853,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="insight-specialist-ltd--msp-human-intelligence"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table77}
+{: #service-roles-table76}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -4992,6 +4861,47 @@ Review the available platform and service roles and the actions mapped to each t
 {: caption="Service actions - Human Intelligence" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="insight-specialist-ltd--msp-human-intelligence"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table76}
+
+## instructlab
+{: #instructlab-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `instructlab` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Service roles - instructlab" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="instructlab"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table77}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `instructlab.taxonomy.read` | Read details of a taxonomy | Manager, Reader, Writer |
+| `instructlab.taxonomy.create` | Create taxonomies | Manager, Writer |
+| `instructlab.taxonomy.list` | List taxonomies | Manager, Reader, Writer |
+| `instructlab.taxonomy.delete` | instructlab.taxonomy.delete | Manager, Writer |
+| `instructlab.sdgdata.read` | Read details of a data generation run | Manager, Reader, Writer |
+| `instructlab.sdgdata.list` | instructlab.sdgdata.list | Manager, Reader, Writer |
+| `instructlab.sdgdata.create` | instructlab.sdgdata.create | Manager, Writer |
+| `instructlab.sdgdata.delete` | instructlab.sdgdata.delete | Manager, Writer |
+| `instructlab.sdgdata.stop` | instructlab.sdgdata.stop | Manager, Writer |
+| `instructlab.model.read` | Read details of a model training run | Manager, Reader, Writer |
+| `instructlab.model.list` | instructlab.model.list | Manager, Reader, Writer |
+| `instructlab.model.create` | instructlab.model.create | Manager, Writer |
+| `instructlab.model.delete` | instructlab.model.delete | Manager, Writer |
+| `instructlab.model.stop` | instructlab.model.stop | Manager, Writer |
+{: caption="Service actions - instructlab" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="instructlab"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table77}
@@ -5371,6 +5281,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.image.image.export` | Export on Custom Images | Administrator, Editor |
 | `is.image.image.obsolete` | Set an image status to obsolete | Administrator, Editor, Manager, Writer |
 | `is.image.image.deprecate` | Set an image status to deprecated | Administrator, Editor, Manager, Writer |
+| `is.image.image.manage-allowed-use` | Manage an image's allowed use expressions | Administrator, Editor, Manager, Writer |
 {: caption="Service actions - Image Service for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.image"}
@@ -5875,12 +5786,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.snapshot.snapshot.update` | This action allows the user to modify block storage snapshots. | Administrator, Editor |
 | `is.snapshot.snapshot.delete` | This action allows the user to delete block storage snapshots. | Administrator, Editor |
 | `is.snapshot.snapshot.restore` | This action allows the user to restore block storage snapshots. | Administrator, Editor, Operator |
-| `is.snapshot.snapshot.operate` | Operate a snapshot | Administrator, Editor, Operator |
+| `is.snapshot.snapshot.operate` | Operation a snapshot | Administrator, Editor, Operator |
 | `is.snapshot.snapshot.config.read` | Configuration Governance endpoint | Service Configuration Reader |
 | `is.snapshot.snapshot-clone.create` | Create clones of block storage snapshots for fast restoration | Administrator, Editor |
-| `is.snapshot.clone.read` | View the clones of block storage snapshots | Administrator, Editor, Operator, Viewer |
 | `is.snapshot.snapshot-clone.delete` | Delete clones of block storage snapshots | Administrator, Editor |
-| `is.snapshot.snapshot.allow-remote-account-restore` | Allows remote account snapshot restore | Snapshot Remote Account Restorer |
+| `is.snapshot.snapshot.allow-remote-account-restore` | Allows remote account user snapshot restore | Snapshot Remote Account Restorer |
+| `is.snapshot.snapshot.manage-allowed-use` | This action allows the user to modify Allowed Use expressions for block storage snapshots. | Administrator, Editor |
 {: caption="Service actions - Block Storage Snapshots for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.snapshot"}
@@ -6025,15 +5936,16 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `is.volume.profile.view` |  | Administrator, Editor, Operator, Viewer |
-| `is.volume.volume.create` |  | Administrator, Editor |
-| `is.volume.volume.list` |  | Administrator, Editor, Operator, Viewer |
-| `is.volume.volume.read` |  | Administrator, Editor, Operator, Viewer |
-| `is.volume.volume.update` |  | Administrator, Editor |
-| `is.volume.volume.delete` |  | Administrator, Editor |
+| `is.volume.profile.view` | View profile | Administrator, Editor, Operator, Viewer |
+| `is.volume.volume.create` | Create Volume | Administrator, Editor |
+| `is.volume.volume.list` | List Volumes | Administrator, Editor, Operator, Viewer |
+| `is.volume.volume.read` | Get Volume | Administrator, Editor, Operator, Viewer |
+| `is.volume.volume.update` | Update Volume | Administrator, Editor |
+| `is.volume.volume.delete` | Delete Volume | Administrator, Editor |
 | `is.volume.volume.config.read` | Configuration Governance endpoint | Service Configuration Reader |
 | `is.volume.volume.operate` | Operate a volume | Administrator, Editor, Operator |
 | `is.volume.volume.allow-remote-account-snapshot-restore` | Allow remote account snapshot restore | Restore Volume From Remote Account Snapshot |
+| `is.volume.volume.manage-allowed-use` | Manage Volume's Allowed Use expressions | Administrator, Editor |
 {: caption="Service actions - Block Storage for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.volume"}
@@ -6412,6 +6324,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions such as managing data usage metrics, data access rules, TCO policies, enrichments, events to metrics, and version benchmark tags. |
 | Reader | As a reader, you can perform read-only actions on the data such as querying logs and viewing dashboards. |
 | Sender | As a sender, you can send logs to your IBM Cloud Logs service instance - but not query or tail logs. This role is meant to be used by agents and routers sending logs. |
+| Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role such as the ability to manage actions, alerts and incidents, dashboards and views, enrichments, parsing rules, and webhooks or the ability to view analytics, data access rules, and TCO policies. |
 {: row-headers}
 {: caption="Service roles - Cloud Logs" caption-side="top"}
@@ -6427,7 +6340,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `logs.data-usage.manage` | Manage Instance Data Usage Metrics. | Manager |
 | `logs.data-usage.export` | Export data usage. | Manager, Writer |
 | `logs.team-members.read` | Read the list of users. | Manager |
-| `logs.data-access-rule.read` | Read data access rules. | Manager, Writer |
+| `logs.data-access-rule.read` | Read data access rules. | Manager, Service Configuration Reader, Writer |
 | `logs.data-access-rule.manage` | Manage data access rules. | Manager |
 | `logs.data-access.read` | Access restricted data defined by associated rules. Use attribute dataAccessRule to specify the rule. | Data Access Reader |
 | `logs.shared-action.read` | Read shared actions. | Manager, Reader, Writer |
@@ -6446,19 +6359,19 @@ Review the available platform and service roles and the actions mapped to each t
 | `logs.alerts-map.read` | View visualized alerts in alerts Map. | Manager, Reader, Writer |
 | `logs.shared-view.read` | Read shared views. | Manager, Reader, Writer |
 | `logs.shared-view.manage` | Manage shared views. | Manager, Writer |
-| `logs.private-view.read` | Read private views. | Manager, Writer |
-| `logs.private-view.manage` | Manage private views. | Manager, Writer |
+| `logs.private-view.read` | Read private views. | Manager, Reader, Writer |
+| `logs.private-view.manage` | Manage private views. | Manager, Reader, Writer |
 | `logs.shared-dashboard.read` | View custom shared Dashboard widgets. | Manager, Reader, Writer |
 | `logs.shared-dashboard.manage` | Manage custom shared Dashboard widgets. | Manager, Writer |
 | `logs.data-map.read` | Read DataMap configurations. | Manager, Reader, Writer |
 | `logs.data-map.manage` | Manage DataMap configurations. | Manager, Writer |
-| `logs.logs-tco-policy.read` | View existing logs TCO policies. | Manager, Writer |
+| `logs.logs-tco-policy.read` | View existing logs TCO policies. | Manager, Service Configuration Reader, Writer |
 | `logs.logs-tco-policy.manage` | View and modify existing logs TCO policies, and create new ones. | Manager |
-| `logs.geo-enrichment.read` | Read Geo-Enrichment configuration. | Manager, Writer |
+| `logs.geo-enrichment.read` | Read Geo-Enrichment configuration. | Manager, Service Configuration Reader, Writer |
 | `logs.geo-enrichment.manage` | Manage Geo-Enrichment configuration. | Manager |
-| `logs.security-enrichment.read` | Read security enrichment configuration. | Manager, Writer |
+| `logs.security-enrichment.read` | Read security enrichment configuration. | Manager, Service Configuration Reader, Writer |
 | `logs.security-enrichment.manage` | Manage security enrichment configuration. | Manager |
-| `logs.custom-enrichment.read` | Read custom enrichment configuration. | Manager, Writer |
+| `logs.custom-enrichment.read` | Read custom enrichment configuration. | Manager, Service Configuration Reader, Writer |
 | `logs.custom-enrichment.manage` | Manage custom enrichment configuration. | Manager, Writer |
 | `logs.custom-enrichment-data.read` | Read data for custom enrichment configuration. | Manager, Reader, Writer |
 | `logs.custom-enrichment-data.manage` | Manage data for custom enrichment configuration. | Manager, Writer |
@@ -6479,9 +6392,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `logs.metrics-data-api-high.read` | Query metrics in the high-tier (frequent search). | Manager, Reader, Writer |
 | `logs.metrics-data-api-low.read` | Query metrics in the low-tier (archive). | Manager, Reader, Writer |
 | `logs.data-ingress.send` | Send logs data. | Manager, Sender, Writer |
-| `logs.parsing-rule.read` | Read parsing rules. | Manager, Writer |
+| `logs.parsing-rule.read` | Read parsing rules. | Manager, Service Configuration Reader, Writer |
 | `logs.parsing-rule.manage` | Create, modify, and remove parsing rules. | Manager, Writer |
-| `logs.events2metrics.read` | View Events2Metrics configuration when the source input is logs. | Manager, Writer |
+| `logs.events2metrics.read` | View Events2Metrics configuration when the source input is logs. | Manager, Service Configuration Reader, Writer |
 | `logs.events2metrics.manage` | Configure or modify the configuration for Events2Metrics, when the source input is logs. | Manager |
 | `logs.version-benchmark-tags.manage` | Manage version benchmark tags. | Manager |
 | `logs.version-benchmark-tags.read` | Read version benchmark tags. | Manager, Reader, Writer |
@@ -6493,6 +6406,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `logs.legacy-archive-query.execute` | Query data from the archive. | Manager, Reader, Writer |
 | `logs.logs-stream-setup.read` | View logs stream settings. | Manager, Writer |
 | `logs.logs-stream-setup.manage` | Manage logs stream settings. | Manager |
+| `logs.team-alerts-settings.read` | Read alerts toggle in the setting. | Manager, Reader, Writer |
+| `logs.team-alerts-settings.manage` | Manage alerts toggle in the setting. | Manager, Writer |
 {: caption="Service actions - Cloud Logs" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="logs"}
@@ -7904,21 +7819,20 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.gateway.stop` | Stop Customer gateway for restart operation | Manager |
 | `privileged-access-gateway.gateway.reset` | Reset customer gateway disk to recover functionality | Manager |
 | `privileged-access-gateway.certificate.get` | privileged-access-gateway.certificate.get | Manager |
-| `privileged-access-gateway.break-glass-certificate.revoke` | revoke a breakglass certificate of a user | Manager |
-| `privileged-access-gateway.break-glass-certificate.create` | create a breakglass certificate | Manager, Writer |
-| `privileged-access-gateway.break-glass-certificate-all.list` | list breakglass certificates of all users | Manager |
-| `privileged-access-gateway.break-glass-certificate.get` | get breakglass certificate info of the user | Manager, Writer |
+| `privileged-access-gateway.break-glass-key.revoke` | revoke a breakglass key | Manager |
+| `privileged-access-gateway.break-glass-key.create` | create a breakglass certificate | Manager, Writer |
+| `privileged-access-gateway.break-glass-keys-all.list` | list all breakglass keys | Manager |
+| `privileged-access-gateway.break-glass-key.get` | get breakglass key info of the user | Manager, Writer |
 | `privileged-access-gateway.pagtoken.create` | create a pagtoken for given breakglass certificate | Manager, Writer |
-| `privileged-access-gateway.break-glass-cluster.add` | add breakglass cluster config | Manager, Writer |
-| `privileged-access-gateway.break-glass-cluster.remove` | remove a breakglass cluster config | Manager, Writer |
-| `privileged-access-gateway.break-glass-cluster-all.list` | privileged-access-gateway.break-glass-cluster-all.list | Manager |
+| `privileged-access-gateway.kube-impersonation.add` | add breakglass kube impersonation | Manager, Writer |
+| `privileged-access-gateway.kube-impersonation.remove` | remove a kube impersonation | Manager, Writer |
+| `privileged-access-gateway.kube-impersonations-all.list` | list all kube impersonations | Manager |
 | `privileged-access-gateway.https.authorize` | privileged-access-gateway.https.authorize | Manager, Writer |
 | `privileged-access-gateway.https.add` | privileged-access-gateway.https.add | Manager, Writer |
 | `privileged-access-gateway.https.remove` | privileged-access-gateway.https.remove | Manager, Writer |
 | `privileged-access-gateway.https-all.list` | privileged-access-gateway.https-all.list | Manager, Reader, Writer |
 | `privileged-access-gateway.https.get` | privileged-access-gateway.https.get | Manager, Reader, Writer |
 | `privileged-access-gateway.https.update` | privileged-access-gateway.https.update | Manager, Writer |
-| `privileged-access-gateway.pagtoken.revoke` | privileged-access-gateway.pagtoken.revoke | Manager, Writer |
 {: caption="Service actions - Privileged Access Gateway" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="privileged-access-gateway"}
@@ -8451,6 +8365,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions, such as managing secret groups, configuring secret engines, and managing secrets policies. |
 | Reader | As a reader, you can perform read-only actions within Secrets Manager, such as viewing service-specific resources. Readers can access only the metadata that is associated with a secret. |
+| SecretTaskUpdater | As a secret task updater, you can update a secret task. Secret Task Updaters cannot perform any other operations. |
 | SecretsReader | As a secrets reader, you can perform read-only actions, and you can also access the secret data that is associated with a secret. A secrets reader can't create secrets or modify the value of an existing secret. |
 | Writer | As a writer, you have permissions beyond the secrets reader role, including the ability to create and edit secrets. Writers can't create secret groups, manage the rotation policies of a secret, or configure secrets engines. |
 {: row-headers}
@@ -8510,6 +8425,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `secrets-manager.secret-version-locks.list` | List secret version locks | Manager, Reader, SecretsReader, Writer |
 | `secrets-manager.secret-version-locks.delete` | Delete secret version locks. | Manager |
 | `secrets-manager.secrets-locks.list` | List secrets locks. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-tasks.list` | List secret tasks. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-task.read` | View the details of a secret task. | Manager, Reader, SecretsReader, Writer |
+| `secrets-manager.secret-task.update` | Update a secret task. | SecretTaskUpdater |
+| `secrets-manager.secret-task.delete` | Delete a secret task. | Manager |
+| `secrets-manager.secret-version-data.delete` | Delete secret version data. | Manager |
 {: caption="Service actions - Secrets Manager" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="secrets-manager"}
@@ -9391,6 +9311,35 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table176}
 
+## VMware Usage Meters
+{: #vmware.usage-meter-roles}
+
+Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `vmware.usage-meter` for the service name.
+
+| Role | Description |
+| ----- | :----- |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
+{: row-headers}
+{: caption="Service roles - VMware Usage Meters" caption-side="top"}
+{: tab-title="Service roles"}
+{: tab-group="vmware.usage-meter"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
+{: #service-roles-table177}
+
+| Action | Description | Roles |
+| ----- | :----- | :----- |
+| `vmware.usage-meter.read` | Read Usage Meter registrations | Manager, Reader, Writer |
+| `vmware.usage-meter.write` | Write Usage Meter registrations | Manager, Writer |
+{: caption="Service actions - VMware Usage Meters" caption-side="top"}
+{: tab-title="Actions"}
+{: tab-group="vmware.usage-meter"}
+{: class="simple-tab-table"}
+{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
+{: #actions-table177}
+
 ## Organization Virtual Data Center
 {: #vmware.vdc-roles}
 
@@ -9413,7 +9362,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table178}
+{: #platform-roles-table179}
 
 | Role | Description |
 | ----- | :----- |
@@ -9426,7 +9375,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table178}
+{: #service-roles-table179}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9442,7 +9391,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="voiceagent"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table178}
+{: #actions-table179}
 
 ## watsonx Orchestrate
 {: #watsonx-orchestrate-roles}
@@ -9461,7 +9410,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="watsonx-orchestrate"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table179}
+{: #platform-roles-table180}
 
 | Role | Description |
 | ----- | :----- |
@@ -9475,7 +9424,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="watsonx-orchestrate"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table179}
+{: #service-roles-table180}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9498,7 +9447,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="watsonx-orchestrate"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table179}
+{: #actions-table180}
 
 ## WebSphere Application Server
 {: #websphereappsvr-roles}
@@ -9516,7 +9465,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table180}
+{: #platform-roles-table181}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9526,7 +9475,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="websphereappsvr"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table180}
+{: #actions-table181}
 
 ## Annotator for Clinical Data
 {: #wh-acd-roles}
@@ -9544,7 +9493,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table181}
+{: #platform-roles-table182}
 
 | Role | Description |
 | ----- | :----- |
@@ -9557,7 +9506,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the service role name and the column headers identify the specific information available about each role."}
-{: #service-roles-table181}
+{: #service-roles-table182}
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
@@ -9575,4 +9524,4 @@ Review the available platform and service roles and the actions mapped to each t
 {: tab-group="wh-acd"}
 {: class="simple-tab-table"}
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table181}
+{: #actions-table182}
