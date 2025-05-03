@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-05-02"
+lastupdated: "2025-05-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7826,7 +7826,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.pagtoken.create` | create a pagtoken for given breakglass certificate | Manager, Writer |
 | `privileged-access-gateway.kube-impersonation.add` | add breakglass kube impersonation | Manager, Writer |
 | `privileged-access-gateway.kube-impersonation.remove` | remove a kube impersonation | Manager, Writer |
-| `privileged-access-gateway.kube-impersonations-all.list` | list all kube impersonations | Manager |
+| `privileged-access-gateway.kube-impersonation-all.list` | list all kube impersonations | Manager |
 | `privileged-access-gateway.https.authorize` | privileged-access-gateway.https.authorize | Manager, Writer |
 | `privileged-access-gateway.https.add` | privileged-access-gateway.https.add | Manager, Writer |
 | `privileged-access-gateway.https.remove` | privileged-access-gateway.https.remove | Manager, Writer |
