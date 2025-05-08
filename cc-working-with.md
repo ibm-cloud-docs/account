@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-04-07"
+lastupdated: "2025-05-08"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -81,10 +81,8 @@ The following tables shows the services that have emissions data and the timefra
 | {{site.data.keyword.filestorage_vpc_short}}             | Q2 2023 |
 | {{site.data.keyword.fsa10_full}}                        | Q1 2023 |
 | Gateway Appliance                                       | Q4 2023 |
-| IBM Cloud Activity Tracker                              | Q4 2023 |
 | IBM Cloud Monitoring                                    | Q4 2023 |
 | IBM Cloud Platform - Core Services [^tabletext1]        |  Q1 2024 |
-| IBM Log Analysis                                        | Q4 2023 |
 | {{site.data.keyword.keymanagementserviceshort}}         | Q3 2023 |
 | {{site.data.keyword.containershort_notm}}               | Q1 2023 |
 | {{site.data.keyword.loadbalancer_short}} for Classic    | Q1 2023 |

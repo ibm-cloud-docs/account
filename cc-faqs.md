@@ -2,7 +2,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-05-08"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -72,9 +72,7 @@ Emissions data is currently tracked for a subset of services, but more services 
 * {{site.data.keyword.filestorage_vpc_short}}                   
 * {{site.data.keyword.fsa10_full}}                              
 * Gateway Appliance                                             
-* IBM Cloud Activity Tracker                                    
 * IBM Cloud Monitoring                                          
-* IBM Log Analysis                                              
 * {{site.data.keyword.keymanagementserviceshort}}               
 * {{site.data.keyword.containershort_notm}}                     
 * {{site.data.keyword.loadbalancer_short}} for Classic          

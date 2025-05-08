@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-04-15"
+lastupdated: "2025-05-08"
 
 keywords: activity tracking, IAM events, Identity and Access Management, observibility
 
@@ -89,7 +89,7 @@ For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [L
 
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
-The IAM service generates [global activity tracking events](/docs/atracker?topic=atracker-event_types#event_types_global) for the actions that are listed in this document. Select `Platform events (global)` as the location to send audit events from when you configure an Activity Tracker route.
+The IAM service generates [global activity tracking events](/docs/atracker?topic=atracker-event_types#event_types_global) for the actions that are listed in this document. Select `Platform events (global)` as the location to send audit events from when you configure an {{site.data.keyword.atracker_full_notm}} route.
 {: tip}
 
 To view IAM events in the {{site.data.keyword.logs_full_notm}} dashboard, go to the **Subsystems** filter and select the values with the prefix `iam-`. For example, `iam-am`, `iam-identity`, or `iam-groups`.
@@ -337,7 +337,7 @@ When a user logs in to the {{site.data.keyword.cloud_notm}}, the user ID (IBMid)
 
 After the user ID is authenticated successfully in the {{site.data.keyword.cloud_notm}}, the user can choose an account. It is at this point in the process that an account is associated to the log in request, and an event with action `iam-identity.user-refreshtoken.login`, or `iam-identity.user-apikey.login` is generated in your account.
 
-In Activity Tracker, you can see events that are associated to your account. Failed log in actions do not generate an event that you can monitor in your account.
+In {{site.data.keyword.atracker_full_notm}}, you can see events that are associated to your account. Failed log in actions do not generate an event that you can monitor in your account.
 
 ### Logout events
 {: #at_events_iam_analyze_logout_events}

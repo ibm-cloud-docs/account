@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-29"
+lastupdated: "2025-05-08"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies, increase account limit
 
@@ -26,7 +26,7 @@ To review the default limits for your account, see [{{site.data.keyword.cloud_no
 ## Increasing limits for IAM identity entities
 {: #increase-entity-limit}
 
-When your account approaches the maximum limit of one of the entities, you receive a warning in the Activity Tracker event for creating an entity. These events show you the current limits. See the following example:
+When your account approaches the maximum limit of one of the entities, you receive a warning in the activity tracking events for creating an entity. These events show you the current limits. See the following example:
 
 ```text
 Nov 26 16:46:01 iamid-6-11-12270-af4d601-cd77fd6bd-86gp7 at.log INFO IAM Identity Service: create account-serviceid 12345678-90ab-cdef-0123-456789abcdef -failure Warning: You have reached 100% of the maximum number of allowed Service IDs in account 11112222333344445555666677778888. Your current count is 3000, and the limit is 3000.
