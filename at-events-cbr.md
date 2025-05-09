@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-04-15"
+lastupdated: "2025-05-08"
 
 keywords: activity tracking, context-based restrictions events, events, observibility
 
@@ -90,7 +90,7 @@ For information on launching the {{site.data.keyword.logs_full_notm}} UI, see [L
 
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
-The context-based restrictions service generates [global activity tracking events](/docs/atracker?topic=atracker-event_types#event_types_global) for the actions that are listed in this document. Select `Platform events (global)` as the location to send audit events from when you configure an Activity Tracker route.
+The context-based restrictions service generates [global activity tracking events](/docs/atracker?topic=atracker-event_types#event_types_global) for the actions that are listed in this document. Select `Platform events (global)` as the location to send audit events from when you configure an {{site.data.keyword.atracker_full_notm}} route.
 {: tip}
 
 To view context-based restrictions events in the {{site.data.keyword.logs_full_notm}} dashboard, go to the **Subsystems** filter and select the value `context-based restrictions`.

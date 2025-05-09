@@ -3,9 +3,9 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-05-08"
 
-keywords: context-based restrictions, enabled, disabled, report-only, monitor, monitor cbr, cbr, activity tracker, cbr events, context-based restrictions events, denied access
+keywords: context-based restrictions, enabled, disabled, report-only, monitor, monitor cbr, cbr, cbr events, context-based restrictions events, denied access
 
 subcollection: account
 
