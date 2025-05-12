@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-29"
+lastupdated: "2025-05-12"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -277,3 +277,18 @@ When you list policies with `/v1/policies` the API returns `/v1/` and a placehol
 }
 ```
 {: codeblock}
+
+## Services impacted by limiting external identity interactions
+{: #external-id-interaction-limitation}
+
+Limiting external identity interactions requires that users with an IAM access policy on resources in your account access those resources only when authenticated in your account or an account in the allowlist. The following services, or some of their features, might not function as expected if the external identity interactions setting is set to **Limited** mode:
+
+- {{site.data.keyword.satellitelong_notm}}
+- {{site.data.keyword.cos_full_notm}} -  public access buckets will not be accessible
+- {{site.data.keyword.messagehub_full}}
+- {{site.data.keyword.sysdigsecure_full_notm}}
+- {{site.data.keyword.codeenginefull_notm}}
+- {{site.data.keyword.DRA_full}}
+- Resource tagging
+
+For more information about this setting, see [Managing external identity interactions](/docs/account?topic=account-cross-acct).
