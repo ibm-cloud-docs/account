@@ -281,7 +281,7 @@ When you list policies with `/v1/policies` the API returns `/v1/` and a placehol
 ## Services impacted by limiting external identity interactions
 {: #external-id-interaction-limitation}
 
-Limiting external identity interactions requires that users with an IAM access policy on resources in your account access those resources only when authenticated in your account or an account in the allowlist. The following services, or some of their features, may not function as expected if the external identity interactions setting is set to **Limited** mode:
+Limiting external identity interactions requires that users with an IAM access policy on resources in your account access those resources only when authenticated in your account or an account in the allowlist. The following services, or some of their features, might not function as expected if the external identity interactions setting is set to **Limited** mode:
 
 - {{site.data.keyword.satellitelong_notm}}
 - {{site.data.keyword.cos_full_notm}} -  public access buckets will not be accessible
