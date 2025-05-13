@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-05-13"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3719,6 +3719,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `enterprise-app-java.build.config-delete-pr` | Delete a config pull request build | Manager |
 | `enterprise-app-java.build.config-delete-deployments` | Delete a config deployment build | Manager |
 | `enterprise-app-java.build.source-delete-release` | Delete a source release build | Manager |
+| `enterprise-app-java.env.stop` | Stop an instance | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.request-server-dump` | Request server dump | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.read-server-dump` | Read server dump | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.delete-server-dump` | Delete server dump | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.start-trace` | Start a diagnostic trace | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.stop-trace` | Stop a diagnostic trace | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.read-trace` | Read a diagnostic trace | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.delete-trace` | Delete a diagnostic trace | EnvironmentAccessor, Manager |
 {: caption="Service actions - Enterprise Application Service" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="enterprise-app-java"}
