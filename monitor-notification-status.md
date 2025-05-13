@@ -3,7 +3,7 @@
 copyright:
 
   years: 2025
-lastupdated: "2025-04-29"
+lastupdated: "2025-05-13"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR, status page, status query, incident, maintenance, search query, notifications, view notifications, set notifications,
 
@@ -219,7 +219,6 @@ For IaaS offerings, {{site.data.keyword.Bluemix_notm}} provides advanced notice 
 |-----------------------|------------|----------------------------|
 | Emergency             | Customer Impacting Event (CIE) | a minimum of 24 hours |
 | High                  | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 30 days |
-| Medium                | Low to moderate possibility of a brief disruption. | a minimum of 21 days |
 | Low                   | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | offering-specific |
 {: caption="IaaS offerings impact possibility definitions" caption-side="top"}
 
@@ -231,7 +230,7 @@ For PaaS offerings, IBM Cloud provides advanced notice that's dependent on the s
 | Possibility of impact | Definition | Advanced Notice Guidelines |
 |-----------------------|------------|----------------------------|
 | Emergency             | Customer Impacting Event (CIE) | a minimum of 24 hours |
-| Disruptive            | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 7 days |
+| Disruptive            | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 30 days |
 | Nondisruptive                | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | None |
 {: caption="PaaS offerings impact possibility definitions" caption-side="top"}
 
