@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-05-13"
+lastupdated: "2025-05-15"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1689,7 +1689,6 @@ Review the available platform and service roles and the actions mapped to each t
 | CloudPak Data Steward | Create or view governance artifacts and curate data into catalogs. |
 | Data Product Consumer | Search and subscribe to data products, request for new data products, create connections, view domains |
 | Data Product Hub Administrator | Add or remove members to community, create top level domains, configure storage for data extract, custom properties, workflows, connections, view insights |
-| Data Product Hub Manager | Initialize Data Product Hub, create catalog, create functional admin user and assign policies to it |
 | Data Product Provider | Create data products, connections, sub-domains and approve data products, view insights |
 | Governance Artifacts Administrator | Manage governance artifacts |
 | Lineage Administrator | Perform actions related to managing data lineage, like importing lineage metadata, publishing new assets, managing external agents or updating mappings. |
@@ -1731,10 +1730,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.data-lineage.manage` | Manage data lineage | Lineage Administrator, Manager |
 | `cp4d.data-lineage.access` | Access data lineage | Lineage Administrator, Manager, Reader |
 | `cp4d.governance-policy-decision.evaluate` | Permission required for an integration user to be allowed to evaluate data access requests on behalf of registered platform users | Policy Decision Operator |
-| `cp4d.data-product-hub.manage` | Initialize Data Product Hub | Data Product Hub Manager, Manager |
+| `cp4d.data-product-hub.manage` | Initialize Data Product Hub | Manager |
 | `cp4d.data-product-hub.admin` | Administer Data Product Hub | Data Product Hub Administrator, Manager |
-| `cp4d.data-product.provide` | Create data products | Data Product Provider |
-| `cp4d.data-product.consume` | Consume data products | Data Product Consumer |
+| `cp4d.data-product.provide` | Create data products | Data Product Hub Administrator, Data Product Provider, Manager |
+| `cp4d.data-product.consume` | Consume data products | Data Product Consumer, Data Product Hub Administrator, Data Product Provider, Manager |
 {: caption="Service actions - IBM Cloud Pak for Data" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="cp4d"}
