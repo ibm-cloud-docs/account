@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-05-16"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -110,7 +110,7 @@ For more information about the required access for other resources types, see [T
 {: #slitems}
 {: faq}
 
-To view all of your resources, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource List**.
+To view all of your resources, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**.
 
 To view just your classic infrastructure resources, select from the following options:
 
