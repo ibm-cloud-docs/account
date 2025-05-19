@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-05-16"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -34,7 +34,7 @@ This tutorial walks you through how to onboard a sample Operator bundle from a {
 1. Go to the {{site.data.keyword.redhat_notm}} OperatorHub to confirm that your Operator bundle exists in the {{site.data.keyword.redhat_notm}} Certified registry.
 1. [Create your {{site.data.keyword.openshiftshort}} cluster](/docs/openshift?topic=openshift-getting-started).
 1. [Upload your Operator bundle and application images to {{site.data.keyword.registrylong_notm}}](/docs/Registry?topic=Registry-getting-started).
-1. Verify that you're assigned the following {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). See [Assigning access to account management services](/docs/account?topic=account-account-services) and [Managing access to resources](/docs/account?topic=account-assign-access-resources) for more information.
+1. Verify that you're assigned the following {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) roles. See [Assigning access to account management services](/docs/account?topic=account-account-services) and [Managing access to resources](/docs/account?topic=account-assign-access-resources) for more information.
    * Administrator on all account management services and all IAM-enabled services
    * Editor on the catalog management service
    * Editor on the software instance service
