@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-05-12"
+lastupdated: "2025-05-19"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -285,10 +285,8 @@ Limiting external identity interactions requires that users with an IAM access p
 
 - {{site.data.keyword.satellitelong_notm}}
 - {{site.data.keyword.cos_full_notm}} -  public access buckets will not be accessible
-- {{site.data.keyword.messagehub_full}}
-- {{site.data.keyword.sysdigsecure_full_notm}}
 - {{site.data.keyword.codeenginefull_notm}}
 - {{site.data.keyword.DRA_full}}
-- Resource tagging
+- Access Report (Generating CSV or JSON resource access report)
 
 For more information about this setting, see [Managing external identity interactions](/docs/account?topic=account-cross-acct).
