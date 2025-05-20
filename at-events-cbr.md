@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-05-20"
 
 keywords: activity tracking, context-based restrictions events, events, observibility
 
@@ -31,7 +31,7 @@ You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to rou
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
-{: #atracker-locations}
+{: #atracker-locations-cbr}
 
 
 
