@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-04-15"
+lastupdated: "2025-05-20"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -52,13 +52,13 @@ The interface that you use to access a resource, such as the console, CLI, or AP
 You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
 
 Enabled
-:   Enforce the rule. Depending on the service that you select, monitoring denied access attempts through {{site.data.keyword.at_short}} might be available. Review each service's documentation to learn about how they integrate with context-based restrictions.
+:   Enforce the rule. Depending on the service that you select, monitoring denied access attempts through {{site.data.keyword.atracker_short}} might be available. Review each service's documentation to learn about how they integrate with context-based restrictions.
 
 Disabled
 :   No restrictions apply to your account resources. Select this option if you're not ready to enable the rule.
 
 Report-only
-:   Depending on the service that you select, you can monitor how a rule affects access without enforcing it. With report-only mode, all attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. If available, monitoring is recommended for 30 days before you enforce a rule.
+:   Depending on the service that you select, you can monitor how a rule affects access without enforcing it. With report-only mode, all attempts to access resources in the account are logged in {{site.data.keyword.atracker_short}}. If available, monitoring is recommended for 30 days before you enforce a rule.
 
 Report-only mode is not available for all services, so review each service's documentation to learn about how they integrate with context-based restrictions.
 
@@ -121,7 +121,7 @@ The following is a list of services that you can add to a network zone as a serv
 | All Account Management services | Account Management | `iam-access-management` |
 | IAM Access Groups Service  | Account Management | `iam-groups` |
 | IAM User Management | Account Management | `user-management` |
-| [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-cbr) | IAM-enabled |  `logdnaat` |
+| [{{site.data.keyword.atracker_short}}](/docs/account?topic=account-at_events_cbr) | IAM-enabled |  `logdnaat` |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled | `apprapp` |
 | Catalog Management Service | IAM-enabled | `globalcatalog-collection` |
 | Cloud {{site.data.keyword.block_storage_is_short}} | IAM-enabled | |
@@ -241,7 +241,7 @@ You can create context-based restrictions for the following services if you are 
 | IAM Access Management Service | Account Management | No | `iam-access-management` |
 | IAM Identity Service  | Account Management | No | `iam-identity`|
 | IAM User Management | Account Management | No | `user-management` |
-| [{{site.data.keyword.at_short}}](/docs/activity-tracker?topic=activity-tracker-cbr) | IAM-enabled | Yes | `logdnaat` |
+| [{{site.data.keyword.atracker_short}}](/docs/account?topic=account-at_events_cbr) | IAM-enabled | Yes | `logdnaat` |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled | No | `apprapp` |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | No | `cloud-object-storage` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | No | `codeengine` |

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2023
-lastupdated: "2023-10-26"
+  years: 2018, 2025
+lastupdated: "2025-05-20"
 
 keywords:
 
@@ -24,7 +24,6 @@ Legacy account-based MFA was available to accounts with classic infrastructure p
 {: shortdesc}
 
 [Classic infrastructure]{: tag-classic-inf} Account-based MFA applies only to classic infrastructure and not to other resources in your account. Unlike with {{site.data.keyword.cloud_notm}} MFA, legacy MFA options, such as security questions, are enforced only on the specific account where the MFA is enabled. If you have a different legacy MFA option set up for each account that you are a member of, you must authenticate in a different way each time that you switch accounts.
-
 
 ## Account-based MFA options
 {: #account-based}
@@ -75,7 +74,6 @@ To set up TOTP, complete the following steps:
 
 To remove your TOTP, click **Remove**.
 {: tip}
-
 
 ### Enabling TOTP for a user
 {: #enable-totp}

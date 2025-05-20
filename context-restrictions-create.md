@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-05-20"
 
 keywords: create network access, network access rule, network zone
 
@@ -363,9 +363,9 @@ To create a rule, complete the following steps.
 1. Click **Continue**.
 1. Provide a unique description.
 1. Select how you want to enforce the rule. You can decide how you want to enforce a rule upon creation and update the rule enforcement at any time.
-    * **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.at_short}}.
+    * **Enable**: Enforce the rule. Denied access attempts are reported in {{site.data.keyword.atracker_short}}.
     * **Disable**: Don't enforce the rule. Restrictions don't apply to your account resources. Select this option if you're not ready to enable the rule.
-    * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.at_short}}. Monitoring is recommended for 30 days before you enforce the rule.
+    * **Report-only**: Monitor how the rule affects users without enforcing it. All attempts to access resources in the account are logged in {{site.data.keyword.atracker_short}}. Monitoring is recommended for 30 days before you enforce the rule.
 1. Click **Create**.
 
 ## Creating rules by using the CLI
