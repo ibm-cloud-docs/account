@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-05-15"
+lastupdated: "2025-05-23"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -772,22 +772,22 @@ Review the available platform and service roles and the actions mapped to each t
 | `cloud-object-storage.bucket.list_backup_policies` | List all backup policies. | Manager, Reader, Writer |
 | `cloud-object-storage.bucket.delete_backup_policy` | Delete a backup policy. | Manager, Writer |
 | `cloud-object-storage.bucket.restore_sync` | Restore Syncing. | Manager, Writer |
-| `cloud-object-storage.backup-vault.post_backup_vault` | Post a backup vault. | Backup Manager |
-| `cloud-object-storage.backup-vault.delete_backup_vault` | Delete a backup vault. | Backup Manager |
-| `cloud-object-storage.account.list_account_backup_vaults` | List backup vaults. | Backup Manager |
-| `cloud-object-storage.backup-vault.get_basic` | Get a backup vault. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.get_activity_tracking` | Get backup vault activity tracking. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.get_metrics_monitoring` | Get backup vault metrics monitoring. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.put_activity_tracking` | Update backup vault activity tracking. | Backup Manager |
-| `cloud-object-storage.backup-vault.put_metrics_monitoring` | Update backup vault metrics monitoring. | Backup Manager |
-| `cloud-object-storage.backup-vault.put_retention` | Update backup vault retention policy. | Backup Manager |
-| `cloud-object-storage.backup-vault.get_crk_id` | LIST Backup Vault CRK id. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.get_recovery_range` | GET Backup Vault Recovery Range. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.list_recovery_ranges` | LIST Backup Vault Recovery Ranges. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.post_restore` | POST Restore. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.list_restores` | LIST Restores. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.get_restore` | GET Restore. | Backup Manager, Backup Reader |
-| `cloud-object-storage.backup-vault.sync` | Backup Sync | Backup Manager, Backup Reader |
+| `cloud-object-storage.backup-vault.post_backup_vault` | Post a backup vault. | Backup Manager, Manager |
+| `cloud-object-storage.backup-vault.delete_backup_vault` | Delete a backup vault. | Backup Manager, Manager |
+| `cloud-object-storage.account.list_account_backup_vaults` | List backup vaults. | Backup Manager, Manager |
+| `cloud-object-storage.backup-vault.get_basic` | Get a backup vault. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.get_activity_tracking` | Get backup vault activity tracking. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.get_metrics_monitoring` | Get backup vault metrics monitoring. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.put_activity_tracking` | Update backup vault activity tracking. | Backup Manager, Manager |
+| `cloud-object-storage.backup-vault.put_metrics_monitoring` | Update backup vault metrics monitoring. | Backup Manager, Manager |
+| `cloud-object-storage.backup-vault.put_retention` | Update backup vault retention policy. | Backup Manager, Manager |
+| `cloud-object-storage.backup-vault.get_crk_id` | LIST Backup Vault CRK id. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.get_recovery_range` | GET Backup Vault Recovery Range. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.list_recovery_ranges` | LIST Backup Vault Recovery Ranges. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.post_restore` | POST Restore. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.list_restores` | LIST Restores. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.get_restore` | GET Restore. | Backup Manager, Backup Reader, Manager |
+| `cloud-object-storage.backup-vault.sync` | Backup Sync | Backup Manager, Backup Reader, Manager |
 | `cloud-object-storage.account.get_account_buckets` | List all buckets in a service instance. | Manager, Notifications Manager, Reader, Writer |
 | `cloud-object-storage.bucket.put_bucket` | Create a bucket. | Manager, Writer |
 | `cloud-object-storage.bucket.post_bucket` | Internal use only - unsupported for users. | Manager, Writer |
@@ -7831,18 +7831,18 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.break-glass-keys-all.list` | list all breakglass keys | Manager |
 | `privileged-access-gateway.break-glass-key.get` | get breakglass key info of the user | Manager, Writer |
 | `privileged-access-gateway.pagtoken.create` | create a pagtoken for given breakglass certificate | Manager, Writer |
-| `privileged-access-gateway.kube-impersonation.add` | add breakglass kube impersonation | Manager, Writer |
-| `privileged-access-gateway.kube-impersonation.remove` | remove a kube impersonation | Manager, Writer |
-| `privileged-access-gateway.kube-impersonations-all.list` | list all kube impersonations | Manager |
+| `privileged-access-gateway.kube-impersonation.add` | add breakglass kube impersonation | Manager |
+| `privileged-access-gateway.kube-impersonation.remove` | remove a kube impersonation | Manager |
+| `privileged-access-gateway.kube-impersonations-all.list` | list all kube impersonations | Manager, Writer |
 | `privileged-access-gateway.https.authorize` | privileged-access-gateway.https.authorize | Manager, Writer |
 | `privileged-access-gateway.https.add` | privileged-access-gateway.https.add | Manager, Writer |
 | `privileged-access-gateway.https.remove` | privileged-access-gateway.https.remove | Manager, Writer |
 | `privileged-access-gateway.https-all.list` | privileged-access-gateway.https-all.list | Manager, Reader, Writer |
 | `privileged-access-gateway.https.get` | privileged-access-gateway.https.get | Manager, Reader, Writer |
 | `privileged-access-gateway.https.update` | privileged-access-gateway.https.update | Manager, Writer |
-| `privileged-access-gateway.openshift-impersonation.add` | add openshift impersonation | Manager, Writer |
-| `privileged-access-gateway.openshift-impersonation.remove` | remove openshift impersonation | Manager, Writer |
-| `privileged-access-gateway.openshift-impersonations-all.list` | list all openshift impersonations | Manager |
+| `privileged-access-gateway.openshift-impersonation.add` | add openshift impersonation | Manager |
+| `privileged-access-gateway.openshift-impersonation.remove` | remove openshift impersonation | Manager |
+| `privileged-access-gateway.openshift-impersonations-all.list` | list all openshift impersonations | Manager, Writer |
 | `privileged-access-gateway.break-glass-key-admin.revoke` | revoke a breakglass user's access | Manager |
 {: caption="Service actions - Privileged Access Gateway" caption-side="top"}
 {: tab-title="Actions"}
@@ -8066,6 +8066,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.direct-access-backend-properties.read` | Get backend properties via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-defaults.read` | Get backend defaults via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.instance-usage.read` | Read instance usage details. | Manager, Reader, Writer |
+| `quantum-computing.composer-qpy-to-qasm.create` | Converts serialized QuantumCircuit to a representative OpenQASM program | Manager, Reader, Writer |
+| `quantum-computing.composer-simulation.create` | Runs a job on a noisy quantum circuit simulator backend and returns the results | Manager, Reader, Writer |
+| `quantum-computing.composer-transpile.create` | Transpiles a given input circuit to match the topology of a specific quantum device | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}

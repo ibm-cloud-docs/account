@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-04-15"
+lastupdated: "2025-05-20"
 
 keywords:
 
@@ -30,7 +30,7 @@ You can use {{site.data.keyword.atracker_full_notm}}, a platform service, to rou
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 ## Locations where activity tracking events are sent by {{site.data.keyword.atracker_full_notm}}
-{: #atracker-locations}
+{: #atracker-locations-cm}
 
 
 
@@ -74,7 +74,7 @@ Catalog management sends activity tracking events by {{site.data.keyword.atracke
 You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on events that are generated in your account and routed by {{site.data.keyword.atracker_full_notm}} to an {{site.data.keyword.logs_full_notm}} instance.
 
 ### Launching {{site.data.keyword.logs_full_notm}} from the Observability page
-{: #log-launch-standalone}
+{: #log-launch-standalone-cm}
 
 
 
