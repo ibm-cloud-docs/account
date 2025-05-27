@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-02-27"
+lastupdated: "2025-05-27"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -49,6 +49,8 @@ When you create a service ID, it must be added to a service ID group. The defaul
 {: #create_serviceid-cli}
 {: cli}
 
+Service ID groups help you when you encounter a limit on the number of service IDs allowed in an account. Instead of increasing these limits, which might lead to performance issues, Service ID groups provide a way to create more service IDs without impacting system performance.
+
 When you create a service ID, it must be added to a service ID group. The default group is created for you automatically, but you can create more groups if you need to. If you don't specify a service ID group, your service ID is added to the default group.
 
 You can't move a service ID to another group, so make sure that the correct group is specified in the command before you create the service ID. 
@@ -59,6 +61,8 @@ To create a service ID, use the [**`ibmcloud iam service-id-create`**](/docs/acc
 ## Creating a service ID by using the API
 {: #create_serviceid-api}
 {: api}
+
+Service ID groups help you when you encounter a limit on the number of service IDs allowed in an account. Instead of increasing these limits, which might lead to performance issues, Service ID groups provide a way to create more service IDs without impacting system performance.
 
 When you create a service ID, it must be added to a service ID group. The default group is created for you automatically, but you can create more groups if you need to. If you don't specify a service ID group, your service ID is added to the default group.
 
