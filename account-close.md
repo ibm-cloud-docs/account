@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-01-28"
+lastupdated: "2025-05-29"
 
 keywords: close account, cancel account, delete account, terminate account
 
@@ -24,14 +24,19 @@ When you decide that you no longer need your {{site.data.keyword.cloud}} account
 {: #cancel-services}
 
 To delete a service instance, use the following steps:
-1. From the {{site.data.keyword.cloud_notm}} console, click the Navigation Menu icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
+
+1. From the {{site.data.keyword.cloud_notm}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list** to view your list of resources.
 2. Expand the sections to locate the service instance that you want to delete.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
+
+All services need to be deleted. However, accounts that still contain some deprecated services and components such as {{site.data.keyword.bpshort}} and {{site.data.keyword.registrylong_notm}} will not be blocked from closing the account in the {{site.data.keyword.Bluemix_notm}} console.
+{: note}
 
 ## Step 2: Canceling all devices
 {: #cancel-devices}
 
 To cancel all devices, use the following steps:
+
 1. From the {{site.data.keyword.cloud_notm}} console, click the menu icon ![Menu icon](../../icons/icon_hamburger.svg) > **Classic Infrastructure** > **Device List**.
 1. For each device that you want to cancel, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Cancel device**.
 1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
@@ -40,6 +45,7 @@ To cancel all devices, use the following steps:
 {: #cancel-billing-items-account}
 
 To cancel all billing items, use the following steps:
+
 1. From the {{site.data.keyword.cloud_notm}} console, select **Manage** > **Billing and usage**.
 1. Select **Billing items**.
 1. Ensure that you are viewing all billing items.
