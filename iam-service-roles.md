@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-05-23"
+lastupdated: "2025-05-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -2402,6 +2402,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2438,6 +2439,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v5/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2478,6 +2480,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
+| `deployment-version.update` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
 | `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2561,6 +2564,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2596,6 +2600,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v5/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2636,6 +2641,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
+| `deployment-version.update` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
 | `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2718,6 +2724,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2753,6 +2760,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v5/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2792,6 +2800,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
+| `deployment-version.update` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
 | `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2874,6 +2883,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2909,6 +2919,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v5/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -2948,6 +2959,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
+| `deployment-version.update` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
 | `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
@@ -3030,6 +3042,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -3067,6 +3080,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v5/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -3108,6 +3122,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
+| `deployment-version.update` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
 | `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
@@ -3192,6 +3207,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -3227,6 +3243,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v5/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -3266,6 +3283,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
+| `deployment-version.update` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
 | `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
@@ -6739,6 +6757,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v4/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v4/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v4/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v4/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v4/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v4/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v4/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -6774,6 +6793,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `GET /v5/:platform/deployments/:deployment_id/tasks` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `GET /v5/:platform/deployments/:deployment_id/backups` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `POST /v5/:platform/deployments/:deployment_id/backups` | Create an on-demand backup | Administrator, Editor, Operator |
+| `PATCH /v5/:platform/deployments/:deployment_id/version` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `GET /v5/:platform/deployments/:deployment_id/remotes` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `PATCH /v5/:platform/deployments/:deployment_id/remotes` | Update a remote replica | Administrator, Editor, Operator |
 | `POST /v5/:platform/deployments/:deployment_id/remotes/promotion` | Promote a remote replica | Administrator, Editor, Operator |
@@ -6813,6 +6833,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `deployment-task.list` | Read all deployment tasks | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.list` | Read all deployment backups | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-backup.create` | Create an on-demand backup | Administrator, Editor, Operator |
+| `deployment-version.update` | Upgrade a deployment version | Administrator, Editor, Operator |
 | `deployment-remote.list` | Read all deployment remotes | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `deployment-remote.update` | Update a remote replica | Administrator, Editor, Operator |
 | `deployment-remote.create` | Promote a remote replica | Administrator, Editor, Operator |
