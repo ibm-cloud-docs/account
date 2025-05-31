@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-05-30"
+lastupdated: "2025-05-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6486,7 +6486,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table112}
 
-## SAP Adaptive Server Enterprise Cloud Edition by IBM Cloud
+## SAP Adaptive Server Enterprise Cloud Edition by IBM Cloud 
 {: #managed-sap-ase-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `managed-sap-ase` for the service name.
@@ -7719,29 +7719,7 @@ No supported roles.
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-iaas.shared-processor-pool` for the service name.
 
-| Role | Description |
-| ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-{: row-headers}
-{: caption="Platform roles - Power Virtual Server Shared Processor Pool" caption-side="top"}
-{: tab-title="Platform roles"}
-{: tab-group="power-iaas.shared-processor-pool"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table has row and column headers. The row headers provide the platform role name and the column headers identify the specific information available about each role."}
-{: #platform-roles-table141}
-
-| Action | Description | Roles |
-| ----- | :----- | :----- |
-| `power-iaas.shared-processor-pool.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Service actions - Power Virtual Server Shared Processor Pool" caption-side="top"}
-{: tab-title="Actions"}
-{: tab-group="power-iaas.shared-processor-pool"}
-{: class="simple-tab-table"}
-{: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
-{: #actions-table141}
-
+No supported roles.
 ## PowerVS Snapshot
 {: #power-iaas.snapshot-roles}
 
@@ -8260,7 +8238,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table153}
 
-## Satellite Infrastructure Services
+## Satellite Infrastructure Services 
 {: #satellite-iaas-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `satellite-iaas` for the service name.
