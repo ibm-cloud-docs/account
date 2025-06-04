@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-06-04"
 
 keywords: account settings, delete account, account errors, vrf account migration, account migration, vrf, classic account
 
@@ -42,3 +42,9 @@ If you require an IPSec VPN, you must order either a gateway appliance or a regu
 Yes. After you migrate to a VRF-style account, the option to turn VLAN Spanning "off" is not available.
 
 By default, in a VRF-style account, all subnets and VLANs on the account can communicate with each other. If you need subnet/VLAN segregation, you must order a gateway appliance (one for each POD, where necessary) to appropriately block traffic.
+
+## Can customers enable VRF on their account?
+{: #enable-VRF}
+{: faq}
+
+Yes. An account owner can enable VRF on an account by enabling VRF and service endpoints. For more information on how to enable VRF on an account, see [enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
