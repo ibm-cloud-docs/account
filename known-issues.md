@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-05-19"
+lastupdated: "2025-06-10"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -22,6 +22,8 @@ Known issues and limitations include not being able to restrict access to some p
 
 To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/account?topic=account-cloudaccess#iam_limits).
 {: note}
+
+
 
 ## Google login doesn't support federated IDs
 {: #google-fed-id}

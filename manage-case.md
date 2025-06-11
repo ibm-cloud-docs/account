@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-01"
+lastupdated: "2025-06-03"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -28,7 +28,7 @@ You can also view your IBM support cases on the Manage cases page, but they can 
 {: #search-options}
 {: ui}
 
-From the Manage cases page, you can filter by case status and search for all of your support cases by using query parameters in the search bar. All parameters can be used together and entered in any order. You can also filter cases by selecting **All cases**, **My cases**, and **Watchlist cases**.
+From the Manage cases page, you can filter by case status and search for all of your support cases by using query parameters in the search bar. The default filters are set to view only open cases.  To view resolved or closed cases, update the status filter.  All parameters can be used together and entered in any order. You can also filter cases by selecting **All cases**, **My cases**, and **Watchlist cases**.
 
 See the following table for details about the search parameters:
 

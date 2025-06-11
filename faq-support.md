@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-06-03"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -27,7 +27,7 @@ FAQ for support include questions on checking for planned maintenance, opening a
 
 You can check for upcoming maintenance from your dashboard in the {{site.data.keyword.cloud}} console at least one time every 24 hours. Use one of the following options:
 
-* Check out the Planned maintenance widget on the [Dashboard](https://{DomainName}){: external}, and click **View all**.
+* Check out the Planned maintenance widget on the [Dashboard](/){: external}, and click **View all**.
 * Go directly to the [Status - Planned maintenance page](/status?selected=maintenance){: external}.
 
 
