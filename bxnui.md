@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-06-11"
 
 keywords: error messages, errors, platform errors, message ID
 
@@ -1474,7 +1474,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The number of intermediate certificates exceeds the number allowed.
 
-For more information about the number of allowed certificates and how to delete or replace them, see the [Uploading SSL certificates](/docs/ssl-certificates?topic=ssl-certificates-deprecation) topic.
+For more information about the number of allowed certificates and how to delete or replace them, see the [Importing SSL/TLS certificates](/docs/secrets-manager?topic=secrets-manager-certificates&interface=ui) topic.
 
 
 ## BXNUI2094E
