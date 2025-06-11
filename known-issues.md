@@ -26,14 +26,7 @@ To review the default limits for your account, see [{{site.data.keyword.cloud_no
 ## Podman Desktop authentication tokens aren't refreshed
 {: #podman-desktop}
 
-There is a known issue in older versions of Podman Desktop where expired authentication tokens aren't refreshed automatically. Expired tokens result in repeated failed authentication attempts with IAM. If you installed Podman Desktop, update it to [version `1.19.1` or later](https://podman-desktop.io/blog/podman-desktop-release-1.19){: external}. 
-
-Run the following command to check whether Podman Desktop is installed and update it to the latest version: 
-
-```sh
-if sudo flatpak list | grep -q PodmanDesktop; then sudo flatpak --assumeyes update io.podman_desktop.PodmanDesktop; fi
-```
-{: pre}
+There is a known issue in older versions of Podman Desktop where expired authentication tokens aren't refreshed automatically. Expired tokens result in repeated failed authentication attempts with IAM. If you installed Podman Desktop, update it to [version `1.19.1` or later](https://podman-desktop.io/blog/podman-desktop-release-1.19){: external}.
 
 Podman is a third-party product, not provided or supported by {{site.data.keyword.IBM_notm}}. {{site.data.keyword.IBM_notm}} does not take responsibility for, nor guarantee any particular performance regarding, your use of Podman with {{site.data.keyword.cloud_notm}}.
 {: note}
