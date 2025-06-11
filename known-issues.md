@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-06-10"
+lastupdated: "2025-06-11"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -23,7 +23,20 @@ Known issues and limitations include not being able to restrict access to some p
 To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/account?topic=account-cloudaccess#iam_limits).
 {: note}
 
+## Podman Desktop authentication tokens aren't refreshed
+{: #podman-desktop}
 
+There is a known issue in older versions of Podman Desktop where expired authentication tokens aren't refreshed automatically. Expired tokens result in repeated failed authentication attempts with IAM. If you installed Podman Desktop, update it to [version `1.19.1` or later](https://podman-desktop.io/blog/podman-desktop-release-1.19){: external}. 
+
+Run the following command to check whether Podman Desktop is installed and update it to the latest version: 
+
+```sh
+if sudo flatpak list | grep -q PodmanDesktop; then sudo flatpak --assumeyes update io.podman_desktop.PodmanDesktop; fi
+```
+{: pre}
+
+Podman is a third-party product, not provided or supported by {{site.data.keyword.IBM_notm}}. {{site.data.keyword.IBM_notm}} does not take responsibility for, nor guarantee any particular performance regarding, your use of Podman with {{site.data.keyword.cloud_notm}}.
+{: note}
 
 ## Google login doesn't support federated IDs
 {: #google-fed-id}
