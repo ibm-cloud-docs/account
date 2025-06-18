@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-06-18"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -168,32 +168,32 @@ As an alternative to the console, you can view your usage by using the {{site.da
    ```
    {: codeblock}
 
-1. View usage by running the **`ibmcloud billing`** command as shown in the following examples.
+1. View resource usage by running the [**`ibmcloud billing`** command](/docs/account?topic=account-ibmcloud_billing) as shown in the following examples.
 
-   * View usage for the current month.
+   * View usage across the entire account for the current month (account admin only).
 
       ```sh
-      ibmcloud billing account-usage [-d YYYY-MM] [--output FORMAT] [-q, --quiet]
+      ibmcloud billing account-usage
       ```
       {: codeblock}
 
-   * View monthly usage for an org (account admin or org billing manager only):
+      You can view usage for a specific month by adding the `-d YYYY-MM` option. For example, run the following command to view usage for June 2025.
 
       ```sh
-      ibmcloud billing org-usage ORG_NAME [-d YYYY-MM] [--output FORMAT] [-q, --quiet]
+      ibmcloud billing account-usage -d 2025-06
       ```
       {: codeblock}
 
-   * View monthly usage for a resource group (account admin or resource group admin only):
+   * View the usage for the `dev-test` resource group for May 2025 and output to JSON format (account admin or resource group admin only):
 
       ```sh
-      ibmcloud billing resource-group-usage GROUP_NAME [-d YYYY-MM] [--output FORMAT] [-q, --quiet]
+      ibmcloud billing resource-group-usage dev-test -d 2025-05 --output JSON
       ```
       {: codeblock}
 
-   * View monthly resource instances usage under the current account:
+   * View resource instances usage under the current account for March 2025, filtered to the `dev-test` resource group and output to JSON format:
 
       ```sh
-      ibmcloud billing resource-instances-usage [-o ORG] [-g RESOURCE_GROUP] [-d YYYY-MM] [--output FORMAT] [-q, --quiet]
+      ibmcloud billing resource-instances-usage -g dev-test -d 2025-03 --output JSON
       ```
       {: codeblock}
