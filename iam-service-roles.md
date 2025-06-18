@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-06-17"
+lastupdated: "2025-06-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7977,11 +7977,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.direct-access-backend.read` | Get backend accessible via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-configuration.read` | Get backend configuration via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-properties.read` | Get backend properties via Direct Access API. | Manager, Reader, Writer |
-| `quantum-computing.direct-access-backend-defaults.read` | Get backend defaults via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.instance-usage.read` | Read instance usage details. | Manager, Reader, Writer |
 | `quantum-computing.composer-qpy-to-qasm.create` | Converts serialized QuantumCircuit to a representative OpenQASM program | Manager, Reader, Writer |
 | `quantum-computing.composer-simulation.create` | Runs a job on a noisy quantum circuit simulator backend and returns the results | Manager, Reader, Writer |
 | `quantum-computing.composer-transpile.create` | Transpiles a given input circuit to match the topology of a specific quantum device | Manager, Reader, Writer |
+| `quantum-computing.direct-access-job.read` | Get job by ID via Direct Access API. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}
