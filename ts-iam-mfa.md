@@ -19,7 +19,7 @@ content-type: troubleshoot
 {: #troubleshoot-MFA}
 {: troubleshoot}
 
-You are required to use an authentication factor, in addition to your username and password, to securely log in to {{site.data.keyword.cloud}} if at least one account that you are a member of enables MFA. You can update or reset your authentication methods if the email address or phone number that you use to authenticate changes or becomes inaccessible by going to the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
+You are required to use an authentication factor in addition to your username and password, to securely log in to {{site.data.keyword.cloud}} if at least one account that you are a member of enables MFA. You can update or reset your authentication methods if the email address or phone number that you use to authenticate changes or becomes inaccessible by going to the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
 {: shortdesc}
 
 When I try to log in with an authentication factor, the following error message is displayed:
