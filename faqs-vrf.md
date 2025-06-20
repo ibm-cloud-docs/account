@@ -43,8 +43,8 @@ Yes. After you migrate to a VRF-style account, the option to turn VLAN Spanning 
 
 By default, in a VRF-style account, all subnets and VLANs on the account can communicate with each other. If you need subnet/VLAN segregation, you must order a gateway appliance (one for each POD, where necessary) to appropriately block traffic.
 
-## Can customers enable VRF on their account?
-{: #enable-VRF}
+## What permissions are required for a user to enable VRF on their account?
+{: #permissions-enable-VRF}
 {: faq}
 
 Yes. An account owner can enable VRF on an account by enabling VRF and service endpoints. For more information on how to enable VRF on an account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
