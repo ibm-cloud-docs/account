@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-06-20"
 
 keywords: trusted profile, generating IAM token, compute resource, kubernetes cluster, virtual server
 
@@ -38,3 +38,8 @@ Give application pods that run in your {{site.data.keyword.openshiftlong}} clust
 {: #vsi-token}
 
 {{site.data.keyword.vsi_is_short}} uses different APIs for token creation. For more information, see [Using a trusted profile to call IAM-enabled services](/docs/vpc?topic=vpc-imd-trusted-profile-metadata).
+
+## {{site.data.keyword.codeenginefull}}
+{: #code-engine}
+
+In {{site.data.keyword.codeengineshort}}, you can enable your components (applications, jobs, or functions) to support trusted profiles. For more information, see, [Working with trusted profiles in {{site.data.keyword.codeengineshort}} to access {{site.data.keyword.Bluemix_notm}} services](/docs/codeengine?topic=codeengine-trusted-profiles).
