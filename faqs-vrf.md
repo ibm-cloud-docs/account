@@ -21,7 +21,7 @@ content-type: faq
 By default, classic accounts that were established before 30 November 2023, are included in the {{site.data.keyword.cloud}} general routing table. Previously, if you wanted to convert a classic account to a VRF-style account, you were required to open a support case with {{site.data.keyword.IBM}} Support. Beginning 30 November 2023, any new classic account or any existing classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
-## Will this affect current accounts that currently have existing servers or other Private Network connections?
+## Will it affect current accounts that currently have existing servers or other Private Network connections?
 {: #existing-account}
 {: faq}
 
@@ -49,8 +49,8 @@ By default, in a VRF-style account, all subnets and VLANs on the account can com
 
 Yes. An account owner can enable VRF on an account by enabling VRF and service endpoints. For more information on how to enable VRF on an account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
 
-## What permissions are required for a user to enable service endpoint on their account?
-{: enable-serviceendpoint}
+What permissions are required for a customer to enable VRF on their account?
+{: #permissions-enable-VRF}
 {: faq}
 
-The account owner has the privilege to enable or disable service endpoints. Other users must have the `MANAGE_PRIVATE_ENDPOINT_SERVICE` privilege to perform these actions. Also, the account must enable VRF beforehand. For more information on how to enable service endpoints on an account, see [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#service-endpoint).
+No specific permissions are required for an account user to enable VRF. However, certain conditions like, the account must not have IPSec VPN configured, custom spanning must be disabled, and the account must not already be using VRF must be met. For more information on how to enable VRF on an account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
