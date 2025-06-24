@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-06-19"
+lastupdated: "2025-06-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1309,6 +1309,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.facts.read` | View Facts | Manager, Reader, Writer |
 | `compliance.vulnerability-tickets.read` | View Vulnerability Tickets | Manager, Reader, Writer |
 | `compliance.vulnerability-tickets-counts.read` | View Vulnerability Ticket Statistics | Manager, Reader, Writer |
+| `compliance.inventory.read` | View Inventory Systems | Manager, Reader, Writer |
 {: caption="Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
@@ -1707,10 +1708,13 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `cp4d.catalog.manage` | Manage catalogs
+
  | Administrator, Editor, Manager |
 | `cp4d.governance-categories.manage` | Manage governance categories
+
  | Manager |
 | `cp4d.governance-workflows.manage` | Manage governance workflows
+
  | Manager |
 | `cp4d.wkc.reporting.manage` | Manage reporting | Reporting Administrator |
 | `cp4d.governance-artifacts.access` | Access governance artifacts | CloudPak Data Engineer, CloudPak Data Scientist, CloudPak Data Steward |
@@ -3648,7 +3652,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `enterprise-app-java.build.config-delete-deployments` | Delete a config deployment build | Manager |
 | `enterprise-app-java.build.source-delete-release` | Delete a source release build | Manager |
 | `enterprise-app-java.env.stop` | Stop an instance | EnvironmentAccessor, Manager |
-| `enterprise-app-java.diagnostics.request-server-dump` | Request server dump | EnvironmentAccessor, Manager |
+| `enterprise-app-java.diagnostics.request-server-dump` | Request server dumps | EnvironmentAccessor, Manager |
 | `enterprise-app-java.diagnostics.read-server-dump` | Read server dump | EnvironmentAccessor, Manager |
 | `enterprise-app-java.diagnostics.delete-server-dump` | Delete server dump | EnvironmentAccessor, Manager |
 | `enterprise-app-java.diagnostics.start-trace` | Start a diagnostic trace | EnvironmentAccessor, Manager |
