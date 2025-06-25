@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-06-24"
+lastupdated: "2025-06-25"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -1310,6 +1310,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `compliance.vulnerability-tickets.read` | View Vulnerability Tickets | Manager, Reader, Writer |
 | `compliance.vulnerability-tickets-counts.read` | View Vulnerability Ticket Statistics | Manager, Reader, Writer |
 | `compliance.inventory.read` | View Inventory Systems | Manager, Reader, Writer |
+| `compliance.inventory-counts.read` | View Inventory Statistics | Manager, Reader, Writer |
 {: caption="Service actions - IBM Cloud Compliance and Security Center" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="compliance"}
