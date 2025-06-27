@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-03-24"
+lastupdated: "2025-06-27"
 
 keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
@@ -31,25 +31,27 @@ Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Acc
 
 Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
 
+
+
 Complete the following steps to add a credential to a service:
 
 1. From the **Resource list**, select the name of the service to open the service details page.
-1. Click **Service credentials > New Credential+**.
+1. Click **Service credentials**.
 1. Enter a **Name**.
 1. Assign an IAM service access role. For more information about roles, see [IBM Cloud IAM roles](/docs/account?topic=account-userroles).
    1. Specify `None` to assign no role to the new credential if you want to manage access by associating a new or existing service ID with the service credential.
-1. (Optional) Click **Advanced options**
-   1. Select an existing service ID or **Create New Service ID** to associate with the credential. This way, you can manage access directly within IAM by going to **Manage > Access (IAM) > Service IDs**. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
+1. (Optional) Select an existing service ID or **Create New Service ID** to associate with the credential. This way, you can manage access directly within IAM by going to **Manage > Access (IAM) > Service IDs**. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 
       For services that have finer grain resource access, you might want to use a service ID to grant access only to a subresource, such as a {{site.data.keyword.cos_short}} bucket.
       {: tip}
 
-   1. You can provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
+1. Click **Advanced options** to provide more parameters as a valid JSON object that contains service-specific configuration parameters, provided either inline or in a file.
 
       Most services don't require extra parameters, and for services that do, each service defines its own unique list of parameters. For a list of supported configuration parameters, see the documentation for the particular service.
       {: note}
 
-1. Click **Add** to generate the new service credential.
+1. Click **Create** to generate the new service credential.
+
 1. Expand the details of your new service credential. Copy the credential properties that your app or external consumer needs. For example, the API key or password and URL.
 
 ## Creating a service credential by using the API
