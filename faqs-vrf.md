@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-06-04"
+lastupdated: "2025-06-20"
 
 keywords: account settings, delete account, account errors, vrf account migration, account migration, vrf, classic account
 
@@ -44,7 +44,19 @@ Yes. After you migrate to a VRF-style account, the option to turn VLAN Spanning 
 By default, in a VRF-style account, all subnets and VLANs on the account can communicate with each other. If you need subnet/VLAN segregation, you must order a gateway appliance (one for each POD, where necessary) to appropriately block traffic.
 
 ## Can customers enable VRF on their account?
-{: #enable-VRF}
+{: #permissions-enable-VRF}
 {: faq}
 
 Yes. An account owner can enable VRF on an account by enabling VRF and service endpoints. For more information on how to enable VRF on an account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
+
+## What permissions are required for a user to enable VRF on their account?
+{: #permissions-enable-VRF}
+{: faq}
+
+No specific permissions are required for an account user to enable VRF. However, certain conditions like, the account must not have IPSec VPN configured, custom spanning must be disabled, and the account must not already be using VRF must be met. For more information on how to enable VRF on an account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
+
+## What permissions are required for a user to enable service endpoint on their account?
+{: enable-serviceendpoint}
+{: faq}
+
+The account owner has the privilege to enable or disable service endpoints. Other users must have the `MANAGE_PRIVATE_ENDPOINT_SERVICE` privilege to perform these actions. Also, the account must enable VRF beforehand. For more information on how to enable service endpoints on an account, see [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#service-endpoint).

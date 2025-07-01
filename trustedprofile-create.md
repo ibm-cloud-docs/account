@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-06-12"
+lastupdated: "2025-06-26"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -47,10 +47,9 @@ Complete the following steps to define which federated users can access specific
 1. [Enable authentication from an external identity provider](/docs/account?topic=account-idp-integration).
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Trusted profiles**.
 1. Click **Create**.
-1. Describe your profile by providing a name and a description, then click **Continue**.
+1. Describe your profile by providing a name and a description that explains the actions available for this trusted profile, and then click **Continue**.
 
-      In the description, provide a list of actions available for this trusted profile.
-      {: tip}
+   
 
 1. You can create the trusted profile before you add details by selecting **Decide later**. Or, establish trust by completing the following steps:
    1. Select **Federated users** as a trusted entity type from the list.
