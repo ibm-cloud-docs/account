@@ -25,7 +25,7 @@ To add credentials to your apps, refer to the documentation for the type of app 
 {: #IAM_credential-ui}
 {: ui}
 
-Credentials that you create after xx March 2025 are one-time view by default, so make sure that you save them securely. The one-time view property on existing credentials is not affected. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
+Credentials that you create after 04 August 2025 are one-time view by default, so make sure that you save them securely. The one-time view property on existing credentials is not affected. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
 {: important}
 
 Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
