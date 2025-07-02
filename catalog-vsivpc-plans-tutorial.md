@@ -137,7 +137,7 @@ To provide tax and EFT information, complete the following steps:
 ### Provide the ECCN
 {: #working-sw-eccn}
 
-When you define your pricing model, you must provide the Export Control Classification Number (ECCN) that applies to your product. The ECCN is required for usage-based pricing plans. If you don't have your ECCN, you can find it on the [Commerce Control List](https://www.bis.gov/regulations/ear/interactive-commerce-control-list){: external}.
+When you define your pricing model, you must provide the Export Control Classification Number (ECCN) that applies to your product. The ECCN is required for usage-based pricing plans. If you don't have your ECCN, you can find it on the [Commerce Control List](https://www.bis.gov/regulations/ear/interactive-commerce-control-list?isExpanded=&category=&keyword=){: external}.
 
 You must submit your tax and EFT documents and receive approval before you can provide the ECCN if you're adding a usage-based pricing plan.
 {: note}
