@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-01-15"
+lastupdated: "2025-07-02"
 
 keywords: change service, switch service, service plan, pricing plan
 
@@ -150,4 +150,4 @@ fmt.Printf("\nUpdateResourceInstance() response:\n%s\n", string(b))
 {: codeblock}
 {: go}
 
-If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
+If you want to purchase an upgraded subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.

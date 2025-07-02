@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-02-05"
+lastupdated: "2025-07-02"
 
 keywords: context-based restrictions, protecting catalog resources, security, catalog management
 
@@ -21,13 +21,13 @@ Context-based restrictions give account owners and administrators the ability to
 
 These restrictions work with traditional IAM policies, which are based on identity, to provide another layer of protection. Unlike IAM policies, context-based restrictions don't assign access. Context-based restrictions check that an access request comes from an allowed context that you configure. Since both IAM access and context-based restrictions enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials. For more information, see [What are context-based restrictions](/docs/account?topic=account-context-restrictions-whatis).
 
-
 Any {{site.data.keyword.cloudaccesstraillong_notm}} or audit log events generated come from the context-based restrictions service, not Catalog Management. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
 
 ## Before you begin
 {: #before-cm-cbr}
 
 Review the following access requirements:
+
 - A user must have the Administrator role on the Catalog Management service to create, update, or delete rules.
 - A user must also have either the Editor or Administrator role on the Context-based restrictions service to create, update, or delete network zones.
 - A user with the Viewer role on the Context-based restrictions service can add only network zones to a rule.
@@ -129,17 +129,17 @@ By creating network zones, you establish a list of allowed locations where an ac
 
 1. Install the [Context-based restrictions CLI plug-in](/docs/account?topic=account-cbr-plugin) by running the following command:
 
-   ```sh
-   ibmcloud plugin install cbr
-   ```
-   {: pre}
+  ```sh
+    ibmcloud plugin install cbr
+    ```
+  {: pre}
 
 1. To create a network zone, use the [cbr zone-create](/docs/account?topic=account-cbr-plugin#cbr-cli-zone-create-command) command.
 
 
    The following example creates a network zone with a service reference. For more information, see [Service references](/docs/account?topic=account-context-restrictions-whatis&interface=cli#service-attribute).
 
-    ```sh
+  ```sh
     ibmcloud cbr zone-create --name CatalogZone --description "Allow catalogs to interact with other services" --service-ref service_name=globalcatalog-collection
     ```
     {: pre}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-llastupdated: "2025-01-28"
+llastupdated: "2025-07-02"
 
 keywords: IBM Cloud billing, payments, costs, usage, spending
 
@@ -54,6 +54,7 @@ When you have a Subscription account, you buy a subscription for an amount of cr
 After you select the type of account that fits your organization's needs, it's time to understand how you will be charged for it. With an {{site.data.keyword.cloud_notm}} billable account, you're charged for the compute, containers, and services that your organization consumes. You might be invited by other {{site.data.keyword.cloud_notm}} users to participate in organizations under a different account. The usage for the apps or services that you use in the organizations that you're invited to are charged to the account that contains those organizations.
 
 The following are the various charging types:
+
 * **Fixed:** Fixed-rate pricing is based on an agreed upon monthly charge that isn't adjusted.
 * **Metered:** Metered-usage pricing is based on the number of GB hours that are consumed for runtimes and the number of IP addresses and storage for containers.
 * **Tiered:** Some pricing plans are based on a tiered pricing model, so you can get a volume-based discount according to your actual usage. Services might offer simple, graduated, or block tier pricing plans.
@@ -65,6 +66,7 @@ The following are the various charging types:
 If you're a new Pay-As-You-Go account owner that is located in the US and you are paying with a credit card, you can replace your current card with a new one or edit the details of an existing card. In either case, you manage your credit card from the [Payments](/billing/payments) page in the {{site.data.keyword.cloud_notm}} console.
 
 If you own one of the following accounts, in the {{site.data.keyword.cloud}} console, you can go to **Manage** > **Billing and usage** to make a one-time payment, change your credit card details, view your billing items, and manage your invoices.
+
 * New and existing Pay-As-You-Go accounts based in the US with any payment method other than a credit card
 * New and existing Pay-As-You-Go accounts not based in the US
 * New and existing Subscription accounts worldwide

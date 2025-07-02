@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-07-02"
 
 keywords: activity tracking, IAM events, Identity and Access Management, observibility
 
@@ -303,7 +303,8 @@ In the {{site.data.keyword.cloud_notm}}, an administrator, or a user that has th
 * A user can log in by using an API key.
 * A federated user that uses a corporate or enterprise single sign-on ID can log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
 
-The following fields include extra information:
+The following fields include additional information:
+
 * The `initiator.name` includes information about the user that logs in to the account.
 * The `X-Global-Transaction-Id` includes an ID that you can use when you open a support ticket if you need to get more information.
 
@@ -312,7 +313,8 @@ The following fields include extra information:
 
 When a user logs in from the {{site.data.keyword.cloud_notm}} UI, you get an event in the account with action `iam-identity.user-refreshtoken.login`.
 
-The following field includes extra information:
+The following field includes additional information:
+
 * In requestData, the `client_id` field is set to **HOP55v1CCT**. This value indicates a UI request.
 
 #### Log in with a federated ID from the {{site.data.keyword.cloud_notm}} CLI by using a one-time passcode or an API key
@@ -322,7 +324,8 @@ When a user [logs in from the {{site.data.keyword.cloud_notm}} CLI by using a on
 
 When a user [logs in from the {{site.data.keyword.cloud_notm}} CLI by using an API key](/docs/account?topic=account-federated_id#api_key), you get an event in the account with action `iam-identity.user-apikey.login`.
 
-The following field includes extra information:
+The following field includes additional information:
+
 * In requestData, the `client_id` field is set to **bx**. This value indicates a CLI request.
 
 #### Log in with a federated ID by using trusted profiles
@@ -351,7 +354,8 @@ A service ID identifies a service or application similar to how a user ID identi
 
 When an action to update a service ID is requested, you get an event in the account with action `iam-identity.account-serviceid.update`.
 
-The following fields include extra information:
+The following fields include additional information:
+
 * The `initiator.name` field includes information about who has requested to update the service ID.
 * The `target.name` field includes information about the service ID that is changed.
 * The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line.
@@ -359,20 +363,23 @@ The following fields include extra information:
 #### Lock and unlock a service ID
 {: #at_events_iam_analyze_update_acc_scvid_1}
 
-The following field includes extra information:
+The following field includes additional information:
+
 * In requestData, the `lock` field is set to **true** when the service ID is locked, and to **false** when it is unlocked.
 
 #### Add or modify a description
 {: #at_events_iam_analyze_update_acc_scvid_2}
 
 When a request to change a description generates an event, the following fields include information that can help you determine this action:
+
 * In requestData, the `lock` field is set to **false**.
 * In requestData, the `prev_instance_name` field and the `instance_name` field are set to the same value.
 
 #### Change the name of a service ID
 {: #at_events_iam_analyze_update_acc_scvid_3}
 
-The following fields include extra information:
+The following fields include additional information:
+
 * In requestData, the `lock` field is set to **false**.
 * In requestData, the `instance_name` field includes the new name of the API key.
 * In requestData, the `prev_instance_name` field includes the name of the API key before it was changed.
@@ -396,10 +403,12 @@ Start by removing inactive identities if they are no longer needed. For more inf
 {: #at_events_iam_update_apikey}
 
 When an action to update an API key is requested, you get an event in the account with one of the following actions:
+
 * To update a user API key, the action is `iam-identity.user-apikey.update`.
 * To update a service ID API key, the action is `iam-identity.account-serviceid.update`.
 
-The following fields include extra information:
+The following fields include additional information:
+
 * The `initiator.name` field includes information about who has requested to update the API key.
 * The `target.name` field includes information about the API key that is changed.
 * The `initiator.host.agent` field indicates if the request comes from the UI or the CLI. When the field is set to **Not Set**, the request originates in the UI. When the field is set to **{{site.data.keyword.cloud_notm}} CLI**, the request originates at the command line.
@@ -407,20 +416,23 @@ The following fields include extra information:
 #### Lock and unlock a service ID
 {: #at_events_iam_update_apikey_1}
 
-The following field includes extra information:
+The following field includes additional information:
+
 * In requestData, the `lock` field is set to **true** when the API key is locked, and to **false** when it is unlocked.
 
 #### Add or modify a description
 {: #at_events_iam_update_apikey_2}
 
 When a request to change a description generates an event, the following fields include information that can help you determine this action:
+
 * In requestData, the `lock` field is set to **false**.
 * In requestData, the `prev_instance_name` field and the `instance_name` field are set to the same value.
 
 #### Change the name of a service ID
 {: #at_events_iam_update_apikey_3}
 
-The following fields include extra information:
+The following fields include additional information:
+
 * In requestData, the `lock` field is set to **false**.
 * In requestData, the `instance_name` field includes the new name of the API key.
 * In requestData, the `prev_instance_name` field includes the name of the API key before it was changed.
@@ -432,29 +444,32 @@ The following fields include extra information:
 {: #an_fail_not_authorized}
 
 For example, when a user logs into your account using an API key, the user is authenticated to access your account. However, this API key may not have permissions to run actions to modify API keys or service IDs in the account. When this happens, you get one of the following messages:
+
 * **IAM Identity Service: update user-apikey APIKeyName -failure**
 * **IAM Identity Service: update account-serviceid ServiceIDName -failure**
 
 To look for information about the user that has requested a change to an API key or to a service ID, look at the initiator fields in the event.
 
 When a user does not have permissions to run this action in your account, you get a failure event:
+
 * The `initiator.name` field is empty. This information is not available at the time the event is generated.
 * The user ID has been authenticated in your {{site.data.keyword.cloud_notm}} account.
 * The action targets your account.
 * The user ID is not authorized to run this action in your account.
 
 To find out the user who has tried to modify an API key or a service ID, complete the following steps:
+
 1. Copy the value of the `initiator.id`. This field includes the ID of the user that is trying to run this action in your account.
 2. Get the email address that is associated with the user. To complete this step, you must have administrator permissions in the account. Run the following command:
 
-    ```text
-    ibmcloud iam users --output json | grep -A 1 InitiatorID
-    ```
-    {: codeblock}
+   ```text
+   ibmcloud iam users --output json | grep -A 1 InitiatorID
+   ```
+   {: codeblock}
 
-    Where InitiatorID is the value of the field `initiator.id`, and has the format IBMid-XXXXXXXXXX.
+   Where InitiatorID is the value of the field `initiator.id`, and has the format IBMid-XXXXXXXXXX.
 
-    The output of this command returns 2 fields. The `ibmUniqueId` field shows the ID of the user that matched the event `initiator.name` field. The `email` field shows the email address associated with that ID.
+   The output of this command returns 2 fields. The `ibmUniqueId` field shows the ID of the user that matched the event `initiator.name` field. The `email` field shows the email address associated with that ID.
 
 To get the API key on which the action has been requested and failed, see the field `prev_instance_name` in requestData.
 
@@ -464,6 +479,7 @@ To get the API key on which the action has been requested and failed, see the fi
 When a service ID or an API key are locked, you cannot change any of its attributes. The event that is generated has an `outcome` of **failure**.
 
 Depending on the resource type, you can get any of the following messages:
+
 * Service ID: The message that you get says **IAM Identity Service: update account-serviceid ServiceIDName -failure** where *ServiceIDName* is the name of the service ID.
 * User API key: The message that you get says **IAM Identity Service: update user-apikey APIkeyName -failure** where *APIkeyName* is the name of the API key.
 * Account API key: The message that you get says **IAM Identity Service: update account-apikey APIkeyName -failure** where *APIkeyName* is the name of the API key.

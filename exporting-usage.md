@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-05-01"
+lastupdated: "2025-07-02"
 
 keywords: apptio, cost benefit analysis
 
@@ -293,7 +293,7 @@ The following table is version 1.3 and the most recent CSV version. You get this
 {: class="simple-tab-table"}
 {: caption="Account summary CSV header titles and JSON report fields for offers" caption-side="bottom"}
 {: tab-group="account-summary-1-3"}
-{: #offer-id-1-3}
+{: #offer-id1-1-3}
 {: tab-title="Offers"}
 
 | CSV Header       | JSON Report Fields | Description |

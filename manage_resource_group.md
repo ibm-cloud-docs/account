@@ -2,7 +2,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-02"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -25,7 +25,7 @@ For more information about working with resource groups, see [Best practices for
 {: ui}
 
 If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time. You can have a maximum of 1000 resource groups per account.
-You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create extra resource groups, but you can rename your default resource group.
+You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create additional resource groups, but you can rename your default resource group.
 
 ## Creating a resource group in the console
 {: #rgs_ui}
@@ -60,7 +60,7 @@ ibmcloud resource group-create group2
 
 If you have a Pay-As-You-Go or Subscription account, you can create multiple resource groups to easily manage quota and view billing usage for a set of resources. You can also group resources to make it easier for you to assign users access to more than one instance at a time.
 
-You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create extra resource groups, but you can rename your default resource group.
+You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create additional resource groups, but you can rename your default resource group.
 
 To create a resource group, call the [{{site.data.keyword.cloud}} Resource Manager API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager?code=go#create-resource-group) as shown in the following example:
 

@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2019, 2024
-lastupdated: "2024-09-19"
+  years: 2019, 2025
+lastupdated: "2025-07-02"
 
 keywords: resource, account resources, create resource, access to create resources, delete resource, delete instance, search, find, search for instance, search for resource
 
@@ -23,6 +23,7 @@ Services that are managed by using {{site.data.keyword.Bluemix_notm}} [Identity 
 {: #creating-resources}
 
 For users in your account to be able to create resources from the catalog and assign them to a resource group, they must be assigned two access policies:
+
 * A policy with viewer role or higher on the resources group itself
 * A policy with editor role or higher on the service in the account
 
@@ -33,6 +34,7 @@ For users in your account to be able to create resources from the catalog and as
 {: help}
 
 Use the following steps to create a resource in the console:
+
 1. From your dashboard, click **View resources** within the Resources summary widget.
 2. Click **Create resource**. From here, you are directed to the catalog. You can search the products or filter based on a specific category, provider, pricing plan, type of compliance, or release type. Examples of resources include apps, service instances, container clusters, storage volumes, virtual servers, and software.
 
@@ -283,14 +285,15 @@ The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_Dedi
 ### Searching for classic infrastructure resources
 {: #search-classic-infra-resources}
 
-To search for classic infrastructure resources, the string must be contained within double quotation marks (") in order for an exact match for the query string to be returned.
-In addition, if you enter a search term that includes a hyphen (-) and you don't surround the string with a double quotation mark ("), the search will not return an exact match. Hyphens within the string are used to break the term into multiple strings.
+To search for classic infrastructure resources, the string must be contained within double quotation marks in order for an exact match for the query string to be returned.
+In addition, if you enter a search term that includes a hyphen (-) and you don't surround the string with a double quotation mark, the search will not return an exact match. Hyphens within the string are used to break the term into multiple strings.
 
 ### Search examples
 {: #resource-name}
 
 The following examples can help you search for account resources.
 When the `-p classic-infrastucture` parameter is not specified search spans across all resources but classic infrastructure resources with `_objectType` `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, or `SoftLayer_Hardware` (excluding bare metal servers).
+
 * To search for all your resources named `ABC`, enter the following command:
 
     ```bash
@@ -596,4 +599,3 @@ You can also delete a resource instance by running the following `terraform dest
 terraform destroy -target RESOURCE_TYPE.NAME -target RESOURCE_TYPE2.NAME
 ```
 {: pre}
-

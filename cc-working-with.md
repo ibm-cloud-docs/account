@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-07-02"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -114,7 +114,7 @@ Account owners, account administrators, and users with a viewer role or higher o
 ## {{site.data.keyword.cloud_notm}} and sustainability
 {: #cc-sustainability}
 
-As organizations and users work together to achieve better outcomes for their business and for the environment, digital technologies are a growing source of GHG emissions. There are four areas that are the main source for GHG emissions: data centers, big data analytics, security, and internet usage. For more information about sustainability, see [IT sustainability beyond the data center](https://www.ibm.com/thought-leadership/institute-business-value/report/it-sustainability){: external}.
+As organizations and users work together to achieve better outcomes for their business and for the environment, digital technologies are a growing source of GHG emissions. There are four areas that are the main source for GHG emissions: data centers, large data analytics, security, and internet usage. For more information about sustainability, see [IT sustainability beyond the data center](https://www.ibm.com/thought-leadership/institute-business-value/report/it-sustainability){: external}.
 
 One use case strategy for sustainability involves ESG reporting, which uses environmental, social, and governance reporting to integrate data silos. For more information, explore [IBM Envizi](https://www.ibm.com/products/envizi){: external}.
 

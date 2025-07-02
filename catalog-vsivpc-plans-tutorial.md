@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-02"
 
 keywords: onboard software, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud, software plan, plan, usage-based plan, partner center
 
@@ -100,7 +100,7 @@ Submit your programmatic name for review by completing the following step:
 
 When you onboard your product to {{site.data.keyword.cloud_notm}}, you must define a pricing model for your software in Partner Center. Currently, {{site.data.keyword.cloud_notm}} supports free, usage-based, and bring your own license (BYOL) plans. For more information, see [Defining your pricing model for software](/docs/sell?topic=sell-sw-pricing). For this tutorial, we create a usage-based plan. By adding a usage-based pricing plan, you are indicating that you offer your product as a paid integrated product, and customers need to pay to use it.
 
-When you add a usage-based pricing plan, you provide your suggested retail pricing information. However, {{site.data.keyword.IBM_notm}} reserves the right to set the final pricing for any product that is offered to customers in the {{site.data.keyword.cloud_notm}} catalog.
+When you add a usage-based pricing plan, you provide your suggested retail pricing information. However, {{site.data.keyword.IBM_notm}} reserves the rights to set the final pricing for any product that is offered to customers in the {{site.data.keyword.cloud_notm}} catalog.
 {: important}
 
 To add a usage-based pricing plan to your software, complete the following steps:

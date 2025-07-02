@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-07-02"
 
 keywords: managed services transition, managed services
 
@@ -24,6 +24,7 @@ As this transition approaches, help is available to assist you. If you have ques
 {: #transition-approach}
 
 You have the following options for this transition:
+
 - Opt in to partner with Wanclouds and to transition your management of a managed hosting environment to Wanclouds
 - Opt out to a self-managed environment that you manage yourself
 - Opt out to a self-managed environment with a self-appointed business partner
@@ -91,10 +92,12 @@ The following are FAQ about managed services transition.
 {: #transition-clients}
 
 Effective January 1st, 2024 The Managed Services support offering will transition from managed by IBM to managed by our trusted partner, Wanclouds.
+
 - Only the management of devices is being transitioned.
 - Devices will stay with IBM and will have no impact and there will be no changes to existing Customer accounts (except the line item for managed services will be excluded from the invoice).
 
 Clients have the following option with reference to this transition:
+
 1. Clients can opt-in for transition to Wanclouds
 1. Clients can opt-out of the transition to Wanclouds and can be enabled by IBM to self-manage the environment
 1. Clients can opt-out of the transition and can appoint their own provider to manage the environment for them. IBM will work with the new partner to enable them
@@ -115,6 +118,7 @@ No. Wanclouds has agreed to offer the same scope and deliverables that is been c
 {: #contact-wanclouds}
 
 Wanclouds can be contacted by any one of the following options:
+
 - Website: https://support.Wanclouds.net
 - Email : support@Wanclouds.net
 - Phone: +1 (415) 347-6739
@@ -124,7 +128,7 @@ Wanclouds can be contacted by any one of the following options:
 
 Once client confirm the decision for opting in for the transition. IBM will set up a call with the partner and will actively collaborate with clients and Wanclouds for seamless transition
 
-### What if I do not opt for the transition?
+### What if I don't opt for the transition?
 {: #no-transition}
 
 Once client confirm the decision for opting in. IBM will setup a call with the client and guide and ensure that clients are enabled to self-manage the environment with no IBM involvement

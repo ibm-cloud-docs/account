@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-07-01"
+lastupdated: "2025-07-02"
 
 keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
@@ -561,7 +561,7 @@ A resource instance has a `onetime_credentials` property that determines whether
 Enable one-time view on service instances to align with the least privilege model and avoid shared access to credentials. Shared keys can make it difficult to audit how identities in your account access resources.
 
 #### Managing the one-time view setting for a resource instance
-{: #manage-otv-terra}
+{: #manage-otv-terra-instance}
 
 Users with the Administrator role or IAM action `resource-controller.instance.update_onetime_credential_off` on a service instance can manage the one-time view setting for that instance.
 

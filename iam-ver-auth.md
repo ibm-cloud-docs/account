@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-02"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -25,7 +25,7 @@ You can view a log of recent changes to your verification methods and authentica
 ## Accessing your verification methods and authentication factors
 {: #ver-auth-login}
 
-Verification methods and authentication factors add an extra layer of security to accounts. To view and modify your verification methods and authentication factors, complete the following steps:
+Verification methods and authentication factors add an additional layer of security to accounts. To view and modify your verification methods and authentication factors, complete the following steps:
 
 1. Go to the [Verification methods and authentication factors](https://iam.cloud.ibm.com/mysecurity){: external} page.
 1. Validate your identity with two different verification methods.

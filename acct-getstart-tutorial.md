@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-03-25"
+lastupdated: "2025-07-02"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -68,7 +68,7 @@ For information about how to register your company for a federated ID, see the [
 ### Using a Google ID
 {: #signup-google}
 
-Your Google credentials can be used to sign-up for a new {{site.data.keyword.Bluemix_notm}} account, or can be used to log in to an existing {{site.data.keyword.Bluemix_notm}} account. Users that log in with Google are treated like non-federated users, and multifactor authentication (MFA) is enabled for all users to add an extra layer of security.
+Your Google credentials can be used to sign-up for a new {{site.data.keyword.Bluemix_notm}} account, or can be used to log in to an existing {{site.data.keyword.Bluemix_notm}} account. Users that log in with Google are treated like non-federated users, and multifactor authentication (MFA) is enabled for all users to add an additional layer of security.
 
 This functionality is only available for newly registered IBMids on any eligible domain and existing IBMids on the gmail.com and googlemail.com domains. Logging in with Google credentials is not available for IBMids that are federated with a corporate identity provider through SAML.
 {: note}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-03-18"
+lastupdated: "2025-07-02"
 
 keywords: SAML federation, federation option, federated IBMid, SAML fed, federated
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Which is the right federation option for you?
+# What is the most suitable federation option for you?
 {: #federation-option-for-you}
 
 In the past, {{site.data.keyword.Bluemix_notm}} supported integration with customer's user directories by using IBMid SAML federation. In May 2020, {{site.data.keyword.Bluemix_notm}} introduced an alternative method for clients to federate identities with their {{site.data.keyword.Bluemix_notm}} account.

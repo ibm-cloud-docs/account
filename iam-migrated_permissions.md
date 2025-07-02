@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2019, 2022
+  years: 2019, 2025
 
-lastupdated: "2022-12-19"
+lastupdated: "2025-07-02"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -20,7 +20,7 @@ subcollection: account
 You can use migrated permission access groups to manage a set of classic infrastructure (SoftLayer) permissions for managing billing information and working with support cases. Access groups contain a set of users and service IDs that have the same access. The users in your SoftLayer account who were previously assigned account and support permissions are now assigned to the respective migrated permission access group. As a result, the permissions can be directly managed by using IAM access groups.
 {: shortdesc}
 
-These special access groups include all of the appropriate IAM policies to preserve the original behavior of the SoftLayer account permissions. For example, for a user to continue to view all updates from all users on a support case, the migrated permission access groups for the ticketing SoftLayer account permissions include an extra IAM policy on the User Management service with the viewer role assigned. For more information, see [Assigning user access for working with support cases](/docs/account?topic=account-access#access).
+These special access groups include all of the appropriate IAM policies to preserve the original behavior of the SoftLayer account permissions. For example, for a user to continue to view all updates from all users on a support case, the migrated permission access groups for the ticketing SoftLayer account permissions include an additional IAM policy on the User Management service with the viewer role assigned. For more information, see [Assigning user access for working with support cases](/docs/account?topic=account-access#access).
 
 After your classic infrastructure permissions are migrated, you must discontinue use of those permissions and stop using the SoftLayer CLI or API to manage them. See the following table for the migrated classic infrastructure permissions that are now a part of IAM access groups. Access groups are created only for the permissions that are already assigned to users, so you might notice a subset of the access groups that are in your account that is listed in the following table.
 {: note}

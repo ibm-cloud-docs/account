@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-05-12"
+lastupdated: "2025-07-02"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -43,7 +43,7 @@ A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} acc
 If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
 * If you have advanced or premium support, click **Launch AI Assistant** and type `agent` to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
-* Create a support case by clicking **Create a case** from the "Need more help?" section.
+* Create a support case by clicking **Create a case** from the **Need more help?** section.
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
@@ -72,7 +72,7 @@ Based on your account type, you might manage your credit card outside of the con
 1. Click **Manage payment method**.
 1. Enter your credit card information, and click **Register**.
 
-If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the "Manage my wallet" page to verify that your new credit card information is saved.
+If your credit card requires a MasterCard SecureCode that is sent to a mobile phone, you might see an unexpected error message after you submit the code. Refresh the **Manage my wallet** page to verify that your new credit card information is saved.
 {: note}
 
 ## How do I upgrade my account?
