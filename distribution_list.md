@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-30"
+lastupdated: "2025-07-02"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
 
@@ -28,6 +28,7 @@ In addition to adding email addresses, you can also add up to 10 webhooks to a d
 {: #add-users-console}
 
 To add emails to a notification distribution list, complete the following steps:
+
 1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**.
 2. Select **Add** > **Email**.
 3. Enter a name and an email address.
@@ -55,6 +56,7 @@ When an event of interest occurs on the {{site.data.keyword.Bluemix_notm}} platf
 Before you can add any {{site.data.keyword.en_short}} instance to the notification distribution list, make sure that you already have an [{{site.data.keyword.en_short}} service instance](/catalog/services/event-notifications){: external} that is in the same account as the distribution list.
 If you don't have an {{site.data.keyword.en_short}} service instance, see [Getting started with Event Notifications](/docs/event-notifications?topic=event-notifications-getting-started).
 To add an existing {{site.data.keyword.en_short}} service instance to the notification distribution list, complete the following steps:
+
 1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**.
 1. Click **Add** > **{{site.data.keyword.en_short}}**.
 1. Select an {{site.data.keyword.en_short}} service instance from the {{site.data.keyword.en_short}} instance list. If you don't have an {{site.data.keyword.en_short}} service instance that you can connect to your account, you can create one in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/services/event-notifications){: external}.
@@ -157,22 +159,24 @@ The following descriptions provide information about the field values that are b
 `regions`: This field shows you the location of the event.
 
 `severity`: This field refers to the severity of the event. This can be Severity 1, 2, 3 or 4 for incidents, high, medium, or low for maintenance, and major or minor for announcements. See the following detailed severity level descriptions:
-   * **Incidents**
-     * `Severity 1`: Business-critical functionality is inoperable or critical interference failed. This severity usually applies to the production environment and the inability to access services is causing a critical impact on operations.
-     * `Severity 2`: Core functionality is impacted. Service is operational but causing major impact on usage.
-     * `Severity 3`: Partial or noncritical disruption to functionality with minimal or isolated impact.
-     * `Severity 4`: A minor issue that requires action, but does not impact functionality or usage.
-   * **Maintenance**
-     * `High impact`: Maintenance will, or is likely to cause service outages and disruptions.
-     * `Medium impact`: Maintenance will, or is likely to cause measurable service degradation but not an actual outage.
-     * `Low impact`: Maintenance will cause no service disruption during or after the maintenance window.
-   * **Announcements**
-     * `Major`: Important incidents such as legal notices, service deprecation, or security patches.
-     * `Minor`: Informative announcements such as product enhancements.
+
+    * **Incidents**
+      * `Severity 1`: Business-critical functionality is inoperable or critical interference failed. This severity usually applies to the production environment and the inability to access services is causing a critical impact on operations.
+      * `Severity 2`: Core functionality is impacted. Service is operational but causing major impact on usage.
+      * `Severity 3`: Partial or noncritical disruption to functionality with minimal or isolated impact.
+      * `Severity 4`: A minor issue that requires action, but does not impact functionality or usage.
+    * **Maintenance**
+      * `High impact`: Maintenance will, or is likely to cause service outages and disruptions.
+      * `Medium impact`: Maintenance will, or is likely to cause measurable service degradation but not an actual outage.
+      * `Low impact`: Maintenance will cause no service disruption during or after the maintenance window.
+    * **Announcements**
+      * `Major`: Important incidents such as legal notices, service deprecation, or security patches.
+      * `Minor`: Informative announcements such as product enhancements.
 
 `state`: This field is only for maintenance and notifications. See the following possible values:
-   * Values for *Maintenance* states: Planned, In progress, Completed, Canceled, Failed
-   * Values for *Incident* states: New issue, Investigating, Resolved
+
+    * Values for *Maintenance* states: Planned, In progress, Completed, Canceled, Failed
+    * Values for *Incident* states: New issue, Investigating, Resolved
 
 `title`: The title field tells you what the notification is about. This field is configured to support more languages, although only English is supported currently.
 
@@ -211,6 +215,7 @@ Additional fields might be added in the future without a major version change. T
 If you are ready with the previous steps and have a configured webhook, you can test it out easily. Send a test notification to your webhook and make sure that your webhook integration is working correctly and receives the notification.
 
 Complete the following steps to send a test notification to a webhook:
+
 1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud_notm}} console.
 1. Select the webhook that you would like to send a test notification to, and click the **Actions** icon ![Actions](../icons/action-menu-icon.svg "Actions").
 1. Click **Test** > **Send test**.

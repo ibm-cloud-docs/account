@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2023
-lastupdated: "2023-08-21"
+  years: 2015, 2025
+lastupdated: "2025-07-02"
 
 keywords: payment, charges, pricing plan, service cost, cost, pricing tier, pricing model, pricing
 
@@ -81,7 +81,7 @@ Metered charges
 :   You pay based on your runtime and service consumption. For example, with the Push service, any usage over the free monthly allowance is charged.
 
 Reserved charges
-:   As the account owner of a Pay As You Go account or a Subscription account, you can reserve a service instance, with a long-term commitment, for a discounted price. For example, you can reserve the standard large Db2 on Cloud product for 12 months.
+:   As the account owner of a Pay As You Go account or a Subscription account, you can reserve a service instance, with a long-term commitment, for a discounted price. For example, you can reserve the standard high capacity Db2 on Cloud product for 12 months.
 :   Some {{site.data.keyword.Bluemix_notm}} services offer reserved plans. You can request a reserved plan from the {{site.data.keyword.Bluemix_notm}} catalog by clicking the tile of the service. Then, select the service plan that best meets your needs. If a reserved plan is available, click **Request**, and follow the prompts to send your request. You receive an email that contains the price information of the reserved plan. An {{site.data.keyword.Bluemix_notm}} sales representative also contacts you soon to complete the purchase.
 
 Tiered charges
@@ -140,7 +140,7 @@ The following table illustrates how much you pay with a plan that is based on a 
 ### Block tier
 {: #block_tier}
 
-In the block tier model, the price is a set charge for the quantity you use within a usage level. The total price is the charge for your level of usage regardless of your actual usage. Each successive tier provides a lower price to quantity ratio. For example:
+In the block tier model, the price is a set charge for the quantity you use within a usage level. The total price is the charge for your level of usage regardless of your actual usage. Each successive tier provides a more favorable price to quantity ratio. For example:
 
 |Quantity of Items    |	Total Price for All Items |
 |---------------------|---------------------------|

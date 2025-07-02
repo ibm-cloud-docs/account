@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-02"
 
 keywords: catalog, catalog management, manage catalogs, video
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Catalog management on {{site.data.keyword.cloud_notm}}
 {: #cm-video}

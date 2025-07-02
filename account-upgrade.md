@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-02"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -16,7 +16,7 @@ subcollection: account
 # Upgrading your account
 {: #upgrading-account}
 
-Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you're ready to unlock the full {{site.data.keyword.Bluemix_notm}} catalog, get extra free resources, and more, you can upgrade to a Pay-As-You-Go or Subscription account.
+Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you're ready to unlock the full {{site.data.keyword.Bluemix_notm}} catalog, get additional free resources, and more, you can upgrade to a Pay-As-You-Go or Subscription account.
 {: shortdesc}
 
 You can view your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.Bluemix_notm}} console and checking the Account Type section.
@@ -86,7 +86,7 @@ The following table lists the current upgrade promotional amounts for different 
 
 With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular non-discounted rate only on the overage.
 
-Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a larger subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
+Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a upgraded subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
 
 To upgrade from a Lite account to a Subscription account, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.

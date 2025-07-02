@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-07-02"
 
 keywords:
 
@@ -64,7 +64,7 @@ To turn on this MFA option for a user, they must first set up TOTP.
 ### Setting up TOTP
 {: #totp-questions-setup}
 
-Users can set up TOTP for extra authentication at login. You must set up your TOTP before you or administrator can enable this MFA requirement for you.
+Users can set up TOTP for additional authentication at login. You must set up your TOTP before you or administrator can enable this MFA requirement for you.
 
 To set up TOTP, complete the following steps:
 1. From the console, go to Go to **Manage** > **Access (IAM)** > **Users** > _select a user_ > **Legacy account-based MFA** > **Set up**.
@@ -109,9 +109,10 @@ Users must set up their security questions and answers in their account before y
 ### Setting up security questions
 {: #security-questions-setup}
 
-Users can set up answers to three security questions for extra authentication at login. You must set up your security questions and answers before you or administrator can enable this MFA requirement for you.
+Users can set up answers to three security questions for additional authentication at login. You must set up your security questions and answers before you or administrator can enable this MFA requirement for you.
 
 To set up your security questions, complete the following steps:
+
 1. From the console, go to **Manage** > **Access (IAM)** > **Users** > _select a user_ > **Legacy account-based MFA** > **Set up**.
 2. In the Security questions section, click **Set up**.
 3. Select the questions and add the answers. You must answer all three security questions.

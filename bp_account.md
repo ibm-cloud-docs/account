@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-02-05"
+lastupdated: "2025-07-02"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -92,9 +92,10 @@ There is a [limit](/docs/account?topic=account-known-issues#access-tag-limits) o
 * Use access management tags to control access to the resources and service IDs in your account at scale. By assigning access only to resources and service IDs that have specific tags that are attached to them, you can avoid multiple updates to your defined policies. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
 * Use trusted profiles to automatically grant federated users and compute resources access to your account. This way, federated users can be mapped to one or more trusted profiles during login by evaluating SAML-based attributes to determine which profiles they can apply. Using trusted profiles for compute resources helps you avoid storing credentials to run applications and the management and rotation of credentials. You can also add trusted profiles to access groups to leverage the set of policies you have already created.
 * Assign access by using a group of services so that you need only a single policy to assign access to multiple services. This way, you decrease the number of policies in your account and reduce the time and effort to manage access.
-   * **All Identity and Access enabled services**: All catalog services that use IAM for access management.
-   * **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
-   * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
+
+      * **All Identity and Access enabled services**: All catalog services that use IAM for access management.
+      * **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+      * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
 
 Removing access for inactive identities and inactive policies can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resources and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities) and [Auditing access policies](/docs/account?topic=account-iam-audit-policies).
 {: tip}
@@ -224,7 +225,7 @@ You want to grant all users various roles in the account and the default resourc
 ### Multiple users working together on a single project by using trusted profiles
 {: #account-tesb-users-tp}
 
-In a larger organization, you want to manage access at scale. Some of the members in your organization need to manage the {{site.data.keyword.Bluemix_notm}} account and assign other users access. Some members need to create service instances that incur expenses. Other members are application developers who need to use only the service instances from their application components.
+In an organization, when you want to manage access at scale, some of the members in your organization need to manage the {{site.data.keyword.Bluemix_notm}} account and assign other users access. Some members need to create service instances that incur expenses. Other members are application developers who need to use only the service instances from their application components.
 
 You want to grant all users various roles in the account and the default resource group. You don't need to create more resource groups to separate resources or restrict some users from accessing some of the resources. You can grant the users the roles that are appropriate for their needs by creating trusted profiles for each type of user and map them to the correct profile based on external IdP attributes:
 

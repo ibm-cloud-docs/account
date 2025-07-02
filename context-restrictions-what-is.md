@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-07-02"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -29,6 +29,7 @@ For more information about implementing context-based restrictions in your secur
 {: #restriction-rules}
 
 A rule associates an {{site.data.keyword.cloud_notm}} resource with a set of contexts:
+
 * The cloud resource is specified by resource attributes similar to IAM access policies.
 * A context is a combination of network zones and endpoint types.
 
@@ -37,6 +38,7 @@ The contexts that you configure define the boundary for the associated resources
 The necessary resource attributes in context-based restrictions rules are `accountId` and `serviceName`. Rules must be scoped to an account and a specific service.
 
 Context-based restriction rules are applied by the following logic:
+
 * Access is granted by a rule only when at least one of the rule's contexts allows access.
 * If multiple rules are applicable to a particular resource, access is granted only when all applicable rules allow access.
 * If no rules are applicable to a particular resource, access is determined exclusively by IAM policies.
@@ -96,6 +98,7 @@ Contexts define where your resource can be accessed. A context is made up of the
 {: #network-zones-whatis}
 
 A network zone represents an allowlist of IP addresses where an access request is created. It defines a set of one or more network locations that are specified by the following attributes:
+
 * IP addresses, which include individual addresses, ranges, or subnets.
 * VPCs
 * Service references, which allow access from other {{site.data.keyword.Bluemix}} services.
@@ -152,13 +155,13 @@ In table 1, **All Account Management services** refers to the grouping of Accoun
 Refer to each service offering's documentation for more information about which services to add as a service reference for the service offering that you target in a rule.
 {: important}
 
-
 ### Endpoint types
 {: #context-restrictions-endpint-type}
 
 An endpoint type represents the connection over which an access request is received. It corresponds to the endpoint that receives the connection. You can allow access from all endpoint types that are supported by the service or specific service endpoint types.
 
 The three common endpoint types are as follows:
+
 * Public endpoints can accept requests from anywhere.
 * Private endpoints are available for most requests that originate from within {{site.data.keyword.cloud}}.
 * Direct endpoints are used in Bring-Your-Own-IP scenarios, generally for requests that originate from resources within VPCs.
@@ -224,7 +227,6 @@ To manage rules, you must be assigned an IAM policy with the Administrator role 
 | Editor        | View rules |
 | Administrator | View rules   \n  \n Create rules   \n  \n Update rules   \n  \n Remove rules |
 {: caption="Roles and example actions for target service" caption-side="top"}
-
 
 ## Services integrated with context-based restrictions
 {: #cbr-adopters}

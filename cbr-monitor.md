@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-07-02"
 
 keywords: context-based restrictions, enabled, disabled, report-only, monitor, monitor cbr, cbr, cbr events, context-based restrictions events, denied access
 
@@ -34,7 +34,7 @@ You must create an instance of the {{site.data.keyword.logs_full_notm}} service 
 
 It can be difficult to predict exactly how your rules might affect users, applications, and workflows. At first, you might create rules that are too stringent and break your workflows. Or, they are too accessible and might allow more users than you intend to access your resources. The recommendation is to first set your rule to report-only mode for at least 30 days before you enable it so that you can monitor the rule's impact.
 
-Complete the following steps to view how rules affect your users' and applications' access in report-only mode by using {{site.data.keyword.logs_full_notm}}:
+Complete the following steps to view how rules affect your users and applications access in report-only mode by using {{site.data.keyword.logs_full_notm}}:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **Logging** > **Instances** > **Cloud Logs**.
 1. Click **Open dashboard** on the dashboard that you use to monitor context-based restrictions.
@@ -58,7 +58,7 @@ Complete the following steps to view how rules affect your users' and applicatio
 
 When you enable a rule, some users, applications, and workflows might be affected. If your users or applications can't access something that they previously had access to, you can search in {{site.data.keyword.logs_full_notm}} and view what rules are denying the requests. You can further refine the search by filtering on the subject or resource to identify the implicated rule, which is represented by the `target id`. Then, you can update the rule to allow access so that your workflows don't break. For more information, see [Updating context-based restrictions](/docs/account?topic=account-context-restrictions-update).
 
-Complete the following steps to view how enabled rules affect your users' and applications' access by using {{site.data.keyword.logs_full_notm}}:
+Complete the following steps to view how enabled rules affect your users and applications access by using {{site.data.keyword.logs_full_notm}}:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Observability** > **Logging** > **Instances** > **Cloud Logs**..
 1. Click **Open dashboard** on the dashboard that you use to monitor context-based restrictions.

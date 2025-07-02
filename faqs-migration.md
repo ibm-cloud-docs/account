@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-07-02"
 
 keywords: migration FAQs, data centers
 
@@ -26,13 +26,11 @@ FAQ about migrating resources includes questions about resource and data center 
 
 To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/account?topic=account-dc-closure).
 
-
 ## Do I need to be fully migrated on the date my data center is consolidated?
 {: #dc-fully-migrated}
 {: faq}
 
 Yes. To ensure that you have no interruption in service, we try to allow as much lead time as possible to make the transition easier.
-
 
 ## Will I need to migrate my resources in the future?
 {: #dc-move-again}
@@ -40,18 +38,17 @@ Yes. To ensure that you have no interruption in service, we try to allow as much
 
 We constantly evaluate the quality of our sites to bring you the best and most dependable service. It's possible that we might have other moves as we continue to evaluate some of the older sites.
 
-
 ## How do I select which data center to deploy to?
 {: #dc-select-deploy}
 {: faq}
 
 The following factors might influence which data center you select:
+
 * Proximity to the users of the systems
 * Proximity to any other systems that this server needs to communicate with
 * Any data policies or regulations that require data to be stored in a specific location
 
 For the list of available data centers, see [Locations for resource deployment](/docs/overview?topic=overview-locations).
-
 
 ## What data centers can I use during the transition period?
 {: #dc-transition-sites}
@@ -59,13 +56,11 @@ For the list of available data centers, see [Locations for resource deployment](
 
 You can use any worldwide {{site.data.keyword.cloud_notm}} data center during your transition period, which lasts up to 60 days. See [Locations for resource deployment](/docs/overview?topic=overview-locations) for more information.
 
-
 ## Are the two free months of transition period resources in addition to my existing server time?
 {: #dc-free-months}
 {: faq}
 
 Yes. You can [contact an appropriate support representative](https://www.ibm.com/cloud/data-centers?contactmodule=undefined){: external} to help you through the process of acquiring your transition period servers.
-
 
 ## How do I determine my current hardware configuration?
 {: #dc-determine-config}
@@ -77,13 +72,11 @@ You can find your system configuration details by selecting your device from you
 {: #dc-determine-utilization}
 {: faq}
 
-In general, you need to understand which specific resources within the system are required regarding things like the processor, memory, disk, and network. Having this information can help you better size your new system. For example, a system where memory capacity is frequently overcommitted is likely to benefit from larger memory sizes in the target system that you migrate to.
+In general, you need to understand which specific resources within the system are required regarding things like the processor, memory, disk, and network. Having this information can help you better estimate the capacity of your new system. For example, a system where memory capacity is frequently overcommitted is likely to benefit from higher memory capacity in the target system that you migrate to.
 
 Most operating systems provide tools that you can use to understand the utilization of your system, for example, vmstat and iostat on Linux or Windows System Performance Monitor. Performance monitoring and tuning is something that you might invest significant time and effort in.
 
 For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
-
-
 
 
 
@@ -95,13 +88,11 @@ Compatibility and functionality are two of the main influencers when you choose 
 
 For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
 
-
 ## What bandwidth do I get with my new configuration?
 {: #dc-bandwidth-rate}
 {: faq}
 
 You receive a current bandwidth package that is most closely related to the package you currently have. The rate for that package is whatever your current rate or package includes.
-
 
 ## How do I copy data from my old server to the new one?
 {: #dc-copy-data}
@@ -109,13 +100,11 @@ You receive a current bandwidth package that is most closely related to the pack
 
 You can copy applications and application data from your old server to your new one. For more information, see [Migrating resources to a different data center](/docs/account?topic=account-migrate-data-center).
 
-
 ## Do I need to set up my networking at the new site?
 {: #dc-setup-networking}
 {: faq}
 
 Most likely, your networking needs to change to work with the new servers and site. For more information about setting up your network, see [Setting up a virtual machine network](/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network).
-
 
 ## Can I keep my existing IP addresses?
 {: #dc-ip-addresses}

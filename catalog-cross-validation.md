@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-01-03"
+lastupdated: "2025-07-02"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -84,7 +84,7 @@ Retrieve the CRN associated with your private catalog. You need this to establis
 1. Click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) > **Manage** > **Access (IAM)** > **Trusted profiles**.
 1. Click **Create**.
 1. Enter a name for the trusted profile, such as the name of your private catalog.
-1. Enter a description, such as "This trusted profile authorizes a private catalog in another account to validate a product and run security and compliance scans in this account". Then, click **Continue**.
+1. Enter a description, such as `This trusted profile authorizes a private catalog in another account to validate a product and run security and compliance scans in this account`. Then, click **Continue**.
 1. Select **{{site.data.keyword.cloud}} services** and enter the `Catalog CRN` that you copied.
 
    {{site.data.keyword.cloud_notm}} services, like the Catalog Management service, are static identities that don't use conditions to establish trust. Instead, you establish trust by using the CRN to create a direct link between the profile and a service instance.

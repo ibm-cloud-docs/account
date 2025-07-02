@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-02"
 
 
 keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
@@ -25,7 +25,7 @@ When you invite a user to your account, you can select from three classic infras
 
 When you invite someone to the account, only you, the account owner, or a user with the Manage user classic infrastructure permission, can adjust the permissions for the user. You can assign only the level of permissions or a subset of the permission that you're already assigned, if you're not the account owner. An account owner can update anyone's permissions in the account to have any level of access.
 
-Extra permissions can be set after the user accepts the invitation. For example, the initial permission set assigned on the invitation doesn't grant access to devices. So, you must grant device access after the user accepts the invitation.
+Additional permissions can be set after the user accepts the invitation. For example, the initial permission set assigned on the invitation doesn't grant access to devices. So, you must grant device access after the user accepts the invitation.
 
 Support center account management access is recommended for users that work with classic infrastructure resources. To complete many tasks on classic infrastructure resources, such as creating or deleting a virtual server instance, users must have access to work with support cases. For more information about assigning this type of access, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 {: tip}
