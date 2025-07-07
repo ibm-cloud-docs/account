@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-06-25"
+lastupdated: "2025-07-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7928,6 +7928,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.job.retrieve` | The ability to view a project job. | Administrator, Editor, Operator, Viewer |
 | `project.job.update` | The ability to update a project job. | Administrator, Editor, Operator |
 | `project.job.delete` | The ability to delete a project job. | Administrator |
+| `project.job-run.retrieve-all` | The ability to view a project job's runs. | Administrator, Editor, Operator, Viewer |
+| `project.job-run.retrieve` | The ability to view a project job run | Administrator, Editor, Operator, Viewer |
+| `project.job-run.delete` | The ability to delete a project job run | Administrator |
 {: caption="Service actions - Project" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="project"}

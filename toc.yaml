@@ -448,7 +448,6 @@ toc:
           - ts-credit-card.md
           - ts-email-issue.md
           - ts-vpe-access-parent.md
-          - ts-trusted-profile-support.md
       - topicgroup:
           label: Troubleshooting IAM
           topics:

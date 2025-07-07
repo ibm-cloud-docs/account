@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-07"
 
 keywords: managed services transition, managed services
 
