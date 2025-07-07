@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-07"
 
 keywords: managed services transition, managed services
 
@@ -128,7 +128,7 @@ Wanclouds can be contacted by any one of the following options:
 
 Once client confirm the decision for opting in for the transition. IBM will set up a call with the partner and will actively collaborate with clients and Wanclouds for seamless transition
 
-### What if I don't opt for the transition?
+### What if I don'xt opt for the transition?
 {: #no-transition}
 
 Once client confirm the decision for opting in. IBM will setup a call with the client and guide and ensure that clients are enabled to self-manage the environment with no IBM involvement

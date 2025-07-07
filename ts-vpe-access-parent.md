@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-30"
+lastupdated: "2025-07-07"
 
 keywords: troubleshoot lose access parent, access parent region, vpe object
 
@@ -20,7 +20,7 @@ content-type: troubleshoot
 {: #troubleshoot-vpe-access-parent}
 {: troubleshoot}
 
-When you create a VPE object, you are the owner of that object. During the object creation, you attach it to a parent region. If you lose access to that parent region, you lose the access to use the endpoint, but you don't lose the access to customize the endpoint. 
+When you create a VPE object, you are the owner of that object. During the object creation, you attach it to a parent region. If you lose access to that parent region, you lose the access to use the endpoint, but you don't lose the access to customize the endpoint.
 
 
 
