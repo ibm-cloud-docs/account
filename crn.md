@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-09"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -130,3 +130,5 @@ The following table provides a list of CRN examples.
 | Bucket            | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4:bucket:mybucket` |
 | Child service     | `crn:v1:staging:public:resource-catalog::a/9d67f37fdf745e1b3cbef0ee4e6f2eda::composite:is.vpn` |
 {: caption="CRN examples" caption-side="top"}
+
+To view example steps for retrieving the CRN value, see [Retrieving your instance ID and cloud resource name (CRN)](/docs/key-protect?topic=key-protect-retrieve-instance-ID).
