@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-10"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -27,7 +27,6 @@ This tutorial walks you through the steps for setting up a Pay-As-You-Go account
 ## Create your account
 {: #account-gs-create}
 {: step}
-
 
 First, create an account by using your existing IBMid or a new IBMid. If your company is registered to use a federated ID for single sign-on (SSO), you can use your federated ID instead.
 
@@ -88,19 +87,33 @@ To sign-up with your Google credentials, complete the following steps:
 
 Your Red Hat credentials can be used to sign-up for a new {{site.data.keyword.Bluemix_notm}} account.
 
-It is important to note that a Red Hat ID is not interchangeable with an IBMid, a federated ID, or a Google ID. 
+It is important to note that a Red Hat ID is not interchangeable with an IBMid, a federated ID, or a Google ID.
 
-To sign-up with your Red Hat ID, complete the following steps: 
+To sign-up with your Red Hat ID, complete the following steps:
 
 1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
 1. Enter the email address belonging to your Red Hat ID
 1. Click **Sign up with Red Hat ID.**
 1. On the Red Hat log in screen, enter your Red Hat credentials and click **Log in**
-1. Select your country, and click **Next**. 
-1. Review the terms and conditions. 
+1. Select your country, and click **Next**.
+1. Review the terms and conditions.
 1. Click **Complete account**.
 
 To log in with your Red Hat ID, go to [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and select **Red Hat Login** from the dropdown menu. After that, enter your Red Hat ID email or username and click **Continue**.
+
+#### Onboarding with IBMid Without Decoupling Red Hat SSO
+{: #onboarding-RedatSSO}
+
+To support environments where Red Hat SSO must remain due to production dependencies, use the following steps to onboard successfully with IBMid:
+
+1. Create an IBMid manually in [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}.
+1. The account owner must resend the invitation to the same email address.
+1. When the user opens the new invite, they are prompted to choose between IBMid and Red Hat identity. The user must select IBMid during the onboarding process.
+
+This helps ensure proper registration within {{site.data.keyword.Bluemix_notm}} and prevents any unintended redirection to Red Hat.
+
+If Red Hat SSO is used without integration into IBMid federation, user onboarding will require additional manual steps. Specifically, invited users must create an IBMid before receiving the invitation. Otherwise, when they attempt to accept the invite, the system will redirect them to Red Hat SSO, as designed. To streamline access and avoid unintended redirection, it is recommended to configure identity federation, enabling consistent and automated user onboarding.
+{: note}
 
 ### Personal use availability
 {: #signup-personalaccts}
