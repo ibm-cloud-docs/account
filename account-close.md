@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-06-02"
+lastupdated: "2025-07-11"
 
 keywords: close account, cancel account, delete account, terminate account
 
@@ -29,7 +29,8 @@ To delete a service instance, use the following steps:
 2. Expand the sections to locate the service instance that you want to delete.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
 
-
+All services need to be deleted. However, accounts that still contain some deprecated services and components such as {{site.data.keyword.bpshort}} and {{site.data.keyword.registrylong_notm}} will not be blocked from closing the account in the {{site.data.keyword.Bluemix_notm}} console.
+{: note}
 
 ## Step 2: Canceling all devices
 {: #cancel-devices}
