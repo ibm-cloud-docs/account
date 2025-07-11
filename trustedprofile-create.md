@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-06-26"
+lastupdated: "2025-07-11"
 
 keywords: trusted profile, identity and access management, federated users, compute resources, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access, access group, service IDs, IBM Cloud services, CRN, cloud resource name
 
@@ -660,8 +660,3 @@ fmt.Println(string(b))
 ```
 {: go}
 {: codeblock}
-
-## Trusted profile limitations
-{: #tp-limits}
-
-Users can't use the Support Center when they log in to {{site.data.keyword.cloud_notm}} by applying a trusted profile.
