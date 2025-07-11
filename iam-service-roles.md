@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-10"
+lastupdated: "2025-07-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3679,7 +3679,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table55}
 
-## Enterprise Application Service
+## enterprise-app-java
 {: #enterprise-app-java-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `enterprise-app-java` for the service name.
@@ -3691,7 +3691,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Platform roles - Enterprise Application Service" caption-side="top"}
+{: caption="Platform roles - enterprise-app-java" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="enterprise-app-java"}
 {: class="simple-tab-table"}
@@ -3704,7 +3704,7 @@ Review the available platform and service roles and the actions mapped to each t
 | EnvironmentAccessor | As an EnvironmentAccessor, you can perform all actions specific to an environment (such as staging or production). When you assign this role, you must specify the Environment name resource. Expand Resources, select Specific resources, select Environment name, and choose Staging or Production. The EnvironmentAccessor role should be assigned independently of other roles. |
 | Manager | As a manager, you can access the UI for the service and perform all the actions for this service, such as managing tenants, getting deployment records, and deleting build records. You can also perform all the actions of the developer and EnvironmentAccessor roles. Do not associate or apply the Environment name resource to the manager role. |
 {: row-headers}
-{: caption="Service roles - Enterprise Application Service" caption-side="top"}
+{: caption="Service roles - enterprise-app-java" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="enterprise-app-java"}
 {: class="simple-tab-table"}
@@ -3752,7 +3752,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `enterprise-app-java.connections.read` | List registered on-premise connections | Manager |
 | `enterprise-app-java.connections.create` | Register new on-premise connection | Manager |
 | `enterprise-app-java.connections.delete` | Delete on-premise connection | Manager |
-{: caption="Service actions - Enterprise Application Service" caption-side="top"}
+{: caption="Service actions - enterprise-app-java" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="enterprise-app-java"}
 {: class="simple-tab-table"}
