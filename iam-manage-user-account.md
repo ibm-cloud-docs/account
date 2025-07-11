@@ -2,7 +2,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-11"
 
 keywords: invite, invite users, invitation access, vpn-only user, remove user, delete user, IBMid change, credentials, ID, new ID
 
@@ -90,10 +90,12 @@ You can cancel an invitation for any users that are shown in a Processing or Pen
 {: ui}
 
 Any user with the following permissions can add a VPN-only user:
+
 - For classic infrastructure, you must have the Manage Users permission on the account.
 - For IAM access, you must have the Administrator or Editor role on the user management account management service.
 
 To add a VPN-only user, use the following steps:
+
 1. On the Users page, click **Add VPN-only user**.
 1. Enter the personal information details for the user.
 1. Click **Save**.
@@ -104,7 +106,7 @@ To add a VPN-only user, use the following steps:
 
 To invite users by using the CLI, run the following command:
 ```sh
-ibmcloud account user-invite USER_EMAIL [-o ORG [--org-role ORG_ROLE] [-s SPACE, --space-role SPACE_ROLE]]
+ibmcloud account user-invite USER_EMAIL [--access-groups ACCESS_GROUP_1,ACCESS_GROUP_2...]
 ```
 {: codeblock}
 
