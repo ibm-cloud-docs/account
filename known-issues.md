@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-06-11"
+lastupdated: "2025-07-15"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -81,6 +81,11 @@ Users can still create instances of the following products by using an API or th
 {: #access-tag-limits}
 
 Access management tags are available only when you create an access policy that is scoped for all IAM-enabled services. In this case, when you enable the access based on tags, no other attributes can be added. And, when you base your policy on a specific location or resource group, no tag can be added to the access policy.
+
+### IAM role limitations
+{: #iam-role-limitations}
+
+Creating two roles with different names but the exact same set of actions fail. IAM treats roles with identical permissions as duplicates, even if their names are unique.
 
 ## Access policy version limitations
 {: #policy-version-limit}

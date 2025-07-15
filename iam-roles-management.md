@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-07-15"
 
 keywords: custom access, custom role, create a role, combine actions
 
@@ -19,10 +19,12 @@ subcollection: account
 Each service maps specific actions that you can perform within the context of the service to platform or service roles. From the Roles page in {{site.data.keyword.Bluemix}} Identity and Access Management (IAM), you can view all of the available roles in the account and all roles for a specific service, including the actions that are mapped to each. You can pick and choose actions from all of the roles for a specific service to combine into a custom role of your choice.
 {: shortdesc}
 
-Many services map different sets of actions to different platform or service roles. However, you might want to combine some of the actions that are currently spread across multiple roles for a service to make assigning meet your custom use case. With a custom role, you can pick and choose actions that are mapped to different roles so that next time you assign access to the service, you don't have to select three different roles, for example.
+Many services map different sets of actions to different platform or service roles. However, you might want to combine some of the actions that are currently spread across multiple roles for a service to make assigning meet your custom use case. For example, with a custom role, you can pick and choose actions that are mapped to different roles so that next time you assign access to the service, you don't have to select three different roles.
 
 As a unique usage scenario, you can create your own custom roles for controlling access management tags. It is possible to separate the permissions for attaching and detaching access management tags on the resources. For example, you can create a custom role where a user can attach access management tags to resources, but it does not allow them to remove those tags from them and vice versa.
 
+Creating two roles with different names but the exact same set of actions fail. IAM treats roles with identical permissions as duplicates, even if their names are unique.
+{: note}
 
 ## Required access
 {: #required-access-role-management}
@@ -56,7 +58,6 @@ Custom roles can be created only for individual IAM-enabled services. A custom r
    {: important}
 
 1. Click **Create** when you're done adding actions.
-
 
 If a service removes an action that you use in a custom role, the custom role is not updated, and might not be valid anymore if the role contained only the removed actions.
 {: note}
