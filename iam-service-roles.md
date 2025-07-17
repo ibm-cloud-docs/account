@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-11"
+lastupdated: "2025-07-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -591,6 +591,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.features-rules.patch` | The ability to update an existing rule in feature flag's targeting. | Manager, Writer |
 | `apprapp.features-rules.delete` | The ability to delete an existing rule from feature flag's targeting. | Manager |
 | `apprapp.features-rules-order.patch` | The ability to re-order the rules of feature flag's targeting. | Manager, Writer |
+| `apprapp.variations.list` | The ability to see variations of a feature flag. | Config Operator, Manager, Reader, Writer |
+| `apprapp.variations.create` | The ability to create variations of a feature flag. | Manager |
+| `apprapp.variations.update` | The ability to edit or update existing variation of a feature flag. | Manager |
+| `apprapp.variations.delete` | The ability to delete existing variations of a feature flag. | Manager |
+| `apprapp.experiments-statistics.read` | The ability to view the graphical representation of experiment's analytical results. | Config Operator, Manager, Reader, Writer |
 {: caption="Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}
