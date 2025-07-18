@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-18"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
 
@@ -172,6 +172,9 @@ The following descriptions provide information about the field values that are b
     * **Announcements**
       * `Major`: Important incidents such as legal notices, service deprecation, or security patches.
       * `Minor`: Informative announcements such as product enhancements.
+
+The severity attribute in the request payload can take on a value of 0, 1, 2, 3, or 4.
+{: note}
 
 `state`: This field is only for maintenance and notifications. See the following possible values:
 
