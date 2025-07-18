@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-13"
+lastupdated: "2025-07-18"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -40,6 +40,7 @@ If you enable the User-managed login setting on your User details page, you can 
 {: tip}
 
 To restrict a user to using only specific IP addresses, complete the following steps:
+
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Users**.
 2. Select a user from the list.
 3. From the User details page, go to the **IP address restrictions** section.
@@ -65,6 +66,7 @@ If you are assigned the following access, you can update the restricted IP addre
 * An IAM policy with the Editor, Operator, or Administrator role on the IAM identity service.
 
 To restrict all users to using only specific IP addresses, complete the following steps:
+
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** &gt; **Access (IAM)**, and select **Settings**.
 1. From the Account section, enable **Restrict IP address access**.
 1. Enter the IP addresses. The IP addresses listed are the only ones from which users and service IDs using an API key in the account can log in to {{site.data.keyword.Bluemix}}.
@@ -114,3 +116,12 @@ For more information, see the [Terraform documentation](https://registry.terrafo
 
 You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma.
 {: note}
+
+## Unlocking an account
+{: #unlock_account}
+
+If a user cannot access the {{site.data.keyword.cloud_notm}} account due to IP restrictions, then the user must complete the following steps:
+
+1. Call IBM support at +1 (866) 403-7638.
+1. Select the options as required.
+1. Request assistance to remove the IP restrictions on your account.

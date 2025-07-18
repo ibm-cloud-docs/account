@@ -24,7 +24,6 @@ Initial response Service Level Objectives (SLO) do not apply to any billing, inv
 
 The following table shows the support types available for Pay-As-You-Go accounts, Subscription accounts, and the Enterprise Savings Plan billing model. For more information about accounts, see [Account types](/docs/account?topic=account-accounts).
 
-
 |             | Basic         | Advanced         | Premium         |
 |-------------|---------------|------------------|-----------------|
 | **Description** | Basic business protection that is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go or Subscription account | Prioritized case handling and support experience that is aligned with your business needs for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model | Client engagement that is aligned with your business outcomes to accelerate time-to-value for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model |
@@ -37,7 +36,6 @@ The following table shows the support types available for Pay-As-You-Go accounts
 
 For Enterprise Savings Plans, there is a minimum commitment for Advanced and Premium support. If you don't spend the total committed amount by the end of the commitment term, you are invoiced for the amount that you didn't consume, and any amount used over the commitment is also charged. For more information, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
 {: note}
-
 
 ## Premium support
 {: #premium-support}
@@ -57,29 +55,28 @@ Premium support is for mission-critical environments that have a strategic depen
 On a case-by-case basis, your technical account manager can provide and help coordinate additional support for large-scale, customer-initiated events. The following details describe the event support.
 
 * Time critical actions, including:
-   * Meet with the event team to review the details of the event.
-   * Review critical functions and services that are required.
-   * Highlight key dates and times for actions.
-   * Assemble the team to ensure that plans are understood and actions are defined.
-* A support plan with crisis management, including:
-   * Review the plan from previous years' event and post feedback actions.
-   * Revise the plan to ensure that roles and responsibilities are understood.
-   * Ensure that all service teams are aware of the event and ready for any activity that requires quick assistance or resolution.
-   * Ensure that any maintenance activity is known and understood.
-* A create and practice plan. Actions include:
-   * A dry run of plan and expected or probable issue management.
-   * Test that the alert notifications are working as expected.
-   * Post an event review.
-* An event postmortem review and retrospective, including:
-   * A postmortem with service teams to highlight any areas for improvement.
-   * Documenting and updating the plan for future events.
 
+      * Meet with the event team to review the details of the event.
+      * Review critical functions and services that are required.
+      * Highlight key dates and times for actions.
+      * Assemble the team to ensure that plans are understood and actions are defined.
+      * A support plan with crisis management, including:
+         * Review the plan from previous years' event and post feedback actions.
+         * Revise the plan to ensure that roles and responsibilities are understood.
+         * Ensure that all service teams are aware of the event and ready for any activity that requires quick assistance or resolution.
+         * Ensure that any maintenance activity is known and understood.
+      * A create and practice plan. Actions include:
+         * A dry run of plan and expected or probable issue management.
+         * Test that the alert notifications are working as expected.
+         * Post an event review.
+      * An event postmortem review and retrospective, including:
+         * A postmortem with service teams to highlight any areas for improvement.
+         * Documenting and updating the plan for future events.
 
 ## Advanced support
 {: #standard-support}
 
 Advanced support is for environments with a limited number of business-critical applications.
-
 
 ## Basic support
 {: #basic-support}
