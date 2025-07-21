@@ -2,7 +2,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-21"
 
 keywords: resource, account resources, create resource, access to create resources, delete resource, delete instance, search, find, search for instance, search for resource
 
@@ -243,8 +243,8 @@ Press the Forward Slash key (/) to navigate your cursor to the search field.
 {: #searching-cl}
 {: cli}
 
-You can also search across all your resources by using Lucene query syntax, with a single command by using the {{site.data.keyword.Bluemix_notm}} CLI, starting with version 0.6.7.
-You can search for the following attributes:
+You can also search across all your resources by using Lucene query syntax, with a single command by using the {{site.data.keyword.Bluemix_notm}} CLI.
+The most commonly used resource attributes that you can query and retrieve are:
 
 `name`
 :   The user-defined name of the resource.
@@ -253,16 +253,13 @@ You can search for the following attributes:
 :   The geographical location where the resource is created. The allowed values are, for example, `us-south`, `us-east`, `au-syd`, `eu-gb`, `eu-de`, and `jp-tok`.
 
 `service_name`
-:   The name of the service as it appears in the Name column of the output of `ibmcloud catalog service-marketplace`.
-
-`family`
-:   The cloud component to which your resource belongs. The allowed values are: `cloud_foundry`, `containers`, `container-registry`, `vmware`, `resource_controller`, `is`, `atracker`, `ims`, `iam`.
+:   The name of the service as it appears in the `service-name` segment of the resource's CRN. You can get the allowed values from the **Name** column of the output of `ibmcloud catalog service-marketplace`.
 
 `resource_group_id`
-:   The ID of the resource group.
+:   The resource group ID of the resource.
 
 `type`
-:   The resource type. The allowed values are: `k8-cluster`, `k8-location`, `namespace`, `resource-instance`, `resource-group`, `vmware-solutions`, `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, `key`, `image`, `subnet`, `public-gateway`, `floating-ip`, `network-acl`, `flow-log-collector`, `instance`, `instance-group`, `dedicated-host`, `endpoint-gateway`, `snapshot`, `share`, `backup-policy`, `vpn-server`, `virtual-network-interface`, `placement-group`, `route`, `target`, `cloud-object-storage-infrastructure`, `block-storage`, `file-storage`, `cloud-backup`, `cdn-powered-by-akamai`, `direct-link-cloud-exchange`, `direct-link-cloud-connect`, `direct-link-colocation`, `direct-link-network-service-provider`, `hardware-firewall`, `hardware-firewall-dedicated`, `fortigate-security-appliance-1gb`, `fortigate-security-appliance-10gb`,  `virtual-router-appliance-copy`, `network-gateway-byoa`, `network-gateway-juniper-vsrx`, `ibm-cloud-load-balancer`, `virtual-server`, `bare-metal`, `citrix-virtual-app-desktop`, `bare-metal-server`, `serviceid`.
+:   The resource type as it appears in the `resource-type` segment of the resource's CRN if present. Values depend on the owning service. Example values are: `k8-cluster` for `containers-kubernetes` service; `k8-location` and `k8-connector` for `satellite` service; `resource-group` for `resource-controller` service; `vpc`, `volume`, `vpn`, `load-balancer`, `security-group`, for `is` service; `workspace` for `schematics` service.
 
 `creation_date`
 :   The date on which the resource is created.
@@ -271,13 +268,22 @@ You can search for the following attributes:
 :   The last modification date of the resource.
 
 `tags`
-:   The tags that have been attached to the resource.
+:   The tags attached to the resource.
+
+`access_tags`
+:   The access management tags attached to the resource.
+
+`service_tags`
+:   The service tags attached to the resource.
 
 `tagReferences.tag.name`
 :   The tags that have been attached to a classic infrastructure resource. Requires you to specify `-p classic-infrastructure` parameter.
 
 `_objectType:`
 :   The object type of the classic infrastructure resource. Allowed values are: `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Hardware`, `SoftLayer_Network_Application_Delivery_Controller`, `SoftLayer_Network_Subnet_IpAddress`, `SoftLayer_Network_Vlan`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest`. Requires you to specify `-p classic-infrastructure` parameter.
+
+`tagReferences.tag.name` and `_objectType` are only valid when using the `-p classic-infrastructure` flag.
+{: note}
 
 The usage of `-p classic-infrastructure` for _objectType `SoftLayer_Virtual_DedicatedHost`, `SoftLayer_Network_Vlan_Firewall`, `SoftLayer_Virtual_Guest` and `SoftLayer_Hardware` (for the classic infrastructure bare metal servers only) is deprecated since now they are searchable as all other not classic infrastructure resources.
 {: note}
@@ -311,7 +317,7 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
 * To search for resources that are not classic infrastructure that were created between 16 May 2020 and 20 May 2020, enter the following command:
 
     ```bash
-    ibmcloud resource search "creation_date:[2020-05-16T00:00:00Z TO 2020-05-20T00:00:00Z]"
+    ibmcloud resource search 'creation_date:["2020-05-16T00:00:00Z" TO "2020-05-20T00:00:00Z"]'
     ```
     {: codeblock}
 
@@ -322,23 +328,23 @@ When the `-p classic-infrastucture` parameter is not specified search spans acro
     ```
     {: codeblock}
 
-* To search for resources that are not classic infrastructure and have been tagged with `MyTag`, enter the following command:
+* To search for resources that are not classic infrastructure and have been tagged with `my-tag`, enter the following command:
 
     ```bash
-    ibmcloud resource search 'tags:MyTag'
+    ibmcloud resource search 'tags:my-tag'
     ```
     {: codeblock}
 
 * To search for all classic infrastructure virtual servers whose fully qualified domain name is `MyVM`, enter the following command:
     ```bash
-    ibmcloud resource search “doc.fullyQualifiedDomainName:MyVM AND service_name:virtual-server”
+    ibmcloud resource search “doc.fullyQualifiedDomainName:MyVM AND service_name:virtual-server"
     ```
     {: codeblock}
 
-* To search for all classic infrastructure resources that have been tagged with `MyTag`, enter the following command:
+* To search for all classic infrastructure resources that have been tagged with `my-tag`, enter the following command:
 
     ```bash
-    ibmcloud resource search 'tagReferences.tag.name:MyTag' -p classic-infrastructure
+    ibmcloud resource search 'tagReferences.tag.name:my-tag' -p classic-infrastructure
     ```
     {: codeblock}
 
