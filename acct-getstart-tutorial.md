@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-10"
+lastupdated: "2025-07-21"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -177,6 +177,7 @@ The following table shows the countries where personal use of the platform not r
 
 To work with a local Business Partner, go to the [IBM Business Partner Directory](https://www.ibm.com/partnerplus/directory/companies){: external}. Customers are not required to have a VAT ID to work with a local Business Partner.
 
+If you are trying to gain access to IBM Quantum Platform and your country is listed in the [Personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts) table, see [Having trouble creating an accout or logging in?](https://quantum.cloud.ibm.com/docs/en/support#having-trouble-creating-an-account-or-logging-in){: external}.
 
 ## Set up account MFA settings
 {: #account-gs-mfa}
