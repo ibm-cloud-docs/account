@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-07-17"
+lastupdated: "2025-07-23"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -20,7 +20,7 @@ Output that is provided by the carbon calculator is provided “as-is” for inf
 
 {{site.data.keyword.cloud_notm}}'s carbon calculator displays the greenhouse gas (GHG) emissions for an account by monitoring your electricity consumption for services, resources, and the location and efficiency of your data centers. Tracking your GHG emissions is important so that you can know how much GHG emissions your account is associated with, and it helps you manage and mitigate your carbon footprint over time.
 
-All service workloads across all sites are metered for electricity consumption or estimations based on hardware profiles. Service usage is also tracked by account, location, and over time. Data is then processed to produce a standards-based GHG emission estimate for each account per service, per location, and resource group. {{site.data.keyword.cloud_notm}} has a resilient global network of locations to host data center workloads and provides three tiers of regions: multizone regions, single-campus multizone regions, and data centers. For more information, see [IBM Cloud global data centers](https://www.ibm.com/cloud/data-centers){: external}.
+All service workloads across all sites are metered for electricity consumption or estimations based on hardware profiles. Service usage is also tracked by account, location, and over time. Data is then processed to produce a standards-based GHG emission estimate for each account per service, per location, and resource group. {{site.data.keyword.cloud_notm}} has a resilient global network of locations to host data center workloads and provides three tiers of regions: multizone regions, single-campus multizone regions, and data centers. For more information, see [IBM Cloud global data centers](https://www.ibm.com/solutions/cloud-data-centers){: external}.
 
 The carbon calculator provides a wide range of features to track your GHG emissions:
 
