@@ -15,22 +15,22 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ about Context-based restrictions
+# FAQ about context-based restrictions
 {: #cbrfaq}
 
-FAQ for {{site.data.keyword.cloud}} Context-based restrictions might include questions about access restrictions for {{site.data.keyword.cloud_notm}} resources.
+FAQ for {{site.data.keyword.cloud}} context-based restrictions might include questions about access restrictions for {{site.data.keyword.cloud_notm}} resources.
 {: shortdesc}
 
 To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 
-## What are {{site.data.keyword.cloud_notm}} Context-based restrictions?
+## What are {{site.data.keyword.cloud_notm}} context-based restrictions?
 {: #whatiscbr}
 {: faq}
 {: support}
 
 As an account owner or administrator, you can define and enforce access restrictions for {{site.data.keyword.cloud}} resources based on the network location of access requests by enabling context-based restrictions. For more information, see [What are context-based restrictions?](/docs/account?topic=account-context-restrictions-whatis).
 
-## How do you use Context-based restrictions and IAM policies together?
+## How do you use context-based restrictions and IAM policies together?
 {: #iam-cbr-diff}
 {: faq}
 
@@ -39,7 +39,7 @@ These restrictions work with traditional IAM policies, which are based on identi
 Unlike IAM policies, context-based restrictions don't assign access. Context-based restrictions check that an access request comes from an allowed context that you configure.
 {: note}
 
-## What's the difference between Context-based restrictions and allowed IP addresses?
+## What's the difference between context-based restrictions and allowed IP addresses?
 {: #ip-cbr-diff}
 {: faq}
 
@@ -51,8 +51,8 @@ Unlike IAM policies, context-based restrictions don't assign access. Context-bas
 
 As an administrator, you manage users, applications, and workflows that depend on having the correct access when they need it. To make sure that your context-based restrictions rules don't brake an access flow, set the rule to report-only mode for at least 30 days before you enable the rule. This way, you can monitor the impact of the rule on your access flows, such as when access is denied or allowed and for which identities. For more information, see [Monitoring context-based restrictions](/docs/account?topic=account-cbr-monitor).
 
-## How can I create GEO-based restrictions for account access by using Context-Based Restrictions in {{site.data.keyword.cloud_notm}}?
+## How can I create GEO-based restrictions for account access by using context-Based Restrictions in {{site.data.keyword.cloud_notm}}?
 {: #geobased-restrictions}
 {: faq}
 
-Currently, {{site.data.keyword.cloud_notm}} does not support GEO-based account access control through Context-based restrictions. This is a known limitation within the platform, and such a functionality is not available now.
+Currently, {{site.data.keyword.cloud_notm}} does not support GEO-based account access control through context-based restrictions. This is a known limitation within the platform, and such a functionality is not available now.
