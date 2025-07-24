@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-07"
+lastupdated: "2025-07-23"
 
 keywords: migrate, migrating data center, migrate resources, data center
 
@@ -21,7 +21,7 @@ subcollection: account
 
 Throughout the data center migration process, help is available. To take advantage of special offers, or learn about recommended configurations, use one of the following options to contact the {{site.data.keyword.IBM_notm}} 24x7 Client Success team:
 
-* [Live chat](https://www.ibm.com/cloud/data-centers?contactmodule&focusArea=WCP%20-%20Pooled%20CSM){: external}
+* [Live chat](https://www.ibm.com/solutions/cloud-data-centers){: external}
 * Phone: (US) 866-597-9687; (EMEA) +31 20 308 0540; (APAC) +65 6622 2231
 
 For information about which data centers are closing, see [Data center closures](/docs/account?topic=account-dc-closure). For a list of the data centers that are available, see [Locations for resource deployment](/docs/overview?topic=overview-locations).

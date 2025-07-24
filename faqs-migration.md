@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-23"
 
 keywords: migration FAQs, data centers
 
@@ -60,7 +60,7 @@ You can use any worldwide {{site.data.keyword.cloud_notm}} data center during yo
 {: #dc-free-months}
 {: faq}
 
-Yes. You can [contact an appropriate support representative](https://www.ibm.com/cloud/data-centers?contactmodule=undefined){: external} to help you through the process of acquiring your transition period servers.
+Yes. You can [contact an appropriate support representative](https://www.ibm.com/solutions/cloud-data-centers){: external} to help you through the process of acquiring your transition period servers.
 
 ## How do I determine my current hardware configuration?
 {: #dc-determine-config}
@@ -76,7 +76,7 @@ In general, you need to understand which specific resources within the system ar
 
 Most operating systems provide tools that you can use to understand the utilization of your system, for example, vmstat and iostat on Linux or Windows System Performance Monitor. Performance monitoring and tuning is something that you might invest significant time and effort in.
 
-For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
+For more information, contact the [Client Success team](https://www.ibm.com/solutions/cloud-data-centers){: external}.
 
 
 
@@ -86,7 +86,7 @@ For more information, contact the [Client Success team](https://www.ibm.com/clou
 
 Compatibility and functionality are two of the main influencers when you choose a new operating system. Older versions of operating systems can present challenges with migration. Installation media might not be compatible and the server hardware might not be supported by the older operating system. The best course of action is to compare specs and ensure that the operating system is compatible. You must verify that the necessary development tools and operating system or middleware functions are available on the new platform. In general, Linux type systems are better at supporting older applications on newer versions of the operating system than Windows.
 
-For more information, contact the [Client Success team](https://www.ibm.com/cloud/data-centers?focusArea=WCP%20-%20Pooled%20CSM&contactmodule){: external}.
+For more information, contact the [Client Success team](https://www.ibm.com/solutions/cloud-data-centers){: external}.
 
 ## What bandwidth do I get with my new configuration?
 {: #dc-bandwidth-rate}
