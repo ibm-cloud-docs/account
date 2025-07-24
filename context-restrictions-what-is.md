@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-07-24"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -243,7 +243,14 @@ You can create context-based restrictions for the following services if you are 
 | IAM Access Management Service | Account Management | No | `iam-access-management` |
 | IAM Identity Service  | Account Management | No | `iam-identity`|
 | IAM User Management | Account Management | No | `user-management` |
-| [{{site.data.keyword.atracker_short}}](/docs/account?topic=account-at_events_cbr) | IAM-enabled | Yes | `logdnaat` |
+| [{{site.data.keyword.atracker_short}}](/docs/account?topic=account-at_events_cbr) | Account Management | No | `atracker` |
+| {{site.data.keyword.logs_full_notm}} | IAM-enabled | No | `logs` |
+| {{site.data.keyword.mon_full_notm}} | IAM-enabled | No | `sysdig-monitor` |
+| Enterprise Application Service | IAM-enabled | No | `enterprise-app-java` |
+| Hyper Protect Crypto Services | IAM-enabled | Yes | `hs-crypto` |
+| MQ | IAM-enabled | Yes | `mqcloud` |
+| Security and Compliance Center Workload Protection | IAM-enabled | No | `sysdig-secure` |
+| Tagging Service | Account Management | No | `ghost-tags` |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled | No | `apprapp` |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | No | `cloud-object-storage` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | No | `codeengine` |
