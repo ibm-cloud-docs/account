@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-25"
+lastupdated: "2025-07-30"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3590,6 +3590,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.templates.list` | This action is to list all templates | Administrator, Manager, Reader, Writer |
 | `event-notifications.templates.update` | This action is to update a template | Administrator, Manager, Writer |
 | `event-notifications.templates.delete` | This action is to delete a single template | Administrator, Manager, Writer |
+| `event-notifications.pre-defined-templates.list` | This action is to get list of pre-defined-templates | Administrator, Channel Editor, Manager, Reader, Writer |
+| `event-notifications.pre-defined-templates.read` | This action is to get list of pre-defined-template | Administrator, Channel Editor, Manager, Reader, Writer |
+| `event-notifications.pre-defined-templates.create` | This action is to create a pre-defined-template | Pool ID Manager |
+| `event-notifications.pre-defined-templates.update` | This action is to update a pre-defined-template | Pool ID Manager |
+| `event-notifications.pre-defined-templates.delete` | This action is to delete a pre-defined-template | Pool ID Manager |
 | `event-notifications.pool-id-mapping.create` | This action is to create a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.pool-id-mapping.delete` | This action is to delete a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.pool-id-mapping.update` | This action is to update a new pool id mapping for a destination | Pool ID Manager |
