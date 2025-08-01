@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-30"
+lastupdated: "2025-08-01"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4634,7 +4634,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table75}
 
-## Cloud Internet Services
+## internet-svcs
 {: #internet-svcs-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `internet-svcs` for the service name.
@@ -4646,7 +4646,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Service roles - Cloud Internet Services" caption-side="top"}
+{: caption="Service roles - internet-svcs" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="internet-svcs"}
 {: class="simple-tab-table"}
@@ -4657,17 +4657,18 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `internet-svcs.zones.read` | View all zone settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
 | `internet-svcs.zones.update` | Modify all zone settings but can't create or delete them. | Manager, Writer |
-| `internet-svcs.zones.manage` | View, Modify, Create, and Delete all zone settings. | Manager |
+| `internet-svcs.zones.manage` | View, Modify, Create and Delete all zone settings. | Manager |
 | `internet-svcs.reliability.read` | View all Reliability settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
 | `internet-svcs.reliability.update` | Modify all Reliability settings except for pools and monitors. | Manager, Writer |
-| `internet-svcs.reliability.manage` | View, Modify, Create, and Delete all Reliability settings except for pools and monitors. | Manager |
+| `internet-svcs.reliability.manage` | View, Create, Modify and Delete all Reliability settings except for pools and monitors. | Manager |
 | `internet-svcs.security.read` | View all Security settings except for instance level firewall rules. | Manager, Reader, Service Configuration Reader, Writer |
 | `internet-svcs.security.update` | Modify all Security settings except for instance level firewall rules. | Manager, Writer |
-| `internet-svcs.security.manage` | View, Modify, Create, and Delete all Security settings except for instance level firewall rules. | Manager |
-| `internet-svcs.performance.read` | View all Performance settings but can't modify them. | Manager, Reader, Service Configuration Reader, Writer |
-| `internet-svcs.performance.update` | Modify all Performance settings but cannot create or delete. | Manager, Writer |
-| `internet-svcs.performance.manage` | View, Modify, Create, and Delete all Performance settings. | Manager |
-{: caption="Service actions - Cloud Internet Services" caption-side="top"}
+| `internet-svcs.security.manage` | View, Create, Modify and Delete all Security settings except for instance level firewall rules. | Manager |
+| `internet-svcs.performance.read` | View all Performance settings. | Manager, Reader, Service Configuration Reader, Writer |
+| `internet-svcs.performance.update` | Modify all Performance settings. | Manager, Writer |
+| `internet-svcs.performance.manage` | View, Create, Modify and Delete all Performance settings. | Manager |
+| `internet-svcs.zones.metrics` | View all metrics for the zone | Manager |
+{: caption="Service actions - internet-svcs" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="internet-svcs"}
 {: class="simple-tab-table"}
@@ -8424,19 +8425,19 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table163}
 
-## SDS as a Service
+## software-defined-storage
 {: #software-defined-storage-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `software-defined-storage` for the service name.
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
-| Operator | As an operator, you can perform platform actions that are required to configure and operate deployments. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
-| Viewer | As a viewer, you can view deployments, but you can't modify them. In addition, you can also inspect, the s3 certificate and view quota. |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
+| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Platform roles - SDS as a Service" caption-side="top"}
+{: caption="Platform roles - software-defined-storage" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="software-defined-storage"}
 {: class="simple-tab-table"}
@@ -8445,9 +8446,9 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Manager | As a manager, you have permissions beyond the editor role to complete privileged actions as defined by the service. You can create, update, delete and view service level resources such as volumes, hosts, and S3 credentials. |
+| Manager | As a manager, you have permissions beyond the editor role to complete privileged actions as defined by the service. You can create, update, delete and view service level resources such as volumes, hosts, snapshots and S3 credentials. |
 {: row-headers}
-{: caption="Service roles - SDS as a Service" caption-side="top"}
+{: caption="Service roles - software-defined-storage" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="software-defined-storage"}
 {: class="simple-tab-table"}
@@ -8473,7 +8474,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `software-defined-storage.certificate.inspect` | Inspect certificate | Administrator, Editor, Operator, Viewer |
 | `software-defined-storage.certificate.delete` | Delete certificates | Administrator, Editor, Operator |
 | `software-defined-storage.certificate.create` | Create certificate | Administrator, Editor, Operator |
-{: caption="Service actions - SDS as a Service" caption-side="top"}
+| `software-defined-storage.snapshot.create` | Create snapshots | Manager |
+| `software-defined-storage.snapshot.read` | Read snapshots | Manager |
+| `software-defined-storage.snapshot.update` | Update snapshots | Manager |
+| `software-defined-storage.snapshot.delete` | Delete snapshots | Manager |
+{: caption="Service actions - software-defined-storage" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="software-defined-storage"}
 {: class="simple-tab-table"}
