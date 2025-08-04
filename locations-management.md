@@ -2,7 +2,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-30"
+lastupdated: "2025-08-01"
 
 keywords: location management, locations, region
 
@@ -71,11 +71,11 @@ Filter by different location parameters by using the syntax shown in each exampl
 
 | Parameter                          | Example                          | Description                                    |
 |------------------------------------|----------------------------------|------------------------------------------------|
-| Geography                          | `geo_id:na,ap`                   | Geography ID is either `na` or `ap`            |
-| Country                            | `country_id:us,ca,jp`            | Country ID is either `us`, `ca`, or `jp`       |
-| Region ID                          | `id:a,b,c`                       | Region ID is either `a`, `b`, `c`              |
-| Metro                              | `metro_id:dal`                   | Metro ID is `dal`                              |
-| Capability                         | `cap:on-prem`                    | Capability on-premises is registered               |
+| Geography                          | `geo:na,ap`                      | Geography is either `na` or `ap`               |
+| Country                            | `country:us,ca,jp`               | Country is either `us`, `ca`, or `jp`          |
+| Region ID                          | `id:a,b,c`                       | Region is either `a`, `b`, `c`                 |
+| Metro                              | `metro:dal`                      | Metro is `dal`                                 |
+| Capability                         | `cap:on-prem`                    | Capability on-premises is registered           |
 | Tag                                | `tag:t1`                         | Regions with a `t1` tag                        |
 | Location type                      | `public:false`                   | Private regions                                |
 | Kind                               | `kind:region`                    | [Group of one or more zones](/docs/overview?topic=overview-locations#table-mzr)|
@@ -89,5 +89,5 @@ If you have more complex and specific location requirements, you might need to u
 | Example                  | Description                                                             |
 |--------------------------|-------------------------------------------------------------------------|
 | `country:de,uk\|id:my-private-region`    | All regions in `de` or `uk` countries as well as (OR) region (id) `my-private-region`|
-| `geo_id:na^cap:name:power` | Any region in North America geography that has a (AND) power capability |
+| `geo:na^cap:name:power` | Any region in North America geography that has a (AND) power capability |
 {: caption="Example syntax for specifying multiple location criteria." caption-side="top"}
