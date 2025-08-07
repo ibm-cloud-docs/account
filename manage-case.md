@@ -412,7 +412,7 @@ You can create and manage custom tags that can be attached to support cases. The
 Before you can tag cases, you must create tags at the account level. To do so, complete the following steps:
 
 1. Navigate to **Support** > **Manage cases**.
-1. Click the edit tags icon ![alt text](images/Edit-tags.png) to add as many tags as needed.
+1. Click edit tags to add as many tags as needed.
 These tags are customizable and can reflect services, incidents, teams, or any other classification relevant to your organization.
 1. Click **Save**.
 
