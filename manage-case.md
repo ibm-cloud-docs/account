@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-06-03"
+lastupdated: "2025-08-07"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -400,3 +400,28 @@ To ensure that users are notified about updates to an existing support case that
 
    Users that are added to the watchlist must be a member of the account in which the case was created. For more information about assigning users access to your account, see [Adding users to your case management access group](/docs/account?topic=account-access&interface=ui#iam-managed).
    {: note}
+
+## Creating and managing case tags
+{: #create-case-tags}
+
+You can create and manage custom tags that can be attached to support cases. These tags help categorize cases by service, incident, or any custom logic, making it simpler to search, filter, and manage large volumes of support interactions.
+
+### Creating tags in your account
+{: #create-tags-account}
+
+Before you can tag cases, you must create tags at the account level. To do so, complete the following steps:
+
+1. Navigate to **Support** > **Manage cases**.
+1. Click edit tags to add as many tags as needed.
+These tags are customizable and can reflect services, incidents, teams, or any other classification relevant to your organization.
+1. Click **Save**.
+
+After you create the tags, you can associate them with a case by clicking **Case Tags**. You can also remove tags by using the same interface.
+
+You can attach up to 20 tags to a single support case.
+{: note}
+
+To find cases with specific tags, click one or more tags. For example, click `tag100` or `tag100` and `tag102` to view all associated cases.
+
+Only cases that contain all selected tags are displayed, as the search option uses an AND condition. OR filtering is not supported.
+{: note}
