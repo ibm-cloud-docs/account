@@ -43,16 +43,16 @@
       "view_more": "/docs/overview?topic=overview-whatsnew",
       "tiles": [
         {
+          "date": "07 August 2025",
+          "title": "Federate enterprise IdP administrators to IBM Cloud by using SAML"
+        },
+        {
+          "date": "01 July 2025",
+          "title": "Manage one-time view credentials"
+        },
+        {
           "date": "13 December 2024",
           "title": "Service ID limits are increased with groups"
-        },
-        {
-          "date": "31 May 2024",
-          "title": "Onboarding software with usage-based pricing plans"
-        },
-        {
-          "date": "06 December 2023",
-          "title": "Limit access with resource attribute-based conditions"
         }
       ]
     }
