@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-09"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR
 
@@ -103,7 +103,7 @@ To view the Incident reports page and check RCAs, complete the following steps:
 1. See the table for the incident reports and click the **Download** icon ![Download icon](../icons/download.svg "Download") to download each report.
 
 ## Advanced status search
-{: #adv-search}
+{: #adv-status-search}
 
 You can search across all tabs on the [Status page](/status), but did you know that you can build URL search values by using query parameters from outside the console?
 {: shortdesc}

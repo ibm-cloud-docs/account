@@ -20,7 +20,7 @@ When you claim profiles and controls, you must evaluate the resources that were 
 After your scan completes, you can return to your private catalog to continue the onboarding process.
 
 ### Adding compliance controls
-{: #add-controls}
+{: #add-compliance-controls}
 {: ui}
 
 Add the profiles and controls that you want to claim.
@@ -32,7 +32,7 @@ Add the profiles and controls that you want to claim.
 1. Click **Add**.
 
 ### Applying {{site.data.keyword.compliance_short}} scans
-{: #add-scc-scans}
+{: #apply-scc-scans}
 {: ui}
 
 Add the scans that you previously ran in the {{site.data.keyword.compliance_short}}. {{site.data.keyword.compliance_short}} scans determine adherence to regulatory controls. For more information, see [Scanning your resources](/docs/security-compliance?topic=security-compliance-scan-resources).

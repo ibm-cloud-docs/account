@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-09"
 
 keywords: apptio, cost benefit analysis
 
@@ -32,7 +32,7 @@ You can view other versions of the CSV if you have earlier account summary repor
 - Before February 2023 is [version 0.1](#account-summary-csv-version-0-1).
 
 ### Account summary CSV version 1.2
-{: #account-summary-csv-version-1-2}
+{: #account-summary-csvversion-1-2}
 
 The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from July 2024 to present.
 
@@ -139,7 +139,7 @@ The following table is version 1.2 and the most recent CSV version. You get this
 
 
 ### Account summary CSV version 1.1
-{: #account-summary-csv-version-1-1}
+{: #account-summary-csvversion-1-1}
 
 You will get CSV version 1.1 if the data that you're viewing is from March 2024 to June 2024.
 
@@ -244,7 +244,7 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 {: tab-title="Account Resource Usage"}
 
 #### Account summary CSV version 1.0
-{: #account-summary-csv-version-1-0}
+{: #account-summary-csvversion-1-0}
 
 You will get CSV version 1.0 if the data that you're viewing is from October 2023 to March 2024.
 
@@ -348,7 +348,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 {: tab-title="Account Resource Usage"}
 
 ### Account summary CSV version 0.2
-{: #account-summary-csv-version-0-2}
+{: #account-summary-csv-version-02}
 
 You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2023.
 
@@ -449,7 +449,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 {: tab-title="Account Resource Usage"}
 
 ### Account summary CSV version 0.1
-{: #account-summary-csv-version-0-1}
+{: #account-summary-csv-version-01}
 
 You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
 
@@ -835,7 +835,7 @@ You will get CSV version 0.1 if the data that you're viewing is from before Febr
 {: tab-title="Account Instance Usage"}
 
 ### User tags
-{: #acct-instance-user-tags}
+{: #user-tags}
 
 For tags that are of `key:value` format, a new column is added for each and every unique `key`, with the `key` as the column name and the `value` as the column value for the corresponding instance usage row. For example, if there are two instances, `i1` and `i2`, with tag `env:prod` on `i1` and tags `env:test` and `team:backend` on `i2`, there would be two additional columns named `env` and `team`. And only the `i1` row will have value `prod` under the `env` column. The `i2` row will have values `test` and `backend` under the `env` and `team` columns. The following table shows the example layout.
 
@@ -847,7 +847,7 @@ For tags that are of `key:value` format, a new column is added for each and ever
 
 
 ### Service tags
-{: #acct-instance-service-tags}
+{: #service-tags}
 
 If the account has [Projects](https://cloud.ibm.com/docs/secure-enterprise?topic=secure-enterprise-understanding-projects) provisioned in it, then all the resource instances that are part of a project will have some service tags attached to them. These service tags are also of `key:value` type and they indicate the `project_id` and `config_id` that the project resource instance belongs to. Similar to the `key:value` user tags, a new column is added for each and every unique service tag `key`, with the `key` as the column name and the `value` as the column value for the corresponding instance usage row.
 
