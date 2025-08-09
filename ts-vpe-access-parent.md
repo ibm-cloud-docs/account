@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-07"
+lastupdated: "2025-08-09"
 
 keywords: troubleshoot lose access parent, access parent region, vpe object
 
@@ -35,7 +35,8 @@ There are a couple of different scenarios for fixing this issue. You can contact
 If you didn't share your VPE object with any accounts, you can change the parent. If you shared your object with other accounts and you lost access and the region wasn't deleted, the shared accounts on the object still have access to the endpoint. If this is true, then you can't change the parent region on your object.  
 
 To update the parent region, use the following steps:
+
 1. Go to **Manage** > **Catalogs** > **Private catalogs** in the {{site.data.keyword.cloud_notm}} console, and select **Objects**
 1. Select your object from the table. 
-1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") from the Details section and update your parent. 
+1. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") from the Details section and update your parent.
 {: tsResolve}

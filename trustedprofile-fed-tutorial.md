@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-08-09"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account
@@ -35,7 +35,7 @@ Let's say that Marla is the manager of a dev team at an airline company. The tea
 * Make sure you're assigned the following access:
    * Administrator role in the account to create a trusted profile
    * Administrator role on the specific resources to which you are assigning access
-* Enable authentication from an external identity provider. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
+* Enable authentication from an external identity provider. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
 * Create an instance of the following services and add them to a resource group for this tutorial.
    * {{site.data.keyword.containerlong_notm}}
    * {{site.data.keyword.toneanalyzerfull}}

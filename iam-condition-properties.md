@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-09"
 
 keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, time-based, resource attribute
 
@@ -29,7 +29,7 @@ Name
 :   Enter a custom name that helps you remember what type of users you are adding to an access group or trusted profile.
 
 Identity provider (IdP)
-:   The dynamic rule or trusted profile is evaluated only if the user who is logging in authenticates by using the enterprise IdP with this issuer URI. Your IdP URL is displayed in the console for you to copy and paste when you create a dynamic rule or trusted profile. For example, `https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20`. You can also view th IdP by clicking `View identity provider (IdP) data`. For IBMid, the IdP is the SAML "entityId" field, sometimes referred to as the issuer ID, and is part of the federation configuration when you are onboarding with IBMid. For App ID, equivalent syntax is the "realm ID". For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration)
+:   The dynamic rule or trusted profile is evaluated only if the user who is logging in authenticates by using the enterprise IdP with this issuer URI. Your IdP URL is displayed in the console for you to copy and paste when you create a dynamic rule or trusted profile. For example, `https://w3id.sso.ibm.com/auth/sps/samlidp2/saml20`. You can also view th IdP by clicking `View identity provider (IdP) data`. For IBMid, the IdP is the SAML "entityId" field, sometimes referred to as the issuer ID, and is part of the federation configuration when you are onboarding with IBMid. For App ID, equivalent syntax is the "realm ID". For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration)
 
 Session duration
 :   The dynamic access group membership or trusted profile session expires after the number of hours that are specified in this property. For example, if the property is set to 24 hours, the user’s dynamic or trusted profile session ends one day (24 hours) after they log in.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-23"
+lastupdated: "2025-08-09"
 
 keywords: migrate, migrating data center, migrate resources, data center
 
@@ -47,7 +47,7 @@ Complete the following steps to migrate resources to a new data center:
 
 1. Copy your data to a new server by using the following methods. You must establish connectivity between the old and new servers and have sufficient storage in the new server.
 
-* Use [Secure Copy Protocol (SCP)](https://www.ibm.com/docs/en/flashsystem-v7000u/1.6.2?topic=system-using-scp){: external} to securely copy a file from source to destination.
+* Use [Secure Copy Protocol (SCP)](https://www.ibm.com/docs/en/flashsystem-v7000u){: external} to securely copy a file from source to destination.
 * Use [rsync](https://download.samba.org/pub/rsync/rsync.1){: external} if you need to copy multiple files. Rsync also copies directory structures and preserves file permissions.
 * Migrate your virtual server instance [from one classic data center to another](/docs/virtual-servers?account=virtual-servers-migrating-vsi-new-datacenter).
 * Migrate your [virtual server instance](/docs/vpc?topic=vpc-migrate-vsi-to-vpc) by creating an image template and deploying it in a new {{site.data.keyword.vpc_short}}.
