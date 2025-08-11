@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-08"
+lastupdated: "2025-08-09"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -596,6 +596,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `apprapp.variations.update` | The ability to edit or update existing variation of a feature flag. | Manager |
 | `apprapp.variations.delete` | The ability to delete existing variations of a feature flag. | Manager |
 | `apprapp.experiments-statistics.read` | The ability to view the graphical representation of experiment's analytical results. | Config Operator, Manager, Reader, Writer |
+| `apprapp.config.status` | The ability to view the status of import or export operation. | Config Operator, Manager, Reader, Writer |
 {: caption="Service actions - App Configuration" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apprapp"}

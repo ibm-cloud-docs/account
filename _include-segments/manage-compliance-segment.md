@@ -7,7 +7,7 @@ You can add profiles and controls to your software to prove that it meets securi
 Only profiles and controls that are supported by the {{site.data.keyword.compliance_short}} and validated by {{site.data.keyword.compliance_short}} scans appear in the catalog.
 
 ### Run a Security and Compliance Center scan
-{: #run-scc-scans}
+{: #run-scc-compliance-scans}
 {: ui}
 
 When you claim profiles and controls, you must evaluate the resources that were created during validation to ensure compliance. To run a scan, complete the following steps:
@@ -15,12 +15,12 @@ When you claim profiles and controls, you must evaluate the resources that were 
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) **> Security and Compliance** to access {{site.data.keyword.compliance_short}}.
 2. In the navigation, click **Profile**.
 3. Click the **Overflow** menu in the row of the profile that you want to evaluate and select **Run scan**.
-3. Click **Run scan**.
+4. Click **Run scan**.
 
 After your scan completes, you can return to your private catalog to continue the onboarding process.
 
 ### Adding compliance controls
-{: #add-controls}
+{: #add-compliance-control}
 {: ui}
 
 Add the profiles and controls that you want to claim.
@@ -32,7 +32,7 @@ Add the profiles and controls that you want to claim.
 1. Click **Add**.
 
 ### Applying {{site.data.keyword.compliance_short}} scans
-{: #add-scc-scans}
+{: #apply-scc-scan}
 {: ui}
 
 Add the scans that you previously ran in the {{site.data.keyword.compliance_short}}. {{site.data.keyword.compliance_short}} scans determine adherence to regulatory controls. For more information, see [Scanning your resources](/docs/security-compliance?topic=security-compliance-scan-resources).

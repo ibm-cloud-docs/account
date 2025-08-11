@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-02-11"
+lastupdated: "2025-08-09"
 
 keywords: login, how login works, login flow, login diagram, login sequence
 
@@ -63,7 +63,7 @@ IBMid allows enterprise customers to federate their user authentication and auth
 ## Login sequence for {{site.data.keyword.appid_short}} with a connected SAML partner
 {: #appid-saml-login}
 
-If you choose to integrate with your external IdP to securely authenticate external users to your account by using an {{site.data.keyword.appid_short}} instance, the login sequence works according to the following sequence. For more information about this type of authentication, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
+If you choose to integrate with your external IdP to securely authenticate external users to your account by using an {{site.data.keyword.appid_short}} instance, the login sequence works according to the following sequence. For more information about this type of authentication, see [Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
 
 ![Login process for users who are connected from an App ID instance connected with a SAML partner](images/login-appid-saml.svg "Login process for users who are connected from an App ID instance connected with a SAML partner"){: caption="Login process for users who areconnected from an App ID instance connected with a SAML partner" caption-side="bottom"}
 

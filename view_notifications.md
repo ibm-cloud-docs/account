@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-11"
 
 keywords: notifications, view notifications, set notifications, iaas notifications, notification icon, header bell, bell icon, email notification history, communication history
 
@@ -28,7 +28,7 @@ Notifications are scoped to the specific account in which you are working. Use t
 * To receive future updates about a specific type of notification, click the **Email** icon that's displayed next to each notification item in the list.
 
 ## Notification types
-{: #notification-types}
+{: #notification-type}
 
 The following table describes the different types of notifications that are displayed.
 
@@ -54,7 +54,7 @@ The invitations expire after 30 days. New users to {{site.data.keyword.cloud_not
 {: note}
 
 ## Checking the delivery status of email notifications and viewing email history
-{: #view-email-history}
+{: #view-emails-history}
 
 On the [Communication history page](/messaging){: external}, you can check the status of all email notifications that are sent to you, and you can verify whether the emails are delivered successfully. You can also view the last 90 days of {{site.data.keyword.cloud_notm}} email history, which can help you save time by troubleshooting any delivery issues without you having to contact {{site.data.keyword.IBM_notm}} support.
 
@@ -70,12 +70,12 @@ To view your email notification history and check the delivery status of an {{si
    * Select **All** to find both delivered and not delivered emails with the same subject.
 
 ## Getting advanced notice for disruptive maintenance
-{: #disruptive-maintenance}
+{: #disruptive-notice-maintenance}
 
 {{site.data.keyword.Bluemix_notm}} tries to limit disruptive, required maintenance for Platform as a Service (PaaS), Infrastructure as a Service (IaaS), and Software as a Service offerings. Most maintenance is done in a nondisruptive manner to avoid the impact to your business, but when disruptive maintenance is necessary, we provide as much advanced notice as possible.
 
 ### Iaas
-{: #iaas}
+{: #iaas-offering}
 
 For IaaS offerings, {{site.data.keyword.Bluemix_notm}} provides advanced notice that's dependent on the severity of the impact. The following table defines the types and levels of the possibility of an impact.
 
@@ -88,7 +88,7 @@ For IaaS offerings, {{site.data.keyword.Bluemix_notm}} provides advanced notice 
 {: caption="IaaS offerings impact possibility definitions" caption-side="top"}
 
 ### PaaS
-{: #paas}
+{: #paas-offering}
 
 For PaaS offerings, IBM Cloud provides advanced notice that's dependent on the severity of the impact. The following table defines the types and levels of the possibility of an impact.
 
@@ -100,7 +100,7 @@ For PaaS offerings, IBM Cloud provides advanced notice that's dependent on the s
 {: caption="PaaS offerings impact possibility definitions" caption-side="top"}
 
 ### SaaS
-{: #saas}
+{: #saas-offering}
 
 For SaaS offerings, IBM Cloud provides advanced notice that's dependent on the severity of the impact. The following table defines the types and levels of the possibility of an impact.
 

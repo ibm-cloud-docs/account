@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-21"
+lastupdated: "2025-08-09"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -63,6 +63,9 @@ A federated ID is an ID within a company's domain that is registered with {{site
 {{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It’s an XML-based protocol that uses a security token that contains assertions to pass information between the organization's IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
 
 For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
+
+You can also federate users from your corporate directory to an {{site.data.keyword.Bluemix_notm}} account by using the {{site.data.keyword.Bluemix_notm}} SAML service provider. This type of federation does not connect with other {{site.data.keyword.IBM_notm}} web applications, only {{site.data.keyword.Bluemix_notm}}. For more information, see [Federating with the IBM Cloud SAML SP](/docs/account?topic=account-ibm-idp-integration#federate-cloud-saml).
+{: note}
 
 ### Using a Google ID
 {: #signup-google}

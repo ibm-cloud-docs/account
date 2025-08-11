@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-11"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR
 
@@ -46,7 +46,7 @@ You can build URL search values by using query parameters from outside the conso
 {: tip}
 
 ## Viewing the status of a dedicated multizone region (MZR)
-{: #view-private-mzr}
+{: #view-status-private-mzr}
 
 As a user in an account that has access to a dedicated [MZR](#x9774820){: term}, you are able to view incidents, planned maintenance, security bulletins, and announcements that are related to the resources within that MZR in addition to the public regions on the {{site.data.keyword.cloud_notm}} Status page. Also, on the History page, users in the account can view past status-related items that impact the dedicated MZR.
 
@@ -65,7 +65,7 @@ If no active incident occurs that affects the dedicated MZR, you can see the fol
 ![Example of no active incident](images/status_no_event.png "Example of the Status page when there is no active incident that affects the dedicated MZR."){: caption="An example of the Status page when there is no incident that affects the dedicated MZR" caption-side="bottom"}
 
 ## Subscribing to an RSS feed
-{: #subscribing-rss-feed}
+{: #subscribe-rss-feed}
 
 You can stay up to date about the events by subscribing to the RSS feed for the [Status page](https://cloud.ibm.com/status){: external}. Ongoing incidents or planned maintenance windows that impact a finite set of accounts do not display on the Status page.
 
@@ -84,7 +84,7 @@ To subscribe to the {{site.data.keyword.Bluemix_notm}} Notifications RSS feed, c
 1. Optional: Apply notification filters and rules if your reader supports them.
 
 ## Checking incident reports
-{: #status-incident-report}
+{: #status-report-incident}
 
 The {{site.data.keyword.Bluemix_notm}} [Incident reports page](/status/incident-reports){: external} provides a way for you to review technical details of major outages for {{site.data.keyword.Bluemix_notm}} services. These Customer Incident Reports (CIR) provide Root Cause Analysis (RCA), which is a problem-solving process that is used for identifying the root causes of an incident and describing the problem. They are publicly available for all major outages.
 
@@ -103,7 +103,7 @@ To view the Incident reports page and check RCAs, complete the following steps:
 1. See the table for the incident reports and click the **Download** icon ![Download icon](../icons/download.svg "Download") to download each report.
 
 ## Advanced status search
-{: #adv-search}
+{: #adv-status-search}
 
 You can search across all tabs on the [Status page](/status), but did you know that you can build URL search values by using query parameters from outside the console?
 {: shortdesc}
@@ -120,7 +120,7 @@ The following list includes examples of URL search options:
 * Use unique notification identifiers as a search parameter to go directly to the details for the notification. For example, `query=INC1000001` targets items with the ID: `INC1000001`. In this example, `INC1000001` is the case number for a maintenance notification.
 
 ### URL query filters:
-{: #url-query}
+{: #url-filter-query}
 
 The following table provides information on URL query filters that you can use to search across all tabs on the status page.
 

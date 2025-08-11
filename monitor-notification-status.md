@@ -3,7 +3,7 @@
 copyright:
 
   years: 2025
-lastupdated: "2025-05-14"
+lastupdated: "2025-08-11"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR, status page, status query, incident, maintenance, search query, notifications, view notifications, set notifications,
 
@@ -178,7 +178,7 @@ You can directly go to the maintenance notification page through [{{site.data.ke
 1. Select the maintenance activity, and click **View all affected instances** to get a list of all your devices that are being impacted under maintenance.
 
 ## Subscribing to email notifications
-{: #subscribe-email-notifications}
+{: #subscring-email-notifications}
 
 You can select whether to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. Or, about resource-related items, such as incidents, maintenance, security bulletins, and resource activity. Additionally, if you have a Pay-As-You-Go or Subscription account, you can choose whether to receive {{site.data.keyword.Bluemix_notm}} infrastructure service updates about changes, such as OS reloads, assigned IPs, and image and firmware updates. For more information, see [Setting email preferences for notifications](/docs/account?topic=account-email-prefs).
 
