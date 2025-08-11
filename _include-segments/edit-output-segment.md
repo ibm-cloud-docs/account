@@ -1,5 +1,5 @@
 ## Edit output value descriptions
-{: #output-values}
+{: #output-value}
 {: step}
 
 You can improve the descriptions for your Terraform template's output values to help users better understand the purpose of the parameters. The description of any output value that you include in your template can be updated.

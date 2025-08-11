@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-08-11"
 
 keywords: apptio, cost benefit analysis
 
@@ -19,7 +19,7 @@ subcollection: account
 The following tables shows the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
 
 ## Understanding your account summary report
-{: #export-csv-api-table-account-summary-csv}
+{: #export-csv-api-table-account-csv-summary}
 
 The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
 
@@ -565,7 +565,7 @@ You can view other versions of the CSV if you have earlier instances reports in 
 - Before February 2023 is [version 0.1](#instances-csv-version-0-1).
 
 ### Instances CSV version 1.2
-{: #instances-CSV-version-1-2}
+{: #instances-CSV-version1-2}
 
 The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from June 2024 to present.
 
@@ -623,7 +623,7 @@ The following table is version 1.2 and the most recent CSV version. You get this
 {: tab-title="Account Instance Usage"}
 
 ### Instances CSV version 1.1
-{: #instances-csv-version-1-1}
+{: #instances-csv-version1-1}
 
 You will get CSV version 1.1 if the data that you're viewing is from March 2024 to June 2024.
 
@@ -679,7 +679,7 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 {: tab-title="Account Instance Usage"}
 
 ### Instances CSV version 1.0
-{: #instances-csv-version-1-0}
+{: #instances-csv-version1-0}
 
 You will get CSV version 1.0 if the data that you're viewing is from October 2023 to March 2024.
 
@@ -734,7 +734,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 {: tab-title="Account Instance Usage"}
 
 ### Instances CSV version 0.2
-{: #instances-csv-version-0-2}
+{: #instances-csv-version0-2}
 
 You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2023.
 
@@ -785,7 +785,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 {: tab-title="Account Instance Usage"}
 
 ### Instances CSV version 0.1
-{: #instances-csv-version-0-1}
+{: #instances-csv-version0-1}
 
 You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
 
@@ -865,7 +865,7 @@ Tags are shown for both active and deleted resources. It might take up to 24 hou
 {: note}
 
 ## Understanding your enterprise account summary
-{: #enterprise-usage-table-account-summary-csv}
+{: #enterprise-usage-table-account-csv-summary}
 
 The following tables show the correlation between the heading titles in your CSV report and JSON report fields. The usage in the **Enterprise Resource Usage** section is aggregated by each metric of a service plan.
 
@@ -884,7 +884,7 @@ You can view other versions of the CSV if you have earlier enterprise account su
 - Before February 2023 is [version 0.1](#enterprise-account-summary-csv-version-0-1).
 
 ### Enterprise account summary CSV version 1.2
-{: #enterprise-account-summary-csv-version-1-2}
+{: #enterprise-account-summary-csv-version1-2}
 
 The following table is version 1.2 and the most recent CSV version. You get this version if the data that you're viewing is from July 2024 to present.
 
@@ -1002,7 +1002,7 @@ The following table is version 1.2 and the most recent CSV version. You get this
 {: tab-title="Enterprise Resource Usage"}
 
 ### Enterprise account summary CSV version 1.1
-{: #enterprise-account-summary-csv-version-1-1}
+{: #enterprise-account-summary-csvversion-1-1}
 
 The following table is version 1.1. You get this version if the data that you're viewing is from March 2024 to June 2024.
 
@@ -1120,7 +1120,7 @@ The following table is version 1.1. You get this version if the data that you're
 
 
 ### Enterprise account summary CSV version 1.0
-{: #enterprise-account-summary-csv-version-1-0}
+{: #enterprise-account-summary-csvversion-1-0}
 
 You will get CSV version 1.0 if the data that you're viewing is from October 2024 to March 2024.
 
@@ -1236,7 +1236,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 {: tab-title="Enterprise Resource Usage"}
 
 ### Enterprise account summary CSV version 0.2
-{: #enterprise-account-summary-csv-version-0-2}
+{: #enterprise-account-summary-csv-version-02}
 
 You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2024.
 
@@ -1350,7 +1350,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 {: tab-title="Enterprise Resource Usage"}
 
 ### Enterprise account summary CSV version 0.1
-{: #enterprise-account-summary-csv-version-0-1}
+{: #enterprise-account-summary-csv-version-01}
 
 You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
 

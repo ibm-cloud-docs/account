@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-06-18"
+lastupdated: "2025-08-11"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -34,7 +34,7 @@ You can limit the access to view the usage for a specific resource group by assi
 For more information about access roles, see [IAM access](/docs/account?topic=account-userroles).
 
 ## Viewing service usage details by using the console
-{: #services}
+{: #services-console}
 {: help}
 {: support}
 {: ui}

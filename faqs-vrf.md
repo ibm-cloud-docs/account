@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-06-20"
+lastupdated: "2025-08-11"
 
 keywords: account settings, delete account, account errors, vrf account migration, account migration, vrf, classic account
 
@@ -50,7 +50,7 @@ By default, in a VRF-style account, all subnets and VLANs on the account can com
 Yes. An account owner can enable VRF on an account by enabling VRF and service endpoints. For more information on how to enable VRF on an account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
 
 ## What permissions are required for a user to enable VRF on their account?
-{: #permissions-enable-VRF}
+{: #permissions-enable-account-VRF}
 {: faq}
 
 No specific permissions are required for an account user to enable VRF. However, certain conditions like, the account must not have IPSec VPN configured, custom spanning must be disabled, and the account must not already be using VRF must be met. For more information on how to enable VRF on an account, see [Enabling VRF and service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui).
