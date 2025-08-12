@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-07-24"
+lastupdated: "2025-08-12"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -237,17 +237,15 @@ You can create context-based restrictions for the following services if you are 
 
 | Service       | Service type | Scope to APIs | `service_name` |
 |---------------|--------------|---------------|----------------|
-| Catalog Management Service | IAM-enabled | Yes | `globalcatalog-collection` |
-| [Context-based restrictions Service](/docs/account?topic=account-context-restrictions-update) | Account Management | No | `context-based-restrictions` |
-| IAM Access Groups Service  | Account Management | No | `iam-groups` |
-| IAM Access Management Service | Account Management | No | `iam-access-management` |
-| IAM Identity Service  | Account Management | No | `iam-identity`|
-| IAM User Management | Account Management | No | `user-management` |
-| [{{site.data.keyword.atracker_short}}](/docs/account?topic=account-at_events_cbr) | IAM-enabled | Yes | `logdnaat` |
+| [{{site.data.keyword.atracker_short}}](/docs/account?topic=account-at_events_cbr) | Account Management | No | `atracker` |
 | [{{site.data.keyword.appconfig_short}}](/docs/app-configuration?topic=app-configuration-ac-restrict-access-cbr) | IAM-enabled | No | `apprapp` |
+| Catalog Management Service | IAM-enabled | Yes | `globalcatalog-collection` |
+| {{site.data.keyword.logs_full_notm}} | IAM-enabled | No | `logs` |
+| {{site.data.keyword.mon_full_notm}} | IAM-enabled | No | `sysdig-monitor` |
 | [Cloud {{site.data.keyword.cos_short}}](/docs/cloud-object-storage?topic=cloud-object-storage-setting-a-firewall) | IAM-enabled | No | `cloud-object-storage` |
 | [{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-cbr) | IAM-enabled | No | `codeengine` |
 | [{{site.data.keyword.registryshort}}](/docs/Registry?topic=Registry-iam&interface=ui#iam_cbr) | IAM-enabled | No | `container-registry` |
+| [Context-based restrictions Service](/docs/account?topic=account-context-restrictions-update) | Account Management | No | `context-based-restrictions` |
 | [{{site.data.keyword.databases-for-cassandra}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-cassandra` |
 | [{{site.data.keyword.databases-for-enterprisedb}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-enterprisedb` |
 | [{{site.data.keyword.databases-for-elasticsearch}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-elasticsearch` |
@@ -258,16 +256,25 @@ You can create context-based restrictions for the following services if you are 
 | [{{site.data.keyword.databases-for-redis}}](/docs/cloud-databases?topic=cloud-databases-cbr) | IAM-enabled | Yes | `databases-for-redis` |
 | [{{site.data.keyword.dl_short}}](/docs/dl?topic=dl-cbr) | IAM-enabled | No | `directlink` |
 | [{{site.data.keyword.dns_short}}](/docs/dns-svcs?topic=dns-svcs-cbr) | IAM-enabled | No | `dns-svcs`|
+| Enterprise Application Service | IAM-enabled | No | `enterprise-app-java` |
 | [{{site.data.keyword.en_short}}](/docs/event-notifications?topic=event-notifications-en-access-control-cbr) | IAM-enabled | No | `event-notifications` |
 | [{{site.data.keyword.messagehub}}](/docs/EventStreams?topic=EventStreams-restrict_access#configuring_cbr) | IAM-enabled | No | `messagehub` |
+| Hyper Protect Crypto Services | IAM-enabled | Yes | `hs-crypto` |
+| IAM Access Groups Service  | Account Management | No | `iam-groups` |
+| IAM Access Management Service | Account Management | No | `iam-access-management` |
+| IAM Identity Service  | Account Management | No | `iam-identity`|
+| IAM User Management | Account Management | No | `user-management` |
+| [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-cbr) | IAM-enabled | No | `is` |
 | [{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect?topic=key-protect-access-control-with-cbr) | IAM-enabled | No | `kms` |
 | [{{site.data.keyword.containershort}}](/docs/containers?topic=containers-cbr&interface=ui) / [{{site.data.keyword.redhat_openshift_notm}}](/docs/openshift?topic=openshift-cbr&interface=ui) | IAM-enabled | Yes | `containers-kubernetes` |
+| MQ | IAM-enabled | Yes | `mqcloud` |
 | [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled | Yes | `messages-for-rabbitmq` |
+| [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | No | `schematics` |
 | [{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager?topic=secrets-manager-access-control-cbr) | IAM-enabled | No | `secrets-manager` |
 | [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-cbr) | IAM-enabled | No | `compliance` |
+| Security and Compliance Center Workload Protection | IAM-enabled | No | `sysdig-secure` |
+| Tagging Service | Account Management | No | `ghost-tags` |
 | [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-cbr) | IAM-enabled | No | `transit` |
-| [{{site.data.keyword.vpc_full}}](/docs/vpc?topic=vpc-cbr) | IAM-enabled | No | `is` |
-| [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | No | `schematics` |
 {: caption="Services that are compatible with context-based restrictions." caption-side="top"}
 
 Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions).
