@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-08-12"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7640,6 +7640,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `privileged-access-gateway.openshift-impersonation.remove` | remove openshift impersonation | Manager |
 | `privileged-access-gateway.openshift-impersonations-all.list` | list all openshift impersonations | Manager, Writer |
 | `privileged-access-gateway.break-glass-key-admin.revoke` | revoke a breakglass user's access | Manager |
+| `privileged-access-gateway.session.terminate` | Terminate an active user session. | Manager |
 {: caption="Service actions - Privileged Access Gateway" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="privileged-access-gateway"}
