@@ -7,7 +7,7 @@ You can add profiles and controls to your software to prove that it meets securi
 Only profiles and controls that are supported by the {{site.data.keyword.compliance_short}} and validated by {{site.data.keyword.compliance_short}} scans appear in the catalog.
 
 ### Run a Security and Compliance Center scan
-{: #run-scc-compliance-scans}
+{: #run-scc-compliance-center-scan}
 {: ui}
 
 When you claim profiles and controls, you must evaluate the resources that were created during validation to ensure compliance. To run a scan, complete the following steps:
@@ -20,7 +20,7 @@ When you claim profiles and controls, you must evaluate the resources that were 
 After your scan completes, you can return to your private catalog to continue the onboarding process.
 
 ### Adding compliance controls
-{: #add-compliance-control}
+{: #adding-compliance-control}
 {: ui}
 
 Add the profiles and controls that you want to claim.

@@ -1,5 +1,5 @@
 ### Federating users to {{site.data.keyword.cloud_notm}}
-{: #federating-users-iam}
+{: #federate-users-iam}
 
 {{site.data.keyword.cloud_notm}} offers two ways for you to federate your corporate identity provider (IdP), which simplifies login by giving your employees access to {{site.data.keyword.cloud_notm}} with their company username and password. You can [federate with IBMid](https://www.ibm.com/docs/en/ief){: external}, or you have the option to create an {{site.data.keyword.appid_full_notm}} service instance and use that as a way to federate users into an {{site.data.keyword.cloud_notm}} account. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-idp-integration).
 

@@ -1,5 +1,5 @@
 ## Define IAM access
-{: #define-IAM-access}
+{: #defining-IAM-access}
 {: step}
 
 After you configure your deployment values, you can add the service access and platform access roles that are required to install your product.
