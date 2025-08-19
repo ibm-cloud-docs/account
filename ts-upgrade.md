@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
@@ -24,7 +24,9 @@ You can't upgrade to a Pay-As-You-Go account.
 When you try to upgrade your account from the [Account settings](/account/settings) page in the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
 {: tsSymptoms}
 
-> Looks like you don't have access to view this page. Contact the account owner for access.
+```text
+Looks like you don't have access to view this page. Contact the account owner for access.
+```
 
 To upgrade your account, you must have an access policy with the Editor role or higher on all account management services. 
 {: tsCauses}

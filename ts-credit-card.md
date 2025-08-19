@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot account, upgrade account, upgrade issue, 
 subcollection: account
@@ -24,7 +24,9 @@ You tried to upgrade to a Pay-As-You-Go account by using a credit card.
 When you go **Manage** > **Account** > **Account Settings** in the {{site.data.keyword.Bluemix_notm}} console, the following message is displayed:
 {: tsSymptoms}
 
-> Could not place order. Problem authorizing the credit card. We are unable to process your request: Transaction Rejected.
+```text
+Could not place order. Problem authorizing the credit card. We are unable to process your request: Transaction Rejected.
+```
 
 Something went wrong while your account upgrade was being processed and the upgrade couldn't be completed. 
 {: tsCauses}

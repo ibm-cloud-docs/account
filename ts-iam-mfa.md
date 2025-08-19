@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-06-20"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot MFA, multifactor authentication, verification method, authentication factor
 
@@ -25,7 +25,9 @@ You are required to use an authentication factor in addition to your username an
 When I try to log in with an authentication factor, the following error message is displayed:
 {: tsSymptoms}
 
->Error: Incorrect validation code.
+```text
+Error: Incorrect validation code.
+```
 
 One or more of the authentication factors that you use are inaccessible. For example, if one of your authentication factors sends you a one-time passcode by way of SMS, but you changed your phone number, then you need to reset your MFA factors.
 {: tsCauses}

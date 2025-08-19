@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-05-12"
+lastupdated: "2025-08-19"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, resource group, reactivate resource, upgrade resource, reactiveate account, upgrade account
 
@@ -25,7 +25,9 @@ When you try to reactivate or upgrade a closed Lite account, the process does no
 The following error message displays when you try to create a new service instance:
 {: tsSymptoms}
 
-> The resource group `<name>` is inactive with state: `SUSPENDED`
+```text
+The resource group `<name>` is inactive with state: `SUSPENDED`
+```
 
 Or when you view the list of resource groups for the account, you no longer have a group named Default.
 

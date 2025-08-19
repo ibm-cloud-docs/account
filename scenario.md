@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-29"
+lastupdated: "2025-08-19"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -119,7 +119,7 @@ Billable: 5,000,000 - 100,000 = 4,900,000 requests
 ## {{site.data.keyword.cloudant_short_notm}} Calculation details
 {: #cloudant-cost-details}
 
-In this scenario, we are using 150 GB of storage but with 20 GB of free data storage, we pay for the extra 130 GB. The lookups, writes, and queries are charged based on the provisioned capacity in their respective increments.
+In this scenario, we are using 150 GB of storage. With 20 GB of free data storage included, we pay for the additional 130 GB. The lookups, writes, and queries are charged based on the provisioned capacity in their respective increments.
 For more detailed information about {{site.data.keyword.cloudant_short_notm}} pricing, see {{site.data.keyword.cloudant_short_notm}} Pricing.
 {: #cloudant-pricing-details}
 
@@ -191,7 +191,7 @@ Allowance: 100 x storage in GB = 100 x 15 = 1500 requests
 Actual usage: Assuming that a file writes every 10 min; 43800 minutes/month / 10 minutes = 4380
 4,380 > 1500 allowance, but the charge applies for 1,000 requests
 Billable requests: 4,380 - 1,500 = 2880
-2880 * ($0.0052 / 1,000) = $0.014976 (rounded to $0.01 due to small amount)
+2880 * ($0.0052 / 1,000) = $0.014976 (rounded to $0.01 due to low value)
 
 ### Class B requests (read operations)
 {: #classsBreq}

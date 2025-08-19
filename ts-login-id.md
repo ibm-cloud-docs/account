@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot account, email login, IBMid help, troubleshoot IBMid
 
@@ -24,7 +24,9 @@ To successfully log in to the {{site.data.keyword.Bluemix}} console, make sure t
 When you log in to the console, the following message is displayed:
 {: tsSymptoms}
 
-> We didn't recognize this IBMid or email.
+```text
+We didn't recognize this IBMid or email.
+```
 
 You tried to log in to the console, but didn't use a valid IBMid. For example, you didn't enter a fully qualified email address for the IBMid, or you tried to use a previous user name and password.
 {: tsCauses}

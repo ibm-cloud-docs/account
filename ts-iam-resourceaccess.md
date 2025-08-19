@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot access to a resource, why can't user access resource
 
@@ -27,7 +27,9 @@ A user has an access policy on a specific resource or a service in the account, 
 When the user selects the service name, the following error message is displayed:
 {: tsSymptoms}
 
-> You do not have access to any organizations, spaces, or resource groups in this region. Check that you have the appropriate access with your account owner or administrator.
+```text
+You do not have access to any organizations, spaces, or resource groups in this region. Check that you have the appropriate access with your account owner or administrator.
+```
 
 In addition to access to the type of service or specific resource, the user must also be assigned access to the resource group or space that contains the resource. To access the resource instance within a specific account, a user must be assigned at least the Viewer role or higher on the resource group itself.
 {: tsCauses}

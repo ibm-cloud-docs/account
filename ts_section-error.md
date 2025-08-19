@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot billing
 
@@ -25,7 +25,9 @@ You are unable to complete the registration of a new account or to update the cr
 The following error appears in the Credit Card information section of the form:
 {: tsSymptoms}
 
->This section can’t be loaded.
+```text
+This section can’t be loaded.
+```
 
 A network issue might affect the loading of this section of the form.
 {: tsCauses}
