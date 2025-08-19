@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot account, infrastructure access, infrastructure services 
 
@@ -25,7 +25,9 @@ You're unable to access infrastructure services because your account isn't linke
 When you attempt to access the infrastructure sections of the {{site.data.keyword.cloud}} console, the following message might be displayed:
 {: tsSymptoms}
 
-> This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.
+```text
+This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.
+```
 
 There are multiple reasons why the message is displayed:
 {: tsCauses}
