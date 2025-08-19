@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Scenario: Estimating costs of a {{site.data.keyword.codeengineshort}} App with a {{site.data.keyword.cloudant_short_notm}} Database and Observability Tools
+# Scenario: Estimating costs of a {{site.data.keyword.codeengineshort}} App with an {{site.data.keyword.cloudant_short_notm}} Database and Observability Tools
 {: #sample}
 
 Assume that you deployed your web application on to {{site.data.keyword.codeenginefull}}. The {{site.data.keyword.codeenginefull}} uses several services that are provided by {{site.data.keyword.Bluemix}} including a database, logging and monitoring. You can learn how the actual cost of your application is calculated in this example.
@@ -23,13 +23,13 @@ With {{site.data.keyword.codeenginefull}} you pay for only the memory and CPU ne
 
 - The application is configured with 1 vCPU and 4 GB of memory (default for apps and jobs).
 - The application receives 5 million HTTP requests in 30 days.
-- The application uses a {{site.data.keyword.cloudant_short_notm}} Standard plan with:
+- The application uses an {{site.data.keyword.cloudant_short_notm}} Standard plan with:
 - 150 GB of data storage (130 GB over the zero-cost 20 GB)
     - 1,000 lookups per second
     - 500 writes per second
     - 50 queries per second
 - The application uses {{site.data.keyword.logs_full_notm}} Standard plan for log storage and search.
-    - The application needs 7 days of fast search 
+    - The application needs 7 days of fast search
     - The logs are retained in for 3 months in {{site.data.keyword.cloud_notm}}
 - The application uses {{site.data.keyword.mon_full_notm}} for performance metrics.
    - Only platform-metrics from {{site.data.keyword.codeengineshort}} and {{site.data.keyword.cloudant_short_notm}} are needed
