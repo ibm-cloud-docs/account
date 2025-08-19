@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-19"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, delete service, delete instance, delete service instance
 
@@ -25,7 +25,9 @@ You might receive an error message if you try to delete a service instance that 
 When you try to delete a service instance, the following error message is displayed:
 {: tsSymptoms}
 
-> Gateway timeout
+```text
+Gateway timeout
+```
 
 This problem happens if the service instance is already deleted from the cloud controller.
 {: tsCauses}

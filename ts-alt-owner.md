@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot account, dashboard role, permission, view dashboard, dashboard
 
@@ -25,7 +25,9 @@ You're unable to create an alternative account owner trusted profile because onl
 A trusted profile is created without the classic infrastructure permissions that an alternative account owner is normally assigned. You receive an error after you create the trusted profile.
 {: tsSymptoms}
 
-> An error occured while trying to apply the admin flag for this account. An error occurred. Try again later. Only 1 TrustedProfile per account may be set as the alternate master user.
+```text
+An error occured while trying to apply the admin flag for this account. An error occurred. Try again later. Only 1 TrustedProfile per account may be set as the alternate master user.
+```
 
 You might already have an alternative account owner trusted profile in the account. You can set only one trusted profile as the alternative account owner.
 {: tsCauses}

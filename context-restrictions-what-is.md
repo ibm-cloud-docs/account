@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-08-12"
+lastupdated: "2025-08-19"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -175,7 +175,7 @@ To access virtual private endpoints, the CLI users must log in using the command
 ### Multifactor authentication
 {: #context-restrictions-mfa}
 
-Multifactor authentication (MFA) requires identities to authenticate by using another authentication factor beyond an ID and password. By setting a lower MFA level requirement, you’re allowing users who meet or exceed that requirement to authenticate. For example, if your rule requires users to authenticate with MFA LEVEL1, users that have MFA LEVEL2 are still compliant since LEVEL2 exceeds the security criteria for LEVEL1. The following MFA levels name the minimum MFA factor for each level. For more information, see [IBM Cloud multifactor authentication](/docs/account?topic=account-types).
+Multifactor authentication (MFA) requires identities to authenticate by using another authentication factor beyond an ID and password. By setting a less stringent MFA level requirement, you allow users who meet or exceed that level to authenticate. For example, if your rule requires users to authenticate with MFA LEVEL1, users that have MFA LEVEL2 are still compliant since LEVEL2 exceeds the security criteria for LEVEL1. The following MFA levels name the minimum MFA factor for each level. For more information, see [IBM Cloud multifactor authentication](/docs/account?topic=account-types).
 
 * LEVEL1: Email-based MFA
 * LEVEL2: TOTP MFA

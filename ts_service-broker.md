@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-19"
 
 keywords: help managing cases, resolve issues managing cases, trouble working with cases, support center, help support center, resolve issues support center, help getting support, help support
 
@@ -24,7 +24,9 @@ You can't create or edit an {{site.data.keyword.Bluemix_notm}} support case, and
 When you try to create a case, the following error message is displayed:
 {: tsSymptoms}
 
-> Looks like you don't have access to create cases for this account.
+```text
+Looks like you don't have access to create cases for this account.
+```
 
 General problems with accessing and managing support cases might be caused by
 not having the Identity and Access Management (IAM) access policy for the Support Center account management service. You must be assigned the editor or administrator role on the support center account management service to create cases.

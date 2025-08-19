@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-04-01"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot invite users, access to invite users, access to add users
 
@@ -25,7 +25,9 @@ You must have specific access to invite users to an {{site.data.keyword.Bluemix}
 When you click **Invite users**, the following message might be displayed:
 {: tsSymptoms}
 
-> Looks like you don't have access to invite users. You must be assigned the editor or administrator role for the User management service. Contact your account owner for access.
+```text
+Looks like you don't have access to invite users. You must be assigned the editor or administrator role for the User management service. Contact your account owner for access.
+```
 
 You aren't assigned the correct access.
 {: tsCauses}

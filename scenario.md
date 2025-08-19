@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-29"
+lastupdated: "2025-08-19"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Scenario: Estimating costs of a {{site.data.keyword.codeengineshort}} App with a {{site.data.keyword.cloudant_short_notm}} Database and Observability Tools
+# Scenario: Estimating costs of a {{site.data.keyword.codeengineshort}} App with an {{site.data.keyword.cloudant_short_notm}} Database and Observability Tools
 {: #sample}
 
 Assume that you deployed your web application on to {{site.data.keyword.codeenginefull}}. The {{site.data.keyword.codeenginefull}} uses several services that are provided by {{site.data.keyword.Bluemix}} including a database, logging and monitoring. You can learn how the actual cost of your application is calculated in this example.
@@ -23,13 +23,13 @@ With {{site.data.keyword.codeenginefull}} you pay for only the memory and CPU ne
 
 - The application is configured with 1 vCPU and 4 GB of memory (default for apps and jobs).
 - The application receives 5 million HTTP requests in 30 days.
-- The application uses a {{site.data.keyword.cloudant_short_notm}} Standard plan with:
+- The application uses an {{site.data.keyword.cloudant_short_notm}} Standard plan with:
 - 150 GB of data storage (130 GB over the zero-cost 20 GB)
     - 1,000 lookups per second
     - 500 writes per second
     - 50 queries per second
 - The application uses {{site.data.keyword.logs_full_notm}} Standard plan for log storage and search.
-    - The application needs 7 days of fast search 
+    - The application needs 7 days of fast search
     - The logs are retained in for 3 months in {{site.data.keyword.cloud_notm}}
 - The application uses {{site.data.keyword.mon_full_notm}} for performance metrics.
    - Only platform-metrics from {{site.data.keyword.codeengineshort}} and {{site.data.keyword.cloudant_short_notm}} are needed
@@ -119,7 +119,7 @@ Billable: 5,000,000 - 100,000 = 4,900,000 requests
 ## {{site.data.keyword.cloudant_short_notm}} Calculation details
 {: #cloudant-cost-details}
 
-In this scenario, we are using 150 GB of storage but with 20 GB of free data storage, we pay for the extra 130 GB. The lookups, writes, and queries are charged based on the provisioned capacity in their respective increments.
+In this scenario, we are using 150 GB of storage. With 20 GB of free data storage included, we pay for the additional 130 GB. The lookups, writes, and queries are charged based on the provisioned capacity in their respective increments.
 For more detailed information about {{site.data.keyword.cloudant_short_notm}} pricing, see {{site.data.keyword.cloudant_short_notm}} Pricing.
 {: #cloudant-pricing-details}
 
@@ -191,7 +191,7 @@ Allowance: 100 x storage in GB = 100 x 15 = 1500 requests
 Actual usage: Assuming that a file writes every 10 min; 43800 minutes/month / 10 minutes = 4380
 4,380 > 1500 allowance, but the charge applies for 1,000 requests
 Billable requests: 4,380 - 1,500 = 2880
-2880 * ($0.0052 / 1,000) = $0.014976 (rounded to $0.01 due to small amount)
+2880 * ($0.0052 / 1,000) = $0.014976 (rounded to $0.01 due to low value)
 
 ### Class B requests (read operations)
 {: #classsBreq}

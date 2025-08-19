@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-llastupdated: "2025-07-02"
+llastupdated: "2025-08-19"
 
 keywords: IBM Cloud billing, payments, costs, usage, spending
 
@@ -35,7 +35,7 @@ You can also export usage reports and choose from a high-level summary overview 
 
 Setting spending limits is another helpful way to keep an eye on usage in your account. You can set notifications for total account, runtime, container, and service spending. When you reach a percentage of the spending limit that you set, you are notified immediately by email.
 
-To view your current balance, manage your payment method, or make a one-time payment, go to the Payments page. You can download your latest invoice with all discounts and charges here or from the Invoices page. 
+To view your current balance, manage your payment method, or make a one-time payment, go to the Payments page. You can download your latest invoice with all discounts and charges here or from the Invoices page.
 
 Now that you've walked through the common billing options and how to delegate billing administrator capabilities, track usage, and pay your bill, you're ready to start deciding what is best for your account. As always, if you need more information, check out the documentation for {{site.data.keyword.cloud_notm}} billing and usage.
 

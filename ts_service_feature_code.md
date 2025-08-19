@@ -28,9 +28,12 @@ content-type: troubleshoot
 You can recover from issues with creating service after a feature code is applied by following a few easy steps.
 {: shortdesc}
 
-When you try to create an instance of a service from the catalog, you're prompted to upgrade with a message such as 
-> Upgrade your account to create instances of the offering.
+When you try to create an instance of a service from the catalog, you're prompted to upgrade with a message such as:
 {: tsSymptoms}
+
+```text
+Upgrade your account to create instances of the offering.
+```
 
 Your account wasn't enabled to create resources of that type after you applied the feature code. The resources or capabilities that are provided vary for each feature code.
 {: tsCauses}

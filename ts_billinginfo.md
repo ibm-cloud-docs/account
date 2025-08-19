@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-08-19"
 
 keywords: troubleshoot billing, billing error, billing info, can't access billing, function unavailable
 
@@ -28,7 +28,9 @@ When you try to access your billing information, such as payments and invoices, 
 You see the following message because you don't have authorization to view the billing information for the account.
 {: tsCauses}
 
-> To manage invoices and payments, you need an IAM access policy with the Operator role or higher on the Billing account management service. To view usage information for the entire account, you need the Administrator role on the Billing service. Account owners can always view billing information for the account.
+```text
+To manage invoices and payments, you need an IAM access policy with the Operator role or higher on the Billing account management service. To view usage information for the entire account, you need the Administrator role on the Billing service. Account owners can always view billing information for the account.
+```
 
 Check your access by completing the following steps:
 {: tsResolve}

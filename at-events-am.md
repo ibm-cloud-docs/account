@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-08-19"
 
 keywords:
 
@@ -344,6 +344,8 @@ For example, see the `requestData` field for the event `user-management.user-set
                 "updateType": "allowed_ip_addresses changes"
             }
         ]
+    }
+}
 ```
 {: screen}
 
@@ -368,6 +370,7 @@ See the sample of the `requestData` field when the **User-managed login** proper
             }
         ]
     }
+}
 ```
 {: screen}
 
@@ -387,6 +390,7 @@ See the sample of the `requestData` field when the **User one-time passcode auth
             },
         ]
     }
+}
 ```
 {: screen}
 
@@ -406,6 +410,7 @@ See the sample of the `requestData` field when the **Require MFA security questi
             }
         ]
     }
+}
 ```
 {: screen}
 

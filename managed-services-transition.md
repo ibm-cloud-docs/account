@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-07"
+lastupdated: "2025-08-19"
 
 keywords: managed services transition, managed services
 
@@ -163,12 +163,12 @@ As part of the transition, we will remove billing from the customer's {{site.dat
 ### The managed service came with 60GB of {{site.data.keyword.cloud_notm}} Backup storage at no additional cost. What happens to that if a customer opts not to transition?
 {: #backup-storage}
 
-The client will be able to retain the 60GB of {{site.data.keyword.cloud_notm}} Backup storage as part of this transition
+The client will be able to retain the 60GB of {{site.data.keyword.cloud_notm}} Backup storage as part of this transition.
 
 ### What if I need to add a new device/server to my existing setup?
 {: #add-new}
 
-The client will have an option to add servers to their existing setup by November 30th 2024. IBM requests you to inform us of the additions with as much notice as possible so that we can add new devices, test and ensure seamless transition
+The client will have an option to add servers to their existing setup by November 30th 2024. IBM requests you to inform us of the additions with as much notice as possible so that we can add new devices, test and ensure seamless transition.
 
 ### Do I have to wait until January 1st, 2025 for the transition to Wanclouds?
 {: #wait-to-transition}
