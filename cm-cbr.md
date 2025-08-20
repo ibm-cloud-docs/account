@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-08-20"
 
 keywords: context-based restrictions, protecting catalog resources, security, catalog management
 
@@ -115,7 +115,7 @@ To create a network zone, complete the following steps:
     Instead of creating a zone by using UI inputs, you can use the JSON code form to directly enter JSON to create a zone by clicking **Enter as JSON code**.
     {: note}
 
-1. Enter a unique name and a description. For example, "Catalog zone" and "Allow catalogs to interact with other services".
+1. Enter a unique name and a description. For example, `Catalog zone` and `Allow catalogs to interact with other services`.
 1. Reference a service. Select the service type "IAM services" and then select the Catalog Management service. Click **Add** to associate the service's IP addresses with your network zone.
 1. Click **Next** to review your network zone.
 1. Click **Create**.

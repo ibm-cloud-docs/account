@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-08-20"
 
 keywords: managed services transition, managed services
 
@@ -88,7 +88,7 @@ You can expect the following tasks to be part of the transition to a self-manage
 
 The following are FAQ about managed services transition.
 
-### What does this transition mean to clients
+### What does this transition mean to clients?
 {: #transition-clients}
 
 Effective January 1st, 2024 The Managed Services support offering will transition from managed by IBM to managed by our trusted partner, Wanclouds.

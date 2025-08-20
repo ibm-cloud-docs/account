@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-08-20"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -404,7 +404,7 @@ To ensure that users are notified about updates to an existing support case that
 ## Creating and managing case tags
 {: #create-case-tags}
 
-You can create and manage custom tags that can be attached to support cases. These tags help categorize cases by service, incident, or any custom logic, making it simpler to search, filter, and manage large volumes of support interactions.
+You can create and manage custom tags that can be attached to support cases. These tags help categorize cases by service, incident, or any custom logic, making it simpler to search, filter, and manage high volumes of support interactions.
 
 ### Creating tags in your account
 {: #create-tags-account}
