@@ -3,7 +3,7 @@
 copyright:
 
  years: 2015, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-08-20"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -16,7 +16,7 @@ subcollection: account
 # Account types
 {: #accounts}
 
-When you register with {{site.data.keyword.cloud}}, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions.
+When you register with {{site.data.keyword.cloud}}, you are set up with a Pay-As-You-Go type of account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions.
 {: shortdesc}
 
 By default, classic accounts that were established before 30 November 2023, are included in the {{site.data.keyword.cloud_notm}} general routing table. Previously, if you wanted to convert a classic account to a VRF-style account, you were required to open a support case with {{site.data.keyword.IBM}} Support. Beginning 30 November 2023, any new classic account or any existing classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, see [FAQ about VRF account migration](/docs/account?topic=account-vrf-faqs).
@@ -25,19 +25,19 @@ By default, classic accounts that were established before 30 November 2023, are 
 ## Comparing accounts
 {: #compare}
 
-The following table provides a comparison of Trial, Pay-As-You-Go, and Subscription accounts. For more details about each account, see the sections that follow.
+The following table provides a comparison of the Trial, Pay-As-You-Go, and Subscription {{site.data.keyword.cloud_notm}} account types. For more details about each type of account and the types of features it supports such as access to free plans, being fit for production use cases, how you're invoiced, and more, see the sections that follow.
 
 | Feature | Trial              | Pay-As-You-Go      | Subscription       |
 |-----------------------------------------|--------------------|--------------------|--------------------|
-| Access to [Lite service plans](/catalog?search=label%3Alite){: external} | ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") |
-| Access to all Free plans           |        |   ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") |
-| Access to the full {{site.data.keyword.cloud_notm}} catalog |        | ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available") |
-| Fit for production use cases      |        |     ![Feature available](../icons/icon_enabled.svg "Feature available") | ![Feature available](../icons/icon_enabled.svg "Feature available")|
-| Available for enterprise account hierarchy        |        |    ![Feature available](../icons/icon_enabled.svg "Feature available") [^tabletext]   | ![Feature available](../icons/icon_enabled.svg "Feature available") |
-| Invoiced on monthly consumption       |        |     ![Feature available](../icons/icon_enabled.svg "Feature available") |                     |
+| Access to [Lite service plans](/catalog?search=label%3Alite){: external} | Yes | Yes | Yes |
+| Access to all Free plans           |   No     |   Yes | Yes |
+| Access to the full {{site.data.keyword.cloud_notm}} catalog |   No     | Yes | Yes |
+| Fit for production use cases      |  No      |     Yes | Yes|
+| Available for enterprise account hierarchy        |  No      |    Yes [^tabletext]   | Yes |
+| Invoiced on monthly consumption       |   No     |     Yes |      No               |
 {: row-headers}
 {: class="comparison-table"}
-{: caption="Comparison of {{site.data.keyword.cloud_notm}} accounts" caption-side="top"}
+{: caption="Comparison of {{site.data.keyword.cloud_notm}} accounts types" caption-side="top"}
 {: summary="This table has row and column headers. The row headers identify the feature. The column headers identify the account type. To understand which features apply to the account types, navigate to the row, and find the feature that you're interested in."}
 
 [^tabletext]: Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can create an enterprise. Pay-As-You-Go accounts that sign up through IBM Cloud Sales or Softlayer can't create an enterprise.
