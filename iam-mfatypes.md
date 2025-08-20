@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-08-20"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -27,6 +27,7 @@ Multifactor authentication (MFA) adds a layer of security to your account by req
 {: #mfa-options}
 
 As an administrator on the IAM Identity Service or All IAM Account Management services, you can enable MFA for the account or a specific user, and it applies to all account resources.
+
 - You can update the MFA setting for your account by going to **Manage** > **Access (IAM)** > **Settings** > **Authentication** in the {{site.data.keyword.Bluemix}} console. For more information, see [Enabling MFA for an account](/docs/account?topic=account-enablemfa#enabling-account).
 - You can update the MFA setting for a specific user in your account by going to **Manage** > **Access (IAM)** > **Users** and clicking the user whose MFA you want to update. If you are a new user, use the ID-based MFA option to ensure that your login is secure. For more information, see [Enabling MFA for an individual user](/docs/account?topic=account-enablemfa#enabling-user).
 
@@ -39,6 +40,7 @@ Users authenticate by using an IBMid, password, and time-based one-time passcode
 {: #mfa-options-all-users}
 
 Users authenticate by using one of the following MFA factors. This option applies to all users, including users who are using an IBMid or an external identity provider (IdP), like App ID.
+
 * Email-based MFA: Users authenticate by using a security passcode, which is sent by email.
 * TOTP MFA: Users authenticate by using a TOTP.
 * U2F MFA: Users authenticate by using a physical hardware-based security key. Based on the FIDO U2F standard, this factor offers the highest level of security.
@@ -48,5 +50,47 @@ Users authenticate by using one of the following MFA factors. This option applie
 
 All users log in by using only a standard ID and password, which offers the lowest level of security. To increase the level of security for this option, you can disable logging in to the CLI with only a username and password. This way, you require an API key to log in to the CLI or users can log in with `--sso`.
 
-Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli). 
+Starting 3 May 2023, by default CLI logins with only a username and password are disabled for all users that have MFA set to **None**. This applies to users in new and existing accounts. Administrators can opt-out before that date in the {{site.data.keyword.cloud_notm}} console. For more information, see [Disabling CLI logins with only a password](/docs/account?topic=account-enablemfa#disabling-cli).
 {: important}
+
+The following table lists the rules that users are going to be required to follow when authenticating through **IAM > Settings > Authentication**:
+
+| API Constant       | Labels used (Account default) | Labels used (This user) |
+|--------------------|-------------------------------|-------------------------|
+| <EMPTY>            | Nil                           | Account default         |
+| NONE               | None                          | None                    |
+| NONE_NORPC         | None - No CLI                 | None - No CLI           |
+| TOTP4ALL           | MFA for a user with an IBMid - Either  | MFA for a user with an IBMid - Either |
+| TOTP               | MFA for a user with an IBMid - Nonfederated user | MFA for a user with an IBMid - Nonfederated user |
+| LEVEL1             | MFA for a user with or without an IBMid - Email-based MFA | MFA for a user with or without an IBMid - Email-based MFA |
+| LEVEL2             | MFA for a user with or without an IBMid - TOTP MFA | MFA for a user with or without an IBMid - TOTP MFA |
+| LEVEL3             | MFA for a user with or without an IBMid - U2F MFA  | MFA for a user with or without an IBMid - U2F MFA |
+{: caption="Authenticte rules set at an account level" caption-side="top"}
+
+The following table lists the rules that the users (IAM > Users > Details) are required to authenticate:
+
+| API Constant       | MFA                           | User specific MFA       |
+|--------------------|-------------------------------|-------------------------|
+| <EMPTY>           | Nil                           | Nil                     |
+| NONE               | No MFA                        | None                    |
+| NONE_NORPC         | No MFA, disabled CLI logins   | No CLI                  |
+| TOTP4ALL           | MFA for all users             | MFA for all users with an IBMid (All) |
+| TOTP               | MFA for a user with an IBMid  | MFA for users with an IBMid (Nonfederated users) |
+| LEVEL1             | Email-based MFA               | Email-based MFA         |
+| LEVEL2             | TOTP MFA                      | TOTP MFA                |
+| LEVEL3             | U2F MFA                       | U2F MFA                 |
+{: caption="Authenticte rules set per user" caption-side="top"}
+
+The following table lists the rules that the users (IAM > Enterprise >Templates > IAM settings) are required to authenticate:
+
+| API Constant       | Overview                      | Authentication      |
+|--------------------|-------------------------------|-------------------------|
+| <EMPTY>            | Nil                           | Nil                     |
+| NONE               | <EMPTY>                       | No MFA                  |
+| NONE_NORPC         | None - No CLI                 | No MFA, disabled CLI logins |
+| TOTP4ALL           | MMFA for a user with an IBMid - Either | MFA for all users |
+| TOTP               | MFA for a user with an IBMid - Nonfederated user | MFA for a user with an IBMid |
+| LEVEL1             | MFA for a user with or without an IBMid - Email-based MFA | Email-based MFA |
+| LEVEL2             | MFA for a user with or without an IBMid - TOTP MFA | TOTP MFA |
+| LEVEL3             | MFA for a user with or without an IBMid - U2F MFA  | U2F MFA |
+{: caption="Authenticte rules defined in IAM templates" caption-side="top"}
