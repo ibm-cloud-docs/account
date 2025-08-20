@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-15"
+lastupdated: "2025-08-20"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -105,25 +105,25 @@ You can have up to 10 conditions and nesting up to 2 levels.
 For example, the following statement contains an `operator` element that uses `stringEquals` to specify that the account ID and service name must exactly match the `value` element. The statement also contains an `operator` element that uses `stringMatch` to specify a naming pattern for {{site.data.keyword.messagehub}} topics that you might use to organize access to those specific resources. This way, you can assign one policy to all topics in your account that begin with `messagehub-topic-dev`.
 
 ```json
-"resource": {
-		"attributes": [
-			{
-				"operator": "stringEquals",
-				"value": "0aeab68aabd14d89bd72e4330150710a0",
-				"key": "accountId"
-			},
-			{
-				"value": "messagehub",
-				"operator": "stringEquals",
-				"key": "serviceName"
-			},
-			{
-				"value": "messagehub-topic-dev*",
-				"operator": "stringMatch",
-				"key": "resource"
-			}
-		]
-	},
+"resource": { 
+     "attributes": [
+        {
+             "operator": "stringEquals",
+             "value": "0aeab68aabd14d89bd72e4330150710a0",
+             "key": "accountId"
+        },
+        {
+             "value": "messagehub",
+             "operator": "stringEquals",
+             "key": "serviceName"
+        },
+        {
+             "value": "messagehub-topic-dev*",
+             "operator": "stringMatch",
+             "key": "resource"
+        }
+    ]
+}
 ```
 {: codeblock}
 
@@ -163,36 +163,36 @@ When editing, creating, and deleting policies, use the corresponding API version
 
 ```json
 {
-	"type": "access",
-	"roles": [
-		{
-			"role_id": "crn:v1:bluemix:public:iam::::role:Editor"
-		}
-	],
-	"resources": [
-		{
-			"attributes": [
-				{
-					"name": "accountId",
-					"value": "000c49bc2724a07000010b1da94c4d0"
-				},
-				{
-					"name": "serviceName",
-					"value": "billing"
-				}
-			]
-		}
-	],
-	"subjects": [
-		{
-			"attributes": [
-				{
-					"name": "iam_id",
-					"value": "IBMid-00000AV0S0"
-				}
-			]
-		}
-	]
+     "type": "access",
+     "roles": [
+        {
+            "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+        }
+    ],
+     "resources": [
+        {
+             "attributes": [
+                {
+                    "name": "accountId",
+                    "value": "000c49bc2724a07000010b1da94c4d0"
+                },
+                {
+                    "name": "serviceName",
+                    "value": "billing"
+                }
+            ]
+        }
+    ],
+     "subjects": [
+        {
+             "attributes": [
+                {
+                    "name": "iam_id",
+                    "value": "IBMid-00000AV0S0"
+                }
+            ]
+        }
+    ]
 }
 ```
 {: codeblock}
@@ -200,61 +200,60 @@ When editing, creating, and deleting policies, use the corresponding API version
 When you list policies with `/v1/policies` the API returns `/v1/` and a placeholder policy for each `/v2/` policy that's in the account. For more information, see [`/v1/policies` returns a placeholder for `/v2/` policies the account](/docs/account?topic=account-known-issues#placeholder-v2)
 {: note}
 
-
 #### `/v2/policies`
 {: #v2-policies}
 
 ```json
 {
-	"type": "access",
-	"control": {
-		"grant": {
-			"roles": [
-				{
-					"role_id": "crn:v1:bluemix:public:iam::::role:Editor"
-				}
-			]
-		}
-	},
-	"resource": {
-		"attributes": [
-			{
-				"operator": "stringEquals",
-				"value": "000c49bc2724a07000010b1da94c4d0",
-				"key": "accountId"
-			},
-			{
-				"value": "billing",
-				"operator": "stringEquals",
-				"key": "serviceName"
-			}
-		]
-	},
-	"rule": {
-		"operator": "and",
-		"conditions": [
-			{
-				"key": "{{environment.attributes.current_date_time}}",
-				"operator": "dateTimeGreaterThanOrEquals",
-				"value": "2023-01-01T09:00:00+00:00"
-			},
-			{
-				"key": "{{environment.attributes.current_date_time}}",
-				"operator": "dateTimeLessThanOrEquals",
-				"value": "2023-01-06T17:59:59+00:00"
-			}
-		]
-	},
-	"pattern": "time-based-conditions:once",
-	"subject": {
-		"attributes": [
-			{
-				"key": "iam_id",
-				"operator": "stringEquals",
-				"value": "IBMid-00000AV0S0"
-			}
-		]
-	}
+     "type": "access",
+     "control": {
+         "grant": {
+             "roles": [
+                {
+                    "role_id": "crn:v1:bluemix:public:iam::::role:Editor"
+                }
+            ]
+        }
+    },
+     "resource": {
+         "attributes": [
+            {
+                "operator": "stringEquals",
+                "value": "000c49bc2724a07000010b1da94c4d0",
+                "key": "accountId"
+            },
+            {
+                "value": "billing",
+                "operator": "stringEquals",
+                "key": "serviceName"
+            }
+        ]
+    },
+     "rule": {
+         "operator": "and",
+         "conditions": [
+            {
+                "key": "{{environment.attributes.current_date_time}}",
+                "operator": "dateTimeGreaterThanOrEquals",
+                "value": "2023-01-01T09:00:00+00:00"
+            },
+            {
+                "key": "{{environment.attributes.current_date_time}}",
+                "operator": "dateTimeLessThanOrEquals",
+                "value": "2023-01-06T17:59:59+00:00"
+            }
+        ]
+    },
+     "pattern": "time-based-conditions:once",
+     "subject": {
+         "attributes": [
+            {
+                "key": "iam_id",
+                "operator": "stringEquals",
+                "value": "IBMid-00000AV0S0"
+            }
+        ]
+    }
 }
 ```
 {: codeblock}
@@ -266,26 +265,26 @@ When you list policies with `/v1/policies` the API returns `/v1/` and a placehol
 
 ```json
 {
-    "id": "33b901fa-8ec5-4432-a2e6-24b6a212c20a",
-	"type": "access",
-	"description": "**This is a unsupported policy version placeholder, to view the full content, please call GET with provided href**",
-	"subjects": [{
-		"attributes": [{
-			"name": "iam_id",
-			"value": "unsupported version"
-		}]
-	}],
-	"roles": [{
-		"role_id": "crn:v1:bluemix:public:iam::::role:UnsupportedVersion",
-		"display_name": "Unsupported Version",
-		"description": "**This is a unsupported policy version placeholder, to view the full content, please call GET with provided href**"
-	}],
-	"resources": [{
-		"attributes": [{
-			"name": "accountId",
-			"value": "000c49bc2724a07000010b1da94c4d0"
-		}]
-	}],
+     "id": "33b901fa-8ec5-4432-a2e6-24b6a212c20a",
+     "type": "access",
+     "description": "**This is a unsupported policy version placeholder, to view the full content, please call GET with provided href**",
+     "subjects": [{
+         "attributes": [{
+             "name": "iam_id",
+             "value": "unsupported version"
+        }]
+    }],
+     "roles": [{
+         "role_id": "crn:v1:bluemix:public:iam::::role:UnsupportedVersion",
+         "display_name": "Unsupported Version",
+         "description": "**This is a unsupported policy version placeholder, to view the full content, please call GET with provided href**"
+    }],
+     "resources": [{
+         "attributes": [{
+             "name": "accountId",
+             "value": "000c49bc2724a07000010b1da94c4d0"
+        }]
+    }],
     "href": "https://iam.cloud.ibm.com/v2/policies/88b901fa-6ec5-888-a2e6-24b6a212c20a"
 }
 ```
