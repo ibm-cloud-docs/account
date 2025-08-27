@@ -14,8 +14,24 @@
           "href": "/docs/account?topic=account-account-getting-started"
         },
         {
-          "title": "Assigning access to resources",
-          "href": "/docs/account?topic=account-assign-access-resources&interface=ui#assign-new-access"
+          "title": "Assigning access to resources by using access groups",
+          "href": "/docs/account?topic=account-access-getstarted"
+        },
+        {
+          "title": "Monitoring your login sessions",
+          "href": "/docs/account?topic=account-monitor-your-session"
+        },
+        {
+          "title": "Viewing your usage",
+          "href": "/docs/account?topic=account-viewingusage"
+        },
+        {
+          "title": "FAQ about accounts",
+          "href": "/docs/account?topic=account-accountfaqs"
+        },
+        {
+          "title": "Using the Support Center",
+          "href": "/docs/account?topic=account-using-avatar"
         }
       ]
     },
