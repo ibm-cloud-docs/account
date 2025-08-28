@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-08-28"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -309,4 +309,4 @@ If you want to check the number of rules in your account, see [Viewing the total
 ### Eventual consistency
 {: #cbr-eventual-consistency}
 
-Context-based restrictions follow an [eventually consistent](https://en.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, context-based restrictions remain highly available and performant across multiple global regions. Changes that are made to context-based restrictions rules and network zones are recorded and propagated worldwide. Access changes might not take effect until the propagation process is complete, usually within a few minutes.
+Context-based restrictions follow an [eventually consistent](https://en.m.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, context-based restrictions remain highly available and performant across multiple global regions. Changes that are made to context-based restrictions rules and network zones are recorded and propagated worldwide. Access changes might not take effect until the propagation process is complete, usually within a few minutes.

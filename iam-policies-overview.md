@@ -59,7 +59,7 @@ If you want to enable a user full administrator access to complete the [account 
 You can assign access to a group of services so that you need only a single policy to assign access to multiple services. This way, you decrease the number of policies in your account and reduce the time and effort to manage access.
 
 * **All Identity and Access enabled services**: All catalog services that use IAM for access management.
-* **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+* **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
    * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
 
 ## Assigning {{site.data.keyword.cloud_notm}} access policies
