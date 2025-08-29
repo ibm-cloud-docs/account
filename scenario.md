@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-08-29"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -219,7 +219,7 @@ In this scenario, assume 110 time-series metrics (50 for {{site.data.keyword.cod
 ### Time-series Metrics
 {: #time-series-metrics}
 
-[{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-monitor#metrics-by-plan) and [{{site.data.keyword.cloudant_short_notm}}](https://cloud.ibm.com/docs/Cloudant?topic=Cloudant-monitor-ibm-cloud-pm#metrics_dictionary-pm) provide various platform metrics to monitor your applications. The number of time-series depends on the [cardinality](https://docs.sysdig.com/en/docs/sysdig-monitor/using-monitor/metrics/using-labels/#cardinality){: external}, or number of unique time series associated with a metric. In this scenario, we are assuming 60 time-series for {{site.data.keyword.codeengineshort}} and 50 time-series for {{site.data.keyword.cloudant_short_notm}}.
+[{{site.data.keyword.codeengineshort}}](/docs/codeengine?topic=codeengine-monitor#metrics-by-plan) and [{{site.data.keyword.cloudant_short_notm}}](/docs/Cloudant?topic=Cloudant-monitor-ibm-cloud-pm#metrics_dictionary-pm) provide various platform metrics to monitor your applications. The number of time-series depends on the [cardinality](https://docs.sysdig.com/en/docs/sysdig-monitor/using-monitor/metrics/using-labels/#cardinality){: external}, or number of unique time series associated with a metric. In this scenario, we are assuming 60 time-series for {{site.data.keyword.codeengineshort}} and 50 time-series for {{site.data.keyword.cloudant_short_notm}}.
 
 ```text
 Code Engine: 60 time-series/month
