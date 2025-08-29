@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-20"
+lastupdated: "2025-08-29"
 
 keywords: create case, manage case, open case, start case, ticket
 
@@ -406,8 +406,12 @@ To ensure that users are notified about updates to an existing support case that
 
 You can create and manage custom tags that can be attached to support cases. These tags help categorize cases by service, incident, or any custom logic, making it simpler to search, filter, and manage high volumes of support interactions.
 
+To use tags, the customer's account must have a Premium support tier.
+{: important}
+
 ### Creating tags in your account
 {: #create-tags-account}
+{ui}
 
 Before you can tag cases, you must create tags at the account level. To do so, complete the following steps:
 
@@ -416,10 +420,13 @@ Before you can tag cases, you must create tags at the account level. To do so, c
 These tags are customizable and can reflect services, incidents, teams, or any other classification relevant to your organization.
 1. Click **Save**.
 
-After you create the tags, you can associate them with a case by clicking **Case Tags**. You can also remove tags by using the same interface.
-
-You can attach up to 20 tags to a single support case.
+Each tag must be alphanumeric and no longer than 40 characters, and you can attach up to 20 tags to a single support case.
 {: note}
+
+### Managing tags in your account
+{: #manage-tags-account}
+
+After you create the tags, you can associate them with a case by clicking **Case Tags**, and then remove tags by using the same interface.
 
 To find cases with specific tags, click one or more tags. For example, click `tag100` or `tag100` and `tag102` to view all associated cases.
 
