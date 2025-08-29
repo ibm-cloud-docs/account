@@ -411,7 +411,7 @@ To use tags, the customer's account must have a Premium support tier.
 
 ### Creating tags in your account
 {: #create-tags-account}
-{ui}
+{: ui}
 
 Before you can tag cases, you must create tags at the account level. To do so, complete the following steps:
 
