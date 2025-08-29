@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-08-29"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -425,3 +425,11 @@ If you created a Lite account before 25 October 2021, you can continue working a
 From the [Resource list](/resources), expand the appropriate section, and click the row for the instance that you want more details about. You can find more details about the resource display including when the resource was created and by whom. To view the details by using the CLI, see [ibmcloud resource service-instance](/docs/account?topic=account-ibmcloud_commands_resource#ibmcloud_resource_service_instance).
 
 For classic infrastructure services, you can get similar information by using the [Audit log](/docs/account?topic=account-audit-log).
+
+## How do I view {{site.data.keyword.cloud_notm}} account number?
+{: #account-number}
+{: faq}
+
+In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**. The account number is displayed.
+
+You can also find your account number by directly accessing the **Account settings** page by clicking [Account settings](https://cloud.ibm.com/account/settings).
