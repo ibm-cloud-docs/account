@@ -2,7 +2,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-21"
+lastupdated: "2025-08-29"
 
 keywords: resource, account resources, create resource, access to create resources, delete resource, delete instance, search, find, search for instance, search for resource
 
@@ -51,7 +51,7 @@ You can create a resource by using the {{site.data.keyword.Bluemix}} Command Lin
    ```
    {: codeblock}
 
-2. Create an organization by running the [`ibmcloud resource service-instance-create`](https://cloud.ibm.com/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
+2. Create an organization by running the [`ibmcloud resource service-instance-create`](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_create) command.
 
 In this command,`NAME` is the name of the service instance, `SERVICE_NAME or SERVICE_ID` is the name or ID of the service, `SERVICE_PLAN_NAME or SERVICE_PLAN_ID`is the name or ID of the service plan, and `LOCATION`is the target location or environment to create the service instance.
 

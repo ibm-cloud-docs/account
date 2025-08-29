@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-12"
+lastupdated: "2025-08-29"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3596,6 +3596,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `event-notifications.pre-defined-templates.create` | This action is to create a pre-defined-template | Pool ID Manager |
 | `event-notifications.pre-defined-templates.update` | This action is to update a pre-defined-template | Pool ID Manager |
 | `event-notifications.pre-defined-templates.delete` | This action is to delete a pre-defined-template | Pool ID Manager |
+| `event-notifications.notifications.get` | This action is to get notification status | Channel Editor, Event Notification Publisher, Event Source Manager, Manager, Reader |
 | `event-notifications.pool-id-mapping.create` | This action is to create a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.pool-id-mapping.delete` | This action is to delete a new pool id mapping for a destination | Pool ID Manager |
 | `event-notifications.pool-id-mapping.update` | This action is to update a new pool id mapping for a destination | Pool ID Manager |
