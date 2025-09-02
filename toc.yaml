@@ -54,7 +54,6 @@ toc:
       - topicgroup:
           label: Sharing software with users in your account
           topics:
-          - catalog-vsi-tutorial.md
           - catalog-vsivpc-tutorial.md
           - catalog-vsivpc-plans-tutorial.md
           - catalog-vsipower-tutorial.md

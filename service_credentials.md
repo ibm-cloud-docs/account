@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-08-29"
 
 keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
@@ -25,12 +25,15 @@ To add credentials to your apps, refer to the documentation for the type of app 
 {: #IAM_credential-ui}
 {: ui}
 
-Credentials that you create after 04 August 2025 are one-time view by default, so make sure that you save them securely. The one-time view property on existing credentials is not affected. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
+Credentials that can only be viewed once must be saved securely if you need to retrieve them later. Existing credentials are not affected by this property. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
 {: important}
 
 Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
 Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
+
+One-time credentials are disabled by default for all services that support service credentials (also known as resource keys). For more information on services that support service credentials, see [Supported {{site.data.keyword.cloud_notm}} services](/docs/secrets-manager?topic=secrets-manager-service-credentials&interface=ui#service-credentials-supported-services).
+{: note}
 
 To add credentials to your service:
 
@@ -70,7 +73,7 @@ Complete the following steps to add a credential to a service:
 {: #IAM_credential-api}
 {: api}
 
-Credentials that you create after 04 August 2025 are one-time view by default, so make sure that you save them securely. The one-time view property on existing credentials is not affected. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
+Credentials that can only be viewed once must be saved securely if you need to retrieve them later. Existing credentials are not affected by this property. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
 {: important}
 
 {{site.data.keyword.cloud_notm}} services can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
@@ -175,7 +178,7 @@ Use the API key or other credential properties to connect the service instance t
 {: #iam-credential-terraform}
 {: terraform}
 
-Credentials that you create after 04 August 2025 are one-time view by default, so make sure that you save them securely. The one-time view property on existing credentials is not affected. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
+Credentials that can only be viewed once must be saved securely if you need to retrieve them later. Existing credentials are not affected by this property. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
 {: important}
 
 A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.Before you can create a credential to connect your app or external consumer to an {{site.data.keyword.cloud_notm}} service by using Terraform, make sure that you have completed the following:

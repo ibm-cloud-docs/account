@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-09-02"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -128,7 +128,26 @@ To publish the Operator to your account, you're required to validate that it can
 
 1. Click **Validate**.
 
+## Manage compliance
+{: #manage-compliance}
+{: step}
+
 {{_include-segments/manage-compliance-segment.md}}
+
+### Run a Security and Compliance Center scan
+{: #run-scc-scans}
+
+{{_include-segments/run-security-compliance-segment.md}}
+
+### Adding compliance controls
+{: #add-controls}
+
+{{_include-segments/add-compliance-control-segment.md}}
+
+### Applying {{site.data.keyword.compliance_short}} scans
+{: #add-scc-scans}
+
+{{_include-segments/apply-scans-segment.md}}
 
 ## Review requirements
 {: #operator-review-reqs}
