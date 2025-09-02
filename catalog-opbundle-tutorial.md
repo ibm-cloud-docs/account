@@ -123,7 +123,7 @@ Validate that the Operator bundle can be successfully installed on the target {{
 ### Run a Security and Compliance Center scan
 {: #run-scc-scans}
 
-{{_include-segments/run-security-segment.md}}
+{{_include-segments/run-security-compliance-segment.md}}
 
 ### Adding compliance controls
 {: #add-controls}

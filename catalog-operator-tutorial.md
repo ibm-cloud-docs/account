@@ -137,7 +137,7 @@ To publish the Operator to your account, you're required to validate that it can
 ### Run a Security and Compliance Center scan
 {: #run-scc-scans}
 
-{{_include-segments/run-security-segment.md}}
+{{_include-segments/run-security-compliance-segment.md}}
 
 ### Adding compliance controls
 {: #add-controls}

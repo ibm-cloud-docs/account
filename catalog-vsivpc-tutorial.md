@@ -131,7 +131,7 @@ Validating your virtual server image involves running a test deployment of your 
 ### Run a Security and Compliance Center scan
 {: #run-scc-scans}
 
-{{_include-segments/run-security-segment.md}}
+{{_include-segments/run-security-compliance-segment.md}}
 
 ### Adding compliance controls
 {: #add-controls}

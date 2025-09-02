@@ -130,7 +130,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 ### Run a Security and Compliance Center scan
 {: #run-scc-scans}
 
-{{_include-segments/run-security-segment.md}}
+{{_include-segments/run-security-compliance-segment.md}}
 
 ### Adding compliance controls
 {: #add-controls}
