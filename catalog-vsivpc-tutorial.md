@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-09-02"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -122,7 +122,26 @@ Validating your virtual server image involves running a test deployment of your 
    To monitor the progress of the validation process, click **View logs**.
    {: tip}
 
+## Manage compliance
+{: #manage-compliance}
+{: step}
+
 {{_include-segments/manage-compliance-segment.md}}
+
+### Run a Security and Compliance Center scan
+{: #run-scc-scans}
+
+{{_include-segments/run-security-segment.md}}
+
+### Adding compliance controls
+{: #add-controls}
+
+{{_include-segments/add-compliance-control-segment.md}}
+
+### Applying {{site.data.keyword.compliance_short}} scans
+{: #add-scc-scans}
+
+{{_include-segments/apply-scans-segment.md}}
 
 ## Review requirements
 {: #catalog-vsivpc-review-reqs}
