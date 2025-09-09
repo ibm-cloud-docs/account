@@ -3,9 +3,9 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-03-19"
+lastupdated: "2025-09-09"
 
-keywords: create case, manage case, open case, start case, ticket
+keywords: create case, open case, start case, raise ticket
 
 subcollection: account
 
@@ -16,27 +16,24 @@ subcollection: account
 # Creating support cases
 {: #open-case}
 
-If you experience problems with {{site.data.keyword.Bluemix}}, you can use the [Support Center](/unifiedsupport/supportcenter){: external} to create a support case. Users with a Basic, Advanced, or Premium [support plan](/docs/account?topic=account-support-plans) can create a technical support case by attaching a specific resource or product to ensure that the case gets to the correct support engineer faster. This allows for a more efficient and effective resolution.
+If you experience problems with {{site.data.keyword.cloud}}, you can use the [Support Center](/unifiedsupport/supportcenter){: external} to create a support case. You can create cases for issues that are associated with access (IAM), billing and usage, account, and invoice or sales inquiries. Users with a Basic, Advanced, or Premium support plan can also create a case for technical support.
 {: shortdesc}
 
 If your account is deactivated or if you don't have access to your account, you can create a support case by completing the [Create an Account, Login or Billing Request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create) form.
 {: tip}
 
-You can also create support cases for issues that are associated with access (IAM), billing & usage, account, and invoice or sales inquiries. The types of available support depend on the support level of the account. Your support plan also determines the severity level that you can assign to support cases. For more information, see [Case severity and response time](/docs/account?topic=account-support-case-severity).
+The types of available support depend on the support level of the account. Your support plan also determines the severity level that you can assign to support cases. For more information, see [Case severity and response time](/docs/account?topic=account-support-case-severity).
 
-Users with a Lite account can also create support cases, but are limited to issues associated with access (IAM), billing & usage, account, and invoice or sales inquiries. Technical support for Lite accounts with free support is provided by the [{{site.data.keyword.Bluemix_notm}} docs](/docs){: external} and [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud?tab=Newest){: external}.
+Users with a Lite or Trial account can also create support cases but are limited to nontechnical issues associated with access (IAM), billing and usage, account, and invoice or sales inquiries. Technical help for accounts with a no-cost support plan is provided by the [{{site.data.keyword.cloud_notm}} Docs](/docs){: external}, the {{site.data.keyword.cloud_notm}} AI Assistant, and online communities such as the [{{site.data.keyword.cloud_notm}} Community](https://community.ibm.com/community/user/my-community) {: external} or [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud?tab=Newest){: external}.
 
-By default, account users don't have access to create, update, search, or view cases. The account owner must provide users access by assigning an Identity and Access Management (IAM) access policy. For more information, see [Assigning user access for working with support cases](/docs/account?topic=account-access#access).
-{: tip}
+As a classic infrastructure user, you might be familiar with support tickets. Support tickets are now called support cases in {{site.data.keyword.cloud_notm}}.
 
 ## Creating a support case
 {: #creating-support-case}
 {: ui}
+By default, account users don't have access to create, update, search, or view cases. The account owner must provide users with access by assigning an Identity and Access Management (IAM) access policy. For more information, see [Managing access to support cases](/docs/account?topic=account-access-cases).
 
 Complete the following steps to create a support case:
-
-As a classic infrastructure user, you might be familiar with support tickets. Support tickets are now called support cases in {{site.data.keyword.Bluemix_notm}}.
-{: tip}
 
 1. From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**.
 1. From the Contact support section, click **Create a case**.
@@ -47,16 +44,32 @@ As a classic infrastructure user, you might be familiar with support tickets. Su
    To maintain security, do not include any personal information, sensitive data, or device or service credentials in case responses. For example, don't include passwords, API keys, secrets, or credit card information.
    {: important}
 
-1. Optional:
-   * Attach files and resources to provide more details about the issue you're experiencing.
-   * If you'd like a user in you account to be updated about the case, add them by using the Contact watchlist. For more information about assigning users access to your account, see [Adding users to your case management access group](/docs/account?topic=account-access&interface=ui#iam-managed).
+1. Complete optional fields:
+   * Add a specific resource or product for quicker triage and investigation.
+   * Attach files to provide more details about the issue you're experiencing.
+   * If you'd like a user in your account to be updated about the case, add them by using the watchlist. For more information, see [Updating your support case's watchlist](/docs/account?topic=account-managing-support-cases&interface=api#contact-watchlist).
    * Select **Email me updates about this case** to receive support case notifications.
-1. Click **Next**, review your case summary, and click **Submit case**. After you receive email verification for the case, follow the instructions for further communication on the issue.
+1. Click **Next**, review your case summary, and click **Submit case**.
+1. After you receive email verification for the case, follow the instructions for further communication on the issue.
 
 After your support case is created, you can follow its progress on the [Manage cases page](/unifiedsupport/cases).
 
 IBM support cases can also be opened in the cloud console as well as in the [IBM support portal](https://www.ibm.com/mysupport/s/){: external}. These cases can only be managed in the IBM support portal and access is controlled in the IBM support portal. For more information about access, see [Managing Your Support Account Access](https://www.ibm.com/mysupport/s/article/Managing-Your-Support-Account-Access?language=en_US){: external}.
 {: note}
+
+### Adding a resource to a support case
+{: #adding-case-resource} 
+{: ui}
+
+Users with a support plan that includes technical support assistance can add a specific resource or product to a case. Adding a cloud resource name (CRN) to a support case allows for a more efficient triage, investigation, and resolution.
+
+To add a resource to a support case, use the following steps:
+
+1. Create a technical case type by selecting a technical category for your issue.
+2. Go to the **Add resource** field.
+3. Click to display the choices, then select a resource name from the list.
+
+You can also add a cloud resource name after the case is created or add the CRN within a comment. For more information, see [Updating support cases](docs/account?topic=account-managing-support-cases#updating-case).
 
 ## Creating a support case by using the API
 {: #create-case-api}
