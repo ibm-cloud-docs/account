@@ -24,7 +24,7 @@ If your account is deactivated or if you don't have access to your account, you 
 
 The types of available support depend on the support level of the account. Your support plan also determines the severity level that you can assign to support cases. For more information, see [Case severity and response time](/docs/account?topic=account-support-case-severity).
 
-Users with a Lite or Trial account can also create support cases but are limited to nontechnical issues associated with access (IAM), billing and usage, account, and invoice or sales inquiries. Technical help for accounts with a no-cost support plan is provided by the [{{site.data.keyword.cloud_notm}} Docs](/docs){: external}, the {{site.data.keyword.cloud_notm}} AI Assistant, and online communities such as the [{{site.data.keyword.cloud_notm}} Community](https://community.ibm.com/community/user/my-community) {: external} or [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud?tab=Newest){: external}.
+Users with a Lite or Trial account can also create support cases but are limited to nontechnical issues associated with access (IAM), billing and usage, account, and invoice or sales inquiries. Technical help for accounts with a no-cost support plan is provided by the [{{site.data.keyword.cloud_notm}} Docs](/docs){: external}, the {{site.data.keyword.cloud_notm}} AI Assistant, and online communities such as the [{{site.data.keyword.cloud_notm}} Community](https://community.ibm.com/community/user/my-community){: external} or [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud?tab=Newest){: external}.
 
 As a classic infrastructure user, you might be familiar with support tickets. Support tickets are now called support cases in {{site.data.keyword.cloud_notm}}.
 
@@ -69,7 +69,7 @@ To add a resource to a support case, use the following steps:
 2. Go to the **Add resource** field.
 3. Click to display the choices, then select a resource name from the list.
 
-You can also add a cloud resource name after the case is created or add the CRN within a comment. For more information, see [Updating support cases](docs/account?topic=account-managing-support-cases#updating-case).
+You can also add a cloud resource name after the case is created or add the CRN within a comment. For more information, see [Updating support cases](/docs/account?topic=account-managing-support-cases#updating-case).
 
 ## Creating a support case by using the API
 {: #create-case-api}
