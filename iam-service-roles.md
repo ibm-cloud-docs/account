@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-09-10"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7838,8 +7838,6 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `quantum-computing.program.read` | Read a program definition | Manager, Reader, Writer |
-| `quantum-computing.program.delete` | Delete a program | Manager |
 | `quantum-computing.job.create` | Create a job to run a program | Manager, Writer |
 | `quantum-computing.job.read` | User ability to read a job | Manager, Reader, Writer |
 | `quantum-computing.job.delete` | Delete a Job | Manager |
@@ -8407,10 +8405,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
+| Operator | As an operator, you can perform platform actions that are required to configure and operate deployments. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
+| Viewer | As a viewer, you can view deployments, but you can't modify them. In addition, you can also inspect, the s3 certificate and view quota. |
 {: row-headers}
 {: caption="Platform roles - software-defined-storage" caption-side="top"}
 {: tab-title="Platform roles"}
@@ -8449,10 +8447,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `software-defined-storage.certificate.inspect` | Inspect certificate | Administrator, Editor, Operator, Viewer |
 | `software-defined-storage.certificate.delete` | Delete certificates | Administrator, Editor, Operator |
 | `software-defined-storage.certificate.create` | Create certificate | Administrator, Editor, Operator |
-| `software-defined-storage.snapshot.create` | Create snapshots | Manager |
-| `software-defined-storage.snapshot.read` | Read snapshots | Manager |
-| `software-defined-storage.snapshot.update` | Update snapshots | Manager |
-| `software-defined-storage.snapshot.delete` | Delete snapshots | Manager |
 {: caption="Service actions - software-defined-storage" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="software-defined-storage"}
