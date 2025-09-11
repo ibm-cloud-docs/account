@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-09-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6811,6 +6811,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `mqcloud.instance.use` | Users can get access to service instances and their queue managers. | Administrator, Editor, Manager, Viewer, Writer |
+| `mqcloud.queuemanager.write` | The ability to send and receive messages on queue managers | Writer |
+| `mqcloud.queuemanager.administer` | The ability to perform administration tasks on queue managers | Manager |
 {: caption="Service actions - IBM MQ" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="mqcloud"}
