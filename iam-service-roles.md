@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-13"
+lastupdated: "2025-09-16"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -344,7 +344,9 @@ Review the available platform and service roles and the actions mapped to each t
 | API Developer | As an API Developer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 | Api Administrator | As an Api Administrator, you can perform all platform actions except for managing the account and assigning access policies. |
 | Community Manager | As a Community Manager, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Draft Editor | As a Draft Editor, you have permission to view and edit API and Product Drafts |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Member | As a Member you have minimal access |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
@@ -359,10 +361,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `apiconnect.instance.admin` | apiconnect.instance.admin | Administrator |
 | `apiconnect.admin.manage` | Enables API Connect administrators to create provider orgs, manage gateways, and adjust other settings for the environment. | Administrator, Api Administrator, Editor, Manager |
-| `apiconnect.instance.view` | apiconnect.instance.view | API Developer, Administrator, Api Administrator, Community Manager, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `apiconnect.instance.view` | apiconnect.instance.view | API Developer, Administrator, Api Administrator, Community Manager, Draft Editor, Editor, Manager, Member, Operator, Reader, Viewer, Writer |
 | `apiconnect.instance.manage-community` | apiconnect.instance.manage-community | Community Manager, Operator |
 | `apiconnect.instance.api-admin` | apiconnect.instance.api-admin | Api Administrator, Editor, Manager |
 | `apiconnect.instance.develop` | apiconnect.instance.develop | API Developer, Writer |
+| `apiconnect.instance.edit-drafts` | apiconnect.instance.edit-drafts | Draft Editor |
+| `apiconnect.instance.member` | apiconnect.instance.member maps to API Connect Member role | Member |
 {: caption="Service actions - API Connect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apiconnect"}
