@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-09-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -344,7 +344,9 @@ Review the available platform and service roles and the actions mapped to each t
 | API Developer | As an API Developer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 | Api Administrator | As an Api Administrator, you can perform all platform actions except for managing the account and assigning access policies. |
 | Community Manager | As a Community Manager, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
+| Draft Editor | As a Draft Editor, you have permission to view and edit API and Product Drafts |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
+| Member | As a Member you have minimal access |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
@@ -359,10 +361,12 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `apiconnect.instance.admin` | apiconnect.instance.admin | Administrator |
 | `apiconnect.admin.manage` | Enables API Connect administrators to create provider orgs, manage gateways, and adjust other settings for the environment. | Administrator, Api Administrator, Editor, Manager |
-| `apiconnect.instance.view` | apiconnect.instance.view | API Developer, Administrator, Api Administrator, Community Manager, Editor, Manager, Operator, Reader, Viewer, Writer |
+| `apiconnect.instance.view` | apiconnect.instance.view | API Developer, Administrator, Api Administrator, Community Manager, Draft Editor, Editor, Manager, Member, Operator, Reader, Viewer, Writer |
 | `apiconnect.instance.manage-community` | apiconnect.instance.manage-community | Community Manager, Operator |
 | `apiconnect.instance.api-admin` | apiconnect.instance.api-admin | Api Administrator, Editor, Manager |
 | `apiconnect.instance.develop` | apiconnect.instance.develop | API Developer, Writer |
+| `apiconnect.instance.edit-drafts` | apiconnect.instance.edit-drafts | Draft Editor |
+| `apiconnect.instance.member` | apiconnect.instance.member maps to API Connect Member role | Member |
 {: caption="Service actions - API Connect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="apiconnect"}
@@ -5824,14 +5828,19 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | `is.vpn-server.dashboard.view` | View Dashboard | Administrator, Editor, Operator, Viewer |
 | `is.vpn-server.vpn-server.create` | Create VPN server
+
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.delete` | Delete VPN server
+
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.operate` | Operate VPN server
+
  | Administrator, Editor, Operator |
 | `is.vpn-server.vpn-server.read` | View VPN server
+
  | Administrator, Editor, Operator, Viewer |
 | `is.vpn-server.vpn-server.update` | Update VPN server
+
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.connect` | Connect to VPN server | VPN Client |
 | `is.vpn-server.config.read` | Configuration Information Point API access | Service Configuration Reader |
@@ -6811,6 +6820,8 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `mqcloud.instance.use` | Users can get access to service instances and their queue managers. | Administrator, Editor, Manager, Viewer, Writer |
+| `mqcloud.queuemanager.write` | The ability to send and receive messages on queue managers | Writer |
+| `mqcloud.queuemanager.administer` | The ability to perform administration tasks on queue managers | Manager |
 {: caption="Service actions - IBM MQ" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="mqcloud"}
@@ -7152,7 +7163,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table130}
 
-## Power Virtual Server DR Automation
+## power-dr-automation
 {: #power-dr-automation-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-dr-automation` for the service name.
@@ -7163,7 +7174,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Platform roles - Power Virtual Server DR Automation" caption-side="top"}
+{: caption="Platform roles - power-dr-automation" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7176,7 +7187,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Service roles - Power Virtual Server DR Automation" caption-side="top"}
+{: caption="Service roles - power-dr-automation" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7185,16 +7196,16 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `power-dr-automation.dashboard.view` | Ability to view dashboard | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `power-dr-automation.dashboard.view` | The ability to view the dashboard | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.orchestration-settings.update` | The ability to update orchestration settings | Administrator, Editor, Manager, Viewer, Writer |
 | `power-dr-automation.orchestration-settings.read` | The ability to read orchestration settings | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `power-dr-automation.dr-operation.read` | The ability to read DR operation | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.dr-summary.read` | The ability to read DR summary | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.event.list` | The ability to list corresponding events | Administrator, Editor, Manager, Reader, Viewer, Writer |
-| `power-dr-automation.event.read` | The ability to get a corresponding events | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `power-dr-automation.event.read` | The ability to get a corresponding event | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.orchestrator-vm.update` | The ability to update orchestrator VM | Administrator, Editor, Manager, Writer |
 | `power-dr-automation.orchestrator-vm.read` | The ability to read orchestrator VM | Administrator, Editor, Manager, Reader, Viewer, Writer |
-| `power-dr-automation.dr-operation.read` | The ability to read DR operation | Administrator, Editor, Manager, Reader, Viewer, Writer |
-{: caption="Service actions - Power Virtual Server DR Automation" caption-side="top"}
+{: caption="Service actions - power-dr-automation" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7771,6 +7782,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `project.job-run.retrieve-all` | The ability to view a project job's runs. | Administrator, Editor, Operator, Viewer |
 | `project.job-run.retrieve` | The ability to view a project job run | Administrator, Editor, Operator, Viewer |
 | `project.job-run.delete` | The ability to delete a project job run | Administrator |
+| `project.compliance.retrieve-zones` | The Ability to view Compliance instance zones. | Administrator, Editor, Operator, Viewer |
 {: caption="Service actions - Project" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="project"}
@@ -7838,8 +7850,6 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `quantum-computing.program.read` | Read a program definition | Manager, Reader, Writer |
-| `quantum-computing.program.delete` | Delete a program | Manager |
 | `quantum-computing.job.create` | Create a job to run a program | Manager, Writer |
 | `quantum-computing.job.read` | User ability to read a job | Manager, Reader, Writer |
 | `quantum-computing.job.delete` | Delete a Job | Manager |
@@ -8407,10 +8417,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
-| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. |
-| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
-| Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
-| Viewer | As a viewer, you can view service instances, but you can't modify them. |
+| Administrator | As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
+| Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
+| Operator | As an operator, you can perform platform actions that are required to configure and operate deployments. In addition, you can also inspect, upload, update and delete the s3 certificate, and update quota. |
+| Viewer | As a viewer, you can view deployments, but you can't modify them. In addition, you can also inspect, the s3 certificate and view quota. |
 {: row-headers}
 {: caption="Platform roles - software-defined-storage" caption-side="top"}
 {: tab-title="Platform roles"}
@@ -8449,10 +8459,6 @@ Review the available platform and service roles and the actions mapped to each t
 | `software-defined-storage.certificate.inspect` | Inspect certificate | Administrator, Editor, Operator, Viewer |
 | `software-defined-storage.certificate.delete` | Delete certificates | Administrator, Editor, Operator |
 | `software-defined-storage.certificate.create` | Create certificate | Administrator, Editor, Operator |
-| `software-defined-storage.snapshot.create` | Create snapshots | Manager |
-| `software-defined-storage.snapshot.read` | Read snapshots | Manager |
-| `software-defined-storage.snapshot.update` | Update snapshots | Manager |
-| `software-defined-storage.snapshot.delete` | Delete snapshots | Manager |
 {: caption="Service actions - software-defined-storage" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="software-defined-storage"}
@@ -8944,8 +8950,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `user-management.invitation-email.create` |  | Administrator, Editor |
 | `user-management.preference.update` |  | Administrator, Editor |
 | `user-management.preference.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.user-linkage.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `user-management.user-setting.update` |  | Administrator, Editor |
 | `user-management.user-setting.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.user.replace-iam-id` |  | Administrator, Editor |
 | `user-management.vpn.update` | Update user VPN settings | VPN Administrator |
 {: caption="Service actions - IBM Cloud Platform User Management Service" caption-side="top"}
 {: tab-title="Actions"}

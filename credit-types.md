@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2024
-lastupdated: "2024-10-17"
+  years: 2019, 2025
+lastupdated: "2025-09-10"
 
 keywords: credit, credit types, promo code, discount, promotion code, promotional code, redeem promos, feature code, subscription code
 
@@ -39,7 +39,7 @@ You can get up to $1200 in new Business Partner credits at [New Business Partner
 ### Upgrade credits
 {: #upgrade-credits}
 
-You can create an account and use a myriad of software products with no time limit. Your account comes with a $200 USD upgrade credit that is valid for 30 days and it can be applied to any product in the {{site.data.keyword.cloud_notm}} catalog. If your upgrade includes a promotional credit, the credit might take a few hours to appear in your account. For more information, see [{{site.data.keyword.cloud_notm}} free tier](https://www.ibm.com/cloud/free).
+You can create an account and use a myriad of software products with no time limit. Your account comes with a $200 USD upgrade credit that is valid for 30 days and it can be applied to any product in the {{site.data.keyword.cloud_notm}} catalog. If your upgrade includes a promotional credit, the credit might take a few hours to appear in your account. For more information, see [{{site.data.keyword.cloud_notm}} free tier](https://www.ibm.com/products/cloud/free){: external}.
 
 ## Billing Codes
 {: #types-of-codes}

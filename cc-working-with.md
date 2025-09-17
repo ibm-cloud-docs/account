@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-09-16"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -51,7 +51,7 @@ The following tables shows the services that have emissions data and the timefra
 | {{site.data.keyword.baremetal_short}} for Classic       | Q1 2023 |
 | {{site.data.keyword.blockstorageshort}}                 |  Q2 2023 |
 | {{site.data.keyword.block_storage_is_short}}            | Q2 2023 |
-| Block Storage Snapshots for VPC [New]{: tag-new}        | Q3 2024 |
+| Block Storage Snapshots for VPC                         | Q3 2024 |
 | Cloud HSM                                               | Q1 2023 |
 | Cloud Object Storage                                    | Q1 2023 |
 | Cloudant                                                | Q4 2023 |
@@ -69,11 +69,11 @@ The following tables shows the services that have emissions data and the timefra
 | {{site.data.keyword.datastageshort}}                    | Q4 2023 |
 | Db2                                                     | Q1 2024 |
 | Db2 Warehouse                                           | Q4 2023 |
-| Dedicated Host for VPC [New]{: tag-new}                 | Q3 2024 |
+| Dedicated Host for VPC                                  | Q3 2024 |
 | Direct Link Connect                                     | Q1 2024 |
-| Direct Link Connect on Classic [New]{: tag-new}         | Q3 2024 |
+| Direct Link Connect on Classic                          | Q3 2024 |
 | Direct Link Dedicated                                   | Q1 2024 |
-| Direct Link Dedicated on Classic [New]{: tag-new}       | Q3 2024 |
+| Direct Link Dedicated on Classic                        | Q3 2024 |
 | {{site.data.keyword.dns_short}}                         | Q2 2023 |
 | {{site.data.keyword.en_short}}                          | Q3 2023 |
 | {{site.data.keyword.messagehub}}                        | Q3 2023 |
@@ -89,6 +89,7 @@ The following tables shows the services that have emissions data and the timefra
 | {{site.data.keyword.messages-for-rabbitmq}}             | Q3 2023 |
 | MQ                                                      | Q4 2023 |
 | Network Load Balancer                                   | Q2 2023 |
+
 | SAP on Classic Infrastructure                           | Q3 2023 |
 | SAP on VMware                                           | Q3 2023 |
 | {{site.data.keyword.satelliteshort}}                    | Q4 2023 |
@@ -102,7 +103,6 @@ The following tables shows the services that have emissions data and the timefra
 | Virtual Server for VPC                                  | Q1 2023 |
 
 [^tabletext1]: Contains multiple services that are not tracked individually but are combined into one service. IBM Cloud Platform includes the following: Command line interface, Billing and usage, Identity and access management, Global catalog, Global search & tagging, Console, Cloud shell, Projects, Paywall, Schematics, and Carbon calculator.
-
 
 ## Before you begin
 {: #carbon-calc-prereq}
@@ -141,6 +141,6 @@ The goal of the calculation method is to associate electricity consumption and c
 * Per client account, cloud service, and location where the service is running
 * Per client account and resource group
 
-The carbon calculation methodology has been independently validated by Bureau Veritas for the following key services: Virtual Private Cloud (VPC) and Virtual Servers for VPC, Cloud Object Storage, and Kubernetes Service. [View validation](https://cloud.ibm.com/media/docs/downloads/account/bureau-veritas-validation.pdf){: external}.
+The carbon calculation methodology has been independently validated by Bureau Veritas for the Virtual Private Cloud (VPC) and Virtual Servers for VPC, {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.containershort_notm}},  key services. For more information, see [View validation](https://cloud.ibm.com/media/docs/downloads/account/bureau-veritas-validation.pdf){: external}.
 
 For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v4.pdf){: external}.

@@ -2,7 +2,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-09-17"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
