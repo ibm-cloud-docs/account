@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-16"
+lastupdated: "2025-09-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7163,7 +7163,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table130}
 
-## Power Virtual Server DR Automation
+## power-dr-automation
 {: #power-dr-automation-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-dr-automation` for the service name.
@@ -7174,7 +7174,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Platform roles - Power Virtual Server DR Automation" caption-side="top"}
+{: caption="Platform roles - power-dr-automation" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7187,7 +7187,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Service roles - Power Virtual Server DR Automation" caption-side="top"}
+{: caption="Service roles - power-dr-automation" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7196,16 +7196,16 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `power-dr-automation.dashboard.view` | Ability to view dashboard | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `power-dr-automation.dashboard.view` | The ability to view the dashboard | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.orchestration-settings.update` | The ability to update orchestration settings | Administrator, Editor, Manager, Viewer, Writer |
 | `power-dr-automation.orchestration-settings.read` | The ability to read orchestration settings | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `power-dr-automation.dr-operation.read` | The ability to read DR operation | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.dr-summary.read` | The ability to read DR summary | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.event.list` | The ability to list corresponding events | Administrator, Editor, Manager, Reader, Viewer, Writer |
-| `power-dr-automation.event.read` | The ability to get a corresponding events | Administrator, Editor, Manager, Reader, Viewer, Writer |
+| `power-dr-automation.event.read` | The ability to get a corresponding event | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.orchestrator-vm.update` | The ability to update orchestrator VM | Administrator, Editor, Manager, Writer |
 | `power-dr-automation.orchestrator-vm.read` | The ability to read orchestrator VM | Administrator, Editor, Manager, Reader, Viewer, Writer |
-| `power-dr-automation.dr-operation.read` | The ability to read DR operation | Administrator, Editor, Manager, Reader, Viewer, Writer |
-{: caption="Service actions - Power Virtual Server DR Automation" caption-side="top"}
+{: caption="Service actions - power-dr-automation" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -8950,8 +8950,10 @@ Review the available platform and service roles and the actions mapped to each t
 | `user-management.invitation-email.create` |  | Administrator, Editor |
 | `user-management.preference.update` |  | Administrator, Editor |
 | `user-management.preference.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.user-linkage.retrieve` |  | Administrator, Editor, Operator, Viewer |
 | `user-management.user-setting.update` |  | Administrator, Editor |
 | `user-management.user-setting.retrieve` |  | Administrator, Editor, Operator, Viewer |
+| `user-management.user.replace-iam-id` |  | Administrator, Editor |
 | `user-management.vpn.update` | Update user VPN settings | VPN Administrator |
 {: caption="Service actions - IBM Cloud Platform User Management Service" caption-side="top"}
 {: tab-title="Actions"}
