@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-09-16"
+lastupdated: "2025-09-18"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -94,13 +94,14 @@ The following tables shows the services that have emissions data and the timefra
 | SAP on VMware                                           | Q3 2023 |
 | {{site.data.keyword.satelliteshort}}                    | Q4 2023 |
 | {{site.data.keyword.secrets-manager_short}}             | Q3 2023 |
-| {{site.data.keyword.compliance_short}}                  |
+| {{site.data.keyword.compliance_short}}                  | Q4 2023 |
 | Security and Compliance Center Workload Protection       | Q4 2023 |
 | {{site.data.keyword.tg_short}}                          |  Q1 2024 |
 | VMware Solutions                                        | Q3 2023 |
 | {{site.data.keyword.vpn_vpc_short}}                     | Q2 2023 |
 | {{site.data.keyword.virtualmachinesshort}} for Classic  | Q1 2023 |
 | Virtual Server for VPC                                  | Q1 2023 |
+{: caption="Services table" caption-side="top"}
 
 [^tabletext1]: Contains multiple services that are not tracked individually but are combined into one service. IBM Cloud Platform includes the following: Command line interface, Billing and usage, Identity and access management, Global catalog, Global search & tagging, Console, Cloud shell, Projects, Paywall, Schematics, and Carbon calculator.
 
