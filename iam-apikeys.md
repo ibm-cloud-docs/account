@@ -68,9 +68,9 @@ Users and account administrators are notified through {{site.data.keyword.cloud_
 - Disable the API key
 - Delete the API key
 
-For more information on reviewing leaked user API keys, see [Reviewing leaked user API keys by using the console](/docs/account?topic=account-userapikey&interface=ui#review_apikeys_console) and [Reviewing leaked user API keys by using the CLI](/docs/account?topic=account-userapikey&interface=ui#review_apikeys_cli) respectively.
+For more information on reviewing leaked user API keys, see [Reviewing leaked user API keys by using the console](/docs/account?topic=account-userapikey&interface=ui#review-apikeys-console) and [Reviewing leaked user API keys by using the CLI](/docs/account?topic=account-userapikey&interface=cli#review-apikeys-cli) respectively.
 
-For more information on reviewing leaked service ID API keys, see [Reviewing leaked service ID API keys by using the console](/docs/account?topic=account-serviceidapikeys&interface=ui#review_api_keys_serviceid_console) and [Reviewing leaked service ID API keys by using the CLI](/docs/account?topic=account-serviceidapikeys&interface=ui#review_api_keys_serviceid_cli) respectively.
+For more information on reviewing leaked service ID API keys, see [Reviewing leaked service ID API keys by using the console](/docs/account?topic=account-serviceidapikeys&interface=ui#review-api-keys-serviceid-console) and [Reviewing leaked service ID API keys by using the CLI](/docs/account?topic=account-serviceidapikeys&interface=cli#review-api-keys-serviceid-cli) respectively.
 
 ### Required access for managing API keys
 {: #API-key-access}
