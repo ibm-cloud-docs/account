@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-17"
+lastupdated: "2025-09-19"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7163,7 +7163,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table130}
 
-## power-dr-automation
+## DR Automation for PowerVS
 {: #power-dr-automation-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `power-dr-automation` for the service name.
@@ -7174,7 +7174,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Editor | As an editor, you can perform all platform actions except for managing the account and assigning access policies. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Platform roles - power-dr-automation" caption-side="top"}
+{: caption="Platform roles - DR Automation for PowerVS" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7187,7 +7187,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
 {: row-headers}
-{: caption="Service roles - power-dr-automation" caption-side="top"}
+{: caption="Service roles - DR Automation for PowerVS" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7205,7 +7205,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `power-dr-automation.event.read` | The ability to get a corresponding event | Administrator, Editor, Manager, Reader, Viewer, Writer |
 | `power-dr-automation.orchestrator-vm.update` | The ability to update orchestrator VM | Administrator, Editor, Manager, Writer |
 | `power-dr-automation.orchestrator-vm.read` | The ability to read orchestrator VM | Administrator, Editor, Manager, Reader, Viewer, Writer |
-{: caption="Service actions - power-dr-automation" caption-side="top"}
+{: caption="Service actions - DR Automation for PowerVS" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="power-dr-automation"}
 {: class="simple-tab-table"}
@@ -7880,6 +7880,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.composer-simulation.create` | Runs a job on a noisy quantum circuit simulator backend and returns the results | Manager, Reader, Writer |
 | `quantum-computing.composer-transpile.create` | Transpiles a given input circuit to match the topology of a specific quantum device | Manager, Reader, Writer |
 | `quantum-computing.direct-access-job.read` | Get job by ID via Direct Access API. | Manager, Reader, Writer |
+| `quantum-computing.direct-access-lease.create` | Create a new lease via Direct Access API. | Manager, Writer |
+| `quantum-computing.direct-access-lease.delete` | Cancel a lease via Direct Access API. | Manager, Writer |
+| `quantum-computing.direct-access-lease.get` | Get the status of a lease via Direct Access API. | Manager, Reader, Writer |
 {: caption="Service actions - Quantum Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="quantum-computing"}

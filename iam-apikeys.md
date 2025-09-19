@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2022
-lastupdated: "2022-06-14"
+  years: 2015, 2025
+lastupdated: "2025-09-19"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -62,6 +62,16 @@ To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated wi
 
 On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all classic infrastructure API keys for users to which you are an ancestor in the user hierarchy. This means you can manage API keys for all users you invited to the account, or your child users invited to the account, and so on. In addition, if you are the account owner or a user with the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys.
 
+Users and account administrators are notified through {{site.data.keyword.cloud_notm}} notification service if an API key is leaked. When you create an API key, you can specify what action must be taken if the key is compromised. You can select from the following actions:
+
+- Do nothing
+- Disable the API key
+- Delete the API key
+
+For more information on reviewing leaked user API keys, see [Reviewing leaked user API keys by using the console](/docs/account?topic=account-userapikey&interface=ui#review-apikeys-console) and [Reviewing leaked user API keys by using the CLI](/docs/account?topic=account-userapikey&interface=cli#review-apikeys-cli) respectively.
+
+For more information on reviewing leaked service ID API keys, see [Reviewing leaked service ID API keys by using the console](/docs/account?topic=account-serviceidapikeys&interface=ui#review-api-keys-serviceid-console) and [Reviewing leaked service ID API keys by using the CLI](/docs/account?topic=account-serviceidapikeys&interface=cli#review-api-keys-serviceid-cli) respectively.
+
 ### Required access for managing API keys
 {: #API-key-access}
 
@@ -79,3 +89,12 @@ If you are the account owner or a user with the required access, you can access 
 | All service ID API keys | All API keys created for service IDs in the account | Administrator role on the IAM Identity service | View, edit, and delete |
 | Classic infrastructure API keys | Your classic infrastructure API key and any classic infrastructure API keys for users who you are ancestor of in the user hierarchy | No access required other than being an ancestor in the user hierarchy | View details and delete | 
 {: caption="Required access for API key management on the API keys page" caption-side="top"}
+
+## Managing leaked API keys
+{: #manage-leaked-api-keys}
+
+Users and account administrators are notified through {{site.data.keyword.cloud_notm}} notification service if an API key is leaked. When you create an API key, you can specify what action must be taken if the key is compromised. You can select from the following actions:
+
+- Do nothing
+- Disable the API key
+- Delete the API key

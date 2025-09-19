@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-09-19"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -693,3 +693,28 @@ if err != nil {
 ```
 {: codeblock}
 {: go}
+
+## Reviewing leaked user API keys by using the console
+{: #review-apikeys-console}
+{: ui}
+
+If a leaked user API key is detected, you can use the console to review it. Complete the following steps:
+
+1. Log in to the {{site.data.keyword.cloud_notm}} console.
+1. Select the account that contains the leaked API key.
+1. Go to **Manage** > **Access** > **API keys** to review the leaked API key.
+
+## Reviewing leaked user API keys by using the CLI
+{: #review-apikeys-cli}
+{: cli}
+
+If a leaked user API key is detected, you can use the CLI to review it. Complete the following steps: 
+
+1. Log in to the {{site.data.keyword.cloud_notm}} CLI.
+1. Select the account that contains the leaked API key.
+1. Run the following command:
+
+    ```bash
+    ibmcloud iam api-key <API_key_ID>
+    ```
+    {: codeblock}
