@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-30"
+lastupdated: "2025-09-19"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -660,3 +660,30 @@ You must have created the API key for a service ID using the Terraform file. Use
       terraform apply
       ```
       {: pre}
+
+## Reviewing leaked service ID API keys by using the console
+{: #review-api-keys-serviceid-console}
+{: ui}
+
+If a leaked service ID API key is detected, you can use the console to review it. Complete the following steps:
+
+1. Log in to the {{site.data.keyword.cloud_notm}} console.
+1. Select the account that contains the leaked service ID API key.
+1. Go to **Manage** > **Access** > **Service IDs**.
+1. Select the name of the service ID.
+1. Select **API keys**.
+1. Select the name of the leaked API key to review it.
+
+## Reviewing leaked service ID API keys by using the CLI
+{: #review-api-keys-serviceid-cli}
+{: cli}
+
+If a leaked service ID API key is detected, you can use the CLI to review it. Complete the following steps:
+
+1. Log in to the {{site.data.keyword.cloud_notm}} CLI.
+1. Run the following command:
+
+    ```bash
+    ibmcloud iam service-api-key <API_key_ID> <service_id_name>
+    ```
+    {: codeblock}
