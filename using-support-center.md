@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-09-20"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help, support agent, speak with agent, connect to agent, live agent, chat with human agent, talk to an agent
 
@@ -87,7 +87,7 @@ If your account is either {{site.data.keyword.Bluemix_dedicated_notm}} or {{site
 ## Requesting support for resources in the European Union
 {: #eusupported}
 
-European Union (EU) support is available to customers who choose to enable the EU supported setting. EU Support is provided 24 hours a day and 7 days a week by engineers that are located in Europe. Global teams provide support at the discretion of the EU support team. Global teams might be contacted, for example, when issues are not resolved by the Advanced Customer Support (ACS) team in the EU, and more expertise is needed.
+European Union (EU) support is available to customers who choose to enable the EU supported setting. EU Support is provided 24 hours a day and 7 days a week by engineers that are located in Europe. Global teams provide support at the discretion of the EU support team. Global teams might be contacted, for example, when issues are not resolved by the Client Service Delivery team in the EU, and more expertise is needed.
 
 You can specify that you want EU support for your account if the following criteria are true:
 
