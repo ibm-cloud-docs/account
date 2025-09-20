@@ -237,7 +237,7 @@ Complete the following steps to send a test notification to a webhook:
 
 You can add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them.
 
-To create a webhook, first set up an app in Slack and create the incoming webhook, which provides the unique URL where you can send the notification message text in the form of a JSON payload. You will receive the notifications in the selected Slack channel in which you installed your app. For more information, see [Sending messages using Incoming Webhooks](https://api.slack.com/messaging/webhooks){: external}.
+To create a webhook, first set up an app in Slack and create the incoming webhook, which provides the unique URL where you can send the notification message text in the form of a JSON payload. You will receive the notifications in the selected Slack channel in which you installed your app. For more information, see [Sending messages using Incoming Webhooks](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){: external}.
 
 To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
 

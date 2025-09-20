@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-03-05"
+lastupdated: "2025-09-20"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 
@@ -170,7 +170,7 @@ Complete the following steps to create a catalog that includes a specific set of
    ```
    {: codeblock}
 
-1. Update the filter to include or exclude a particular product or products and any applicable pricing plans. Make sure to specify your catalog, or the filter will default to the account level. See [Catalogs management CLI](https://cloud.ibm.com/docs/cli?topic=cli-manage-catalogs-plugin#offering-filter) for more command options.
+1. Update the filter to include or exclude a particular product or products and any applicable pricing plans. Make sure to specify your catalog, or the filter will default to the account level. See [Catalogs management CLI](/docs/cli?topic=cli-manage-catalogs-plugin#offering-filter) for more command options.
    ```bash
    ibmcloud catalog filter offering --offering PRODUCT-NAME
    ```
