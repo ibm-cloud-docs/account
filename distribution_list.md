@@ -174,6 +174,7 @@ The following descriptions provide information about the field values that are b
       * `Minor`: Informative announcements such as product enhancements.
 
 The severity attribute in the request payload can take on a value of 0, 1, 2, 3, or 4. The following table lists the severity values and their corresponding classifications:
+
 | Severity value | Incident   | Maintenance | Announcement |
 |----------------|------------|-------------|--------------|
 | 0              | Severity 4 | Low         | Minor        |
@@ -182,7 +183,6 @@ The severity attribute in the request payload can take on a value of 0, 1, 2, 3,
 | 3              | Severity 3 | Low         | Minor        |
 | 4              | Severity 4 | Low         | Minor        |
 {: caption="Severity levels and their corresponing categories" caption-side="top"}
-{: note}
 
 `state`: This field is only for maintenance and notifications. See the following possible values:
 
