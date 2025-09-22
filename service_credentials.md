@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-09-20"
 
 keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
@@ -44,7 +44,7 @@ Complete the following steps to add a credential to a service:
 1. Check the **One-time view** setting, which determines whether you can retrieve the resource key values later.
    1. Set to **On** or **Off** depending on your use case. Users with the Administrator role on the resource instance can manage this setting by using the [Resource Controller API](/apidocs/resource-controller/resource-controller#update-resource-instance).
 
-      Set to On to help ensure compliance with security best practices and regulations, such as [PCI DSS](https://www.ibm.com/cloud/compliance/pci){: external}, by preventing shared access to credentials.
+      Set to On to help ensure compliance with security best practices and regulations, such as [PCI DSS](https://www.ibm.com/products/cloud/compliance/pci){: external}, by preventing shared access to credentials.
       {: tip}
 
 1. Click **Create credential**.

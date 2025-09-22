@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-09-20"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -36,7 +36,7 @@ With {{site.data.keyword.codeenginefull}} you pay for only the memory and CPU ne
 
 {{site.data.keyword.codeengineshort}} includes a zero-cost tier, and {{site.data.keyword.cloudant_short_notm}} Standard plan includes 20 GB of zero-cost storage so you can experiment before you commit.
 
-The prices that are used in this example are in US currency and do not reflect current prices or include any discounts or promo codes. For the most up-to-date prices, see [{{site.data.keyword.codeengineshort}} pricing](/codeengine/overview#pricing), [{{site.data.keyword.cloudant_short_notm}} pricing](/docs/Cloudant?topic=Cloudant-pricing), [{{site.data.keyword.logs_full_notm}} pricing](/docs/cloud-logs?topic=cloud-logs-service_plans), and [{{site.data.keyword.mon_full_notm}} pricing](/docs/monitoring?topic=monitoring-pricing_plans).
+The prices that are used in this example are in US currency and do not reflect current prices or include any discounts or promo codes. For the most up-to-date prices, see [{{site.data.keyword.codeengineshort}} pricing](/codeengine/overview#pricing), [{{site.data.keyword.cloudant_short_notm}} pricing](/docs/services/Cloudant?topic=Cloudant-usage-and-charges), [{{site.data.keyword.logs_full_notm}} pricing](/docs/cloud-logs?topic=cloud-logs-service_plans), and [{{site.data.keyword.mon_full_notm}} pricing](/docs/monitoring?topic=monitoring-pricing_plans).
 {: important}
 
 ## Pricing scenario

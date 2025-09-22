@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-09-20"
 
 keywords: cir, impacting event, services, advanced customer support
 
@@ -25,7 +25,7 @@ After you create a support case, you can view updates about your impacting event
 ## Details about the Customer Incident Report (CIR)
 {: #details-customer-incident-report}
 
-A CIR is provided for broader, enterprise-level issues. They are updates that provide a Root Cause Analysis (RCA) which is the process for determining the underlying cause of a Customer Impacting Event (CIE). More loclized issues that don't affect {{site.data.keyword.Bluemix_notm}} at an enterprise level don't provide an RCA or CIR. The Advanced Customer Support (ACS) team that mitigates the issue still provides updates, but they're not a formal RCA.
+A CIR is provided for broader, enterprise-level issues. They are updates that provide a Root Cause Analysis (RCA) which is the process for determining the underlying cause of a Customer Impacting Event (CIE). More loclized issues that don't affect {{site.data.keyword.Bluemix_notm}} at an enterprise level don't provide an RCA or CIR. The Client Service Delivery team that mitigates the issue still provides updates, but they're not a formal RCA.
 
 Broader enterprise-wide issues are events that typically impact multiple user environments or regions. Due to the scope and impact of enterprise issues, {{site.data.keyword.Bluemix_notm}} requires a thorough RCA and the CIR is a summary report for the findings of the investigation.
 
@@ -49,4 +49,4 @@ A CIR must be requested within 30 days of an impacting event by using one of the
 
 To create a case, go to [Create a case](/unifiedsupport/cases/add), or to update your case, go to the [Manage cases page](/unifiedsupport/cases).
 
-After the ACS team receives your request for a CIR, they will initiate the CIR process if the issue was caused by a CIE. When it's available, your CIR is provided with a PDF copy that is attached to your support case.
+After the Client Service Delivery team receives your request for a CIR, they will initiate the CIR process if the issue was caused by a CIE. When it's available, your CIR is provided with a PDF copy that is attached to your support case.
