@@ -144,7 +144,7 @@ The goal of the calculation method is to associate electricity consumption and c
 
 The carbon calculation methodology has been independently validated by Bureau Veritas for the {{site.data.keyword.vpc_full}} (VPC) and {{site.data.keyword.vsi_is_full}}, {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.containershort_notm}}, and {{site.data.keyword.powerSys_notm}} key services. For more information, see [View validation](https://cloud.ibm.com/media/docs/downloads/account/bureau-veritas-validation.pdf){: external}.
 
-For a more in-depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v4.pdf){: external}.
+For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v5.pdf){: external}.
 
 ### Data center-based carbon emissions
 {: #datacenter-carbon-emission}
@@ -153,15 +153,15 @@ Emissions are reported at both the data center and regional levels, giving custo
 
 Emissions are attributed based on the type of data available. Sometimes, usage data is tied directly to individual data centers, while in others only regional or power-level data is provided. So, the method of attribution varies, can ensure that emissions are distributed fairly and reflect the actual energy characteristics of each data center. The following are considered when emissions are assigned:
 
-* DC-level usage data: Most classic services provide usage data at the data center level, except for {{site.data.keyword.containershort_notm}} Classic. For these services, emissions can be attributed directly, since consumption is mapped to the specific data center.
+* Data center-level usage data: Most classic services provide usage data at the data center level, except for {{site.data.keyword.containershort_notm}} Classic. For these services, emissions can be attributed directly, since consumption is mapped to the specific data center.
 * Region-level power data only: When only regional power data is available, the total consumption for that region is divided equally among all active data centers within it.
-* DC-level power data available: When a data center's power data is available, emissions are allocated across data centers based on their actual power usage. This means data centers with higher consumption are assigned for a larger share of emissions.
+* Data center-level power data available: When a data center's power data is available, emissions are allocated across data centers based on their actual power usage. This means data centers with higher consumption are assigned for a larger share of emissions.
 
 With this allocation method, the users can:
 
-1. Measure the carbon impact of workloads in specific data centers.
-1. Select low-emission data centers for deployment when options are available.
-1. Report emissions with greater accuracy for sustainability and compliance needs.
+* Measure the carbon impact of workloads in specific data centers.
+* Select low-emission data centers for deployment when options are available.
+* Report emissions with greater accuracy for sustainability and compliance needs.
 
 ### Market-based and location-based methodology
 {: #market-location-methodology}
