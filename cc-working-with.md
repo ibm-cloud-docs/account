@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-09-18"
+lastupdated: "2025-09-22"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -40,7 +40,7 @@ If service data is not displayed, it might be because:
 * Emissions data isn't tracked for the service or wasn't tracked during the selected time period.
 * Data for newly added services does not populate until 16 days after the close of the billing period.
 
-The following tables shows the services that have emissions data and the timeframe when that information was available:
+The following table shows the services that have emissions data and the time frame when that information was available:
 
 | Service | Added |
 |---------|-------|
@@ -87,9 +87,9 @@ The following tables shows the services that have emissions data and the timefra
 | {{site.data.keyword.containershort_notm}}               | Q1 2023 |
 | {{site.data.keyword.loadbalancer_short}} for Classic    | Q1 2023 |
 | {{site.data.keyword.messages-for-rabbitmq}}             | Q3 2023 |
-| MQ                                                      | Q4 2023 |
+| IBM MQ                                                      | Q4 2023 |
 | Network Load Balancer                                   | Q2 2023 |
-
+| Power Virtual Server [New]{: tag-new}                   | Q3 2025 |
 | SAP on Classic Infrastructure                           | Q3 2023 |
 | SAP on VMware                                           | Q3 2023 |
 | {{site.data.keyword.satelliteshort}}                    | Q4 2023 |
@@ -103,7 +103,7 @@ The following tables shows the services that have emissions data and the timefra
 | Virtual Server for VPC                                  | Q1 2023 |
 {: caption="Services table" caption-side="top"}
 
-[^tabletext1]: Contains multiple services that are not tracked individually but are combined into one service. IBM Cloud Platform includes the following: Command line interface, Billing and usage, Identity and access management, Global catalog, Global search & tagging, Console, Cloud shell, Projects, Paywall, Schematics, and Carbon calculator.
+[^tabletext1]: Contains multiple services that are not tracked individually but are combined into one service. IBM Cloud Platform includes the following: Command line interface, Billing and usage, Identity and access management, Global catalog, Global search and tagging, Console, Cloud shell, Projects, Paywall, Schematics, and Carbon calculator.
 
 ## Before you begin
 {: #carbon-calc-prereq}
@@ -142,6 +142,49 @@ The goal of the calculation method is to associate electricity consumption and c
 * Per client account, cloud service, and location where the service is running
 * Per client account and resource group
 
-The carbon calculation methodology has been independently validated by Bureau Veritas for the Virtual Private Cloud (VPC) and Virtual Servers for VPC, {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.containershort_notm}},  key services. For more information, see [View validation](https://cloud.ibm.com/media/docs/downloads/account/bureau-veritas-validation.pdf){: external}.
+The carbon calculation methodology has been independently validated by Bureau Veritas for the {{site.data.keyword.vpc_full}} (VPC) and {{site.data.keyword.vsi_is_full}}, {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.containershort_notm}}, and {{site.data.keyword.powerSys_notm}} key services. For more information, see [View validation](https://cloud.ibm.com/media/docs/downloads/account/bureau-veritas-validation.pdf){: external}.
 
-For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v4.pdf){: external}.
+For a more in depth explanation about carbon calculators methodology and calculations, see [Energy and carbon quantification methodology](https://cloud.ibm.com/media/docs/downloads/account/carbon-calc-method-v5.pdf){: external}.
+
+### Data center-based carbon emissions
+{: #datacenter-carbon-emission}
+
+Emissions are reported at both the data center and regional levels, giving customers visibility into the specific impact of workloads that run in individual data centers. Because a region can include multiple data centers with distinct energy profiles, this level of detail is essential.
+
+Emissions are attributed based on the type of data available. Sometimes, usage data is tied directly to individual data centers, while in others only regional or power-level data is provided. So, the method of attribution varies, can ensure that emissions are distributed fairly and reflect the actual energy characteristics of each data center. The following are considered when emissions are assigned:
+
+* Data center-level usage data: Most classic services provide usage data at the data center level, except for {{site.data.keyword.containershort_notm}} Classic. For these services, emissions can be attributed directly, since consumption is mapped to the specific data center.
+* Region-level power data only: When only regional power data is available, the total consumption for that region is divided equally among all active data centers within it.
+* Data center-level power data available: When a data center's power data is available, emissions are allocated across data centers based on their actual power usage. This means data centers with higher consumption are assigned for a larger share of emissions.
+
+With this allocation method, the users can:
+
+* Measure the carbon impact of workloads in specific data centers.
+* Select low-emission data centers for deployment when options are available.
+* Report emissions with greater accuracy for sustainability and compliance needs.
+
+### Market-based and location-based methodology
+{: #market-location-methodology}
+
+The carbon emissions calculator is designed to support enterprise reporting, audits, and compliance requirements. It accommodates both market-based and location-based emissions methodologies, aligning with the GHG protocol and other international reporting standards.
+
+* Location-based: Calculates emissions based on the average intensity of the local electricity grid where the energy is used.
+* Market-based: Calculates emissions based on specific energy purchases, such as renewable energy certificates.
+
+By offering both views concurrently, users can:
+
+1. Select the methodology that aligns with their corporate sustainability goals or regulatory requirements.
+1. Compare how their renewable energy purchases affect reported emissions.
+1. Help ensure consistency with recognized frameworks such as the GHG protocol.
+
+### Core service
+{: #core-services}
+
+The carbon emissions calculator distinguishes between emissions from core services and from customer-deployed services. Core Services are pre-provisioned, account-wide resources that run by default such as IAM and networking.
+
+Users gain a clearer view of their emissions profile, which builds confidence in the data and makes it simpler to present results in both internal and external reports.
+
+### Computational Assumptions and Imputations
+{: #computational-assumptions-imputations}
+
+As part of building the computation models based on the UNIT consumption that is reported in Billing and Metering (BSS), certain UNITs that account for an insignificant share of overall energy usage is excluded. If data is missing during a specific period, for example, due to system upgrades, the computation model fills the gaps by using extrapolation or inference methods. To allocate energy consumption across data centers, the {{site.data.keyword.cloud_notm}} carbon calculator relies on service-level data to determine the data centers where each service is active.
