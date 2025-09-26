@@ -2,7 +2,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-09-25"
+lastupdated: "2025-09-26"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -79,6 +79,7 @@ Emissions data is currently tracked for a subset of services, but more services 
 * {{site.data.keyword.messages-for-rabbitmq}}                   
 * MQ                                                            
 * Network Load Balancer                                         
+* Power Virtual Server                                          
 * SAP on Classic Infrastructure                                 
 * SAP on VMware                                                 
 * {{site.data.keyword.satelliteshort}}                          
@@ -89,7 +90,6 @@ Emissions data is currently tracked for a subset of services, but more services 
 * {{site.data.keyword.vpn_vpc_short}}                           
 * {{site.data.keyword.virtualmachinesshort}} for Classic        
 * Virtual Server for VPC                                        
-* Power Virtual Server                                          
 
 Because emissions are reported after the close of each billing cycle, data for newly added services and current quarter results take about two months to populate.
 {: note}
