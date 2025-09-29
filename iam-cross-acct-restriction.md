@@ -44,7 +44,7 @@ After you monitor the results from report-only mode for at least 30 days, update
 ## Viewing your reports
 {: #view-cross-acct-report}
 
-{{site.data.keyword.atracker_full_notm}} events are generated when the restriction is set to  **Report-only** or **Limited**. In **Report-only** mode, both permitted and requests that would be denied are reported. In in **Limited** mode, only denied requests are reported.
+{{site.data.keyword.atracker_full_notm}} events are generated when the restriction is set to  **Report-only** or **Limited**. In **Report-only** mode, both permitted and requests that would be denied are reported. In **Limited** mode, only denied requests are reported.
 
 To view {{site.data.keyword.atracker_full_notm}} events, you must configure an {{site.data.keyword.logs_full_notm}} instance as the target. For more information, see [Configuring an {{site.data.keyword.logs_full_notm}} instance as a target](/docs/atracker?topic=atracker-getting-started-target-cloud-logs).
 {: tip}
@@ -53,9 +53,38 @@ To view {{site.data.keyword.atracker_full_notm}} events, you must configure an {
 1. Click **Edit > Open {{site.data.keyword.atracker_full_notm}}**.
 1. Click **Explore Logs**  to compose a query.
 1. Search the logs for the event action: `iam-access-management.account-settings.eval`
-   - The field `responseData.isEnforced:"false"` indicates that the restriction is in **Report-only** state. Further filtering by event field:
-      - `responseData.decision:"Permit"` shows all the requests that were evaluated and passed the restriction.
-      - `responseData.decision:"Deny"` shows all the requests which would have been blocked if the state of the restriction were changed to **Limited**
-   - The field `responseData.isEnforced:"true"` indicates that the restriction is in **Limited** state. Any results in this state indicate blocked requests and will only contain the event field: `responseData.decision:"Deny"`
+
+### Identifying potential access disruptions
+{: #identify-disruptions}
+
+When using **Report-only** mode, your primary focus should be on identifying cross-account access that would be blocked when switching to **Limited** mode:
+
+1. Filter for `responseData.isEnforced:"false" AND responseData.decision:"Deny"`
+   
+   **This is the most critical analysis** you should perform. This query reveals all cross-account access attempts that would be blocked when enforcement is enabled. These results show which identities are currently accessing resources across account boundaries that would be denied access when you switch to **Limited** mode.
+
+2. For each "deny" result, you must determine if this cross-account flow needs to be preserved or if it should be blocked:
+   - If the flow should be preserved: Preferably, contact the user and adjust the work flow to ensure the token used is scoped to the correct account, or if that isn't possible, add the external account to your allowlist. To validate, please see   [ validating allowlist changes section](/docs/account?topic=account-cross-acct#validate-allowlist). 
+   - If the flow should be blocked: No action needed, as it will be automatically blocked when the switch is made to **Limited** mode
+
+### Validating allowlist changes
+{: #validate-allowlist}
+
+After deciding to preserve specific external identity interaction flows by adding accounts to your allowlist, you can verify these changes are working as expected:
+
+1. Filter for `responseData.isEnforced:"false" AND responseData.decision:"Permit"`
+   
+   This query shows requests that passed the restriction, including those that were previously denied but are now permitted due to your allowlist changes.
+
+2. Look specifically for permits from accounts you recently added to your allowlist to confirm your changes are working correctly. This validation step is valuable when you've made allowlist changes and want to ensure that the previously blocked cross-account access is now permitted.
+
+### Monitoring Limited mode
+{: #monitor-limited}
+
+When the restriction is set to **Limited**, you can monitor blocked requests:
+
+- Filter for `responseData.isEnforced:"true" AND responseData.decision:"Deny"`
+  
+  This shows all requests that were blocked because they came from accounts not on your allowlist.
 
 You can add or remove accounts from the allowlist at any time to meet your security requirements. For a list of the actions that generate an event, see [Activity tracking events for IAM](/docs/account?topic=account-at_events_iam).
