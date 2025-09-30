@@ -2,7 +2,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-09-22"
+lastupdated: "2025-09-30"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -79,6 +79,7 @@ Emissions data is currently tracked for a subset of services, but more services 
 * {{site.data.keyword.messages-for-rabbitmq}}                   
 * MQ                                                            
 * Network Load Balancer                                         
+* Power Virtual Server                                          
 * SAP on Classic Infrastructure                                 
 * SAP on VMware                                                 
 * {{site.data.keyword.satelliteshort}}                          
@@ -140,6 +141,12 @@ Account owners, account administrators, and users with a viewer role or higher o
 {: faq}
 
 On the [Carbon calculator](https://cloud.ibm.com/billing/carbon-calculator){: external} interface, from the **Filter by server** list, select the **Power Virtual Server** option.
+
+## Where can I find Power Virtual Server?
+{: #find-power-virtual-server}
+{: faq}
+
+To find more details about Power Virtual Server, see [Using carbon calculator on Power Virtual Server](/docs/power-iaas?topic=power-iaas-carbon-cal).
 
 ## Why is the data for my workspace not displayed in the carbon calculator?
 {: #data-workspace-display}
