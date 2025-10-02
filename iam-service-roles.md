@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-30"
+lastupdated: "2025-10-02"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8327,7 +8327,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table160}
 
-## IBM Verify
+## IBM Security Verify
 {: #security-verify-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `security-verify` for the service name.
@@ -8339,7 +8339,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. |
 {: row-headers}
-{: caption="Platform roles - IBM Verify" caption-side="top"}
+{: caption="Platform roles - IBM Security Verify" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="security-verify"}
 {: class="simple-tab-table"}
@@ -8350,7 +8350,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- |
 | Service Configuration Reader | The ability to read services configuration for Governance management. |
 {: row-headers}
-{: caption="Service roles - IBM Verify" caption-side="top"}
+{: caption="Service roles - IBM Security Verify" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="security-verify"}
 {: class="simple-tab-table"}
@@ -8360,7 +8360,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Action | Description | Roles |
 | ----- | :----- | :----- |
 | `security-verify.dashboard.view` |  | Administrator, Editor, Operator |
-{: caption="Service actions - IBM Verify" caption-side="top"}
+{: caption="Service actions - IBM Security Verify" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="security-verify"}
 {: class="simple-tab-table"}
