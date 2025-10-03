@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-09-12"
+lastupdated: "2025-10-03"
 
 keywords: data centers, data center support, datacenter, data center closure
 
@@ -39,6 +39,8 @@ The following table describes important dates that you need to be aware of if yo
 | 07 January 2025   | No New Account provisioning in impacted datacenter. |
 | 10 June 2025  | Last date to provision services in impacted datacenter. |
 | 09 September 2025 | Network maintenance MIL01: 10:AM US Eastern Time (14:00 GMT). Remaining services in MIL01 will experience network disruption during the network maintenance. Customers will need to contact IBM Cloud to restore service. |
+| 31 October 2025 | All {{site.data.keyword.containershort_notm}} clusters will be deleted in MIL01. |
 | 10 November 2025 | Last date to submit migration assistance request. |
+| 01 December 2025 | COS in MIL01 will be withdrawn. |
 | 10 December 2025    | Last date to migrate before closure of MIL01 datacenter. |
 {: caption="Timeline for MIL01 data center migration" caption-side="top"}
