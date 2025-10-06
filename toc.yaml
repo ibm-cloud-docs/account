@@ -1,4 +1,3 @@
----
 toc:
   properties:
     subcollection: account
@@ -76,11 +75,11 @@ toc:
           - update-your-profile.md
           - iam-policy-number.md
           - topicgroup:
-                label: Updating account settings for compliance
-                topics:
-                - eu-supported.md
-                - financial-services-validated.md
-                - hipaa-supported.md
+              label: Updating account settings for compliance
+              topics:
+              - eu-supported.md
+              - financial-services-validated.md
+              - hipaa-supported.md
           - shell-settings.md
           - account-upgrade.md
           - update-account-ownership.md
@@ -90,48 +89,48 @@ toc:
           label: Securing your account
           topics:
           - topicgroup:
-                label: Setting up multifactor authentication and other authentication methods
-                topics:
-                - iam-mfatypes.md
-                - iam-mfa.md
-                - iam-mfa-report.md
-                - migrate-mfa.md
-                - legacy-mfa.md
-                - iam-ver-auth.md
-                - iam-federation-guide.md
-                - iam-idp-integration.md
-                - iam-saml-federation.md
+              label: Setting up multifactor authentication and other authentication methods
+              topics:
+              - iam-mfatypes.md
+              - iam-mfa.md
+              - iam-mfa-report.md
+              - migrate-mfa.md
+              - legacy-mfa.md
+              - iam-ver-auth.md
+              - iam-federation-guide.md
+              - iam-idp-integration.md
+              - iam-saml-federation.md
           - topicgroup:
-                label: Managing access and identities
-                topics:
-                - iam-groups.md
-                - iam-mng-access.md
-                - iam-manage-user-account.md
-                - iam-serviceid.md
-                - iam-account_management.md
-                - iam-public_access.md
-                - iam-migrated_permissions.md
-                - iam-wildcard.md
-                - iam-mnginfra.md
-                - iam-audit-policies.md
-                - iam-based-conditions.md
-                - iam-authorizations.md
-                - iam-roles-management.md
-                - iam-accessgroup_rules.md
-                - iam-identify-inactive.md
+              label: Managing access and identities
+              topics:
+              - iam-groups.md
+              - iam-mng-access.md
+              - iam-manage-user-account.md
+              - iam-serviceid.md
+              - iam-account_management.md
+              - iam-public_access.md
+              - iam-migrated_permissions.md
+              - iam-wildcard.md
+              - iam-mnginfra.md
+              - iam-audit-policies.md
+              - iam-based-conditions.md
+              - iam-authorizations.md
+              - iam-roles-management.md
+              - iam-accessgroup_rules.md
+              - iam-identify-inactive.md
           - topicgroup:
-                label: Administering trusted profiles
-                topics:
-                - trustedprofile-create.md
-                - trustedprofile-manage.md
-                - trustedprofile-iam-token.md
+              label: Administering trusted profiles
+              topics:
+              - trustedprofile-create.md
+              - trustedprofile-manage.md
+              - trustedprofile-iam-token.md
           - topicgroup:
-                label: Controlling context-based restrictions
-                topics:
-                - context-restrictions-create.md
-                - context-restrictions-manage.md
-                - cm-cbr.md
-                - iam-cbr.md
+              label: Controlling context-based restrictions
+              topics:
+              - context-restrictions-create.md
+              - context-restrictions-manage.md
+              - cm-cbr.md
+              - iam-cbr.md
           - topicgroup:
               label: Administering settings
               topics:
@@ -145,14 +144,14 @@ toc:
               - sessions-settings.md
               - iam-token-exp.md
           - topicgroup:
-                label: Using API keys
-                topics:
-                - iam-apikeys.md
-                - iam-userid_keys.md
-                - iam-serviceid_keys.md
-                - iam-classic_infra_keys.md
-                - iam-apikey_iamtoken.md
-                - iam-apikeys_services.md
+              label: Using API keys
+              topics:
+              - iam-apikeys.md
+              - iam-userid_keys.md
+              - iam-serviceid_keys.md
+              - iam-classic_infra_keys.md
+              - iam-apikey_iamtoken.md
+              - iam-apikeys_services.md
       - topicgroup:
           label: Catalog management in IBM Cloud
           topics:
@@ -162,41 +161,41 @@ toc:
           - catalog-custom-private-preset.md
           - catalog-custom-private-object.md
           - topicgroup:
-                label: Validating products in a target account
-                topics:
-                - catalog-cross-account.md
-                - catalog-cross-validation.md
+              label: Validating products in a target account
+              topics:
+              - catalog-cross-account.md
+              - catalog-cross-validation.md
           - topicgroup:
-                label: Onboarding products
-                topics:
-                - catalog-add-private.md
-                - catalog-product-details.md
-                - catalog-translate-details.md
-                - catalog-control-format.md
-                - catalog-manage-sw-plans.md
+              label: Onboarding products
+              topics:
+              - catalog-add-private.md
+              - catalog-product-details.md
+              - catalog-translate-details.md
+              - catalog-control-format.md
+              - catalog-manage-sw-plans.md
           - topicgroup:
-                label: Sharing products
-                topics:
-                - catalog-enterprise-share-overview.md
-                - catalog-enterprise-share.md
-                - catalog-enterprise-share-accept.md
-                - catalog-other-share.md
+              label: Sharing products
+              topics:
+              - catalog-enterprise-share-overview.md
+              - catalog-enterprise-share.md
+              - catalog-enterprise-share-accept.md
+              - catalog-other-share.md
           - topicgroup:
-                label: Managing product versions
-                topics:
-                - catalog-reload-version.md
-                - catalog-helm-targets.md
-                - catalog-update-private.md
-                - catalog-deprecate.md
-                - catalog-restore.md
-                - catalog-suspend-version.md
+              label: Managing product versions
+              topics:
+              - catalog-reload-version.md
+              - catalog-helm-targets.md
+              - catalog-update-private.md
+              - catalog-deprecate.md
+              - catalog-restore.md
+              - catalog-suspend-version.md
           - topicgroup:
-                label: Working with software
-                topics:
-                - catalog-scans.md
-                - catalog-run-local.md
-                - catalog-embed-code.md
-                - sw-instance-details.md
+              label: Working with software
+              topics:
+              - catalog-scans.md
+              - catalog-run-local.md
+              - catalog-embed-code.md
+              - sw-instance-details.md
           - catalog-access-reqs.md
           - software-license.md
       - topicgroup:
@@ -216,11 +215,11 @@ toc:
           - iam-cross-acct-restriction.md
           - locations-management.md
           - topicgroup:
-                label: Connecting resources to apps
-                topics:
-                - service_credentials.md
-                - using-services.md
-                - service_in_other_regions.md
+              label: Connecting resources to apps
+              topics:
+              - service_credentials.md
+              - using-services.md
+              - service_in_other_regions.md
           - topicgroup:
               label: Connecting resources over a private network
               topics:
@@ -230,44 +229,44 @@ toc:
           label: Managing your account billing and usage
           topics:
           - topicgroup:
-                label: Managing your costs and usage
-                topics:
-                - how_charged.md
-                - estimating_costs.md
-                - scenario.md
-                - change_pricing_plan.md
-                - getting-pricing-api.md
-                - viewing_usage.md
-                - infra_usage.md
-                - project-spend.md
-                - understand-invoice.md
-                - manage_billing.md
-                - invoices.md
-                - cancel-billing-items.md
+              label: Managing your costs and usage
+              topics:
+              - how_charged.md
+              - estimating_costs.md
+              - scenario.md
+              - change_pricing_plan.md
+              - getting-pricing-api.md
+              - viewing_usage.md
+              - infra_usage.md
+              - project-spend.md
+              - understand-invoice.md
+              - manage_billing.md
+              - invoices.md
+              - cancel-billing-items.md
           - topicgroup:
-                label: Exporting your usage data for continual insights
-                topics:
-                - exporting-usage.md
-                - usage-report.md
+              label: Exporting your usage data for continual insights
+              topics:
+              - exporting-usage.md
+              - usage-report.md
           - topicgroup:
-                label: Managing subscriptions and commitments
-                topics:
-                - subscriptions.md
-                - software-subscription.md
-                - service-level-commit.md
+              label: Managing subscriptions and commitments
+              topics:
+              - subscriptions.md
+              - software-subscription.md
+              - service-level-commit.md
           - topicgroup:
-                label: Working with codes and credits
-                topics:
-                - credit-types.md
-                - feature_codes.md
-                - subscription_codes.md
-                - promo_codes.md
+              label: Working with codes and credits
+              topics:
+              - credit-types.md
+              - feature_codes.md
+              - subscription_codes.md
+              - promo_codes.md
           - topicgroup:
-                label: Working with IBM Cloud's carbon calculator
-                topics:
-                - cc-working-with.md
-                - tracking-emission.md
-                - cc-terms.md
+              label: Working with IBM Cloud's carbon calculator
+              topics:
+              - cc-working-with.md
+              - tracking-emission.md
+              - cc-terms.md
           - support.md
           - migrate-billing.md
           - migrate-bp-billing.md
@@ -285,15 +284,15 @@ toc:
       - topicgroup:
           label: Getting support
           topics:
-            - using-support-center.md
-            - topicgroup:
-                label: Working with support cases
-                topics:
-                - assign-user-access-cases.md
-                - create-case.md
-                - case-severity-response-times.md
-                - manage-case.md
-            - report-security.md
+          - using-support-center.md
+          - topicgroup:
+              label: Working with support cases
+              topics:
+              - assign-user-access-cases.md
+              - create-case.md
+              - case-severity-response-times.md
+              - manage-case.md
+          - report-security.md
       - topicgroup:
           label: Monitoring notifications
           topics:
@@ -314,8 +313,8 @@ toc:
               label: Catalog Management
               href: https://{DomainName}/apidocs/resource-catalog/private-catalog
           - link:
-               label: Context-based restrictions
-               href: https://{DomainName}/apidocs/context-based-restrictions
+              label: Context-based restrictions
+              href: https://{DomainName}/apidocs/context-based-restrictions
           - link:
               label: Global Catalog
               href: https://{DomainName}/apidocs/resource-catalog/global-catalog
