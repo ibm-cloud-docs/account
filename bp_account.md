@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-10-07"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -38,9 +38,9 @@ In this scenario, you might assign a developer wide-ranging access to the develo
 ### Organizing resources in resource groups
 {: #setting-up-rgs}
 
-All resources that are managed by using IAM access control belong to a resource group. You assign a resource to its resource group when you create it from the catalog. It's important to [create your resource groups](/docs/account?topic=account-rgs#create_rgs) first because you can't change the assignment of resources after you set it. If you accidentally assign a resource to the wrong resource group, delete the resource and create a new one.
+All resources that are managed by using IAM access control belong to a resource group. You assign a resource to its resource group when you create it from the catalog. It's important to [Create your resource groups](/docs/account?topic=account-rgs#create_rgs) first because you can't change the assignment of resources after you set it. If you accidentally assign a resource to the wrong resource group, delete the resource and create a new one.
 
-A default resource group is created for your account. If you have a Lite account, you're limited to the use of one resource group. If you want to create multiple resource groups, [upgrade](/docs/account?topic=account-upgrading-account) to a Pay-As-You-Go or Subscription account.
+A default resource group is created for your account. If you have a Lite account, you're limited to the use of one resource group. If you want to create multiple resource groups, [Upgrade](/docs/account?topic=account-upgrading-account) to a Pay-As-You-Go or Subscription account.
 {: tip}
 
 ### Searching for resources
@@ -61,7 +61,7 @@ Access groups
 Trusted profiles
 :   If your organization has an enterprise directory, trusted profiles can reduce the time and effort to manage access. It simplifies the login process to your {{site.data.keyword.cloud_notm}} account for federated users in your enterprise. You can automatically grant federated users or compute resources access to your account by creating trusted profiles. For federated users, add conditions based on SAML attributes to define which federated users can apply a profile. For compute resources, specify specific resources, or add conditions based on resource attributes to define which compute resources can apply a profile. For both entity types, the level of access that is granted is determined by the access policies that are specified within each trusted profile, or the access groups that the trusted profile is a member of. However, trusted profiles don't require federated users to be invited to an account, and only users that are federated by an external identity provider (IdP) can apply a trusted profile.
 
-When you're a member of multiple access groups, all policies apply at once when you access an account. As a federated user, you might have the option to apply different trusted profiles, but you select just one profile to apply when you log in. For example, if you want to complete developer-related tasks, select the `Developer` profile when you log in. If you want to complete an administrator-related task, you select the`Admin` profile that has privileged permissions. This way, you reduce the risk of taking privileged actions by mistake.
+When you're a member of multiple access groups, all policies apply at once when you access an account. As a federated user, you might have the option to apply different trusted profiles, but you select just one profile to apply when you log in. For example, if you want to complete developer-related tasks, select the `Developer` profile when you log in. If you want to complete an administrator-related task, you select the `Admin` profile that has privileged permissions. This way, you reduce the risk of taking privileged actions by mistake.
 {: tip}
 
 A policy consists of a subject, target, and role. The subject in this case is the access group or trusted profile. The target is what you want the subject to access, such as a set of resources in a resource group, a service instance, all services in the account, or all instances of a service. The role defines the level of access that is granted.
@@ -105,7 +105,7 @@ Removing access for inactive identities and inactive policies can reduce the ris
 
 An access group is an organization of users, service IDs, and trusted profiles in a grouping that you can grant the same IAM access. All identities in a single access group inherit the same access.
 
-A logical way to assign access to your resource groups and the included resources is by [creating one access group](/docs/account?topic=account-groups) per required level of access. Then, you can map each access group to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following access groups:
+A logical way to assign access to your resource groups and the included resources is by [Creating one access group](/docs/account?topic=account-groups) per required level of access. Then, you can map each access group to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following access groups:
 
 * Auditor-Group
 * Developer-Group
@@ -139,7 +139,7 @@ Review the following sample access policies to help you determine how you might 
 
 A trusted profile is a grouping of federated users or compute resources to which the same IAM access can be granted. All identities that are allowed to apply a single profile inherit the same access. To reduce the number of policies in an account, you can add compute resources and federated users to the same trusted profile if their access needs are the same.
 
-A logical way to assign access to your resource groups and the included resources is by [creating one trusted profile](/docs/account?topic=account-create-trusted-profile) per required level of access. Then, you can map each trusted profile to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following trusted profiles:
+A logical way to assign access to your resource groups and the included resources is by [Creating one trusted profile](/docs/account?topic=account-create-trusted-profile) per required level of access. Then, you can map each trusted profile to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following trusted profiles:
 
 * Auditor-Profile
 * Developer-Profile
@@ -156,7 +156,7 @@ The following diagram shows how access is assigned to trusted profiles:
 
 ![Assigning access to trusted profiles](images/trusted-profiles.svg "Assigning access to trusted profiles"){: caption="Assigning access to trusted profiles" caption-side="bottom"}
 
-You can select only one trusted entity type when you first create a trusted profile. You can [update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
+You can select only one trusted entity type when you first create a trusted profile. You can [Update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
 
 You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. For the second policy, select **All Account Management services** with the Administrator role assigned. Users with the Administrator role can update and remove trusted profile's access and add and remove users from the trusted profile, including other users with the administrator role.
 
@@ -182,16 +182,16 @@ Access groups are best used for granting access for a user's day-to-day work, wh
 
 Use the following table to understand the differences between using access groups and trusted profiles to make the best decision for your use case.
 
-| Feature | Access group                    | Trusted profile                 |
+| Feature                         | Access group                    | Trusted profile                 |
 |---------------------------------|---------------------------------|---------------------------------|
 | IAM access control              | Yes                             | Yes                             |
-| Inviting users to the {{site.data.keyword.cloud_notm}} account required|  Yes            | No                              |
+| Inviting users to the {{site.data.keyword.cloud_notm}} account required|  Yes            | No       |
 | Access can be defined before user is added to the account | Yes, by using dynamic rules | Yes       |
 | Federated users                 | Yes                             | Yes                             |
-| Non-federated users             | Yes                             | Yes                              |
-| Service ID                      | Yes                             | Yes                              |
+| Non-federated users             | Yes                             | Yes                             |
+| Service ID                      | Yes                             | Yes                             |
 | Compute resource identities     | No                              | Yes                             |
-| User management is primarily done in| {{site.data.keyword.cloud_notm}} account           | Corporate user directory        |
+| User management is primarily done in| {{site.data.keyword.cloud_notm}} account  | Corporate user directory        |
 {: caption="Compare access groups and trusted profiles" caption-side="top"}
 
 Access groups and trusted profiles can be used separately or hand-in-hand for user and access management, depending on your organization's needs.
@@ -302,6 +302,6 @@ I assign the user a writer role on Bucket A in the specific instance of {{site.d
 ## Next steps
 {: #bp-access-next}
 
-Now that you know how to set up your resource groups, organize your resources, and create access groups in your account, you can start [inviting users to your account](/docs/account?topic=account-iamuserinv) and assigning them access to your access groups. If you already invited users to your account, you can go to your Users page and start to [assign access](/docs/account?topic=account-assign-access-resources#assign-access-resources).
+Now that you know how to set up your resource groups, organize your resources, and create access groups in your account, you can start [Inviting users to your account](/docs/account?topic=account-iamuserinv) and assigning them access to your access groups. If you already invited users to your account, you can go to your Users page and start to [assign access](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
-If you decide that your organization wants to manage user access based on your corporate user directory, you can start by [creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
+If you decide that your organization wants to manage user access based on your corporate user directory, you can start by [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
