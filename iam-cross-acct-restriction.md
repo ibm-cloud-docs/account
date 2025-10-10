@@ -3,7 +3,7 @@
 copyright:
 
    years: 2021, 2025
-lastupdated: "2025-05-12"
+lastupdated: "2025-10-10"
 
 keywords: cross-account restriction, cross-account resource, resource sharing across account, cross-account, cross account
 
@@ -44,7 +44,7 @@ After you monitor the results from report-only mode for at least 30 days, update
 ## Viewing your reports
 {: #view-cross-acct-report}
 
-{{site.data.keyword.atracker_full_notm}} events are generated when the restriction is set to  **Report-only** or **Limited**. In **Report-only** mode, both permitted and requests that would be denied are reported. In in **Limited** mode, only denied requests are reported.
+{{site.data.keyword.atracker_full_notm}} events are generated when the restriction is set to  **Report-only** or **Limited**. In **Report-only** mode, both permitted and requests that would be denied are reported. In **Limited** mode, only denied requests are reported.
 
 To view {{site.data.keyword.atracker_full_notm}} events, you must configure an {{site.data.keyword.logs_full_notm}} instance as the target. For more information, see [Configuring an {{site.data.keyword.logs_full_notm}} instance as a target](/docs/atracker?topic=atracker-getting-started-target-cloud-logs).
 {: tip}
@@ -53,9 +53,75 @@ To view {{site.data.keyword.atracker_full_notm}} events, you must configure an {
 1. Click **Edit > Open {{site.data.keyword.atracker_full_notm}}**.
 1. Click **Explore Logs**  to compose a query.
 1. Search the logs for the event action: `iam-access-management.account-settings.eval`
-   - The field `responseData.isEnforced:"false"` indicates that the restriction is in **Report-only** state. Further filtering by event field:
-      - `responseData.decision:"Permit"` shows all the requests that were evaluated and passed the restriction.
-      - `responseData.decision:"Deny"` shows all the requests which would have been blocked if the state of the restriction were changed to **Limited**
-   - The field `responseData.isEnforced:"true"` indicates that the restriction is in **Limited** state. Any results in this state indicate blocked requests and will only contain the event field: `responseData.decision:"Deny"`
+
+### Identifying potential access disruptions
+{: #identify-disruptions}
+
+When you are using the **Report-only** mode, identify the cross-account access that is blocked before switching to the **Limited** mode. To assess whether cross-account access would be blocked, complete the following steps:
+
+1. Select the filter for `responseData.isEnforced:"false" AND responseData.decision:"Deny"`
+   
+This is the most critical analysis you should perform. This query reveals all cross-account access attempts that would be blocked when enforcement is enabled. These results show which identities are currently accessing resources across account boundaries that would be denied access when you switch to **Limited** mode.
+
+2. For each "deny" result, you must determine if this cross-account flow needs to be preserved or if it should be blocked:
+   - If the flow should be preserved: Preferably, contact the user and adjust the work flow to ensure the token used is scoped to the correct account, or if that isn't possible, add the external account to your allowlist. For more information, see [Fixing unwanted external identity interactions](/docs/account?topic=account-cross-acct#fix-external-interactions).
+   - If the flow should be blocked: No action needed, as it is automatically blocked when the **Limited** mode is selected.
+
+### Validating allowlist changes
+{: #validate-allowlist}
+
+When you decide to preserve specific external identity interaction flows by adding accounts to your allowlist, you can verify that these changes are working as expected by using the following steps:
+
+1. Select the filter for `responseData.isEnforced:"false" AND responseData.decision:"Permit"`
+   
+   This query shows requests that passed the restriction, including those that were previously denied but are now permitted due to your allowlist changes.
+
+2. Look specifically for permits from accounts you recently added to your allowlist to confirm your changes are working correctly. This validation step is required when you've made allowlist changes and want to ensure that the previously blocked cross-account access is now permitted.
+
+### Monitoring Limited mode
+{: #monitor-limited}
+
+When the restriction is set to **Limited**, you can monitor blocked requests:
+
+- Select the filter for `responseData.isEnforced:"true" AND responseData.decision:"Deny"`
+  
+This query displays requests that passed the restriction, including ones that were previously denied but are now allowed due to changes made to your allowlist.
 
 You can add or remove accounts from the allowlist at any time to meet your security requirements. For a list of the actions that generate an event, see [Activity tracking events for IAM](/docs/account?topic=account-at_events_iam).
+
+## Fixing unwanted external identity interactions
+{: #fix-external-interactions}
+
+When you identify unwanted external identity interactions in your reports, you have two suggested approaches to resolve them without disrupting essential workflows:
+
+### Using trusted profiles (recommended)
+{: #using-trusted-profiles}
+
+Trusted profiles are the suggested method for enabling legitimate use cases where an entity in one account needs to access resources in a different account. This approach gives you precise control over which identities can  log in to your account and which profiles they can assume.
+
+The External Identity Interactions setting does not prevent you from adding specific users, service IDs, or compute resources in other accounts to a trusted profile. Since those identities are then logged in the context of your account, the External Identity Interactions setting no longer restricts them.
+
+To implement this approach, use the following steps:
+
+1. Create a trusted profile in your account. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=ui).
+2. Add specific identities from other accounts to this trusted profile.
+3. Grant the trusted profile appropriate access to resources in your account.
+4. Configure external identities to use this profile for resource access.
+
+This method provides better security and auditability as the external identity is operating within the context of your account.
+
+### Using the allowlist feature
+{: #using-allowlist}
+
+The allowlist feature is especially useful in Enterprise account structures or other situations where multiple accounts are owned by the same organization and the users and resources in those accounts need to interact with each other.
+
+To implement this approach:
+
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **Settings** > **Resources**
+2. Click the **Edit** icon
+3. Add the account IDs for the trusted accounts to the allowlist
+4. Click **Save**
+
+After adding accounts to your allowlist, you should [validate your allowlist changes](#validate-allowlist) to make sure the previously blocked cross-account access is now allowed.
+
+While the allowList approach is simpler to implement, it provides less granular control than trusted profiles as it allows all users from the specified accounts to access resources in your account (provided they have the appropriate permissions).
