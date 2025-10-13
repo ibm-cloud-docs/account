@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-02"
+lastupdated: "2025-10-11"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5892,17 +5892,22 @@ Review the available platform and service roles and the actions mapped to each t
 | `is.vpn-server.dashboard.view` | View Dashboard | Administrator, Editor, Operator, Viewer |
 | `is.vpn-server.vpn-server.create` | Create VPN server
 
+
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.delete` | Delete VPN server
+
 
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.operate` | Operate VPN server
 
+
  | Administrator, Editor, Operator |
 | `is.vpn-server.vpn-server.read` | View VPN server
 
+
  | Administrator, Editor, Operator, Viewer |
 | `is.vpn-server.vpn-server.update` | Update VPN server
+
 
  | Administrator, Editor |
 | `is.vpn-server.vpn-server.connect` | Connect to VPN server | VPN Client |
