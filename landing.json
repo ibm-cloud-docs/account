@@ -1,75 +1,75 @@
 {
-    "version": 2,
-    "title": "Managing your account, resources, and access docs",
-    "introduction": "Discover the end-to-end journey for managing your account by leveraging the docs. Start by setting up your IBM Cloud account, learn how to effectively manage your costs and usage, and gain insights into assigning access to resources with IBM Cloud Identity and Access Management (IAM). Explore best practices for resource management and find out how to get the support you need.",
-    "console_page": "/account",
-    "section_topics": {
-      "links": [
-        {
-          "title": "Learn about different account types",
-          "href": "/docs/account?topic=account-accounts"
-        },
-        {
-          "title": "Setting up your IBM Cloud account",
-          "href": "/docs/account?topic=account-account-getting-started"
-        },
-        {
-          "title": "Assigning access to resources by using access groups",
-          "href": "/docs/account?topic=account-access-getstarted"
-        },
-        {
-          "title": "Monitoring your login sessions",
-          "href": "/docs/account?topic=account-monitor-your-session"
-        },
-        {
-          "title": "Viewing your usage",
-          "href": "/docs/account?topic=account-viewingusage"
-        },
-        {
-          "title": "FAQ about accounts",
-          "href": "/docs/account?topic=account-accountfaqs"
-        },
-        {
-          "title": "Using the Support Center",
-          "href": "/docs/account?topic=account-using-avatar"
-        }
-      ]
-    },
-    "section_highlights": [
+  "version": 2,
+  "title": "Managing your account, resources, and access docs",
+  "introduction": "Discover the end-to-end journey for managing your account by leveraging the docs. Start by setting up your IBM Cloud account, learn how to effectively manage your costs and usage, and gain insights into assigning access to resources with IBM Cloud Identity and Access Management (IAM). Explore best practices for resource management and find out how to get the support you need.",
+  "console_page": "/account",
+  "section_topics": {
+    "links": [
       {
-        "title": "Catalog management in IBM Cloud",
-        "description": "Learn how to create private catalogs and access catalog settings.",
-        "href": "https://www.ibm.com/new",
-        "type": "blog"
+        "title": "Learn about different account types",
+        "href": "/docs/account?topic=account-accounts"
       },
       {
-        "title": "Introduction to IBM Cloud billing and usage",
-        "description": "Learn about the costs of any billable services that you use in your account.",
-        "href": "https://mediacenter.ibm.com/media/Introduction%20to%20IBM%20Cloud%20billing%20and%20usage/1_w31ph24n",
-        "type": "video",
-        "recommended": true
+        "title": "Setting up your IBM Cloud account",
+        "href": "/docs/account?topic=account-account-getting-started"
+      },
+      {
+        "title": "Assigning access to resources by using access groups",
+        "href": "/docs/account?topic=account-access-getstarted"
+      },
+      {
+        "title": "Monitoring your login sessions",
+        "href": "/docs/account?topic=account-monitor-your-session"
+      },
+      {
+        "title": "Viewing your usage",
+        "href": "/docs/account?topic=account-viewingusage"
+      },
+      {
+        "title": "FAQ about accounts",
+        "href": "/docs/account?topic=account-accountfaqs"
+      },
+      {
+        "title": "Using the Support Center",
+        "href": "/docs/account?topic=account-using-avatar"
       }
-    ],
-    "section_devtools": {
-      "api": "/apidocs/resource-catalog/private-catalog",
-      "cli": "/docs/account?topic=account-manage-catalogs-plugin",
-      "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs"
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Catalog management in IBM Cloud",
+      "description": "Learn how to create private catalogs and access catalog settings.",
+      "href": "https://www.ibm.com/new",
+      "type": "blog"
     },
-    "section_updates": {
-      "view_more": "/docs/overview?topic=overview-whatsnew",
-      "tiles": [
-        {
-          "date": "07 August 2025",
-          "title": "Federate enterprise IdP administrators to IBM Cloud by using SAML"
-        },
-        {
-          "date": "01 July 2025",
-          "title": "Manage one-time view credentials"
-        },
-        {
-          "date": "13 December 2024",
-          "title": "Service ID limits are increased with groups"
-        }
-      ]
+    {
+      "title": "Introduction to IBM Cloud billing and usage",
+      "description": "Learn about the costs of any billable services that you use in your account.",
+      "href": "https://mediacenter.ibm.com/media/Introduction%20to%20IBM%20Cloud%20billing%20and%20usage/1_w31ph24n",
+      "type": "video",
+      "recommended": true
     }
+  ],
+  "section_devtools": {
+    "api": "/apidocs/resource-catalog/private-catalog",
+    "cli": "/docs/account?topic=account-manage-catalogs-plugin",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs"
+  },
+  "section_updates": {
+    "view_more": "/docs/overview?topic=overview-whatsnew",
+    "tiles": [
+      {
+        "date": "22 September 2025",
+        "title": "Carbon insights at the data center-level"
+      },
+      {
+        "date": "07 August 2025",
+        "title": "Federate enterprise IdP administrators to IBM Cloud by using SAML"
+      },
+      {
+        "date": "01 July 2025",
+        "title": "Manage one-time view credentials"
+      }
+    ]
   }
+}
