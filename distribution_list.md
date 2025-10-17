@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-10-16"
+lastupdated: "2025-10-17"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
 
@@ -66,6 +66,8 @@ To add an existing {{site.data.keyword.en_short}} service instance to the notifi
 
 You cannot add an {{site.data.keyword.en_short}} service instance to the notification distribution list that is already configured.
 {: note}
+
+
 
 ### Deleting an {{site.data.keyword.en_short}} instance
 {: #event-notifications-delete}
