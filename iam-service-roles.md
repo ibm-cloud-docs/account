@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-14"
+lastupdated: "2025-10-17"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6201,6 +6201,8 @@ Review the available platform and service roles and the actions mapped to each t
 | `logs.logs-stream-setup.manage` | Manage logs stream settings. | Manager |
 | `logs.team-alerts-settings.read` | Read alerts toggle in the setting. | Manager, Reader, Writer |
 | `logs.team-alerts-settings.manage` | Manage alerts toggle in the setting. | Manager, Writer |
+| `logs.reserved-field.read` | View reserved fields. | Manager, Reader, Writer |
+| `logs.reserved-field.manage` | Update, delete or create reserved fields. | Manager, Writer |
 {: caption="Service actions - Cloud Logs" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="logs"}
