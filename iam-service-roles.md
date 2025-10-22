@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-17"
+lastupdated: "2025-10-22"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7892,6 +7892,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description |
 | ----- | :----- |
+| Account Reader | As an account reader, you can perform read-only account actions. This role should typically be granted in a policy that applies to all resources in the account for the Qiskit Runtime service. |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. |
 | Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. |
@@ -7917,15 +7918,15 @@ Review the available platform and service roles and the actions mapped to each t
 | `quantum-computing.instance.configuration.update` | Instance configuration update | Manager |
 | `quantum-computing.instance.read` | Instance read | Manager, Reader, Writer |
 | `quantum-computing.session.create` | Create a Session | Manager, Writer |
-| `quantum-computing.account-configuration.read` | Read Account Configuration. Must be granted by a policy that does not specify service instance. | Manager |
+| `quantum-computing.account-configuration.read` | Read Account Configuration. Must be granted by a policy that does not specify service instance. | Account Reader, Manager |
 | `quantum-computing.workload.list` | Access to list workloads (sessions and jobs) | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend.list` | List backends, get backend status, configuration, properties or pulse defaults via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-job.cancel` | Cancel job via Direct Access API. | Manager, Writer |
 | `quantum-computing.direct-access-job.create` | Create job via Direct Access API. | Manager, Writer |
 | `quantum-computing.direct-access-job.delete` | Delete job via Direct Access API. | Manager, Writer |
 | `quantum-computing.direct-access-job.list` | List jobs via Direct Access API. | Manager, Reader, Writer |
-| `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
-| `quantum-computing.account-analytics-filters.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Manager, Reader, Writer |
+| `quantum-computing.account-analytics-usage.read` | Read usage for analytics. Must be granted by a policy that provides access to all resources in the account. | Account Reader, Manager, Reader, Writer |
+| `quantum-computing.account-analytics-filters.read` | Read usage filters for analytics. Must be granted by a policy that provides access to all resources in the account. | Account Reader, Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend.read` | Get backend accessible via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-configuration.read` | Get backend configuration via Direct Access API. | Manager, Reader, Writer |
 | `quantum-computing.direct-access-backend-properties.read` | Get backend properties via Direct Access API. | Manager, Reader, Writer |
