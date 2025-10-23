@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-07-18"
+lastupdated: "2025-10-23"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -16,7 +16,7 @@ subcollection: account
 # Basic, Advanced, and Premium support plans
 {: #support-plans}
 
-You can choose a Basic, Advanced, or Premium support plan to customize your {{site.data.keyword.Bluemix}} support experience for your business needs. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center.  If you want to upgrade your support plan, contact an [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
+You can choose a Basic, Advanced, or Premium support plan to customize your {{site.data.keyword.Bluemix}} support experience for your business needs. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center.  If you want to upgrade your support plan, contact an [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 {: shortdesc}
 
 Initial response Service Level Objectives (SLO) do not apply to any billing, invoice, or sales related inquiry or cases.
@@ -34,7 +34,7 @@ The following table shows the support types available for Pay-As-You-Go accounts
 | **Pricing**  | Included with cloud entitlement | Pay-As-You-Go and Subscription: Starting at a minimum USD 200 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption | Pay-As-You-Go and Subscription: Starting at a minimum of USD 10,000 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption. For more information about support pricing, see [Viewing your support costs](/docs/account?topic=account-support).|
 {: caption="Support plans" caption-side="top"}
 
-For Enterprise Savings Plans, there is a minimum commitment for Advanced and Premium support. If you don't spend the total committed amount by the end of the commitment term, you are invoiced for the amount that you didn't consume, and any amount used over the commitment is also charged. For more information, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative.
+For Enterprise Savings Plans, there is a minimum commitment for Advanced and Premium support. If you don't spend the total committed amount by the end of the commitment term, you are invoiced for the amount that you didn't consume, and any amount used over the commitment is also charged. For more information, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 {: note}
 
 ## Premium support

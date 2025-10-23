@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-03-27"
+lastupdated: "2025-10-23"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -42,7 +42,7 @@ Multiply the two values together, and the result is the GB-hour.
 {: #bandwidth-usage-overages}
 {: faq}
 
-If you provision multiple servers, you can potentially reduce bandwidth overage charges in the future by pooling your servers' bandwidth. For more information, see [Optimizing your bandwidth usage](/docs/bare-metal?topic=bare-metal-bm-view-bandwidth-graphs#bm-optimize-bandwidth-usage). Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to request a quote for more server bandwidth.
+If you provision multiple servers, you can potentially reduce bandwidth overage charges in the future by pooling your servers' bandwidth. For more information, see [Optimizing your bandwidth usage](/docs/bare-metal?topic=bare-metal-bm-view-bandwidth-graphs#bm-optimize-bandwidth-usage). Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to request a quote for more server bandwidth.
 
 ##  What's the difference between a Pay-As-You-Go and a Subscription account?
 {: #billable-account-types}
@@ -81,7 +81,7 @@ If your payments are managed outside of the console, go to [{{site.data.keyword.
 {: #pay-method}
 {: faq}
 
-For a Pay-As-You-Go account, you must have an active credit card on file. With the Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types, you might be able to use other payment options. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to inquire about payment options.
+For a Pay-As-You-Go account, you must have an active credit card on file. With the Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types, you might be able to use other payment options. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to inquire about payment options.
 
 ## How do I pay an invoice?
 {: #pay-invoice}
@@ -133,7 +133,7 @@ For Pay-As-you-Go accounts, you must have an active credit card on file. You can
 {: #localcurrency}
 {: faq}
 
-Invoicing in your local currency might be possible if you have a subscription or {{site.data.keyword.Bluemix_notm}} Cloud Enterprise Savings Plan account type. Contact [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/cloud?contactmodule){: external} for more information.
+Invoicing in your local currency might be possible if you have a subscription or {{site.data.keyword.Bluemix_notm}} Cloud Enterprise Savings Plan account type. Contact [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} for more information.
 
 An account that is invoiced in a currency other than US Dollars can't be converted to US Dollar invoicing.
 {: note}
@@ -142,7 +142,7 @@ An account that is invoiced in a currency other than US Dollars can't be convert
 {: #BCI-invoice}
 {: faq}
 
-Business Continuity Insurance is insurance that protects you from illegitimate charges against your servers. You can request this insurance through [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/cloud?contactmodule){: external} to avoid overage charges if a documented network attack occurs against a covered server. {{site.data.keyword.Bluemix_notm}} credits back any overages incurred on the affected server.
+Business Continuity Insurance is insurance that protects you from illegitimate charges against your servers. You can request this insurance through [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to avoid overage charges if a documented network attack occurs against a covered server. {{site.data.keyword.Bluemix_notm}} credits back any overages incurred on the affected server.
 
 To receive the credits for illegitimate charges against your servers, contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
 
@@ -307,7 +307,7 @@ Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can crea
 {: #serviceleve-thirdparty}
 {: faq}
 
-No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to learn more about the {{site.data.keyword.cloud_notm}} services that qualify for a service commitment.
+No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to learn more about the {{site.data.keyword.cloud_notm}} services that qualify for a service commitment.
 
 ## What is a manual credit?
 {: #manual-credit}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-10-23"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -23,7 +23,7 @@ Any SoftLayer Partner that signed the following agreements before May 2021 is re
 - SoftLayer Solution & Service Provider Attachment (SSSPA) to the CSA
 - IBM Cloud Enterprise Service Agreement (ESA) Click & Accept
 
-Moving to IBM Partner Programs requires a new IBM Resell or ESA order. All IBM Business Partners are required to join [IBM Partner Plus](https://www.ibm.com/partnerplus/){: external}. Moving your SoftLayer account or accounts to {{site.data.keyword.IBM_notm}} requires ordering a new commitment with [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}, but your resources and account structure remain unchanged.
+Moving to IBM Partner Programs requires a new IBM Resell or ESA order. All IBM Business Partners are required to join [IBM Partner Plus](https://www.ibm.com/partnerplus/){: external}. Moving your SoftLayer account or accounts to {{site.data.keyword.IBM_notm}} requires ordering a new commitment with [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}, but your resources and account structure remain unchanged.
 
 Direct accounts must pay all invoices in full before you can move to {{site.data.keyword.IBM_notm}} Partner Programs. To pay your invoice in the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Payments**. Review the following sections to understand the changes that apply to partners.
 
@@ -57,7 +57,7 @@ The following table maps your SoftLayer Partner account type to the equivalent I
 
 SoftLayer Resellers or partners of SoftLayer Resellers can apply to become an IBM Cloud Marketplace Reseller and continue to support end customers. For more information, see the [CMR agreement](https://ibm.seismic.com/app){: external}.
 
-Cloud Marketplace Resellers can work with an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} representative to migrate your account hierarchy during your move to {{site.data.keyword.IBM_notm}} Partner Programs.
+Cloud Marketplace Resellers can work with an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to migrate your account hierarchy during your move to {{site.data.keyword.IBM_notm}} Partner Programs.
 
 ### Cloud Direct ESA
 {: #esa-migrate}

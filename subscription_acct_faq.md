@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-10-23"
 
 keywords: GB-hour, container usage, runtime, charge
 
@@ -40,7 +40,7 @@ When you apply a subscription code to a Pay-As-You-Go account, the status of the
 {: #subs-pay-schedule}
 {: faq}
 
-Yes. By default, you're billed monthly for your subscriptions. If you'd like to pay up-front or quarterly, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
+Yes. By default, you're billed monthly for your subscriptions. If you'd like to pay up-front or quarterly, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
 ## Can I spend more or less than my monthly commitment?
 {: #subs-spending}
@@ -52,7 +52,7 @@ Yes, what you spend monthly is up to you. You can spend any amount of the total 
 {: #subs-spend-before-term-end}
 {: faq}
 
-You're required to continue paying your monthly charges until the end of your term. You're charged the non-discounted rate for any usage that goes over your total subscription amount. To avoid overage charges, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to sign up for a new subscription.
+You're required to continue paying your monthly charges until the end of your term. You're charged the non-discounted rate for any usage that goes over your total subscription amount. To avoid overage charges, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to sign up for a new subscription.
 
 The Enterprise Savings Plan model is similar to the Subscription model. Unlike a subscription, when you have a commitment, you commit to spend a certain amount and receive discounts across the platform even after your commitment term ends.
 
