@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-10-23"
 
 keywords: subscription code, subscription credit, discount code, promo code, feature code 
 
@@ -30,7 +30,7 @@ Only the account owner, enterprise account owner, or a user with the Editor or A
 
 1. Open the email with the subscription code.
 
-    If you bought a subscription and didn't receive your subscription code, [contact us](https://www.ibm.com/cloud?contactmodule){: external} or email Sales at CloudDigitalSales@us.ibm.com to request for it to be sent again.
+    If you bought a subscription and didn't receive your subscription code, [contact us](https://www.ibm.com/solutions/cloud?contactmodule){: external} or email Sales at CloudDigitalSales@us.ibm.com to request for it to be sent again.
     {: note}
 
 1. Click **Add subscription** to add it to an existing account.

@@ -2,7 +2,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-10-24"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -775,6 +775,9 @@ To detach a tag from a service ID, complete the following steps:
 When you detach an access management tag from a service ID, any policies that are scoped to that tag no longer includes access to the service ID.
 {: note}
 
+When you detach a user tag, it is automatically deleted from the account if no more attached to any resource.
+{: note}
+
 ## Detaching tags on a service ID by using the CLI
 {: #detach-tag-service-id-cli}
 {: cli}
@@ -976,6 +979,9 @@ When you detach an access management tag from a service ID, any policies that ar
 
 ## Deleting unused tags from the account
 {: #delete}
+
+`user` tags are automatically deleted when no more associated to any resource, so you should not need to do that manually.
+However, you should do that for `access management` tags.
 
 Before you can delete a tag, you must remove it from all resources and service IDs. If you still can't delete it, the tag might be attached to a resource that you don't have permission to view or was reclaimed. The same tag can be attached to several resources and service IDs by different users in the same billing account.
 

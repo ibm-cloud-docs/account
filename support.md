@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-10-24"
 
 keywords: support costs, support subscriptions, support credit, support
 
@@ -22,7 +22,7 @@ If you have Advanced or Premium support, you can keep track of your monthly supp
 ## How you're charged for support
 {: #how-support}
 
-Each [{{site.data.keyword.Bluemix_notm}} support plan](/docs/account?topic=account-support-plans) has a minimum monthly price for providing support for your cloud workload at the stated service level. Beyond this starting price, any additional costs for support are based on your resource usage. The higher your resource usage, the higher your total support cost. For details about your purchased support plan, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external}.
+Each [{{site.data.keyword.Bluemix_notm}} support plan](/docs/account?topic=account-support-plans) has a minimum monthly price for providing support for your cloud workload at the stated service level. Beyond this starting price, any additional costs for support are based on your resource usage. The higher your resource usage, the higher your total support cost. For details about your purchased support plan, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
 ## Viewing support costs
 {: #view-support}
