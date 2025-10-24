@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-10-07"
+lastupdated: "2025-10-24"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -42,7 +42,7 @@ To authenticate with a service's API by using an access token, complete the foll
 
 1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
 2. The next step for the API client is the retrieval of an IAM access token, as described in [Getting an IAM token from an API key](https://cloud.ibm.com/docs/account?topic=account-iamtoken_from_apikey).
-3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.m.wikipedia.org/wiki/Unix_time){: external}.
+3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: external}.
 4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://datatracker.ietf.org/doc/html/rfc6750#page-5){: external}.
 
 
