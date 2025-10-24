@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-10-24"
 
 keywords: account resources, reclaim resource, restore resource, reclamation
 
@@ -225,7 +225,7 @@ fmt.Printf("\nRunReclamationAction() response:\n%s\n", string(b))
 {: #restore-resource-cli}
 {: cli}
 
-You can restore a resource within 7 days after you delete it.
+Resources can typically be restored within 3 days of deletion. However, restoration periods might vary depending on the service, as each one follows its own retention policy. For more information, refer to the individual service's documentation.
 
 Not all resources can be restored. You can run the **`ibmcloud resource reclamations`** command to check the resources that you can restore.
 {: important}
@@ -255,7 +255,7 @@ For more information, see the [`ibmcloud resource reclamations` command referenc
 {: #restore-resource-api}
 {: api}
 
-You can restore a resource within 7 days after you delete it.
+Resources can typically be restored within 3 days of deletion. However, restoration periods might vary depending on the service, as each one follows its own retention policy. For more information, refer to the individual service's documentation.
 
 Not all resources can be restored. [Get a list of all reclaimations](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-reclamations) to check the resources that you can restore.
 {: important}
