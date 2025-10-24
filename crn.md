@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-07-09"
+lastupdated: "2025-10-24"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -125,10 +125,10 @@ The following table provides a list of CRN examples.
 | Example           | Value |
 |-------------------|-------|
 | Kubernetes worker | `crn:v1:bluemix:public:containers-kubernetes:us-south:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:8042b2a8af6a4a5cbf6dbe09e07311d2:worker:kube-hou02-pa8042b2a8af6a4a5cbf6dbe09e07311d2-w1` |
-| Resource group    | `crn:v1:bluemix:public:resource-controller:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:resource-group:59bcbfa6ea2f006b4ed7094c1a08dcdd` |
+| Resource group    | `crn:v1:bluemix:public:resource-controller:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd::resource-group:59bcbfa6ea2f006b4ed7094c1a08dcdd` |
 | Service instance  | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4::` |
 | Bucket            | `crn:v1:bluemix:public:cloud-object-storage:global:a/59bcbfa6ea2f006b4ed7094c1a08dcdd:1a0ec336-f391-4091-a6fb-5e084a4c56f4:bucket:mybucket` |
-| Child service     | `crn:v1:staging:public:resource-catalog::a/9d67f37fdf745e1b3cbef0ee4e6f2eda::composite:is.vpn` |
+| Child service     | `crn:v1:bluemix:public:resource-catalog:global:a/9d67f37fdf745e1b3cbef0ee4e6f2eda::composite:is-vpn` |
 {: caption="CRN examples" caption-side="top"}
 
 To view example steps for retrieving the CRN value, see [Retrieving your instance ID and cloud resource name (CRN)](/docs/key-protect?topic=key-protect-retrieve-instance-ID).
