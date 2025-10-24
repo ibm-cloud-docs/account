@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-08-28"
+lastupdated: "2025-10-24"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
@@ -18,7 +18,7 @@ subcollection: account
 
 The concept of access management consists of a few interrelated components, including users, service IDs, access groups, trusted profiles, resources, policies, roles, actions, and the {{site.data.keyword.cloud_notm}} IAM control system, which allows users to take actions on resources within an account.
 
-{{site.data.keyword.cloud_notm}} IAM follows an [eventually consistent](https://en.m.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, IAM remains highly available and performant across multiple global regions. Changes that are made to IAM access policies, authorizations, service IDs, API keys, access groups, trusted profiles, resource groups, users, or any other access controls are recorded and propagated across all IAM components and IAM-enabled services worldwide. Access changes might not take effect until the propagation process is complete.
+{{site.data.keyword.cloud_notm}} IAM follows an [eventually consistent](https://en.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, IAM remains highly available and performant across multiple global regions. Changes that are made to IAM access policies, authorizations, service IDs, API keys, access groups, trusted profiles, resource groups, users, or any other access controls are recorded and propagated across all IAM components and IAM-enabled services worldwide. Access changes might not take effect until the propagation process is complete.
 
 ## Access groups
 {: #access-groups-iam}

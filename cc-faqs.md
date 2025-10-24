@@ -3,7 +3,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-10-07"
+lastupdated: "2025-10-24"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -141,7 +141,7 @@ Account owners, account administrators, and users with a viewer role or higher o
 {: #view-power-virtual-server}
 {: faq}
 
-On the [Carbon calculator](https://cloud.ibm.com/billing/carbon-calculator){: external} interface, from the **Filter by server** list, select the **Power Virtual Server** option.
+On the [Carbon calculator](https://cloud.ibm.com/billing/carbon-calculator){: external} interface, from the **Filter by service** list, select the **Power Virtual Server** option.
 
 ## Where can I find Power Virtual Server?
 {: #find-power-virtual-server}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-10-24"
 
 keywords: troubleshoot billing
 
@@ -28,5 +28,5 @@ Your Enterprise Savings Plan account has expired and you try to add another comm
 You can't add a commitment to the account by using the {{site.data.keyword.cloud_notm}} console. The only way to add a commitment is by contacting sales.
 {: tsCauses}
 
-To contact sales, go to [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/cloud?contactmodule){: external} to begin your chat.
+To contact sales, go to [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to begin your chat.
 {: tsResolve}

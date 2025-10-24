@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-22"
+lastupdated: "2025-10-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -5980,6 +5980,11 @@ Review the available platform and service roles and the actions mapped to each t
 | `kms.kmip-management.list` | Lists a KMIP management resource | KmipAdapterManager, Manager |
 | `kms.kmip-management.read` | Reads a KMIP management resource | KmipAdapterManager, Manager |
 | `kms.kmip-management.delete` | Deletes a KMIP management resource | KmipAdapterManager, Manager |
+| `kms.crypto-unit.read` | Read crypto unit metadata | Manager |
+| `kms.crypto-unit.send` | Send request to crypto unit | Manager |
+| `kms.crypto-unit.list` | List crypto units | Manager |
+| `kms.crypto-unit.claim` | Claim crypto unit | Manager |
+| `kms.crypto-unit.zeroize` | Zeroize crypto unit | Manager |
 {: caption="Service actions - IBM Key Protect" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="kms"}
