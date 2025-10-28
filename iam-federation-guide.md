@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-10-28"
 
 keywords: SAML federation, federation option, federated IBMid, SAML fed, federated
 
@@ -99,8 +99,8 @@ The following links help you implement the federation that you choose:
 [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}.
 :   The publicly available IBMid federation guide gives you an overview about the steps that are required to federate your Identity Provider and whom to contact to get the federation implemented. Be aware that you need an "IBM Sponsor" (for example, an {{site.data.keyword.IBM_notm}} employee that works as main contact between you and the IBMid team).
 
-[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](https://www.ibm.com/products){: external}.
-:   Announcement for the {{site.data.keyword.Bluemix_notm}} IAM feature to federate with an Identity Provider through SAML using {site.data.keyword.appid_full_notm}. 
+[{{site.data.keyword.Bluemix_notm}} Self-Service Federation for External Identity Providers](/docs/account?topic=account-ibm-idp-integration).
+:   Documentation for the {{site.data.keyword.Bluemix_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}}. 
 
 [Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration)
 :   Follow the steps necessary to integrate an {{site.data.keyword.appid_full_notm}} service instance with {{site.data.keyword.Bluemix_notm}} IAM so that your users can use your {{site.data.keyword.Bluemix_notm}} account without creating IBMids. Review the section Setting IAM-specific attributes in {{site.data.keyword.appid_short}} tokens to make sure that your users are correctly onboarded and displayed inside your {{site.data.keyword.Bluemix_notm}} account.[Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration)
