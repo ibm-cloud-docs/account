@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-10-28"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -6301,7 +6301,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table113}
 
-## SAP Adaptive Server Enterprise Cloud Edition by IBM Cloud 
+## SAP Adaptive Server Enterprise Cloud Edition by IBM Cloud
 {: #managed-sap-ase-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `managed-sap-ase` for the service name.
@@ -8113,7 +8113,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table157}
 
-## Satellite Infrastructure Services 
+## Satellite Infrastructure Services
 {: #satellite-iaas-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `satellite-iaas` for the service name.
