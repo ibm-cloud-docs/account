@@ -466,6 +466,7 @@ Only cases that contain all selected tags are displayed, as the search option us
 When you are working with a trusted profile and open a support case, you can choose between two options to receive notifications.
 
 Option 1: Notifications can be sent to your email address.
+
 Option 2: Notifications can be sent to the email address associated with the trusted profile.
 
 To use the second option, an email address must be associated with the trusted profile that is not a service ID, cloud resource, or computer resource.
