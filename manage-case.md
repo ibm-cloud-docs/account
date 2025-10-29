@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-10-29"
 
 keywords: manage case, open case, update case, escalate case
 
@@ -457,4 +457,16 @@ After you create the tags, you can associate them with a case by clicking **Case
 To find cases with specific tags, click one or more tags. For example, click `tag100` or `tag100` and `tag102` to view all associated cases.
 
 Only cases that contain all selected tags are displayed, as the search option uses an AND condition. OR filtering is not supported.
+{: note}
+
+## Getting notifications for cases opened by using a trusted profile
+{: #tp-notifications}
+{: ui}
+
+When you are working with a trusted profile and open a support case, you can choose between two options to receive notifications.
+
+Option 1: Notifications can be sent to your email address.
+Option 2: Notifications can be sent to the email address associated with the trusted profile.
+
+To use the second option, an email address must be associated with the trusted profile that is not a service ID, cloud resource, or computer resource.
 {: note}
