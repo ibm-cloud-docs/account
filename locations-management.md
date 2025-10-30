@@ -76,6 +76,7 @@ Filter by different location parameters by using the syntax shown in each exampl
 | Region ID                          | `id:a,b,c`                       | Region is either `a`, `b`, `c`                 |
 | Metro                              | `metro:dal`                      | Metro is `dal`                                 |
 | Capability                         | `cap:on-prem`                    | Capability on-premises is registered           |
+| Service                            | `service:secrets-manager`        | Regions that are supported by `Secrets Manager` service. Note that the service names in the filter needs to be the programmatic name. |
 | Tag                                | `tag:t1`                         | Regions with a `t1` tag                        |
 | Location type                      | `public:false`                   | Private regions                                |
 | Kind                               | `kind:region`                    | [Group of one or more zones](/docs/overview?topic=overview-locations#table-mzr)|
