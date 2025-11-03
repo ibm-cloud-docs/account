@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-29"
+lastupdated: "2025-11-03"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -4178,6 +4178,9 @@ Review the available platform and service roles and the actions mapped to each t
 | `hs-crypto.kmip-management.list` | hs-crypto.kmip-management.list | Kmip Adapter Manager, Manager |
 | `hs-crypto.kmip-management.read` | hs-crypto.kmip-management.read | Kmip Adapter Manager, Manager |
 | `hs-crypto.kmip-management.delete` | hs-crypto.kmip-management.delete | Kmip Adapter Manager, Manager |
+| `hs-crypto.secrets-migration-intent.read` | hs-crypto.secrets-migration-intent.read | Manager, Reader, Reader Plus |
+| `hs-crypto.secrets-migration-intent.create` | hs-crypto.secrets-migration-intent.create | Manager, Reader, Reader Plus |
+| `hs-crypto.secrets-migration-intent.delete` | hs-crypto.secrets-migration-intent.delete | Manager, Reader, Reader Plus |
 {: caption="Service actions - Hyper Protect Crypto Services" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="hs-crypto"}
