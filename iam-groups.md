@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-05"
 
 keywords: access groups, access group, create group, assign access to group, administrator, administrator role
 
@@ -51,6 +51,8 @@ Before you can set up access groups by using Terraform, make sure that you have 
 ## Creating an access group in the console
 {: #create_ag}
 {: ui}
+{: support}
+{: help}
 
 A unique name is required to differentiate access groups in the account. To create an access group, complete the following steps:
 

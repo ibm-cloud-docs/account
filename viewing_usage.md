@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-11-05"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -58,6 +58,8 @@ August usage ($1012.50) + Average change ($31.25) = The predicted usage for next
 
 ### Viewing usage details from the usage page
 {: #usage-details-page}
+{: help}
+{: support}
 
 In the Services section, you can view a list of your services and the estimated costs that are associated with those services. To view a summary of estimated charges for all instances of a specific resource, complete the following steps:
 
