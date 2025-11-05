@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-04-18"
+lastupdated: "2025-11-05"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -90,6 +90,7 @@ The `owner` tag is listed for the owner of the account. This user is assigned th
 ## How do I find and manage API Keys for a user or myself?
 {: #iam-api-keys}
 {: faq}
+{: support}
 
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys** to view and manage API keys that you have access to.
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-05"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner, classic infrastructure, account owner, second account owner, two account owners, alternative account owner, trusted profile
 
@@ -60,8 +60,11 @@ When you're logged in to the account, you can find the account number in the {{s
 
 ## Granting alternative account owner access
 {: #grant-alt-owner}
+{: support}
+{: help}
 
 Alternative account owner access grants the following assignments:
+
 - Administrator and manager roles on All Identity and Access enabled services
 - Administrator role on All Account Management services
 - A classic infrastructure flag that indicates the trusted profile is the alternative account owner

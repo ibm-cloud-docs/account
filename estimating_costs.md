@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-05"
 
 keywords: quote cost, find cost, estimate cost, estimate bill, total cost, service cost, cost estimator, infrastructure quote, compute quote, vsi quote, bare metal quote, savings plan
 
@@ -24,6 +24,8 @@ Estimates can now be saved to an account. Make sure you're in the account that y
 
 ## Creating an estimate
 {: #new-estimate}
+{: help}
+{: support}
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Cost estimator** icon![Cost estimator icon](../icons/calculator.svg "Cost estimator").
 1. From the Estimating your costs page, click **Create estimate**.
@@ -39,7 +41,7 @@ Estimates can now be saved to an account. Make sure you're in the account that y
    Some products might require that you log in to add them to an estimate.
    {: note}
 
-1.  Enter your estimated usage, and click **Calculate Cost**. You can adjust the estimated usage and recalculate the cost to see how different usage levels affect the overall cost.
+1. Enter your estimated usage, and click **Calculate Cost**. You can adjust the estimated usage and recalculate the cost to see how different usage levels affect the overall cost.
 
       By default, the estimator shows the pricing and billing currency set for your account. Pricing can vary by region. If you're estimating costs for a different location or currency, you might have to select the appropriate currency on the order summary page for the product or change the currency on your account.
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-05"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -93,6 +93,7 @@ To view your support costs, you need an access policy with the Administrator rol
 ## How can I upgrade my support plan?
 {: #support-plan}
 {: faq}
+{: support}
 
 If you want to upgrade your support plan, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans).
 
