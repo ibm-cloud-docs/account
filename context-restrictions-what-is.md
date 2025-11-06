@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-06"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -111,7 +111,7 @@ Customers can specify the IP addresses they know that they want to be able to se
 #### VPCs
 {: #vpc-attribute}
 
-If you have apps that are deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone. To do so, select the target VPC in your network zone and add that network zone to your rule. This way, you don’t must find the IP addresses that the VPC uses. Resources that are contacted see that the request is coming from a set of allowed IP addresses.
+If you have apps that are deployed in a VPC that need access to a context-based restricted resource, you can include the VPC IP addresses in your network zone. To do so, select the target VPC in your network zone and add that network zone to your rule. This way, you don’t need to find the IP addresses that the VPC uses. Resources that are contacted see that the request is coming from a set of allowed IP addresses.
 
 #### Service references
 {: #service-attribute}
