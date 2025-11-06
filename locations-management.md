@@ -2,7 +2,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-11-05"
+lastupdated: "2025-11-06"
 
 keywords: location management, locations, region
 
@@ -76,7 +76,7 @@ Filter by different location parameters by using the syntax shown in each exampl
 | Region ID                          | `id:a,b,c`                       | Region is either `a`, `b`, `c`                 |
 | Metro                              | `metro:dal`                      | Metro is `dal`                                 |
 | Capability                         | `cap:on-prem`                    | Capability on-premises is registered           |
-| Service                            | `service:secrets-manager`        | Regions supported by the {{site.data.keyword.secrets-manager_short}} service. The service names used in the filter must be the programmatic names.
+| Service                            | `service:secrets-manager`        | Regions supported by the {{site.data.keyword.secrets-manager_short}} service. The service names used in the filter must be the programmatic names. |
 | Tag                                | `tag:t1`                         | Regions with a `t1` tag                        |
 | Location type                      | `public:false`                   | Private regions                                |
 | Kind                               | `kind:region`                    | [Group of one or more zones](/docs/overview?topic=overview-locations#table-mzr)|
