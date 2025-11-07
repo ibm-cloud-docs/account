@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-07"
 
 keywords: troubleshoot account, page load, page error, console page error
 
@@ -26,8 +26,8 @@ One of the following error messages might be displayed:
 {: tsSymptoms}
 
 ```text
-BXNUI0001E: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.
-BXNUI0016E: The apps and services weren't retrieved because an {{site.data.keyword.Bluemix_notm}} page didn't load.
+BXNUI0001E: The page wasn't loaded because {{site.data.keyword.cloud_notm}} didn't detect whether a session exists.
+BXNUI0016E: The apps and services weren't retrieved because an {{site.data.keyword.cloud_notm}} page didn't load.
 500 internal server error
 ```
 
@@ -41,5 +41,5 @@ Complete one or more of the following actions, as necessary:
 * Log out of the console and log in again.
 * Use the private browsing mode of your browser.
 * Clear the cookies and the cache of the browser.
-* Use a different browser. For the list of supported browsers, see [{{site.data.keyword.Bluemix_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
-* If the problem persists, go to the [{{site.data.keyword.Bluemix_notm}} Status page](https://cloud.ibm.com/status){: external} to check if a service or component has an issue.
+* Use a different browser. For the list of supported browsers, see [{{site.data.keyword.cloud_notm}} prerequisites](/docs/overview?topic=overview-prereqs-platform).
+* If the problem persists, go to the [{{site.data.keyword.cloud_notm}} Status page](https://cloud.ibm.com/status){: external} to check if a service or component has an issue.
