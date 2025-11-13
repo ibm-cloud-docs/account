@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-11-13"
 
 keywords: activity tracking, context-based restrictions events, events, observibility
 
@@ -35,37 +35,7 @@ You can use {{site.data.keyword.logs_full_notm}} to visualize and alert on event
 
 
 
-The context-based restrictions service sends activity tracking events by {{site.data.keyword.atracker_full_notm}} in the regions that are indicated in the following table.
-
-| Dallas (`us-south`) | Washington (`us-east`)  | Toronto (`ca-tor`) | Sao Paulo (`br-sao`) |
-|---------------------|-------------------------|-------------------|----------------------|
-| [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} |
-{: caption="Regions where activity tracking events are sent in Americas locations" caption-side="top"}
-{: #atracker-table-1}
-{: tab-title="Americas"}
-{: tab-group="atracker"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Tokyo (`jp-tok`)    | Sydney (`au-syd`) |  Osaka (`jp-osa`) | Chennai (`in-che`) |
-|---------------------|------------------|------------------|--------------------|
-| [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} | [No]{: tag-red} |
-{: caption="Regions where activity tracking events are sent in Asia Pacific locations" caption-side="top"}
-{: #atracker-table-2}
-{: tab-title="Asia Pacific"}
-{: tab-group="atracker"}
-{: class="simple-tab-table"}
-{: row-headers}
-
-| Frankfurt (`eu-de`)  | London (`eu-gb`) | Madrid (`eu-es`) |
-|---------------------------------------------------------------|---------------------|------------------|
-| [Yes]{: tag-green} | [No]{: tag-red} | [No]{: tag-red} |
-{: caption="Regions where activity tracking events are sent in Europe locations" caption-side="top"}
-{: #atracker-table-3}
-{: tab-title="Europe"}
-{: tab-group="atracker"}
-{: class="simple-tab-table"}
-{: row-headers}
+Users can configure {{site.data.keyword.atracker_full_notm}} to send logs to any supported region of their choice. There are no mandatory region restrictions. For more information on Activity Tracker Event Routing, see [About {{site.data.keyword.atracker_full_notm}}](/docs/atracker?topic=atracker-about).
 
 
 
