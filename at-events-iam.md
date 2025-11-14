@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-10-07"
+lastupdated: "2025-11-14"
 
 keywords: activity tracking, IAM events, Identity and Access Management, observibility
 
@@ -463,7 +463,7 @@ To find out the user who has tried to modify an API key or a service ID, complet
 2. Get the email address that is associated with the user. To complete this step, you must have administrator permissions in the account. Run the following command:
 
        ```text
-      ibmcloud iam users --output json | grep -A 1 InitiatorID
+      ibmcloud account users --output json | grep -A 1 InitiatorID
        ```
        {: codeblock}
 
