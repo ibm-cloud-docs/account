@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-15"
 
 keywords: subscription, credit, subscription code, support code, subscription overage, subscription usage, feature code, expiring subscription, expired subscription
 
@@ -39,9 +39,9 @@ If you have multiple subscriptions in your account that are valid at the same ti
 
 | Subscription | Credit | Valid From | Valid Until |
 | ------------ | ---------------- | ---------- | ----------- |
-| {{site.data.keyword.Bluemix_notm}} Platform - 01234567, term 1 | $12,000 | 1 July 2019 | 30 June 2020 |
-| {{site.data.keyword.Bluemix_notm}} Platform - 00432100 | $9,000 | 1 September 2019 | 31 August 2020 |
-| {{site.data.keyword.Bluemix_notm}} Platform - 01234567, term 2 | $12,000 | 1 July 2020 | 30 June 2021 |
+| {{site.data.keyword.cloud_notm}} Platform - 01234567, term 1 | $12,000 | 1 July 2019 | 30 June 2020 |
+| {{site.data.keyword.cloud_notm}} Platform - 00432100 | $9,000 | 1 September 2019 | 31 August 2020 |
+| {{site.data.keyword.cloud_notm}} Platform - 01234567, term 2 | $12,000 | 1 July 2020 | 30 June 2021 |
 {: caption="Subscription credit spending order" caption-side="top"}
 
 If you have multiple subscriptions in your account that have terms greater than 12 months and you pay up-front for the entire subscription rather than using monthly, quarterly, or another recurring billing cadence, you won't receive an overage for spending faster than you planned.
@@ -66,7 +66,7 @@ To view your platform and service subscription usage, in the {{site.data.keyword
 * Click the tabs to view spending details and trends about your subscription usage, including any usage overages that your account incurred. For example, the credit burndown view displays how your credit balance changes over time, and the usage by month view displays your monthly usage from all subscriptions.
 * View all active and inactive subscriptions in your account in the tables. For multi-year subscriptions, each term is displayed separately. Active subscriptions are subscriptions that still have remaining credit to spend and time that's remaining in the subscription term. Upcoming subscriptions are subscriptions were added to the account but haven't yet reached their term period. A subscription is inactive if its term expires or all of its credit is spent.
 
-You can use the spending and usage information on the Subscriptions page to evaluate whether your subscriptions suit your usage needs. For example, if you consistently have overages, you might increase your monthly spending commitment to save money on that usage. To buy new subscriptions or change future subscription amounts, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
+You can use the spending and usage information on the Subscriptions page to evaluate whether your subscriptions suit your usage needs. For example, if you consistently have overages, you might increase your monthly spending commitment to save money on that usage. To buy new subscriptions or change future subscription amounts, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
 ### Support subscriptions
 {: #view-support-subscriptions}

@@ -4,7 +4,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: onboard software, pricing plans, manage plans, usage-based plan, software, catalog, partner center, catalog, private catalog, catalog management
 
@@ -17,7 +17,7 @@ subcollection: account
 # Managing software plans in catalogs
 {: #sw-manage-plans}
 
-When you onboard your software to a catalog, you must define a pricing model for it. Currently, {{site.data.keyword.cloud_notm}} supports free, usage-based, and bring your own license (BYOL) plans that you can add to a specific version of your software. By adding pricing plans, you are indicating whether you offer your product as a paid integrated product and customers need to pay to use it, as a product that customers need to purchase a license for, or as a product that does not require any payment or license to use. 
+When you onboard your software to a catalog, you must define a pricing model for it. Currently, {{site.data.keyword.cloud_notm}} supports free, usage-based, and bring your own license (BYOL) plans that you can add to a specific version of your software. By adding pricing plans, you are indicating whether you offer your product as a paid integrated product and customers need to pay to use it, as a product that customers need to purchase a license for, or as a product that does not require any payment or license to use.
 {: shortdesc}
 
 After adding a plan to your software in Partner Center, you can manage it in your catalog as well. Managing your plan includes adding features to it, changing the state of the plan, deprecating it, or updating plan details.

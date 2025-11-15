@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -38,7 +38,7 @@ The process to onboard software to your account includes importing a version to 
    * Operators with TGZ file from GitHub or GitLab repositories
    * Operator bundles from Red Hat OpenShift registries
 
-1. There is no requirement to upload your source code to a release on your GitHub or GitLab repository if you are deploying VSI on VPC. Instead, ensure you have a custom image ready and available in your account. See [Importing and validating custom images into VPC](/docs/vpc?topic=vpc-importing-custom-images-vpc&interface=ui). 
+1. There is no requirement to upload your source code to a release on your GitHub or GitLab repository if you are deploying VSI on VPC. Instead, ensure you have a custom image ready and available in your account. See [Importing and validating custom images into VPC](/docs/vpc?topic=vpc-importing-custom-images-vpc&interface=ui).
 
 1. Make sure you are assigned the following [IAM access](/docs/account?topic=account-groups):
 
@@ -70,7 +70,6 @@ Before you can onboard software to your account by using Terraform, make sure th
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
 {: important}
-
 
 
 

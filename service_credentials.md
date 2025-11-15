@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-09-20"
+lastupdated: "2025-11-15"
 
 keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
@@ -28,7 +28,7 @@ To add credentials to your apps, refer to the documentation for the type of app 
 Credentials that can only be viewed once must be saved securely if you need to retrieve them later. Existing credentials are not affected by this property. For more information, see [One-time credentials](/docs/account?topic=account-service_credentials&interface=ui#onetime-credentials).
 {: important}
 
-Services that are managed by {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
+Services that are managed by {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) can generate a resource key, also known as a credential. Credentials are service-specific and vary based on how each service defines the credentials they need to generate. A credential might contain a username, password, hostname, port, and a URL, however the contents of each credential is unique to the service that generates it.
 
 Some services might generate more data that requires parameters to be passed in. For example, a service might require you to input a language parameter to set the default language that is returned in the resource key that is generated.
 

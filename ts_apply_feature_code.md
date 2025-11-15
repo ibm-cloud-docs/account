@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot billing, feature code, can't apply code, can't apply feature code, lite account, trial account
 
@@ -37,7 +37,7 @@ You might see this error for any of the following reasons:
 {: tsCauses}
 
 - Your account doesn't meet the requirements for the feature code.
-- You don't have the required access in the account. 
+- You don't have the required access in the account.
 - The code expired.
 
 Use the following steps to successfully apply a feature code: 

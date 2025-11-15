@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot access to a resource, why can't user access resource
 
@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't a user I gave access work with a resource from the Resource list page?
+# Why can't a user I gave access to work with a resource from the Resource list page?
 {: #troubleshoot-serviceaccess}
 {: troubleshoot}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
@@ -13,7 +13,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why am I not receiving email notifications? 
+# Why am I not receiving email notifications?
 {: #ts_email_notifications}
 {: troubleshoot}
 

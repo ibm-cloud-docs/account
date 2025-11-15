@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-29"
+lastupdated: "2025-11-15"
 
 keywords:
 
@@ -15,7 +15,7 @@ content-type: conref
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Content references for account subcollection.
+# Content references for account subcollection
 {: #conref-example}
 
 The following H2s and H3s are going to be reused in several different topics that need identical information.

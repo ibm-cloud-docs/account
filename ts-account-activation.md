@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account, activate account, confirmation email
 
@@ -35,6 +35,6 @@ Check your inbox and your spam folder for the email. The confirmation email is s
 * Make sure that your spam filter or security software is allowing emails with links through to your email address.
 * Contact your email provider or administrator to ask them to check for any configuration that blocks email from `ibmacct@iam.ibm.com`.
 
-After you unblock the confirmation email, go to the [{{site.data.keyword.Bluemix_notm}} console](/){: external} and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
+After you unblock the confirmation email, go to the [{{site.data.keyword.cloud_notm}} console](/){: external} and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
 
-If you still can't activate your account, contact [{{site.data.keyword.Bluemix_notm}} Support](/docs/account?topic=account-using-avatar).  
+If you still can't activate your account, contact [{{site.data.keyword.cloud_notm}} Support](/docs/account?topic=account-using-avatar). 

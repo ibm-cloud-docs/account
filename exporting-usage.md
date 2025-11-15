@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: apptio, cost benefit analysis
 
@@ -15,12 +15,12 @@ subcollection: account
 # Exporting your usage data for continual insights
 {: #exporting-your-usage}
 
-You can export your account's usage data to a Cloud Object Storage (COS) bucket for continual visibility, optimization, governance and more across cloud environments. For example, if you are an account administrator and want to learn more about your account's usage and get cost optimization analysis, you can integrate your account with a third party provider to gain insights about your accounts usage.
+You can export your account's usage data to a Cloud Object Storage (COS) bucket for continual visibility, optimization, governance, and more across cloud environments. For example, if you are an account administrator and want to learn more about your account's usage and get cost optimization analysis, you can integrate your account with a third-party provider to gain insights about your accounts usage.
 {: shortdesc}
 
-When you set up your account to export usage report to a {{site.data.keyword.cos_full_notm}} bucket you are enabling your account to continually export that data. To export data on a one time basis, see [Exporting your usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv).
+When you set up your account to export usage report to a {{site.data.keyword.cos_full_notm}} bucket, you are enabling your account to continually export that data. To export data on a one time basis, see [Exporting your usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv).
 
-To enable your account to share usage data, you need to grant permissions to the Billing service to access usage details and export it to a COS bucket. Because the report includes usage data for the entire account, child account usage and information about services and instances, the service ID used by the Billing service needs administrator access to export usage details. After this setup is complete, a CSV formatted cost and usage report is automatically exported to your COS bucket on a daily basis.
+To enable your account to share usage data, you need to grant permissions to the Billing service to access usage details and export it to a COS bucket. Because the report includes usage data for the entire account, child account usage and information about services and instances, the service ID used by the Billing service needs administrator access to export usage details. After this setup is complete, a CSV formatted cost and usage report is automatically exported to your COS bucket daily.
 
 ## Enabling your account to export usage data
 {: #enable-export-usage}
@@ -28,7 +28,7 @@ To enable your account to share usage data, you need to grant permissions to the
 
 Before you can enable your account to export usage data, you need to have Administrator or editor role on the Billing account management service. For more information, see [IAM access](/docs/account?topic=account-userroles).
 
-When you enable your account to export usage data, the COS bucket can collect data from as far back as a year. So if it's June 2024, you can only view usage as early as June 2023, but you'll always be able to view data from that far back. Meaning that if you enabled this feature in June 2023, and it is now June 2024, you can view usage data from June 2022 to June 2024.
+When you enable your account to export usage data, the COS bucket can collect data from as far back as a year. So, if its June 2024, you can only view usage as early as June 2023, but you'll always be able to view data from that far back. Meaning that if you enabled this feature in June 2023, and it is now June 2024, you can view usage data from June 2022 to June 2024.
 {: note}
 
 To enable your account to export usage data, use the following steps:
@@ -41,13 +41,13 @@ To enable your account to export usage data, use the following steps:
 1. For service to service authorizations, click **Authorize**. For the required access, select **Object Writer** and **Content Reader**. Click **Review** and then **Assign**.
 1. Click **Connect** after you review your folder details.
 
-If you convert your account to an enterprise account, you'll need to follow these steps again to enable the enterprise account to export usage data. You can keep this feature on your original account or you can remove it by [disconnecting your account from sharing usage](/docs/account?topic=account-exporting-your-usage&interface=ui#disconnect-exporting-your-usage).
+If you convert your account to an enterprise account, you need to follow these steps again to enable the enterprise account to export usage data. You can keep this feature on your original account or you can remove it by [disconnecting your account from sharing usage](/docs/account?topic=account-exporting-your-usage&interface=ui#disconnect-exporting-your-usage).
 {: note}
 
 ## Requesting access to historical data
 {: #access-historical-data}
 
-When you enable your account to export usage data, the COS bucket, by default, collects data from the current month as provided by the automatic daily export from the Billing service, but it can contain data from as far back as a year if you request historical data. So if it's June 2024, you can only view usage as early as June 2023, but you'll always be able to view data from that far back. Meaning that if you enabled this feature in June 2023, and it is now June 2024, you can view usage data from June 2022 to June 2024. To get historical data, you need to create a support case.
+When you enable your account to export usage data, the COS bucket, by default, collects data from the current month as provided by the automatic daily export from the Billing service, but it can contain data from as far back as a year if you request historical data. So, if its June 2024, you can only view usage as early as June 2023, but you'll always be able to view data from that far back. Meaning that if you enabled this feature in June 2023, and it is now June 2024, you can view usage data from June 2022 to June 2024. To get historical data, you need to create a support case.
 
 To request access to historical data, use the following steps:
 
@@ -55,7 +55,7 @@ To request access to historical data, use the following steps:
 1. From the Contact support section, click **Create a case**.
 1. For the category, select **Billing and usage**.
 1. For the topic, select **Billing and usage**, and for the subtopic, select **Exporting your usage details to a .csv file**.
-1. Complete the required fields. For the description of the support case, you'll need to mention the months that you want the data from.
+1. Complete the required fields. For the description of the support case, you need to mention the months that you want the data from.
 
    To maintain security, do not include any personal information, sensitive data, or device or service credentials in case responses. For example, don't include passwords, API keys, secrets, or credit card information.
    {: important}
@@ -138,7 +138,7 @@ If a service-to-service authentication already exists, the `depends_on` constrai
 ### Bucket requirements
 {: #enable-export-usage-bucket-requirements}
 
-The bucket that you use to store your results does not require any particular settings or naming format. All the traffic between Billing service and Cloud Object Storage is done over a private network. The retrieval of data for display purposes in the console does not cost you anything. However, if you choose to download the data directly from Cloud Object Storage after it is stored, you do incur a data transfer cost. See [Cloud Object Storage pricing](/docs/cloud-object-storage?topic=cloud-object-storage-billing) for more information.
+The bucket that you use to store your results does not require any particular settings or naming format. All the traffic between the Billing service and Cloud Object Storage is done over a private network. The retrieval of data for display purposes in the console does not cost you anything. However, if you choose to download the data directly from Cloud Object Storage after it is stored, you do incur a data transfer cost. See [Cloud Object Storage pricing](/docs/cloud-object-storage?topic=cloud-object-storage-billing) for more information.
 
 ## Disconnecting your account from sharing usage
 {: #disconnect-exporting-your-usage}
@@ -158,7 +158,7 @@ To disconnect, use the following steps:
 {: #storing-usage-data}
 
 
-Your data shared by using billing report snapshots and by going through the steps to enable your account to export usage data, you are setting up the snapshots.
+Your data that is shared by using billing report snapshots and by going through the steps to enable your account to export usage data, you are setting up the snapshots.
 
 Snapshots of the billing reports are stored based on the configuration setup. Depending on the configuration, older snapshots are either deleted or retained. Each snapshot would have a manifest file describing the details of the snapshot such as the files included as part of the snapshot. The manifest of the latest snapshot for that billing month would be stored at each billing month folder as well.
 
@@ -184,27 +184,27 @@ billing-month
 :   Format is `YYYY-MM`. For example, `2023-03`.
 
 snapshot-id
-:   Id of the snapshot.
-:   Alphanumberic value. For example, `1678234269105`.
+:   ID of the snapshot.
+:   Alphanumeric value. For example, `1678234269105`.
 
 manifest.json
-:   Metadata file describing the details of the snapshot, such as the customer account id, csv files corresponding to the snapshot, report types etc
+:   Metadata file describing the details of the snapshot, such as the customer account id, csv files corresponding to the snapshot, report types 
 :   The manifest file at the billing-month contains the latest snapshot taken
 
 *.gz
 :   List of files mentioned in the manifest.json
 
-For more information about the usage snapshot API, see [Setup the snapshot configuration](/apidocs/metering-reporting#create-reports-snapshot-config){: external}.
+For more information about the usage of snapshot API, see [Setup the snapshot configuration](/apidocs/metering-reporting#create-reports-snapshot-config){: external}.
 
 ## Understanding CSV table headings and JSON report fields
 {: #understand-JSON-reports}
 
-The following tables shows the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
+The following tables show the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
 
 ### Understanding your account summary report
 {: #export-csv-api-table-account-summary-csv}
 
-The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
+The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well as the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
@@ -253,10 +253,10 @@ The following table is version 1.3 and the most recent CSV version. You get this
 | Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription. |
 | CA                  | `subscription.subscriptions.charge_agreement_number`        | The charge agreement number of the subscription |
 | Type                | `subscription.subscriptions.type`                           | Type of subscription |
-| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits available in the subscription for the month |
+| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits are available in the subscription for the month |
 | Start               | `subscription.subscriptions.start` or \n `subscription.subscriptions.terms.start`| Pay-As-You-Go accounts: the date from which the subscription was active \n Subscription accounts: The start date of the term |
 | End                 | `subscription.subscriptions.end` or \n `subscription.subscriptions.terms.end`           | Pay-As-You-Go accounts: unavailable \n Subscription accounts: The end date of the term |
-| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the  subscription \n Subscription accounts: The total credits available for the term  |
+| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the subscription \n Subscription accounts: The total credits available for the term  |
 | Credits Starting    | `subscription.subscriptions.terms.credits.starting_balance` | The unused credits in the term at the beginning of the month |
 | Credits Used        | `subscription.subscriptions.terms.credits.used`             | The credits used in this month |
 | Credits Balance     | `subscription.subscriptions.terms.credits.balance`          | The remaining credits in this term |
@@ -272,7 +272,7 @@ The following table is version 1.3 and the most recent CSV version. You get this
 | Subscription ID [New]{: tag-new} | `subscription.subscriptions.subscription_id` | The ID of the subscription. |
 | Type [New]{: tag-new} | `subscription.subscriptions.type` | The type of subscription. |
 | Category [New]{: tag-new} | `subscription.subscriptions.category` | The category of subscription. |
-| Overage [New]{: tag-new} | `subscription.subscriptions.overage.cost` | Additional subscription cost for the month. |
+| Overage [New]{: tag-new} | `subscription.subscriptions.overage.cost` | Extra subscription cost for the month. |
 {: class="simple-tab-table"}
 {: caption="Account summary CSV header titles and JSON report fields for subscriptions overage" caption-side="bottom"}
 {: tab-group="account-summary-1-3"}
@@ -282,11 +282,11 @@ The following table is version 1.3 and the most recent CSV version. You get this
 | CSV Header       | JSON Report Fields                     | Description |
 |---------------------|-----------------------------------|-------------|
 | Offer ID            | `offers.offer_id`                 | The ID of the offer |
-| Credits Total       | `offers.credits_total`            | The total credits before applying the offer |
+| Credits Total       | `offers.credits_total`            | The total credits before applying for the offer |
 | Offer Template      | `offers.offer_template`           | The template with which the offer was generated |
 | Valid From          | `offers.valid_from`               | The date from which the offer is valid |
 | Expire Date         | `offers.expires_on`               | The date until the offer is valid |
-| Recurring           | `offers.is_recurring`             | Indicates if a cost is recurring |
+| Recurring           | `offers.is_recurring`             | Indicates whether a cost is recurring |
 | Starting Balance    | `offers.credits.starting_balance` | The available credits in the offer at the beginning of the month |
 | Used                | `offers.credits.used`             | The credits used in this month |
 | Balance             | `offers.credits.balance`          | The remaining credits in the offer |
@@ -300,7 +300,7 @@ The following table is version 1.3 and the most recent CSV version. You get this
 |---------------------|--------------------|-------------|
 | Support Cost        | `support.cost`     | The monthly support cost |
 | Support Type        | `support.type` \n (`STANDARD` > `Advanced` and \n `PREMIUM` > `Premium`) | The type of support  |
-| Support Overage     | `support.overage`  | Additional support cost for the month |
+| Support Overage     | `support.overage`  | Extra support cost for the month |
 {: class="simple-tab-table"}
 {: caption="Account summary CSV header titles and JSON report fields for support summary" caption-side="bottom"}
 {: tab-group="account-summary-1-3"}
@@ -312,7 +312,7 @@ The following table is version 1.3 and the most recent CSV version. You get this
 | Service Name   | `resources.resource_name`          | The name of the resource |
 | Service ID     | `resources.resource_id`            | The ID of the resource |
 | Currency       | `currency_code`                    | The currency for the cost fields in the resources, plans, and metrics |
-| Billable       | `resources.billable`               | Indicates if the plan charges are billed to the customer |
+| Billable       | `resources.billable`               | Indicates whether the plan charges are billed to the customer |
 | Plan Name      | `resources.plan_name`              | Name of the service plan |
 | Plan ID        | `resources.plan_id`                | ID of the service plan |
 | Pricing Region | `reports.resources.plans.pricing_region` | Pricing region for the plan |
@@ -371,10 +371,10 @@ The following table is version 1.2. You get this version if the data that you're
 | Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription |
 | CA                  | `subscription.subscriptions.charge_agreement_number`        | The charge agreement number of the subscription |
 | Type                | `subscription.subscriptions.type`                           | Type of subscription |
-| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits available in the subscription for the month |
+| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits are available in the subscription for the month |
 | Start               | `subscription.subscriptions.start` or \n `subscription.subscriptions.terms.start`| Pay-As-You-Go accounts: the date from which the subscription was active \n Subscription accounts: The start date of the term |
 | End                 | `subscription.subscriptions.end` or \n `subscription.subscriptions.terms.end`           | Pay-As-You-Go accounts: unavailable \n Subscription accounts: The end date of the term |
-| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the  subscription \n Subscription accounts: The total credits available for the term  |
+| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the subscription \n Subscription accounts: The total credits available for the term  |
 | Credits Starting    | `subscription.subscriptions.terms.credits.starting_balance` | The unused credits in the term at the beginning of the month |
 | Credits Used        | `subscription.subscriptions.terms.credits.used`             | The credits used in this month |
 | Credits Balance     | `subscription.subscriptions.terms.credits.balance`          | The remaining credits in this term |
@@ -388,11 +388,11 @@ The following table is version 1.2. You get this version if the data that you're
 | CSV Header       | JSON Report Fields                     | Description |
 |---------------------|-----------------------------------|-------------|
 | Offer ID            | `offers.offer_id`                 | The ID of the offer |
-| Credits Total       | `offers.credits_total`            | The total credits before applying the offer |
+| Credits Total       | `offers.credits_total`            | The total credits before applying for the offer |
 | Offer Template      | `offers.offer_template`           | The template with which the offer was generated |
 | Valid From          | `offers.valid_from`               | The date from which the offer is valid |
 | Expire Date         | `offers.expires_on`               | The date until the offer is valid |
-| Recurring           | `offers.is_recurring`             | Indicates if a cost is recurring |
+| Recurring           | `offers.is_recurring`             | Indicates whether a cost is recurring |
 | Starting Balance    | `offers.credits.starting_balance` | The available credits in the offer at the beginning of the month |
 | Used                | `offers.credits.used`             | The credits used in this month |
 | Balance             | `offers.credits.balance`          | The remaining credits in the offer |
@@ -406,7 +406,7 @@ The following table is version 1.2. You get this version if the data that you're
 |---------------------|--------------------|-------------|
 | Support Cost        | `support.cost`     | The monthly support cost |
 | Support Type        | `support.type` \n (`STANDARD` > `Advanced` and \n `PREMIUM` > `Premium`) | The type of support  |
-| Support Overage     | `support.overage`  | Additional support cost for the month |
+| Support Overage     | `support.overage`  | Extra support cost for the month |
 {: class="simple-tab-table"}
 {: caption="Account summary CSV header titles and JSON report fields for support summary" caption-side="bottom"}
 {: tab-group="account-summary-1-2"}
@@ -418,7 +418,7 @@ The following table is version 1.2. You get this version if the data that you're
 | Service Name   | `resources.resource_name`          | The name of the resource |
 | Service ID     | `resources.resource_id`            | The ID of the resource |
 | Currency       | `currency_code`                    | The currency for the cost fields in the resources, plans, and metrics |
-| Billable       | `resources.billable`               | Indicates if the plan charges are billed to the customer |
+| Billable       | `resources.billable`               | Indicates whether the plan charges are billed to the customer |
 | Plan Name      | `resources.plan_name`              | Name of the service plan |
 | Plan ID        | `resources.plan_id`                | ID of the service plan |
 | Pricing Region | `reports.resources.plans.pricing_region` | Pricing region for the plan |
@@ -443,7 +443,7 @@ The following table is version 1.2. You get this version if the data that you're
 #### Account summary CSV version 1.1
 {: #account-summary-csv-version-1-1}
 
-You will get CSV version 1.1 if the data that you're viewing is from March 2024 to June 2024.
+You get CSV version 1.1 if the data that you're viewing is from March 2024 to June 2024.
 
 | CSV Header          | Description                                        |
 |---------------------|-------------------------------------------------|
@@ -478,10 +478,10 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 | Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription |
 | CA                  | `subscription.subscriptions.charge_agreement_number`        | The charge agreement number of the subscription |
 | Type                | `subscription.subscriptions.type`                           | Type of subscription |
-| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits available in the subscription for the month |
+| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits are available in the subscription for the month |
 | Start               | `subscription.subscriptions.start` or \n `subscription.subscriptions.terms.start`| Pay-As-You-Go accounts: the date from which the subscription was active \n Subscription accounts: The start date of the term |
 | End                 | `subscription.subscriptions.end` or \n `subscription.subscriptions.terms.end`           | Pay-As-You-Go accounts: unavailable \n Subscription accounts: The end date of the term |
-| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the  subscription \n Subscription accounts: The total credits available for the term  |
+| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the subscription \n Subscription accounts: The total credits available for the term  |
 | Credits Starting    | `subscription.subscriptions.terms.credits.starting_balance` | The unused credits in the term at the beginning of the month |
 | Credits Used        | `subscription.subscriptions.terms.credits.used`             | The credits used in this month |
 | Credits Balance     | `subscription.subscriptions.terms.credits.balance`          | The remaining credits in this term |
@@ -494,11 +494,11 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 | CSV Header       | JSON Report Fields                     | Description |
 |---------------------|-----------------------------------|-------------|
 | Offer ID            | `offers.offer_id`                 | The ID of the offer |
-| Credits Total       | `offers.credits_total`            | The total credits before applying the offer |
+| Credits Total       | `offers.credits_total`            | The total credits before applying for the offer |
 | Offer Template      | `offers.offer_template`           | The template with which the offer was generated |
 | Valid From          | `offers.valid_from`               | The date from which the offer is valid |
 | Expire Date         | `offers.expires_on`               | The date until the offer is valid |
-| Recurring           | `offers.is_recurring`             | Indicates if a cost is recurring |
+| Recurring           | `offers.is_recurring`             | Indicates whether a cost is recurring |
 | Starting Balance    | `offers.credits.starting_balance` | The available credits in the offer at the beginning of the month |
 | Used                | `offers.credits.used`             | The credits used in this month |
 | Balance             | `offers.credits.balance`          | The remaining credits in the offer |
@@ -512,7 +512,7 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 |---------------------|--------------------|-------------|
 | Support Cost        | `support.cost`     | The monthly support cost |
 | Support Type        | `support.type` \n (`STANDARD` > `Advanced` and \n `PREMIUM` > `Premium`) | The type of support  |
-| Support Overage     | `support.overage`  | Additional support cost for the month |
+| Support Overage     | `support.overage`  | Extra support cost for the month |
 {: class="simple-tab-table"}
 {: caption="Account summary CSV header titles and JSON report fields for support summary" caption-side="bottom"}
 {: tab-group="account-summary-1-1"}
@@ -548,7 +548,7 @@ You will get CSV version 1.1 if the data that you're viewing is from March 2024 
 #### Account summary CSV version 1.0
 {: #account-summary-csv-version-1-0}
 
-You will get CSV version 1.0 if the data that you're viewing is from October 2023 to March 2024.
+You get CSV version 1.0 if the data that you're viewing is from October 2023 to March 2024.
 
 | CSV Header          | Description                                        |
 |---------------------|-------------------------------------------------|
@@ -582,10 +582,10 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 | Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription |
 | CA                  | `subscription.subscriptions.charge_agreement_number`        | The charge agreement number of the subscription |
 | Type                | `subscription.subscriptions.type`                           | Type of subscription |
-| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits available in the subscription for the month |
+| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits are available in the subscription for the month |
 | Start               | `subscription.subscriptions.start` or \n `subscription.subscriptions.terms.start`| Pay-As-You-Go accounts: the date from which the subscription was active \n Subscription accounts: The start date of the term |
 | End                 | `subscription.subscriptions.end` or \n `subscription.subscriptions.terms.end`           | Pay-As-You-Go accounts: unavailable \n Subscription accounts: The end date of the term |
-| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the  subscription \n Subscription accounts: The total credits available for the term  |
+| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the subscription \n Subscription accounts: The total credits available for the term  |
 | Credits Starting    | `subscription.subscriptions.terms.credits.starting_balance` | The unused credits in the term at the beginning of the month |
 | Credits Used        | `subscription.subscriptions.terms.credits.used`             | The credits used in this month |
 | Credits Balance     | `subscription.subscriptions.terms.credits.balance`          | The remaining credits in this term |
@@ -598,11 +598,11 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 | CSV Header       | JSON Report Fields                     | Description |
 |---------------------|-----------------------------------|-------------|
 | Offer ID            | `offers.offer_id`                 | The ID of the offer |
-| Credits Total       | `offers.credits_total`            | The total credits before applying the offer |
+| Credits Total       | `offers.credits_total`            | The total credits before applying for the offer |
 | Offer Template      | `offers.offer_template`           | The template with which the offer was generated |
 | Valid From          | `offers.valid_from`               | The date from which the offer is valid |
 | Expire Date         | `offers.expires_on`               | The date until the offer is valid |
-| Recurring           | `offers.is_recurring`             | Indicates if a cost is recurring |
+| Recurring           | `offers.is_recurring`             | Indicates whether a cost is recurring |
 | Starting Balance    | `offers.credits.starting_balance` | The available credits in the offer at the beginning of the month |
 | Used                | `offers.credits.used`             | The credits used in this month |
 | Balance             | `offers.credits.balance`          | The remaining credits in the offer |
@@ -616,7 +616,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 |---------------------|--------------------|-------------|
 | Support Cost        | `support.cost`     | The monthly support cost |
 | Support Type        | `support.type` \n (`STANDARD` > `Advanced` and \n `PREMIUM` > `Premium`) | The type of support  |
-| Support Overage     | `support.overage`  | Additional support cost for the month |
+| Support Overage     | `support.overage`  | Extra support cost for the month |
 {: class="simple-tab-table"}
 {: caption="Account summary CSV header titles and JSON report fields for support summary" caption-side="bottom"}
 {: tab-group="account-summary-1-0"}
@@ -628,7 +628,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 | Service Name   | `resources.resource_name`          | The name of the resource |
 | Service ID     | `resources.resource_id`            | The ID of the resource |
 | Currency       | `currency_code`                    | The currency for the cost fields in the resources, plans, and metrics |
-| Billable       | `resources.billable`               | Indicates if the plan charges are billed to the customer |
+| Billable       | `resources.billable`               | Indicates whether the plan charges are billed to the customer |
 | Plan Name      | `resources.plan_name`              | Name of the service plan |
 | Plan ID        | `resources.plan_id`                | ID of the service plan |
 | Pricing Region | `reports.resources.plans.pricing_region` | Pricing region for the plan |
@@ -652,7 +652,7 @@ You will get CSV version 1.0 if the data that you're viewing is from October 202
 #### Account summary CSV version 0.2
 {: #account-summary-csv-version-0-2}
 
-You will get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2023.
+You get CSV version 0.2 if the data that you're viewing is from February 2023 to October 2023.
 
 | CSV Header          | Description                                        |
 |---------------------|-------------------------------------------------|
@@ -686,10 +686,10 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 | Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription |
 | CA                  | `subscription.subscriptions.charge_agreement_number`        | The charge agreement number of the subscription |
 | Type                | `subscription.subscriptions.type`                           | Type of subscription |
-| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits available in the subscription for the month |
+| Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits are available in the subscription for the month |
 | Start               | `subscription.subscriptions.start` or \n `subscription.subscriptions.terms.start`| Pay-As-You-Go accounts: the date from which the subscription was active \n Subscription accounts: The start date of the term |
 | End                 | `subscription.subscriptions.end` or \n `subscription.subscriptions.terms.end`           | Pay-As-You-Go accounts: unavailable \n Subscription accounts: The end date of the term |
-| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the  subscription \n Subscription accounts: The total credits available for the term  |
+| Credits Total       | `subscription.subscriptions.credits_total` or \n `subscription.subscriptions.terms.credits.total`             | Pay-As-You-Go accounts: The total credits available in the subscription \n Subscription accounts: The total credits available for the term  |
 | Credits Starting    | `subscription.subscriptions.terms.credits.starting_balance` | The unused credits in the term at the beginning of the month |
 | Credits Used        | `subscription.subscriptions.terms.credits.used`             | The credits used in this month |
 | Credits Balance     | `subscription.subscriptions.terms.credits.balance`          | The remaining credits in this term |
@@ -702,11 +702,11 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 | CSV Header       | JSON Report Fields                     | Description |
 |---------------------|-----------------------------------|-------------|
 | Offer ID            | `offers.offer_id`                 | The ID of the offer |
-| Credits Total       | `offers.credits_total`            | The total credits before applying the offer |
+| Credits Total       | `offers.credits_total`            | The total credits before applying for the offer |
 | Offer Template      | `offers.offer_template`           | The template with which the offer was generated |
 | Valid From          | `offers.valid_from`               | The date from which the offer is valid |
 | Expire Date         | `offers.expires_on`               | The date until the offer is valid |
-| Recurring           | `offers.is_recurring`             | Indicates if a cost is recurring |
+| Recurring           | `offers.is_recurring`             | Indicates whether a cost is recurring |
 | Starting Balance    | `offers.credits.starting_balance` | The available credits in the offer at the beginning of the month |
 | Used                | `offers.credits.used`             | The credits used in this month |
 | Balance             | `offers.credits.balance`          | The remaining credits in the offer |
@@ -720,7 +720,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 |---------------------|--------------------|-------------|
 | Support Cost        | `support.cost`     | The monthly support cost |
 | Support Type        | `support.type` \n (`STANDARD` > `Advanced` and \n `PREMIUM` > `Premium`) | The type of support  |
-| Support Overage     | `support.overage`  | Additional support cost for the month |
+| Support Overage     | `support.overage`  | Extra support cost for the month |
 {: class="simple-tab-table"}
 {: caption="Account summary CSV header titles and JSON report fields for support summary" caption-side="bottom"}
 {: tab-group="account-summary-0-2"}
@@ -732,7 +732,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 | Service Name   | `resources.resource_name`          | The name of the resource |
 | Service ID     | `resources.resource_id`            | The ID of the resource |
 | Currency       | `currency_code`                    | The currency for the cost fields in the resources, plans, and metrics |
-| Billable       | `resources.billable`               | Indicates if the plan charges are billed to the customer |
+| Billable       | `resources.billable`               | Indicates whether the plan charges are billed to the customer |
 | Plan Name      | `resources.plan_name`              | Name of the service plan |
 | Plan ID        | `resources.plan_id`                | ID of the service plan |
 | Pricing Region | `reports.resources.plans.pricing_region` | Pricing region for the plan |
@@ -753,7 +753,7 @@ You will get CSV version 0.2 if the data that you're viewing is from February 20
 #### Account summary CSV version 0.1
 {: #account-summary-csv-version-0-1}
 
-You will get CSV version 0.1 if the data that you're viewing is from before February 2023.
+You get CSV version 0.1 if the data that you're viewing is from before February 2023.
 
 | CSV Header          | Description                                        |
 |---------------------|-------------------------------------------------|

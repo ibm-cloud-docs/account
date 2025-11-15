@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, resource group, move resource, reassign resource, reassign instance
 
@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I assign my resource to a new resource group? 
+# Why can't I assign my resource to a new resource group?
 {: #ts_service_instance}
 {: troubleshoot}
 

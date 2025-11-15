@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account, invoiced for commitment, unused commitment, commitment bill
 
@@ -28,5 +28,5 @@ I can't view any commitments from the Enterprise Savings Plan page in the {{site
 You can view active or existing commitments only if you signed up for the {{site.data.keyword.cloud_notm}} Enterprise Savings Plan billing model.
 {: tsCauses}
 
-Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} or [{{site.data.keyword.cloud_notm}} Support](https://cloud.ibm.com/unifiedsupport/supportcenter).
+Contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} or [{{site.data.keyword.cloud_notm}} Support](https://cloud.ibm.com/unifiedsupport/supportcenter).
 {: tsResolve}

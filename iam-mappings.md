@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-11-15"
 
 keywords: IAM, what is IAM, comparing IAM concepts
 
@@ -22,7 +22,6 @@ Identity and access management is used to securely authenticate users and provid
 {: #compare-concepts}
 
 The following mappings of {{site.data.keyword.cloud_notm}} IAM concepts to those of other cloud providers, such as Amazon Web Services (AWS), Google Cloud Platform, and Microsoft Azure, might not be an exact one-to-one match. However, if you are familiar with a particular concept within another provider, this mapping is intended to help you find the closest related concept in {{site.data.keyword.cloud_notm}}.
-
 
 |  {{site.data.keyword.cloud_notm}} concept | {{site.data.keyword.cloud_notm}} description  | AWS   | Azure | Google Cloud Platform  |
 |-----------|----------------|-------|-------|------------------------|

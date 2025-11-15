@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-07-24"
+lastupdated: "2025-11-15"
 
 keywords: frequently asked questions, cbr faqs, cbr and iam, context-based restrictions, access restrictions
 
@@ -43,7 +43,7 @@ Unlike IAM policies, Context-based restrictions don't assign access. Context-bas
 {: #ip-cbr-diff}
 {: faq}
 
- Context-based restrictions enforce access restrictions at the individual service level and access is evaluated when a user attempts to access a resource. Allowed IP address restrict access at the account level, which is evaluated at login.
+ Context-based restrictions enforce access restrictions at the individual service level and access is evaluated when a user attempts to access a resource. Allowed IP address restricts access at the account level, which is evaluated at login.
 
 ## How can I make sure that my rule doesn't break an access flow?
 {: #monitor-cbr-faq}

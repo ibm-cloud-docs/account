@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: access policy, access, policy, restriction, time based restriction, time based, time based conditions, conditions, resource attribute
 
@@ -74,6 +74,7 @@ The following patterns represent the allowed condition permutations:
 
 You can assign access for a finite duration by specifying a date and time range that determines when the condition grants and terminates access. For example, you might have a user that needs to present a demonstration on your account for a few hours or a contractor that needs temporary access to a service over a couple days.
 Complete the following steps to assign an access policy with a temporary time-based condition:
+
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**
 1. Select **Users**, **Trusted profiles**, **Service IDs**, or **Access groups**, depending on the entity to which you want to assign access.
 1. Click the entity's name from the list and go to **Access**.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: onboard software, Helm chart, software, private catalog, target, deployment target
 
@@ -27,7 +27,7 @@ You can copy the configuration of an existing version of a Helm chart and deploy
 1. Select the private catalog that contains the current Helm chart version.
 1. Click the existing version from the list of products in your private catalog.
 1. Click **Add version** from the Version list table.
-1. Select **Copy the configuration of an existing version and deploy it to a new target.**
+1. Select **Copy the configuration of an existing version and deploy it to a new target**.
 1. Select your existing version.
 1. Click **Copy existing version**.
 

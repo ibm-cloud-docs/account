@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot my access, what do I have acces to
 
@@ -14,7 +14,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How do I know what access I am assigned?
+# How do I know what access I am assigned? 
 {: #troubleshoot-myaccess}
 {: troubleshoot}
 

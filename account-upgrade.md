@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -16,10 +16,10 @@ subcollection: account
 # Upgrading your account
 {: #upgrading-account}
 
-Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you're ready to unlock the full {{site.data.keyword.Bluemix_notm}} catalog, get additional free resources, and more, you can upgrade to a Pay-As-You-Go or Subscription account.
+Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and try out services. When you're ready to unlock the full {{site.data.keyword.cloud_notm}} catalog, get additional free resources, and more, you can upgrade to a Pay-As-You-Go or Subscription account.
 {: shortdesc}
 
-You can view your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.Bluemix_notm}} console and checking the Account Type section.
+You can view your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.cloud_notm}} console and checking the Account Type section.
 
 After you upgrade your Lite account to a Pay-As-You-Go account, you get a promotional credit of $200 that is automatically applied to your account. Your $200 credit is valid for 30 days, and your usage is automatically deducted from the credit amount. The credit cannot be used with third-party products, and the credit might not be available for all accounts.
 
@@ -44,7 +44,7 @@ To upgrade to a Pay-As-You-Go account, complete the following steps.
 1. Enter your payment information, click **Next**, and submit your information.
 
 
-After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.Bluemix_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice.
+After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.cloud_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice.
 
 If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
 
@@ -86,7 +86,7 @@ The following table lists the current upgrade promotional amounts for different 
 
 With a Subscription account, you commit to a minimum spending amount each month and receive a subscription discount that is applied to that minimum charge. If your usage exceeds your total subscription amount, you're charged the regular non-discounted rate only on the overage.
 
-Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a upgraded subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
+Subscriptions that you purchase through the console are limited to $5,000 United States dollars (USD) or the equivalent in your billing currency. If you want to purchase a upgraded subscription, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
 To upgrade from a Lite account to a Subscription account, complete the following steps.
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**. Then, click **Upgrade**, which takes you to the Subscriptions page.
@@ -105,4 +105,4 @@ Your subscription renews automatically. If you want to discontinue your subscrip
 ## Converting a Pay-As-You-Go account to a Subscription account
 {: #paygo-to-subscription}
 
-You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to get started.
+You can convert your Pay-As-You-Go account to a Subscription account at any time. Contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to get started.

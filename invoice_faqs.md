@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-11-15"
 
 keywords: GB-hour, container usage, runtime, charge, invoice, paperless invoicing, adjustments
 
@@ -69,10 +69,10 @@ The adjustments section of your current invoice includes charges or credits from
 
 If you manage your invoices through the {{site.data.keyword.IBM_notm}} Console, you can see their status by clicking **Manage > Billing and usage**, and selecting **Invoices**. When the invoice is paid, the status says Closed. If your invoices are managed through the [IBM Invoices website](https://www.ibm.com/support/customer/invoices/){: external}, it's paid when the status says Settled.
 
-## Can my usage differ from what's reflected on my invoice?
+## Can my usage differ from what's reflected on my invoice? 
 {: #invoice-usage-differ}
 {: #faq}
 
-Yes. An {{site.data.keyword.Bluemix_notm}} service might provide a free allocation before the start of your billing period. To determine whether your service instance provides a free allocation, go to the [Resources list](/resources) in the {{site.data.keyword.cloud_notm}} console. Click the service name, and then click **Plan**. Free allocations are applied to the account level and not the organization level.
+Yes. An {{site.data.keyword.cloud_notm}} service might provide a free allocation before the start of your billing period. To determine whether your service instance provides a free allocation, go to the [Resources list](/resources) in the {{site.data.keyword.cloud_notm}} console. Click the service name, and then click **Plan**. Free allocations are applied to the account level and not the organization level.
 
 In addition, depending on your account type, your usage is incurred and reflected differently on your invoice. For more information, see [Invoicing for different account types](/docs/account?topic=account-understand-invoices#different-acct-invoice).

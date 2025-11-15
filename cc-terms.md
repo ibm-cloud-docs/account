@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -12,11 +12,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Carbon calculator terminology
 {: #carbon-calc-terms}
 
-The following are the terms that are used within the {{site.data.keyword.Bluemix_notm}}'s carbon calculator documentation.
+The following are the terms that are used within the {{site.data.keyword.cloud_notm}}'s carbon calculator documentation.
 
 Energy
 :   Electricity, fuels, and Purchased Energy Commodities used to operate facilities. It does not include energy used for transportation or similar activities.

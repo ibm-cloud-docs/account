@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot, billing, payment limit, charge limit
 
@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why am I getting a charge limit error when I try to make a payment?
+# Why am I getting a charge limit error when I try to make a payment? 
 {: #ts-charge-limit}
 {: troubleshoot}
 
@@ -32,5 +32,5 @@ Manual payment request cannot be processed. The payment amount is higher than th
 By default, credit card payments in US Dollars cannot exceed $1,000.00 USD, which might cause you to make multiple payments to pay your invoice.
 {: tsCauses}
 
-You can contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to request an increase in this maximum credit card payment limit. All requests are considered based on the payment and invoice history of the account.
+You can contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external} to request an increase in this maximum credit card payment limit. All requests are considered based on the payment and invoice history of the account.
 {: tsResolve}

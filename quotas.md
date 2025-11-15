@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-11-15"
 
 keywords: quotas, resource group quotas
 
@@ -52,7 +52,7 @@ Max Service Instances
 ## Using the CLI to check your quotas
 {: #using-cli-quotas}
 
-If you're not sure what your resource group quotas are, you can check by using the {{site.data.keyword.Bluemix_notm}} CLI. The CLI is the only way to check your account's resource group quotas. Before you can check your quotas, you need the [{{site.data.keyword.Bluemix_notm}} CLI installed](/docs/cli?topic=cli-install-ibmcloud-cli).
+If you're not sure what your resource group quotas are, you can check by using the {{site.data.keyword.cloud_notm}} CLI. The CLI is the only way to check your account's resource group quotas. Before you can check your quotas, you need the [{{site.data.keyword.cloud_notm}} CLI installed](/docs/cli?topic=cli-install-ibmcloud-cli).
 
 To check your quotas, type the following command into the CLI:
 

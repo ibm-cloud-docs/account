@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-09-20"
+lastupdated: "2025-11-15"
 
 keywords: HIPAA, PHI, HITECH
 
@@ -25,7 +25,7 @@ subcollection: account
 If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be HIPAA supported. HIPAA support can be useful if you plan to include Protected Health Information (PHI) in HIPAA-enabled services.
 {: shortdesc}
 
-The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA Supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.Bluemix_notm}} compliance in [Compliance on the {{site.data.keyword.Bluemix_notm}}](https://www.ibm.com/products/cloud/compliance){: external}.
+The US Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act define standards for handling electronic healthcare transactions and information. If you or your company is a covered entity as defined by HIPAA, you must enable the HIPAA Supported setting if you run sensitive workloads that are regulated under HIPAA and the HITECH Act. Learn more about {{site.data.keyword.cloud_notm}} compliance in [Compliance on the {{site.data.keyword.cloud_notm}}](https://www.ibm.com/products/cloud/compliance){: external}.
 
 Enabling this setting has the following effects:
 
@@ -33,10 +33,10 @@ Enabling this setting has the following effects:
 * Indicates to {{site.data.keyword.IBM_notm}} that your account stores protected health information (PHI)
 * Digitally accepts the {{site.data.keyword.IBM_notm}} Business Associate Addendum (BAA) for covered entities
 
-Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-publiccloud){: external} to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: external} website.
+Enable this setting only if you or your company is a covered entity as defined by HIPAA. If you or your company is a business associate of a covered entity, [contact {{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/account/reg/us-en/signup?formid=MAIL-publiccloud){: external} to accept the applicable BAA. For more information about HIPAA definitions of covered entities and business associates, see the [US Department of Health & Human Services](https://www.hhs.gov/hipaa/for-professionals/covered-entities/index.html){: external} website.
 {: important}
 
-Accounts that enable the HIPAA Supported setting still have access to the full catalog of services. {{site.data.keyword.Bluemix_notm}} services typically offer multiple plans. The HIPAA Enabled label on a service can apply to all available plans or be limited to specific plans or configurations. You as the client are solely responsible for limiting PHI to HIPAA Enabled product plans and architecting in accordance with HIPAA and HITECH.
+Accounts that enable the HIPAA Supported setting still have access to the full catalog of services. {{site.data.keyword.cloud_notm}} services typically offer multiple plans. The HIPAA Enabled label on a service can apply to all available plans or be limited to specific plans or configurations. You as the client are solely responsible for limiting PHI to HIPAA Enabled product plans and architecting in accordance with HIPAA and HITECH.
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account setting** in the console.
 2. For the HIPAA Supported option, click **On**.
@@ -47,4 +47,4 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
 
 4. Select **Accept**, and click **Submit**.
 
-    After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.Bluemix_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**.
+    After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.cloud_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-11-05"
+lastupdated: "2025-11-15"
 
 keywords: frequently asked questions, iam faqs, administrator, administrator role
 
@@ -259,7 +259,7 @@ If you need to assign access to IAM-enabled infrastructure services, such as {{s
 {: faq}
 {: support}
 
-All permissions that were previously assigned in your SoftLayer account can be managed in the {{site.data.keyword.Bluemix_notm}} console. Account permissions for managing billing information and support cases are now available in [managing migrated SoftLayer account permissions](/docs/account?topic=account-migrated_permissions). All users who were previously assigned these permissions in your SoftLayer account were migrated to these access groups, which are assigned the same level of access by using an IAM policy on the access group.
+All permissions that were previously assigned in your SoftLayer account can be managed in the {{site.data.keyword.cloud_notm}} console. Account permissions for managing billing information and support cases are now available in [managing migrated SoftLayer account permissions](/docs/account?topic=account-migrated_permissions). All users who were previously assigned these permissions in your SoftLayer account were migrated to these access groups, which are assigned the same level of access by using an IAM policy on the access group.
 
 ## How do I determine how many policies exist in my account?
 {: #total-policies}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: leaving an account, account membership, remove myself from an account
 
@@ -16,7 +16,7 @@ subcollection: account
 # Leaving an account
 {: #account-membership}
 
-As a user on {{site.data.keyword.Bluemix}}, you can be a member of multiple accounts. If your projects and priorities change or you are added to an account by mistake, you can leave the account. 
+As a user on {{site.data.keyword.Bluemix}}, you can be a member of multiple accounts. If your projects and priorities change or you are added to an account by mistake, you can leave the account.
 {: shortdesc}
 
 When you leave an account, all of your account-related data like IAM policies and API keys are deleted. This action can’t be undone, and an account owner must add you back if you want to join the account again.

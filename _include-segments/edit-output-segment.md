@@ -1,4 +1,4 @@
-## Edit output value descriptions
+## Edit output value descriptions 
 {: #output-value-desc}
 {: step}
 

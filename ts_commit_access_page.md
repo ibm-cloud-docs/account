@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot, billing, commitment
 
@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can’t I access details about my commitments?
+# Why can’t I access details about my commitments? 
 {: #cannot-access-commit-page}
 {: troubleshoot}
 

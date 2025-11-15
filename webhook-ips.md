@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-02-27"
+lastupdated: "2025-11-15"
 
 keywords: webhook, IP
 
@@ -17,8 +17,6 @@ subcollection: account
 
 You can allowlist the ranges of IP addresses to restrict access to your servers that receive webhooks. For example, you can use our IP addresses to configure your firewall to allow traffic from only these IPs to help make your applications more secure. The outbound webhook notifications come from the IP addresses in the following subnets.
 {: shortdesc}
-
-
 
 ## IP ranges for Dallas
 {: #webhook-ips-dallas}

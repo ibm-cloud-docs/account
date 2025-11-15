@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: account management, access, access policy, account administrator, user management, account management services, use account management services to grant users in the account access to invite users to the account, billing service, support center service, identity service, global catalog service, enterprise service, license service, entitlement service, license and entitlement service, access management service, catalog management service, cloud shell service, software instance service
 
@@ -54,6 +54,7 @@ The following tables outline the actions that users can take when they are assig
 To quickly give users a wide range of account management access, you can assign a policy on all account management services. When a user is assigned a role on **All Account Management services**, they can complete all of the actions that are associated with that role for each individual service.
 
 Give users access to the group of **All Account Management services** so that they can work with the following services:
+
 - IAM Access Groups
 - IAM Identity service
 - IAM Access Management

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -40,7 +40,7 @@ All prices that are mentioned in this topic are illustrative and do not represen
 ## Updating your billing information
 {: #initiate-migration}
 
-As the owner of an account that uses a credit card as the payment method, you can initiate your move to {{site.data.keyword.IBM_notm}} billing systems by updating your billing and account information. Log in to the {{site.data.keyword.Bluemix_notm}} console and view the banner notification on your dashboard. Click **Update now** to update the necessary information for your account.
+As the owner of an account that uses a credit card as the payment method, you can initiate your move to {{site.data.keyword.IBM_notm}} billing systems by updating your billing and account information. Log in to the {{site.data.keyword.cloud_notm}} console and view the banner notification on your dashboard. Click **Update now** to update the necessary information for your account.
 
 You must provide a physical address under Company information. A PO box address is not accepted.
 {: note}
@@ -66,7 +66,6 @@ Review the following table to understand how usage is billed on a July invoice t
 | Classic Infrastructure	(Hourly)  | Bare Metal, Virtual Servers  | June             | In arrears   | July |
 | Platform                          | Watson, DevOps, VPC          | May              | In arrears (2 months)  | July |
 {: caption="Your old invoice has usage for different months on the same invoice." caption-side="bottom"}
-
 
 ### Your new experience
 {: #new-schedule}
@@ -140,7 +139,7 @@ With your new billing experience, all three major usage types are billed a singl
 
 You can find instance level details for your monthly usage by completing the following steps:
 
-1. Go to **Manage > Billing and usage** in the {{site.data.keyword.Bluemix_notm}} console, and select **Usage**.
+1. Go to **Manage > Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and select **Usage**.
 1. Click **Export CSV**.
 1. Select **Instance** for detailed usage information about each service instance.
 
@@ -181,4 +180,4 @@ See [Figure 6](#figure-6) for how platform service charges appear on your old Bi
 
 After your move to {{site.data.keyword.IBM_notm}} billing systems is complete, your new invoices include charges from the first to the last day of the previous month. Now, you receive your invoice from the previous month on the eighth of the next month. For example, an invoice that you receive on 8 July includes only usage from 1 June to 30 June.
 
-You can find your new invoices in the {{site.data.keyword.Bluemix_notm}} console by going to **Manage > Billing and usage > Invoices**. You can also view a history of your old invoices on the Classic [Invoices](/classic/account/invoices) page.
+You can find your new invoices in the {{site.data.keyword.cloud_notm}} console by going to **Manage > Billing and usage > Invoices**. You can also view a history of your old invoices on the Classic [Invoices](/classic/account/invoices) page.

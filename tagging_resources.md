@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -98,7 +98,7 @@ Before you can attach your access management tags to individual resources or ser
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
 
-1. Log in to {{site.data.keyword.Bluemix_notm}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
+1. Log in to {{site.data.keyword.cloud_notm}} CLI. If you have multiple accounts, you are prompted to select which account to use. If you do not specify a region with the `-r` flag, you must also select a region.
 
     ```bash
     ibmcloud login

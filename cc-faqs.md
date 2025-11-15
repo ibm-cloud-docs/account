@@ -3,7 +3,7 @@
 copyright:
 
  years: 2023, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-15"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -123,7 +123,7 @@ In the carbon calculator, on the locations widget, you can hover over the locati
 {: #GHG-measure}
 {: faq}
 
-{{site.data.keyword.cloud_notm}} plays a critical role in for achieving IBM’s energy conservation, renewable electricity procurement, and GHG emissions reduction targets. {{site.data.keyword.Bluemix_notm}} is improving the estimation approach by introducing the carbon calculator, which gives you a detailed view of your cloud electricity consumption and associated GHG emissions. For more information, see [{{site.data.keyword.cloud_notm}} carbon calculator methodology](/docs/account?topic=account-what-is-cloud-calc#carbon-methodology).
+{{site.data.keyword.cloud_notm}} plays a critical role in for achieving IBM’s energy conservation, renewable electricity procurement, and GHG emissions reduction targets. {{site.data.keyword.cloud_notm}} is improving the estimation approach by introducing the carbon calculator, which gives you a detailed view of your cloud electricity consumption and associated GHG emissions. For more information, see [{{site.data.keyword.cloud_notm}} carbon calculator methodology](/docs/account?topic=account-what-is-cloud-calc#carbon-methodology).
 
 ## What methodology does {{site.data.keyword.cloud_notm}} carbon calculator use?
 {: #methodology-use}

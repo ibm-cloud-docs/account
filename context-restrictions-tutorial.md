@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: network-level access, network security strategy
 subcollection: account
@@ -48,7 +48,6 @@ First, create a new network zone for the team.
 5. Click **Next**.
 6. Review the details of the network zone.
 7. Click **Create**.
-
 
 ## Create a rule
 {: #tutorial-context-rules}

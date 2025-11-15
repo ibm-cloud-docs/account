@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: tags, dora, data portability, Global Search and Tagging
 
@@ -16,20 +16,19 @@ subcollection: account
 # Understanding data portability for Global Search and Tagging
 {: #data-portability}
 
-Data portability involves a set of tools and procedures that enable you to export metadata that is stored within the {{site.data.keyword.Bluemix_notm}} Global Search and Tagging service. It includes procedures to export all tags that are associated with your resources.
+Data portability involves a set of tools and procedures that enable you to export metadata that is stored within the {{site.data.keyword.cloud_notm}} Global Search and Tagging service. It includes procedures to export all tags that are associated with your resources.
 {: shortdesc}
 
 ## Responsibilities
 {: #data-portability-responsibilities}
 
-{{site.data.keyword.Bluemix_notm}} services provide interfaces and instructions to guide you in copying and storing your service content, including the related configuration, in your selected location.
+{{site.data.keyword.cloud_notm}} services provide interfaces and instructions to guide you in copying and storing your service content, including the related configuration, in your selected location.
 
 You are responsible for using exported data and configurations to enable data portability to other infrastructures, including:
 
 - The planning and execution for setting up alternative infrastructure on different cloud providers or on-premises software that provide similar capabilities to the {{site.data.keyword.IBM_notm}} services.
 - The planning and execution for the porting of the required application code on the alternative infrastructure, including the adaptation of your application code, deployment automation, and other code.
 - The conversion of the exported data and configuration to the format that's required by the alternative infrastructure and adapted applications.
-
 
 ## Exporting data
 {: #data-portability-procedures}

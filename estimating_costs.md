@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-11-05"
+lastupdated: "2025-11-15"
 
 keywords: quote cost, find cost, estimate cost, estimate bill, total cost, service cost, cost estimator, infrastructure quote, compute quote, vsi quote, bare metal quote, savings plan
 
@@ -72,7 +72,7 @@ When you create an estimate, you can save each estimate's unique link to share o
 
 You can generate and view quotes for only {{site.data.keyword.baremetal_short}}, Virtual Server, and Gateway add-ons. Any user with access to the account can create quotes. To view quotes, you need to either be the account owner or have the Add/Upgrade Storage (StorageLayer), Add Server, or Add/Upgrade Services [classic infrastructure permission](/docs/account?topic=account-mngclassicinfra).
 
-1. Generate a quote by clicking **Save as quote** from the Order Summary section on the product details page. Or contact a {{site.data.keyword.Bluemix_notm}} sales representative.
+1. Generate a quote by clicking **Save as quote** from the Order Summary section on the product details page. Or contact a {{site.data.keyword.cloud_notm}} sales representative.
 
       If you're in a Lite account, select **Email quote** when you enter your contact details so that you can view your quote after you create it. Only billable accounts can view quotes in the console.
 

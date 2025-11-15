@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-llastupdated: "2025-08-19"
+llastupdated: "2025-11-15"
 
 keywords: IBM Cloud billing, payments, costs, usage, spending
 
@@ -25,7 +25,7 @@ Learn about the {{site.data.keyword.cloud}} billing options and tools that you c
 {: #video-transcript-billing-usage}
 {: notoc}
 
-{{site.data.keyword.cloud_notm}} offers multiple billing options so you can tailor how you pay based on your resource usage and your organization's procurement practices. You get the most flexibility with a Pay-As-You-Go account. You pay only for the billable services that you use each month, with no long-term contracts or commitments. If you know you have a significant amount of usage, you can purchase a subscription to get a discount. With a subscription, you commit to a certain amount of usage over a period of time. The higher the subscription amount, the better the discount. You can choose to pay upfront or be billed monthly, quarterly, or annually.
+{{site.data.keyword.cloud_notm}} offers multiple billing options so you can tailor how you pay based on your resource usage and your organization's procurement practices. You get the most flexibility with a Pay-As-You-Go account. You pay only for the billable services that you use each month, with no long-term contracts or commitments. If you know that you have a significant amount of usage, you can purchase a subscription to get a discount. With a subscription, you commit to a certain amount of usage over a period. The higher the subscription amount, the better the discount. You can choose to pay upfront or be billed monthly, quarterly, or annually.
 
 As an account owner, you have full access to monitoring resource usage, viewing invoices, and managing payments in the console. However, if you want to delegate billing tasks to another user, you can assign a user an Identity and Access Management (IAM) policy with the Administrator role on the Billing account management service.
 
@@ -55,7 +55,7 @@ After you select the type of account that fits your organization's needs, it's t
 
 The following are the various charging types:
 
-* **Fixed:** Fixed-rate pricing is based on an agreed upon monthly charge that isn't adjusted.
+* **Fixed:** Fixed-rate pricing is based on an agreed-upon monthly charge that isn't adjusted.
 * **Metered:** Metered-usage pricing is based on the number of GB hours that are consumed for runtimes and the number of IP addresses and storage for containers.
 * **Tiered:** Some pricing plans are based on a tiered pricing model, so you can get a volume-based discount according to your actual usage. Services might offer simple, graduated, or block tier pricing plans.
 * **Reserved:** Reserved pricing is based on a long-term commitment for a service, so you can get a discounted price. With a reserved plan, you get a dedicated service instance that is easy to set up, deploy, and deliver in the public {{site.data.keyword.cloud_notm}} environment.
@@ -67,9 +67,9 @@ If you're a new Pay-As-You-Go account owner that is located in the US and you ar
 
 If you own one of the following accounts, in the {{site.data.keyword.cloud}} console, you can go to **Manage** > **Billing and usage** to make a one-time payment, change your credit card details, view your billing items, and manage your invoices.
 
-* New and existing Pay-As-You-Go accounts based in the US with any payment method other than a credit card
-* New and existing Pay-As-You-Go accounts not based in the US
-* New and existing Subscription accounts worldwide
+* New and existing Pay-As-You-Go accounts based in the US with any payment method other than a credit card.
+* New and existing Pay-As-You-Go accounts are not based in the US.
+* New and existing Subscription accounts worldwide.
 
  The process for updating a credit card requires a manual review that might take a few days to process. To view your open change request cases, go to [{{site.data.keyword.cloud_notm}} Support](https://cloud.ibm.com/unifiedsupport/supportcenter).
 {: tip}
@@ -86,18 +86,18 @@ To view usage data for resources, you must be assigned the correct access. Acces
 * To view usage for all resources in the account, you need an access policy with the Administrator role on the Billing account management service.
 * To view usage only for specific {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources, you need the Viewer role or higher on the resource group.
 
-You can limit the access to view the usage for a specific resource group by assigning the viewer role or higher on all Identity and Access enabled services within that resource group.
+You can limit the access to view the usage for a specific resource group by assigning the viewer role or higher on all Identity and Access-enabled services within that resource group.
 
 ### Managing your invoices
 {: #view-manage-invoice}
 
-If you have a Pay-As-You-Go account that's billed in US dollars, you can view your invoice in the {{site.data.keyword.cloud_notm}} console by going to **Manage** > **Billing and usage**, > and clicking **Invoices**.
+If you have a Pay-As-You-Go account that's billed in US dollars, you can view your invoice in the {{site.data.keyword.cloud_notm}} console by going to **Manage** > **Billing and usage** > and clicking **Invoices**.
 
 If you own one of the following accounts, you can view your invoice on the [{{site.data.keyword.IBM_notm}} Invoices](https://www.ibm.com/support/customer/invoices/){: external} website, which is linked from the [Invoices page](/billing/invoices) in the console.
 
-* New and existing Pay-As-You-Go accounts based in the US with any payment method other than a credit card
-* New and existing Pay-As-You-Go accounts not based in the US
-* New and existing Subscription accounts worldwide
+* New and existing Pay-As-You-Go accounts based in the US with any payment method other than a credit card.
+* New and existing Pay-As-You-Go accounts are not based in the US.
+* New and existing Subscription accounts worldwide.
 
 New {{site.data.keyword.cloud_notm}} Pay-As-You-Go accounts for US customers with credit card billing can now view all classic infrastructure and platform services on one invoice. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Invoices**.
 {: note}

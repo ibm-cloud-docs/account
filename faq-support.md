@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-11-13"
+lastupdated: "2025-11-15"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -41,7 +41,7 @@ Before you open a support case, explore the following resources:
 * Review the [documentation](/docs).
 * Review the [Featured FAQs](/unifiedsupport/supportcenter) on the Support Center.
 * Go to the [FAQ library](/docs/faqs).
-* Go to [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to ask technical questions about developing apps with the {{site.data.keyword.Bluemix_notm}} platform and services.
+* Go to [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to ask technical questions about developing apps with the {{site.data.keyword.cloud_notm}} platform and services.
 
 
 ## How do I open a support case?
@@ -57,7 +57,7 @@ Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the con
 
 From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat from the AI Assistant, contact by phone, or create a support case. You can start a chat with a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) by typing `agent` in the chat. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
-Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), chat with the AI assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/my-community), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
+Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/account?topic=account-using-avatar), chat with the AI assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/my-community), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
 ## How do I escalate support cases?
 {: #escalate_support}
@@ -95,7 +95,7 @@ To view your support costs, you need an access policy with the Administrator rol
 {: faq}
 {: support}
 
-If you want to upgrade your support plan, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans).
+If you want to upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans).
 
 
 ## Why can't I see my support cases? 
@@ -107,16 +107,16 @@ To access your support cases, from the {{site.data.keyword.cloud_notm}} console 
 If you still can't view them, you might not have the required permission. Ask your account owner to add you to the support case access group. For more information, see [SoftLayer account permissions](/docs/account?topic=account-migrated_permissions). 
 
 
-## How do I get support for non-{{site.data.keyword.Bluemix_notm}} products?
+## How do I get support for non-{{site.data.keyword.cloud_notm}} products?
 {: #on-cloud-cases}
 {: faq}
 
-Some cloud-based {{site.data.keyword.IBM_notm}} products are not offered in {{site.data.keyword.Bluemix_notm}}. These products, such as [Aspera on Cloud](https://www.ibm.com/products/aspera){: external}, are offered by {{site.data.keyword.IBM_notm}} but aren't supported by the {{site.data.keyword.Bluemix_notm}} platform. For support for these products, go to [{{site.data.keyword.IBM_notm}} support](https://www.ibm.com/mysupport/s/){: external}.
+Some cloud-based {{site.data.keyword.IBM_notm}} products are not offered in {{site.data.keyword.cloud_notm}}. These products, such as [Aspera on Cloud](https://www.ibm.com/products/aspera){: external}, are offered by {{site.data.keyword.IBM_notm}} but aren't supported by the {{site.data.keyword.cloud_notm}} platform. For support for these products, go to [{{site.data.keyword.IBM_notm}} support](https://www.ibm.com/mysupport/s/){: external}.
 
 Support for third-party services is provided by the service provider.
 
 
-## Does {{site.data.keyword.Bluemix_notm}} provide support for resources available through the {{site.data.keyword.IBM_notm}} SkillsBuild Software Downloads?
+## Does {{site.data.keyword.cloud_notm}} provide support for resources available through the {{site.data.keyword.IBM_notm}} SkillsBuild Software Downloads?
 {: #academic-ibm}
 {: faq}
 
@@ -165,4 +165,4 @@ Watchlists are specific to each case. You must manually add a user to each indiv
 {: #chat-with-support}
 {: faq}
 
-You can chat with support if you have an Advanced or Premium support plan. Go to the [Support Center](/unifiedsupport/supportcenter){: external}, click **Launch AI Assistant**, and type `agent` to connect with a support agent. Alternatively, you can request to chat with a live agent by opening the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) from the Help menu and typing `agent` in the chat. Or, call the number provided in the Contact Support section. To upgrade your support plan, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+You can chat with support if you have an Advanced or Premium support plan. Go to the [Support Center](/unifiedsupport/supportcenter){: external}, click **Launch AI Assistant**, and type `agent` to connect with a support agent. Alternatively, you can request to chat with a live agent by opening the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) from the Help menu and typing `agent` in the chat. Or, call the number provided in the Contact Support section. To upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.

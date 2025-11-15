@@ -2,7 +2,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-29"
+lastupdated: "2025-11-15"
 
 keywords: resource, account resources, create resource, access to create resources, delete resource, delete instance, search, find, search for instance, search for resource
 
@@ -17,7 +17,7 @@ subcollection: account
 A [resource](x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You can create and manage resources by going to your [resource list](https://cloud.ibm.com/resources) in the {{site.data.keyword.cloud}} console or by using the command-line interface (CLI).
 {: shortdesc}
 
-Services that are managed by using {{site.data.keyword.Bluemix_notm}} [Identity and Access Management (IAM) access control](/docs/account?topic=account-userroles) and belong to a resource group have several benefits. Because resource groups are not scoped by location, you can create apps and services from different locations in the same resource group. You can also use fine-grained access control down to an individual instance within a resource group.
+Services that are managed by using {{site.data.keyword.cloud_notm}} [Identity and Access Management (IAM) access control](/docs/account?topic=account-userroles) and belong to a resource group have several benefits. Because resource groups are not scoped by location, you can create apps and services from different locations in the same resource group. You can also use fine-grained access control down to an individual instance within a resource group.
 
 ## Required access for creating resources
 {: #creating-resources}
@@ -221,7 +221,7 @@ You can create new resource instances by using Terraform.
 ## Searching for resources
 {: #searching-for-resources}
 
-You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search) supports searching for resources as well.
+You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.cloud_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search) supports searching for resources as well.
 
 ## Refining your search results
 {: #results}
@@ -243,7 +243,7 @@ Press the Forward Slash key (/) to navigate your cursor to the search field.
 {: #searching-cl}
 {: cli}
 
-You can also search across all your resources by using Lucene query syntax, with a single command by using the {{site.data.keyword.Bluemix_notm}} CLI.
+You can also search across all your resources by using Lucene query syntax, with a single command by using the {{site.data.keyword.cloud_notm}} CLI.
 The most commonly used resource attributes that you can query and retrieve are:
 
 `name`

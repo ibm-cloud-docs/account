@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-15"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -39,7 +39,7 @@ The `version` segment identifies the version of the CRN format. Currently, the o
 ## cname
 {: #cname-crn}
 
-The `cname` segment identifies the cloud instance and is an alphanumeric identifier that uniquely identifies the cloud instance that contains the resource. A `cname` effectively identifies an independent control plane that owns the identified resource. The value for the `cname` segment must be `bluemix` for {{site.data.keyword.Bluemix_notm}} users.
+The `cname` segment identifies the cloud instance and is an alphanumeric identifier that uniquely identifies the cloud instance that contains the resource. A `cname` effectively identifies an independent control plane that owns the identified resource. The value for the `cname` segment must be `bluemix` for {{site.data.keyword.cloud_notm}} users.
 
 
 ## ctype
@@ -49,18 +49,18 @@ The `ctype` segment identifies the type of cloud instance that is represented by
 
  Valid values:
 - `public`: All services that are available from the public catalog
-- `dedicated`: Only for current {{site.data.keyword.Bluemix_notm}} dedicated environments
+- `dedicated`: Only for current {{site.data.keyword.cloud_notm}} dedicated environments
 - `local`: All services that are deployed locally in your own environment
 
 
 ## service-name
 {: #service-name-crn}
 
-{{site.data.keyword.Bluemix_notm}} enforces global uniqueness of service names. The `service-name` segment identifies a capability (service, component, or product) that is offered by the cloud. The capability can be a user-provided service, such as with the services that are listed in the {{site.data.keyword.Bluemix_notm}} catalog, or an internal architectural component critical to the {{site.data.keyword.Bluemix_notm}} functionality.
+{{site.data.keyword.cloud_notm}} enforces global uniqueness of service names. The `service-name` segment identifies a capability (service, component, or product) that is offered by the cloud. The capability can be a user-provided service, such as with the services that are listed in the {{site.data.keyword.cloud_notm}} catalog, or an internal architectural component critical to the {{site.data.keyword.cloud_notm}} functionality.
 
 The `service-name` segment indicates the service that the resource belongs to. The `service-name` segment must be alphanumeric, lowercase, and have no spaces or special characters other than `-`. If you're identifying a service name for a child service, you must have a period `.` that separates the parent service name from the child. For example, if you have a service that's called `iam-service` and a child of that is called `micro`, `iam-service` is the parent service and `iam-service.micro` is considered the child service.
 
-For services that are registered into the {{site.data.keyword.Bluemix_notm}} catalog, the `service-name` segment must correspond to one of the services that are registered to the {{site.data.keyword.Bluemix_notm}} global catalog service. It is the `name` property that is returned by the {{site.data.keyword.Bluemix_notm}} global catalog service API `GET https://globalcatalog.cloud.ibm.com/api/v1/{id}` for the corresponding resource instance or the `service-name` value that is displayed by the command-line interface (CLI): `ibmcloud service offerings` in the `service` column.
+For services that are registered into the {{site.data.keyword.cloud_notm}} catalog, the `service-name` segment must correspond to one of the services that are registered to the {{site.data.keyword.cloud_notm}} global catalog service. It is the `name` property that is returned by the {{site.data.keyword.cloud_notm}} global catalog service API `GET https://globalcatalog.cloud.ibm.com/api/v1/{id}` for the corresponding resource instance or the `service-name` value that is displayed by the command-line interface (CLI): `ibmcloud service offerings` in the `service` column.
 
 
 ## location
@@ -84,8 +84,8 @@ The value of the `scope` segment must be formatted as `{scopePrefix}`/`{id}`. Th
 | Scope Type   | Scope Prefix     | Usage                                                                                   | Example                                  |
 |--------------|------------------|-----------------------------------------------------------------------------------------|------------------------------------------|
 | Account      | a/`{account id}` | The account that the resource was created in.                                           | `a/292558`                               |
-| Organization | o/`{org guid}`   | The {{site.data.keyword.Bluemix_notm}} Organization to which the resource was assigned. | `o/4716e2d1-35b7-431f-891a-b552bf0b3c66` |
-| Space        | s/`{space guid}` | The {{site.data.keyword.Bluemix_notm}} Space to which the resource was assigned.        | `s/48b3cdcd-e804-4398-9032-73065863ad7c` |
+| Organization | o/`{org guid}`   | The {{site.data.keyword.cloud_notm}} Organization to which the resource was assigned. | `o/4716e2d1-35b7-431f-891a-b552bf0b3c66` |
+| Space        | s/`{space guid}` | The {{site.data.keyword.cloud_notm}} Space to which the resource was assigned.        | `s/48b3cdcd-e804-4398-9032-73065863ad7c` |
 {: caption="Scope usage" caption-side="top"}
 
 
@@ -100,7 +100,7 @@ For example, a DevOps tool that is used to track and plan work items can have a 
 
 `c7a27f55-d35e-4153-b044-8ca9155fc467/my-test-asg1/my-scaleout-policy`
 
-You can also obtain a CRN from an {{site.data.keyword.Bluemix_notm}} resource by using the following CLI command:
+You can also obtain a CRN from an {{site.data.keyword.cloud_notm}} resource by using the following CLI command:
 
 ```bash
 ibmcloud resource service-instance

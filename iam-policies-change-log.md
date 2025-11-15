@@ -3,7 +3,7 @@
 copyright:
 
   years:  2023, 2024
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: change log for access-management polices, updates to access-management polices, IAM Policy Management API change log, policies change log, access management change log
 
@@ -19,6 +19,7 @@ subcollection: account
 In this change log you can learn about the latest changes, improvements, and updates to the IAM Policy Management API. The change log lists changes that have been made, ordered by the date they were released. Changes to existing API versions are designed to be compatible with existing client applications.
 
 For information about the latest changes to the IAM Policy Management SDKs and CLI, see the change logs in the SDK repositories:
+
 - [Java SDK change log](https://github.com/IBM/platform-services-java-sdk/blob/main/CHANGELOG.md)
 - [Node SDK change log](https://github.com/IBM/platform-services-node-sdk/blob/main/CHANGELOG.md)
 - [Python SDK change log](https://github.com/IBM/platform-services-python-sdk/blob/main/CHANGELOG.md)

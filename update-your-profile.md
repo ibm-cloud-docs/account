@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile, company information, company details, company account, company profile, company contact
 
@@ -22,7 +22,7 @@ In your {{site.data.keyword.cloud}} profile, you can add a photo and personal in
 This page is not available for some account types. Upgrade to complete your account and access the functions on the Company information page.
 {: note}
 
-Your profile is connected to your log in ID, and it's shared across all {{site.data.keyword.cloud_notm}} accounts that you can access.
+Your profile is connected to your log-in ID, and it's shared across all {{site.data.keyword.cloud_notm}} accounts that you can access.
 
 ## Changing your profile photo
 {: #profile-photo}
@@ -38,15 +38,15 @@ The maximum file limit for a profile picture is 100 KB. Use only PNG or JPG file
 ## Editing your information
 {: #ibmid}
 
-If you log in with an IBMid, it is the single ID that you use to log in to your {{site.data.keyword.Bluemix_notm}} account for infrastructure, services, and application features. You can't change your IBMid, but you can edit your associated profile information, such as your name, email, phone number, password, or company name. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**. If you log in with a SoftLayer ID, you can also change your profile information from the Profile page.
+If you log in with an IBMid, it is the single ID that you use to log in to your {{site.data.keyword.cloud_notm}} account for infrastructure, services, and application features. You can't change your IBMid, but you can edit your associated profile information, such as your name, email, phone number, password, or company name. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile**. If you log in with a SoftLayer ID, you can also change your profile information from the Profile page.
 
-If you log in with an ID from an external identity provider (IdP), then your information from your IdP is displayed. However, you can't update it on the Profile page. You must update your user information with your IdP.
+If you log in with an ID from an external identity provider (IdP), then your information from your IdP is displayed. However, you can't update it on the Profile page. Update your user information with your IdP.
 {: note}
 
 ## Changing your cookie settings
 {: #tracking}
 
-The {{site.data.keyword.Bluemix_notm}} console requires cookies to manage your sessions, such as to provide secure login, handle transactions, and save some preferences. Additional cookies are used to build a more personalized experience for you and provide better support. If you change your cookie settings from the IBM standard default, you might not be able to use some features, such as chat communications.
+The {{site.data.keyword.cloud_notm}} console requires cookies to manage your sessions, such as to provide secure login, handle transactions, and save some preferences. Extra cookies are used to build a more personalized experience for you and provide better support. If you change your cookie settings from the IBM standard default, you might not be able to use some features, such as chat communications.
 
 To change your settings from the {{site.data.keyword.IBM_notm}} standard default, complete the following steps:
 1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Privacy**.
@@ -60,7 +60,7 @@ To change your settings from the {{site.data.keyword.IBM_notm}} standard default
 ## Updating your company profile
 {: #customer-profile}
 
-To request an update to the company profile details, go to **Manage** > **Account** in the {{site.data.keyword.Bluemix_notm}} console, select **Company information**, and then select **Company profile**. After you request an update to the company profile, a classic infrastructure team member reviews the request. If any additional information is needed, our team asks for updates by updating the case. The following company profile fields must contain accurate information:
+To request an update to the company profile details, go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, select **Company information**, and then select **Company profile**. After you request an update to the company profile, a classic infrastructure team member reviews the request. If any additional information is needed, our team asks for updates by updating the case. The following company profile fields must contain accurate information:
 
 * Company Name
 * Street Address 1
@@ -76,7 +76,7 @@ To request an update to the company profile details, go to **Manage** > **Accoun
 If your account is for personal use, you can use your first and last name as the Company Name.
 {: tip}
 
-{{site.data.keyword.Bluemix_notm}} uses the information in the company profile to contact you. If your phone number or email changes, be sure to update them. The company profile information is entered when the account was created.
+{{site.data.keyword.cloud_notm}} uses the information in the company profile to contact you. If your phone number or email changes, be sure to update them. The company profile information is entered when the account was created.
 
 ## Editing a company contact
 {: #account-contact}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: viewing invoices, invoices, IBM Customer Number, IBM Invoices, RSET, external invoice website, paperless invoice, request paperless invoice
 
@@ -73,11 +73,11 @@ To save a copy of your invoice, click the PDF icon in the **Invoice Number** col
 
 If you are attempting to access the [Invoices@IBM](https://www.ibm.com/support/customer/invoices/welcome){: external} website for the first time, you can sign up with your IBMid, complete your profile, and provide your {{site.data.keyword.IBM_notm}} customer number to access your account. Your {{site.data.keyword.IBM_notm}} customer number is used for identification purposes during your registration process with the {{site.data.keyword.IBM_notm}} Invoices page and during other interactions with [{{site.data.keyword.IBM_notm}} Support](https://www.ibm.com/mysupport/s/?language=en_US){: external}.
 
-To ensure that access is granted to the correct individuals, you must register by using an email address that includes your company's domain, such as ibm.com. Requests that use personal, non-company-specific email addresses might not be approved. In these cases, contact the [{{site.data.keyword.Bluemix_notm}} Support Center](/unifiedsupport/supportcenter){: external}.
+To ensure that access is granted to the correct individuals, you must register by using an email address that includes your company's domain, such as ibm.com. Requests that use personal, non-company-specific email addresses might not be approved. In these cases, contact the [{{site.data.keyword.cloud_notm}} Support Center](/unifiedsupport/supportcenter){: external}.
 {: note}
 
 1. Go to [Invoices@IBM](https://www.ibm.com/support/customer/invoices/welcome){: external}, and select your region.
-1. Log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+1. Log in with the same IBMid and password that you use to log in to {{site.data.keyword.cloud_notm}}.
 1. Complete your profile on the Invoices@IBM website.
 1. From the Active and pending accesses tab, add access to your account and provide your {{site.data.keyword.IBM_notm}} customer number.
 
@@ -85,7 +85,6 @@ To ensure that access is granted to the correct individuals, you must register b
    {: tip}
 
 To access your invoices in the future, you can click the link from the Invoices page in the console or bookmark the external website to go to it directly.
-
 
 ## Requesting paperless invoices
 {: #request-paperless-invoices}
@@ -97,7 +96,7 @@ Depending on which region your account is located in, you can switch to paperles
 3. Click **Email us** in the Invoice, payment section.
 4. Provide your {{site.data.keyword.IBM_notm}} customer number in your request to switch to paperless billing. Click **Save**.
 
-    If you don't know your customer number, contact {{site.data.keyword.Bluemix_notm}} Support by calling 1-866-325-0045 and selecting the third option, or contact the [eCustomer Care team](https://www-112.ibm.com/software/howtobuy/passportadvantage/homepage/ecarec){: external}.
+    If you don't know your customer number, contact {{site.data.keyword.cloud_notm}} Support by calling 1-866-325-0045 and selecting the third option, or contact the [eCustomer Care team](https://www-112.ibm.com/software/howtobuy/passportadvantage/homepage/ecarec){: external}.
     {: tip}
 
 5. To track the status your request, click **My Requests**.

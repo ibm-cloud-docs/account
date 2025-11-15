@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-04-08"
+lastupdated: "2025-11-15"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, API key, users
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # What's in an account?
 {: #overview}
@@ -28,13 +27,13 @@ Users
 :   Users are invited to the account and given access to the resources in the account.
 
 Service IDs
-:   A service ID identifies a service or application similar to how a user ID identifies a user. You can use a service ID that you create to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user happens to leave an organization and is deleted from the account, the service ID remains, ensuring that your application or service stays up and running. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
+:   A service ID identifies a service or application similar to how a user ID identifies a user. You can use a service ID that you create to enable an application outside of {{site.data.keyword.cloud_notm}} access to your services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user happens to leave an organization and is deleted from the account, the service ID remains, ensuring that your application or service stays up and running. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
 
 Trusted profiles
-:   A trusted profile is a grouping of federated users, compute resources, {{site.data.keyword.Bluemix_notm}} services, service IDs, or a combination of entities, to which the same {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) access can be granted. When applying a trusted profile, temporary security credentials are provided for the duration of a session. All identities that are allowed to apply a single profile inherit the same access. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
+:   A trusted profile is a grouping of federated users, compute resources, {{site.data.keyword.cloud_notm}} services, service IDs, or a combination of entities, to which the same {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) access can be granted. When applying a trusted profile, temporary security credentials are provided for the duration of a session. All identities that are allowed to apply a single profile inherit the same access. For more information, see [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
 
 Service instances or resources
-:   Services in {{site.data.keyword.Bluemix_notm}} are resource group-based. Service instances that can be added to a resource group and managed by using IAM are called resources. For more information, see [Creating resources](/docs/account?topic=account-manage_resource).
+:   Services in {{site.data.keyword.cloud_notm}} are resource group-based. Service instances that can be added to a resource group and managed by using IAM are called resources. For more information, see [Creating resources](/docs/account?topic=account-manage_resource).
 
 API keys
 :   An API key is a unique code that is passed in to an API to identify the calling application or user. You can use platform API keys, which are associated with user identities, and you can create other API keys for service IDs. For more information, see [Understanding API keys](/docs/account?topic=account-manapikey).

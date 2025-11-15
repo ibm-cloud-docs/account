@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-09-19"
+lastupdated: "2025-11-15"
 
 keywords: API key, user API keys, IBM Cloud API keys, manage user keys, create API key
 
@@ -39,7 +39,7 @@ If you are applying a trusted profile, you can't create a user API key. You can 
 {: #manage-user-keys}
 {: ui}
 
-To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** > **Access (IAM)** > **API keys** in the {{site.data.keyword.cloud_notm}} console. On the API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself. You can also manage all [classic infrastructure API keys](/docs/account?topic=account-classic_keys) for users that you are an ancestor of in the user hierarchy. In addition, if you are the account owner or a user assigned the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys too.
+To manage the {{site.data.keyword.cloud_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** > **Access (IAM)** > **API keys** in the {{site.data.keyword.cloud_notm}} console. On the API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself. You can also manage all [classic infrastructure API keys](/docs/account?topic=account-classic_keys) for users that you are an ancestor of in the user hierarchy. In addition, if you are the account owner or a user assigned the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys too.
 
 | Filter Options                                     | Displayed API Keys                                         | Required Access                            | Allowed Actions            |
 |----------------------------------------------------|------------------------------------------------------------|--------------------------------------------|----------------------------|
@@ -53,12 +53,12 @@ To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated wi
 {: support}
 {: ui}
 
-As an {{site.data.keyword.Bluemix_notm}} user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key is that a user or organization can create several API keys for different programs. The API keys can be deleted independently if compromised without interfering with other API keys or even the user. You can create up to 20 API keys.
+As an {{site.data.keyword.cloud_notm}} user you might want to use an API key when you enable a program or script without distributing your password to the script. A benefit of using an API key is that a user or organization can create several API keys for different programs. The API keys can be deleted independently if compromised without interfering with other API keys or even the user. You can create up to 20 API keys.
 
 To create an API key for your user identity in the UI, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)** > **API keys**.
-1. Click **Create an {{site.data.keyword.Bluemix_notm}} API key**.
+1. Click **Create an {{site.data.keyword.cloud_notm}} API key**.
 1. Enter a name and description for your API key.
 1. Click **Create**.
 1. Then, click **Show** to display the API key. Or, click **Copy** to copy and save it for later, or click **Download**.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-20"
+lastupdated: "2025-11-15"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -41,11 +41,11 @@ Google ID login isn't available for users with federated IDs due to additional a
 
 Some products are not affected by the following catalog visibility settings:
 
-- Turning off the visibility of the {{site.data.keyword.Bluemix_notm}} catalog
-- Excluding all {{site.data.keyword.Bluemix_notm}} products from the catalog
-- Excluding all {{site.data.keyword.Bluemix_notm}} products from your private catalogs
+- Turning off the visibility of the {{site.data.keyword.cloud_notm}} catalog
+- Excluding all {{site.data.keyword.cloud_notm}} products from the catalog
+- Excluding all {{site.data.keyword.cloud_notm}} products from your private catalogs
 
-You can view and manage catalog visibility settings by going to **Manage > Catalogs > Settings** in the {{site.data.keyword.Bluemix_notm}} console.
+You can view and manage catalog visibility settings by going to **Manage > Catalogs > Settings** in the {{site.data.keyword.cloud_notm}} console.
 {: note}
 
 Users can still create instances of the following products by using an API or the CLI, regardless of the [catalog visibility setting](/docs/account?topic=account-filter-account&interface=ui#catalog-filters-customize) in the account or private catalog:

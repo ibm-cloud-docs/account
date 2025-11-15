@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-11-15"
 
 keywords: trusted profile, federated users, granting access, tutorial, IAM trusted profile, trust relationship, establish trust, trust policy, trusted entity, assume access, apply access
 subcollection: account
@@ -32,7 +32,7 @@ Let's say that Marla is the manager of a dev team at an airline company. The tea
 ## Before you begin
 {: #trusted-profile-federated-prereqs}
 
-* Make sure you're assigned the following access:
+* Make sure you're assigned to the following access:
    * Administrator role in the account to create a trusted profile
    * Administrator role on the specific resources to which you are assigning access
 * Enable authentication from an external identity provider. For more information, see [Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
@@ -58,7 +58,7 @@ First, Marla creates the trusted profile for the test environment:
 {: #trusted-profile-federated-trust}
 {: step}
 
-Now that Marla created a trusted profile, she wants to establish criteria for the federated users that can apply this profile. To do this, she creates conditions based on the attributes in her company's corporate user directory. Marla and half of the team members are based in the Ireland, and the other half are based in the United States.
+Now that Marla created a trusted profile, she wants to establish criteria for the federated users that can apply to this profile. To do this, she creates conditions based on the attributes in her company's corporate user directory. Marla and half of the team members are based in the Ireland, and the other half are based in the United States.
 
 1. For trusted entity type, select **Federated users**.
 1. For authentication method, select **Users federated by {{site.data.keyword.appid_full_notm}}** from the list.
@@ -67,7 +67,7 @@ Now that Marla created a trusted profile, she wants to establish criteria for th
    {: tip}
 
 1. Select the default identity provider (IdP) you created.
-1. Click **View your identity provider (IdP) data**. Marla uses this in the following steps to see which attributes she can leverage to create conditions.
+1. Click **View your identity provider (IdP) data**. Marla uses this in the following steps to see which attributes she can use to create conditions.
 1. Click **Add a condition**.
 1. Click **Filter attributes** and select `country`.
     * These are the attributes available from personal data.
@@ -90,17 +90,17 @@ For more information about the fields that are used to create conditions for tru
 {: #trusted-profile-federated-access}
 {: step}
 
-Marla created narrow conditions that authenticate only the developers on the team that are working in the chatbot test environment. Now she can create a policy to give them the {{site.data.keyword.cloud_notm}} service and platform access they need for the project.
+Marla created narrow conditions that authenticate only the developers on the team that are working in the chatbot test environment. Now, she can create a policy to give them the {{site.data.keyword.cloud_notm}} service and platform access they need for the project.
 
 1. Select **Access policy**
 1. Select **{{site.data.keyword.containershort}}** from the list of services. Click **Next**.
 1. Scope the access to **Specific resources** based on selected attributes.
-1. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
+1. Select **Resource group**. Marla can select or input the name of the resource group that's been created for the chatbot project.
 1. Select Viewer and Reader roles to define the scope of access, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
 1. Select **{{site.data.keyword.toneanalyzerfull}}** from the list of services.
 1. Scope the access to **Specific resources** based on selected attributes.
-1. Select **Resource group**. Marla can select or input the name of the resource group that's created for the chatbot project.
+1. Select **Resource group**. Marla can select or input the name of the resource group that's been created for the chatbot project.
 1. Select Viewer and Reader roles to define the scope of access, and click **Review**.
 1. Click **Add** to add your policy configuration to your policy summary.
 1. Review the profile summary and click **Create**.

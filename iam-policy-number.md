@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-05-08"
+lastupdated: "2025-11-15"
 
 keywords: maximum limits, limits, maximum policies, check for limits, check policy number, increase policy limit, total number of account policies, increase account limit
 
@@ -62,7 +62,6 @@ When the request is approved, the limits for your account are changed.
 You are notified of the update to your entity limits through the case.
 {: note}
 
-
 ## Managing policy limits
 {: #policy-limits}
 
@@ -114,7 +113,6 @@ In the following example output, the last line displays the total number of poli
 
    Install `jq` to format the JSON. The filter `| jq -r .policies | jq '. | length'` counts the number of policies in the account. Without this, a list of all policies returns.
    {: note}
-
 
 ### Viewing the total number of policies per account by using the CLI
 {: #total-number-policies-cli}

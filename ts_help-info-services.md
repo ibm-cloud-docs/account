@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-02-12"
+lastupdated: "2025-11-15"
 
 keywords: support center help, resolve issues on the support center, trouble support center, personalized help
 
@@ -13,7 +13,7 @@ content-type: troubleshoot
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{{site.data.keyword.attribute-definition-list}} 
 
 # Why can't I find help information in the Support Center for my services?
 {: #supportcenter-service}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, delete service, delete instance, delete service instance
 
@@ -32,5 +32,5 @@ Gateway timeout
 This problem happens if the service instance is already deleted from the cloud controller.
 {: tsCauses}
 
-Create a service instance with the same service name, and connect it to your applications. Then, you can delete the service instance and the applications that use the service.   
+Create a service instance with the same service name, and connect it to your applications. Then, you can delete the service instance and the applications that use the service.
 {: tsResolve}

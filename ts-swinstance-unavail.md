@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshooting software, troubleshooting resources, software instance, suspended, removed, deleted
 
@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why is my software instance not usable?
+# Why is my software instance not usable? 
 {: #ts-swinstance-unavail}
 {: troubleshoot}
 
@@ -32,5 +32,5 @@ The instance is not usable.
 This problem happens if the software product that is used to create the instance is removed or suspended from the {{site.data.keyword.cloud_notm}} catalog. Suspension is a temporary state while removal is permanent. In both states, the software instance cannot retrieve necessary information from the product, including updates for new features and fixes for vulnerabilities.
 {: tsCauses}
 
-In the case of the software being removed from the catalog, you should delete your instance. If necessary, you can create a new instance from a different software product in the catalog.
+In case of the software being removed from the catalog, you should delete your instance. If necessary, you can create a new instance from a different software product in the catalog.
 {: tsResolve}

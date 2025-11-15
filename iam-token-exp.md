@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: token, token expiration, settings, access token, refresh token, IAM
 
@@ -37,7 +37,7 @@ For more information about access, see [Actions and roles for account management
 ## Managing access token expiration
 {: #accces-token-limit}
 
-IAM access tokens can be used to invoke various {{site.data.keyword.cloud_notm}} APIs. This is a temporary credential that is the result of an authentication. After the acquired access token expires, a refresh token is used to get a new access token so that you can continue calling {{site.data.keyword.Bluemix_notm}} or service APIs.
+IAM access tokens can be used to invoke various {{site.data.keyword.cloud_notm}} APIs. This is a temporary credential that is the result of an authentication. After the acquired access token expires, a refresh token is used to get a new access token so that you can continue calling {{site.data.keyword.cloud_notm}} or service APIs.
 
 To update your access token expiration setting, complete the following steps:
 
@@ -45,7 +45,6 @@ To update your access token expiration setting, complete the following steps:
 1. From the Login session section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") on the Access token tile.
 1. Enter the time limit in minutes. An access token can be valid for up to 60 minutes.
 1. Click **Save**.
-
 
 ## Managing refresh token expiration
 {: #refresh-token-limit}

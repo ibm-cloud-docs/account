@@ -3,7 +3,7 @@
 copyright:
 
    years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -21,7 +21,7 @@ completion-time: 10m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-This tutorial guides you through the steps to centrally manage access to the resources in your account at scale. By completing this tutorial, you learn how to create an access management tag, add the tag to selected resources, and define a policy to assign access to resources based on the tags on those resources.
+This tutorial guides you through the steps to centrally manage access to the resources in your account at scale. By completing this tutorial, you learn how to create an access management tag, add the tag to selected resources, and define a policy to assign access to resources based on the tags on those resources. 
 {: shortdesc}
 
 Access management tags are metadata that are added to resources to help organize access control relationships. They create flexible and easy to administer resource groupings. When you use tags to control access to your resources, your team's projects can grow without requiring updates to IAM policies.
@@ -36,7 +36,7 @@ This tutorial applies to IAM-enabled resources only. You need to have administra
 
 If you are new to using IAM, check out the following resources to learn more about the features, concepts, and components of the access management system:
 
-* See [What is {{site.data.keyword.Bluemix_notm}} Identity and Access Management?](/docs/account?topic=account-iamoverview) for an overview of the service.
+* See [What is {{site.data.keyword.cloud_notm}} Identity and Access Management?](/docs/account?topic=account-iamoverview) for an overview of the service.
 * See [IAM access](/docs/account?topic=account-userroles) for a description of how access management works by using access policies.
 * Watch the video about [controlling access by using tags in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-account_setup#two-teams-projects) for an overview of how to use access management tags.
 

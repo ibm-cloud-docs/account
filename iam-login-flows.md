@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-11-15"
 
 keywords: login, how login works, login flow, login diagram, login sequence
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.Bluemix_notm}} login sequences
+# {{site.data.keyword.cloud_notm}} login sequences
 {: #login-sequence}
 
 Review the following login sequence flows to understand the details about how federated, non-federated, and users added through {{site.data.keyword.appid_full_notm}} with a SAML provider connected to {{site.data.keyword.cloud}} Identity and Access Management (IAM) log in to {{site.data.keyword.cloud_notm}}.
@@ -25,7 +25,6 @@ Review the following login sequence flows to understand the details about how fe
 The standard login sequence for users in {{site.data.keyword.cloud_notm}} that are not federated works according to the following sequence:
 
 ![Login process for non-federated users with an IBMid](images/login-nonfed-id.svg "Login process for non-federated users with an IBMid"){: caption="Login process for non-federated users with an IBMid" caption-side="bottom"}
-
 
 1. The user starts by visiting the URL https://cloud.ibm.com with a browser. The {{site.data.keyword.cloud_notm}} console  sends back a login page to the browser.
 2. On the login page, the user enters their username, clicks Continue, then enters their password and sends this information to the console by clicking Log in.

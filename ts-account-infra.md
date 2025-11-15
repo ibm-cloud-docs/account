@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account, infrastructure access, infrastructure services 
 
@@ -29,7 +29,7 @@ When you attempt to access the infrastructure sections of the {{site.data.keywor
 This page can't be loaded because your infrastructure account is not fully configured as an IBM Cloud account.
 ```
 
-There are multiple reasons why the message is displayed:
+Multiple reasons why the message is displayed:
 {: tsCauses}
 
 * You have a [Lite account](/docs/account?topic=account-accounts#liteaccount), which does not allow access to infrastructure services.

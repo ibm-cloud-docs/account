@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot accessing all instances of a service
 
@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't a user in my account access all instances of a service?
+# Why can't a user in my account access all instances of a service? 
 {: #troubleshoot-instances}
 {: troubleshoot}
 

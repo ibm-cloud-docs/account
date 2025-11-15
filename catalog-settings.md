@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-06-19"
+lastupdated: "2025-11-15"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
@@ -59,6 +59,7 @@ You can use filters to manage which products in the public catalog are available
 {: ui}
 
 Set filters at a private catalog level for fine-grained control of which products in the public catalog are available only to the users you choose.
+
 1. Go to **Manage** > **Catalogs**, **Private catalogs** in the {{site.data.keyword.cloud_notm}} console.
 2. Select a catalog from the list to navigate to its details page.
 

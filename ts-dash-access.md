@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account, dashboard role, permission, view dashboard, dashboard
 
@@ -28,7 +28,7 @@ The view of the scoped dashboard that was shared with you is different than the 
 You don't have the required IAM access on the individual resource, or a context-based restriction is blocking your access to the resource.
 {: tsCauses}
 
-The account owner can update your access to any resource in the account, or you can contact any user who is assigned the administrator role on the service or service instance. For more information, see [IAM access](https://cloud.ibm.com/docs/account?topic=account-userroles).
+The account owner can update your access to any resource in the account, or you can contact any user who is assigned to the administrator role on the service or service instance. For more information, see [IAM access](https://cloud.ibm.com/docs/account?topic=account-userroles).
 {: tsResolve}
 
 The account owner or any user assigned the administrator role on all account management services can check the context-based restrictions on a resource.

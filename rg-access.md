@@ -4,8 +4,8 @@
 
 copyright:
 
-  years: 2020, 2023
-lastupdated: "2023-08-14"
+  years: 2020, 2025
+lastupdated: "2025-11-15"
 
 keywords: resource group access, access to resource group, access to resource in resource group
 
@@ -18,7 +18,7 @@ subcollection: account
 # Giving access to resources in resource groups
 {: #rgs_manage_access}
 
-With {{site.data.keyword.Bluemix_notm}} IAM, you have the flexibility to provide fine-grained user access to the resources and resource groups in your account.
+With {{site.data.keyword.cloud_notm}} IAM, you have the flexibility to provide fine-grained user access to the resources and resource groups in your account.
 {: shortdesc}
 
 You can assign the following types of access policies for users to work with resources in resource groups:
@@ -32,7 +32,7 @@ Assign a user a role to manage a specific resource group. Then, the user can vie
 Review the following table for more information what each assigned platform IAM role provides a user the ability to do:
 
 | Role | Actions for Access to Manage Resource Groups | Actions on Resources in Resource Groups |
-|:-----------------|:--------------|:---------------|
+|:-----------------|:-----------------|:------------------|
 | Viewer role  | View the group and its characteristics, but can't view resources in the group without a policy on the resource itself | View resources in the group if a viewer role or higher is assigned on the resource group itself |
 | Operator role | Not applicable | Not applicable |
 | Editor role | View or edit the name or other characteristics of the group, but not the resources in the group | Create, delete, edit, suspend, resume, view, bind, and manage access of resources in the resource group |

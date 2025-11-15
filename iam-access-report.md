@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2024
-lastupdated: "2024-04-05"
+  years: 2018, 2025
+lastupdated: "2025-11-15"
 
 keywords: resource access, access report, export user access, who has access, download access report, audit access
 
@@ -36,7 +36,6 @@ With the following access, you can view display names, access group membership, 
    * Viewer role for a specific access group by using the IAM Access Groups account management service
    * Viewer role for all access groups by using the IAM Access Groups account management service
    * Viewer role for all account management services
-
 
 ## Exporting a report
 {: #export-report}

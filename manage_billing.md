@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: payment method, credit card, payment, billing method, pay, pay my bill, billing items, ibm billing,
 
@@ -58,7 +58,6 @@ Complete the following steps to set a new default payment method:
 1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Set as default**.
 2. Confirm that you want to make this payment method the default. The default payment method is charged for recurring payments
 
-
 ## Managing payment methods for all other accounts
 {: #manage-other-account}
 
@@ -97,7 +96,7 @@ To make a one-time payment, in the {{site.data.keyword.cloud_notm}} console, go 
 You might manage your payment method on a separate billing platform. You can easily register, update, or delete a payment method by going to [IBM Billing](https://myibm.ibm.com/billing/) and log in with your IBMid and password. You are also required to enter the temporary passcode that's emailed to you.
 
 To add a payment method, complete the following steps:
-1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.cloud_notm}}.
 1. Click the **Avatar** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar"), and select **Billing**.
 1. Click **Manage payment method**.
 1. Enter your payment information, and click **Register**. A temporary passcode is emailed to you after the registration process is complete.

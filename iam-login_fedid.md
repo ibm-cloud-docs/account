@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-11-15"
 
 keywords: federated ID, password, enterprise SSO, single sign-on ID, API key login, one-time passcode login, temporary credential, to login, logging in, trusted profiles
 
@@ -77,12 +77,12 @@ You choose to use either a one-time passcode or an API key to log in by using th
 ### Using a one-time passcode to log in with the CLI
 {: #onetime_passcode}
 
-When you use the one-time passcode option to log in with a federated ID, you specify the single-sign on (SSO) parameter to get a one-time passcode, which you then enter at login.
+When you use the one-time passcode option to log in with a federated ID, you specify the single-sign-on (SSO) parameter to get a one-time passcode, which you then enter at login.
 
-Because a one-time passcode retrieves code from the {{site.data.keyword.Bluemix_notm}} console, it causes the use of a federated ID in your automation script to fail. Avoid trouble by using the API key option with an automated script.
+Because a one-time passcode retrieves code from the {{site.data.keyword.cloud_notm}} console, it causes the use of a federated ID in your automation script to fail. Avoid trouble by using the API key option with an automated script.
 {: tip}
 
-#### From the {{site.data.keyword.Bluemix_notm}} CLI
+#### From the {{site.data.keyword.cloud_notm}} CLI
 {: #login_cli}
 
 You can use two different methods to log in with the CLI. For the first method, use the following steps:
@@ -105,8 +105,8 @@ You can use two different methods to log in with the CLI. For the first method, 
 
 If you're already logged in to the console, you can use the following steps:
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**.
-2. Copy the information for the {{site.data.keyword.Bluemix_notm}} CLI into the CLI.
+1. In the {{site.data.keyword.cloud_notm}} console, click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Log in to CLI and API**.
+2. Copy the information for the {{site.data.keyword.cloud_notm}} CLI into the CLI.
 
 #### From the Red Hat OpenShift CLI
 {: #openshift_cli}
@@ -119,7 +119,7 @@ You can log in with a one-time passcode by using the following steps:
 ### Using an API key in the CLI for authentication
 {: #api_key}
 
-The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is used to authenticate with the {{site.data.keyword.Bluemix_notm}} platform, not the classic infrastructure API key, or {{site.data.keyword.Bluemix_notm}} service API key.
+The required API key is the {{site.data.keyword.cloud_notm}} API key that is used to authenticate with the {{site.data.keyword.cloud_notm}} platform, not the classic infrastructure API key, or {{site.data.keyword.cloud_notm}} service API key.
 
 1. Create an API key with the [`ibmcloud iam api-key-create` command](/docs/cli?topic=cli-ibmcloud_commands_iam#ibmcloud_iam_api_key_create). Use the `--file` option to generate an API key file instead of showing the key in the command window:
 
@@ -128,7 +128,7 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
    ```
    {: pre}
 
-2. Log in with the API key. You can use the API key with the {{site.data.keyword.Bluemix_notm}} CLI in any of the following ways:
+2. Log in with the API key. You can use the API key with the {{site.data.keyword.cloud_notm}} CLI in any of the following ways:
 
    * Call the API key directly:
 
@@ -145,7 +145,7 @@ The required API key is the {{site.data.keyword.Bluemix_notm}} API key that is u
       ```
       {: pre}
 
-   * Set an environment variable. Additionally, you can also set an environment variable on your system. For example, IBMCLOUD_API_KEY=api_key_string, where `api_key_string` is the custom value of the API key. After the environment variable is set, you can simply specify `ibmcloud login` from the CLI.
+   * Set an environment variable. Also, you can also set an environment variable on your system. For example, IBMCLOUD_API_KEY=api_key_string, where `api_key_string` is the custom value of the API key. After the environment variable is set, you can simply specify `ibmcloud login` from the CLI.
 
 For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotation marks around the key file name.
 {: tip}
@@ -154,7 +154,7 @@ For Windows 10 PowerShell, you want to use `'@key_file_name'` with single quotat
 {: #using_apikey}
 {: api}
 
-You can use an API key to get an IAM token to access your {{site.data.keyword.Bluemix_notm}} services. For example, you can run the following curl command to use an API key that is named `MY_APIKEY` to get an IAM token:
+You can use an API key to get an IAM token to access your {{site.data.keyword.cloud_notm}} services. For example, you can run the following curl command to use an API key that is named `MY_APIKEY` to get an IAM token:
 
    ```bash
    curl -X POST 'https://iam.cloud.ibm.com/identity/token' -H 'Content-Type: application/x-www-form-urlencoded' -d

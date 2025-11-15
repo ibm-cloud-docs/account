@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: VPN password, update VPN password, classic infrastructure VPN
 
@@ -33,4 +33,4 @@ To update the VPN password, complete the following steps:
 2. Select a user from the list.
 3. From the User details page, go to the **VPN password** section.
 4. Click the **Edit** icon ![Edit icon](../icons/icon_write.svg "Edit") to enter a new VPN password.
-5. Click **Update password**.
+5. Click **Update password**. 

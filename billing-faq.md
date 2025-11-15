@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -133,7 +133,7 @@ For Pay-As-you-Go accounts, you must have an active credit card on file. You can
 {: #localcurrency}
 {: faq}
 
-Invoicing in your local currency might be possible if you have a subscription or {{site.data.keyword.Bluemix_notm}} Cloud Enterprise Savings Plan account type. Contact [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} for more information.
+Invoicing in your local currency might be possible if you have a subscription or {{site.data.keyword.cloud_notm}} Cloud Enterprise Savings Plan account type. Contact [{{site.data.keyword.cloud_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} for more information.
 
 An account that is invoiced in a currency other than US Dollars can't be converted to US Dollar invoicing.
 {: note}
@@ -142,16 +142,16 @@ An account that is invoiced in a currency other than US Dollars can't be convert
 {: #BCI-invoice}
 {: faq}
 
-Business Continuity Insurance is insurance that protects you from illegitimate charges against your servers. You can request this insurance through [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to avoid overage charges if a documented network attack occurs against a covered server. {{site.data.keyword.Bluemix_notm}} credits back any overages incurred on the affected server.
+Business Continuity Insurance is insurance that protects you from illegitimate charges against your servers. You can request this insurance through [{{site.data.keyword.cloud_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to avoid overage charges if a documented network attack occurs against a covered server. {{site.data.keyword.cloud_notm}} credits back any overages incurred on the affected server.
 
-To receive the credits for illegitimate charges against your servers, contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
+To receive the credits for illegitimate charges against your servers, contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
 
 
 ## What's the difference between promo codes and feature codes?
 {: #promo-feature-codes}
 {: faq}
 
-Promo codes are for Pay-As-You-Go and Subscription accounts and give you limited-time credits toward your account and {{site.data.keyword.Bluemix_notm}} products. The codes are typically short phrases, like `PROMO200`. For more information about promo codes, see [Managing promotions](/docs/account?topic=account-applying-promo-codes).
+Promo codes are for Pay-As-You-Go and Subscription accounts and give you limited-time credits toward your account and {{site.data.keyword.cloud_notm}} products. The codes are typically short phrases, like `PROMO200`. For more information about promo codes, see [Managing promotions](/docs/account?topic=account-applying-promo-codes).
 
 Feature codes provide enhancements for an account, such as an unlimited number of organizations or creating a trial account. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops. They're typically random alphanumeric codes, like `a1b2c3def456`. For more information about feature codes, see [Applying feature codes](/docs/account?topic=account-codes).
 
@@ -159,13 +159,13 @@ Feature codes provide enhancements for an account, such as an unlimited number o
 {: #get-promo-code}
 {: faq}
 
-Promo codes are provided on a limited basis by {{site.data.keyword.Bluemix_notm}} sales to customers with Pay-As-You-Go and Subscription accounts. Promotions provide specific discounts for a set amount of time. For more information, see [Applying promo codes](/docs/account?topic=account-applying-promo-codes).
+Promo codes are provided on a limited basis by {{site.data.keyword.cloud_notm}} sales to customers with Pay-As-You-Go and Subscription accounts. Promotions provide specific discounts for a set amount of time. For more information, see [Applying promo codes](/docs/account?topic=account-applying-promo-codes).
 
 ## Where can I get a feature code?
 {: #get-feature-code}
 {: faq}
 
-Feature codes are provided by {{site.data.keyword.Bluemix_notm}} sales and educational providers on a limited basis. Feature codes are meant for select groups and are typically given out at hackathons, conferences, and other events. If you are taking a course through an educational provider and need more resources to complete the course, contact your educational provider to determine whether a feature code is applicable.
+Feature codes are provided by {{site.data.keyword.cloud_notm}} sales and educational providers on a limited basis. Feature codes are meant for select groups and are typically given out at hackathons, conferences, and other events. If you are taking a course through an educational provider and need more resources to complete the course, contact your educational provider to determine whether a feature code is applicable.
 
 ## How do I apply a promo code?
 {: #how-apply-promo}
@@ -175,7 +175,7 @@ To apply your promo code, go to the [Promotions and credits](/billing/promotions
 
 Promo codes are typically based on short phrases, like `PROMO200`. If you have an alphanumeric code, such as `a1b2c3def456`, it's a different type of code that is referred to as a feature code. You might be looking for information on feature codes and subscription codes. For more information, see [Applying feature codes](/docs/account?topic=account-codes) and [Applying subscription codes](/docs/account?topic=account-subscription_code).
 
-If you can't apply a promo code that you received from {{site.data.keyword.Bluemix_notm}} Sales or an educational provider, contact sales or the provider for more help.
+If you can't apply a promo code that you received from {{site.data.keyword.cloud_notm}} Sales or an educational provider, contact sales or the provider for more help.
 {: note}
 
 ## Why did I get invoiced when I have remaining promotion credits?
@@ -184,7 +184,7 @@ If you can't apply a promo code that you received from {{site.data.keyword.Bluem
 
 If you think your invoice didn't include your promotion credits, first determine that the credits are still active on your account by using the following steps:
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions and credits**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions and credits**.
 1. Click a promotion to expand the table and view the amount of each promotion, the duration of each promotion and the product it applies to.
 1. Check the following to make sure that your promo code is still applicable:
    - Verify the maximum value of the promo code per month. Some monthly recurring promo codes have a monthly limit. If your usage exceeded that limit, you're billed for the remaining amount.
@@ -268,7 +268,7 @@ Startup with IBM Program, which was formerly the {{site.data.keyword.IBM}} Globa
 {: #ibm-corporate-credits}
 {: faq}
 
-Credits for {{site.data.keyword.IBM_notm}} corporate programs, such as Startup with {{site.data.keyword.IBM_notm}} and PartnerWorld, are available within the applicable invoice in {{site.data.keyword.Bluemix_notm}}. To view the credits, complete the following steps:
+Credits for {{site.data.keyword.IBM_notm}} corporate programs, such as Startup with {{site.data.keyword.IBM_notm}} and PartnerWorld, are available within the applicable invoice in {{site.data.keyword.cloud_notm}}. To view the credits, complete the following steps:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Invoices**.
 1. Select an applicable invoice.
@@ -313,8 +313,8 @@ No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solu
 {: #manual-credit}
 {: faq}
 
-A manual credit is a credit that you receive from {{site.data.keyword.Bluemix_notm}} as part of a special program, reimbursement from an illegitimate charge, or other reasons unrelated to a promotion. Manual credits are issued by {{site.data.keyword.Bluemix_notm}} and no customer action is necessary. You can view any manual credits that are applied to your account by completing the following steps:
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions and credits**.
+A manual credit is a credit that you receive from {{site.data.keyword.cloud_notm}} as part of a special program, reimbursement from an illegitimate charge, or other reasons unrelated to a promotion. Manual credits are issued by {{site.data.keyword.cloud_notm}} and no customer action is necessary. You can view any manual credits that are applied to your account by completing the following steps:
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Billing and usage**, and select **Promotions and credits**.
 1. From the **Type** dropdown, select **Manual credit**.
 
 ## Why did I receive multiple invoices in one month?
@@ -327,9 +327,9 @@ You might receive multiple invoices if you have an Enterprise Savings Plan and s
 {: #usage-report-vs-usage-ui}
 {: faq}
 
-The amount that is displayed on the [Usage](/billing/usage) page is updated more regularly than the downloaded CSV usage report. The discrepancy in the usage amount might be because of the time delay between processing the data that you see on the Usage page and the information in the CSV reports. The discrepancy during the current month resolves when all reports finalize after the ninth of the subsequent month. If the billing discrepancy persists, the amount that is shown in the {{site.data.keyword.Bluemix_notm}} console is the accurate amount.
+The amount that is displayed on the [Usage](/billing/usage) page is updated more regularly than the downloaded CSV usage report. The discrepancy in the usage amount might be because of the time delay between processing the data that you see on the Usage page and the information in the CSV reports. The discrepancy during the current month resolves when all reports finalize after the ninth of the subsequent month. If the billing discrepancy persists, the amount that is shown in the {{site.data.keyword.cloud_notm}} console is the accurate amount.
 
-To resolve any billing issues, contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
+To resolve any billing issues, contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external} and open a support case.
 
 ## Why do my costs on the Cost analysis page differ from the usage page?
 {: #usage-report-vs-cost-analysis}

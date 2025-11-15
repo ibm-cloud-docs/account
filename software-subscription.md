@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: IBM Cloud billing, software subscription, SaaS subscription
 
@@ -19,10 +19,10 @@ subcollection: account
 You must have a paid account type for your SaaS subscription: Subscription, Pay-As-You-Go, or Enterprise Saving Plan. For more information, see [Account types](/docs/account?topic=account-accounts).
 {: shortdesc}
 
-To view your account type, go to **Manage > Account**, and select **Account settings** in the {{site.data.keyword.Bluemix_notm}} console. Details about your account type are listed in the Account Type section.
+To view your account type, go to **Manage > Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. Details about your account type are listed in the Account Type section.
 {: tip}
 
-Work with an [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to create a quote based on your software needs and the spending amount for the period that you want to subscribe.
+Work with an [{{site.data.keyword.cloud_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to create a quote based on your software needs and the spending amount for the period that you want to subscribe.
 
 ## Before you begin
 {: #before-software}
@@ -39,8 +39,8 @@ After you purchase a SaaS subscription, you receive an email to add the subscrip
 
 If you don't have a paid account when you receive an email with the subject `Action required: Add your SaaS subscription to an account`, you might need to:
 
-- Create an account by contacting an [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
-- Upgrade to a paid account by contacting an [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+- Create an account by contacting an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+- Upgrade to a paid account by contacting an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 - Activate your platform subscription, which converts your account to a paid Subscription account. To activate a platform subscription, look for an email with the subject `Action required: Add your platform subscription to an account` and follow the instructions in the email.
 
 To add your SaaS subscription to an account, complete the following steps:
@@ -76,7 +76,7 @@ After you add your SaaS subscription to an account, you can view it in your reso
 
 To view your SaaS subscription, go to the [Service commitments](/billing/service-commits){: external} page.
 
-To view and pay your SaaS subscription bill, check your email for an email from {{site.data.keyword.IBM}} or contact your [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+To view and pay your SaaS subscription bill, check your email for an email from {{site.data.keyword.IBM}} or contact your [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 
 SaaS subscriptions are not included in your usage reports.
 {: note}

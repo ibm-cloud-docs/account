@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords:
 
@@ -67,6 +67,7 @@ To turn on this MFA option for a user, they must first set up TOTP.
 Users can set up TOTP for additional authentication at login. You must set up your TOTP before you or administrator can enable this MFA requirement for you.
 
 To set up TOTP, complete the following steps:
+
 1. From the console, go to Go to **Manage** > **Access (IAM)** > **Users** > _select a user_ > **Legacy account-based MFA** > **Set up**.
 2. In the Time-based one-time passcode authentication seciton, click **Set up**.
 3. Scan the QR code with an authentication app on your device.

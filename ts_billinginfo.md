@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot billing, billing error, billing info, can't access billing, function unavailable
 
@@ -38,6 +38,6 @@ Check your access by completing the following steps:
 1. In the {{site.data.keyword.Bluemix}} console, go to **Manage, > Access (IAM)**, and select **Users**.
 2. Click your name from the Users page.
 3. Click **Access policies** to view your assigned IAM access policies.
-4. If you don't have the required access, contact the account owner to request it.
+4. If you don't have the required access, contact the account owner to request it. 
 
 For more information about account management services, see [Assigning access to account management services](/docs/account?topic=account-account-services).

@@ -4,7 +4,7 @@ copyright:
 
   years: 2024, 2025
 
-lastupdated: "2025-07-11"
+lastupdated: "2025-11-15"
 
 keywords: close account, cancel account, delete account, terminate account
 
@@ -17,7 +17,7 @@ subcollection: account
 # Closing an account
 {: #account-close}
 
-When you decide that you no longer need your {{site.data.keyword.cloud}} account, you can close the account by using the {{site.data.keyword.Bluemix_notm}} console. If you need assistance with the process, don't hesitate to [contact us](/unifiedsupport/supportcenter){: external}.
+When you decide that you no longer need your {{site.data.keyword.cloud}} account, you can close the account by using the {{site.data.keyword.cloud_notm}} console. If you need assistance with the process, don't hesitate to [contact us](/unifiedsupport/supportcenter){: external}.
 {: shortdesc}
 
 ## Step 1: Canceling all services
@@ -29,7 +29,7 @@ To delete a service instance, use the following steps:
 2. Expand the sections to locate the service instance that you want to delete.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Delete** for the row.
 
-All services need to be deleted. However, accounts that still contain some deprecated services and components such as {{site.data.keyword.bpshort}} and {{site.data.keyword.registrylong_notm}} will not be blocked from closing the account in the {{site.data.keyword.Bluemix_notm}} console.
+All services need to be deleted. However, accounts that still contain some deprecated services and components such as {{site.data.keyword.bpshort}} and {{site.data.keyword.registrylong_notm}} will not be blocked from closing the account in the {{site.data.keyword.cloud_notm}} console.
 {: note}
 
 ## Step 2: Canceling all devices
@@ -68,6 +68,7 @@ To close a Subscription account, a support case is required for account security
 You can request to cancel your Subscription account before the end of the term, but whether the subscription can be canceled early is at the discretion of IBM. A subscription is a contract between you and IBM that commits you to use {{site.data.keyword.cloud_notm}} for a specific term and spending amount. For more information, see [Managing subscriptions](/docs/account?topic=account-subscriptions).
 
 To create the support case, use the following steps:
+
 1. Go to the [Support Center](/unifiedsupport/supportcenter), and click **Create a case** in the Contact Support center.
 1. Click **Account**.
 1. Select the **Cancel/close/suspend** subtopic and click **Next**.

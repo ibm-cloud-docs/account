@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023
-lastupdated: "2023-12-12"
+  years: 2023, 2025
+lastupdated: "2025-11-15"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account
 
@@ -20,8 +20,8 @@ When onboarding software to a private catalog, you are required to validate the 
 
 You might want to use a target account to validate software for the following reasons:
 
-- Prevent the account with the product from becoming cluttered with resources that are created and deleted as part of the onboarding process
-- Allow users to complete onboarding when they might not have authorization to create resources in the account that contains the product
+- Prevent the account with the product from becoming cluttered with resources that are created and deleted as part of the onboarding process.
+- Allow users to complete onboarding when they might not have authorization to create resources in the account that contains the product.
 
 ## Before you begin
 {: #prereq-auth}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -74,7 +74,7 @@ If an account administrator enables MFA in at least one of the accounts that you
 ### Adding authentication factors
 {: #add-auth-factors}
 
-Authentication factors are used to authenticate yourself each time you log in to {{site.data.keyword.Bluemix_notm}} if an administrator enables MFA in at least one of the accounts you are a member of. These factors can be something that you have, like a U2F security key, or that you receive, like a time-based one time passcode (TOTP), or OTP. Make sure you add backup authentication factors. This way, you can prevent losing access to {{site.data.keyword.Bluemix_notm}} in the case that one of them becomes inaccessible.
+Authentication factors are used to authenticate yourself each time you log in to {{site.data.keyword.cloud_notm}} if an administrator enables MFA in at least one of the accounts you are a member of. These factors can be something that you have, like a U2F security key, or that you receive, like a time-based one time passcode (TOTP), or OTP. Make sure you add backup authentication factors. This way, you can prevent losing access to {{site.data.keyword.cloud_notm}} in the case that one of them becomes inaccessible.
 
 1. From the Verification methods and authentication factors page, click **Show authentication factors**.
 1. Click **Add**.

@@ -2,7 +2,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -142,6 +142,7 @@ Before you can manage resource groups by using Terraform, make sure that you hav
 {: terraform}
 
 Use the following steps to create a resource group by using Terraform:
+
 1. Create an argument in your `main.tf` file. The following example creates a resource group by using the `ibm_resource_group` resource, where `name` is a unique name to identify the resource group.
 
    ```terraform

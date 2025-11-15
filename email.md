@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Setting email preferences for notifications
 {: #email-prefs}
@@ -67,7 +66,7 @@ You can set your preferences to receive resource-related notifications for incid
     * Receive notifications about any important maintenance that keeps the platform operating at optimal status. You can receive notifications for all impact levels (high, medium, low), or just a subset.
     * Receive notifications about security vulnerabilities and the required actions to take.
     * Receive notifications about resource activity, such as status and service updates.
-    * By default, all {{site.data.keyword.Bluemix_notm}} resource notifications are turned off.
+    * By default, all {{site.data.keyword.cloud_notm}} resource notifications are turned off.
 
 To quickly turn off emails for the selected account or for all other accounts, click **Actions**, and select your preference.
 {: tip}
@@ -115,7 +114,7 @@ Then, go to **Devices** to assign a user access to the specific devices and devi
 ## Managing invitation notifications
 {: #invite-notifications}
 
-Users can receive an invitation link in their notifications and by email to join an account if they are already members of {{site.data.keyword.Bluemix_notm}}. Users only with the following types of access can invite others to the {{site.data.keyword.Bluemix_notm}} platform.
+Users can receive an invitation link in their notifications and by email to join an account if they are already members of {{site.data.keyword.cloud_notm}}. Users only with the following types of access can invite others to the {{site.data.keyword.cloud_notm}} platform.
 
 * Account owner
 * An IAM access policy with the Editor role or higher on the user management account management service

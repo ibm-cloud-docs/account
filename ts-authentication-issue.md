@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account, incomplete login, authentication issue
 
@@ -15,14 +15,14 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why didn't my IBMid login complete?
+# Why didn't my IBMid login complete? 
 {: #ts_login_ibmid}
 {: troubleshoot}
 
-If you log in to {{site.data.keyword.Bluemix_notm}} and the authentication of your IBMid doesn't complete, there might be a problem with the service.
+If you log in to {{site.data.keyword.cloud_notm}} and the authentication of your IBMid doesn't complete, there might be a problem with the service.
 {: shortdesc}
 
-When you log in to {{site.data.keyword.Bluemix_notm}}, authenticating with IBMid doesn't complete.
+When you log in to {{site.data.keyword.cloud_notm}}, authenticating with IBMid doesn't complete.
 {: tsSymptoms}
 
 There might be a problem with the IBMid authentication service.

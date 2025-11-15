@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-11-15"
 
 keywords: trusted profile, dynamic rule, operators, rules, conditions, properties, time-based, resource attribute
 
@@ -67,7 +67,7 @@ You can think of a dynamic rule or trusted profile condition as a key:value pair
 #### Example
 {: #example-values}
 
-The following table includes values for each of the fields for a dynamic rule or a trusted profile condition. In this example, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.Bluemix_notm}} access group or trusted profile that has specific access set for only managers.
+The following table includes values for each of the fields for a dynamic rule or a trusted profile condition. In this example, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.cloud_notm}} access group or trusted profile that has specific access set for only managers.
 
 | Field                           | Value                           |
 |---------------------------------|---------------------------------|
@@ -112,7 +112,6 @@ To establish trust with a compute resource in a trusted profile, you can use the
 | VPC ID                 | `vpc_id`              | The VPC ID of the virtual server for VPC, if one is available. |
 | Zone                   | `zone`                | Zone name in which this virtual server is deployed to. |
 {: caption="Virtual server for VPC attribute names" caption-side="top"}
-
 
 ### {{site.data.keyword.cloud_notm}} CLI command examples
 {: #cr-rule-cli-examples}

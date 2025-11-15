@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-11-06"
+lastupdated: "2025-11-15"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -16,7 +16,7 @@ subcollection: account
 # Basic, Advanced, and Premium support plans
 {: #support-plans}
 
-You can choose a Basic, Advanced, or Premium support plan to customize your {{site.data.keyword.Bluemix}} support experience for your business needs. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center.  If you want to upgrade your support plan, contact an [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+You can choose a Basic, Advanced, or Premium support plan to customize your {{site.data.keyword.Bluemix}} support experience for your business needs. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center.  If you want to upgrade your support plan, contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 {: shortdesc}
 
 Initial response Service Level Objectives (SLO) do not apply to any billing, invoice, or sales related inquiry or cases.
@@ -26,15 +26,15 @@ The following table shows the support types available for Pay-As-You-Go accounts
 
 |             | Basic         | Advanced         | Premium         |
 |-------------|---------------|------------------|-----------------|
-| **Description** | Basic business protection that is included with your {{site.data.keyword.Bluemix_notm}} Pay-As-You-Go or Subscription account | Prioritized case handling and support experience that is aligned with your business needs for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model | Client engagement that is aligned with your business outcomes to accelerate time-to-value for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model |
-| **Availability** |  24 x 7 access to the {{site.data.keyword.Bluemix_notm}} technical support team through cases | 24 x 7 access to the {{site.data.keyword.Bluemix_notm}} technical support team through cases, phone, and chat | 24 x 7 access to the {{site.data.keyword.Bluemix_notm}} technical support team through cases, phone, and chat |
+| **Description** | Basic business protection that is included with your {{site.data.keyword.cloud_notm}} Pay-As-You-Go or Subscription account | Prioritized case handling and support experience that is aligned with your business needs for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model | Client engagement that is aligned with your business outcomes to accelerate time-to-value for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model |
+| **Availability** |  24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat |
 | **[Case severity](/docs/account?topic=account-support-case-severity)** | Not applicable | Case severity ranking available | Case severity ranking available |
 | **Initial response time objectives** | Not applicable | Severity 1: Less than one hour  \n Severity 2: Less than two hours  \n Severity 3: Less than four hours  \n Severity 4: Less than eight hours | Severity 1: Less than 15 minutes  \n Severity 2: Less than one hour  \n Severity 3: Less than two hours  \n Severity 4: Less than four hours |
 | **Additional support**               | Not applicable | Not applicable | Technical Account Manager assigned  \n Quarterly business reviews  \n Access to experts |
 | **Pricing**  | Included with cloud entitlement | Pay-As-You-Go and Subscription: Starting at a minimum USD 200 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption | Pay-As-You-Go and Subscription: Starting at a minimum of USD 10,000 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption. For more information about support pricing, see [Viewing your support costs](/docs/account?topic=account-support).|
 {: caption="Support plans" caption-side="top"}
 
-For Enterprise Savings Plans, there is a minimum commitment for Advanced and Premium support. If you don't spend the total committed amount by the end of the commitment term, you are invoiced for the amount that you didn't consume, and any amount used over the commitment is also charged. For more information, contact a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+For Enterprise Savings Plans, there is a minimum commitment for Advanced and Premium support. If you don't spend the total committed amount by the end of the commitment term, you are invoiced for the amount that you didn't consume, and any amount used over the commitment is also charged. For more information, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 {: note}
 
 ## Premium support
@@ -91,7 +91,7 @@ Users with a Lite or Trial account can create support cases but are limited to n
 ## Support level and enterprises
 {: #support_level_enterprise}
 
-The level of support that is assigned to an [{{site.data.keyword.Bluemix_notm}} enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.
+The level of support that is assigned to an [{{site.data.keyword.cloud_notm}} enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.
 
 ## Technical support team
 {: #tech_support_team}

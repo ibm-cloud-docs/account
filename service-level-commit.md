@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-15"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -42,7 +42,7 @@ Depending on the service, your commitment might be in terms of dollars or metric
 ## Signing up for a commitment
 {: #signup-slc}
 
-Most account types can order a service commitment. Work with [{{site.data.keyword.Bluemix_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to create a commitment quote based on your hardware or service needs and the spending amount for the period that you want to commit to.
+Most account types can order a service commitment. Work with [{{site.data.keyword.cloud_notm}} Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to create a commitment quote based on your hardware or service needs and the spending amount for the period that you want to commit to.
 
 You can have multiple commitments for different services active at the same time.
 {: note}
@@ -54,16 +54,16 @@ When the contract term ends, service commitments are automatically converted to 
 
 Hybrid cloud services that can be deployed on-premises, like {{site.data.keyword.powerSysFull}} Private Cloud, often require a service commitment to order and deploy hardware at your site. With this commitment, you receive a discount on the standard metered rates for the service or bundle of services that you select.
 
-Your on-premises usage data is sent to {{site.data.keyword.Bluemix_notm}} when your service commitment is activated, which allows you to monitor hardware usage alongside your cloud-based usage. Gain a complete view of your resource usage trends across both on-premises and cloud environments to help you make informed decisions.
+Your on-premises usage data is sent to {{site.data.keyword.cloud_notm}} when your service commitment is activated, which allows you to monitor hardware usage alongside your cloud-based usage. Gain a complete view of your resource usage trends across both on-premises and cloud environments to help you make informed decisions.
 
 Workloads that you deploy to your on-premises or edge environment are enabled through {{site.data.keyword.satellitelong}}. For more information, see [Getting started with {{site.data.keyword.satellitelong}}](/docs/satellite?topic=satellite-getting-started).
 
 #### Ordering managed hardware
 {: #ordering-slc}
 
-Managed hardware is physical hardware like servers, storage, and networking equipment, which {{site.data.keyword.IBM_notm}} provides and maintains based on the capacity and performance requirements in your order. To order your on-premises private cloud service, discuss your requirements with [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} or your IBM Business Partner.
+Managed hardware is physical hardware like servers, storage, and networking equipment, which {{site.data.keyword.IBM_notm}} provides and maintains based on the capacity and performance requirements in your order. To order your on-premises private cloud service, discuss your requirements with [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} or your IBM Business Partner.
 
-After you accept the commitment quote and sign the commitment contract, you receive an email to confirm that your payment information is processed, that the commitment is added to your account, and your hardware order is placed. Your commitment start date begins when the hardware is delivered and set up in your data center. When the hardware is deployed, the commitment is active and you can begin monitoring your hardware usage, service charges, and any additional costs within the {{site.data.keyword.Bluemix_notm}} console.
+After you accept the commitment quote and sign the commitment contract, you receive an email to confirm that your payment information is processed, that the commitment is added to your account, and your hardware order is placed. Your commitment start date begins when the hardware is delivered and set up in your data center. When the hardware is deployed, the commitment is active and you can begin monitoring your hardware usage, service charges, and any additional costs within the {{site.data.keyword.cloud_notm}} console.
 
 Learn about the shared responsibilities for using {{site.data.keyword.cloud_notm}} products by reviewing [IBM Hybrid Cloud](/docs/overview?topic=overview-shared-responsibilities#hybrid-responsibilities).
 
@@ -100,6 +100,6 @@ To map commitment usage in your enterprise back to child accounts, complete the 
 ## Getting support
 {: #support-slc}
 
-You can get Advanced or Premium support with your service commitment. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center. To get support, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
+You can get Advanced or Premium support with your service commitment. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center. To get support, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
-For more information about {{site.data.keyword.Bluemix_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/account?topic=account-support-plans).
+For more information about {{site.data.keyword.cloud_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/account?topic=account-support-plans).

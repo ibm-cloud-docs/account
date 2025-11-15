@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: dynamic rules,access groups,specific identity attributes,identity provider,federated ID,
 
@@ -107,8 +107,9 @@ For more information about the fields that are used to create dynamic rules, see
 You can view the users that are added to an access group by using dynamic rules. To view dynamic members of access groups, go to **Manage** > **Access (IAM)** > **Access groups** in the {{site.data.keyword.cloud_notm}} console. Select an access group and click **Users**. Dynamically added users are indicated by the type `Dynamic`.
 
 The following users will not appear in the table:
-- Dynamically added users who are not logged in yet
-- Dynamically added users whose session expired
+
+- Dynamically added users who are not logged in yet.
+- Dynamically added users whose session expired.
 
 Dynamic users that are logged out but whose sessions are still valid continue to appear in the table until their sessions expire.
 
@@ -128,7 +129,7 @@ You can also view a list of access groups that a user is added to based on dynam
 ## Example rule
 {: #example}
 
-The following example includes values for each of the fields for a dynamic rule. In this rule, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.Bluemix_notm}} access group that has specific access set for only managers.
+The following example includes values for each of the fields for a dynamic rule. In this rule, users who are identified as managers within the federated IdP are mapped to an {{site.data.keyword.cloud_notm}} access group that has specific access set for only managers.
 
 | Field                           | Value                           |
 |---------------------------------|---------------------------------|

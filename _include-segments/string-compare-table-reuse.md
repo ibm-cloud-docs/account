@@ -1,5 +1,5 @@
-| Operator   | Description  |
-|------------|--------------|
+| Operator    | Description   |
+|-------------|---------------|
 | `stringEquals`  | Case-sensitive string comparison. Boolean or number values are converted into a string before comparison. |
 | `stringMatch`  | Case-sensitive string match is performed between the pattern and the target string by using either an asterisk (`*`), question mark (`?`), both, or none (same as literal value). An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. You can also express an asterisk `*` and question mark `?` as a literal value by enclosing each within two sets of curly brackets `{{}}`. |
 | `stringExists`  |  Boolean where `true` indicates that the string must be present and can be empty. `false` indicates that the string must not be present. |

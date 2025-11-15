@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020
-lastupdated: "2021-06-11"
+  years: 2020, 2025
+lastupdated: "2025-11-15"
 
 keywords: creating accounts, multiple accounts
 
@@ -11,7 +11,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Managing multiple accounts with your IBMid
 {: #create-mult-accounts}

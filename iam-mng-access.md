@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: resource access, assign access, IAM access policy, access to resource groups, edit access, remove access, administrator, administrator role
 
@@ -31,6 +31,7 @@ If you delete or edit an existing policy for a service ID that's currently being
 {: note}
 
 If you want to enable a user full administrator access to complete [account management tasks](/docs/account?topic=account-account-services), such as inviting and removing users, viewing billing and usage, managing service IDs, managing access groups, managing user access, and access to all IAM-enabled resources, you must assign a user the following access:
+
 * A policy for **Identity and Access enabled services** with the Administrator and Manager roles.
 * A policy with the Administrator role on **All Account Management services**.
 

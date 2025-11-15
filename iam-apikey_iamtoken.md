@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-04-04"
+lastupdated: "2025-11-15"
 
 keywords: IAM token, token, API key, generate token, access token, temporary credential
 
@@ -14,20 +14,20 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Generating an {{site.data.keyword.Bluemix_notm}} IAM token by using an API key
+# Generating an {{site.data.keyword.cloud_notm}} IAM token by using an API key
 {: #iamtoken_from_apikey}
 
-Generate an {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) token by using either your IAM API key or a service ID's API key. {{site.data.keyword.Bluemix_notm}} APIs can be accessed only by users who are authorized by an assigned IAM role. Each user who is calling the API must pass credentials for the API to authenticate.
+Generate an {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) token by using either your IAM API key or a service ID's API key. {{site.data.keyword.cloud_notm}} APIs can be accessed only by users who are authorized by an assigned IAM role. Each user who is calling the API must pass credentials for the API to authenticate.
 {: shortdesc}
 
 ## Generating an IAM token
 {: #iamtoken}
-{: help} 
+{: help}
 {: support}
 
-You can generate an IAM token by using either your [{{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#userapikey) or a [service ID's API key](/docs/account?topic=account-serviceidapikeys). The API key is a permanent credential that can be reused if you don't lose the API key value or delete the API key in the account. This process is also used if you are developing an application that needs to work with other {{site.data.keyword.Bluemix_notm}} services. You must use a service ID API key to get an access token to be passed to each of the {{site.data.keyword.Bluemix_notm}} services.
+You can generate an IAM token by using either your [{{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey#userapikey) or a [service ID's API key](/docs/account?topic=account-serviceidapikeys). The API key is a permanent credential that can be reused if you don't lose the API key value or delete the API key in the account. This process is also used if you are developing an application that needs to work with other {{site.data.keyword.cloud_notm}} services. You must use a service ID API key to get an access token to be passed to each of the {{site.data.keyword.cloud_notm}} services.
 
-An access token is a temporary credential that expires after 1 hour at the latest. After the acquired token expires, you must generate a new token to continue calling {{site.data.keyword.Bluemix_notm}} or service APIs, and you can perform only actions that are allowed by your level of assigned access within all accounts. Use the response property `expires_in` in the API response to identify the length of time that your specific access token is valid.
+An access token is a temporary credential that expires after 1 hour at the latest. After the acquired token expires, you must generate a new token to continue calling {{site.data.keyword.cloud_notm}} or service APIs, and you can perform only actions that are allowed by your level of assigned access within all accounts. Use the response property `expires_in` in the API response to identify the length of time that your specific access token is valid.
 {: note}
 
 ## Generate an IAM token by using an API key 

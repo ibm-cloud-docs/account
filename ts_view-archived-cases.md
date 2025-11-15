@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: support center help, resolve issues on the support center, trouble support center, personalized help
 
@@ -15,10 +15,10 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I find a case that I previously created?
+# Why can't I find a case that I previously created? 
 {: #ts_viewarchivedcase}
 
-You can't find your cases that you created before the migration from SoftLayer to the enhanced {{site.data.keyword.Bluemix_notm}} experience.
+You can't find your cases that you created before the migration from SoftLayer to the enhanced {{site.data.keyword.cloud_notm}} experience.
 {: shortdesc}
 
 You can't find any cases that you created before 2 December 2018 on the Managed cases page.

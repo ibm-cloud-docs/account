@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-11-07"
+lastupdated: "2025-11-15"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -32,9 +32,9 @@ First, create an account by using your existing IBMid or a new IBMid. If your co
 
 | Login ID | Details |
 |-----------------|---------|
-|Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.Bluemix_notm}} with your existing credentials that you use for other {{site.data.keyword.IBM}} products and services. |
-|New IBMid        | If you don't yet have an IBMid, you can create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}. |
-|Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.Bluemix_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
+|Existing IBMid   | If you already have an IBMid, sign up for {{site.data.keyword.cloud_notm}} with your existing credentials that you use for other {{site.data.keyword.IBM}} products and services. |
+|New IBMid        | If you don't yet have an IBMid, you can create one when you sign up. With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.cloud_notm}}. |
+|Federated ID     | If your company already requested to register the user credentials from your company's domain with {{site.data.keyword.IBM_notm}}, you can sign up for {{site.data.keyword.cloud_notm}} by using the credentials that you already use for your company's login. You must enter a phone number when you sign up. |
 |Google ID | If you already have a Google account, you can use the credentials for Google to sign-up or log in to {{site.data.keyword.IBM_notm}}. |
 |Red Hat ID | If you already have a Red Hat identity, you can use the credentials for Red Hat to sign-up or log in to {{site.data.keyword.IBM_notm}}. |
 {: caption="ID options for creating an account" caption-side="top"}
@@ -43,13 +43,13 @@ First, create an account by using your existing IBMid or a new IBMid. If your co
 ### Using your IBMid
 {: #signup-ibmid}
 
-With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.Bluemix_notm}}.
+With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM_notm}} products and services, including {{site.data.keyword.cloud_notm}}.
 
-1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
+1. Go to the [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.cloud_notm}} account**.
 1. Enter your IBMid email address. If you don't have an existing IBMid, an ID is created based on the email that you enter.
 1. Complete the remaining fields with your information.
 
-   You are prompted for your credit card information to verify your identity and secure your account. You can [try out {{site.data.keyword.Bluemix_notm}} for free](/docs/overview?topic=overview-tutorial-try-for-free) and pay only for the billable services that you choose to use, with no long-term contracts or commitments.
+   You are prompted for your credit card information to verify your identity and secure your account. You can [try out {{site.data.keyword.cloud_notm}} for free](/docs/overview?topic=overview-tutorial-try-for-free) and pay only for the billable services that you choose to use, with no long-term contracts or commitments.
    {: note}
 
 1. Click **Create account**.
@@ -58,27 +58,27 @@ With an IBMid, you can use one username to log in to all {{site.data.keyword.IBM
 ### Using a federated ID
 {: #signup-federated}
 
-A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.Bluemix_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider (IdP) through single sign-on (SSO).
+A federated ID is an ID within a company's domain that is registered with {{site.data.keyword.IBM_notm}} so that the domain and user credentials can be used to access {{site.data.keyword.IBM_notm}} web applications. You can sign up for {{site.data.keyword.cloud_notm}} with a federated ID only if your company is already registered with {{site.data.keyword.IBM_notm}}. Registering a company's domain with {{site.data.keyword.IBM_notm}} enables users to log in to {{site.data.keyword.IBM_notm}} products and services by using their existing company user credentials. Authentication is then handled by your company's identity provider (IdP) through single sign-on (SSO).
 
 {{site.data.keyword.IBM_notm}} uses the Security Assertion Markup Language 2.0 (SAML 2.0) for this identity federation. SAML 2.0 is a standard version for exchanging authentication data between security domains. It’s an XML-based protocol that uses a security token that contains assertions to pass information between the organization's IdP, and the {{site.data.keyword.IBM_notm}} Rely Party (RP), otherwise known as the Service Provider.
 
 For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
 
-You can also federate users from your corporate directory to an {{site.data.keyword.Bluemix_notm}} account by using the {{site.data.keyword.Bluemix_notm}} SAML service provider. This type of federation does not connect with other {{site.data.keyword.IBM_notm}} web applications, only {{site.data.keyword.Bluemix_notm}}. For more information, see [Federating with the IBM Cloud SAML SP](/docs/account?topic=account-ibm-idp-integration#federate-cloud-saml).
+You can also federate users from your corporate directory to an {{site.data.keyword.cloud_notm}} account by using the {{site.data.keyword.cloud_notm}} SAML service provider. This type of federation does not connect with other {{site.data.keyword.IBM_notm}} web applications, only {{site.data.keyword.cloud_notm}}. For more information, see [Federating with the IBM Cloud SAML SP](/docs/account?topic=account-ibm-idp-integration#federate-cloud-saml).
 {: note}
 
 ### Using a Google ID
 {: #signup-google}
 
-Your Google credentials can be used to sign-up for a new {{site.data.keyword.Bluemix_notm}} account, or can be used to log in to an existing {{site.data.keyword.Bluemix_notm}} account. Users that log in with Google are treated like non-federated users, and multifactor authentication (MFA) is enabled for all users to add an additional layer of security.
+Your Google credentials can be used to sign-up for a new {{site.data.keyword.cloud_notm}} account, or can be used to log in to an existing {{site.data.keyword.cloud_notm}} account. Users that log in with Google are treated like non-federated users, and multifactor authentication (MFA) is enabled for all users to add an additional layer of security.
 
 This functionality is only available for newly registered IBMids on any eligible domain and existing IBMids on the gmail.com and googlemail.com domains. Logging in with Google credentials is not available for IBMids that are federated with a corporate identity provider through SAML.
 {: note}
 
-You can log in with your Google from the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external} by clicking **Continue with Google** and entering your Google credentials.
+You can log in with your Google from the [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/){: external} by clicking **Continue with Google** and entering your Google credentials.
 
 To sign-up with your Google credentials, complete the following steps:
-1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
+1. Go to the [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.cloud_notm}} account**.
 1. Click **Continue with Google**.
 1. Review the IBMid account privacy notice, and click **Proceed**.
 1. Select your country, and click **Next**.
@@ -88,13 +88,13 @@ To sign-up with your Google credentials, complete the following steps:
 ### Using a Red Hat ID
 {: #signup-redhat}
 
-Your Red Hat credentials can be used to sign-up for a new {{site.data.keyword.Bluemix_notm}} account.
+Your Red Hat credentials can be used to sign-up for a new {{site.data.keyword.cloud_notm}} account.
 
 It is important to note that a Red Hat ID is not interchangeable with an IBMid, a federated ID, or a Google ID.
 
 To sign-up with your Red Hat ID, complete the following steps:
 
-1. Go to the [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.Bluemix_notm}} account**.
+1. Go to the [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/){: external}, and click **Create an {{site.data.keyword.cloud_notm}} account**.
 1. Enter the email address belonging to your Red Hat ID
 1. Click **Sign up with Red Hat ID.**
 1. On the Red Hat log in screen, enter your Red Hat credentials and click **Log in**
@@ -102,18 +102,18 @@ To sign-up with your Red Hat ID, complete the following steps:
 1. Review the terms and conditions.
 1. Click **Complete account**.
 
-To log in with your Red Hat ID, go to [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}, and select **Red Hat Login** from the dropdown menu. After that, enter your Red Hat ID email or username and click **Continue**.
+To log in with your Red Hat ID, go to [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/){: external}, and select **Red Hat Login** from the dropdown menu. After that, enter your Red Hat ID email or username and click **Continue**.
 
 #### Onboarding with IBMid Without Decoupling Red Hat SSO
 {: #onboarding-RedatSSO}
 
 To support environments where Red Hat SSO must remain due to production dependencies, use the following steps to onboard successfully with IBMid:
 
-1. Create an IBMid manually in [{{site.data.keyword.Bluemix_notm}} login page](https://cloud.ibm.com/){: external}.
+1. Create an IBMid manually in [{{site.data.keyword.cloud_notm}} login page](https://cloud.ibm.com/){: external}.
 1. The account owner must resend the invitation to the same email address.
 1. When the user opens the new invite, they are prompted to choose between IBMid and Red Hat identity. The user must select IBMid during the onboarding process.
 
-This helps ensure proper registration within {{site.data.keyword.Bluemix_notm}} and prevents any unintended redirection to Red Hat.
+This helps ensure proper registration within {{site.data.keyword.cloud_notm}} and prevents any unintended redirection to Red Hat.
 
 If Red Hat SSO is used without integration into IBMid federation, user onboarding will require additional manual steps. Specifically, invited users must create an IBMid before receiving the invitation. Otherwise, when they attempt to accept the invite, the system will redirect them to Red Hat SSO, as designed. To streamline access and avoid unintended redirection, it is recommended to configure identity federation, enabling consistent and automated user onboarding.
 {: note}

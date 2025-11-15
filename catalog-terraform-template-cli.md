@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 
@@ -28,7 +28,6 @@ completion-time: 20m
 This tutorial walks you through how to onboard a Terraform template to your account by using the CLI. By completing this tutorial, you learn how to create a private catalog and import the template. After that, you can validate that the template can create resources, or run a script, and you can make it available to users who have access to your account.
 {: shortdesc}
 
-
 ## Before you begin
 {: #prereq-tutorial-terraform-template-cli}
 
@@ -48,7 +47,6 @@ This tutorial walks you through how to onboard a Terraform template to your acco
 
 To share software with other accounts, your software must be approved in Partner Center. For more information, see [Getting set up to sell software](/docs/sell?topic=sell-sw-getting-started).
 {: important}
-
 
 ## Create a private catalog
 {: #tutorial-terraform-template-cli-catalog}

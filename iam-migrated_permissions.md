@@ -4,7 +4,7 @@ copyright:
 
   years: 2019, 2025
 
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: migrated permissions, SoftLayer account permissions, migrated permission access group, migrated classic infrastructure permissions
 
@@ -40,7 +40,7 @@ You can continue to manage these migrated classic infrastructure permissions for
 | View cases                            | View all support cases.                                                                        | Support Center and User Management | Viewer, Viewer |
 {: caption="Migrated infrastructure permissions that are mapped to IAM roles" caption-side="top"}
 
-For the view cases access, create two separate policies with the viewer role for the Support Center and User Management services. The policy on the User Management service ensures that the user views all cases in the account regardless of who opened them. Without the policy on the User Management service, if the account owner has restricted users' ability to view other users in the account, the user's view of cases might be limited to only the ones they opened themselves.
+For the view cases access, create two separate policies with the viewer role for the Support Center and User Management services. The policy on the User Management service helps ensure that the user views all cases in the account regardless of who opened them. Without the policy on the User Management service, if the account owner has restricted users' ability to view other users in the account, the user's view of cases might be limited to only the ones they opened themselves.
 {: note}
 
 ## Assigning new IAM access policies for migrated permissions

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot lose access parent, access parent region, vpe object
 
@@ -24,13 +24,13 @@ When you create a VPE object, you are the owner of that object. During the objec
 
 
 
-You lost access to your parent region and now you don't have access to your public VPE object, but you have access to the private VPE object version in the private catalog. 
+You lost access to your parent region and now you don't have access to your public VPE object, but you have access to the private VPE object version in the private catalog.
 {: tsSymptoms}
-   
-The most likely reasons that you might lose access to a parent region is because the region got deleted or the admin of the region removed you from the allowlist. 
+
+The most likely reasons that you might lose access to a parent region is because the region got deleted or the admin of the region removed you from the allowlist.
 {: tsCauses}
 
-There are a couple of different scenarios for fixing this issue. You can contact the admin of the region and try to reinstate your access or you can change the parent to a different region. 
+There are a couple of different scenarios for fixing this issue. You can contact the admin of the region and try to reinstate your access or you can change the parent to a different region.
 
 If you didn't share your VPE object with any accounts, you can change the parent. If you shared your object with other accounts and you lost access and the region wasn't deleted, the shared accounts on the object still have access to the endpoint. If this is true, then you can't change the parent region on your object.  
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-15"
+lastupdated: "2025-11-15"
 
 keywords: custom access, custom role, create a role, combine actions
 
@@ -19,17 +19,17 @@ subcollection: account
 Each service maps specific actions that you can perform within the context of the service to platform or service roles. From the Roles page in {{site.data.keyword.Bluemix}} Identity and Access Management (IAM), you can view all of the available roles in the account and all roles for a specific service, including the actions that are mapped to each. You can pick and choose actions from all of the roles for a specific service to combine into a custom role of your choice.
 {: shortdesc}
 
-Many services map different sets of actions to different platform or service roles. However, you might want to combine some of the actions that are currently spread across multiple roles for a service to make assigning meet your custom use case. For example, with a custom role, you can pick and choose actions that are mapped to different roles so that next time you assign access to the service, you don't have to select three different roles.
+Many services map different sets of actions to different platform or service roles. However, you might want to combine some of the actions that are currently spread across multiple roles for a service to make assigning meet your custom use case. For example, with a custom role, you can pick and choose actions that are mapped to different roles so that next time you assign access to the service, you don't must select three different roles.
 
 As a unique usage scenario, you can create your own custom roles for controlling access management tags. It is possible to separate the permissions for attaching and detaching access management tags on the resources. For example, you can create a custom role where a user can attach access management tags to resources, but it does not allow them to remove those tags from them and vice versa.
 
-Creating two roles with different names but the exact same set of actions fail. IAM treats roles with identical permissions as duplicates, even if their names are unique.
+Creating two roles with different names but the exact set of actions fail. IAM treats roles with identical permissions as duplicates, even if their names are unique.
 {: note}
 
 ## Required access
 {: #required-access-role-management}
 
-Anyone can view the available roles in the account on Roles page, but to create, edit, or delete a custom role, you must be assigned specific access for the Role management account management service.
+Anyone can view the available roles in the account on the **Roles** page, but to create, edit, or delete a custom role, you must be assigned specific access for the Role management account management service.
 
 | Role | Actions |
 |------|---------|
@@ -54,7 +54,7 @@ Custom roles can be created only for individual IAM-enabled services. A custom r
 1. Select a service that you want to create the role for.
 1. Review the available actions, and select **Add** for all actions that you want in your new role.
 
-   You must add at least one service-defined action to successfully create the new role. If you aren't sure which actions are defined by the service, look in the Type column.
+   Add at least one service-defined action to successfully create the new role. If you aren't sure which actions are defined by the service, look in the Type column.
    {: important}
 
 1. Click **Create** when you're done adding actions.
@@ -75,7 +75,7 @@ Before you can create custom roles by using Terraform, make sure that you have c
 
 Use the following steps to create custom roles:
 
-1. Create an argument in your `main.tf` file. The following example creates a custom role by using the `ibm_iam_custom_role` resource, where `name` is a unique name to identify the custom role. You must add at least one service-defined `action` to successfully create the new role.
+1. Create an argument in your `main.tf` file. The following example creates a custom role by using the `ibm_iam_custom_role` resource, where `name` is a unique name to identify the custom role. Add at least one service-defined `action` to successfully create the new role.
 
    ```terraform
    resource "ibm_iam_custom_role" "customrole" {

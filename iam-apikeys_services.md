@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-10-24"
+lastupdated: "2025-11-15"
 
 keywords: IBM Cloud service APIs, IAM token, API key, authenticate with service API
 
@@ -22,25 +22,25 @@ To authorize applications and services to make API calls, pass your credentials 
 
 You can identify the caller in one of the following ways:
 
-* {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) token
-* {{site.data.keyword.Bluemix_notm}} API key or service ID API key
+* {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) token
+* {{site.data.keyword.cloud_notm}} API key or service ID API key
 
-[{{site.data.keyword.Bluemix_notm}} API keys](/docs/account?topic=account-userapikey#manage-user-keys), [service ID API keys](/docs/account?topic=account-serviceidapikeys), and IAM tokens uniquely identify the caller’s identity. The caller identity is either an {{site.data.keyword.Bluemix_notm}} user or a service ID that was created in an {{site.data.keyword.Bluemix_notm}} account.
+[{{site.data.keyword.cloud_notm}} API keys](/docs/account?topic=account-userapikey#manage-user-keys), [service ID API keys](/docs/account?topic=account-serviceidapikeys), and IAM tokens uniquely identify the caller’s identity. The caller identity is either an {{site.data.keyword.cloud_notm}} user or a service ID that was created in an {{site.data.keyword.cloud_notm}} account.
 
-The API keys are credentials that consist of a long series of random characters or numbers. An {{site.data.keyword.Bluemix_notm}} identity can have multiple API keys. Each of these API keys can be managed independently, meaning if this API key is used by your service only, you can delete the API key without disrupting some other component.
+The API keys are credentials that consist of a long series of random characters or numbers. An {{site.data.keyword.cloud_notm}} identity can have multiple API keys. Each of these API keys can be managed independently, meaning if this API key is used by your service only, you can delete the API key without disrupting some other component.
 
-You can use API keys to [log in to the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI)](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) or to [generate IAM tokens](/docs/account?topic=account-iamtoken_from_apikey). While it is not recommended for production use, you can also send API keys to {{site.data.keyword.Bluemix_notm}} services.
+You can use API keys to [log in to the {{site.data.keyword.cloud_notm}} command-line interface (CLI)](/docs/cli?topic=cli-ibmcloud_cli#ibmcloud_login) or to [generate IAM tokens](/docs/account?topic=account-iamtoken_from_apikey). While it is not recommended for production use, you can also send API keys to {{site.data.keyword.cloud_notm}} services.
 
-## Passing an {{site.data.keyword.Bluemix_notm}} IAM token to authenticate with a service's API
+## Passing an {{site.data.keyword.cloud_notm}} IAM token to authenticate with a service's API
 {: #token_auth}
 
-To retrieve an IAM access token, the API client must first invoke an {{site.data.keyword.Bluemix_notm}} IAM API to authenticate and retrieve that token. The preferred way for {{site.data.keyword.Bluemix_notm}} service API clients is to use an {{site.data.keyword.Bluemix_notm}} API key to get an IAM access token. The IAM access token, which was implemented as a [JSON Web Token](https://www.ibm.com/think/topics/json-web-tokens){: external}, can be used for multiple invocations of {{site.data.keyword.Bluemix_notm}} services that accept IAM access tokens as an authentication method. As IAM access tokens are digitally signed with asymmetric keys, {{site.data.keyword.Bluemix_notm}} services can validate an IAM access token without invoking any external service. This dramatically improves the performance of invoking an API.
+To retrieve an IAM access token, the API client must first invoke an {{site.data.keyword.cloud_notm}} IAM API to authenticate and retrieve that token. The preferred way for {{site.data.keyword.cloud_notm}} service API clients is to use an {{site.data.keyword.cloud_notm}} API key to get an IAM access token. The IAM access token, which was implemented as a [JSON Web Token](https://www.ibm.com/think/topics/json-web-tokens){: external}, can be used for multiple invocations of {{site.data.keyword.cloud_notm}} services that accept IAM access tokens as an authentication method. As IAM access tokens are digitally signed with asymmetric keys, {{site.data.keyword.cloud_notm}} services can validate an IAM access token without invoking any external service. This dramatically improves the performance of invoking an API.
 
 ![Authenticating with a service API by using an access token](images/tokenauth.svg "Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials"){: caption="Retrieving a token from IAM by using an API key and passing the access token to target services to validate credentials" caption-side="bottom"}
 
 To authenticate with a service's API by using an access token, complete the following steps:
 
-1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
+1. First, [create an {{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
 2. The next step for the API client is the retrieval of an IAM access token, as described in [Getting an IAM token from an API key](https://cloud.ibm.com/docs/account?topic=account-iamtoken_from_apikey).
 3. From the response, extract the property `access_token` to get the IAM access token. `expires_in` indicates the seconds until the IAM access token `access_token` expires. Either use this relative value or the absolute time stamp `expiration` based in [UNIX time](https://en.wikipedia.org/wiki/Unix_time){: external}.
 4. Send the IAM access token as described in [RFC 6750, section 2.1. Authorization Request Header Field](https://datatracker.ietf.org/doc/html/rfc6750#page-5){: external}.
@@ -156,24 +156,24 @@ Use the same IAM access token for subsequent IBM Cloud service API calls to achi
 {: go}
 
 
-## Passing an {{site.data.keyword.Bluemix_notm}} API key to authenticate with a service API
+## Passing an {{site.data.keyword.cloud_notm}} API key to authenticate with a service API
 {: #apikey_auth}
 
-API clients can directly pass an {{site.data.keyword.Bluemix_notm}} API key to the target service’s API. To do so, send the `apikey` keyword as the user name and the {{site.data.keyword.Bluemix_notm}} API key as the password by using basic authorization HTTP header to the target service.
+API clients can directly pass an {{site.data.keyword.cloud_notm}} API key to the target service’s API. To do so, send the `apikey` keyword as the user name and the {{site.data.keyword.cloud_notm}} API key as the password by using basic authorization HTTP header to the target service.
 
 It is recommended that in all cases of passing an API key to a service API that you use an API key for a service ID or a user API key that is associated with a functional ID that is assigned only the level of access required to work with the particular service.
 {: tip}
 
-The target service API must introspect the {{site.data.keyword.Bluemix_notm}} API key by using the {{site.data.keyword.Bluemix_notm}} IAM service. The following graphic shows three API interactions. The {{site.data.keyword.Bluemix_notm}} API key is passed to every target service’s API, so each target service must look up the {{site.data.keyword.Bluemix_notm}} API key details by invoking {{site.data.keyword.Bluemix_notm}} IAM.
+The target service API must introspect the {{site.data.keyword.cloud_notm}} API key by using the {{site.data.keyword.cloud_notm}} IAM service. The following graphic shows three API interactions. The {{site.data.keyword.cloud_notm}} API key is passed to every target service’s API, so each target service must look up the {{site.data.keyword.cloud_notm}} API key details by invoking {{site.data.keyword.cloud_notm}} IAM.
 
 ![Authenticating with a service API by using an API key](images/APIkeyauth.svg "Passing API keys to target services which then pass the API key to IAM to validate credentials"){: caption="Passing API keys to target services which then pass the API key to IAM to validate credentials" caption-side="bottom"}
 
-Using an {{site.data.keyword.Bluemix_notm}} API key is convenient, and it makes it easy to discover new APIs and quickly try out prototypes. This method requires you to send the {{site.data.keyword.Bluemix_notm}} API key to the target service‘s API in a readable format, which unnecessarily compromises the API key. Additionally, as the target service’s API must always introspect the API key, this method is less performant and therefore not recommended for production work loads.
+Using an {{site.data.keyword.cloud_notm}} API key is convenient, and it makes it easy to discover new APIs and quickly try out prototypes. This method requires you to send the {{site.data.keyword.cloud_notm}} API key to the target service‘s API in a readable format, which unnecessarily compromises the API key. Additionally, as the target service’s API must always introspect the API key, this method is less performant and therefore not recommended for production work loads.
 
 To authenticate with a service's API by using an API key, complete the following steps:
 
-1. First, [create an {{site.data.keyword.Bluemix_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
-2. Send the {{site.data.keyword.Bluemix_notm}} API key as defined in [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617){: external} as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
+1. First, [create an {{site.data.keyword.cloud_notm}} API key](/docs/account?topic=account-userapikey#manage-user-keys) if you have not already.
+2. Send the {{site.data.keyword.cloud_notm}} API key as defined in [RFC 7617](https://datatracker.ietf.org/doc/html/rfc7617){: external} as HTTP header “Authorization”. Use `apikey` as the user name, and the API key value as the password.
 
 
 As an example, the following steps assume that the API key is 0a1A2b3B4c5C6d7D8e9E:

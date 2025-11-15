@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-11-15"
 
 keywords: iam, context-based restrictions, protecting iam resources, security
 
@@ -56,7 +56,6 @@ Let's say that you create a rule that targets the IAM Access Groups service. To 
 
 To view the actions associated with a service, go to the [Roles](/iam/roles) page in the {{site.data.keyword.cloud}} console.
 {: tip}
-
 
 ## How IAM integrates with context-based restrictions
 {: #cbr-overview-api}

@@ -3,7 +3,7 @@
 copyright:
 
  years: 2019, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: IBM Cloud billing, commitment model, using commitments, FAQs, enterprise savings plan, savings plan, pay as you go with committed use
 
@@ -31,7 +31,7 @@ The Enterprise Savings Plan model is similar to the Subscription model. Unlike a
 {: #commit-signup}
 {: faq}
 
-Contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to sign up for {{site.data.keyword.Bluemix_notm}} Enterprise Savings Plan. To view your account ID, select **Register with a Code** during account registration. After you consult with a sales representative, you receive a confirmation email with your commitment quote details and information about {{site.data.keyword.Bluemix_notm}}'s Terms and Conditions. Your account is activated upon order processing.
+Contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to sign up for {{site.data.keyword.cloud_notm}} Enterprise Savings Plan. To view your account ID, select **Register with a Code** during account registration. After you consult with a sales representative, you receive a confirmation email with your commitment quote details and information about {{site.data.keyword.cloud_notm}}'s Terms and Conditions. Your account is activated upon order processing.
 
 ## How do I view existing commitments?
 {: #existing-commit}
@@ -55,13 +55,13 @@ To view your Enterprise Savings Plan commitment usage, in the {{site.data.keywor
 {: #view-terms}
 {: faq}
 
-After you consult with a sales representative to sign up for {{site.data.keyword.Bluemix_notm}} Enterprise Savings Plan, the sales team will email you a copy of your quote and information about {{site.data.keyword.Bluemix_notm}}'s Terms and Conditions.
+After you consult with a sales representative to sign up for {{site.data.keyword.cloud_notm}} Enterprise Savings Plan, the sales team will email you a copy of your quote and information about {{site.data.keyword.cloud_notm}}'s Terms and Conditions.
 
 ## How do I add a new commitment?
 {: #add-commit}
 {: faq}
 
-Contact your [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to add a new commitment to your account.
+Contact your [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to add a new commitment to your account.
 
 ## Why am I getting invoiced for a commitment I didn’t use?
 {: #invoice-commit}

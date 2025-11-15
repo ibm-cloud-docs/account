@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, accept request, opt in
 
@@ -27,7 +27,7 @@ When you accept a share request, products that are shared by the requesting acco
 * You must be assigned the Publisher role on the Catalog Management service in the individual account itself.
 * If you're managing share requests that are for the enterprise, you must be assigned the following roles:
    * Viewer role for the enterprise itself.
-   * Publisher role on the Catalog Management service for the enterprise. (The Publisher role is a new role.)
+   * Publisher role on the Catalog Management service for the enterprise. (The Publisher role is a new role).
 
 For more information, see [Assigning users access](/docs/account?topic=account-catalog-access).
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -72,7 +72,7 @@ We are excited to introduce the latest and greatest identity type: IBM Cloud tru
 
 Previously, organizing identities and assigning access was limited to access groups, where each user is added to the account manually.
 
-As an account owner, you can save time and automatically grant federated users access to your accounts by leveraging the attributes that already exist in your corporate directory. 
+As an account owner, you can save time and automatically grant federated users access to your accounts by leveraging the attributes that already exist in your corporate directory.
 
 Simply add conditions based on SAML attributes to define which federated users can apply a profile. This way, changes in your directory immediately affect access to resources.
 

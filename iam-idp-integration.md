@@ -2,7 +2,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-07"
+lastupdated: "2025-11-15"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider, single sign on
 
@@ -100,7 +100,7 @@ Complete the attribute mapping only if your IdP doesn't match the following SAML
 ## Federating with {{site.data.keyword.appid_short}}
 {: #federate-appid}
 
-If you use an external IdP reference through {{site.data.keyword.appid_short}}, each account can have up to five IdP references added through the Identity providers page in the Access (IAM) section of the console. You set up your IdP reference by selecting which {{site.data.keyword.appid_short}} instance to integrate with IAM. Then, the IdP reference is given a random realm ID that is the unique prefix for users of that {{site.data.keyword.appid_short}} service instance.
+If you use an external IdP reference through {{site.data.keyword.appid_short}}, each account can have up to five IdP references added through the Identity providers page in the Access (IAM) section of the console. You set up your IdP reference by selecting which {{site.data.keyword.appid_short}} instance to integrate with IAM. Then, the IdP reference is given as a random realm ID that is the unique prefix for users of that {{site.data.keyword.appid_short}} service instance.
 
 Setting up the integration between your {{site.data.keyword.appid_short}} instance, which is already configured with your IdP, you can continue to manage all users externally in your IdP. It also simplifies the log-in process to your cloud account for users in your enterprise. After the integration is complete, you must provide your users with a custom URL that they use to log in each time. You don't need to invite anyone to your account. If they exist as a user in your connected IdP's user repository, they can log in with their credentials through the custom URL.
 
@@ -189,7 +189,7 @@ To begin setting up IBMid for enterprise federation, open a case at ibm.com/mysu
 After your {{site.data.keyword.appid_short}} instance is connected to your IdP, and your {{site.data.keyword.appid_short}} instance is integrated with IAM, your users can start logging in to your account. If the IdP reference is set as the default, then you can share the **Default IdP URL** for your account.
 
 - You can have only one set as the default, but you can have up to five set up in your account.
-- Copy the **IdP URL** link from the table for the row of the IdP reference you need a URL, to give to users to log in.
+- Copy the **IdP URL** link from the table for the row of the IdP reference you need a URL to give to users to log in.
 
 ## Using IdP data to build dynamic rules in access groups
 {: #app-id-dynamic-rules}
@@ -218,7 +218,7 @@ If the users that you are creating a trusted profile for use {{site.data.keyword
 
 The conditions that you create filter out or allow federated users to apply the trusted profile. Access depends on which attributes the federated users are assigned in your corporate user directory. When you create a trusted profile, you can view IdP data to see your own user claims from your organizations corporate user directory.
 
-Say an attribute that is called `groups` identifies departments, teams, and more granular internal organizations within your company. If developers in the US on the finance team need the same level of access for a project, you might create a trusted profile with the following conditions:
+Say an attribute that is called `groups` identifies departments, teams, and more granular internal organizations within your company. If developers in the US on the finance team need as much access for a project, you might create a trusted profile with the following conditions:
 
 * Allow users when `groups` equals `finance-dev`
 * Allow users when `country` equals `us`
