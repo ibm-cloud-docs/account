@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot permission to attach and detach access management tags
 
@@ -20,6 +20,7 @@ content-type: troubleshoot
 {: troubleshoot}
 
 If you can't attach or detach access management tags on a resource, you might need to check the following items:
+
 * List of the existing tags
 * The type of access you're assigned
 * Type of the resource

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: update network access, network access rule, network zone
 
@@ -69,6 +69,7 @@ ibmcloud cbr rule-update 30fd58c9b75f40e854b89c432318b4a2 --description 'Example
 {: api}
 
 To update restrictions to your cloud resources by creating rules, call the [Context-based restrictions API](/apidocs/context-based-restrictions?code=node#replace-rule).
+
 1. [Get the rule](/apidocs/context-based-restrictions?code=go#get-rule) that you want to replace. In in response body, copy the rule ID and in the response headers copy the ETag header.
     ```sh
     curl -X GET --location --header "Authorization: Bearer {iam_token}" --header "Accept: application/json" "https://cbr.cloud.ibm.com/v1/rules/{rule_id}"

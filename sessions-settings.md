@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2024
-lastupdated: "2024-12-13"
+  years: 2021, 2025
+lastupdated: "2025-11-15"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Setting limits for login sessions
 {: #iam-work-sessions}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-11-15"
 
 keywords: account settings, delete account, account errors, vrf account migration, account migration, vrf, classic account
 
@@ -59,4 +59,4 @@ No specific permissions are required for an account user to enable VRF. However,
 {: enable-serviceendpoint}
 {: faq}
 
-The account owner has the privilege to enable or disable service endpoints. Other users must have the `MANAGE_PRIVATE_ENDPOINT_SERVICE` privilege to perform these actions. Also, the account must enable VRF beforehand. For more information on how to enable service endpoints on an account, see [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#service-endpoint).
+The account owner has the privilege to enable or disable service endpoints. Other users must have the `MANAGE_PRIVATE_ENDPOINT_SERVICE` privilege to perform these actions. Also, the account must enable a VRF beforehand. For more information on how to enable service endpoints on an account, see [Enabling service endpoints](/docs/account?topic=account-vrf-service-endpoint&interface=ui#service-endpoint).

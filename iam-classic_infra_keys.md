@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2022
-lastupdated: "2022-02-18"
+  years: 2018, 2025
+lastupdated: "2025-11-15"
 
 keywords: classic infrastructure API keys, classic infrastructure API, SoftLayer API key
 
@@ -53,7 +53,7 @@ To delete a classic infrastructure API key, click the **Actions** icon ![Actions
 ## Managing other user's classic infrastructure API keys
 {: #user-classic-infrastruture-keys}
 
-If you are an ancestor in the classic infrastructure hierarchy for a user, you can view and delete classic infrastructure API keys for users, including VPN only users. 
+If you are an ancestor in the classic infrastructure hierarchy for a user, you can view and delete classic infrastructure API keys for users, including VPN only users.
 
 Only users who create the API key can retrieve the API key value after it's created.
 {: note}

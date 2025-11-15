@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-09"
+lastupdated: "2025-11-15"
 
 keywords: migrate, migrating data center, migrate resources, data center
 
@@ -45,16 +45,16 @@ Complete the following steps to migrate resources to a new data center:
 * [Getting started with bare metal servers](/docs/bare-metal?topic=bare-metal-getting-started)
 * [Comparing {{site.data.keyword.cloud_notm}} Classic and VPC infrastructure environments](/docs/infrastructure-hub?topic=infrastructure-hub-compare-infrastructure)
 
-1. Copy your data to a new server by using the following methods. You must establish connectivity between the old and new servers and have sufficient storage in the new server.
+1. Copy your data to a new server by using the following methods. Establish connectivity between the old and new servers and have sufficient storage in the new server.
 
 * Use [Secure Copy Protocol (SCP)](https://www.ibm.com/docs/en/flashsystem-v7000u){: external} to securely copy a file from source to destination.
 * Use [rsync](https://download.samba.org/pub/rsync/rsync.1){: external} if you need to copy multiple files. Rsync also copies directory structures and preserves file permissions.
 * Migrate your virtual server instance [from one classic data center to another](/docs/virtual-servers?account=virtual-servers-migrating-vsi-new-datacenter).
 * Migrate your [virtual server instance](/docs/vpc?topic=vpc-migrate-vsi-to-vpc) by creating an image template and deploying it in a new {{site.data.keyword.vpc_short}}.
 * Migrate your [VMware cluster](/docs/vmwaresolutions?topic=vmwaresolutions-hcxclient-migrations) to a new data center by using HCX.
-* Migrate a local load balancer to [IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started). For more information, see [FAQ for IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer).
+* Migrate a local load balancer to [IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-getting-started). For more information, see the [FAQ for IBM Cloud Load Balancer](/docs/loadbalancer-service?topic=loadbalancer-service-faqs-for-ibm-cloud-load-balancer).
 * Migrate your [{{site.data.keyword.cos_full_notm}}](/docs/cloud-object-storage?topic=cloud-object-storage-migrate-data-center#migrating-your-resources) data to a new {{site.data.keyword.cloud_notm}} data center.
 
-Copy only applications and application data between systems. Copying older versions of operating system files to a newer version can cause problems. Shut down databases before you copy them between the systems to ensure that the data is consistent. When migrating database data, migrate the data in a way that doesn’t limit your options to import it into the new system. Rather than copying database data from system to system, consider exporting it to a format so you can import it to a newer database. Flat text files, CSV files, and other files provide more options than using proprietary or closed file formats when it comes to moving data between systems. Always test your data migration approaches on a limited set of test data before officially copying.
+Copy only applications and application data between systems. Copying older versions of operating system files to a newer version can cause problems. Shut down databases before you copy them between the systems to help ensure that the data is consistent. When migrating database data, migrate the data in a way that doesn’t limit your options to import it into the new system. Rather than copying database data from system to system, consider exporting it to a format so you can import it to a newer database. Flat text files, CSV files, and other files provide more options than using proprietary or closed file formats when it comes to moving data between systems. Always test your data migration approaches on a limited set of test data before officially copying.
 
 1. Cancel your servers. You continue to be invoiced for the old servers until you cancel them. For more information, see [Device types](/docs/virtual-servers?topic=virtual-servers-managing-virtual-servers#device-types-and-actions).

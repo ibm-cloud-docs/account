@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: login session, end login session, monitor session, your login session, end all login sessions
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Monitoring your login sessions
 {: #monitor-your-session}

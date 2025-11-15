@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: public access, anonymous access, users, service IDs, public access group, enable, disable, manage, IAM
 
@@ -16,7 +16,7 @@ subcollection: account
 # Managing public access to resources
 {: #public}
 
-By default, all users and service IDs in an account are members of the Public Access group in your account. Assigning an access policy to the access group opens access to that resource to anyone whether they're a member of your account or not because authentication is no longer required. However, in some cases you might want to ensure that there is never public access that is allowed to your account resources, which you control by disabling public access at the account level.
+By default, all users and service IDs in an account are members of the Public Access group in your account. Assigning an access policy to the access group opens access to that resource to anyone whether they're a member of your account or not because authentication is no longer required. However, sometimes you might want to help ensure that there is never public access that is allowed to your account resources, which you control by disabling public access at the account level.
 {: shortdesc}
 
 To manage public access, you must be an administrator of the [IAM Access Groups service](/docs/account?topic=account-account-services#access-groups-account-management) in the account.
@@ -37,7 +37,7 @@ To enable public access, complete the following steps:
 
 To create a policy, you must have administrator access on the resource.
 
-{{site.data.keyword.cos_full}} is used as the example as it is the only supported resource type for public access at this time. As an example, the following section describes how to assign public access to an {{site.data.keyword.cos_short}} bucket that is named `mybucket123`.
+{{site.data.keyword.cos_full}} is used as the example as it is the only supported resource type for public access now. As an example, the following section describes how to assign public access to an {{site.data.keyword.cos_short}} bucket that is named `mybucket123`.
 
 1. In the {{site.data.keyword.cloud}} console, click **Manage** > **Access (IAM)**, and select **Access groups**.
 2. Click the name of the public access group > **Assign access**.

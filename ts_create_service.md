@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot create service, create service error
 
@@ -29,7 +29,7 @@ You might receive one of the following error messages when you create a service:
 Create a service error.
 ```
 
-or
+Or
 
 ```text
 Create Service [500, Internal Server Error]. An error occurred while trying to create the service. Please try again later.
@@ -43,8 +43,8 @@ To resolve this issue, use one of the following methods:
 
 * You might not have the correct access. You must have the editor role or higher to create a service instance. Contact the account owner to request the correct access. For more information, see [Cloud IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
 
-* Creating an instance might exceed a plan or account limit. Review the plan features on the catalog page or in the specific service's documentation. From the Resource list page, you can view what instances currently exist that count toward the plan or account limit. For example, there's a limit of one instance per Lite plan.
+* Creating an instance might exceed a plan or account limit. Review the plan features on the catalog page or in the specific service's documentation. From the Resource list page, you can view what instances currently exist that count toward the plan or account limit. For example, there is a limit of one instance per Lite plan.
 
 * If you're experiencing a web browser issue, see Why do I encounter console pages that don't load?
 
-* Go to the [{{site.data.keyword.Bluemix_notm}} - Status](https://cloud.ibm.com/status){: external} page to check whether an active incident or planned maintenance is affecting your ability to create a service instance.
+* Go to the [{{site.data.keyword.cloud_notm}} - Status](https://cloud.ibm.com/status){: external} page to check whether an active incident or planned maintenance is affecting your ability to create a service instance.

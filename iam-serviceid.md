@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-05-27"
+lastupdated: "2025-11-15"
 
 keywords: service ID, create service ID, lock service ID, service ID example
 
@@ -16,10 +16,10 @@ subcollection: account
 # Creating and working with service IDs
 {: #serviceids}
 
-A service ID identifies a service or application similar to how a user ID identifies a user. You can create a service ID and use it to enable an application outside of {{site.data.keyword.Bluemix_notm}} access to your {{site.data.keyword.Bluemix_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user leaves an organization and is deleted from the account, the service ID remains. This way, your application or service stays up and running.
+A service ID identifies a service or application similar to how a user ID identifies a user. You can create a service ID and use it to enable an application outside of {{site.data.keyword.cloud_notm}} access to your {{site.data.keyword.cloud_notm}} services. You can assign specific access policies to the service ID that restrict permissions for using specific services, or even combine permissions for accessing different services. Since service IDs are not tied to a specific user, if a user leaves an organization and is deleted from the account, the service ID remains. This way, your application or service stays up and running.
 {: shortdesc}
 
-When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the console. After you create your service ID, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.Bluemix_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.Bluemix_notm}} services, you use access policies that are assigned to each service ID that you create.
+When you create a service ID, you create a unique name and description that is easy for you to identify and work with in the console. After you create your service ID, you can [create API keys](/docs/account?topic=account-serviceidapikeys#create_service_key) specific to each service ID that your application can use to authenticate with your {{site.data.keyword.cloud_notm}} services. To ensure that your application has the appropriate access for authenticating with your {{site.data.keyword.cloud_notm}} services, you use access policies that are assigned to each service ID that you create.
 
 The access policies that are associated with a service ID enable specific actions that can be taken when that service ID is used to access a specific service. A service ID can have multiple policies assigned to it for different Identity and access-enabled services, and even different instances of a single service. For example, you have two services with two service instances each. You might assign the Viewer role for all available instances of one service and assign the Editor role for only one instance of a second service. This way, you can customize access to multiple services, but use a single API key for authentication to all.
 
@@ -93,7 +93,8 @@ To quickly assign access or create API keys, click the name of the service ID in
 {: #update_serviceid-cli}
 {: cli}
 
-You can use the CLI to view details of a service ID, update the name and description, delete a service ID, and more. 
+You can use the CLI to view details of a service ID, update the name and description, delete a service ID, and more.
+
 - To view details of a service ID, use the [**`ibmcloud iam service-id`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id) command.
 - To update the name and description of a service ID, use the [**`ibmcloud iam service-id-update`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_update) command.
 - To delete a service ID, use the [**`ibmcloud iam service-id-delete`**](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli#ibmcloud_iam_service_id_delete) command.
@@ -101,7 +102,7 @@ You can use the CLI to view details of a service ID, update the name and descrip
    Deleting a service ID also deletes all associated API keys and assigned policies. This action can't be undone, and might cause disruptions between dependent services.
    {: important}
 
-For a full list of service ID commands, parameters, and examples go to the [IAM CLI documentation](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli). 
+For a full list of service ID commands, parameters, and examples go to the [IAM CLI documentation](/docs/account?topic=account-ibmcloud_commands_iam&interface=cli).
 
 ## Managing a service ID by using the API
 {: #update_serviceid-api}
@@ -171,7 +172,7 @@ You must have the appropriate level of access to unlock a service ID.
 - To lock a service ID, use the [Lock the service ID](/apidocs/iam-identity-token-api#lock-service-id) API method. 
 - To unlock a service ID, use the [Unlock the service ID](/apidocs/iam-identity-token-api#unlock-service-id) API method. 
 
-You must have the appropriate level of access to unlock a service ID. 
+You must have the appropriate level of access to unlock a service ID.
 {: remember}
 
 ## Creating and working with service ID groups by using the console 

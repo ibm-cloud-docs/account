@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot billing, manage invoice, can't view invoice
 
@@ -25,7 +25,7 @@ You're unable to view your invoices in the console because they're managed on a 
 Invoices that are managed outside of the console cannot be viewed by going to **Manage** > **Billing and Usage** > **Invoices** in the {{site.data.keyword.cloud_notm}} console.
 {: important}
 
-As a Pay-As-You-Go or Subscription account owner, you might not be able to view your invoices from the Invoices page in the {{site.data.keyword.Bluemix_notm}} console.
+As a Pay-As-You-Go or Subscription account owner, you might not be able to view your invoices from the Invoices page in the {{site.data.keyword.cloud_notm}} console.
 {: tsSymptoms}
 
 When you try to view your invoices, either of the following messages is displayed:
@@ -42,7 +42,7 @@ If you're visiting the Invoices website for the first time, sign up with your IB
 {: tsResolve}
 
 1. Go to [IBM Invoices](https://www.ibm.com/support/customer/invoices/welcome){: external}, and select your region.
-1. Log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+1. Log in with the same IBMid and password that you use to log in to {{site.data.keyword.cloud_notm}}.
 1. Complete your profile on the Invoices website.
 1. From the Invoices website, go to the Accesses tab. Add access to your account and provide your IBM customer number. If you don't know your customer number, contact IBM Cloud Support by calling 1-866-325-0045 and selecting the third option or contact the [eCustomer Care team](https://www-112.ibm.com/software/howtobuy/passportadvantage/homepage/ecarec){: external} for help.
 

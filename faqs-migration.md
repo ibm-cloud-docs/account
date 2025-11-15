@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-07-23"
+lastupdated: "2025-11-15"
 
 keywords: migration FAQs, data centers
 
@@ -24,13 +24,13 @@ FAQ about migrating resources includes questions about resource and data center 
 {: #dc-required-move}
 {: faq}
 
-To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/account?topic=account-dc-closure).
+To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to help ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/account?topic=account-dc-closure).
 
 ## Do I need to be fully migrated on the date my data center is consolidated?
 {: #dc-fully-migrated}
 {: faq}
 
-Yes. To ensure that you have no interruption in service, we try to allow as much lead time as possible to make the transition easier.
+Yes. To help ensure that you have no interruption in service, we try to allow as much lead time as possible to make the transition easier.
 
 ## Will I need to migrate my resources in the future?
 {: #dc-move-again}
@@ -84,7 +84,7 @@ For more information, contact the [Client Success team](https://www.ibm.com/solu
 {: #dc-choose-os}
 {: faq}
 
-Compatibility and functionality are two of the main influencers when you choose a new operating system. Older versions of operating systems can present challenges with migration. Installation media might not be compatible and the server hardware might not be supported by the older operating system. The best course of action is to compare specs and ensure that the operating system is compatible. You must verify that the necessary development tools and operating system or middleware functions are available on the new platform. In general, Linux type systems are better at supporting older applications on newer versions of the operating system than Windows.
+Compatibility and functionality are two of the main influencers when you choose a new operating system. Older versions of operating systems can present challenges with migration. Installation media might not be compatible and the server hardware might not be supported by the older operating system. The best course of action is to compare specs and help ensure that the operating system is compatible. Verify that the necessary development tools and operating system or middleware functions are available on the new platform. In general, Linux type systems are better at supporting older applications on newer versions of the operating system than Windows.
 
 For more information, contact the [Client Success team](https://www.ibm.com/solutions/cloud-data-centers){: external}.
 
@@ -109,7 +109,7 @@ Most likely, your networking needs to change to work with the new servers and si
 ## Can I keep my existing IP addresses?
 {: #dc-ip-addresses}
 
-Your new servers come with new primary IP subnets. Your current IP addresses cannot be transferred. If you need additional IP addresses, you can request those directly from the console. Specify that you're migrating your resources to a new data center.
+Your new servers come with new primary IP subnets. Your current IP addresses cannot be transferred. If you need other IP addresses, you can request those directly from the console. Specify that you're migrating your resources to a new data center.
 
 * For more information about VPC subnets, see [Bring your own subnet](/docs/vpc?topic=vpc-configuring-address-prefixes).
 * For more information about classic infrastructure subnets, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started).

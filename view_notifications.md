@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-08-11"
+lastupdated: "2025-11-15"
 
 keywords: notifications, view notifications, set notifications, iaas notifications, notification icon, header bell, bell icon, email notification history, communication history
 
@@ -34,21 +34,21 @@ The following table describes the different types of notifications that are disp
 
 | Notification Type | Description |
 |-------------------|-------------|
-| Planned maintenance | Scheduled maintenance that is required to keep the {{site.data.keyword.Bluemix_notm}} platform and infrastructure operating at optimal status. |
+| Planned maintenance | Scheduled maintenance that is required to keep the {{site.data.keyword.cloud_notm}} platform and infrastructure operating at optimal status. |
 | Security bulletins | Announcements about security vulnerabilities and the required actions. |
-| Announcements | Updates on new infrastructure features and services in {{site.data.keyword.Bluemix_notm}}. |
+| Announcements | Updates on new infrastructure features and services in {{site.data.keyword.cloud_notm}}. |
 | Incidents | Unexpected impacting events that can cause an outage or restrict functionality. |
-| Account | Invitation email, or console notifications for inviting users to the {{site.data.keyword.Bluemix_notm}} platform.  |
+| Account | Invitation email, or console notifications for inviting users to the {{site.data.keyword.cloud_notm}} platform.  |
 {: caption="Notification types" caption-side="top"}
 
 ## Subscribing to email notifications
 {: #subscribe-email-notifications}
 
-You can select whether to receive email notifications about {{site.data.keyword.Bluemix_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. Or, about resource-related items, such as incidents, maintenance, security bulletins, and resource activity. Additionally, if you have a Pay-As-You-Go or Subscription account, you can choose whether to receive {{site.data.keyword.Bluemix_notm}} infrastructure service updates about changes, such as OS reloads, assigned IPs, and image and firmware updates. For more information, see [Setting email preferences for notifications](/docs/account?topic=account-email-prefs).
+You can select whether to receive email notifications about {{site.data.keyword.cloud_notm}} platform-related items, such as announcements, billing and usage, additional notification preferences, and ordering. Or, about resource-related items, such as incidents, maintenance, security bulletins, and resource activity. Additionally, if you have a Pay-As-You-Go or Subscription account, you can choose whether to receive {{site.data.keyword.cloud_notm}} infrastructure service updates about changes, such as OS reloads, assigned IPs, and image and firmware updates. For more information, see [Setting email preferences for notifications](/docs/account?topic=account-email-prefs).
 
-You cannot set email preferences for receiving account type notifications. On the {{site.data.keyword.Bluemix_notm}} [Notifications page](/notifications){: external}, you can use the search field to locate an invitation or filter by the notification type called account.
+You cannot set email preferences for receiving account type notifications. On the {{site.data.keyword.cloud_notm}} [Notifications page](/notifications){: external}, you can use the search field to locate an invitation or filter by the notification type called account.
 
-Users already present in {{site.data.keyword.Bluemix_notm}} receives an email and a notification with an invitation link. If an email address does not correspond to a known user in {{site.data.keyword.Bluemix_notm}}, an invitation email gets sent to accept, but users can also choose not to accept the invitation. For more information, see [Setting email preferences for notifications](/docs/account?topic=account-email-prefs) and [Inviting users to an account](/docs/account?topic=account-iamuserinv).
+Users already present in {{site.data.keyword.cloud_notm}} receives an email and a notification with an invitation link. If an email address does not correspond to a known user in {{site.data.keyword.cloud_notm}}, an invitation email gets sent to accept, but users can also choose not to accept the invitation. For more information, see [Setting email preferences for notifications](/docs/account?topic=account-email-prefs) and [Inviting users to an account](/docs/account?topic=account-iamuserinv).
 
 The invitations expire after 30 days. New users to {{site.data.keyword.cloud_notm}} can accept an invitation only by using the invitation link that they received through email.
 {: note}
@@ -72,12 +72,12 @@ To view your email notification history and check the delivery status of an {{si
 ## Getting advanced notice for disruptive maintenance
 {: #disruptive-notice-maintenance}
 
-{{site.data.keyword.Bluemix_notm}} tries to limit disruptive, required maintenance for Platform as a Service (PaaS), Infrastructure as a Service (IaaS), and Software as a Service offerings. Most maintenance is done in a nondisruptive manner to avoid the impact to your business, but when disruptive maintenance is necessary, we provide as much advanced notice as possible.
+{{site.data.keyword.cloud_notm}} tries to limit disruptive, required maintenance for Platform as a Service (PaaS), Infrastructure as a Service (IaaS), and Software as a Service offerings. Most maintenance is done in a nondisruptive manner to avoid the impact to your business, but when disruptive maintenance is necessary, we provide as much advanced notice as possible.
 
 ### Iaas
 {: #iaas-offering}
 
-For IaaS offerings, {{site.data.keyword.Bluemix_notm}} provides advanced notice that's dependent on the severity of the impact. The following table defines the types and levels of the possibility of an impact.
+For IaaS offerings, {{site.data.keyword.cloud_notm}} provides advanced notice that's dependent on the severity of the impact. The following table defines the types and levels of the possibility of an impact.
 
 | Possibility of impact | Definition | Advanced Notice Guidelines |
 |-----------------------|------------|----------------------------|
@@ -108,5 +108,5 @@ For SaaS offerings, IBM Cloud provides advanced notice that's dependent on the s
 |-----------------------|------------|----------------------------|
 | Emergency             | Customer Impacting Event (CIE) | a minimum of 24 hours |
 | Disruptive            | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 7 days |
-| Nondisruptive                | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | None |
+| Nondisruptive         | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | None |
 {: caption="SaaS offerings impact possibility definitions" caption-side="top"}

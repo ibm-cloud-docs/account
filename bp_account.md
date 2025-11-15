@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-10-07"
+lastupdated: "2025-11-15"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -172,13 +172,13 @@ Review the following sample access policies to help you determine how you might 
 * A policy that grants compute resources `Reader` and `Writer` roles on a resource group. When compute resources authenticate and fulfill the conditions that are specified in the trusted profile, such as `location` or `resource type` the trusted profile is automatically applied. This way, any existing or future resources that meet these conditions can have the profile that is automatically applied when authenticated.
 * You can also establish trust with specific compute resources, like a single Kubernetes cluster. For example, you might have an application that is running on {{site.data.keyword.containershort_notm}} where the application needs to read and write from {{site.data.keyword.cloudant}} and read and write to a {{site.data.keyword.cosdimshort_notm}} bucket. Both the {{site.data.keyword.cloudant}} and {{site.data.keyword.cosdimshort_notm}} instances would be in the same resource group and the trusted profile would be assigned `Reader` or `Writer` roles.
 
-Using trusted profiles is a best practice for applications running on {{site.data.keyword.Bluemix_notm}} compute resources to gain access to IAM-enabled resources.
+Using trusted profiles is a best practice for applications running on {{site.data.keyword.cloud_notm}} compute resources to gain access to IAM-enabled resources.
 {: important}
 
 ## Compare access groups and trusted profiles
 {: #compare-accessgroups-trustedprofiles}
 
-Access groups are best used for granting access for a user's day-to-day work, while trusted profiles are suited for granting federated users the level of access they need to complete a specialized and specific set of tasks within a limited time period. These are usually critical tasks that you would want to avoid doing unintentionally in daily work. With trusted profiles, federated users don't need to onboard to {{site.data.keyword.Bluemix_notm}}, they are granted access to {{site.data.keyword.Bluemix_notm}} resources in an account by way of the trust relationship. If a federated user leaves your company, you can simply delete their corporate identity in your directory, which then also removes access to {{site.data.keyword.Bluemix_notm}}. Time-based access with trusted profiles allows frequent authentication checks for reduced security risks.
+Access groups are best used for granting access for a user's day-to-day work, while trusted profiles are suited for granting federated users the level of access they need to complete a specialized and specific set of tasks within a limited time period. These are usually critical tasks that you would want to avoid doing unintentionally in daily work. With trusted profiles, federated users don't need to onboard to {{site.data.keyword.cloud_notm}}, they are granted access to {{site.data.keyword.cloud_notm}} resources in an account by way of the trust relationship. If a federated user leaves your company, you can simply delete their corporate identity in your directory, which then also removes access to {{site.data.keyword.cloud_notm}}. Time-based access with trusted profiles allows frequent authentication checks for reduced security risks.
 
 Use the following table to understand the differences between using access groups and trusted profiles to make the best decision for your use case.
 
@@ -225,7 +225,7 @@ You want to grant all users various roles in the account and the default resourc
 ### Multiple users working together on a single project by using trusted profiles
 {: #account-tesb-users-tp}
 
-In an organization, when you want to manage access at scale, some of the members in your organization need to manage the {{site.data.keyword.Bluemix_notm}} account and assign other users access. Some members need to create service instances that incur expenses. Other members are application developers who need to use only the service instances from their application components.
+In an organization, when you want to manage access at scale, some of the members in your organization need to manage the {{site.data.keyword.cloud_notm}} account and assign other users access. Some members need to create service instances that incur expenses. Other members are application developers who need to use only the service instances from their application components.
 
 You want to grant all users various roles in the account and the default resource group. You don't need to create more resource groups to separate resources or restrict some users from accessing some of the resources. You can grant the users the roles that are appropriate for their needs by creating trusted profiles for each type of user and map them to the correct profile based on external IdP attributes:
 

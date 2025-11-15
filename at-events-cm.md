@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-11-15"
 
 keywords:
 
@@ -101,8 +101,8 @@ The following table lists the actions that generate events for managing products
 
 | Action             | Description      |
 |--------------------|------------------|
-| `globalcatalog-collection.offerings.list`         |  An event is generated when you get a list of the products in a catalog.          |
-| `globalcatalog-collection.offering.read`           | An event is generated when you view a product in a catalog.            |
+| `globalcatalog-collection.offerings.list`          |  An event is generated when you get a list of the products in a catalog.    |
+| `globalcatalog-collection.offering.read`           | An event is generated when you view a product in a catalog.      |
 | `globalcatalog-collection.offering.create`         | An event is generated when you create a product.          |
 | `globalcatalog-collection.offering.update`         | An event is generated when you update a product.          |
 | `globalcatalog-collection.offering.delete`         | An event is generated when you delete a product.          |

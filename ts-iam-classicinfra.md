@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot classic infrastructure permissions, what classic infrastructure permission does a user have
 
@@ -14,7 +14,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How can I view classic infrastructure permissions for other users?
+# How can I view classic infrastructure permissions for other users? 
 {: #troubleshoot-classicinfra}
 {: troubleshoot}
 

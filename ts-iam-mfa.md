@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot MFA, multifactor authentication, verification method, authentication factor
 
@@ -15,7 +15,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I log in with my MFA factors?
+# Why can't I log in with my MFA factors? 
 {: #troubleshoot-MFA}
 {: troubleshoot}
 

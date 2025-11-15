@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-11-05"
+lastupdated: "2025-11-15"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -161,7 +161,7 @@ This is not an estimate of your final bill. Instance costs don’t reflect your 
 {: #usage_command_line}
 {: cli}
 
-As an alternative to the console, you can view your usage by using the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI). Use the following commands to retrieve resource usage and billing information.
+As an alternative to the console, you can view your usage by using the {{site.data.keyword.cloud_notm}} command-line interface (CLI). Use the following commands to retrieve resource usage and billing information.
 
 1. Log in, and select the account.
 

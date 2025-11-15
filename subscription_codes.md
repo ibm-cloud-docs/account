@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: subscription code, subscription credit, discount code, promo code, feature code 
 
@@ -22,7 +22,7 @@ After you buy a subscription for platform or support credit, you must add the cr
 If you set up your first subscription from the [Subscriptions page](/billing/subscriptions), the credit for this subscription is automatically added to your account - no code required.
 {: tip}
 
-After {{site.data.keyword.Bluemix_notm}} Sales places the order, an email with the subscription code for each subscription and support line item is sent to the appropriate contact. 
+After {{site.data.keyword.cloud_notm}} Sales places the order, an email with the subscription code for each subscription and support line item is sent to the appropriate contact. 
 
 Only the account owner, enterprise account owner, or a user with the Editor or Administrator role on the Billing account management service can apply the subscription code. If you don't have access to apply subscription codes, the account owner or administrator can provide access. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services). Applying the subscription code through the {{site.data.keyword.Bluemix}} console is essential to ensure that your account is migrated appropriately. 
 
@@ -55,6 +55,6 @@ To manually apply the subscription code to a new account, complete the following
 1. Click **Register with a code** instead of entering your credit card information.
 1. Click **Create account**.
 
-If you don't know your seller, the codes are applied in the wrong order, or you experience issues with applying the codes, [contact {{site.data.keyword.Bluemix_notm}} Support](/docs/account?topic=account-using-avatar).
+If you don't know your seller, the codes are applied in the wrong order, or you experience issues with applying the codes, [contact {{site.data.keyword.cloud_notm}} Support](/docs/account?topic=account-using-avatar).
 
 For information about other codes and credits that can be applied to different account types, see [Applying feature codes to a Lite account](/docs/account?topic=account-codes) or [Applying promo codes](/docs/account?topic=account-applying-promo-codes). 

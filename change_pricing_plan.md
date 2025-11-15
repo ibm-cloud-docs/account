@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: change service, switch service, service plan, pricing plan
 
@@ -29,10 +29,10 @@ Are you looking for details about upgrading your account type? See [Upgrading yo
 {: #changing-plan-ui}
 {: ui}
 
-1. From the {{site.data.keyword.Bluemix_notm}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, and select the service.
+1. From the {{site.data.keyword.cloud_notm}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**, and select the service.
 1. Click **Plan** in the service instance dashboard. Select the pricing plan that you want, and click **Save**.
 
-    Some services have pricing plans that are not selectable from the Plan page. Typically, these plans aren't selectable because they require assistance from [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} or they require a migration before you can switch plans. See the documentation for the specific service for information about the required next steps.
+    Some services have pricing plans that are not selectable from the Plan page. Typically, these plans aren't selectable because they require assistance from [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} or they require a migration before you can switch plans. See the documentation for the specific service for information about the required next steps.
 
 Depending on the type of switch you make to your plan, your next steps can vary. For example, if you reduced the pricing plan, restart your app. Or, if you switched the pricing plan, you might need to restart your app, and then take other actions.
 
@@ -47,7 +47,7 @@ For more information about any further required actions, see the documentation f
 {: #changing_command_line}
 {: cli}
 
-Complete the following steps to switch a pricing plan by using the {{site.data.keyword.Bluemix_notm}} command-line interface (CLI).
+Complete the following steps to switch a pricing plan by using the {{site.data.keyword.cloud_notm}} command-line interface (CLI).
 
 1. Check whether the service is enabled with the resource controller.
 
@@ -150,4 +150,4 @@ fmt.Printf("\nUpdateResourceInstance() response:\n%s\n", string(b))
 {: codeblock}
 {: go}
 
-If you want to purchase an upgraded subscription, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
+If you want to purchase an upgraded subscription, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.

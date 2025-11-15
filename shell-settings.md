@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
@@ -16,7 +16,7 @@ subcollection: account
 # Managing {{site.data.keyword.cloud-shell_short}} settings for account users
 {: #shell-settings}
 
-{{site.data.keyword.cloud-shell_full}} settings are managed in the {{site.data.keyword.cloud}} console. As an account owner or {{site.data.keyword.cloud-shell_short}} administrator, you can control whether users in an account can access {{site.data.keyword.cloud-shell_short}}, and you can select the location availability for an account.
+{{site.data.keyword.cloud-shell_full}} settings are managed in the {{site.data.keyword.cloud}} console. As an account owner or {{site.data.keyword.cloud-shell_short}} administrator, you can control whether users in an account can access {{site.data.keyword.cloud-shell_short}}, and you can select the location availability for an account. 
 {: shortdesc}
 
 {{site.data.keyword.cloud-shell_notm}} is a cloud-based shell workspace that you can access through your browser. {{site.data.keyword.cloud-shell_short}} is preconfigured with the full {{site.data.keyword.cloud_notm}} CLI, plug-ins, and tools that you can use to manage apps, resources, and infrastructure. For more information, see [Getting started with {{site.data.keyword.cloud-shell_notm}}](/docs/cloud-shell?topic=cloud-shell-getting-started).

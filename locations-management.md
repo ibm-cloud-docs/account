@@ -2,7 +2,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-11-06"
+lastupdated: "2025-11-15"
 
 keywords: location management, locations, region
 
@@ -18,14 +18,14 @@ subcollection: account
 As an administrator on the Catalog management service, you can manage the list of allowed workload deployment locations for your account or enterprise. Deploy your apps to the location that is nearest to your customers to achieve low application latency and to meet data residency requirements.
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} has a resilient global network of region and data center locations. Deploying your workload to the public cloud might not always align with your latency or data residency needs, especially for industries with strict data governance regulations. You can use {{site.data.keyword.satellitelong}} to create a representation of an environment in your infrastructure provider, like an on-premises data center, and manage hybrid deployment locations from a single pane of glass in the {{site.data.keyword.Bluemix_notm}} console.
+{{site.data.keyword.cloud_notm}} has a resilient global network of region and data center locations. Deploying your workload to the public cloud might not always align with your latency or data residency needs, especially for industries with strict data governance regulations. You can use {{site.data.keyword.satellitelong}} to create a representation of an environment in your infrastructure provider, like an on-premises data center, and manage hybrid deployment locations from a single pane of glass in the {{site.data.keyword.cloud_notm}} console.
 
 ## Before you begin
 {: #before_begin}
 
 - You must be an Administrator on the Catalog management service to edit the location filters. Otherwise, the page is read only.
 - Create a Satellite location. Depending on your infrastructure provider, you have different options to create a Satellite location. For more information, see [Create a Satellite location overview](/docs/satellite?topic=satellite-locations).
-- Editing the location filters for an account, enterprise, or account group affects the resources that users can view in the {{site.data.keyword.Bluemix_notm}} catalog in those accounts. Users can view only services that are available in the locations that you allow. For more information, see [Service and infrastructure availability by location](/docs/overview?topic=overview-services_region).
+- Editing the location filters for an account, enterprise, or account group affects the resources that users can view in the {{site.data.keyword.cloud_notm}} catalog in those accounts. Users can view only services that are available in the locations that you allow. For more information, see [Service and infrastructure availability by location](/docs/overview?topic=overview-services_region).
 
 ## Setting location filters for an account
 {: #location_filters}
@@ -34,7 +34,7 @@ Add and remove allowed locations by applying filters. The filter or combination 
 
 To set the location filters, complete the following steps:
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Catalog** > **Locations**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Catalog** > **Locations**.
 1. Switch to the enterprise account, if applicable, by using the account switcher that's located in the console header.
    1. Keep the account group scoped to None to apply your allowlist to the entire enterprise.
    1. Click **Change** to scope the allowlist to a specific account group.

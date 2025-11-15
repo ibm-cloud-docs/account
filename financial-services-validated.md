@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: data security, FS-ready, Financial Services, encryption
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Enabling your account to use Financial Services Validated products
 {: #enabling-fs-validated}
@@ -27,9 +26,10 @@ Accounts that enable the Financial Services Validated setting can filter the cat
 
 When you enable this setting, you are indicating that your account stores regulated Financial Services information.
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
+
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
 1. For the Financial Services option, click **On**.
 1. Read the information about enabling the setting, and select **I understand and agree to these terms**.
 1. Click **On**.
 
-After you enable the setting at the account level, you can filter the {{site.data.keyword.Bluemix_notm}} catalog to display services that are designated as Financial Services Validated. In the {{site.data.keyword.Bluemix_notm}} catalog, expand the **Compliance** section and select **Financial Services Validated**. The Financial Services Validated label on a service can apply to all available plans or be limited to specific plans or configurations.
+After you enable the setting at the account level, you can filter the {{site.data.keyword.cloud_notm}} catalog to display services that are designated as Financial Services Validated. In the {{site.data.keyword.cloud_notm}} catalog, expand the **Compliance** section and select **Financial Services Validated**. The Financial Services Validated label on a service can apply to all available plans or be limited to specific plans or configurations.

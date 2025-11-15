@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: software onboarding, controls, requirements, security, compliance, partners
 
@@ -75,6 +75,5 @@ To include controls with your product, you must add scans that you previously ra
 1. Select a Security and Compliance Center scan.
    If you don't see any scans, you need to run a scan in Security and Compliance Center. For more information, see [Running a scan on demand](/docs/security-compliance?topic=security-compliance-attachments#scan-ondemand)..
 1. Click **Add scan**.
-
 
 These results are displayed on your About page for your product as evidence that the controls that you listed for your product are validated as compliant.

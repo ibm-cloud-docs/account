@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2025
-lastupdated: "2025-04-26"
+lastupdated: "2025-11-15"
 
 keywords: change log for CBR, updates to CBR, cli, context-based restrictions
 
@@ -58,7 +58,6 @@ Updated plugin with compatibility fixes for alpine linux.
 Version 1.7.0 of the CLI was released on 20 Mar 2024.
 
 Added the **`ibmcloud cbr service-ref-target`** command to get information about a specific service reference.
-
 
 ## Version 1.6.0
 {: #cli-160}

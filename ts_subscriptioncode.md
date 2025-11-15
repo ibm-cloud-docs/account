@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2024
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot billing, subscription code, subscription code error, can't apply subscription code, code applied 
 
@@ -16,7 +16,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I apply a subscription code?
+# Why can't I apply a subscription code? 
 {: #cannot-apply-subscription-code}
 {: troubleshoot}
 

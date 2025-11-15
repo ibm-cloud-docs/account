@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-09-19"
+lastupdated: "2025-11-15"
 
 keywords: service ID, service ID API key, lock service ID API key, delete service ID API key
 
@@ -16,7 +16,7 @@ subcollection: account
 # Managing service ID API keys
 {: #serviceidapikeys}
 
-Service IDs are created to enable access to your {{site.data.keyword.Bluemix}} services by applications hosted both inside and outside of {{site.data.keyword.Bluemix_notm}}. API keys are used by an application to authenticate as a particular service ID and are granted the access that is associated with that specific service ID.
+Service IDs are created to enable access to your {{site.data.keyword.Bluemix}} services by applications hosted both inside and outside of {{site.data.keyword.cloud_notm}}. API keys are used by an application to authenticate as a particular service ID and are granted the access that is associated with that specific service ID.
 {: shortdesc}
 
 After you create a service ID, you can start creating API keys and assigning service policies. Each policy specifies the level of access that is allowed when the API key is used to authenticate with your services. For more information about creating a service ID and assigning policies, see [Creating and working with service IDs](/docs/account?topic=account-serviceids). For more information about the CLI commands that are used to manage service ID API keys, see [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam).
@@ -41,7 +41,7 @@ If you are a user with the required access, you can view, update, and delete API
 
 Create an API key to associate with a service ID in the console:
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Access (IAM)**, and select **Service IDs**.
 2. If you don't have a service ID created, create the service ID.
 3. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Manage service ID**.
 4. Click **API keys**.

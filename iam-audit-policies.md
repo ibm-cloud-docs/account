@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: auditing IAM policies, last permit information, restore policies, inactive policies
 
@@ -447,3 +447,4 @@ You found out that a policy that was recently deleted is needed. In that case, y
 {: #audit-policies-next-steps}
 
 Gain insight on the access assignments in your account from different perspectives. View [Auditing access to resources](/docs/account?topic=account-access-report) to learn what identities and services can access a specific resource.
+ 

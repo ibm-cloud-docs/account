@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-04-02"
+lastupdated: "2025-11-15"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in, visibility
 
@@ -35,7 +35,7 @@ The {{site.data.keyword.cloud_notm}} catalog includes products that are publishe
 
 ![The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog.](images/private-catalog-share-visibility-public.png){: caption="The IBM Cloud catalog includes product tiles that are either public or shared with you from a private catalog." caption-side="bottom"}
 
-## Versioning workflow in your private catalogs
+## Versioning workflow in your private catalogs 
 {: #version-flow}
 
 The following table outlines the version states of a product, their sharing rules, and how they progress through the onboarding and release workflow. Understanding these states helps determine when you can share or publish a product.

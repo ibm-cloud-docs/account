@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-10-27"
+lastupdated: "2025-11-15"
 
 keywords: IBM Cloud notifications, notification preferences, user notifications, distribution list, notification distribution list, webhooks, Slack webhooks, Microsoft Teams webhooks, ServiceNow webhooks, SNOW
 
@@ -15,10 +15,10 @@ subcollection: account
 # Using the notification distribution list
 {: #add-users-distribution-list}
 
-The {{site.data.keyword.Bluemix_notm}} [Notification distribution list page](/account/notifications-distribution-list){: external} provides a way for you to specify a set of email addresses or webhooks to set suitable destinations for notifications about account-wide events.
+The {{site.data.keyword.cloud_notm}} [Notification distribution list page](/account/notifications-distribution-list){: external} provides a way for you to specify a set of email addresses or webhooks to set suitable destinations for notifications about account-wide events.
 {: shortdesc}
 
-You can manage the notification distribution list by using the {{site.data.keyword.Bluemix_notm}} console. You can create a list of up to 10 email addresses can receive notifications. Emails that are added to the distribution list are notified about any event that is affecting the account. You must have the editor role or higher on the account management service to add email addresses to the distribution list. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+You can manage the notification distribution list by using the {{site.data.keyword.cloud_notm}} console. You can create a list of up to 10 email addresses can receive notifications. Emails that are added to the distribution list are notified about any event that is affecting the account. You must have the editor role or higher on the account management service to add email addresses to the distribution list. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 
 Email addresses that are added to the distribution list by the account owner receive notifications about any incident, maintenance, announcement, or security bulletin that appears on the account owner's [Notifications page](/notifications){: external}.
 
@@ -29,11 +29,11 @@ In addition to adding email addresses, you can also add up to 10 webhooks to a d
 
 To add emails to a notification distribution list, complete the following steps:
 
-1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**.
+1. Using the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Notification distribution list**.
 2. Select **Add** > **Email**.
 3. Enter a name and an email address.
 
-    You can add up to 10 email addresses to the distribution list. Email addresses don't need to correspond to known users in {{site.data.keyword.Bluemix_notm}}, you can add any type.
+    You can add up to 10 email addresses to the distribution list. Email addresses don't need to correspond to known users in {{site.data.keyword.cloud_notm}}, you can add any type.
     {: note}
 
 4. Click **Add**.
@@ -48,7 +48,7 @@ To unsubscribe from the distribution list, use the link in the footer of any ema
 
 With {{site.data.keyword.en_full}}, you can choose to deliver your notifications to different destinations, including email, SMS, or webhooks. {{site.data.keyword.en_short}} is an alternative to the notification distribution list. It provides a way for you to be notified about critical events that occur in your account, and manage your notifications at scale. For more information, see [Getting started with Event Notifications](/docs/event-notifications?topic=event-notifications-getting-started).
 
-When an event of interest occurs on the {{site.data.keyword.Bluemix_notm}} platform and an event is generated, the notification distribution list communicates with a connected {{site.data.keyword.en_short}} instance to forward a notification to the supported destination. For more information about supported {{site.data.keyword.en_short}} destinations, see [Event destinations](/docs/event-notifications?topic=event-notifications-en-destinations-push).
+When an event of interest occurs on the {{site.data.keyword.cloud_notm}} platform and an event is generated, the notification distribution list communicates with a connected {{site.data.keyword.en_short}} instance to forward a notification to the supported destination. For more information about supported {{site.data.keyword.en_short}} destinations, see [Event destinations](/docs/event-notifications?topic=event-notifications-en-destinations-push).
 
 ### Events for notifications
 {: #events-for-notifications}
@@ -85,9 +85,9 @@ Before you can add any {{site.data.keyword.en_short}} instance to the notificati
 If you don't have an {{site.data.keyword.en_short}} service instance, see [Getting started with Event Notifications](/docs/event-notifications?topic=event-notifications-getting-started).
 To add an existing {{site.data.keyword.en_short}} service instance to the notification distribution list, complete the following steps:
 
-1. Using the {{site.data.keyword.Bluemix_notm}} console, go to **Manage** > **Account** > **Notification distribution list**.
+1. Using the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account** > **Notification distribution list**.
 1. Click **Add** > **{{site.data.keyword.en_short}}**.
-1. Select an {{site.data.keyword.en_short}} service instance from the {{site.data.keyword.en_short}} instance list. If you don't have an {{site.data.keyword.en_short}} service instance that you can connect to your account, you can create one in the [{{site.data.keyword.Bluemix_notm}} catalog](/catalog/services/event-notifications){: external}.
+1. Select an {{site.data.keyword.en_short}} service instance from the {{site.data.keyword.en_short}} instance list. If you don't have an {{site.data.keyword.en_short}} service instance that you can connect to your account, you can create one in the [{{site.data.keyword.cloud_notm}} catalog](/catalog/services/event-notifications){: external}.
 1. Click **Add**.
 
 You cannot add an {{site.data.keyword.en_short}} service instance to the notification distribution list that is already configured.
@@ -262,7 +262,7 @@ The following descriptions provide information about the field values that are b
 
 `category`: The type of the event. This can be incident, maintenance, announcement, or security bulletins.
 
-`componentNames`: If a service is impacted, this field represents it. This can also be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.Bluemix_notm}} catalog page](/catalog#services){: external}.
+`componentNames`: If a service is impacted, this field represents it. This can also be a global value like `Component: IBM Cloud`, not only a specific service. See the services on the [{{site.data.keyword.cloud_notm}} catalog page](/catalog#services){: external}.
 
 `regions`: This field shows you the location of the event.
 
@@ -343,11 +343,11 @@ Complete the following steps to send a test notification to a webhook:
 ## Adding Slack webhooks to a distribution list
 {: #add-slack-webhook}
 
-You can add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.Bluemix_notm}} notifications through them.
+You can add Slack webhooks to your distribution list and receive account-wide {{site.data.keyword.cloud_notm}} notifications through them.
 
 To create a webhook, first set up an app in Slack and create the incoming webhook, which provides the unique URL where you can send the notification message text in the form of a JSON payload. You will receive the notifications in the selected Slack channel in which you installed your app. For more information, see [Sending messages using Incoming Webhooks](https://docs.slack.dev/messaging/sending-messages-using-incoming-webhooks/){: external}.
 
-To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
+To add a Slack webhook in the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
 1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Add**, and select **Slack**.
@@ -356,11 +356,11 @@ To add a Slack webhook in the {{site.data.keyword.Bluemix_notm}} console, comple
 ## Adding Microsoft Teams webhooks to a distribution list
 {: #add-microsoft-teams-webhook}
 
-Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.Bluemix_notm}} notifications.
+Adding Microsoft Teams webhooks to your distribution list is also available for you to receive account-wide {{site.data.keyword.cloud_notm}} notifications.
 
-To create a webhook in the {{site.data.keyword.Bluemix_notm}} console, first create the incoming webhook in Microsoft Teams. This allows external apps to share content in Teams channels, and provides the unique URL where you can send the notification message text in the form of a JSON payload. You receive the notifications in the selected Teams channel in which you added the incoming webhook. For more information, see [Create Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet){: external}.
+To create a webhook in the {{site.data.keyword.cloud_notm}} console, first create the incoming webhook in Microsoft Teams. This allows external apps to share content in Teams channels, and provides the unique URL where you can send the notification message text in the form of a JSON payload. You receive the notifications in the selected Teams channel in which you added the incoming webhook. For more information, see [Create Incoming Webhook](https://learn.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook?tabs=dotnet){: external}.
 
-To add a Microsoft Teams webhook in the {{site.data.keyword.Bluemix_notm}} console, complete the following steps:
+To add a Microsoft Teams webhook in the {{site.data.keyword.cloud_notm}} console, complete the following steps:
 
 1. Go to **Manage** > **Account** > **Notification distribution list** in the {{site.data.keyword.cloud_notm}} console.
 1. Click **Add**, and select **Microsoft Teams**.
@@ -373,6 +373,6 @@ Unlike Microsoft Teams and Slack webhook integrations, setting up a ServiceNow w
 
 First, you need to create a Scripted REST API on the ServiceNow website. After the Scripted REST API is configured, you also need to create a Scripted REST API Resource. The request method needs to be set to HTTP POST. Then, you need to provide a code for the resource to run.
 
-When you are ready with the process and have the URL for your Scripted REST API, you can start to use it on the **{{site.data.keyword.Bluemix_notm}} Notification distribution list** page and create webhooks.
+When you are ready with the process and have the URL for your Scripted REST API, you can start to use it on the **{{site.data.keyword.cloud_notm}} Notification distribution list** page and create webhooks.
 
 To get to know the complete ServiceNow webhook integration process, follow the instructions in the [How to Integrate Webhooks Into ServiceNow](https://www.servicenow.com/community/in-other-news/how-to-integrate-webhooks-into-servicenow/ba-p/2271745){: external} blog post. This blog walks you through the steps in detail.

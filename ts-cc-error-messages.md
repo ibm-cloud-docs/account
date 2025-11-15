@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: credit card, payment method, error credit card, credit card error, payment issue, card issue, card error, card error message, payment error message
 
@@ -36,7 +36,7 @@ Error: Could not place order. Problem authorizing the credit card. We are unable
 Something went wrong when verifying your credit card, and the transaction wasn't successful.
 {: tsCauses}
 
-To ensure that your credit card verification is successful, complete the following steps:
+To help ensure that your credit card verification is successful, complete the following steps:
 {: tsResolve}
 
 1. Verify that the name and address for your {{site.data.keyword.cloud_notm}} account matches the name and address on file with your credit card issuer.
@@ -144,7 +144,7 @@ You tried to place an order in the {{site.data.keyword.cloud_notm}} console [Pay
 Failed to complete the Change Request process due to the following error: We're afraid this transaction has been rejected. Invalid account number.
 ```
 
-or
+Or
 
 ```text
 Failed to complete the Change Request process due to the following error: We are unable to process your request: Transaction Rejected.
@@ -167,13 +167,13 @@ You tried to complete a change request {{site.data.keyword.cloud_notm}} console 
 Failed to complete the Change Request process due to the following error: VAT ID is a required field for ...
 ```
 
-Your VAT ID, CST or other tax identification number cannot be validated.
+Your VAT ID, CST, or other tax identification number cannot be validated.
 {: tsCauses}
 
 Complete the following steps to verify the VAT ID:
 {: tsResolve}
 
-1. Verify that tax identification number is valid.
+1. Verify that your tax identification number is valid.
 1. Verify that the tax identification number is associated with the same country as the physical country of residence in your {{site.data.keyword.cloud_notm}} profile.
 1. Verify whether a VAT ID is required to create an {{site.data.keyword.cloud_notm}} account in your country of residence. For more information, see [Personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
 1. Verify that you are creating the correct account type: personal or business.
@@ -206,7 +206,7 @@ An issue occurred that caused the payment process to fail. This error might prom
 Transaction already processed.
 ```
 
-Our payment system has detected multiple similar payments within a short period of time. {{site.data.keyword.cloud_notm}} is attempting to avoid unintentional duplicate payments.
+Our payment system has detected multiple similar payments within a short period. {{site.data.keyword.cloud_notm}} is attempting to avoid unintentional duplicate payments.
 {: tsCauses}
 
 Wait 3-4 hours for the manual payment to be processed and posted to your {{site.data.keyword.cloud_notm}} account. Verify your account balance on the [Payments page](https://cloud.ibm.com/billing/payments).
@@ -226,7 +226,7 @@ Your account couldn't be upgraded. Click Upgrade account to try again.
 {{site.data.keyword.cloud_notm}} was unable to process your transaction.
 {: tsCauses}
 
-Submit your account upgrade information again. If the error continues to occur, you can contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Submit your account upgrade information again. If the error continues to occur, you can contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 {: tsResolve}
 
 ## Why can't I save my credit card to the account?

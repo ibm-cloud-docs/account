@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-11-15"
 
 keywords: troubleshooting software, troubleshooting resources, software, operator, private registry, Red Hat, Quay
 
@@ -32,5 +32,5 @@ An unsupported private registry cannot be used to pull an Operator bundle.
 This problem occurs if the Operator bundle is in a private registry that {{site.data.keyword.cloud}} cannot contact.
 {: tsCauses}
 
-Move your Operator bundle to a support registry and try to pull the bundle again. The supported registries are [Red Hat Quay.io](https://quay.io/){: external} and [Red Hat registry](https://catalog.redhat.com/){: external}.
+Move your Operator bundle to a support registry and try to pull the bundle again. The supported registries are [Red Hat Quay.io](https://quay.io/){: external} and [Red Hat registry](https://catalog.redhat.com/){: external}. 
 {: tsResolve}

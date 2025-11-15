@@ -4,7 +4,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: onboard software, catalog details, software, catalog entry, about, product page, catalog listing, translation, internationalization, localization, CLI
 
@@ -23,18 +23,18 @@ When you onboard software, you can translate certain details about your product 
 ## What product details can you translate? 
 {: #cm-translate-what}
 
-The following information about your product can be translated: 
+The following information about your product can be translated:
 * Product name
-* Short and long description 
+* Short and long description
 * Support process
 * Media captions
-* Feature titles and descriptions 
+* Feature titles and descriptions
 * Readme file
 
 ## Downloading translation files
 {: #cm-download-translations}
 
-Run the `get-translations` command to download the language `.json` files. 
+Run the `get-translations` command to download the language `.json` files.
 
    ```bash
    ibmcloud catalog offering get-translations -c CATALOG_NAME -o PRODUCT_NAME --languages en,de,ja

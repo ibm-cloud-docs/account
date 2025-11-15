@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-09-22"
+lastupdated: "2025-11-15"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -12,7 +12,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Working with {{site.data.keyword.Bluemix_notm}}'s carbon calculator
+# Working with {{site.data.keyword.cloud_notm}}'s carbon calculator
 {: #what-is-cloud-calc}
 
 Output that is provided by the carbon calculator is provided “as-is” for informational purposes only, and is based on cloud services information that is provisioned by client in client’s {{site.data.keyword.cloud_notm}} account. Output is provided in a format according to greenhouse gas (GHG) protocol standards. The data sources and tools that are used to calculate client's emissions are subject to change by IBM without notice. The client is responsible for confirming the accuracy of any calculator output for purposes of the client’s compliance with any applicable regulatory obligations or for any other purpose.

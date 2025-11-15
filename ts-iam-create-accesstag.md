@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot permission to create access management tags
 
@@ -35,9 +35,9 @@ This problem can commonly occur by one of the following reasons:
 Complete the following steps to check your level of access. If you need to request access, contact the account owner.
 {: tsResolve}
 
-Go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select your name on the **Users** page. 
+Go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select your name on the **Users** page.
 
-* To view IAM access policies that are assigned to you, select **Access** and view the Access policies table. 
+* To view IAM access policies that are assigned to you, select **Access** and view the Access policies table.
 * To determine what access you have through the access groups you are assigned, select **Access** and view the Access groups table. Check the access policies for each of the access groups.
 
 To view what actions are mapped to each role, click the numbers listed next to each role.

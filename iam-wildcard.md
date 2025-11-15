@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-29"
+lastupdated: "2025-11-15"
 
 keywords: access, users, service IDs, access group, IAM, policy, characters, wildcard, operators, asterisk, question mark, *, ?, JSON document, policy document
 
@@ -25,6 +25,7 @@ To assign access, you need the administrator role on the resource. For more info
 {: #policy-js}
 
 Most access policies are stored in {{site.data.keyword.cloud}} as JSON documents. When you use the `stringEquals` operator in a policy, an exact string match is performed between the query and the target string. When you use the `stringMatch` operator, a case-sensitive string match is performed between the pattern and the target string using either an asterisk (`*`), question mark (`?`), both, or literal values. An asterisk (`*`) represents any sequence of zero or more characters in the string, and a question mark (`?`) represents any single character. See the following examples:
+
 * `*dev*` matches any string that contains `dev`
 * `dev*` matches any string that begins with `dev`
 * `*dev` matches any string that ends with `dev`

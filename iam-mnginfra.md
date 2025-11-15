@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 
 keywords: classic infrastructure access, VPN subnet access, classic infrastructure permissions, device access
@@ -59,7 +59,6 @@ Services
 - Manage DNS
 - Manage SSH keys
 - Manage certificates
-
 
 ### Migrated classic infrastructure permissions
 {: #predefined}

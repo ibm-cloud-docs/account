@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-05-16"
+lastupdated: "2025-11-15"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -18,7 +18,7 @@ content-type: faq
 # FAQ about managing resources
 {: #resources-faq}
 
-FAQ about managing resources includes answers to common questions about resource groups in {{site.data.keyword.cloud_notm}}, including how they help organize resources, who can create and manage them, and how access is controlled. You will also learn about tagging, usage tracking, deleting services, and how resource groups integrate with access groups. To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+FAQ about managing resources includes answers to common questions about resource groups in {{site.data.keyword.cloud_notm}}, including how they help organize resources, who can create and manage them, and how access is controlled. You will also learn about tagging, usage tracking, deleting services, and how resource groups integrate with access groups. To find all FAQ for {{site.data.keyword.cloud}}, see [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## What is a resource group?
@@ -38,13 +38,13 @@ Most likely you're dealing with an access issue. You must have at least the View
 
 For more information about how to check your assigned access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
-If you need additional access in the account, contact the account owner that is listed on the [Users](/iam/users) page.
+If you need extra access in the account, contact the account owner that is listed on the [Users](/iam/users) page.
 
 ## Who can create resource groups?
 {: #create-resource}
 {: faq}
 
-You can create resource groups only if you're assigned the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+You can create resource groups only if you're assigned as the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
 
 Lite accounts can have only the default resource group, so you can't create any additional resource groups even if you have the required access.
 
@@ -66,7 +66,7 @@ Resource groups are a method of organizing resources and are not directly associ
 4. Select a service, or group of services.
 5. Click **Next**.
 6. Scope the access to all resources, or select specific resources and select the resource groups attribute. Then, click **Next**.
-7. Select the platform, service and resource group access for the resource group.
+7. Select the platform, service, and resource group access for the resource group.
 8. Click **Review**.
 9. Click **Add** to add your policy configuration to your policy summary.
 10. Click **Assign**.
@@ -77,7 +77,7 @@ You can't use access groups with infrastructure service resources or permissions
 {: #instances-between-rgs}
 {: faq}
 
-You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and recreate the instance to assign it to another resource group.
+You can't move service instances between resource groups. If you assign a service instance incorrectly, you must delete and re-create the instance to assign it to another resource group.
 
 ## How do I delete a service from my account?
 {: #service-removal}
@@ -99,14 +99,14 @@ Yes, you can. To access your usage dashboard, go to **Manage** > **Billing and u
 {: #tag-faq}
 {: faq}
 
-Any user assigned the correct access for the specific type of resource can attach tags. When a resource is tagged, it is visible to all users who have read access to the resource. However, to attach or detach a tag on a resource, certain access roles or permissions are required depending on the resource type and the tag type. For example, to attach user tags to any of the resources that are managed by using IAM, you must be assigned the Editor or Administrator role on the resource.
+Any user assigned the correct access for the specific type of resource can attach tags. When a resource is tagged, it is visible to all users who have read access to the resource. However, to attach or detach a tag on a resource, certain access roles, or permissions are required depending on the resource type and the tag type. For example, to attach user tags to any of the resources that are managed by using IAM, you must be assigned the Editor or Administrator role on the resource.
 
 You can attach access management tags to IAM-enabled resources only.
 {: note}
 
 For more information about the required access for other resources types, see [Tagging permissions](/docs/account?topic=account-access#tagging-permissions).
 
-## Where can I find my resources in the {{site.data.keyword.Bluemix_notm}} console?
+## Where can I find my resources in the {{site.data.keyword.cloud_notm}} console?
 {: #slitems}
 {: faq}
 
@@ -133,7 +133,7 @@ After the instance is deleted from the console, you can view it in your account 
 {: #reclamation-delete}
 {: faq}
 
-You can restore a resource from a deleted resource group. [Create a support case](/unifiedsupport/cases/add){: external} in the {{site.data.keyword.Bluemix_notm}} Support Center and specify in the description of the case that you want to restore the resource that's in a deleted resource group.
+You can restore a resource from a deleted resource group. [Create a support case](/unifiedsupport/cases/add){: external} in the {{site.data.keyword.cloud_notm}} Support Center and specify in the description of the case that you want to restore the resource that's in a deleted resource group.
 
 ## How can I share a product or location with my entire enterprise?
 {: #visibility-enterprise}

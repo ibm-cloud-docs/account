@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-09-19"
+lastupdated: "2025-11-15"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -46,19 +46,19 @@ In addition to your {{site.data.keyword.cloud_notm}} API keys, a couple of other
 * Classic infrastructure API keys
 * Service-specific API keys
 
-You can also use API keys that are associated with service IDs that you create. Service IDs are used to connect an application inside or outside of {{site.data.keyword.Bluemix_notm}} to an {{site.data.keyword.Bluemix_notm}} service. Service ID API keys inherit all access that is assigned to the specific service ID. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys#serviceidapikeys).
+You can also use API keys that are associated with service IDs that you create. Service IDs are used to connect an application inside or outside of {{site.data.keyword.cloud_notm}} to an {{site.data.keyword.cloud_notm}} service. Service ID API keys inherit all access that is assigned to the specific service ID. For more information about creating API keys associated with a service ID, see [Managing service ID API keys](/docs/account?topic=account-serviceidapikeys#serviceidapikeys).
 
 [Classic infrastructure API keys](/docs/account?topic=account-classic_keys) are used to call the APIs for classic infrastructure services. You can create only one classic infrastructure API key at a time. You can create a classic infrastructure API key for yourself from the API keys page or the User details page.
 
 {{site.data.keyword.cloud_notm}} API keys can also be used to access classic infrastructure APIs.
 {: tip}
 
-Some services in {{site.data.keyword.Bluemix_notm}} might provide an API key when you work with the service that is an auto-generated API key associated with a service ID. For example, if you are viewing the product details of a Watson service by going to the Resource list page, you can create a credential that includes an API key and secret that is specific to that service on the Service credentials page.
+Some services in {{site.data.keyword.cloud_notm}} might provide an API key when you work with the service that is an auto-generated API key associated with a service ID. For example, if you are viewing the product details of a Watson service by going to the Resource list page, you can create a credential that includes an API key and secret that is specific to that service on the Service credentials page.
 
 ## Working with API keys
 {: #work-with-apikeys}
 
-To manage the {{site.data.keyword.Bluemix_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the {{site.data.keyword.cloud_notm}} console. 
+To manage the {{site.data.keyword.cloud_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the {{site.data.keyword.cloud_notm}} console. 
 
 On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all classic infrastructure API keys for users to which you are an ancestor in the user hierarchy. This means you can manage API keys for all users you invited to the account, or your child users invited to the account, and so on. In addition, if you are the account owner or a user with the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys.
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: pricing, global catalog api
 
@@ -693,4 +693,4 @@ The following table illustrates how much you pay with a plan that is based on a 
 | 500              | 500 × 0.000171798  = .0859  | $.0859 USD  |
 | 2000             | 2000 x 0.000171798 = .344   | $.344 USD   |
 | 10000            | 10000 x 0.000171798 = 1.72  | $1.72 USD   |
-{: caption="Charge calculation by using the graduated tier pricing model" caption-side="top"}
+{: caption="Charge calculation by using the graduated tier pricing model" caption-side="top"} 

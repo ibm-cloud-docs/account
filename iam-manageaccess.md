@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
@@ -13,13 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Access management in {{site.data.keyword.Bluemix_notm}}
+# Access management in {{site.data.keyword.cloud_notm}}
 {: #cloudaccess}
 
 Access management enables you to control which users see, create, use, and manage resources in your account. To grant access, you can assign roles that allow users levels of access for completing platform management tasks and accessing account resources.
 {: shortdesc}
 
-The way that you manage access in {{site.data.keyword.Bluemix}} depends on the type of resource that you want to assign access to. {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) is the access management system that is used for consistently managing resources that are organized in a resource group across the {{site.data.keyword.Bluemix_notm}} platform. [Classic infrastructure resources](/docs/account?topic=account-mngclassicinfra) are not managed by using IAM. These resource types have their own access management systems.
+The way that you manage access in {{site.data.keyword.Bluemix}} depends on the type of resource that you want to assign access to. {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is the access management system that is used for consistently managing resources that are organized in a resource group across the {{site.data.keyword.cloud_notm}} platform. [Classic infrastructure resources](/docs/account?topic=account-mngclassicinfra) are not managed by using IAM. These resource types have their own access management systems.
 
 If you have a combination of resource types, you manage each type separately:
 
@@ -32,7 +32,7 @@ While each type of access is managed separately, all access policies are made up
 
 For IAM policies, the subject can be an access group, user, service ID, or trusted profile. And, the target can be an account management service, resource group, service in the account, specific service instance, or resource type within a service. Platform and service roles can be selected to scope the level of access for the subject. For classic infrastructure, a user is selected, and then the access can be scoped to a service or device with specific permissions assigned. For classic infrastructure that doesn't support the use of IAM policies for managing access, see [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra#how-classic-infra-permissions-work).
 
-## {{site.data.keyword.Bluemix_notm}} IAM limits
+## {{site.data.keyword.cloud_notm}} IAM limits
 {: #iam_limits}
 
 The following table lists the maximum limits for IAM resources. These limits apply to any user who can create IAM resources. If a limit is exceeded, you receive an exception and are not allowed to create any new resources beyond that limit.
@@ -44,15 +44,15 @@ If you have a specific use case that requires an extended limit, you can request
 |----------------------------------------|------|
 | Access groups per account              | 500  |
 | Access groups per user                 | 50   |
-| Access management tags per account     | 250   |
+| Access management tags per account     | 250  |
 | API Keys per identity                  | 20   |
 | Custom roles per account               | 40   |
-| Dynamic rules per access group         | 5  |
+| Dynamic rules per access group         | 5    |
 | Dynamic rules per trusted profile      | 20   |
 | Dynamic rules per Identity provider (IdP) | 2000 |
 | IdPs per account  | 5    |
 | Policies per account [^tabletext]      | 4020 |
-| Policies per subject within an account | 1000  |
+| Policies per subject within an account | 1000 |
 | Policies with access management tags within an account   | 500   |
 | Service IDs per account                | 2000 |
 | Trusted profiles per account           | 2000 |

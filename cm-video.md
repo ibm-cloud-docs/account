@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: catalog, catalog management, manage catalogs, video
 
@@ -40,7 +40,7 @@ When you're ready, head over to [Catalog management](/content-mgmt/overview){: e
 
 Manage settings for catalogs across your account. Go to **Manage** > **Catalogs** to access catalog management. Then, click **Settings**.
 
-Turn the {{site.data.keyword.cloud_notm}} catalog off or on with one click. From the Settings page, you can control whether users in your account can access the {{site.data.keyword.cloud_notm}} catalog or not. Toggle on the {{site.data.keyword.cloud_notm}} catalog to make the catalog available for users in your account.
+Turn the {{site.data.keyword.cloud_notm}} catalog off or on with one click. From the Settings page, you can control whether users in your account can access the {{site.data.keyword.cloud_notm}} catalog or not. Toggle the {{site.data.keyword.cloud_notm}} catalog to make the catalog available for users in your account.
 
 Add rules for fine-grained control. From the Settings page, you can customize what's available in the {{site.data.keyword.cloud_notm}} catalog to users in your account. You can exclude products from the {{site.data.keyword.cloud_notm}} catalog based on specific filters, such as the category. Click **Edit** for the Category filter and select **Exclude Storage** to hide products that are categorized as `Storage`. Click **Update** to save your changes.
 

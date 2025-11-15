@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: payment, charges, pricing plan, service cost, cost, pricing tier, pricing model, pricing
 
@@ -18,19 +18,19 @@ subcollection: account
 {{site.data.keyword.cloud}} charges vary depending on the resources that are used by a particular service, runtime, container, or support option. The resources can be the number of API calls, the number of instances, memory, or storage. In addition, tiered pricing is offered in simple, graduated, or block.
 {: shortdesc}
 
-{{site.data.keyword.Bluemix_notm}} provides detailed [cost estimators](/docs/account?topic=account-cost) to help you plan for charges.
+{{site.data.keyword.cloud_notm}} provides detailed [cost estimators](/docs/account?topic=account-cost) to help you plan for charges.
 {: tip}
 
-After you build your resources, you can check the actual cost. In the {{site.data.keyword.cloud}} console, go to **Manage > Billing and usage**, and select **Usage**. With an {{site.data.keyword.Bluemix_notm}} billable account, you're charged for the compute, containers, and services that your organization used. You might be invited by other {{site.data.keyword.Bluemix_notm}} users to participate in organizations under a different account. The usage of the apps or services that you use in the organizations that you're invited to are charged to the account that contains those organizations. You can see more information about a specific charge from each resource details page.
+After you build your resources, you can check the actual cost. In the {{site.data.keyword.cloud}} console, go to **Manage > Billing and usage**, and select **Usage**. With an {{site.data.keyword.cloud_notm}} billable account, you're charged for the compute, containers, and services that your organization used. You might be invited by other {{site.data.keyword.cloud_notm}} users to participate in organizations under a different account. The usage of the apps or services that you use in the organizations that you're invited to are charged to the account that contains those organizations. You can see more information about a specific charge from each resource details page.
 
-Different types of charges apply depending on the features of {{site.data.keyword.Bluemix_notm}} that you're using. The following table provides a high-level overview:
+Different types of charges apply depending on the features of {{site.data.keyword.cloud_notm}} that you're using. The following table provides a high-level overview:
 
 | Type of Charge | Description      | Resource Type            | Example                  |
 |----------------|------------------|--------------------------|--------------------------|
 | Fixed          | Fixed-rate pricing is based on an agreed upon monthly charge. If you buy an additional bare metal server, virtual server, or storage resource after the start of the monthly billing period, the cost of the resource for the first month is prorated based on the number of days remaining in the billing period. The prorated cost is billed in a separate invoice.  | Services  | For Bare Metal Servers, there are fixed plans to choose from, and those plans are charged at a fixed monthly rate.|
 | Metered        | Metered is a unit-based pricing model in which you pay for what you consume. In this case, the number of GB hours that are consumed for runtimes and the number of IP addresses and storage that is consumed for containers.  | Services, Compute, and Containers | For {{site.data.keyword.mobilepushshort}}, any usage that is consumed over the free monthly allowance of 100,000 digital messages per month, will be charged.  |
 | Tiered         | In this pricing model, you get a volumed-based discount according to your actual usage. Tiered pricing is typically used for charge metrics that are expected to have high quantities per month, such as API calls. Services might offer simple, graduated, or block tier pricing plans. | Services | For {{site.data.keyword.apiconnect_short}}, one of the tiered plans charges $10,000 for the first 25 million monthly API calls and $40.00 USD per 100,000 API calls per month thereafter.|
-| Reserved       | Reserved pricing is based on a long-term commitment for a service, so you can get a discounted price. With a reserved plan, you get a dedicated service instance that is easy to set up, deploy, and deliver in the public {{site.data.keyword.Bluemix_notm}} environment. | Services | Db2 on Cloud has reserved plans.|
+| Reserved       | Reserved pricing is based on a long-term commitment for a service, so you can get a discounted price. With a reserved plan, you get a dedicated service instance that is easy to set up, deploy, and deliver in the public {{site.data.keyword.cloud_notm}} environment. | Services | Db2 on Cloud has reserved plans.|
 {: caption="Charges based on features" caption-side="top"}
 
 ## Understanding monthly and hourly tags
@@ -41,7 +41,6 @@ On the usage dashboard, your products and resources can be labeled with `Monthly
 The `Monthly` tag signifies that resources within your account have a fixed cost. These charge show up immediately after purchase and are prorated in proportion to how many days are remaining in the month. The fixed costs is then shown at the first of every month.
 
 The `Hourly` tag signifies that resources within your account have variable costs that can change throughout the day. These resources are updated every day.
-
 
 ## Lite plans
 {: #liteplans}
@@ -82,7 +81,7 @@ Metered charges
 
 Reserved charges
 :   As the account owner of a Pay As You Go account or a Subscription account, you can reserve a service instance, with a long-term commitment, for a discounted price. For example, you can reserve the standard high capacity Db2 on Cloud product for 12 months.
-:   Some {{site.data.keyword.Bluemix_notm}} services offer reserved plans. You can request a reserved plan from the {{site.data.keyword.Bluemix_notm}} catalog by clicking the tile of the service. Then, select the service plan that best meets your needs. If a reserved plan is available, click **Request**, and follow the prompts to send your request. You receive an email that contains the price information of the reserved plan. An {{site.data.keyword.Bluemix_notm}} sales representative also contacts you soon to complete the purchase.
+:   Some {{site.data.keyword.cloud_notm}} services offer reserved plans. You can request a reserved plan from the {{site.data.keyword.cloud_notm}} catalog by clicking the tile of the service. Then, select the service plan that best meets your needs. If a reserved plan is available, click **Request**, and follow the prompts to send your request. You receive an email that contains the price information of the reserved plan. An {{site.data.keyword.cloud_notm}} sales representative also contacts you soon to complete the purchase.
 
 Tiered charges
 :   Similar to metered charges, you pay based on your runtime and service consumption. However, tiered charges add more pricing levels, often offering discounted rates on products for higher consumption tiers. Tiered pricing is offered in simple, graduated, or block.

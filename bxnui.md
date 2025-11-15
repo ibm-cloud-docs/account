@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-06-11"
+lastupdated: "2025-11-15"
 
 keywords: error messages, errors, platform errors, message ID
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.Bluemix_notm}} error messages
+# {{site.data.keyword.cloud_notm}} error messages
 {: #bxn-error-messages}
 
 When you receive an error message from {{site.data.keyword.Bluemix}}, you can use the message ID to find more information about how to resolve the problem.
@@ -22,14 +22,14 @@ When you receive an error message from {{site.data.keyword.Bluemix}}, you can us
 ## BXNUI0001E
 {: #bxnui0001e}
 
-**Message**: The page wasn't loaded because {{site.data.keyword.Bluemix_notm}} didn't detect whether a session exists.
+**Message**: The page wasn't loaded because {{site.data.keyword.cloud_notm}} didn't detect whether a session exists.
 
 For instructions to fix this problem, see the [Why do I encounter console pages that don't load?](/docs/account?topic=account-ts_err) troubleshooting topic.
 
 ## BXNUI0016E
 {: #bxnui0016e}
 
-**Message**: The apps and services weren't retrieved because a {{site.data.keyword.Bluemix_notm}} page didn't load.
+**Message**: The apps and services weren't retrieved because a {{site.data.keyword.cloud_notm}} page didn't load.
 
 For instructions to fix this problem, see the [Why do I encounter console pages that don't load?](/docs/account?topic=account-ts_err) troubleshooting
 
@@ -45,30 +45,26 @@ On the app's Overview page, click **Routes and domains** drop-down, and select *
 
 **Message**: A domain wasn't deleted because a problem occurred contacting IBM DataPower Gateway.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0060E
 {: #bxnui0060e}
 
 **Message**: A certificate for the '{0}' domain wasn't uploaded because a problem occurred contacting IBM DataPower Gateway.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0061E
 {: #bxnui0061e}
 
 **Message**: The user, '{0}', wasn't added to the account because a problem occurred contacting the business support system.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0062E
 {: #bxnui0062e}
 
 **Message**: Your session expired, and you must log in again.
-
 
 ## BXNUI0063E
 {: #bxnui0063e}
@@ -77,11 +73,10 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 Try again later.
 
-
 ## BXNUI0064E
 {: #bxnui0064e}
 
-**Message**: The browser that you are using is not supported by IBM{{site.data.keyword.Bluemix_notm}}.
+**Message**: The browser that you are using is not supported by IBM{{site.data.keyword.cloud_notm}}.
 
 The following browsers are supported. Ensure that you use the latest version for your operating system.
 * Google Chrome
@@ -91,46 +86,40 @@ The following browsers are supported. Ensure that you use the latest version for
 
 For information, see [What are the IBM Cloud prerequisites?](/docs/overview?topic=overview-prereqs-platform)
 
-
 ## BXNUI0066E
 {: #bxnui0066e}
 
 **Message**: The runtime can't be deleted because when the runtime was added, a buildpack value was explicitly set for the application by using the `-b` option on the `cf` push command.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0070E
 {: #bxnui0070e}
 
 **Message**: The certificate for the '{0}' domain wasn't retrieved because a problem occurred contacting IBM DataPower Gateway.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0071E
 {: #bxnui0071e}
 
 **Message**: The certificate for the '{0}' domain wasn't deleted because a problem occurred contacting IBM DataPower Gateway.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0072E
 {: #bxnui0072e}
 
 **Message**: The certificate for the '{0}' domain wasn't replaced because a problem occurred contacting IBM DataPower Gateway.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0073E
 {: #bxnui0073e}
 
 **Message**: Information about the uploaded certificates might not be retrieved.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
-
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0076E
 {: #bxnui0076e}
@@ -139,14 +128,12 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 To use a different plan for this service, you must delete the service and connect it again.
 
-
 ## BXNUI0077E
 {: #bxnui0077e}
 
 **Message**: The '{0}' service exists in the '{1}' space.
 
 Choose another space, if needed.
-
 
 ## BXNUI0078E
 {: #bxnui0078e}
@@ -177,15 +164,15 @@ Add the prerequisite service first, and then try again.
 
 **Message**: You uploaded {0} certificates, which is the maximum number that your organization can use.
 
-Lite account users must upgrade to use SSL Certificates. For other account types, remove a certificate if you reach the limit. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Lite account users must upgrade to use SSL Certificates. For other account types, remove a certificate if you reach the limit. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0082E
 {: #bxnui0082e}
 
-**Message**: {{site.data.keyword.Bluemix_notm}}can't load your notification preferences at the moment.
+**Message**: {{site.data.keyword.cloud_notm}} can't load your notification preferences at the moment.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0083E
@@ -193,7 +180,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: Your notification preferences could not be saved.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0085E
@@ -203,7 +190,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 The container might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also, make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access). If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err). If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also, make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access). If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err). If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0086E
@@ -213,7 +200,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 The container might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0087E
@@ -223,7 +210,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 The container might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 ## BXNUI0088E
 {: #bxnui0088e}
@@ -232,7 +219,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 The container might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0089E
@@ -242,7 +229,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 The container might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0090E
@@ -252,7 +239,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 The container might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0091E
@@ -262,7 +249,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 The container might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0092E
@@ -270,7 +257,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The '{0}' VM group wasn't deleted because of a problem connecting to the VM resources.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0093E
@@ -280,7 +267,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 The container group might be temporarily out of service.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0094E
@@ -288,7 +275,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The registry name could not be set.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0095E
@@ -314,7 +301,7 @@ For instructions to fix this problem, see the [Account is inactive](/docs/accoun
 
 **Message**: The list of credentials can't be retrieved at the moment.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0099E
@@ -322,7 +309,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The '{0}' credential wasn't added.
 
-Try to use a different name, or try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try to use a different name, or try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0100E
@@ -332,7 +319,7 @@ Try to use a different name, or try again later. If the problem continues, go to
 
 The credential might have already been deleted.
 
-Return to the resource list and try again. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Return to the resource list and try again. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0101E
@@ -348,7 +335,7 @@ Change your browser settings to allow pop-up windows.
 
 **Message**: The login server can't be contacted at the moment.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0112E
@@ -356,7 +343,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The plan might not be updated.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0113E
@@ -364,7 +351,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The {0} service instance wasn't deleted because its credentials weren't deleted.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0118E
@@ -372,7 +359,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: {0}'s access to {1} might not be revoked.
 
-Try to revoke access again. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try to revoke access again. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0119E
@@ -380,7 +367,7 @@ Try to revoke access again. If the problem continues, go to [{{site.data.keyword
 
 **Message**: The '{0}' VM didn't start because of a problem connecting to the VM resources.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0120E
@@ -388,7 +375,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The '{0}' VM didn't stop because of a problem connecting to the VM resources.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0121E
@@ -396,7 +383,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The '{0}' VM didn't reboot because of a problem connecting to the VM resources.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0122E
@@ -404,7 +391,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The '{0}' VM wasn't suspended because of a problem connecting to the VM resources.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0123E
@@ -412,7 +399,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The '{0}' VM wasn't resumed because of a problem connecting to the VM resources.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0124E
@@ -420,7 +407,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The '{0}' VM wasn't deleted because of a problem connecting to the VM resources.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0125E
@@ -428,8 +415,8 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: You will be logged out because you are not a member of an active account.
 
-Your {{site.data.keyword.Bluemix_notm}} account might be expired or canceled, or you might have been removed from your org.
-Contact your org manager. Make sure you select the correct account within the IBM Cloud Console. [Switch between multiple accounts](/docs/account?topic=account-accountfaqs&locale=dk#switch-between-accounts) if needed. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Your {{site.data.keyword.cloud_notm}} account might be expired or canceled, or you might have been removed from your org.
+Contact your org manager. Make sure you select the correct account within the IBM Cloud Console. [Switch between multiple accounts](/docs/account?topic=account-accountfaqs&locale=dk#switch-between-accounts) if needed. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0126E
@@ -453,7 +440,7 @@ Refresh the page later to verify that the container is deleted.
 
 **Message**: The account information wasn't retrieved because of a problem contacting the business support system.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0130E
@@ -461,9 +448,9 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The account information wasn't retrieved because of a problem contacting the business support system.
 
-You'll be logged out of {{site.data.keyword.Bluemix_notm}}.
+You'll be logged out of {{site.data.keyword.cloud_notm}}.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0131E
@@ -471,7 +458,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: Your email address wasn't registered because an error occurred during the registration process.
 
-To resolve this problem, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+To resolve this problem, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0200E
@@ -479,7 +466,7 @@ To resolve this problem, go to [{{site.data.keyword.Bluemix_notm}} Support](/uni
 
 **Message**: The routes for the app weren't retrieved because of an internal error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0201E
@@ -487,7 +474,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The routes for the space weren't retrieved because of an internal error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0202E
@@ -495,7 +482,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The domains for the org weren't retrieved because of an internal error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0203E
@@ -503,7 +490,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The routes for the app weren't retrieved because of an internal error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0300E
@@ -511,7 +498,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The usage information could not be retrieved.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0301E
@@ -519,7 +506,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: While the usage information was being retrieved, the organizations could not be retrieved.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0305E
@@ -527,7 +514,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The usage information could not be displayed.
 
-If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue.  Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue.  Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0306E
@@ -535,7 +522,7 @@ If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} sta
 
 **Message**: Third-party services information could not be retrieved.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0307E
@@ -543,7 +530,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: Promotional codes can't be applied at this time.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0400E
@@ -551,7 +538,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The list of countries could not be displayed.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0402E
@@ -559,7 +546,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: Your account can't be canceled at this time.
 
-Try again later or go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later or go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0500E
@@ -567,7 +554,7 @@ Try again later or go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsu
 
 **Message**: Your request to reserve a dedicated instance wasn't submitted due to an error.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0501E
@@ -593,7 +580,7 @@ If you're a member of the space, you must have the developer user role to create
 
 **Message**: The container wasn't created because of an internal error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0504E
@@ -641,7 +628,7 @@ To create container groups, you must have the developer role. Request that role 
 
 **Message**: The container group wasn't created because of an internal error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0510E
@@ -673,7 +660,7 @@ To adjust the quotas, go to **Manage Organizations**, click the **Quota** tab fo
 
 **Message**: The containers weren't retrieved because a problem occurred contacting IBM Containers.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0514E
@@ -689,7 +676,7 @@ Try to select another org or create a space, or request the developer role from 
 
 **Message**: The spaces in the org weren't retrieved. Either a network connection problem occurred, or your current organization does not have a space that is associated with it.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue.
 
 
 ## BXNUI0516E
@@ -697,7 +684,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The container namespace of the org wasn't retrieved because of an internal error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0517E
@@ -705,7 +692,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The container namespace of the org wasn't retrieved because of an internal error with incident ID `incidentID`.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0518E
@@ -713,7 +700,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The container wasn't created because of an internal error with incident ID `incidentID`.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0519E
@@ -721,7 +708,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**:The container group wasn't created because of an internal error with incident ID `incidentID`.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0520E
@@ -755,7 +742,7 @@ Try to select another space or org or create a space, or request the developer r
 
 **Message**: The classic infrastructure resources weren't retrieved because a problem occurred contacting SoftLayer.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0524E
@@ -763,7 +750,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The attempt to register the container namespace failed because a problem occurred connecting to the container API.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0525E
@@ -779,7 +766,7 @@ Request a different role from your org manager.
 
 **Message**: The attempt to retrieve the container image failed because a problem occurred contacting IBM Containers.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0600E
@@ -795,7 +782,7 @@ Try a different route.
 
 **Message**: Failed to invite users. Error Code: `errorCode`.
 
-Try again later. If you see this message again, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0702E
@@ -803,7 +790,7 @@ Try again later. If you see this message again, go to [{{site.data.keyword.Bluem
 
 **Message**: Failed to invite `emailAddress`. Error Code: `errorCode`.
 
-Try again later. If you see this message again, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI0703E
@@ -827,7 +814,7 @@ Try again later.
 
 **Message**: The request was not processed because of an error. This exception was issued: {0}
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2001E
@@ -835,7 +822,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: No Ant `build.xml` file exists for the "{0}" starter.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2002E
@@ -843,7 +830,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**:No builder exists for the "{0}" starter.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2004E
@@ -851,7 +838,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The app was not created because of an error from the cloud server.
 
-Try again. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2008E
@@ -859,7 +846,7 @@ Try again. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} S
 
 **Message**: The app was not created because a .zip file could not be created for the {0} app that uses the {1} starter.
 
-Try again. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2009E
@@ -867,7 +854,7 @@ Try again. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} S
 
 **Message**: The configuration wasn't loaded because of an error.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2010E
@@ -875,7 +862,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The configuration could not be loaded.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2011E
@@ -883,7 +870,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The configuration can't be saved because it comes from multiple sources.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2012E
@@ -897,7 +884,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: A class wasn't created from the "{0}" configuration because of an error.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2014E
@@ -905,7 +892,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The class name is not in the "{0}" configuration.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2015E
@@ -913,7 +900,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The attempt to log in failed because the cloud controller URL is formatted incorrectly.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2016E
@@ -921,7 +908,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The resource metadata could not be loaded.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2017E
@@ -929,7 +916,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The resource metadata could not be saved.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2018E
@@ -937,7 +924,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The metadata for the "{1}" starter didn't have the required "{0}" property.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2019E
@@ -945,7 +932,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The template metadata specified an unknown source control management type of "{0}".
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2020E
@@ -953,7 +940,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The "{0}" resource doesn't exist.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2021E
@@ -961,7 +948,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The "{0}" starter directory doesn't exist.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2022E
@@ -969,7 +956,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The starters could not be copied.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2023E
@@ -977,7 +964,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The `VCAP_SERVICES` environment variable isn't defined.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2024E
@@ -991,9 +978,9 @@ Contact the account owner.
 ## BXNUI2025E
 {: #bxnui2025e}
 
-**Message**: During an attempt to build an entity tag for web caching, an error occurred. {{site.data.keyword.Bluemix_notm}} could not determine whether an icon was cached.
+**Message**: During an attempt to build an entity tag for web caching, an error occurred. {{site.data.keyword.cloud_notm}}could not determine whether an icon was cached.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2026E
@@ -1017,13 +1004,13 @@ Log in and try again.
 
 **Message**: The cloud information could not be retrieved.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2031E
 {: #bxnui2031e}
 
-**Message**: The {{site.data.keyword.Bluemix_notm}} datastore component isn't available.
+**Message**: The {{site.data.keyword.cloud_notm}} datastore component isn't available.
 
 Contact the system administrator for assistance in fixing the datastore component.
 
@@ -1033,7 +1020,7 @@ Contact the system administrator for assistance in fixing the datastore componen
 
 **Message**: To modify starters, you must have additional permissions.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2037E
@@ -1041,7 +1028,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The starter metadata of ID "{0}" at URL "{1}" could not be read.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2038E
@@ -1049,7 +1036,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The registration of the starter ID, "{0}", failed for the URL, "{1}".
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2039E
@@ -1057,7 +1044,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The starter ID, "{0}", wasn't copied because the Git repository that associated with the boilerplate template isn't accessible.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2040E
@@ -1065,7 +1052,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The metadata for the starter ID, "{0}", could not be registered.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2041E
@@ -1073,7 +1060,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The starter registry metadata could not be read.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2042E
@@ -1081,7 +1068,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: An archive of the "{0}" starter could not be created.
 
-Go to [[{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2043E
@@ -1089,7 +1076,7 @@ Go to [[{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcente
 
 **Message**: The template metadata URL, {0}, is invalid. Error: "{1}".
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2044E
@@ -1107,7 +1094,7 @@ Try again.
 
 **Message**: The "{0}" service doesn't exist.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2046E
@@ -1115,7 +1102,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The service categories could not be read.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2047E
@@ -1123,7 +1110,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The "{0}" service exists.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2048E
@@ -1131,7 +1118,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The action failed because the service label and provider cannot be updated.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2049E
@@ -1147,7 +1134,7 @@ Delete the instances, and then try again.
 
 **Message**: The "{0}" organization doesn't exist.
 
-Make sure that the organization is specified correctly. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Make sure that the organization is specified correctly. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2051E
@@ -1155,7 +1142,7 @@ Make sure that the organization is specified correctly. If you see this message 
 
 **Message**: While the service was being created, an icon could not be created.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2052E
@@ -1163,7 +1150,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The login attempt failed.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2053E
@@ -1171,13 +1158,13 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The login attempt failed because the access token request could not be encoded.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2054E
 {: #bxnui2054e}
 
-**Message**: {{site.data.keyword.Bluemix_notm}} requires authorization with scope {0}.
+**Message**: {{site.data.keyword.cloud_notm}} requires authorization with scope {0}.
 
 Try logging in again and providing the requested authorization.
 
@@ -1187,7 +1174,7 @@ Try logging in again and providing the requested authorization.
 
 **Message**: Your user information could not be retrieved.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2057E
@@ -1195,7 +1182,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: JSON cannot be pretty-printed.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2058E
@@ -1203,7 +1190,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The request is unauthorized because it does not have the required scope, {0}.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2059E
@@ -1217,7 +1204,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The usage information could not be processed.
 
-If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. Also make sure you have [appropriate access](/docs/account?topic=account-iamfaq#iam-access).  If the error occurs again, follow the [troubleshooting steps for console pages that don’t load](/docs/account?topic=account-ts_err).  If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2061E
@@ -1225,7 +1212,7 @@ If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} sta
 
 **Message**: The pricing catalog information cannot be parsed.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2062E
@@ -1233,7 +1220,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The account information could not be processed.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2063E
@@ -1241,7 +1228,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: No starter is associated with this app.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2064E
@@ -1249,7 +1236,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The web identity unique ID cannot be retrieved.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2065E
@@ -1267,7 +1254,7 @@ Remove those tags and try again.
 
 **Message**: No JazzHub repository is associated with this app.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2067E
@@ -1275,7 +1262,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: A service broker with the ID of "{1}" wasn't created or updated because an invalid URL, "{0}", was detected.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2068E
@@ -1283,7 +1270,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: A remote URL for the service ID, "{0}", wasn't loaded because a null URL value was detected.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2069E
@@ -1291,7 +1278,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The URL, "{0}", for the service ID, "{2}", wasn't loaded because of an error: "{1}".
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2070E
@@ -1299,7 +1286,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The {0} organization doesn't own {1}.
 
-[{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+[{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2071E
@@ -1307,7 +1294,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: Only managers can modify certificates.
 
-[{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external.
+[{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2072E
@@ -1325,7 +1312,7 @@ Correct the domain name in the certificate and try again.
 
 **Message**: The private key doesn't match the public certificate.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2074E
@@ -1363,7 +1350,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The intermediate certificate expired at {0}.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2080E
@@ -1371,7 +1358,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The operation timed out while certificates and keys were being modified.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2081E
@@ -1379,7 +1366,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The certificates and keys weren't modified because an unknown error occurred: {0}.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2082E
@@ -1387,7 +1374,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The contents of the uploaded certificate wasn't read because a problem occurred: {0}.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2083E
@@ -1395,7 +1382,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The request to an extension of Business Support Systems could not be completed.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2084E
@@ -1403,7 +1390,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The list of countries that support payment could not be retrieved.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2085E
@@ -1411,7 +1398,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The pricing cost calculation cannot be parsed.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2086E
@@ -1419,7 +1406,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: During an attempt to retrieve uploaded certificates, the organization could not be found.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2087E
@@ -1434,7 +1421,7 @@ Try again with a shorter name.
 
 **Message**: The action that you requested wasn't completed because the CSRF token is missing or invalid.
 
-Log out, log back in, and try again. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Log out, log back in, and try again. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2089E
@@ -1442,7 +1429,7 @@ Log out, log back in, and try again. If you see this message again, go to the [{
 
 **Message**: During an attempt to register a template at the URL "{0}", an error occurred. Error: "{1}".
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2090E
@@ -1450,7 +1437,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The attempt to register a template at the following URL failed: "{0}". The template's contents are malformed. Error: "{1}"
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2091E
@@ -1458,7 +1445,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The attempt to connect to the service broker URL, "{0}", failed because of an error: "{1}".
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2092E
@@ -1466,7 +1453,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: An attempt to obtain the service broker catalog at the URL,"{0}", returned null.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2093E
@@ -1482,15 +1469,15 @@ For more information about the number of allowed certificates and how to delete 
 
 **Message**: The attempted operation failed because of a connection error.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2099E
 {: #bxnui2099e}
 
-**Message**: {{site.data.keyword.Bluemix_notm}} service billing issued an unexpected exception with this message: "{0}""
+**Message**: {{site.data.keyword.cloud_notm}} service billing issued an unexpected exception with this message: "{0}""
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2100E
@@ -1498,7 +1485,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: JazzHub issued an unexpected exception with this message: "{0}"
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2101E
@@ -1506,15 +1493,15 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: IBM DataPower issued an unexpected exception with this message: "{0}"
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2102E
 {: #bxnui2102e}
 
-**Message**: {{site.data.keyword.Bluemix_notm}} service billing message: "{0}"
+**Message**: {{site.data.keyword.cloud_notm}} service billing message: "{0}"
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2103E
@@ -1522,7 +1509,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: JazzHub message: "{0}"
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2104E
@@ -1530,7 +1517,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: IBM DataPower message: "{0}"
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2108E
@@ -1538,7 +1525,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The contents of the uploaded certificate weren't read because a problem occurred: {0}.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2109E
@@ -1562,7 +1549,7 @@ Verify that you entered the correct owning organization or request that role fro
 
 **Message**: The client certificate expired at {0}.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI2113E
@@ -1570,7 +1557,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The user platform preferences could not be processed.
 
-Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3000E
@@ -1578,7 +1565,7 @@ Go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter
 
 **Message**: The operation to start the container instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3001E
@@ -1586,7 +1573,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to stop the container instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3002E
@@ -1594,7 +1581,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to restart the container instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3003E
@@ -1602,7 +1589,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to pause the container instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3004E
@@ -1610,7 +1597,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to unpause the container instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3005E
@@ -1618,7 +1605,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to delete the container instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3006E
@@ -1626,7 +1613,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to start the container instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3007E
@@ -1634,7 +1621,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to stop the container instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3008E
@@ -1642,7 +1629,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to restart the container instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3009E
@@ -1650,7 +1637,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to pause the container instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3010E
@@ -1658,7 +1645,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to unpause the container instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3011E
@@ -1666,7 +1653,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to delete the container instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3012E
@@ -1674,7 +1661,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: An error occurred while restarting the container.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3013E
@@ -1682,7 +1669,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: An error occurred while pausing the container.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3014E
@@ -1690,7 +1677,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: An error occurred while unpausing the container.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3015E
@@ -1698,7 +1685,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: An authentication problem occurred.
 
-Log out, log back in, and try again.  If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Log out, log back in, and try again.  If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3016E
@@ -1706,7 +1693,7 @@ Log out, log back in, and try again.  If the problem continues, go to [{{site.da
 
 **Message**: The container does not exist. It might have been deleted.
 
-Check and try again.  If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Check and try again.  If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3017E
@@ -1714,7 +1701,7 @@ Check and try again.  If the problem continues, go to [{{site.data.keyword.Bluem
 
 **Message**: A problem occurred while contacting IBM Containers.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3018E
@@ -1722,7 +1709,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: An error occurred when stopping the container, and it is now in a conflict state.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3050E
@@ -1730,7 +1717,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to start the virtual server instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3051E
@@ -1738,7 +1725,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to stop the virtual server instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3052E
@@ -1746,7 +1733,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to resume the virtual server instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3053E
@@ -1754,7 +1741,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to suspend the virtual server instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3054E
@@ -1762,7 +1749,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to reboot the virtual server instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3055E
@@ -1770,7 +1757,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to delete the virtual server instance timed out.
 
-Try again later. If you see this message again, go to the [{{site.data.keyword.Bluemix_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If you see this message again, go to the [{{site.data.keyword.cloud_notm}} status page](/status?selected=status){: external} to check whether a service or component has an issue. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3056E
@@ -1778,7 +1765,7 @@ Try again later. If you see this message again, go to the [{{site.data.keyword.B
 
 **Message**: The operation to start the virtual server instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3057E
@@ -1786,7 +1773,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to stop the virtual server instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3058E
@@ -1794,7 +1781,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to resume the virtual server instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3059E
@@ -1802,7 +1789,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to suspend the virtual server instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3060E
@@ -1810,7 +1797,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to reboot the virtual server instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3061E
@@ -1818,7 +1805,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: The operation to delete the virtual server instance encountered a connection error.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3062E
@@ -1826,7 +1813,7 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: An authentication problem occurred.
 
-Log out, log back in, and try again. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Log out, log back in, and try again. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3063E
@@ -1836,7 +1823,7 @@ Log out, log back in, and try again. If the problem continues, go to [{{site.dat
 
 It might have been deleted.
 
-Check and try again.  If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Check and try again.  If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3064E
@@ -1844,7 +1831,7 @@ Check and try again.  If the problem continues, go to [{{site.data.keyword.Bluem
 
 **Message**: An error occurred and the virtual server instance is now in a conflict state.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
 
 
 ## BXNUI3065E
@@ -1852,4 +1839,4 @@ Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_no
 
 **Message**: A problem occurred while contacting IBM Virtual Servers.
 
-Try again later. If the problem continues, go to [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external}.
+Try again later. If the problem continues, go to [{{site.data.keyword.cloud_notm}}} Support](/unifiedsupport/supportcenter){: external}.

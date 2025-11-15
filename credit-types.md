@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-10"
+lastupdated: "2025-11-15"
 
 keywords: credit, credit types, promo code, discount, promotion code, promotional code, redeem promos, feature code, subscription code
 
@@ -18,7 +18,7 @@ subcollection: account
 
 {{site.data.keyword.cloud}} provides credit opportunities for customers to access more than 130 unparalleled services at a reduced cost. You can easily manage your billing and credits. For more information, see [Centrally managing billing and usage with enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise).
 
-{{site.data.keyword.Bluemix_notm}} offers a variety of codes and credits. A code is shared with the customers, when applied they receive credits, a certain amount that can be spent for {{site.data.keyword.Bluemix_notm}} services and support.
+{{site.data.keyword.cloud_notm}} offers a variety of codes and credits. A code is shared with the customers, when applied they receive credits, a certain amount that can be spent for {{site.data.keyword.cloud_notm}} services and support.
 
 ## Onboarding credits
 {: #onboard-credits}

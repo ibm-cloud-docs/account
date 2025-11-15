@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: MFA, MFA status, fulfill MFA, multifactor authentication, MFA requirement, MFA report
 
@@ -20,6 +20,7 @@ The first time that users log in to your account after you [enable multifactor a
 {: shortdesc}
 
 You must have the Administrator role on the IAM Identity Service to view and update the report. The following actions are included in this role.
+
 - The action `iam-identity.mfa-status.get` is required to view the report.
 - The action `iam-identity.report.create` is required to generate a new report.
 

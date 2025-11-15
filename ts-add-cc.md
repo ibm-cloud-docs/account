@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account, account problem, view all orgs 
 
@@ -31,9 +31,9 @@ This problem happens when your information isn't entered correctly.
 Complete the following steps:
 {: tsResolve}
 
-1. Complete all of the required fields to add your credit card and billing information in the {{site.data.keyword.Bluemix_notm}} console.
+1. Complete all of the required fields to add your credit card and billing information in the {{site.data.keyword.cloud_notm}} console.
 
    Ensure that you specified a business account and not a personal account type, if you are providing a VAT ID or tax identification number.
    {: note}
-   
+
 1. Click **Upgrade account**.

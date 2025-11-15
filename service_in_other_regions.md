@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-02-05"
+lastupdated: "2025-11-15"
 
 keywords: service availability, service location, using services across regions
 
@@ -11,7 +11,7 @@ subcollection: account
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{{site.data.keyword.attribute-definition-list}} 
 
 # Using services in another region
 {: #cross_region_service}
@@ -27,7 +27,7 @@ To use a service instance that exists in another region, complete the following 
 1. To switch to the region where the service instance exists, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**. Then, expand the **LOCATION** menu and select the region.
 
 2. Retrieve the credentials and the connection parameters from the VCAP_SERVICES environment variable of the service instance in the region where the service exists. Complete the following steps:
-   1. In the {{site.data.keyword.Bluemix_notm}} Dashboard, click **View all** on your apps tile. The Overview page is displayed.
+   1. In the {{site.data.keyword.cloud_notm}} Dashboard, click **View all** on your apps tile. The Overview page is displayed.
    2. In the navigation pane, click **Credentials**. The *VCAP_SERVICES* environment variable details are displayed. Record the JSON content for the service instance.
 
 3. Switch to the region where you want to use the service instance. Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**. Then, expand the **LOCATION** menu and select the region where you want to use the service instance.

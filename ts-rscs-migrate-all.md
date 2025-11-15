@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, migrate, migration error, migrate all services
 
@@ -19,7 +19,7 @@ content-type: troubleshoot
 {: #ts_service_migration}
 {: troubleshoot}
 
-Not all {{site.data.keyword.Bluemix}} services are eligible for migration. 
+Not all {{site.data.keyword.Bluemix}} services are eligible for migration.
 {: shortdesc}
 
 You're unable to migrate certain services.  

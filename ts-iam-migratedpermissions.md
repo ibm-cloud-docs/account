@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot migrated softlayer permissions, migrated billing permission, migrated support permission
 
@@ -12,18 +12,18 @@ content-type: troubleshoot
 
 ---
 
-{{site.data.keyword.attribute-definition-list}}
+{{site.data.keyword.attribute-definition-list}} 
 
-# How can I manage migrated billing and support case permissions in {{site.data.keyword.Bluemix_notm}}?
+# How can I manage migrated billing and support case permissions in {{site.data.keyword.cloud_notm}}?
 {: #troubleshoot-migrated-permissions}
 {: troubleshoot}
 
 A set of SoftLayer billing and support permissions are now available as migrated permission access groups in {{site.data.keyword.Bluemix}}.
 {: shortdesc}
 
-With the initial migration of users and permissions for managing billing and support cases from your SoftLayer account to your linked {{site.data.keyword.Bluemix_notm}} account, some users might not have these permissions. However, all migrated permission access groups are now assigned the correct IAM access policies, ensuring that all users are assigned the correct access that they had previously.
+With the initial migration of users and permissions for managing billing and support cases from your SoftLayer account to your linked {{site.data.keyword.cloud_notm}} account, some users might not have these permissions. However, all migrated permission access groups are now assigned the correct IAM access policies, ensuring that all users are assigned the correct access that they had previously.
 
-Users don't seem to have the same managing billing and support case permissions in the {{site.data.keyword.Bluemix_notm}} console that they were previously assigned in your SoftLayer account.
+Users don't seem to have the same managing billing and support case permissions in the {{site.data.keyword.cloud_notm}} console that they were previously assigned in your SoftLayer account.
 {: tsSymptoms}
    
 Your migrated permissions access groups might not be assigned the correct access policies when the users were initially migrated.

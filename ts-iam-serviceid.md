@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot manage service id, can't manage service id
 
@@ -22,7 +22,7 @@ content-type: troubleshoot
 In the case that you aren't able to manage a service ID that you created in another user's account, you might need to check your assigned access.
 {: shortdesc}
 
-You don't have access to manage a service ID that you created in an account that you're not the owner of. You received an error message about not having the required access, but you used to be able to manage it. 
+You don't have access to manage a service ID that you created in an account that you're not the owner of. You received an error message about not having the required access, but you used to be able to manage it.
 {: tsSymptoms}
 
 If you create a service ID in an account that you don't own, an administrator policy for that specific service ID is automatically generated for you only if you don't already have access to manage service IDs in the account. For example, if you are already assigned the Administrator role on the IAM Identity service, then a new policy is not automatically generated because you already have access. However, if the account administrator later revokes your access as an administrator on the IAM Identity service, then you can no longer manage the service IDs that you created in the account.

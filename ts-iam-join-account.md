@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: troubleshoot account login, accepting invitation
 subcollection: account
@@ -14,7 +14,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I log in to an account I was recently added to?
+# Why can't I log in to an account I was recently added to? 
 {: #troubleshoot-join-account}
 {: troubleshoot}
 

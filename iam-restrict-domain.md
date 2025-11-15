@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: restrict domain, restrict invitation, account member restrict, invitation, invite users, account restriction
 
@@ -32,7 +32,6 @@ To enable domain restrictions for account invitations, complete the following st
 1. Enter the domains that can access the account. Any domain that isn't added to this list is restricted.
 1. Click **Add**.
 1. Click **Save**.
-
 
 ## Disabling domain restrictions for account invitations
 {: #restrict-domain-disable}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-07-02"
+lastupdated: "2025-11-15"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -123,7 +123,7 @@ The trusted profile that gives your private catalog access to create validation 
 1. Create a unique programmatic name for the target account.
 1. Create a display name for the target account. The display name appears as a target account option for users that are onboarding products.
 1. Enter the profile ID of the trusted profile. If you do not have the profile ID, see [Creating the trusted profile](/docs/account?topic=account-catalog-cross-validation#target-trusted-profile).
-1. Select the checkbox to indicate that you set you service authorization for Schematics and Catalog Management.
+1. Select the checkbox to indicate that you set your service authorization for Schematics and Catalog Management.
 1. Select the checkbox to indicate that you created a trusted profile and added the catalog CRN as a trust relationship.
 1. Click **Add** > **Update**.
 
@@ -159,3 +159,4 @@ To add a target account by using a project ID, complete the following steps:
 
 1. Select the checkbox to indicate that you set up service authorization for Schematics and Catalog Management. If you selected a trusted profile as the authentication method for your target account, you must select the checkbox to indicate that you created a trusted profile and added the catalog CRN as a trust relationship.
 1. Click **Add > Update**.
+ 

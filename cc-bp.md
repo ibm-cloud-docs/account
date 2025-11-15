@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2022, 2024
-lastupdated: "2024-11-06"
+  years: 2022, 2025
+lastupdated: "2025-11-15"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, best practices
 
@@ -12,18 +12,15 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-
 # Best practices for lowering your account's carbon emissions
 {: #account_setup_carbon}
 
-These best practices help you to learn about {{site.data.keyword.cloud_notm}}'s carbon calculator features and options that you can use to track carbon emissions and reduce the carbon footprint of your account. To view your carbon emissions data, go to the [carbon calculator page](/billing/carbon-calculator). If you'd like to know more about the carbon calculator, see [Working with {{site.data.keyword.Bluemix_notm}}'s carbon calculator](/docs/account?topic=account-what-is-cloud-calc).
-
+These best practices help you to learn about {{site.data.keyword.cloud_notm}}'s carbon calculator features and options that you can use to track carbon emissions and reduce the carbon footprint of your account. To view your carbon emissions data, go to the [carbon calculator page](/billing/carbon-calculator). If you'd like to know more about the carbon calculator, see [Working with {{site.data.keyword.cloud_notm}}'s carbon calculator](/docs/account?topic=account-what-is-cloud-calc).
 
 ## Compress your data
 {: #compress_data}
 
 Compression is the conversion of data to a format that requires less storage space as measured in bits. This typically involves looking for patterns in data and eliminating redundancies. Audit video files, images, and archived files to determine if any can be compressed. Using less disc space means using less energy, which lowers emissions.
-
 
 ## Schedule jobs during off times
 {: #low-usage-times}
@@ -31,7 +28,6 @@ Compression is the conversion of data to a format that requires less storage spa
 Utilization reports are reviewed and updated monthly on the 15th of the month. This makes the final monthly data for the month available 7-10 days later in our system. If you do not need a month to day view, you should schedule your data pull for the last week of the month to have the final reviewed report for the month.
 
 It is possible due to the high amount of users pulling data simultaneously, that the page load and refresh times may increase slightly during the last week of the month. If you do not need to have a month to date report, use the download option, this allows you to get the report data downloaded to your system. The report has all of the same data that is used to build the charts, but it is more efficient than gathering the information through the graphical interface.
-
 
 ## Leverage Envizi ESG reporting
 {: #esg_reporting}

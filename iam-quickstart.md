@@ -1,8 +1,8 @@
 ---
 
 copyright:
-   years: 2020, 2023
-lastupdated: "2023-06-01"
+   years: 2020, 2025
+lastupdated: "2025-11-15"
 
 keywords: get started with IAM, getting started with Identity and Access Management tutorial, IAM tutorial, IAM quick start, resource group, access group, access policy, inviting users
 
@@ -20,7 +20,7 @@ completion-time: 10m
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-Get up and running quickly with {{site.data.keyword.Bluemix_notm}} Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.
+Get up and running quickly with {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) by setting up access groups for quick access assignments, inviting users to your account, and managing their access.
 {: shortdesc}
 
 This tutorial is for IAM-enabled resources. For classic infrastructure that doesn't support creating IAM policies for managing access, you can review the [classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra) documentation.
@@ -31,7 +31,7 @@ This tutorial is for IAM-enabled resources. For classic infrastructure that does
 
 If you are new to using IAM, check out the following documentation to learn more about the features, concepts, and components of the access management system:
 
-* [What is IBM Cloud Identity and Access Management?](/docs/account?topic=account-iamoverview) provides a quick overview of what IAM is in {{site.data.keyword.Bluemix_notm}}, the available features, and links to available CLI and API docs.
+* [What is IBM Cloud Identity and Access Management?](/docs/account?topic=account-iamoverview) provides a quick overview of what IAM is in {{site.data.keyword.cloud_notm}}, the available features, and links to available CLI and API docs.
 * [IAM access](/docs/account?topic=account-userroles) gives a more in-depth review of how access management works by using access policies.
 
 ## Create access groups
@@ -138,4 +138,4 @@ You can update existing access by editing the assigned roles for a user.
 ## Next steps
 {: #iam-user-next}
 
-Continue securing your cloud resources by creating context-based restrictions, which work with traditional IAM policies, to provide another layer of protection. Or, learn what else you can do with {{site.data.keyword.Bluemix_notm}} IAM by checking out the [features list](/docs/account?topic=account-iamoverview#features).
+Continue securing your cloud resources by creating context-based restrictions, which work with traditional IAM policies, to provide another layer of protection. Or, learn what else you can do with {{site.data.keyword.cloud_notm}} IAM by checking out the [features list](/docs/account?topic=account-iamoverview#features).

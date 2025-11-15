@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-04-02"
+lastupdated: "2025-11-15"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in
 
@@ -70,7 +70,7 @@ You need to configure [service to service authorization](/docs/account?topic=acc
 
 If a share request has already been accepted by the target account for a previous product, this new share request is automatically accepted.
 
-### Checking the share request status
+### Checking the share request status 
 {: #ent-share-steps-check}
 {: ui}
 

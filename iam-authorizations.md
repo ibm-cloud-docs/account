@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: authorizations, service to service access, access between services, dependent service, source service, target service, assigned access, access policies
 
@@ -19,7 +19,7 @@ subcollection: account
 Use {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) to create or remove an authorization that grants one service access to another service. Use authorization delegation to automatically create access policies that grant access to dependent services.
 {: shortdesc}
 
-Many of the capabilities of IAM are focused on managing and enforcing user and application access to {{site.data.keyword.Bluemix_notm}} resources. However, you might encounter other scenarios in which you need to provide one service with access to a user's resource in another service. This type of access is called an authorization.
+Many of the capabilities of IAM are focused on managing and enforcing user and application access to {{site.data.keyword.cloud_notm}} resources. However, you might encounter other scenarios in which you need to provide one service with access to a user's resource in another service. This type of access is called an authorization.
 
 In an authorization, the source service is the service that is granted access to the target service. The roles that you select define the level of access for the source service. The target service is the service that you are granting permission to be accessed by the source service based on the roles that you assign. A source service can be in the same account where the authorization is created or in another account. The target service is always in the account where the authorization is created. You can view whether the source service is located in the current account or another account by viewing the Source account column for the specific authorization on the [Authorizations](/iam/authorizations) page in the {{site.data.keyword.Bluemix}} console.
 
@@ -37,14 +37,13 @@ The following example explains how the relationship between the source, target, 
 The source service's dependent services might be in the source service's account, which means that they are not visible to you in your account. However, any access policies that are created by the source service for its dependent services are always visible to you. You can tell which authorizations a user created or a source service that is created by checking the Type column for the specific authorization on the Authorizations page.
 {: tip}
 
-
 ## Creating an authorization in the console
 {: #create-auth}
 {: ui}
 
 You must have access to the target service to create an authorization between services. You can grant only the level of access that you have as a user of the target service. For example, if you have viewer access on the target service, you can assign only the viewer role for the authorization.
 
-1. In the {{site.data.keyword.Bluemix_notm}} console, click **Manage** > **Access (IAM)**, and select **Authorizations**.
+1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)**, and select **Authorizations**.
 1. Click **Create**.
 1. Select a source account.
    * If the source that needs access to the target is in this account, select **This account**.

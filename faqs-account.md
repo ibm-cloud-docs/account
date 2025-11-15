@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -21,7 +21,7 @@ content-type: faq
 FAQ for your {{site.data.keyword.cloud}} account might include questions about upgrading an account, reassigning users, resolving account errors, or tagging resources in an account. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
-## How do I create an {{site.data.keyword.Bluemix_notm}} account?
+## How do I create an {{site.data.keyword.cloud_notm}} account?
 {: #create-account}
 {: faq}
 
@@ -34,20 +34,20 @@ Feature codes aren't supported in some countries. For more information, see [per
 {: #authorize-account}
 {: faq}
 
-A credit card is required to create a new {{site.data.keyword.Bluemix_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/account?topic=account-cc-error-messages).
+A credit card is required to create a new {{site.data.keyword.cloud_notm}} account unless you have a subscription or feature code. As part of the authorization process, you might see a temporary hold on your credit card for verification and security when creating an account. This credit card hold is reversed within 24 to 72 hours. In many cases, a credit card isn't accepted because your credit card issuer didn't authorize it. For more information about issues with credit card authorization, see [Credit Card error messages](/docs/account?topic=account-cc-error-messages).
 
 ## How do I get help with issues with creating an account?
 {: #account-error}
 {: faq}
 
-If you are able to log in to an {{site.data.keyword.Bluemix_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
+If you are able to log in to an {{site.data.keyword.cloud_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
-* If you have advanced or premium support, click **Launch AI Assistant** and type `agent` to talk to an {{site.data.keyword.Bluemix_notm}} support representative.
+* If you have advanced or premium support, click **Launch AI Assistant** and type `agent` to talk to an {{site.data.keyword.cloud_notm}} support representative.
 * Create a support case by clicking **Create a case** from the **Need more help?** section.
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
 
-If you can't log in to an {{site.data.keyword.Bluemix_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: external}.
+If you can't log in to an {{site.data.keyword.cloud_notm}} account, [create an account request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create){: external}.
 
 ## Why is a VAT ID required when I create an account?
 {: #vat-id}
@@ -67,7 +67,7 @@ To switch to a different payment method, select Pay with Other and then click Su
 
 Based on your account type, you might manage your credit card outside of the console. To manage your credit card outside of the console, complete the following steps:
 
-1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.Bluemix_notm}}.
+1. Go to [ibm.com](http://www.ibm.com){: external} and log in with the same IBMid and password that you use to log in to {{site.data.keyword.cloud_notm}}.
 1. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar"), and select **Billing**.
 1. Click **Manage payment method**.
 1. Enter your credit card information, and click **Register**.
@@ -96,7 +96,7 @@ Yes, when you upgrade to a Pay-As-You-Go or Subscription account, you can contin
 Yes, the following options are available depending on your account type:
 
 * If you have a feature code from an online course or educational event, you can use it to convert your Lite account to a trial account. Go to the [Account settings](/account/settings){: external} page in the console to apply the code to your account.
-* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
+* To convert your Pay-As-You-Go account to a Subscription account, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
 ## Can I convert my Pay-As-You-Go account to a trial account?
 {: #convertpayg-litetrial}
@@ -114,7 +114,7 @@ When you add a credit card to your trial account, your account is upgraded to a 
 {: #freetrial}
 {: faq}
 
-{{site.data.keyword.Bluemix_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials. Trial accounts expire after 30 days.
+{{site.data.keyword.cloud_notm}} trial accounts are available for faculty and students at accredited academic institutions. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials. Trial accounts expire after 30 days.
 
 ## How can I close my account?
 {: #cancelaccount}
@@ -123,7 +123,7 @@ When you add a credit card to your trial account, your account is upgraded to a 
 
 If there's any way that we can assist you before you decide to close your account, [reach out to us](/unifiedsupport/supportcenter){: external}.
 
-To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items. A support case is required to close a Subscription account for account security and documentation purposes. You can close a Pay-As-You-Go account in the {{site.data.keyword.Bluemix_notm}} console. For steps and more information, see [Closing an account](/docs/account?topic=account-account-close).
+To close a Pay-As-You-Go or Subscription account, you need to cancel all services, devices, and billing items. A support case is required to close a Subscription account for account security and documentation purposes. You can close a Pay-As-You-Go account in the {{site.data.keyword.cloud_notm}} console. For steps and more information, see [Closing an account](/docs/account?topic=account-account-close).
 
 To close a Lite account, go to the [Account settings](/account/settings) page, and click **Close account**. After an account is closed for 30 days, all data is deleted and all services are removed.
 
@@ -189,9 +189,9 @@ To reset your VPN password, complete the following steps:
 {: #forgot-password}
 {: faq}
 
-If you don't remember your password for your IBMid and can't log in to {{site.data.keyword.Bluemix_notm}}, you can reset your password by using our [automated system](https://www.ibm.com/account/reg/us-en/reset-password){: external}.
+If you don't remember your password for your IBMid and can't log in to {{site.data.keyword.cloud_notm}}, you can reset your password by using our [automated system](https://www.ibm.com/account/reg/us-en/reset-password){: external}.
 
-## Can I remove my personal data from {{site.data.keyword.Bluemix_notm}}?
+## Can I remove my personal data from {{site.data.keyword.cloud_notm}}?
 {: #remove-pi}
 {: faq}
 
@@ -207,7 +207,7 @@ Your account might be deactivated for the following reasons:
 * For trial accounts, the trial period ended. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
 * An authorized user closed the account.
 * An account has past due invoices and several contact attempts have been made by {{site.data.keyword.cloud_notm}} Support to make payment arrangements.
-* At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.Bluemix_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. For more information, see [Acceptable Internet use policy for IBM services](https://www.ibm.com/consulting){: external}.
+* At the discretion of {{site.data.keyword.IBM_notm}}, accounts that violate the acceptable usage behavior of the {{site.data.keyword.cloud_notm}} services can be disabled without notice. Some services can be restored if users correct their usage behaviors after they're notified of the offensive action. For more information, see [Acceptable Internet use policy for IBM services](https://www.ibm.com/consulting){: external}.
 
 If you believe that your account was deactivated in error, contact support by calling 1-866-325-0045 and selecting the third option.
 
@@ -221,9 +221,9 @@ To make a payment and reactivate your account, contact support by calling 1-866-
 {: #contactsupport-account}
 {: faq}
 
-From the {{site.data.keyword.Bluemix_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
+From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
-Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.Bluemix_notm}} documentation](/docs/account?topic=account-using-avatar), ask questions of the AI Assistant, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
+Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/account?topic=account-using-avatar), ask questions of the AI Assistant, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
@@ -233,7 +233,7 @@ The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-switcher.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Account selector" caption-side="bottom"}
 
-You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a username indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting). Contact [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
+You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a username indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting). Contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the accounts that you own and any other accounts that are affiliated with your IBMid.
 
@@ -261,23 +261,23 @@ If you have access to more than one account, you can click your account name in 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-switcher.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Account selector displays all accounts to which you have access" caption-side="bottom"}
 
-## Can I move data between {{site.data.keyword.Bluemix_notm}} accounts?
+## Can I move data between {{site.data.keyword.cloud_notm}} accounts?
 {: #move-between-accounts}
 {: faq}
 
-Data can't be directly migrated from one {{site.data.keyword.Bluemix_notm}} account to another. But, you might be able to re-create configurations and add them to another account. Consider the following approaches:
+Data can't be directly migrated from one {{site.data.keyword.cloud_notm}} account to another. But, you might be able to re-create configurations and add them to another account. Consider the following approaches:
 
 * Save your applications and replicate them in different accounts by using GitHub or another code repository.
 * Review the applicable documentation to determine whether your infrastructure services can be backed up and re-created in different accounts.
 * Use manifests and other documented methods to rebuild your applications and services by using documented methods to back up and restore your data.
 
-Users with a Basic, Advanced, or Premium support plan can open a [Support case for assistance with data migration questions.
+Users with a Basic, Advanced, or Premium support plan can open a Support case for assistance with data migration questions.
 
 ## Can I bookmark a console page for a specific account?
 {: #bookmark-page-account}
 {: faq}
 
-You can target URLs for any {{site.data.keyword.Bluemix_notm}} console page to a specific account. If you have multiple accounts, you can bookmark the account-specific URLs to easily access resources in different accounts without having to manually switch between them.
+You can target URLs for any {{site.data.keyword.cloud_notm}} console page to a specific account. If you have multiple accounts, you can bookmark the account-specific URLs to easily access resources in different accounts without having to manually switch between them.
 
 1. Switch to the account that you want to target, and go to the [Account settings](/account/settings) page in the console. In the Account section, find the account ID, such as `a1b2c3d4e5f61234567890fedcba4321`.
 1. Go to the console page that you want to bookmark, and add `?bss_account=<account-id>` to the URL, replacing `<account-id>` with the ID from your account. For example:
@@ -304,7 +304,7 @@ When you change account ownership, the previous owner is removed. The new owner 
 {: faq}
 {: support}
 
-You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile and settings** in the console. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/docs/en/ibmid){: external} is available to help with general ID questions that aren't specific to your {{site.data.keyword.Bluemix_notm}} account.
+You can change your personal information, such as name, email, or phone number, by going to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile and settings** in the console. You can't change your IBMid, but you can create a new one if appropriate. The [IBMid worldwide help desk](https://www.ibm.com/docs/en/ibmid){: external} is available to help with general ID questions that aren't specific to your {{site.data.keyword.cloud_notm}} account.
 
 ## Can I change my account language?
 {: #switch-account-lang}
@@ -313,11 +313,11 @@ You can change your personal information, such as name, email, or phone number, 
 
 The language that is used is based on your web browser settings. To view content in your native language, update your browser's language settings. The language for specific pages must be the same language that is selected for the browser's settings.
 
-## Does {{site.data.keyword.Bluemix_notm}} support batch registration of users?
+## Does {{site.data.keyword.cloud_notm}} support batch registration of users?
 {: #batch-registration}
 {: faq}
 
-When you register users for {{site.data.keyword.Bluemix_notm}}, you must register each user individually. {{site.data.keyword.Bluemix_notm}} doesn't support batch registration of users.
+When you register users for {{site.data.keyword.cloud_notm}}, you must register each user individually. {{site.data.keyword.cloud_notm}} doesn't support batch registration of users.
 
 ## What are tags?
 {: #know-about-tags}
@@ -364,7 +364,7 @@ Yes, tags are visible throughout your account. If your account users have permis
 
 Before you can delete a tag, you must detach it from all resources. The tag might be attached to a resource that you don't have permission to view. The same tag can be attached to several resources by different users in the same billing account. Users don't have the same visibility on all resources on the account. Contact the account owner who can resolve the problem by detaching the tag from the blocking resource.
 
-If you still can't delete it, the tag might be attached to a reclaimed resource. You can use the {{site.data.keyword.Bluemix_notm}} CLI to manage the reclamation process of specific resources. For more information, see [Using resource reclamations](/docs/account?topic=account-resource-reclamation).
+If you still can't delete it, the tag might be attached to a reclaimed resource. You can use the {{site.data.keyword.cloud_notm}} CLI to manage the reclamation process of specific resources. For more information, see [Using resource reclamations](/docs/account?topic=account-resource-reclamation).
 
 When you delete an access management tag from the account, any associated IAM policies are also deleted with it.
 {: note}
@@ -399,7 +399,7 @@ You can view the role that you are assigned on a dashboard by going to **Manage*
 {: #access-dashboard}
 {: faq}
 
-You can't edit the default dashboard directly. However, you can create a duplicate version that you can edit and personalize however you want by clicking the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") > **Edit** in {{site.data.keyword.Bluemix_notm}} console.
+You can't edit the default dashboard directly. However, you can create a duplicate version that you can edit and personali{{site.data.keyword.cloud_notm}}{{site.data.keyword.cloud_notm}} console.
 
 By maintaining the original version of the default dashboard, you can discover the latest widgets and functions, which get built and added over time. This way, you can always bring out the most of your workflow.
 

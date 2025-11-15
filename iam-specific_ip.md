@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-07-18"
+lastupdated: "2025-11-15"
 
 keywords: specific IP addresses, IP addresses, restrict IP access, IP address access, allow IP access
 
@@ -31,7 +31,7 @@ If IP addresses access is [enterprise-managed]{: tag-cyan}, you can restrict acc
 {: #ips_user}
 {: ui}
 
-If you are assigned the following access, you can update the restricted IP addresses for another user:
+If you are assigned to the following access, you can update the restricted IP addresses for another user:
 
 * An IAM policy with the Editor or higher role on the User management service.
 * You are an ancestor in the classic infrastructure hierarchy for the user and you have the Manage users classic infrastructure permission assigned

@@ -3,14 +3,13 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: user state, user status, change user status, update user status
 
 subcollection: account
 
 ---
-
 
 {{site.data.keyword.attribute-definition-list}}
 
@@ -32,7 +31,7 @@ All account users are assigned a status that describes their user state. A user'
 | Active                          | The user accepted the invitation and has the assigned access to work within the account.                                                                      |
 | Disabled classic infrastructure | The account owner or a user with sufficient permissions can set another user as disabled so that the user can no longer access classic infrastructure resources. The user can continue to log in to the console and access platform resources or support cases. |
 | Invalid                   | A user's IAMid is deleted, and they can't access IAM-enabled resources. The user retains VPN access and can still use their classic infrastructure API key, but can't log in to the console. |
-| Pending                         | A state in which a user is invited but hasn't accepted the invitation or joined the account by creating an {{site.data.keyword.Bluemix_notm}} account. |
+| Pending                         | A state in which a user is invited but hasn't accepted the invitation or joined the account by creating an {{site.data.keyword.cloud_notm}} account. |
 | Processing                      | A rarely viewed state in which the user is added to an invite, the system creates the first instance of the user, but the invite hasn't been sent.    |
 | Suspended                       |  The account owner or a user with sufficient permissions can set another user as suspended, which is a temporary alternative to removing a user. Access grants that are associated with the user through policies, access groups, or trusted profiles are not removed. A suspended user can log in to the {{site.data.keyword.cloud_notm}} console, but cannot perform any actions in the account where they are suspended. For CLI access, the user is restricted from both logging in and performing any actions.|
 | VPN-only                        | A user that is created in the account, but is restricted to VPN access only for devices. This type of user doesn't have access to log in to the console.      |

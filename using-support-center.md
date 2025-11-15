@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-10-23"
+lastupdated: "2025-11-15"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help, support agent, speak with agent, connect to agent, live agent, chat with human agent, talk to an agent
 
@@ -21,12 +21,12 @@ If you experience problems with {{site.data.keyword.Bluemix}}, you have several 
 
 If you can't log in to your account, start a chat by going to the [{{site.data.keyword.cloud_notm}} Support](https://www.ibm.com/products/cloud/support){: external} page and clicking **Contact us**. Or you can complete the [Create an Account, Login, or Billing Request form](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create).
 
-As a classic infrastructure user, you might be familiar with support tickets. Tickets are now called cases in {{site.data.keyword.Bluemix_notm}}.
+As a classic infrastructure user, you might be familiar with support tickets. Tickets are now called cases in {{site.data.keyword.cloud_notm}}.
 {: note}
 
-Three different types of support plans are offered. For more information, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+Three different types of support plans are offered. For more information, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 
-{{site.data.keyword.IBM_notm}} periodically sends surveys to {{site.data.keyword.Bluemix_notm}} customers to get feedback on recent experiences with customer support. The survey focuses on the support quality and the overall experience. {{site.data.keyword.IBM_notm}} management reviews the survey results to improve the support experience.
+{{site.data.keyword.IBM_notm}} periodically sends surveys to {{site.data.keyword.cloud_notm}} customers to get feedback on recent experiences with customer support. The survey focuses on the support quality and the overall experience. {{site.data.keyword.IBM_notm}} management reviews the survey results to improve the support experience.
 {: note}
 
 ## Getting support
@@ -34,7 +34,7 @@ Three different types of support plans are offered. For more information, see [B
 
 To access the Support Center, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the {{site.data.keyword.cloud_notm}} console menu bar.
 
-Review your product topics to get a quick overview of the {{site.data.keyword.Bluemix_notm}} documentation that offers common tasks based on what is provisioned on your account. You can search to view topics based on specific products. You can also view and search through Featured FAQs. If you experience problems with {{site.data.keyword.Bluemix}}, create and manage support cases from the Support Center.
+Review your product topics to get a quick overview of the {{site.data.keyword.cloud_notm}} documentation that offers common tasks based on what is provisioned on your account. You can search to view topics based on specific products. You can also view and search through Featured FAQs. If you experience problems with {{site.data.keyword.Bluemix}}, create and manage support cases from the Support Center.
 
 Try asking your question about the issue you're experiencing in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#ask-about-cloud) from the Help menu to get answers to your questions fast. Then, if you still need help, depending on your type of issue and support plan, you can request to chat with a live agent by typing `agent` in the chat.
 {: tip}
@@ -71,17 +71,17 @@ Content that is generated in the AI assistant might include mistakes or be incor
 #### Checking online communities
 {: #online-communities}
 
-Online communities connect you with other users and provide a wide variety of searchable answers for your {{site.data.keyword.Bluemix_notm}} questions. If you don't find an existing answer, ask a new question. The Support Center gives you links to the following communities, in which {{site.data.keyword.Bluemix_notm}} development and support teams participate:
+Online communities connect you with other users and provide a wide variety of searchable answers for your {{site.data.keyword.cloud_notm}} questions. If you don't find an existing answer, ask a new question. The Support Center gives you links to the following communities, in which {{site.data.keyword.cloud_notm}} development and support teams participate:
 * [IBM Cloud Community](https://community.ibm.com/community/user/my-community){: external}
 * IBM Cloud on [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}
-     *  To indicate that a technical question on Stack Overflow is about developing apps with the {{site.data.keyword.Bluemix_notm}} platform and services, add the `ibm-cloud` tag to your question.
+     *  To indicate that a technical question on Stack Overflow is about developing apps with the {{site.data.keyword.cloud_notm}} platform and services, add the `ibm-cloud` tag to your question.
 
 ## Getting support for {{site.data.keyword.Bluemix_dedicated_notm}} or {{site.data.keyword.Bluemix_local_notm}}
 {: #contacting-ibmcloud-support-dedicated-local}
 
-If your account is either {{site.data.keyword.Bluemix_dedicated_notm}} or {{site.data.keyword.Bluemix_local_notm}}, support is provided by the {{site.data.keyword.Bluemix_notm}} support team.
+If your account is either {{site.data.keyword.Bluemix_dedicated_notm}} or {{site.data.keyword.Bluemix_local_notm}}, support is provided by the {{site.data.keyword.cloud_notm}} support team.
 
-* Open a new case by using the [{{site.data.keyword.Bluemix_notm}} Support](/unifiedsupport/supportcenter){: external} page and click **Create a case**. Mention that your account is either **{{site.data.keyword.Bluemix_dedicated_notm}}** or **{{site.data.keyword.Bluemix_local_notm}}** in the Subject and Description of the support case.
+* Open a new case by using the [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external} page and click **Create a case**. Mention that your account is either **{{site.data.keyword.Bluemix_dedicated_notm}}** or **{{site.data.keyword.Bluemix_local_notm}}** in the Subject and Description of the support case.
 * If you don't have an {{site.data.keyword.ibmid}}, contact someone in your organization that does, or work with your {{site.data.keyword.IBM_notm}} representative.
 
 ## Requesting support for resources in the European Union
@@ -95,7 +95,7 @@ You can specify that you want EU support for your account if the following crite
 * Your resources are in the appropriate European data center. For more information, see [Data centers](/docs/overview?topic=overview-locations#data-centers).
 * You select the EU supported case level when you open the case.
 
-{{site.data.keyword.Bluemix_notm}} platform services that are hosted in the Frankfurt location must be supported by a team that is physically located in Europe.
+{{site.data.keyword.cloud_notm}} platform services that are hosted in the Frankfurt location must be supported by a team that is physically located in Europe.
 {: note}
 
 Enabling the EU Support setting for your account applies to all future cases that you open for issues on any service or data center that is hosted in the EU region. However, if you add resources outside of an EU data center or Frankfurt location, issues for those resources are not necessarily handled by a support team in Europe. Any cases that are opened before you enable the EU Supported setting aren't affected.
@@ -105,7 +105,7 @@ Enabling the EU Support setting for your account applies to all future cases tha
 
 Support is provided for problems that are determined to be a defect for services or container images that are generally available (GA) and provided by {{site.data.keyword.IBM_notm}}. The case is addressed based on the severity that you assign. For more information, see [Case severity and initial response times](/docs/account?topic=account-support-case-severity).
 
-You can change your current support plan at any time by contacting a [{{site.data.keyword.Bluemix_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+You can change your current support plan at any time by contacting a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 {: tip}
 
 ## {{site.data.keyword.IBM_notm}} beta service

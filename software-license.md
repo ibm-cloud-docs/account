@@ -2,8 +2,8 @@
 
 
 copyright:
-  years: 2020, 2022
-lastupdated: "2022-02-22"
+  years: 2020, 2025
+lastupdated: "2025-11-15"
 
 keywords: license, entitlement, software, passport advantage, cloud pak, binding a license, PPA, part number
 
@@ -16,19 +16,19 @@ subcollection: account
 # Assigning software licenses to your account
 {: #software-license}
 
-To install software products in {{site.data.keyword.cloud}}, the license for the software must be assigned to your account. You're entitled to install a specific version of the software for a specific period of time, for example, one year. Licenses, which are also referred to as entitlements, are purchased and acquired through {{site.data.keyword.IBM}} Passport Advantage. 
+To install software products in {{site.data.keyword.cloud}}, the license for the software must be assigned to your account. You're entitled to install a specific version of the software for a specific period of time, for example, one year. Licenses, which are also referred to as entitlements, are purchased and acquired through {{site.data.keyword.IBM}} Passport Advantage.
 {: shortdesc}
 
 ## Acquiring a license 
 {: #acquire-license}
 
-In most cases, someone in a procurement or financial role in your organization works with an {{site.data.keyword.cloud_notm}} sales representative to purchase the license through [{{site.data.keyword.IBM_notm}} Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}. A part number is associated with the license for the software product to be used in {{site.data.keyword.cloud_notm}}. The person acquiring the license is not typically the same person who installs the software in the {{site.data.keyword.cloud_notm}} account. After a sales representative acquires the license through the Software Quote Order tool, it must be assigned to each account that requires entitlement for use of the software in {{site.data.keyword.cloud_notm}}. 
+In most cases, someone in a procurement or financial role in your organization works with an {{site.data.keyword.cloud_notm}} sales representative to purchase the license through [{{site.data.keyword.IBM_notm}} Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}. A part number is associated with the license for the software product to be used in {{site.data.keyword.cloud_notm}}. The person acquiring the license is not typically the same person who installs the software in the {{site.data.keyword.cloud_notm}} account. After a sales representative acquires the license through the Software Quote Order tool, it must be assigned to each account that requires entitlement for use of the software in {{site.data.keyword.cloud_notm}}.
 
 ## Assigning licenses to an account
 {: #assign-license}
 {: ui}
 
-When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/account?topic=account-account-services#license-entitlement-management). 
+When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/account?topic=account-account-services#license-entitlement-management).
 
 Complete the following steps to assign a license to an account:
 1. Log in to the {{site.data.keyword.cloud_notm}} console and go to **Manage** > **Account**.
@@ -42,7 +42,7 @@ You can unassign a license from the account. Note, however, any {{site.data.keyw
 {: #assign-license-api}
 {: api}
 
-When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/account?topic=account-account-services#license-entitlement-management). 
+When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/account?topic=account-account-services#license-entitlement-management).
 
 To assign a license to an account, call the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-license-entitlement){: external} as shown in the following example request:
 
@@ -80,5 +80,5 @@ fmt.Println(response)
 {: codeblock}
 {: go}
 
-You can unassign a license from the account. Note, however, any {{site.data.keyword.bplong_notm}} workspaces in which the license is used will be impacted. 
+You can unassign a license from the account. Note, however, any {{site.data.keyword.bplong_notm}} workspaces in which the license is used will be impacted.
 {: important}

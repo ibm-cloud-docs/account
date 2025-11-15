@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-11-06"
+lastupdated: "2025-11-15"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -231,7 +231,7 @@ To manage rules, you must be assigned an IAM policy with the Administrator role 
 ## Services integrated with context-based restrictions
 {: #cbr-adopters}
 
-Specific {{site.data.keyword.Bluemix_notm}} services are integrated with context-based restrictions, and only these services can apply rules to their resources. The way that rules apply to individual services is determined by the service, so be sure to review the documentation for each service to understand how context-based restrictions apply.
+Specific {{site.data.keyword.cloud_notm}} services are integrated with context-based restrictions, and only these services can apply rules to their resources. The way that rules apply to individual services is determined by the service, so be sure to review the documentation for each service to understand how context-based restrictions apply.
 
 You can create context-based restrictions for the following services if you are granted the correct access on the service:
 

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2023
-lastupdated: "2023-06-01"
+  years: 2018, 2025
+lastupdated: "2025-11-15"
 
 keywords: MFA, multifactor authentication, IBMid MFA, two-factor authentication, account MFA, time-based one-time passcode, TOTP, FIDO U2F, U2F, universal 2nd factor authentication, security key
 
@@ -70,7 +70,6 @@ The first time that you log in to your account after MFA settings are updated, y
    {: note}
 
 1. Click **Save**.
-
 
 You can view a list of users in your account that have an MFA requirement that is different from the account's default by going to **Manage > Access (IAM) > Settings > Authentication**. Then, view the **User-specific MFA** section.
 {: tip}

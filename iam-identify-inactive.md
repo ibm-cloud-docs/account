@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: inactive identity, inactive identities, inactive, inactive users, inactive service IDs, inactive trusted profiles, inactive API keys
 
@@ -42,6 +42,7 @@ Before you delete an identity, confirm that they are inactive for at least 30 da
 {: note}
 
 To learn more about the implications of removing or deleting identities in your account, review the following documentation:
+
    - [Removing users from an account](/docs/account?topic=account-iamuserinv&interface=ui#remove-user-acount-ui)
    - [Deleting service IDs by using the console](/docs/account?topic=account-serviceids&interface=ui#delete-group-ui)
    - [Removing trusted profiles](/docs/account?topic=account-trusted-profile-update&interface=ui#remove-tp-console)

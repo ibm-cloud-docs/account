@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Identities in {{site.data.keyword.cloud_notm}}
 {: #identity-overview}

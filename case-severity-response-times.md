@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: case severity, severity, support case severity
 
@@ -23,7 +23,7 @@ The following table lists some common examples of support issues, suggested seve
 Initial response Service Level Objectives (SLO) do not apply to any billing, invoice, or sales-related inquiry or cases.
 {: important}
 
-| Severity | Business impact | Details |
+| Severity        | Business impact | Details         |
 |-----------------|-----------------|-----------------|
 | 4 | Minimal | An inquiry or non-technical request. |
 | 3 | Some | The product, service, or functions are usable, and the issue doesn't represent a significant impact on operations. |

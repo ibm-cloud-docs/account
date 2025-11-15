@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-20"
+lastupdated: "2025-11-15"
 
 keywords: cir, impacting event, services, advanced customer support
 
@@ -25,9 +25,9 @@ After you create a support case, you can view updates about your impacting event
 ## Details about the Customer Incident Report (CIR)
 {: #details-customer-incident-report}
 
-A CIR is provided for broader, enterprise-level issues. They are updates that provide a Root Cause Analysis (RCA) which is the process for determining the underlying cause of a Customer Impacting Event (CIE). More loclized issues that don't affect {{site.data.keyword.Bluemix_notm}} at an enterprise level don't provide an RCA or CIR. The Client Service Delivery team that mitigates the issue still provides updates, but they're not a formal RCA.
+A CIR is provided for broader, enterprise-level issues. They are updates that provide a Root Cause Analysis (RCA) which is the process for determining the underlying cause of a Customer Impacting Event (CIE). More loclized issues that don't affect {{site.data.keyword.cloud_notm}} at an enterprise level don't provide an RCA or CIR. The Client Service Delivery team that mitigates the issue still provides updates, but they're not a formal RCA.
 
-Broader enterprise-wide issues are events that typically impact multiple user environments or regions. Due to the scope and impact of enterprise issues, {{site.data.keyword.Bluemix_notm}} requires a thorough RCA and the CIR is a summary report for the findings of the investigation.
+Broader enterprise-wide issues are events that typically impact multiple user environments or regions. Due to the scope and impact of enterprise issues, {{site.data.keyword.cloud_notm}} requires a thorough RCA and the CIR is a summary report for the findings of the investigation.
 
 RCA investigations are complex and involve program review, feedback from product specialists, multiple inter-related cloud services, and vendor discussions. If the CIR can't be delivered within the Service Level Objective (SLO), an interim CIR is provided within the five business day SLO. For more information about SLO, see [Case severity and initial response times](/docs/account?topic=account-support-case-severity).
 

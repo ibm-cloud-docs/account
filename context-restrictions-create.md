@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-05-20"
+lastupdated: "2025-11-15"
 
 keywords: create network access, network access rule, network zone
 
@@ -12,7 +12,6 @@ subcollection: account
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 
 # Creating context-based restrictions
 {: #context-restrictions-create}

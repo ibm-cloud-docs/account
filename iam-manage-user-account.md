@@ -2,7 +2,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-08-12"
+lastupdated: "2025-11-15"
 
 keywords: invite, invite users, invitation access, vpn-only user, remove user, delete user, IBMid change, credentials, ID, new ID
 
@@ -309,6 +309,7 @@ You can assign access to a group of services. To assign access to **All Identity
 {: terraform}
 
 You can invite users to your {{site.data.keyword.cloud_notm}} account by using Terraform.
+
 1. Create an argument in your `main.tf` file. The following example invites users by using the `ibm_iam_user_invite` resource, where `users` are the list of user email IDs to invite.
    ```terraform
    resource "ibm_iam_user_invite" "invite_user" {
@@ -493,4 +494,4 @@ After the user ensures that the new IBMid exists, complete the following steps t
 2. In the **Details** section, click **Update IBMid**.
 3. Enter the new IBMid, and click **Update**.
 
-The user can now log in to ibm.com with their new IMBid and continue working in the {{site.data.keyword.Bluemix_notm}} account with the access assigned to their previously used IBMid.
+The user can now log in to ibm.com with their new IMBid and continue working in the {{site.data.keyword.cloud_notm}} account with the access assigned to their previously used IBMid.

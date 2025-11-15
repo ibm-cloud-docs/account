@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-01-28"
+lastupdated: "2025-11-15"
 
 keywords: trusted profile, federated users, granting access, update trusted profile, compute resource, IAM trusted profile, trust relationship, establish trust,  trust policy, trusted entity, assume access, apply access, remove trusted profile
 
@@ -98,7 +98,7 @@ You can update a trusted profile from your account by using the CLI. For more in
    ```
    {: codeblock}
 
-1. Check the list of trusted profiles for the current account and select the one that you want to update. The following command shows the list of trusted profiles for your {{site.data.keyword.Bluemix_notm}} account:
+1. Check the list of trusted profiles for the current account and select the one that you want to update. The following command shows the list of trusted profiles for your {{site.data.keyword.cloud_notm}} account:
 
    ```bash
    ibmcloud iam trusted-profiles
@@ -145,7 +145,7 @@ You can assign new access policies to your trusted profile by using the CLI.
    ```
    {: codeblock}
 
-1. Check the list of trusted profiles for the current account and select the one that you want to assign new access policies to. The following command shows the list of trusted profiles for your {{site.data.keyword.Bluemix_notm}} account:
+1. Check the list of trusted profiles for the current account and select the one that you want to assign new access policies to. The following command shows the list of trusted profiles for your {{site.data.keyword.cloud_notm}} account:
 
    ```bash
    ibmcloud iam trusted-profiles
@@ -312,6 +312,7 @@ To update the session duration for federated users, call the following:
 
 When you remove trusted profiles, compute resources and federated users are unlinked from the profile and can no longer apply the trusted profile identity.
 To remove a trusted profile, complete the following steps:
+
 1. To see the full list of trusted profiles in your account, go to **Manage** > **Access (IAM)** in the {{site.data.keyword.cloud_notm}} console, and select **Trusted profiles**.
 2. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg) next to the trusted profile that you want to remove, and select **Remove**.
 
@@ -328,7 +329,7 @@ You can remove a trusted profile from your account by using the CLI. For more in
    ```
    {: codeblock}
    
-1. Check the list of trusted profiles for the current account and select the one that you want to remove. The following command shows the list of trusted profiles for your {{site.data.keyword.Bluemix_notm}} account:
+1. Check the list of trusted profiles for the current account and select the one that you want to remove. The following command shows the list of trusted profiles for your {{site.data.keyword.cloud_notm}} account:
 
    ```bash
    ibmcloud iam trusted-profiles
