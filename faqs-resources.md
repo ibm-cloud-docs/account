@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-11-19"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -38,7 +38,7 @@ Most likely you're dealing with an access issue. You must have at least the View
 
 For more information about how to check your assigned access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
-If you need extra access in the account, contact the account owner that is listed on the [Users](/iam/users) page.
+If you need additional access in the account, contact the account owner that is listed on the [Users](/iam/users) page.
 
 ## Who can create resource groups?
 {: #create-resource}
