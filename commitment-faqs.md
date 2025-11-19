@@ -2,8 +2,8 @@
 
 copyright:
 
- years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2025
+lastupdated: "2025-11-19"
 
 keywords: IBM Cloud billing, commitment model, using commitments, FAQs, enterprise savings plan, savings plan, pay as you go with committed use
 
@@ -21,7 +21,7 @@ content-type: faq
 FAQ for Enterprise Savings Plan might include questions on how to view and manage your commitments, understand billing impacts, and handle account limitations when commitments are active. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 {: #shortdesc}
 
-## What is the difference between Enterprise Savings Plan and a Subscription account?
+## What is the difference between an Enterprise Savings Plan and a Subscription account?
 {: #commitment-subscription}
 {: faq}
 
@@ -49,7 +49,7 @@ To view your Enterprise Savings Plan commitment usage, in the {{site.data.keywor
 
 * Click the tabs to view information on active or upcoming commitments.
 * Use the graph to view what you've spent toward your overall committed amount.
-* View monthly breakdown of the spending history for the commitment in the table. 
+* View the monthly breakdown of the spending history for the commitment in the table. 
 
 ## How do I view my commitment terms?
 {: #view-terms}
@@ -67,7 +67,7 @@ Contact your [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/soluti
 {: #invoice-commit}
 {: faq}
 
-Since you committed to a certain amount for a certain period of time and you didn't reach it, {{site.data.keyword.Bluemix}} have the rights to charge you with the remaining amount.
+Since you committed to a certain amount for a certain period and you didn't reach it, {{site.data.keyword.Bluemix}} have the rights to charge you with the remaining amount.
 
 ## Can I convert my US-based USD Pay-As-You-Go to a Subscription account? If so, what kind of impact does the commitment model have?
 {: #payasyougo-to-subscription-account}
@@ -79,7 +79,7 @@ Yes, you can convert your account from US-based USD Pay-As-You-Go to an Enterpri
 {: #child-commitment}
 {: faq}
 
-Accounts with active commitments can't be imported to the enterprise until their commitment term ends. You will see the following message:
+Accounts with active commitments can't be imported to the enterprise until their commitment term ends. You see the following message:
 
 *Unable to import account*
 *[Account name] can't be imported until the end of the commitment term.*
