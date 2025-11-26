@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-11-17"
+lastupdated: "2025-11-26"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -82,6 +82,9 @@ Advanced support is for environments with a limited number of business-critical 
 
 ## Basic support
 {: #basic-support}
+
+
+
 
 Basic support is provided for non-production environments or workloads that don't require traditional severities and response times.
 
