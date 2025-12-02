@@ -86,6 +86,8 @@ Advanced support is for environments with a limited number of business-critical 
 
 Basic support is provided for non-production environments or workloads that don't require traditional severities and response times.
 
+Starting 5 January 2025 new changes regarding the basic level of support take effect. [Learn more](/docs/overview?topic=overview-whatsnew). 
+
 ## Support for Lite or Trial accounts
 {: #free-support}
 
