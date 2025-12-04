@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-12-02"
+lastupdated: "2025-12-04"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Basic, Advanced, and Premium support plans
+# Support plans
 {: #support-plans}
 
-You can choose a Basic, Advanced, or Premium support plan to customize your {{site.data.keyword.Bluemix}} support experience for your business needs. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center.  If you want to upgrade your support plan, contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+You can upgrade your support plan to customize your {{site.data.keyword.cloud_notm}} experience for your business needs. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center.  If you want to upgrade your support plan, contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 {: shortdesc}
 
 Initial response Service Level Objectives (SLO) do not apply to any billing, invoice, or sales related inquiry or cases.
@@ -78,11 +78,10 @@ Time critical actions, including:
 
 Advanced support is for environments with a limited number of business-critical applications.
 
+
+
 ## Basic support
 {: #basic-support}
-
-
-
 
 Basic support is provided for non-production environments or workloads that don't require traditional severities and response times.
 

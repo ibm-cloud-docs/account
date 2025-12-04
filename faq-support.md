@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-04"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -55,7 +55,7 @@ Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the con
 {: #contactsupport-faq}
 {: faq}
 
-From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The Contact Support section provides the options for getting in touch with a support representative: start a live chat from the AI Assistant, contact by phone, or create a support case. You can start a chat with a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) by typing `agent` in the chat. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
+From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The **Contact Support** section provides the options for getting in touch with a support representative: start a live chat from the AI Assistant, contact by phone, or create a support case. You can start a chat with a live agent from the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) by typing `agent` in the chat. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
 
 Lite and Trial account support is limited to non-technical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/account?topic=account-using-avatar), chat with the AI assistant, use the [IBM Cloud Community](https://community.ibm.com/community/user/my-community), and use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}.
 
@@ -63,7 +63,8 @@ Lite and Trial account support is limited to non-technical support issues that a
 {: #escalate_support}
 {: faq}
 
-As an {{site.data.keyword.cloud_notm}} customer, you can escalate support cases to surface critical issues. To escalate a case, go to the [Support Center](/unifiedsupport/supportcenter){: external} and contact IBM Cloud Support by phone or chat. Provide your existing case number, the business impact of your issue, and a request to escalate the case.
+As an {{site.data.keyword.cloud_notm}} customer , you can escalate support cases to surface critical issues. To escalate a case, go to the [Support Center](/unifiedsupport/supportcenter){: external} and contact IBM Cloud Support by phone or chat. Provide your existing case number, the business impact of your issue, and a request to escalate the case.
+
 
 If you have a Basic support plan, access to support is through cases only. If your support inquiry requires a more immediate response, consider [upgrading to a Premium or Advanced support plan](/docs/account?topic=account-get-supportfaq#support-plan).
 
@@ -95,7 +96,7 @@ To view your support costs, you need an access policy with the Administrator rol
 {: faq}
 {: support}
 
-If you want to upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans).
+If you want to upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Support plans](/docs/account?topic=account-support-plans).
 
 
 ## Why can't I see my support cases? 
