@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-04"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -147,6 +147,7 @@ The following is a list of services that you can add to a network zone as a serv
 | [VPC Infrastructure Services](/docs/vpc?topic=vpc-cbr&interface=cli#network-zone) | IAM-enabled | |
 | [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | `schematics` |
 | [Toolchain](/docs/ContinuousDelivery?topic=ContinuousDelivery-pipeline-subnet-ranges) | IAM-enabled | `toolchain` |
+| Watsonx.data | IAM-enabled | `lakehouse` |
 {: caption="Services that are compatible with service references." caption-side="top"}
 
 In table 1, **All Account Management services** refers to the grouping of Account Management type services that are listed in the table. For example, if there are two Account Management services that are listed in table 1, **All Account Management services** includes those two services. As more Account Management services become available as service references, network zones that specify **All Account Management services** as a service reference automatically include the newly added account management services.
@@ -275,6 +276,7 @@ You can create context-based restrictions for the following services if you are 
 | Security and Compliance Center Workload Protection | IAM-enabled | No | `sysdig-secure` |
 | Tagging Service | Account Management | No | `ghost-tags` |
 | [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-cbr) | IAM-enabled | No | `transit` |
+| Watsonx.data | IAM-enabled | No | `lakehouse` |
 {: caption="Services that are compatible with context-based restrictions." caption-side="top"}
 
 Context-based restrictions that are defined for IAM-enabled services do not apply to platform actions like create or delete. For more information, see [IAM roles and actions](/docs/account?topic=account-iam-service-roles-actions).
