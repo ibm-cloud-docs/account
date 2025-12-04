@@ -24,7 +24,7 @@ You can't create a technical support case.
 You can create cases that are related to access management, accounts, and billing and usage only.
 {: tsSymptoms}
 
-Technical cases can be created only by accounts with Advanced and Premium support. If you have a<support-test Basic or</support-test> Lite account, you must upgrade your account to create a technical support case.
+Technical cases can be created only by accounts with Advanced and Premium support. If you have a Lite account, you must upgrade your account to create a technical support case.
 {: tsCauses}
 
 To update your support plan, go to [{{site.data.keyword.cloud_notm}} support](https://www.ibm.com/products/cloud/support){: external}, and click **Contact us**. From there, you can communicate with an expert through chat, phone, or email.
