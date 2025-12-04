@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2025
-lastupdated: "2025-12-02"
+lastupdated: "2025-12-04"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -78,11 +78,10 @@ Time critical actions, including:
 
 Advanced support is for environments with a limited number of business-critical applications.
 
+
+
 ## Basic support
 {: #basic-support}
-
-
-
 
 Basic support is provided for non-production environments or workloads that don't require traditional severities and response times.
 
