@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-04"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help, support agent, speak with agent, connect to agent, live agent, chat with human agent, talk to an agent
 
@@ -16,7 +16,7 @@ subcollection: account
 # Using the Support Center
 {: #using-avatar}
 
-If you experience problems with {{site.data.keyword.Bluemix}}, you have several options to get help with determining the cause of the problem and finding a solution. If you're logged in, you can go to the directly to the [Support center](/unifiedsupport/supportcenter){: external} to review your product topics and featured FAQs, open or manage a support case, or search community content. Alternatively, you use the [{{site.data.keyword.cloud_notm}} AI assistant](/docs/overview?topic=overview-ask-ai-assistant) to try to get answers to your questions quickly.
+If you experience problems with {{site.data.keyword.Bluemix}}, you have several options to get help with determining the cause of the problem and finding a solution. If you're logged in, you can go directly to the [Support center](/unifiedsupport/supportcenter){: external} to review your product topics and featured FAQs, open or manage a support case, or search community content. Alternatively, you can use the [{{site.data.keyword.cloud_notm}} AI assistant](/docs/overview?topic=overview-ask-ai-assistant) to quickly get answers to your questions.
 {: shortdesc}
 
 If you can't log in to your account, start a chat by going to the [{{site.data.keyword.cloud_notm}} Support](https://www.ibm.com/products/cloud/support){: external} page and clicking **Contact us**. Or you can complete the [Create an Account, Login, or Billing Request form](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create).
@@ -24,7 +24,7 @@ If you can't log in to your account, start a chat by going to the [{{site.data.k
 As a classic infrastructure user, you might be familiar with support tickets. Tickets are now called cases in {{site.data.keyword.cloud_notm}}.
 {: note}
 
-Three different types of support plans are offered. For more information, see [Basic, Advanced, and Premium support plans](/docs/account?topic=account-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+Three different types of support plans are offered. For more information, see [Support plans](/docs/account?topic=account-support-plans). You can change your current support plan at any time by contacting a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 
 {{site.data.keyword.IBM_notm}} periodically sends surveys to {{site.data.keyword.cloud_notm}} customers to get feedback on recent experiences with customer support. The survey focuses on the support quality and the overall experience. {{site.data.keyword.IBM_notm}} management reviews the survey results to improve the support experience.
 {: note}

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-09-09"
+lastupdated: "2025-12-04"
 
 keywords: create case, open case, start case, raise ticket
 
@@ -31,6 +31,7 @@ As a classic infrastructure user, you might be familiar with support tickets. Su
 ## Creating a support case
 {: #creating-support-case}
 {: ui}
+
 By default, account users don't have access to create, update, search, or view cases. The account owner must provide users with access by assigning an Identity and Access Management (IAM) access policy. For more information, see [Managing access to support cases](/docs/account?topic=account-access-cases).
 
 Complete the following steps to create a support case:
