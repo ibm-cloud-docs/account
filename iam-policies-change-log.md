@@ -51,9 +51,9 @@ The `v1` API is not forwards compatible with the `v2` API. You can't add conditi
 {{site.data.keyword.cloud_notm}} now supports the custom role templates API for centralized role management across enterprise accounts. It allows administrators to create, version, validate, and assign custom role templates for consistent access control at scale. The key capabilities include template lifecycle management with committed and draft states, role assignment across accounts and groups, integration with policy templates for streamlined workflows, and enhanced visibility of template-based roles by using the `/v2/roles` API. The new IAM actions help ensure secure template and assignment operations.
 For more information, see:
 
-* [Managing custom roles with templates](/docs/enterprise-management?topic=enterprise-management-access-enterprises&interface=ui#custom-role-templates).
-* [IAM Policy Management API reference](/apidocs/iam-policy-management#list-role-templates).
-* [Role template examples](/apidocs/iam-policy-management#list-role-assignments).
+* [Managing custom roles with templates](/docs/enterprise-management?topic=enterprise-management-access-enterprises&interface=ui#custom-role-templates)
+* [IAM Policy Management API reference](/apidocs/iam-policy-management#list-role-templates)
+* [Role template examples](/apidocs/iam-policy-management#list-role-assignments)
 
 ## 31 August 2023
 {: #31-aug-2023}
