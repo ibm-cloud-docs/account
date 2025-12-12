@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-12"
 
 keywords: SAML federation, federation option, federated IBMid, SAML fed, federated
 
@@ -16,7 +16,7 @@ subcollection: account
 # What is the most suitable federation option for you?
 {: #federation-option-for-you}
 
-In the past, {{site.data.keyword.cloud_notm}} supported integration with customer's user directories by using IBMid SAML federation. In May 2020, {{site.data.keyword.cloud_notm}} introduced an alternative method for clients to federate identities with their {{site.data.keyword.cloud_notm}} account.
+In the past, {{site.data.keyword.cloud_notm}} supported integration with customer's user directories by using IBMid SAML federation. In May 2020, {{site.data.keyword.cloud_notm}} introduced an alternative method for clients to federate identities with their {{site.data.keyword.cloud_notm}} account.idp>{{site.data.keyword.cloud_notm}} supports integration with customer's user directories by using IBMid SAML federation, the {{site.data.keyword.cloud_notm}} SAML service provider, or your own instance of {{site.data.keyword.appid_full_notm}}.
 
 By default, when you create an account in {{site.data.keyword.cloud_notm}} you use an IBMid for user identity. IBMid is the ID as a Service (IDaaS) from {{site.data.keyword.IBM_notm}} used to access {{site.data.keyword.IBM_notm}} web-based services, including {{site.data.keyword.cloud_notm}} resources. The IBMid is based on your company's email address and a password that is managed by IBMid. IBMid allows you to federate to your own corporate user directory or a third-party Identity Provider (IdP) service that you might already use, such as Okta.
 
@@ -87,6 +87,7 @@ Using a single {{site.data.keyword.cloud_notm}} account
 :   A customer is using a single {{site.data.keyword.cloud_notm}} account and no other IBM SaaS offerings.
 Since the customer is not using any other {{site.data.keyword.IBM_notm}} SaaS offering or any other {{site.data.keyword.cloud_notm}} account, they have no advantage in the federation scope capabilities or cross-account capabilities of IBMid. The number of users and logins are low, so the {{site.data.keyword.appid_full_notm}} option doesn't incur costs for this account. The customer decides on {{site.data.keyword.appid_full_notm}} as the federation option.
 
+
 Using {{site.data.keyword.cloud_notm}} and other {{site.data.keyword.IBM_notm}} SaaS offerings
 :   A customer is using {{site.data.keyword.cloud_notm}} and other IBM SaaS offerings.
 {{site.data.keyword.IBM_notm}} has a long-lasting and strong relationship with many customers. Those customers typically consume multiple {{site.data.keyword.IBM_notm}} SaaS offerings, which require all users to use IBMid user accounts to work with those {{site.data.keyword.IBM_notm}} SaaS offerings. In that case, all customer employees would have an advantage in using IBMid federation instead of federation based on {{site.data.keyword.appid_full_notm}}. The IBMid federation gives all employees the ability to use {{site.data.keyword.IBM_notm}} SaaS offerings and the {{site.data.keyword.cloud_notm}} console by using your Identity Provider's password management and validation.
@@ -100,11 +101,10 @@ The following links help you implement the federation that you choose:
 :   The publicly available IBMid federation guide gives you an overview about the steps that are required to federate your Identity Provider and whom to contact to get the federation implemented. Be aware that you need an "IBM Sponsor" (for example, an {{site.data.keyword.IBM_notm}} employee that works as main contact between you and the IBMid team).
 
 [{{site.data.keyword.cloud_notm}} Self-Service Federation for External Identity Providers](/docs/account?topic=account-ibm-idp-integration).
-:   Documentation for the {{site.data.keyword.cloud_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}}. 
+:   Documentation for the {{site.data.keyword.cloud_notm}} IAM feature to federate with an Identity Provider through SAML using {{site.data.keyword.appid_full_notm}}.
 
 [Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration)
-:   Follow the steps necessary to integrate an {{site.data.keyword.appid_full_notm}} service instance with {{site.data.keyword.cloud_notm}} IAM so that your users can use your {{site.data.keyword.cloud_notm}} account without creating IBMids. Review the section Setting IAM-specific attributes in {{site.data.keyword.appid_short}} tokens to make sure that your users are correctly onboarded and displayed inside your {{site.data.keyword.cloud_notm}} account.[Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration)
-:   Follow the steps necessary to integrate your IdP with the {{site.data.keyword.cloud_notm}} SAML SP so that your users can use your {{site.data.keyword.cloud_notm}} account without creating IBMids. Review the section [Mapping IdP assertions to IAM claims](/docs/account?topic=account-ibm-idp-integration#assertion-mapping) to make sure that your users are correctly onboarded and displayed inside your {{site.data.keyword.cloud_notm}} account.
+:   Follow the steps necessary to integrate your IdP with the {{site.data.keyword.cloud_notm}} SAML SP so that your users can use your {{site.data.keyword.Bluemix_notm}} account without creating IBMids. Review the section [Mapping IdP assertions to IAM claims](/docs/account?topic=account-ibm-idp-integration#assertion-mapping) to make sure that your users are correctly onboarded and displayed inside your {{site.data.keyword.Bluemix_notm}} account.
 
 [Control access to cloud resources](https://developer.ibm.com/articles/identity-and-access-management-what-developers-need-to-know/){: external}.
 :   This tutorial describes how to use Dynamic Rules in Access Groups so that you automate permission assignments based on attributes that your Identity Provider is sending to {{site.data.keyword.cloud_notm}} via SAML. The tutorial itself was written for IBMid federation, but the same concept and steps also work with {{site.data.keyword.appid_full_notm}} based federation.
