@@ -3,7 +3,7 @@
 copyright:
 
   years:  2023, 2024
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-12"
 
 keywords: change log for access-management polices, updates to access-management polices, IAM Policy Management API change log, policies change log, access management change log
 
@@ -45,11 +45,20 @@ The following table shows the behavior changes for each version.
 The `v1` API is not forwards compatible with the `v2` API. You can't add conditions to a policy that is created with the `v1` API. To add conditions, you must delete the `v1` policy and replace it with a new access policy that includes conditions.
 {: important}
 
+## 01 December 2025
+{: #01-dec-2025}
+
+{{site.data.keyword.cloud_notm}} now supports the custom role templates API for centralized role management across enterprise accounts. It allows administrators to create, version, validate, and assign custom role templates for consistent access control at scale. The key capabilities include template lifecycle management with committed and draft states, role assignment across accounts and groups, integration with policy templates for streamlined workflows, and enhanced visibility of template-based roles by using the `/v2/roles` API. The new IAM actions help ensure secure template and assignment operations.
+For more information, see:
+
+* [Managing custom roles with templates](/docs/enterprise-management?topic=enterprise-management-access-enterprises&interface=ui#custom-role-templates)
+* [IAM Policy Management API reference](/apidocs/iam-policy-management#list-role-templates)
+* [Role template examples](/apidocs/iam-policy-management#list-role-assignments)
+
 ## 31 August 2023
 {: #31-aug-2023}
 
 This change log introduces new capabilities for the `v2` IAM Policy Management API that aren't compatible with `v1`. This new release adds the ability to create IAM policy templates in enterprise accounts, which you can reference to assign access in access group templates and trusted profile templates. For more information, see [Creating enterprise-managed policy templates](/docs/enterprise-management?topic=enterprise-management-policy-template-create&interface=api) and [How enterprise-managed IAM works](/docs/enterprise-management?topic=enterprise-management-access-enterprises#how-enterprise-iam).
-
 
 ## 24 January 2023
 {: #24-jan-2023}
