@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2025
-lastupdated: "2025-11-05"
+lastupdated: "2025-12-15"
 
 keywords: access groups, access group, create group, assign access to group, administrator, administrator role
 
@@ -86,7 +86,7 @@ A unique name is required to differentiate access groups in the account.
 You can programmatically create access groups by calling the [{{site.data.keyword.iamlong}} (IAM) Access Groups API](/apidocs/iam-access-groups#create-access-group){: external} as shown in the following sample request. The example creates an access group for managers in the account:
 
 ```bash
-curl -X POST -H "Authorization: {iam_token}" \
+curl -X POST -H "Authorization: Bearer {iam_token}" \
 -H "Accept: application/json" \
 -H "Content-Type: application/json" \
 -d '{ "name": "Managers", "description": "Group for managers" }' \
