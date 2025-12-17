@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-11-07"
+lastupdated: "2025-12-17"
 
 keywords: VRF, virtual routing and forwarding, service endpoint, private network, account networking, direct network, services that support service endpoints, service endpoint support, using service endpoints
 
@@ -152,12 +152,11 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.registryshort_notm}} | {{site.data.keyword.containershort}} clusters with [private service endpoints only](/docs/containers?topic=containers-plan_basics#workeruser-master) pull container images by using the [{{site.data.keyword.registryshort_notm}}](/docs/Registry?topic=Registry-registry_overview) service endpoint. |
 | {{site.data.keyword.contdelivery_short}} | [Regions and endpoints](/docs/ContinuousDelivery?topic=ContinuousDelivery-regions#service-endpoints) |
 | {{site.data.keyword.databases-for-elasticsearch}} | [{{site.data.keyword.databases-for-elasticsearch}} service endpoints integration](/docs/cloud-databases?topic=cloud-databases-service-endpoints&interface=ui) |
-| {{site.data.keyword.databases-for-etcd}} | [{{site.data.keyword.databases-for-etcd}} service endpoints integration](/docs/databases-for-etcd?topic=databases-for-etcd-service-endpoints) |
 | {{site.data.keyword.databases-for-mongodb}} | [{{site.data.keyword.databases-for-mongodb}} service endpoints integration](/docs/databases-for-mongodb?topic=databases-for-mongodb-service-endpoints) |
 | {{site.data.keyword.databases-for-postgresql}} | [{{site.data.keyword.databases-for-postgresql}} service endpoints integration](/docs/databases-for-postgresql?topic=databases-for-postgresql-service-endpoints)|
 | {{site.data.keyword.databases-for-redis}} | [{{site.data.keyword.databases-for-redis}} service endpoints integration](/docs/databases-for-redis?topic=databases-for-redis-service-endpoints&interface=ui#enabling-service-endpoints)|
-| {{site.data.keyword.Db2_on_Cloud_short}} | [Connectivity options](/docs/db2-saas?topic=db2-saas-connect_options) |
-| {{site.data.keyword.dashdbshort}} | [Connecting to a private endpoint: {{site.data.keyword.cloud_notm}} service endpoint](/docs/Db2whc?topic=Db2whc-connect_options#priv_endpt) |
+| {{site.data.keyword.Db2_on_Cloud_short}} | [Connectivity options](/docs/db2-saas?topic=db2-saas-connectivity-options) |
+| {{site.data.keyword.dashdbshort}} | [Connecting to a private endpoint: {{site.data.keyword.cloud_notm}} service endpoint](/docs/db2wh-saas?topic=db2wh-saas-connect_options#priv_endpt) |
 | {{site.data.keyword.en_short}} | [Regions and endpoints](/docs/event-notifications?topic=event-notifications-en-regions-endpoints) |
 |{{site.data.keyword.messagehub}} | [Restricting network access using the Enterprise plan](/docs/EventStreams?topic=EventStreams-restrict_access) |
 | {{site.data.keyword.hscrypto}} | [{{site.data.keyword.hscrypto}} service endpoints integration](/docs/services/hs-crypto?hs-crypto-private-endpoints=hs-crypto-private-endpoints)|
@@ -175,7 +174,6 @@ To find the endpoints for each service, refer to the Endpoint URLs section of th
 | {{site.data.keyword.conversationshort}} | [Securing your assistant](/docs/watson-assistant?topic=watson-assistant-admin-securing#security-private-endpoints) with {{site.data.keyword.conversationshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.discoveryshort}} | [Public and private network endpoints](/docs/watson?topic=watson-public-private-endpoints) with {{site.data.keyword.discoveryshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.knowledgestudioshort}} | [Public and private network endpoints](/docs/watson?topic=watson-public-private-endpoints) with {{site.data.keyword.knowledgestudioshort}} |
-| {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.languagetranslatorshort}} | [Public and private network endpoints](/docs/language-translator?topic=language-translator-public-private-endpoints) with {{site.data.keyword.languagetranslatorshort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.nlushort}} | [Public and private network endpoints](/docs/watson?topic=watson-public-private-endpoints) with {{site.data.keyword.nlushort}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.pm_short}} | [Public and private network endpoints](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/ml-service-endpoint.html?audience=wdp&context=cpdaas){: external} with {{site.data.keyword.pm_short}} |
 | {{site.data.keyword.ibmwatson_notm}} {{site.data.keyword.speechtotextshort}} | [Public and private network endpoints](/docs/speech-to-text?topic=speech-to-text-public-private-endpoints) with {{site.data.keyword.speechtotextshort}} |
