@@ -2591,7 +2591,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description | Actions |
 | ----- | :----- | :----- |
-| Compliance Management | Allows Security and Compliance Center Workload Protection to access your cluster to setup, run, and fetch compliance results. |  |
+| Compliance Management | Allows Security and Compliance Center to access your cluster to setup, run, and fetch compliance results. |  |
 | Key Manager | As an key manager, the service can perform platform actions required to manage resource keys, such as creating a new resource key for a resource instance. | `resource-controller.key.manager_create`, `resource-controller.key.manager_delete`, `resource-controller.key.manager_update`, `resource-controller.key.manager_retrieve` |
 | Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | `containers-kubernetes.kube.manage`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
 | Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. | `containers-kubernetes.kube.read`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
@@ -18109,7 +18109,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `toolchain.instance.create-bindings` | Add a tool integration to a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.delete-bindings` | Remove a tool integration from a toolchain within a resource group. | Administrator, Editor |
 | `toolchain.instance.list-bindings` | View the tool integrations that are contained in a toolchain within a resource group. | Administrator, Editor, Viewer |
-| `toolchain.config.read` | Configuration Information Point API access for Security and Compliance Center Workload Protection Integration (SCC) | Service Configuration Reader |
+| `toolchain.config.read` | Configuration Information Point API access for Security and Compliance Center Integration (SCC) | Service Configuration Reader |
 | `toolchain.pipeline-run.create` | Run the selected pipeline. | Administrator, Editor, Operator, PipelineRunner |
 | `toolchain.event.send` | Send a custom toolchain event | Administrator, Editor, EventSender, Operator |
 | `global-search-tagging.resource.read` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
