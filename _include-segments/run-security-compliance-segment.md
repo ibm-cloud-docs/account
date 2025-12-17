@@ -1,8 +1,13 @@
-When you claim profiles and controls, you must evaluate the resources that were created during validation to ensure compliance. To run a scan, complete the following steps:
+To add controls, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) **> Security and Compliance** to access {{site.data.keyword.compliance_short}}.
-2. In the navigation, click **Profile**.
-3. Click the **Overflow** menu in the row of the profile that you want to evaluate and select **Run scan**.
-4. Click **Run scan**.
+### Adding compliance controls
+{: #add-controls}
+1. On the **Manage compliance** page, select **Add controls**.
+1. Select a {{site.data.keyword.sysdigsecure_short}} instance, then a policy.
 
-After your scan completes, you can return to your private catalog to continue the onboarding process.
+    If you haven't provisioned a {{site.data.keyword.sysdigsecure_short}} instance yet, you must [set up one](/docs/workload-protection?topic=workload-protection-provision&interface=ui) from the {{site.data.keyword.cloud_notm}} catalog and [enable Cloud Security Posture Management (CSPM)](/docs/workload-protection?topic=workload-protection-cspm-implement&interface=ui) for your {{site.data.keyword.cloud_notm}} account. Then, complete the steps to [integrate with either an existing {{site.data.keyword.sysdigsecure_short}} instance or a new instance](/docs/workload-protection?topic=workload-protection-cspm-implement&interface=ui).
+    {: important}
+
+1. Select whether you want to add the entire policy or only a subset of controls.
+1. If you select to add an entire policy, continue to the next step. If you select to add a subset of controls, select the controls that you want to add.
+1. Click **Add**.

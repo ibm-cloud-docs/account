@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-17"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -311,42 +311,36 @@ You can add profiles and controls to your software to prove that it meets securi
 
 Only profiles and controls that are supported by the {{site.data.keyword.compliance_short}} and validated by {{site.data.keyword.compliance_short}} scans appear in the catalog.
 
-### Run a Security and Compliance Center scan
-{: #catalog-run-scc-scans}
+### Add controls
+{: #add-controls}
 {: ui}
 
-When you claim profiles and controls, you must evaluate the resources that were created during validation to ensure compliance. To run a scan, complete the following steps:
+To add controls, complete the following steps:
 
-1. In the {{site.data.keyword.cloud_notm}} console, click the **Menu** icon ![Menu icon](../icons/icon_hamburger.svg) **> Security and Compliance** to access {{site.data.keyword.compliance_short}}.
-2. In the navigation, click **Profile**.
-3. Click the **Overflow** menu in the row of the profile that you want to evaluate and select **Run scan**.
-3. Click **Run scan**.
+1. On the Manage compliance page, select **Add controls**.
+1. Select a {{site.data.keyword.sysdigsecure_short}} instance, then a policy.
 
-After your scan completes, you can return to your private catalog to continue the onboarding process.
+    If you haven't provisioned a {{site.data.keyword.sysdigsecure_short}} instance yet, you must [set up one](/docs/workload-protection?topic=workload-protection-provision&interface=ui) from the {{site.data.keyword.cloud_notm}} catalog and [enable Cloud Security Posture Management (CSPM)](/docs/workload-protection?topic=workload-protection-cspm-implement&interface=ui) for your {{site.data.keyword.cloud_notm}} account. Then, complete the steps to [integrate with either an existing {{site.data.keyword.sysdigsecure_short}} instance or a new instance](/docs/workload-protection?topic=workload-protection-cspm-implement&interface=ui).
+    {: important}
 
-### Adding compliance controls
-{: #catalog-add-controls}
-{: ui}
-
-Add the profiles and controls that you want to claim.
-
-1. In the Manage compliance section of your product, select **Add claims**.
-1. Select the profile that you want to add.
-1. Choose to add the entire profile or a subset of controls.
-1. If you choose an entire profile, continue to the next step. If you choose to add a subset of controls, select the controls that you want to add.
+1. Select whether you want to add the entire policy or only a subset of controls.
+1. If you select to add an entire policy, continue to the next step. If you select to add a subset of controls, select the controls that you want to add.
 1. Click **Add**.
 
-### Applying {{site.data.keyword.compliance_short}} scans
-{: #catalog-add-scc-scans}
+### Add inventory results from {{site.data.keyword.sysdigsecure_short}}
+{: #add-inventory-from-wp}
 {: ui}
 
-Add the scans that you previously ran in the {{site.data.keyword.compliance_short}}. {{site.data.keyword.compliance_short}} scans determine adherence to regulatory controls. For more information, see [Running a scan on demand](/docs/security-compliance?topic=security-compliance-attachments#scan-ondemand).
+You can add inventory results from {{site.data.keyword.sysdigsecure_short}} so that users can see the claimed compliance when they evaluate your product in the catalog.
 
-1. Click **Add scan**.
-1. Select the profile that you used for the evaluation.
-1. Select the {{site.data.keyword.compliance_short}} scan.
-1. Click **Apply scan**.
-1. Click **Next**.
+In {{site.data.keyword.sysdigsecure_short}}, your inventory is updated once every day. You must deploy your resources and wait for the inventory to be updated before you add the inventory to your catalog listing. For more information, go to [Inventory](/docs/workload-protection?topic=workload-protection-inventory).
+{: important}
+
+To add inventory results, complete the following steps:
+
+1. On the Manage compliance page, click **Add results**.
+1. Select the {{site.data.keyword.sysdigsecure_short}} instance that you provisioned previously.
+1. Click **Apply** to apply the latest inventory results.
 
 ## Review requirements
 {: #catalog-manage-review-reqs}

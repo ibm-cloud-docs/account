@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-11-25"
+lastupdated: "2025-12-17"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -98,7 +98,7 @@ The following table shows the services that have emissions data and the time fra
 | {{site.data.keyword.satelliteshort}}                    | Q4 2023 |
 | {{site.data.keyword.secrets-manager_short}}             | Q3 2023 |
 | {{site.data.keyword.compliance_short}}                  | Q4 2023 |
-| Security and Compliance Center Workload Protection       | Q4 2023 |
+| {{site.data.keyword.sysdigsecure_full_notm}}             | Q4 2023 |
 | {{site.data.keyword.tg_short}}                          |  Q1 2024 |
 | VMware Solutions                                        | Q3 2023 |
 | {{site.data.keyword.vpn_vpc_short}}                     | Q2 2023 |
