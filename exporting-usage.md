@@ -250,7 +250,7 @@ The following table is version 1.3 and the most recent CSV version. You get this
 
 | CSV Header       | JSON Report Fields                                          | Description |
 |---------------------|-------------------------------------------------------------|-------------|
-| Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription. |
+| Subscription ID | `subscription.subscriptions.subscription_id`                | The ID of the subscription |
 | CA                  | `subscription.subscriptions.charge_agreement_number`        | The charge agreement number of the subscription |
 | Type                | `subscription.subscriptions.type`                           | Type of subscription |
 | Subscription Amount | `subscription.subscriptions.subscription_amount`            | The credits are available in the subscription for the month |
