@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-17"
 
 keywords: software onboarding, controls, requirements, security, compliance, partners
 
@@ -16,10 +16,7 @@ subcollection: account
 # Adding compliance details
 {: #catalog-format-controls}
 
-During the onboarding process, controls that are in your readme file, formatted correctly, and supported by Security and Compliance Center appear in the controls table in your private catalog. You can click **Add controls** to add additional controls to your version.  After you share your product or publish to your account, users can view your controls on the About page for your product.
-
-If you want to include custom controls with your product, see [Building custom profiles](/docs/security-compliance?topic=security-compliance-build-custom-profiles&interface=ui).
-{: note}
+During the onboarding process, controls that are in your readme file, formatted correctly, and supported by {{site.data.keyword.sysdigsecure_full}} appear in the controls table in your private catalog. You can click **Add controls** to add additional controls to your version. After you publish your product, users can view your controls on the About page for your product.
 
 ## Formatting controls in your readme file
 {: #catalog-control-format}
@@ -50,30 +47,39 @@ For examples of how you can format your controls in your readme file, see the fo
 ```
 {: codeblock}
 
-## Managing compliance information for your product
+## Managing compliance for your product
 {: #managing-compliance}
 
-After you add your controls, you must run a Code Risk Analyzer scan and add a Security and Compliance Center scan.
+You can add controls to your software to prove that it meets security and compliance requirements. To claim compliance, you must add inventory results from {{site.data.keyword.sysdigsecure_short}}. Only controls that are supported by {{site.data.keyword.sysdigsecure_short}} appear in the catalog. You can add controls from policies and import controls from module references.
 
-You must validate your version before you can run a Code Risk Analyzer scan or add a Security and Compliance Center scan.
+You must validate your product version before you can add inventory results from {{site.data.keyword.sysdigsecure_short}}.
 {: important}
 
-### Running Code Risk Analyzer scan
-{: #catalog-cra-scan}
+### Adding controls
+{: #add-controls-sw}
 
-Scan your source code with Code Risk Analyzer to identify any security vulnerabilities that you need to address.
+To add controls, complete the following steps:
 
-1. Click **Run scan**.
-2. Wait for scan to finish.
+1. On the Manage compliance page, select **Add controls**.
+1. Select a {{site.data.keyword.sysdigsecure_short}} instance, then a policy.
 
-### Adding a {{site.data.keyword.compliance_short}} scan
-{: #submit-scc-scan}
+    If you haven't provisioned a {{site.data.keyword.sysdigsecure_short}} instance yet, you must [set up one](/docs/workload-protection?topic=workload-protection-provision&interface=ui) from the {{site.data.keyword.cloud_notm}} catalog and [enable Cloud Security Posture Management (CSPM)](/docs/workload-protection?topic=workload-protection-cspm-implement&interface=ui) for your {{site.data.keyword.cloud_notm}} account. Then, complete the steps to [integrate with either an existing {{site.data.keyword.sysdigsecure_short}} instance or a new instance](/docs/workload-protection?topic=workload-protection-cspm-implement&interface=ui).
+    {: important}
 
-To include controls with your product, you must add scans that you previously ran in the Security and Compliance Center. Security and Compliance Center scans determine adherence to regulatory controls. For more information, see [Running a scan on demand](/docs/security-compliance?topic=security-compliance-attachments#scan-ondemand).
+1. Select whether you want to add the entire policy or only a subset of controls.
+1. If you select to add an entire policy, continue to the next step. If you select to add a subset of controls, select the controls that you want to add.
+1. Click **Add**.
 
-1. On the Manage compliance page go to **Add Security and Compliance Center scan** and select a profile that you previously scanned.
-1. Select a Security and Compliance Center scan.
-   If you don't see any scans, you need to run a scan in Security and Compliance Center. For more information, see [Running a scan on demand](/docs/security-compliance?topic=security-compliance-attachments#scan-ondemand)..
-1. Click **Add scan**.
+### Adding inventory results from {{site.data.keyword.sysdigsecure_short}}
+{: #add-inventory-results}
 
-These results are displayed on your About page for your product as evidence that the controls that you listed for your product are validated as compliant.
+You can add inventory results from {{site.data.keyword.sysdigsecure_short}} so that users can see the claimed compliance when they evaluate your product in the catalog.
+
+In {{site.data.keyword.sysdigsecure_short}}, your inventory is updated once every day. You must deploy your resources and wait for the inventory to be updated before you add the inventory to your catalog listing. For more information, go to [Inventory](/docs/workload-protection?topic=workload-protection-inventory).
+{: important}
+
+To add inventory results, complete the following steps:
+
+1. On the Manage compliance page, click **Add results**.
+1. Select the {{site.data.keyword.sysdigsecure_short}} instance that you provisioned previously.
+1. Click **Apply** to apply the latest inventory results.

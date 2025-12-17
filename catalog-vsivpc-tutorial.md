@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2025
-lastupdated: "2025-09-02"
+lastupdated: "2025-12-17"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -128,18 +128,21 @@ Validating your virtual server image involves running a test deployment of your 
 
 {{_include-segments/manage-compliance-segment.md}}
 
-### Run a Security and Compliance Center scan
-{: #run-scc-scans}
+### Add controls
+{: #add-controls}
+{: ui}
 
 {{_include-segments/run-security-compliance-segment.md}}
 
-### Adding compliance controls
-{: #add-controls}
+### Add inventory results from {{site.data.keyword.sysdigsecure_short}}
+{: #add-inventory-from-wp}
+{: ui}
+
+You can add inventory results from {{site.data.keyword.sysdigsecure_short}} so that users can see the claimed compliance when they evaluate your product in the catalog.
 
 {{_include-segments/add-compliance-control-segment.md}}
 
-### Applying {{site.data.keyword.compliance_short}} scans
-{: #add-scc-scans}
+To add inventory results, complete the following steps:
 
 {{_include-segments/apply-scans-segment.md}}
 

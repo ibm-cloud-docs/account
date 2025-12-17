@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-11-15"
+lastupdated: "2025-12-17"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account
 
@@ -59,4 +59,4 @@ Save the account ID for the next steps in creating the authorization.
 1. Select **Viewer** for platform access.
 1. Click **Authorize** to finalize the authorization.
 
-Now, the Schematics service in the target account has Viewer access to the catalog in the account that contains your product. This allows Schematics to fetch the source URL from your product's version. Next, you are ready to give your catalog permissions to create the Schematics workspace in the target account by [Setting up a target account for validation](/docs/account?topic=account-catalog-cross-validation&interface=ui). Then, you can add the target account to your catalog for validation and security and compliance center scans.
+Now, the Schematics service in the target account has Viewer access to the catalog in the account that contains your product. This allows Schematics to fetch the source URL from your product's version. Next, you are ready to give your catalog permissions to create the Schematics workspace in the target account by [Setting up a target account for validation](/docs/account?topic=account-catalog-cross-validation&interface=ui). Then, you can add the target account to your catalog for validation and Security and Compliance Center Workload Protection scans.

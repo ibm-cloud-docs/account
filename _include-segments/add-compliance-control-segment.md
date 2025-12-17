@@ -1,7 +1,2 @@
-Add the profiles and controls that you want to claim.
-
-1. In the Manage compliance section of your product, select **Add claims**.
-1. Select the profile that you want to add.
-1. Choose to add the entire profile or a subset of controls.
-1. If you choose an entire profile, continue to the next step. If you choose to add a subset of controls, select the controls that you want to add.
-1. Click **Add**.
+In {{site.data.keyword.sysdigsecure_short}}, your inventory is updated once every day. You must deploy your resources and wait for the inventory to be updated before you add the inventory to your catalog listing. For more information, go to [Inventory](/docs/workload-protection?topic=workload-protection-inventory).
+{: important}
