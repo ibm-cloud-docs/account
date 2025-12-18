@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2025
-lastupdated: "2025-12-17"
+lastupdated: "2025-12-18"
 
 keywords: apptio, cost benefit analysis
 
@@ -861,7 +861,7 @@ Regular account CSV reports are not real time and can be incomplete. Complete CS
 You can view other versions of the CSV if you have earlier instances reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
 - January 2026 to present is [version 1.4.1](#instances-CSV-version-1-4-1)
-- May 2025 to present is [version 1.4](#instances-CSV-version-1-4)
+- May 2025 to December 2025 [version 1.4](#instances-CSV-version-1-4)
 - February 2025 to April 2025 is [version 1.3](#instances-CSV-version-1-3)
 - June 2024 to January 2025 is [version 1.2](#instances-CSV-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#instances-csv-version-1-1)
@@ -923,7 +923,7 @@ The following table is version 1.4.1 and the most recent CSV version. You get th
 | Created At  | `resources.created_at` | Created at timestamp of the instance. |
 | Deleted At  | `resources.deleted_at` | Deleted at timestamp of the instance. |
 | Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
-| Profile  | `resources.profile` | server configuration of the given instance  |
+| Profile  | `resources.profile` | Server configuration of the instance.  |
 | Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
 {: class="simple-tab-table"}
 {: caption="Account instance CSV header titles and JSON report fields for account instance usage" caption-side="bottom"}
