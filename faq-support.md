@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-12-04"
+  years: 2019, 2026
+lastupdated: "2026-01-05"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -48,8 +48,10 @@ Before you open a support case, explore the following resources:
 {: #open-support-case}
 {: faq}
 
-Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the console, and click **Create a case** from the Contact Support section. After your support case is created, you can follow its progress on the [Manage cases](/unifiedsupport/cases/manage){: external} page. For more information about creating a case, see [Creating support cases](/docs/account?topic=account-open-case).
 
+
+
+Go to the [Support Center](/unifiedsupport/supportcenter){: external} in the console, and click **Create a case** from the Contact Support section. After your support case is created, you can follow its progress on the [Manage cases](/unifiedsupport/cases/manage){: external} page. For more information about creating a case, see [Creating support cases](/docs/account?topic=account-open-case).
 
 ## What are my options for contacting {{site.data.keyword.cloud_notm}} Support?
 {: #contactsupport-faq}
@@ -96,8 +98,10 @@ To view your support costs, you need an access policy with the Administrator rol
 {: faq}
 {: support}
 
-If you want to upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Support plans](/docs/account?topic=account-support-plans).
 
+
+
+If you want to upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative. For more information on the different support plans, see [Support plans](/docs/account?topic=account-support-plans).
 
 ## Why can't I see my support cases? 
 {: #view-support-cases}
@@ -165,5 +169,8 @@ Watchlists are specific to each case. You must manually add a user to each indiv
 ## How can I chat with support?
 {: #chat-with-support}
 {: faq}
+
+
+
 
 You can chat with support if you have an Advanced or Premium support plan. Go to the [Support Center](/unifiedsupport/supportcenter){: external}, click **Launch AI Assistant**, and type `agent` to connect with a support agent. Alternatively, you can request to chat with a live agent by opening the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant#chat-with-support) from the Help menu and typing `agent` in the chat. Or, call the number provided in the Contact Support section. To upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
