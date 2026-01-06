@@ -79,7 +79,6 @@ Time critical actions, including:
 Advanced support is for environments with a limited number of business-critical applications.
 
 
-
 ## Support for Basic, Lite, or Trial accounts
 {: #free-support}
 

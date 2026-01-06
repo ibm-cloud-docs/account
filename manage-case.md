@@ -351,7 +351,7 @@ When your response to an update in your support case is needed, the status is di
 ## Escalating support cases
 {: #escalation}
 
-With an upgraded support plan, You can use the escalation process to surface critical issues and voice your concern about a support case. When a case is escalated, the {{site.data.keyword.cloud_notm}} support team reviews the information in the support case and responds with appropriate updates. For information about case severity, see [Case severity and initial response times](/docs/account?topic=account-support-case-severity).
+With an upgraded support plan, you can use the escalation process to surface critical issues and voice your concern about a support case. When a case is escalated, the {{site.data.keyword.cloud_notm}} support team reviews the information in the support case and responds with appropriate updates. For information about case severity, see [Case severity and initial response times](/docs/account?topic=account-support-case-severity).
 
 To escalate a case, complete the following steps:
 

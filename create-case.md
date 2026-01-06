@@ -16,7 +16,7 @@ subcollection: account
 # Creating support cases
 {: #open-case}
 
-If you experience problems with {{site.data.keyword.cloud}}, you can use the [Support Center](/unifiedsupport/supportcenter){: external} to create a support case. You can create cases for issues that are associated with access (IAM), billing and usage, account, and invoice or sales inquiries. Users with a Advanced, or Premium support plan can also create a case for technical support.
+If you experience problems with {{site.data.keyword.cloud}}, you can use the [Support Center](/unifiedsupport/supportcenter){: external} to create a support case. You can create cases for issues that are associated with access (IAM), billing and usage, account, and invoice or sales inquiries. Users with an Advanced or Premium support plan can also create a case for technical support.
 {: shortdesc}
 
 If your account is deactivated or if you don't have access to your account, you can create a support case by completing the [Create an Account, Login or Billing Request](https://watson.service-now.com/x_ibmwc_open_case_app.do#!/create) form.
