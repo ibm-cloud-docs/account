@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-12-17"
+  years: 2022, 2026
+lastupdated: "2026-01-06"
 
 keywords: software onboarding, controls, requirements, security, compliance, partners
 
@@ -43,7 +43,7 @@ For examples of how you can format your controls in your readme file, see the fo
 ```markdown
 | Profile | Category | ID      | Description |
 |---------|----------|---------|-------------|
-| NIST | [SC-7](https://test.cloud.ibm.com/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) | SC-7(3) | Limit the number of external network connections to the system. |
+| NIST | [SC-7](/docs/framework-financial-services-controls?topic=framework-financial-services-controls-sc-7) | SC-7(3) | Limit the number of external network connections to the system. |
 ```
 {: codeblock}
 
