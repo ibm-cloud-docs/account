@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-09-20"
+  years: 2020, 2026
+lastupdated: "2026-01-06"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 
@@ -215,7 +215,7 @@ To create a catalog that includes all products in the {{site.data.keyword.cloud_
 
 ```bash
 curl -X 'POST' \
-'https://dev-cm.globalcatalog.test.cloud.ibm.com/api/v1-beta/catalogs' \
+'https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogs' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
 -H "Authorization: ${IC_IAM_TOKEN}" \
@@ -290,7 +290,7 @@ To create a catalog that includes a specific set of products in the {{site.data.
 
 ```bash
 curl -X 'POST' \
-'https://dev-cm.globalcatalog.test.cloud.ibm.com/api/v1-beta/catalogs' \
+'https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogs' \
 -H 'accept: application/json' \
 -H 'Content-Type: application/json' \
 -H "Authorization: ${IC_IAM_TOKEN}" \

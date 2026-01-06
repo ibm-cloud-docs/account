@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-12-04"
+  years: 2015, 2026
+lastupdated: "2026-01-06"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -27,7 +27,7 @@ The following table shows the support types available for Pay-As-You-Go accounts
 |             | Basic         | Advanced         | Premium         |
 |-------------|---------------|------------------|-----------------|
 | **Description** | Basic business protection that is included with your {{site.data.keyword.cloud_notm}} Pay-As-You-Go or Subscription account | Prioritized case handling and support experience that is aligned with your business needs for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model | Client engagement that is aligned with your business outcomes to accelerate time-to-value for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model |
-| **Availability** |  24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat |
+| **Availability** |  Not applicable | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat |
 | **[Case severity](/docs/account?topic=account-support-case-severity)** | Not applicable | Case severity ranking available | Case severity ranking available |
 | **Initial response time objectives** | Not applicable | Severity 1: Less than one hour  \n Severity 2: Less than two hours  \n Severity 3: Less than four hours  \n Severity 4: Less than eight hours | Severity 1: Less than 15 minutes  \n Severity 2: Less than one hour  \n Severity 3: Less than two hours  \n Severity 4: Less than four hours |
 | **Additional support**               | Not applicable | Not applicable | Technical Account Manager assigned  \n Quarterly business reviews  \n Access to experts |
@@ -79,21 +79,10 @@ Time critical actions, including:
 Advanced support is for environments with a limited number of business-critical applications.
 
 
-
-## Basic support
-{: #basic-support}
-
-Basic support is provided for non-production environments or workloads that don't require traditional severities and response times.
-
-Starting 5 January 2025 new changes regarding the basic level of support take effect. [Learn more](/docs/overview?topic=overview-whatsnew).
-{: note}
-
-
-
-## Support for Lite or Trial accounts
+## Support for Basic, Lite, or Trial accounts
 {: #free-support}
 
-Users with a Lite or Trial account can create support cases but are limited to nontechnical issues associated with access, billing and usage, account, and invoice or sales inquiries. For technical help if you have free support, Lite or Trial accounts can view the IBM Cloud documentation, ask questions of the AI Assistant, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
+Users with a Basic, Lite, or Trial account can create support cases but are limited to nontechnical issues associated with access, billing and usage, account, and invoice or sales inquiries. For technical help if you have free support, Lite or Trial accounts can view the IBM Cloud documentation, ask questions of the AI Assistant, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Support level and enterprises
 {: #support_level_enterprise}
