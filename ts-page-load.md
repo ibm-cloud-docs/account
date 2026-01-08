@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-07"
+  years: 2015, 2026
+lastupdated: "2026-01-08"
 
 keywords: troubleshoot account, page load, page error, console page error
 
@@ -26,8 +26,8 @@ One of the following error messages might be displayed:
 {: tsSymptoms}
 
 ```text
-BXNUI0001E: The page wasn't loaded because {{site.data.keyword.cloud_notm}} didn't detect whether a session exists.
-BXNUI0016E: The apps and services weren't retrieved because an {{site.data.keyword.cloud_notm}} page didn't load.
+BXNUI0001E: The page wasn't loaded because IBM Cloud didn't detect whether a session exists.
+BXNUI0016E: The apps and services weren't retrieved because an IBM Cloud page didn't load.
 500 internal server error
 ```
 
