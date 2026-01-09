@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2025
-lastupdated: "2025-11-15"
+  years: 2017, 2026
+lastupdated: "2026-01-09"
 
 keywords: what is IAM, IAM features, IAM API, how IAM works
 
@@ -91,9 +91,9 @@ To learn more about how trusted profiles work check out our IBM Cloud Identity a
 
 By using trusted profiles, you can define fine-grained authorization for all applications that are running in a compute resource without creating service IDs or managing the API key lifecycle for applications. The trusted profiles provide better control for granting access to compute resources.
 
-    *  Application developers can programmatically retrieve a token that is associated with the compute resource identity that they are running on. That token is used to get the trusted profile identity token, which is used to access services and resources on {{site.data.keyword.cloud_notm}}.
-    *  Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
-    *  All compute resource instances that share certain conditions such as name, namespace, tags, or location, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
+* Application developers can programmatically retrieve a token that is associated with the compute resource identity that they are running on. That token is used to get the trusted profile identity token, which is used to access services and resources on {{site.data.keyword.cloud_notm}}.
+* Applications running on a compute resource can have a flexible, but secure way to access other {{site.data.keyword.cloud_notm}} services from within compute resources. For example, it's more secure not having to store API keys.
+* All compute resource instances that share certain conditions such as name, namespace, tags, or location, their identities are mapped to a common profile and can share access to {{site.data.keyword.cloud_notm}} resources. This common identity makes it possible to give the applications within various compute resources access to an external resource one time rather than cluster-by-cluster.
 
 ### Enterprise-managed IAM templates for centrally managing access in enterprises
 {: #enterprise-templates-feature}
@@ -141,6 +141,6 @@ You can access and use {{site.data.keyword.cloud_notm}} IAM through the Access (
 * Go to [Managing IAM access, API keys, service IDs, and access groups](/docs/cli?topic=cli-ibmcloud_commands_iam) to review the available CLI commands.
 * Go to the following API docs to review the available APIs:
 
-      * [IAM Identity Services API](/apidocs/iam-identity-token-api){: external}
-      * [IAM Access Groups API](/apidocs/iam-access-groups){: external}
-      * [IAM Policy Management API](/apidocs/iam-policy-management){: external}
+  * [IAM Identity Services API](/apidocs/iam-identity-token-api){: external}
+  * [IAM Access Groups API](/apidocs/iam-access-groups){: external}
+  * [IAM Policy Management API](/apidocs/iam-policy-management){: external}
