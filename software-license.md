@@ -2,8 +2,8 @@
 
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-01-13"
 
 keywords: license, entitlement, software, passport advantage, cloud pak, binding a license, PPA, part number
 
@@ -22,7 +22,7 @@ To install software products in {{site.data.keyword.cloud}}, the license for the
 ## Acquiring a license 
 {: #acquire-license}
 
-In most cases, someone in a procurement or financial role in your organization works with an {{site.data.keyword.cloud_notm}} sales representative to purchase the license through [{{site.data.keyword.IBM_notm}} Passport Advantage](https://www.ibm.com/software/passportadvantage/index.html){: external}. A part number is associated with the license for the software product to be used in {{site.data.keyword.cloud_notm}}. The person acquiring the license is not typically the same person who installs the software in the {{site.data.keyword.cloud_notm}} account. After a sales representative acquires the license through the Software Quote Order tool, it must be assigned to each account that requires entitlement for use of the software in {{site.data.keyword.cloud_notm}}.
+In most cases, someone in a procurement or financial role in your organization works with an {{site.data.keyword.cloud_notm}} sales representative to purchase the license through [{{site.data.keyword.IBM_notm}} Passport Advantage](https://www.ibm.com/software/passportadvantage){: external}. A part number is associated with the license for the software product to be used in {{site.data.keyword.cloud_notm}}. The person acquiring the license is not typically the same person who installs the software in the {{site.data.keyword.cloud_notm}} account. After a sales representative acquires the license through the Software Quote Order tool, it must be assigned to each account that requires entitlement for use of the software in {{site.data.keyword.cloud_notm}}.
 
 ## Assigning licenses to an account
 {: #assign-license}
