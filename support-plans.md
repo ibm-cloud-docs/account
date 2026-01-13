@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-01-13"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -16,23 +16,29 @@ subcollection: account
 # Support plans
 {: #support-plans}
 
-You can upgrade your support plan to customize your {{site.data.keyword.cloud_notm}} experience for your business needs. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center.  If you want to upgrade your support plan, contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+{{site.data.keyword.cloud_notm}} offers Basic, Advanced, and Premium support plans to meet your business needs. The support plan that you select determines the severity levels that you can assign to support cases, your response time objectives, and your access to Support Center tools. To upgrade your support plan, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 {: shortdesc}
 
-Initial response Service Level Objectives (SLO) do not apply to any billing, invoice, or sales related inquiry or cases.
+Initial response Service Level Objectives (SLO) do not apply to billing, invoice, sales, or account-related cases.
 {: important}
 
-The following table shows the support types available for Pay-As-You-Go accounts, Subscription accounts, and the Enterprise Savings Plan billing model. For more information about accounts, see [Account types](/docs/account?topic=account-accounts).
+## Support plan comparison
+{: #support-plan-comparison}
+
+The following table compares the support plans available for Pay-As-You-Go accounts, Subscription accounts, and the Enterprise Savings Plan billing model. For more information, see [Account types](/docs/account?topic=account-accounts).
 
 |             | Basic         | Advanced         | Premium         |
 |-------------|---------------|------------------|-----------------|
-| **Description** | Basic business protection that is included with your {{site.data.keyword.cloud_notm}} Pay-As-You-Go or Subscription account | Prioritized case handling and support experience that is aligned with your business needs for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model | Client engagement that is aligned with your business outcomes to accelerate time-to-value for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model |
-| **Availability** |  Not applicable | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat | 24 x 7 access to the {{site.data.keyword.cloud_notm}} technical support team through cases, phone, and chat |
-| **[Case severity](/docs/account?topic=account-support-case-severity)** | Not applicable | Case severity ranking available | Case severity ranking available |
-| **Initial response time objectives** | Not applicable | Severity 1: Less than one hour  \n Severity 2: Less than two hours  \n Severity 3: Less than four hours  \n Severity 4: Less than eight hours | Severity 1: Less than 15 minutes  \n Severity 2: Less than one hour  \n Severity 3: Less than two hours  \n Severity 4: Less than four hours |
-| **Additional support**               | Not applicable | Not applicable | Technical Account Manager assigned  \n Quarterly business reviews  \n Access to experts |
-| **Pricing**  | Included with cloud entitlement | Pay-As-You-Go and Subscription: Starting at a minimum USD 200 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption | Pay-As-You-Go and Subscription: Starting at a minimum of USD 10,000 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption. For more information about support pricing, see [Viewing your support costs](/docs/account?topic=account-support).|
-{: caption="Support plans" caption-side="top"}
+| **Best for** | Basic business protection included with Pay-As-You-Go or Subscription accounts | Prioritized case handling aligned with business needs for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model | Client engagement aligned with business outcomes to accelerate time-to-value for your Pay-As-You-Go account, Subscription account, or Enterprise Savings Plan billing model |
+| **Availability** | Access to documentation, AI Assistant, and community forums | 24 x 7 access to technical support through cases, phone, and chat | 24 x 7 access to technical support through cases, phone, and chat |
+| **[Case severity](/docs/account?topic=account-support-case-severity)** | Not available | All severity levels available | All severity levels available |
+| **Initial response time objectives** | No SLO for response time | Severity 1: Less than 1 hour  \n Severity 2: Less than 2 hours  \n Severity 3: Less than 4 hours  \n Severity 4: Less than 8 hours | Severity 1: Less than 15 minutes  \n Severity 2: Less than 1 hour  \n Severity 3: Less than 2 hours  \n Severity 4: Less than 4 hours |
+| **Additional support** | None | None | Technical Account Manager  \n Quarterly business reviews  \n Access to experts  \n Event management support |
+| **Pricing** | Included with cloud entitlement | Pay-As-You-Go and Subscription: Starting at USD 200 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption | Pay-As-You-Go and Subscription: Starting at USD 10,000 per month or 10% of consumption if it exceeds the monthly starting price  \n Enterprise Savings Plan: 10% of consumption. For more information, see [Viewing your support costs](/docs/account?topic=account-support). |
+{: row-headers}
+{: class="comparison-table"}
+{: caption="Support plan comparison" caption-side="bottom"}
+{: summary="This table has row and column headers. The row headers identify the aspects of support. The column headers identify the support plan."}
 
 For Enterprise Savings Plans, there is a minimum commitment for Advanced and Premium support. If you don't spend the total committed amount by the end of the commitment term, you are invoiced for the amount that you didn't consume, and any amount used over the commitment is also charged. For more information, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 {: note}
@@ -76,13 +82,39 @@ Time critical actions, including:
 ## Advanced support
 {: #standard-support}
 
-Advanced support is for environments with a limited number of business-critical applications.
+Advanced support is designed for environments with a limited number of business-critical applications. With Advanced support, you receive the following:
 
+* 24 x 7 access to the technical support team through cases, phone, and chat
+* Prioritized case handling with defined response time objectives
+* Access to all case severity levels
+* Support for technical product issues
 
-## Support for Basic, Lite, or Trial accounts
+Advanced support is ideal for organizations that need faster response times and technical assistance beyond self-service resources.
+
+## Basic support
 {: #free-support}
 
-Users with a Basic, Lite, or Trial account can create support cases but are limited to nontechnical issues associated with access, billing and usage, account, and invoice or sales inquiries. For technical help if you have free support, Lite or Trial accounts can view the IBM Cloud documentation, ask questions of the AI Assistant, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
+Basic support is included with all Pay-As-You-Go and Subscription accounts at no additional cost. With Basic support, you can:
+
+* Create support cases for nontechnical issues, including:
+   * Access management
+   * Billing and usage
+   * Account management
+   * Invoice inquiries
+   * Sales inquiries
+* Access self-service resources:
+   * {{site.data.keyword.cloud_notm}} documentation
+   * AI assistant for technical questions
+   * Community forums ({{site.data.keyword.cloud_notm}} Community and Stack Overflow)
+
+Basic support does not include technical support for product issues or access to case severity rankings and response time objectives.
+{: note}
+
+### Support for Lite and Trial accounts
+{: #lite-trial-support}
+
+Lite and Trial accounts receive the same support as Basic support. You can create support cases for nontechnical issues and access self-service resources, but technical support for product issues is not available.
+
 
 ## Support level and enterprises
 {: #support_level_enterprise}
@@ -90,8 +122,21 @@ Users with a Basic, Lite, or Trial account can create support cases but are limi
 The level of support that is assigned to an [{{site.data.keyword.cloud_notm}} enterprise](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise) defaults to the highest support plan within the enterprise. All child accounts within the enterprise also default to the highest support plan.
 
 ## Technical support team
-{: #tech_support_team}
+{: #tech-support-team}
 
-{{site.data.keyword.cloud_notm}} supports our customers with a worldwide team of experts that are available 24 hours a day, seven days a week. These resources are at strategic IBM locations around the world. {{site.data.keyword.cloud_notm}} support resources, which are known as the Client Service Delivery team, is made up of technical engineers that have specific domain knowledge to triage and troubleshoot problems quickly and effectively.
+The {{site.data.keyword.cloud_notm}} support team, also known as the Client Service Delivery team, provides 24 x 7 support from strategic {{site.data.keyword.IBM_notm}} locations worldwide. The team consists of technical engineers with domain expertise to triage and troubleshoot issues quickly and effectively.
 
-The teams are organized by technology domains, which include compute, network, security, storage, VPC, Kubernetes service, Red Hat OpenShift on IBM Cloud, Satellite, databases, app development, and cognitive solutions. Our teams keep their skills and technical knowledge up-to-date through specialized training on cloud services throughout the year. Support engineers are equipped to go deep on issues and solve most without any additional support from our backend teams. Collaboration across cloud service teams ensures continuous knowledge transfer and skills development within the team to deliver the best possible service to our customers.
+Support engineers are organized by technology domains, including:
+* Compute
+* Network
+* Security
+* Storage
+* VPC
+* Kubernetes service
+* Red Hat OpenShift on IBM Cloud
+* Satellite
+* Databases
+* App development
+* Cognitive solutions
+
+The team maintains their skills and technical knowledge through specialized training on cloud services. Support engineers are equipped to go deep on issues and resolve most without any additional support from backend teams. Collaboration across cloud service teams ensures continuous knowledge transfer and skills development.
