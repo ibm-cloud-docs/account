@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-12-17"
+  years: 2022, 2026
+lastupdated: "2026-01-13"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -129,7 +129,7 @@ Validating your virtual server image involves running a test deployment of your 
 {{_include-segments/manage-compliance-segment.md}}
 
 ### Add controls
-{: #add-controls}
+{: #add-control}
 {: ui}
 
 {{_include-segments/run-security-compliance-segment.md}}
