@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-05"
+lastupdated: "2026-01-13"
 
 keywords: apptio, cost benefit analysis
 
@@ -18,7 +18,7 @@ subcollection: account
 You can export your account's usage data to a Cloud Object Storage (COS) bucket for continual visibility, optimization, governance, and more across cloud environments. For example, if you are an account administrator and want to learn more about your account's usage and get cost optimization analysis, you can integrate your account with a third-party provider to gain insights about your accounts usage.
 {: shortdesc}
 
-When you set up your account to export usage report to a {{site.data.keyword.cos_full_notm}} bucket, you are enabling your account to continually export that data. To export data on a one time basis, see [Exporting your usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv).
+When you set up your account to export usage report to an {{site.data.keyword.cos_full_notm}} bucket, you are enabling your account to continually export that data. To export data on a one time basis, see [Exporting your usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv).
 
 To enable your account to share usage data, you need to grant permissions to the Billing service to access usage details and export it to a COS bucket. Because the report includes usage data for the entire account, child account usage and information about services and instances, the service ID used by the Billing service needs administrator access to export usage details. After this setup is complete, a CSV formatted cost and usage report is automatically exported to your COS bucket daily.
 

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-12-04"
+  years: 2019, 2026
+lastupdated: "2026-01-13"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help, support agent, speak with agent, connect to agent, live agent, chat with human agent, talk to an agent
 
@@ -50,6 +50,8 @@ The following are the methods that you can find in the Contact support section i
 
 Users in the account need assigned access to create, update, search, or view cases. For more information, see [Assigning user access for working with support center](/docs/account?topic=account-access&interface=ui).
 {: note}
+
+
 
 ### Asking a question
 {: #asking-a-question}
