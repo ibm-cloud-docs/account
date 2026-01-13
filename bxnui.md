@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-01-13"
 
 keywords: error messages, errors, platform errors, message ID
 
@@ -29,7 +29,7 @@ For instructions to fix this problem, see the [Why do I encounter console pages 
 ## BXNUI0016E
 {: #bxnui0016e}
 
-**Message**: The apps and services weren't retrieved because a {{site.data.keyword.cloud_notm}} page didn't load.
+**Message**: The apps and services weren't retrieved because an {{site.data.keyword.cloud_notm}} page didn't load.
 
 For instructions to fix this problem, see the [Why do I encounter console pages that don't load?](/docs/account?topic=account-ts_err) troubleshooting
 

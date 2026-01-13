@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-10-24"
+  years: 2022, 2026
+lastupdated: "2026-01-13"
 
 keywords: users level of access, user control, access control, permissions, manage access, access management, platform management tasks, assign roles
 
@@ -37,7 +37,7 @@ You can also define fine-grained authorization for all applications that are run
 
 Account resources are the service instances that are selected from the catalog or finer-grained resources within a service instance, such as an {{site.data.keyword.cos_full}} bucket. IAM-enabled resources are added to a resource group when they are created from the catalog.
 
-IAM access management enables fine-grained access, which means that a policy can be set on a wide scale to all resources in a resource group, for example, or to a specific service instance in the account and even a resource type like a {{site.data.keyword.cos_full_notm}} bucket within a specific instance.
+IAM access management enables fine-grained access, which means that a policy can be set on a wide scale to all resources in a resource group, for example, or to a specific service instance in the account and even a resource type like an {{site.data.keyword.cos_full_notm}} bucket within a specific instance.
 
 ## Access policies
 {: #access-policies-concept}
