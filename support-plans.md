@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-01-13"
+lastupdated: "2026-01-14"
 
 keywords: basic support, advanced support, premium support, support plans, free technical support, response time
 
@@ -46,7 +46,7 @@ For Enterprise Savings Plans, there is a minimum commitment for Advanced and Pre
 ## Premium support
 {: #premium-support}
 
-Premium support is for mission-critical environments that have a strategic dependency on {{site.data.keyword.cloud_notm}}. The additional features of Premium support provide you the comfort in knowing that {{site.data.keyword.cloud_notm}} has you covered in any situation. With your Premium support plan you get a technical account manager that advises you on processes, policies, and best practices related to the platform or infrastructure services. In addition, your technical account manager assists you with:
+The Premium support plan is for mission-critical environments that have a strategic dependency on {{site.data.keyword.cloud_notm}}. The additional features of Premium support provide you the comfort in knowing that {{site.data.keyword.cloud_notm}} has you covered in any situation. With your Premium support plan you get a technical account manager that advises you on processes, policies, and best practices related to the platform or infrastructure services. In addition, your technical account manager assists you with:
 
 * **Issue management.** Your technical account manager works with the {{site.data.keyword.cloud_notm}} Support team to reduce time-to-resolution.
 * **Onboarding assistance.** Your technical account manager helps with cloud onboarding and serves as your advocate, aligning resources to meet your needs.
@@ -82,7 +82,7 @@ Time critical actions, including:
 ## Advanced support
 {: #standard-support}
 
-Advanced support is designed for environments with a limited number of business-critical applications. With Advanced support, you receive the following:
+The Advanced support plan is designed for environments with a limited number of business-critical applications. With Advanced support, you receive:
 
 * 24 x 7 access to the technical support team through cases, phone, and chat
 * Prioritized case handling with defined response time objectives
@@ -94,7 +94,7 @@ Advanced support is ideal for organizations that need faster response times and 
 ## Basic support
 {: #free-support}
 
-Basic support is included with all Pay-As-You-Go and Subscription accounts at no additional cost. With Basic support, you can:
+The Basic support plan is included with all Pay-As-You-Go and Subscription accounts at no additional cost. With Basic support, you can:
 
 * Create support cases for nontechnical issues, including:
    * Access management
