@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-12-17"
+  years: 2019, 2026
+lastupdated: "2026-01-15"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -312,7 +312,7 @@ You can add profiles and controls to your software to prove that it meets securi
 Only profiles and controls that are supported by the {{site.data.keyword.compliance_short}} and validated by {{site.data.keyword.compliance_short}} scans appear in the catalog.
 
 ### Add controls
-{: #add-controls}
+{: #adding-compliance-controls}
 {: ui}
 
 To add controls, complete the following steps:

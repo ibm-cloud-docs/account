@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-01-15"
 
 keywords: software onboarding, controls, requirements, security, compliance, partners
 
@@ -56,7 +56,7 @@ You must validate your product version before you can add inventory results from
 {: important}
 
 ### Adding controls
-{: #add-controls-sw}
+{: #adding-controls-sw}
 
 To add controls, complete the following steps:
 
