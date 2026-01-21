@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-01-21"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -134,7 +134,7 @@ You might receive notifications about significant technical enhancements, change
 
 Use the following steps to update your preferences:
 
-1. Log in to the [{{site.data.keyword.IBM_notm}} Privacy Preference Center](https://myibm.ibm.com/profile/dataprivacypreferences/consent/us-en){: external} by using your {{site.data.keyword.cloud_notm}} credentials. The toggle indicates whether your entered credential is your preferred method of contact.
+1. Log in to the [{{site.data.keyword.IBM_notm}} Privacy Preference Center](https://www.ibm.com/ibmweb/profile/dataprivacypreferences/consent/us-en){: external} by using your {{site.data.keyword.cloud_notm}} credentials. The toggle indicates whether your entered credential is your preferred method of contact.
 1. Click **Next**.
 1. Deselect **Public cloud** to stop marketing communications.
 1. Click **Save**.
