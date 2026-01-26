@@ -361,7 +361,7 @@ To escalate a case, complete the following steps:
 1. Provide your existing case number and a request to escalate the case.
 1. Provide the justification an escalation and explain the business impact of your problem or issue.
 
-Basic support plans: If you have a Basic support plan, access to support is through non-technical cases only. If your support inquiry requires a more immediate response, consider upgrading to a Premium or Advanced support plan so you assign a severity level to a case. To upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+Basic support plans: If you have a Basic support plan, access to support is through non-technical cases only. If your support inquiry requires a more immediate response, consider upgrading to a Premium or Advanced support plan so you can assign a severity level to a case. To upgrade your support plan, contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 
 ## Searching for support cases
 {: #search-options}
