@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-01-26"
 
 keywords: manage case, open case, update case, escalate case
 
@@ -351,7 +351,7 @@ When your response to an update in your support case is needed, the status is di
 ## Escalating support cases
 {: #escalation}
 
-With an upgraded support plan, you can use the escalation process to surface critical issues and voice your concern about a support case. When a case is escalated, the {{site.data.keyword.cloud_notm}} support team reviews the information in the support case and responds with appropriate updates. For information about case severity, see [Case severity and initial response times](/docs/account?topic=account-support-case-severity).
+With a paid support plan, you can use the escalation process to surface critical issues and voice your concern about a support case. When a case is escalated, the {{site.data.keyword.cloud_notm}} support team reviews the information in the support case and responds with appropriate updates. For information about case severity, see [Case severity and initial response times](/docs/account?topic=account-support-case-severity).
 
 To escalate a case, complete the following steps:
 
@@ -361,7 +361,7 @@ To escalate a case, complete the following steps:
 1. Provide your existing case number and a request to escalate the case.
 1. Provide the justification an escalation and explain the business impact of your problem or issue.
 
-Basic support plans: If you have a Basic support plan, access to support is through non-technical cases only. If your support inquiry requires a more immediate response, consider upgrading to a Premium or Advanced support plan so you assign a severity level to a case. To upgrade your support plan, contact a [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
+Basic support plans: If you have a Basic support plan, access to support is through non-technical cases only. If your support inquiry requires a more immediate response, consider upgrading to a Premium or Advanced support plan so you can assign a severity level to a case. To upgrade your support plan, contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative.
 
 ## Searching for support cases
 {: #search-options}
