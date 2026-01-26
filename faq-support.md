@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-01-23"
+lastupdated: "2026-01-26"
 
 keywords: frequently asked question, faq, support cases, email preferences, access for cases, support faq
 
@@ -66,7 +66,7 @@ Basic, Lite, and Trial account support is limited to non-technical support issue
 {: #escalate_support}
 {: faq}
 
-As an {{site.data.keyword.cloud_notm}} customer with an upgraded support plan, you can escalate support cases to surface critical issues. To escalate a case, go to the [Support Center](/unifiedsupport/supportcenter){: external} and contact IBM Cloud Support by phone or chat. Provide your existing case number, the business impact of your issue, and a request to escalate the case.
+As an {{site.data.keyword.cloud_notm}} customer with a paid support plan, you can escalate support cases to surface critical issues. To escalate a case, go to the [Support Center](/unifiedsupport/supportcenter){: external} and contact IBM Cloud Support by phone or chat. Provide your existing case number, the business impact of your issue, and a request to escalate the case.
 
 For more information, see [Escalating support cases](/docs/account?topic=account-managing-support-cases&interface=ui#escalation).
 
