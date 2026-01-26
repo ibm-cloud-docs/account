@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-01-14"
+lastupdated: "2026-01-26"
 
 keywords: support, support case, premium support, advanced support, basic support, support page, help, support agent, speak with agent, connect to agent, live agent, chat with human agent, talk to an agent
 
@@ -41,20 +41,35 @@ Try asking your question about the issue you're experiencing in the [AI assistan
 
 The following are the methods that you can find in the Contact support section if you need help:
 
-
 * Use the [Create a case](/unifiedsupport/cases/add){: external} page to open a support case.
 * Click **Launch AI Assistant** from the [Support Center](/unifiedsupport/supportcenter){: external} to get help with questions about IBM Cloud.
+* If you have a Basic support plan, you can report technical issues about the {{site.data.keyword.cloud_notm}} platform, or third-party products that are available in the {{site.data.keyword.cloud_notm}} catalog.
 * If you have an Advanced or Premium support plan, you can contact support by using the following options:
      * To chat with support, click **Launch AI Assistant** and type `agent` to connect with a support agent.
      * Contact support by phone using the number in the [Support Center](/unifiedsupport/supportcenter){: external}.
 * If you have technical questions, you can follow a link in the Ask your IBM peers section to ask questions of others in online communities.
 
-
-
 Users in the account need assigned access to create, update, search, or view cases. For more information, see [Assigning user access for working with support center](/docs/account?topic=account-access&interface=ui).
 {: note}
 
+### Reporting a technical issue
+{: #report-issue}
 
+If you're experiencing technical issues that cannot be resolved through self-support, with a Basic support plan, you can report technical issues about the {{site.data.keyword.cloud_notm}} platform, or third-party products that are available in the {{site.data.keyword.cloud_notm}} catalog. Complete the following steps to report a technical issue:
+
+1. From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** to access the Support Center.
+1. Click **Create case** in the Contact Support section.
+1. Click **Technical issue**. Then, select the type of your issue and provide a detailed description about your experience.
+
+    If you select a third-party product that you experience issues with, the product's specific support terms apply, including the product's support website, options for opening support cases, and details on support availability and response times. Technical issues for third-party products cannot be opened through the Support Center.
+    {: note}
+
+1. Click **Submit**.
+
+The technical issue that you submit does not include direct interaction with the support team. If the issue is determined to be invalid or outside of the scope of your current support tier, you will be notified. For more advanced support case handling, upgrade your support plan by contacting [IBM Cloud Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
+
+After your technical issue is created, you can follow its progress on the [Manage cases](/unifiedsupport/cases){: external} page.
+{: tip}
 
 ### Asking a question
 {: #asking-a-question}
