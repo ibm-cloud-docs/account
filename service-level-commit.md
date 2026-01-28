@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2024, 2025
-lastupdated: "2025-11-15"
+  years: 2024, 2026
+lastupdated: "2026-01-28"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -102,4 +102,4 @@ To map commitment usage in your enterprise back to child accounts, complete the 
 
 You can get Advanced or Premium support with your service commitment. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center. To get support, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
-For more information about {{site.data.keyword.cloud_notm}} support plans, see [Basic, Advanced, and Premium Support plans](/docs/account?topic=account-support-plans).
+For more information about {{site.data.keyword.cloud_notm}} support plans, see [Support plans](/docs/account?topic=account-support-plans).
