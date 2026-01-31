@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-01-30"
+lastupdated: "2026-01-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -11557,7 +11557,7 @@ Review the available platform and service roles and the actions mapped to each t
 {: summary="Use the tab buttons to change the context of the table. This table provides the available actions for the service, descriptions of each, and the roles that each action are mapped to."}
 {: #actions-table103}
 
-## is.vpn
+## VPN for VPC
 {: #is.vpn-roles}
 
 Review the available platform and service roles and the actions mapped to each to help you assign access. If you're using the CLI or API to assign access, use `is.vpn` for the service name.
@@ -11569,7 +11569,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Operator | As an operator, you can perform platform actions required to configure and operate service instances, such as viewing a service's dashboard. | `is.vpn.vpn.read`, `is.vpn.vpn.list`, `is.vpn.dashboard.view`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read`, `resource-controller.broker.update`, `resource-controller.broker.retrieve`, `resource-controller.alias.create`, `resource-controller.alias.delete`, `resource-controller.binding.create`, `resource-controller.binding.delete`, `resource-controller.key.create`, `resource-controller.key.delete`, `resource-controller.instance.update`, `resource-controller.alias.update`, `resource-controller.binding.update`, `resource-controller.key.update`, `resource-controller.instance.retrieve`, `resource-controller.alias.retrieve`, `resource-controller.binding.retrieve`, `resource-controller.key.retrieve`, `resource-controller.quota.retrieve`, `resource-controller.group.retrieve`, `resource-controller.group.update`, `resource-controller.subscription.retrieve` |
 | Viewer | As a viewer, you can view service instances, but you can't modify them. | `is.vpn.vpn.read`, `is.vpn.vpn.list`, `is.vpn.dashboard.view`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read`, `iam.role.read`, `resource-controller.broker.retrieve`, `resource-controller.instance.retrieve`, `resource-controller.alias.retrieve`, `resource-controller.binding.retrieve`, `resource-controller.key.retrieve`, `resource-controller.quota.retrieve`, `resource-controller.group.retrieve`, `resource-controller.subscription.retrieve` |
 {: row-headers}
-{: caption="Platform roles - is.vpn" caption-side="top"}
+{: caption="Platform roles - VPN for VPC" caption-side="top"}
 {: tab-title="Platform roles"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
@@ -11581,7 +11581,7 @@ Review the available platform and service roles and the actions mapped to each t
 | Key Manager | As an key manager, the service can perform platform actions required to manage resource keys, such as creating a new resource key for a resource instance. | `resource-controller.key.manager_create`, `resource-controller.key.manager_delete`, `resource-controller.key.manager_update`, `resource-controller.key.manager_retrieve` |
 | Service Configuration Reader | The ability to read services configuration for Governance management. | `is.vpn.config.read`, `global-search-tagging.resource.read`, `resource-controller.instance.retrieve` |
 {: row-headers}
-{: caption="Service roles - is.vpn" caption-side="top"}
+{: caption="Service roles - VPN for VPC" caption-side="top"}
 {: tab-title="Service roles"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
@@ -11649,7 +11649,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `resource-controller.key.manager_delete` | | Key Manager |
 | `resource-controller.key.manager_update` | | Key Manager |
 | `resource-controller.key.manager_retrieve` | | Key Manager |
-{: caption="Service actions - is.vpn" caption-side="top"}
+{: caption="Service actions - VPN for VPC" caption-side="top"}
 {: tab-title="Actions"}
 {: tab-group="is.vpn"}
 {: class="simple-tab-table"}
