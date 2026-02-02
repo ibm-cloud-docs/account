@@ -59,6 +59,11 @@ From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** i
 
 Nonpaid account support is limited to non-technical support issues that are related to account access and billing. Users with these nonpaid support accounts can self-report hardware issues, submit account or billing requests (including quota increases) through the portal, respond to {{site.data.keyword.IBM_notm}}-initiated support cases, and access the following self-service tools: {{site.data.keyword.cloud_notm}} AI assistant, {{site.data.keyword.cloud_notm}} docs, Community forums, and status pages. Users can also use [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external}. If your organization needs more advanced technical support, faster response times, or severity-level control, you can upgrade to a paid support plan. Learn more from your {{site.data.keyword.IBM_notm}} Sales representative or open an account upgrade case in the Support Center.
 
+## How can I receive technical support as a Basic support customer?
+{: #basic-tech-support}
+{: faq}
+
+Customers with a Basic support plan can report a technical issue when help is needed with third-party software or with issues that only {{site.data.keyword.IBM_notm}} can resolve, such as hardware failures or quota limit increases.
 
 ## How do I escalate support cases?
 {: #escalate_support}
