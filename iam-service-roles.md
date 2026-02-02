@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-01-28"
+lastupdated: "2026-01-31"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -12421,12 +12421,12 @@ Review the available platform and service roles and the actions mapped to each t
 | `logs-router.tenant.update` | Allows a user to update the current configuration of a boarded Logs Router tenant. | Manager |
 | `logs-router.tenant.read` | Allows user to view current configuration for a boarded Logs Router tenant | Manager, Reader |
 | `logs-router.event.send` | Allows the delivery of events to the Logs Router ingestion API | Writer |
-| `logs-router.target.read` | The ability to see details for a Logs Routing target. | Administrator, Editor, Operator, Viewer |
+| `logs-router.target.read` | The ability to see details for Logs Routing targets. | Administrator, Editor, Operator, Viewer |
 | `logs-router.target.create` | The ability to create Logs Routing targets. | Administrator, Editor |
 | `logs-router.target.update` | The ability to update or edit existing Logs Routing targets. | Administrator, Editor |
 | `logs-router.target.delete` | The ability to delete existing Logs Routing targets. | Administrator, Editor |
 | `logs-router.target.list` | The ability to see Logs Routing targets. | Administrator, Editor, Operator, Viewer |
-| `logs-router.route.read` | The ability to see details for a Logs Routing route. | Administrator, Editor, Operator, Viewer |
+| `logs-router.route.read` | The ability to see details for Logs Routing routes. | Administrator, Editor, Operator, Viewer |
 | `logs-router.route.create` | The ability to create Logs Routing routes. | Administrator, Editor |
 | `logs-router.route.update` | The ability to update or edit existing Logs Routing routes. | Administrator, Editor |
 | `logs-router.route.delete` | The ability to delete existing Logs Routing routes. | Administrator, Editor |
@@ -12434,14 +12434,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `logs-router.enterprise-target.create` | The ability to create Logs Routing targets managed by the enterprise. | Administrator |
 | `logs-router.enterprise-target.update` | The ability to update Logs Routing targets managed by the enterprise. | Administrator |
 | `logs-router.enterprise-target.delete` | The ability to delete Logs Routing targets managed by the enterprise. | Administrator |
-| `logs-router.setting.update` | The ability to update the account level Logs Routing settings. | Administrator |
-| `logs-router.setting.get` | The ability to retrieve the account level Logs Routing settings. | Administrator, Editor, Operator, Viewer |
+| `logs-router.setting.update` | The ability to update account level Logs Routing settings. | Administrator |
+| `logs-router.setting.get` | The ability to see account level Logs Routing settings. | Administrator, Editor, Operator, Viewer |
 | `logs-router.migration.post` | The ability to initiate the Logs routing migration for the account. | Administrator |
 | `logs-router.migration.get` | The ability to retrieve the Logs routing migration status for the account. | Administrator, Editor, Operator, Viewer |
 | `logs-router.enterprise-route.create` | The ability to create Logs Routing routes managed by the enterprise. | Administrator |
 | `logs-router.enterprise-route.update` | The ability to update Logs Routing targets managed by the enterprise. | Administrator |
 | `logs-router.enterprise-route.delete` | The ability to delete Logs Routing targets managed by the enterprise. | Administrator |
-| `logs-router.destination.search` | This action allows a user to search for target destinations. | Administrator, Editor, Operator, Viewer |
+| `logs-router.destination.search` | The ability to search for target destinations from Logs Routing configurations. | Administrator, Editor, Operator, Viewer |
 | `global-search-tagging.resource.read` | | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
 | `resource-controller.instance.retrieve` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `cbr.rule.read` | | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
