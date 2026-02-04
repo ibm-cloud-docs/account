@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-01-28"
+lastupdated: "2026-02-04"
 
 keywords: service availability, service location, using services across regions
 
@@ -34,9 +34,28 @@ To use a service instance that exists in another region, complete the following 
 
 4. Create a user-provided service instance by using the credentials and connection parameters that you recorded from the *VCAP_SERVICES* environment variable.
 
-5. Bind the user-provided service instance to your app by using the following command:
+5. Configure your application to use the service credentials. You can do this by setting environment variables or updating your application's configuration file:
 
+   **Using environment variables:**
+   
    ```bash
-	 ibmcloud service bind myapp my-user-provided-service -c '{"username":"appuser","password":"sec123","url":"https://api.example.com"}' 
+   export SERVICE_USERNAME="appuser"
+   export SERVICE_PASSWORD="sec123"
+   export SERVICE_URL="https://api.example.com"
    ```
    {: pre}
+
+   **Using a configuration file (example for Node.js):**
+   
+   ```json
+   {
+     "service": {
+       "username": "appuser",
+       "password": "sec123",
+       "url": "https://api.example.com"
+     }
+   }
+   ```
+   {: codeblock}
+
+   Then, reference these credentials in your application code to connect to the service in the other region.
