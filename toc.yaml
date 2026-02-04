@@ -354,7 +354,7 @@ toc:
               href: https://{DomainName}/apidocs/metering-reporting
           - link:
               label: Case Management
-              href: https://{DomainName}/apidocs/support-center/case-management
+              href: https://{DomainName}/apidocs/support-center/case-management-v2
       - topicgroup:
           label: Command reference
           topics:
