@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-12-17"
+  years: 2021, 2026
+lastupdated: "2026-02-05"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -273,7 +273,6 @@ You can create context-based restrictions for the following services if you are 
 | [{{site.data.keyword.messages-for-rabbitmq}}](/docs/cloud-databases?topic=cloud-databases-cbr)  | IAM-enabled | Yes | `messages-for-rabbitmq` |
 | [{{site.data.keyword.bpshort}}](/docs/schematics?topic=schematics-access-control-cbr&interface=ui) | IAM-enabled | No | `schematics` |
 | [{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager?topic=secrets-manager-access-control-cbr) | IAM-enabled | No | `secrets-manager` |
-| [{{site.data.keyword.compliance_short}}](/docs/security-compliance?topic=security-compliance-cbr) | IAM-enabled | No | `compliance` |
 | {{site.data.keyword.sysdigsecure_full_notm}} | IAM-enabled | No | `sysdig-secure` |
 | Tagging Service | Account Management | No | `ghost-tags` |
 | [{{site.data.keyword.tg_short}}](/docs/transit-gateway?topic=transit-gateway-cbr) | IAM-enabled | No | `transit` |
