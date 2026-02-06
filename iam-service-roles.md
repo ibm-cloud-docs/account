@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-02-04"
+lastupdated: "2026-02-06"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -7711,8 +7711,10 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description | Actions |
 | ----- | :----- | :----- |
+| Assignment Administrator | Template Assignment Administrator | `iam-access-management.policy-template.read`, `iam-access-management.policy-assignment.create`, `iam-access-management.policy-assignment.update`, `iam-access-management.policy-assignment.delete`, `iam-access-management.policy-assignment.read` |
 | Key Manager | As an key manager, the service can perform platform actions required to manage resource keys, such as creating a new resource key for a resource instance. | `resource-controller.key.manager_create`, `resource-controller.key.manager_delete`, `resource-controller.key.manager_update`, `resource-controller.key.manager_retrieve` |
 | Service Configuration Reader | The ability to read services configuration for Governance management. | `global-search-tagging.resource.read`, `resource-controller.instance.retrieve` |
+| Template Administrator | Template Administrator | `iam-access-management.policy-template.create`, `iam-access-management.policy-template.update`, `iam-access-management.policy-template.delete`, `iam-access-management.policy-template.read`, `iam-access-management.policy-assignment.read` |
 {: row-headers}
 {: caption="Service roles - IAM Access Management" caption-side="top"}
 {: tab-title="Service roles"}
@@ -7726,6 +7728,14 @@ Review the available platform and service roles and the actions mapped to each t
 | `iam-access-management.settings.read` | Read Access Management account settings | Administrator, Editor, Viewer |
 | `iam-access-management.user-access-list.read` | Read User Access list | Administrator, Editor |
 | `iam-access-management.settings.update` | Update Access Management account settings | Administrator |
+| `iam-access-management.policy-template.create` | Create Access Management policy templates | Template Administrator |
+| `iam-access-management.policy-template.update` | Update Access Management policy templates | Template Administrator |
+| `iam-access-management.policy-template.delete` | Delete Access Management policy templates | Template Administrator |
+| `iam-access-management.policy-template.read` | Read Access Management policy templates | Assignment Administrator, Template Administrator |
+| `iam-access-management.policy-assignment.create` | Assign Access Management policy templates | Assignment Administrator |
+| `iam-access-management.policy-assignment.update` | Update Access Management policy template assignments | Assignment Administrator |
+| `iam-access-management.policy-assignment.delete` | Remove assigned Access Management policy templates | Assignment Administrator |
+| `iam-access-management.policy-assignment.read` | Read Access Management policy template assignments | Assignment Administrator, Template Administrator |
 | `global-search-tagging.resource.read` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `resource-controller.instance.retrieve` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `iam-access-management.customRole.read` | | Administrator, Editor, Operator, Viewer |

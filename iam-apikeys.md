@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-01-07"
+lastupdated: "2026-02-06"
 
 keywords: application programming interface key, API key, API, classic infrastructure API key, IBM Cloud API key
 
@@ -58,13 +58,17 @@ Some services in {{site.data.keyword.cloud_notm}} might provide an API key when 
 ## Working with API keys
 {: #work-with-apikeys}
 
-To manage the {{site.data.keyword.cloud_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the {{site.data.keyword.cloud_notm}} console. 
+To manage the {{site.data.keyword.cloud_notm}} API keys that are associated with your user identity or the ones that you have access to manage for other users in the account, go to **Manage** &gt; **Access (IAM)** &gt; **API keys** in the {{site.data.keyword.cloud_notm}} console.
 
 On the {{site.data.keyword.cloud_notm}} API keys page, you can create, edit, or delete {{site.data.keyword.cloud_notm}} API keys for yourself, and you can manage all classic infrastructure API keys for users to which you are an ancestor in the user hierarchy. This means that you can manage API keys for all users you invited to the account, or your child users invited to the account, and so on. In addition, if you are the account owner or a user with the required access to manage other user's API keys in the account, you can use the **View** filter to list and manage those API keys.
 
 When an API key is created or updated, users can set an expiration date. If an expiration date is specified, the API key is invalid after that date.
 
 
+
+When an API key is created or updated, users can set an expiration date. If an expiration date is specified, the API key is invalid after that date. Expired API keys are automatically deleted 90 days after expiration.
+
+A few days before an API key expires, a notification is sent through the {{site.data.keyword.cloud_notm}} notification service to the user who owns the API key (for user-level keys) or to the account owner (for service ID API keys).
 
 Users and account administrators are notified through {{site.data.keyword.cloud_notm}} notification service if an API key is leaked. When you create an API key, you can specify what action must be taken if the key is compromised. You can select from the following actions:
 
