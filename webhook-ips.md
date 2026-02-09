@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2025
-lastupdated: "2025-11-15"
+  years: 2026
+lastupdated: "2026-02-09"
 
 keywords: webhook, IP
 
@@ -31,7 +31,7 @@ The following table shows the IP ranges for Dallas.
 | 169.61.34.160/27	| Dallas 13 |
 | 169.61.58.48/28	  | Dallas 13 |
 | 169.62.146.192/26 | Dallas 13 |
-{: caption="Table 1. IP ranges for Dallas" caption-side="top"}
+{: caption="IP ranges for Dallas" caption-side="top"}
 
 ## IP ranges for Frankfurt
 {: #webhook-ips-frankfurt}
@@ -43,7 +43,7 @@ The following table shows the IP ranges for Frankfurt.
 | 158.177.109.0/27	 | Frankfurt 02 |
 | 158.177.213.192/26 | Frankfurt 02 |
 | 169.50.11.240/28	 | Frankfurt 02 |
-{: caption="Table 2. IP ranges for Frankfurt" caption-side="top"}
+{: caption="IP ranges for Frankfurt" caption-side="top"}
 
 ## IP ranges for London
 {: #webhook-ips-London}
@@ -58,7 +58,7 @@ The following table shows the IP ranges for London.
 | 158.175.101.32/27	 | London 04 |
 | 158.175.112.176/28 | London 04 |
 | 158.175.159.64/26	 | London 04 |
-{: caption="Table 3. IP ranges for London" caption-side="top"}
+{: caption="IP ranges for London" caption-side="top"}
 
 ## IP ranges for Sydney
 {: #webhook-ips-Sydney}
@@ -72,7 +72,7 @@ The following table shows the IP ranges for Sydney.
 | 130.198.72.0/26	  | Sydney 04 |
 | 130.198.73.80/28	| Sydney 04 |
 | 130.198.92.160/27 | Sydney 04 |
-{: caption="Table 4. IP ranges for Sydney" caption-side="top"}
+{: caption="IP ranges for Sydney" caption-side="top"}
 
 
 ## IP ranges for Tokyo
@@ -85,7 +85,7 @@ The following table shows the IP ranges for Tokyo.
 | 169.56.38.0/27	  | Tokyo 02 |
 | 128.168.69.0/28	  | Tokyo 04 |
 | 128.168.83.32/27	| Tokyo 04 |
-{: caption="Table 5. IP ranges for Tokyo" caption-side="top"}
+{: caption="IP ranges for Tokyo" caption-side="top"}
 
 ## IP ranges for Washington DC
 {: #webhook-ips-Washington}
@@ -99,4 +99,4 @@ The following table shows the IP ranges for Washington DC.
 | 169.63.133.64/26 | Washington DC 06 |
 | 52.117.106.0/26	 | Washington DC 07 |
 | 169.62.0.160/27	 | Washington DC 07 |
-{: caption="Table 6. IP ranges for Washington DC" caption-side="top"}
+{: caption="IP ranges for Washington DC" caption-side="top"}

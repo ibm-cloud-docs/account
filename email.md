@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-01-24"
+lastupdated: "2026-02-09"
 
 keywords: platform notifications, email notifications, IBM Cloud notifications, notification preferences, email preferences, user notifications, infrastructure notifications
 
@@ -107,7 +107,7 @@ To ensure that a user has the correct access, go to **Manage** > **Access (IAM)*
 | Device              | View Hardware Details  \n View Virtual Server Details |
 | Network             | Manage Network Gateways |
 | Services            | Storage Manage |
-{: caption="Table 1. Required classic infrastructure permissions for receiving user notifications" caption-side="top"}
+{: caption="Required classic infrastructure permissions for receiving user notifications" caption-side="top"}
 
 Then, go to **Devices** to assign a user access to the specific devices and device types. You can also enable future access to all devices of a certain type. For more information about setting classic infrastructure permissions, see [Managing classic infrastructure access](/docs/account?topic=account-mngclassicinfra).
 
