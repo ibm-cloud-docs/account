@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-09-26"
+  years: 2015, 2026
+lastupdated: "2026-02-12"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -206,7 +206,7 @@ Total {{site.data.keyword.cos_full_notm}} cost: $0.36 + $0.00 + $0.01 + $0.00 = 
 ## {{site.data.keyword.mon_full_notm}} Calculation details
 {: #cloud-monitoring-pricing-details}
 
-Monitoring of {{site.data.keyword.codeengineshort}} and {{site.data.keyword.cloudant_short_notm}} is enabled by using platform metrics. Platform metrics {{site.data.keyword.mon_full_notm}} are charged by using the tiered pricing based on the number of time-series hours metrics. For more examples on billing, see [Billing samples](/docs/monitoring?topic=monitoring-pricing_plans#billing_example).
+Monitoring of {{site.data.keyword.codeengineshort}} and {{site.data.keyword.cloudant_short_notm}} is enabled by using platform metrics. Platform metrics {{site.data.keyword.mon_full_notm}} are charged by using the tiered pricing based on the number of time-series hours metrics. For more information about pricing, see [{{site.data.keyword.mon_full_notm}} pricing](/docs/monitoring?topic=monitoring-pricing_plans).
 
 For platform metrics {{site.data.keyword.mon_full_notm}} charges based on the number of time-series metrics:
 
