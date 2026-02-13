@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-01-28"
+  years: 2022, 2026
+lastupdated: "2026-02-13"
 
 keywords: invoice reconciliation, non-subscription invoice, map invoice, map usage, one time charges, recurring invoice, recurring charges
 
@@ -47,8 +47,8 @@ You receive an IaaS and PaaS invoice each month.
 
 For this example, reference Figure 1. The IaaS invoice total is $324,245.93 USD and the PaaS invoice total is $5566.81 USD. To understand what these totals represent, you must view the recurring console invoice. The recurring invoice in the console provides a line item breakdown of each charge.
 
-![An image of IaaS and PaaS invoice for the month](images/official-march-invoice.png){: caption="Figure 1.IaaS and PaaS invoice for the month of March." caption-side="bottom"}
-![An image of IaaS and PaaS invoice for the month](images/official-invoice-2.png){: caption="Figure 1.IaaS and PaaS invoice for the month of March." caption-side="bottom"}
+![An image of IaaS and PaaS invoice for the month](images/official-march-invoice.png){: caption="IaaS and PaaS invoice for the month of March" caption-side="bottom"}
+![An image of IaaS and PaaS invoice for the month](images/official-invoice-2.png){: caption="IaaS and PaaS invoice for the month of March" caption-side="bottom"}
 {: #IaaS-PaaS}
 
 ## Identify the recurring charges

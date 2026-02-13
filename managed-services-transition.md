@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-08-20"
+  years: 2019, 2026
+lastupdated: "2026-02-13"
 
 keywords: managed services transition, managed services
 
@@ -42,7 +42,7 @@ The following table describes important dates that you need to be aware of if yo
 | 1 November 2024 | Last date to open a support case with your transition decision |
 | 30 November 2024 | Last date to add servers to the existing setup and have them be included in the transition |
 | 1 January 2025 | - IBM no longer provides a managed level of support for server, security, storage, and database management services that were in scope as part of the Managed Services offering \n - IBM is no longer able to log into your devices with IBM’s administrative domain accounts.  IBM demotes and removes its controllers and services from the client’s domain as part of the decommission. \n Any remaining billing for the Managed Services offering ends. Billing for devices continues within the normal IBM billing process. \n Any remaining domain-based resources that were not transitioned might begin to experience failures because the infrastructure will be disabled \n - If you opt in to partnering with Wanclouds the domain moves to and remains on the Wanclouds controllers without impact or interruption \n - If you opt out to a self-managed environment the responsibility for managing the devices reverts solely to you as self-managed devices |
-{: caption="Manage Servies transition milestones" caption-side="top"}
+{: caption="Managed Services transition milestones" caption-side="top"}
 
 ## Steps for opting in with Wanclouds
 {: #opt-in-wanclouds}
