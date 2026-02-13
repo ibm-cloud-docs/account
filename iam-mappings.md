@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-02-13"
 
 keywords: IAM, what is IAM, comparing IAM concepts
 
@@ -42,7 +42,7 @@ The following mappings of {{site.data.keyword.cloud_notm}} IAM concepts to those
 | Auditing | Audit with {{site.data.keyword.atracker_full_notm}} | Audit with AWS CloudTrail | Azure Logging and Auditing Activity logs | Audit with Audit logging |
 | Enterprise-managed IAM | Centrally administer access and security settings for an {{site.data.keyword.cloud_notm}} multi-account environment. | AWS Control Tower |  |   |
 {: row-headers}
-{: caption="{{site.data.keyword.cloud_notm}} IAM concept comparison" caption-side="top"}
+{: caption="{{site.data.keyword.cloud_notm}} IAM concept comparison" caption-side="bottom"}
 {: summary="The first column is {{site.data.keyword.cloud_notm}} IAM concept. Then, each of the following columns has details as that concept relates the specific cloud provider that is listed in the column header."}
 
 {{_include-segments/federating-segment.md}}

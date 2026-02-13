@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2025
-lastupdated: "2025-11-15"
+  years: 2026
+lastupdated: "2026-02-13"
 
 keywords: cloud status, view cloud status, planned maintenance, RSS feed, unfied notifications, iaas notifications, classic infrastructure notifications, incident reports, MZR, private MZR, status page, status query, incident, maintenance, search query, notifications, view notifications, set notifications,
 
@@ -73,7 +73,7 @@ The following table provides information on URL query filters that you can use t
 | `?type`             | A filter that applies only to the Status tab. Use the `?type` query to filter the Status tab by incidents or maintenance.           | `=incident`, `=maintenance` |
 | `?region`           | Filter the page by geographic location.                                                                                             | `=na`, `=eu`, `=sa`, `=ap`  |
 | `?component`        | Filter the page by {{site.data.keyword.cloud_notm}} components. For example, you might filter by a service you are interested in. | Applies to most global catalog IDs; for example, `?component=iotf-service` filters the page and display events that affect Internet of Things Platform |
-{: caption="URL query filters" caption-side="top"}
+{: caption="URL query filters" caption-side="bottom"}
 
 You can always use the **Filter by** filters, and then copy or bookmark the URL query that is generated. The filters are displayed in your URL and can help you build future queries.
 {: tip}
@@ -139,7 +139,7 @@ To view the incident reports page and check RCAs, complete the following steps:
 {: #view-notifications}
 
 Access essential account information by clicking the **Notifications** icon ![Notification icon "Notifications"](../icons/Notification.svg) in the console menu bar. To help you stay up to date with the latest announcements, maintenance plans, and other impacts to your account experience, a visual indicator is displayed next to the icon when a new notification is available.
-  
+
 Notifications are scoped to the specific account in which you are working. Use the list of accounts that's displayed in the console menu bar to view notifications related to other accounts you have access to.
 {: tip}
 
@@ -160,17 +160,17 @@ The following table describes the different types of notifications that are disp
 | Announcements | Updates on new infrastructure features and services in {{site.data.keyword.cloud_notm}}. |
 | Incidents | Unexpected impacting events that can cause an outage or restrict functionality. |
 | Account | Invitation email, or console notifications for inviting users to the {{site.data.keyword.cloud_notm}} platform.  |
-{: caption="Notification types" caption-side="top"}
+{: caption="Notification types" caption-side="bottom"}
 
 ## Viewing impacted devices
 {: #viewing-impacted-devices}
 
 Identify which of your devices are affected by the scheduled or ongoing maintenance activity in {{site.data.keyword.cloud_notm}}.
 
-To obtain a list of devices impacted under the maintenance activity, complete the following steps: 
+To obtain a list of devices impacted under the maintenance activity, complete the following steps:
 
-1. Log in to {{site.data.keyword.cloud_notm}} by using your credentials. 
-1. Click the **Notifications** icon ![Notifications icon](../icons/Notification.svg "Notifications") to view a list of open and completed maintenance's for your account in the past 30 days. 
+1. Log in to {{site.data.keyword.cloud_notm}} by using your credentials.
+1. Click the **Notifications** icon ![Notifications icon](../icons/Notification.svg "Notifications") to view a list of open and completed maintenance's for your account in the past 30 days.
 
 You can directly go to the maintenance notification page through [{{site.data.keyword.cloud_notm}} Notifications](https://cloud.ibm.com/notifications){: external}
 {: note}
@@ -220,7 +220,7 @@ For IaaS offerings, {{site.data.keyword.cloud_notm}} provides advanced notice th
 | Emergency             | Customer Impacting Event (CIE) | a minimum of 24 hours |
 | High                  | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 30 days |
 | Low                   | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | offering-specific |
-{: caption="IaaS offerings impact possibility definitions" caption-side="top"}
+{: caption="IaaS offerings impact possibility definitions" caption-side="bottom"}
 
 ### PaaS
 {: #paas}
@@ -232,7 +232,7 @@ For PaaS offerings, IBM Cloud provides advanced notice that's dependent on the s
 | Emergency             | Customer Impacting Event (CIE) | a minimum of 24 hours |
 | Disruptive            | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 30 days |
 | Nondisruptive                | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | None |
-{: caption="PaaS offerings impact possibility definitions" caption-side="top"}
+{: caption="PaaS offerings impact possibility definitions" caption-side="bottom"}
 
 ### SaaS
 {: #saas}
@@ -244,4 +244,4 @@ For SaaS offerings, IBM Cloud provides advanced notice that's dependent on the s
 | Emergency             | Customer Impacting Event (CIE) | a minimum of 24 hours |
 | Disruptive            | Certain, likely, or has the potential to cause an extended or brief service disruption. | a minimum of 7 days |
 | Nondisruptive                | None to negligible chance of a disruption or routine change. No assumed risk or a disruption that is isolated to a single customer. | None |
-{: caption="SaaS offerings impact possibility definitions" caption-side="top"}
+{: caption="SaaS offerings impact possibility definitions" caption-side="bottom"}

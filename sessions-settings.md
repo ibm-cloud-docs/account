@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-11-15"
+  years: 2021, 2026
+lastupdated: "2026-02-13"
 
 keywords: user session, inactivity, sign out, concurrent, login session, trusted profiles
 
@@ -211,7 +211,7 @@ Sessions are created when a user logs in to the {{site.data.keyword.cloud}} CLI 
 | {{site.data.keyword.cloud}} CLI | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | API call                        |                                                |                                                |
 {: caption="Sessions and refresh token availability - Users" caption-side="bottom"}
-{: summary="When a session is created or not depends on a combination of the identity type and login type."}
+{: summary="This table has row and column headers. The row headers identify the login type. The column headers identify whether sessions and refresh tokens are available. To understand session and refresh token availability for each login type, navigate to the row for the login type you're interested in. Use the buttons before the table to change the identity type."}
 {: #table01}
 {: tab-title="Users"}
 {: tab-group="Identity type"}
@@ -224,7 +224,7 @@ Sessions are created when a user logs in to the {{site.data.keyword.cloud}} CLI 
 | {{site.data.keyword.cloud}} CLI | ![Checkmark icon](../icons/checkmark-icon.svg) | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | API call                        |                                                |                                                |
 {: caption="Sessions and refresh token availability - Trusted profiles for federated users" caption-side="bottom"}
-{: summary="When a session is created or not depends on a combination of the identity type and login type."}
+{: summary="This table has row and column headers. The row headers identify the login type. The column headers identify whether sessions and refresh tokens are available. To understand session and refresh token availability for each login type, navigate to the row for the login type you're interested in. Use the buttons before the table to change the identity type."}
 {: #table02}
 {: tab-title="Trusted profiles - federated users"}
 {: tab-group="Identity type"}
@@ -237,7 +237,7 @@ Sessions are created when a user logs in to the {{site.data.keyword.cloud}} CLI 
 | {{site.data.keyword.cloud}} CLI |         | ![Checkmark icon](../icons/checkmark-icon.svg) |
 | API call                        |         |                                                |
 {: caption="Sessions and refresh token availability - Service IDs" caption-side="bottom"}
-{: summary="When a session is created or not depends on a combination of the identity type and login type."}
+{: summary="This table has row and column headers. The row headers identify the login type. The column headers identify whether sessions and refresh tokens are available. To understand session and refresh token availability for each login type, navigate to the row for the login type you're interested in. Use the buttons before the table to change the identity type."}
 {: #table03}
 {: tab-title="Service IDs"}
 {: tab-group="Identity type"}

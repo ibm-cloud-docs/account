@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-05"
+  years: 2019, 2026
+lastupdated: "2026-02-13"
 
 keywords: change owner, transfer account, transfer account ownership, switch owner, transfer owner, classic infrastructure, account owner, second account owner, two account owners, alternative account owner, trusted profile
 
@@ -111,4 +111,5 @@ The following table shows the difference between the account owner and the alter
 | Default email | ![Checkmark icon](../icons/checkmark-icon.svg) |  |
 {: row-headers}
 {: class="comparison-table"}
-{: caption="Account owner and alternative account owner comparison." caption-side="bottom"}
+{: caption="Account owner and alternative account owner comparison" caption-side="bottom"}
+{: summary="This table has row and column headers. The row headers identify the account management capability. The column headers identify the account owner type. To understand which capabilities are available to each owner type, navigate to the row for the capability you're interested in."}

@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2024, 2025
-lastupdated: "2025-11-15"
+  years: 2024, 2026
+lastupdated: "2026-02-13"
 
 keywords: location management, locations, region
 
@@ -80,7 +80,7 @@ Filter by different location parameters by using the syntax shown in each exampl
 | Tag                                | `tag:t1`                         | Regions with a `t1` tag                        |
 | Location type                      | `public:false`                   | Private regions                                |
 | Kind                               | `kind:region`                    | [Group of one or more zones](/docs/overview?topic=overview-locations#table-mzr)|
-{: caption="Example syntax for different location parameters." caption-side="top"}
+{: caption="Example syntax for different location parameters." caption-side="bottom"}
 
 ### Combining multiple locations
 {: #predefined_syntax}
@@ -91,4 +91,4 @@ If you have more complex and specific location requirements, you might need to u
 |--------------------------|-------------------------------------------------------------------------|
 | `country:de,uk\|id:my-private-region`    | All regions in `de` or `uk` countries as well as (OR) region (id) `my-private-region`|
 | `geo:na^cap:name:power` | Any region in North America geography that has a (AND) power capability |
-{: caption="Example syntax for specifying multiple location criteria." caption-side="top"}
+{: caption="Example syntax for specifying multiple location criteria." caption-side="bottom"}

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-11-15"
+  years: 2021, 2026
+lastupdated: "2026-02-13"
 
 keywords: access to cases, get access for cases, assign cases, assign access, access support center
 
@@ -31,7 +31,7 @@ The following table shows the roles and actions that are required to work with c
 | Viewer        | View and search cases                                                               |
 | Editor        | View, search, create, and update cases                                              |
 | Administrator | View, search, create, and update cases; manage support center roles for other users |
-{: caption="Roles and actions for the Support Center service" caption-side="top"}
+{: caption="Roles and actions for the Support Center service" caption-side="bottom"}
 
 By default, users with a Support Center service role can access support cases that they are assigned to unless one of the following conditions is met:
 

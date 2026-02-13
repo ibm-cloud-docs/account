@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-02-03"
+lastupdated: "2026-02-13"
 
 keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
 
@@ -85,7 +85,7 @@ The following table lists the rules that users are going to be required to follo
 | LEVEL1             | MFA for a user with or without an IBMid - Email-based MFA | MFA for a user with or without an IBMid - Email-based MFA |
 | LEVEL2             | MFA for a user with or without an IBMid - TOTP MFA | MFA for a user with or without an IBMid - TOTP MFA |
 | LEVEL3             | MFA for a user with or without an IBMid - U2F MFA  | MFA for a user with or without an IBMid - U2F MFA |
-{: caption="Authenticte rules set at an account level" caption-side="top"}
+{: caption="Authenticate rules set at an account level" caption-side="top"}
 
 The following table lists the rules that the users (IAM > Users > Details) are required to authenticate:
 
@@ -99,7 +99,7 @@ The following table lists the rules that the users (IAM > Users > Details) are r
 | LEVEL1             | Email-based MFA               | Email-based MFA         |
 | LEVEL2             | TOTP MFA                      | TOTP MFA                |
 | LEVEL3             | U2F MFA                       | U2F MFA                 |
-{: caption="Authenticte rules set per user" caption-side="top"}
+{: caption="Authenticate rules set per user" caption-side="top"}
 
 The following table lists the rules that the users (IAM > Enterprise >Templates > IAM settings) are required to authenticate:
 
@@ -113,4 +113,4 @@ The following table lists the rules that the users (IAM > Enterprise >Templates 
 | LEVEL1             | MFA for a user with or without an IBMid - Email-based MFA | Email-based MFA |
 | LEVEL2             | MFA for a user with or without an IBMid - TOTP MFA | TOTP MFA |
 | LEVEL3             | MFA for a user with or without an IBMid - U2F MFA  | U2F MFA |
-{: caption="Authenticte rules defined in IAM templates" caption-side="top"}
+{: caption="Authenticate rules defined in IAM templates" caption-side="top"}
