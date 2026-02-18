@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-11-15"
+  years: 2018, 2026
+lastupdated: "2026-02-18"
 
 keywords:
 
@@ -134,7 +134,7 @@ The following table lists the `requestData` fields that report the configuration
 | Action                                                         | Description |
 |----------------------------------------------------------------|-------------|
 | `requestData.public_access_enabled`                            | Reports the boolean value that is set when the `Public access group` setting is modified. |
-| `requestData.request_body.old_mfa_traits`                      | Reports the original value for the `Multifactor authentication (MFA)` setting. Valid values are `NONE`, `TOTP`, `TOTP4ALL`, `LEVEL1`, `LEVEL2`, `LEVEL3`   \n  \n This field is set to `NONE` when MFA is not enabled in the account, and all users log in by using a standard ID and password.   \n  \n This field is set to `TOTP` when the account requires MFA for non-federated users only users with an IBMid. Users are required an ID, password, and a time-based one-time passcode to log in.   \n  \n This field is set to `TOTP4ALL` when the account requires MFA for all users with an IBMid.   \n  \n This field is set to `LEVEL1` to enable MFA for all users (IBMid & supported IdPs) when you choose the method `email-based MFA`. Users must authenticate by using a security passcode that is sent via email.     \n  \n This field is set to `LEVEL2` to enable MFA for all users (IBMid & supported IdPs) when you choose the method `TOTP MFA`. Users authenticate by using a time-based one-time passcode (TOTP) that uses the current time of day as an authentication factor.   \n  \n This field is set to `LEVEL3` to enable MFA for all users (IBMid & supported IdPs) when you choose the method `U2F MFA`. Users authenticate by using a hardware security key that generates a six-digit numerical code. |
+| `requestData.request_body.old_mfa_traits`                      | Reports the original value for the `Multifactor authentication (MFA)` setting. Valid values are `NONE`, `TOTP`, `TOTP4ALL`, `LEVEL1`, `LEVEL2`, `LEVEL3`   \n  \n This field is set to `NONE` when MFA is not enabled in the account, and all users log in by using a standard ID and password.   \n  \n This field is set to `TOTP` when the account requires MFA for non-federated users only users with an IBMid. Users are required an ID, password, and a time-based one-time passcode to log in.   \n  \n This field is set to `TOTP4ALL` when the account requires MFA for all users with an IBMid.   \n  \n This field is set to `LEVEL1` to enable MFA for all users (IBMid & supported IdPs) when you choose the method `email-based MFA`. Users must authenticate by using a security passcode that is sent via email.     \n  \n This field is set to `LEVEL2` to enable MFA for all users (IBMid & supported IdPs) when you choose the method `TOTP MFA`. Users authenticate by using a time-based one-time passcode (TOTP) that uses the current time of day as an authentication factor.   \n  \n This field is set to `LEVEL3` to enable MFA for all users (IBMid & supported IdPs) when you choose the method `Security key MFA`. Users authenticate by using a hardware security key that generates a six-digit numerical code. |
 | `requestData.request_body.new_mfa_traits`                      | Reports the new value for the `Multifactor authentication (MFA)` setting. |
 | `requestData.request_body.old_restrict_create_platform_apikey` | Reports the original value for the `Restrict API key creation` setting.   \n Valid values: `NOT_RESTRICTED` and `RESTRICTED` |
 | `requestData.request_body.new_restrict_create_platform_apikey` | Reports the new value for the `Restrict API key creation` setting.   \n Valid values: `NOT_RESTRICTED` and `RESTRICTED` |

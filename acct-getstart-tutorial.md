@@ -2,10 +2,10 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-02-18"
 
-keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, U2F, FIDO U2F, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
+keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
 subcollection: account
 
@@ -198,7 +198,7 @@ Setting up MFA in your account affects all members of the account. This means th
    * **MFA for all users (IBMid & supported IdPs)**: Require users to authenticate by using one of the following MFA factors. This option applies to users who are using either an IBMid or an external IdP.
       * **Email-based MFA**: Users authenticate by using a security passcode that's sent by email.
       * **TOTP MFA**: Users authenticate by using a time-based one-time passcode (TOTP) with an authenticator app, such as {{site.data.keyword.IBM_notm}} Security Verify or Google Authenticator.
-      * **U2F MFA**: Users authenticate by using a hardware security key. This factor offers the highest level of security.
+      * **Security Key MFA**: Users authenticate by using a hardware security key. This factor offers the highest level of security.
 1. Click **Update**.
 
 The first time that you log in to your account after updating your MFA settings, you need to verify your identity by using two different verification methods. Methods for verification include email, text, or phone call, and you can use any combination of those options to verify your identity. After you verify your identity, you set up and provide details for your authentication factor.
