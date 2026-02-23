@@ -3,9 +3,9 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-02-13"
+lastupdated: "2026-02-18"
 
-keywords: MFA, multifactor authentication, two-factor authentication, U2F, FIDO U2F, security key
+keywords: MFA, multifactor authentication, two-factor authentication, security key
 
 subcollection: account
 
@@ -36,7 +36,7 @@ To set up MFA in IAM, users must complete the following steps:
 1. Set up one MFA method that meets the required security level:
    - Level 1: Email-based MFA
    - Level 2: Time-based one-time password (TOTP)
-   - Level 3: Security key (U2F)
+   - Level 3: Security key
 
    Users can always authenticate by using a higher-level MFA method, as higher levels provide stronger security.
 
@@ -63,7 +63,7 @@ Users authenticate by using one of the following MFA factors. This option applie
 
 * Email-based MFA: Users authenticate by using a security passcode, which is sent by email.
 * TOTP MFA: Users authenticate by using a TOTP.
-* U2F MFA: Users authenticate by using a physical hardware-based security key. Based on the FIDO U2F standard, this factor offers the highest level of security.
+* Security key MFA: Users authenticate by using a physical hardware-based security key. This factor offers the highest level of security.
 
 ### None
 {: #mfa-none}
@@ -84,8 +84,8 @@ The following table lists the rules that users are going to be required to follo
 | TOTP               | MFA for a user with an IBMid - Nonfederated user | MFA for a user with an IBMid - Nonfederated user |
 | LEVEL1             | MFA for a user with or without an IBMid - Email-based MFA | MFA for a user with or without an IBMid - Email-based MFA |
 | LEVEL2             | MFA for a user with or without an IBMid - TOTP MFA | MFA for a user with or without an IBMid - TOTP MFA |
-| LEVEL3             | MFA for a user with or without an IBMid - U2F MFA  | MFA for a user with or without an IBMid - U2F MFA |
-{: caption="Authenticate rules set at an account level" caption-side="top"}
+| LEVEL3             | MFA for a user with or without an IBMid - Security key MFA  | MFA for a user with or without an IBMid - Security key MFA |
+{: caption="Authenticte rules set at an account level" caption-side="top"}
 
 The following table lists the rules that the users (IAM > Users > Details) are required to authenticate:
 
@@ -98,8 +98,8 @@ The following table lists the rules that the users (IAM > Users > Details) are r
 | TOTP               | MFA for a user with an IBMid  | MFA for users with an IBMid (Nonfederated users) |
 | LEVEL1             | Email-based MFA               | Email-based MFA         |
 | LEVEL2             | TOTP MFA                      | TOTP MFA                |
-| LEVEL3             | U2F MFA                       | U2F MFA                 |
-{: caption="Authenticate rules set per user" caption-side="top"}
+| LEVEL3             | Security key MFA              | Security key MFA        |
+{: caption="Authenticte rules set per user" caption-side="top"}
 
 The following table lists the rules that the users (IAM > Enterprise >Templates > IAM settings) are required to authenticate:
 
@@ -112,5 +112,5 @@ The following table lists the rules that the users (IAM > Enterprise >Templates 
 | TOTP               | MFA for a user with an IBMid - Nonfederated user | MFA for a user with an IBMid |
 | LEVEL1             | MFA for a user with or without an IBMid - Email-based MFA | Email-based MFA |
 | LEVEL2             | MFA for a user with or without an IBMid - TOTP MFA | TOTP MFA |
-| LEVEL3             | MFA for a user with or without an IBMid - U2F MFA  | U2F MFA |
-{: caption="Authenticate rules defined in IAM templates" caption-side="top"}
+| LEVEL3             | MFA for a user with or without an IBMid - Security key MFA  | Security key MFA |
+{: caption="Authenticte rules defined in IAM templates" caption-side="top"}

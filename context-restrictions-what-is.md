@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-02-05"
+lastupdated: "2026-02-18"
 
 keywords: Context based restriction, rule, context, network zone, IBM Cloud restrictions, IBM Cloud context restriction, IBM Cloud access, access control, resource access, endpoint type
 
@@ -180,7 +180,7 @@ Multifactor authentication (MFA) requires identities to authenticate by using an
 
 * LEVEL1: Email-based MFA
 * LEVEL2: TOTP MFA
-* LEVEL3: U2F MFA
+* LEVEL3: Security key MFA
 
 In addition to LEVEL1, LEVEL2, and LEVEL3 MFA, the context-based restrictions rule also supports the value `IAM_ACCOUNT_SETTING`, which means that the rule's MFA value matches whatever you define as the MFA requirement for your account. This way, any changes to your account's MFA settings automatically applies to the rule. For more information, see [MFA options](/docs/account?topic=account-types#mfa-options).
 
