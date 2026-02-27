@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-02-26"
+lastupdated: "2026-02-27"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -11902,6 +11902,7 @@ Review the available platform and service roles and the actions mapped to each t
 | ----- | :----- | :----- |
 | DataAccess | DataAccess | `lakehouse.data.access` |
 | Key Manager | As an key manager, the service can perform platform actions required to manage resource keys, such as creating a new resource key for a resource instance. | `resource-controller.key.manager_create`, `resource-controller.key.manager_delete`, `resource-controller.key.manager_update`, `resource-controller.key.manager_retrieve` |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | `lakehouse.dashboard.view`, `GET /v4/:platform/deployables`, `GET /v5/:platform/deployables`, `lakehouse.metastore.admin`, `lakehouse.service.manage`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
 | MetastoreAdmin | Grant metastore access | `lakehouse.metastore.admin` |
 | MetastoreViewer | MetastoreViewer | `lakehouse.metastore.view` |
 | Service Configuration Reader | The ability to read services configuration for Governance management. | `global-search-tagging.resource.read`, `resource-controller.instance.retrieve` |
@@ -11915,17 +11916,18 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `lakehouse.dashboard.view` | Description | Administrator, Editor, Operator, Viewer |
-| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
-| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Operator, Viewer |
-| `lakehouse.metastore.admin` | Allowing metastore access | Administrator, MetastoreAdmin |
+| `lakehouse.dashboard.view` | Description | Administrator, Editor, Manager, Operator, Viewer |
+| `GET /v4/:platform/deployables` | Read Deployables | Administrator, Editor, Manager, Operator, Viewer |
+| `GET /v5/:platform/deployables` | Read Deployables | Administrator, Editor, Manager, Operator, Viewer |
+| `lakehouse.metastore.admin` | Allowing metastore access | Administrator, Manager, MetastoreAdmin |
 | `lakehouse.uservpc.manage` | Provides ability to create and manage a deployment in a user owned VPC | Administrator, Editor, Operator |
 | `lakehouse.data.access` | Allows data access for other services. | DataAccess |
 | `lakehouse.metastore.view` | Allow metastore view | MetastoreViewer |
-| `global-search-tagging.resource.read` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
+| `lakehouse.service.manage` | Following action provides users the ability to create and own resources | Manager |
+| `global-search-tagging.resource.read` | | Administrator, Editor, Manager, Operator, Service Configuration Reader, Viewer |
 | `resource-controller.instance.retrieve` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
-| `cbr.rule.read` | | Administrator, Editor, Operator, Viewer |
-| `iam.policy.read` | | Administrator, Editor, Operator, Viewer |
+| `cbr.rule.read` | | Administrator, Editor, Manager, Operator, Viewer |
+| `iam.policy.read` | | Administrator, Editor, Manager, Operator, Viewer |
 | `iam.role.read` | | Administrator, Viewer |
 | `resource-controller.broker.retrieve` | | Administrator, Editor, Operator, Viewer |
 | `resource-controller.alias.retrieve` | | Administrator, Editor, Operator, Viewer |
