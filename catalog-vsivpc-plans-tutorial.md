@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2024, 2025
-lastupdated: "2025-11-15"
+  years: 2024, 2026
+lastupdated: "2026-03-03"
 
 keywords: onboard software, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud, software plan, plan, usage-based plan, partner center
 
@@ -105,6 +105,7 @@ When you add a usage-based pricing plan, you provide your suggested retail prici
 
 To add a usage-based pricing plan to your software, complete the following steps:
 
+
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Partner Center** > **My products**.
 1. Select the product that you're onboarding, and click **Pricing**.
 1. Click **Add plan > Usage-based**.
@@ -114,6 +115,8 @@ To add a usage-based pricing plan to your software, complete the following steps
 1. Enter your software version. You must select whether you want to validate only one version or a range of versions, or add a semantic version string to match the versions you want to validate.
 1. Provide a description for your pricing plan.
 1. Click **Save**.
+
+
 
 After you add a pricing plan to your software version in Partner Center, you can manage it in your catalog as well. This means that you can change the state of your plan to publish it, add features to it, deprecate it, or update certain plan details. For more information, see [Managing software plans in catalogs](/docs/account?topic=account-sw-manage-plans).
 
