@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-03-04"
 
 keywords: credit, credit types, promo code, discount, promotion code, promotional code, redeem promos, feature code, subscription code
 
@@ -25,23 +25,12 @@ subcollection: account
 
 {{site.data.keyword.cloud_notm}} credits enable customers and Business Partners to use, learn, and build {{site.data.keyword.cloud_notm}} infrastructure and platform skills and solutions at a reduced cost.
 
-### Startup at {{site.data.keyword.IBM_notm}} credits
-{: #start-credits}
-
-You can use $120,000 in free {{site.data.keyword.cloud_notm}} credits that are provided by **Startup with {{site.data.keyword.IBM_notm}}** to put your business on the path to transformative growth. **Startup with {{site.data.keyword.IBM_notm}}** provides access to up to $120,000 of technology usage credits and successful technologies that help solve real problems and help get innovative products to market faster. For more information, see [Partner Plus](https://www.ibm.com/partnerplus/isv).
-
-### New Business Partner credits
-{: #bp-credits}
-
-You can get up to $1200 in new Business Partner credits at [New Business Partners: IBM Cloud credits to start your Cloud journey](https://www.ibm.com/partnerplus). You can access more than 40 products with no expiration date. You receive no charges, as there are no contracts and no commitments until you use beyond the free tier.
-
-
 ### Upgrade credits
 {: #upgrade-credits}
 
 You can create an account and use a myriad of software products with no time limit. Your account comes with a $200 USD upgrade credit that is valid for 30 days and it can be applied to any product in the {{site.data.keyword.cloud_notm}} catalog. If your upgrade includes a promotional credit, the credit might take a few hours to appear in your account. For more information, see [{{site.data.keyword.cloud_notm}} free tier](https://www.ibm.com/products/cloud/free){: external}.
 
-## Billing Codes
+## Billing codes
 {: #types-of-codes}
 
 ### Promo code
