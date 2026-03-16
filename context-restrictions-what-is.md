@@ -19,7 +19,7 @@ subcollection: account
 Context-based restrictions give account owners and administrators the ability to define and enforce access restrictions for {{site.data.keyword.cloud}} resources based on a rule's criteria. The criteria include the network location of access requests, the endpoint type from where the request is sent, the multifactor authentication level of an identity, and sometimes the API that the request tries to access. These restrictions work with traditional IAM policies, which are based on identity, to provide another layer of protection. Since both IAM policies and context-based restrictions enforce access, context-based restrictions offer protection even in the face of compromised or mismanaged credentials.
 {: shortdesc}
 
-You can also use the [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) module to manage context-based restrictions as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+You can also use the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) to manage context-based restrictions as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 {: tip}
 
 ![A diagram that shows how context-based restrictions work.](images/CBR-diagram.svg){: caption="A diagram that shows how context-based restrictions work." caption-side="bottom"}

@@ -20,11 +20,11 @@ As the account owner or the administrator of an account management service, you 
 {: shortdesc}
 
 You can use Terraform IBM Modules to manage account management services as code. Consider the following modules:
-- [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) for managing account settings
-- [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) for managing access groups
-- [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) for managing context-based restrictions
+- [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) for managing account settings
+- [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) for managing access groups
+- [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) for managing context-based restrictions
 
-For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 {: tip}
 
 

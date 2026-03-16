@@ -19,7 +19,7 @@ subcollection: account
 As an {{site.data.keyword.cloud}} account owner, you can change the account name, view your account type, and find your account ID on the Account settings page. You can also manage settings for compliance for EU support, Financial Services Validated products, and HIPAA support.
 {: shortdesc}
 
-You can use the [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) module to manage {{site.data.keyword.cloud_notm}} account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+You can use the [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) to manage {{site.data.keyword.cloud_notm}} account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 {: tip}
 
 ## Viewing your account settings

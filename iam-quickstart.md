@@ -140,6 +140,6 @@ You can update existing access by editing the assigned roles for a user.
 
 Continue securing your cloud resources by creating context-based restrictions, which work with traditional IAM policies, to provide another layer of protection. Or, learn what else you can do with {{site.data.keyword.cloud_notm}} IAM by checking out the [features list](/docs/account?topic=account-iamoverview#features).
 
-- To automate access group provisioning with Terraform, see the [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) module.
-- To automate context-based restrictions with Terraform, see the [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) module.
+- To automate access group provisioning with Terraform, see the [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group).
+- To automate context-based restrictions with Terraform, see the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr).
 - You can explore all available modules in the [Terraform IBM Modules registry](https://registry.terraform.io/namespaces/terraform-ibm-modules).

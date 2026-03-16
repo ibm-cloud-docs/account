@@ -83,4 +83,4 @@ To create context-based restrictions programmatically, see the [Context-based Re
 
 For more information about implementing context-based restrictions in your security strategy, see the solution tutorial [Enhance cloud security by applying context-based restrictions](/docs/solution-tutorials?topic=solution-tutorials-cbr-enhanced-security).
 
-- To automate context-based restrictions provisioning with Terraform, see the [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) module. You can explore all available modules in the [Terraform IBM Modules registry](https://registry.terraform.io/namespaces/terraform-ibm-modules).
+- To automate context-based restrictions provisioning with Terraform, see the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr). You can explore all available modules in the [Terraform IBM Modules registry](https://registry.terraform.io/namespaces/terraform-ibm-modules).

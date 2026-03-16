@@ -19,7 +19,7 @@ subcollection: account
 There are two ways to change how a user views other users in an account. The first is by using the user list visibility setting. And, the second is for classic infrastructure users, and it is directly related to the parent user that is listed. The assigned parent user determines which users a specific user can view when the setting for user list visibility is enabled.
 {: shortdesc}
 
-You can also use the [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) module to manage account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+You can also use the [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) to manage account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 {: tip}
 
 ## Setting user view access

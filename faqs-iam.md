@@ -344,7 +344,7 @@ To view a list of dynamic members in an access group, go to **Manage** > **Acces
 {: #faq-terraform-access-group}
 {: faq}
 
-Yes. You can use the [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) module, which provides production-ready, opinionated Terraform configurations for managing access groups as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+Yes. You can use the [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group), which provides production-ready, opinionated Terraform configurations for managing access groups as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 
 ## How do I find inactive users, service IDs, trusted profiles, and API keys in my account?
 {: #unused-identities}
