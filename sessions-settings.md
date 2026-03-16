@@ -94,6 +94,9 @@ To update your user's active sessions settings by using terraform, complete the 
 
 For more information, see the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_account_settings#allowed_ip_addresses).
 
+You can also use the [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) module to manage {{site.data.keyword.cloud_notm}} account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+{: tip}
+
 ### Setting session duration for trusted profiles
 {: #sessions-active-tp}
 {: ui}

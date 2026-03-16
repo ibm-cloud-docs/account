@@ -19,6 +19,9 @@ subcollection: account
 Context-based restrictions protect your resources by denying access to identities that don't satisfy context requirements, such as making access requests from the network zones and endpoint types that you define. You can enable context-based restrictions upon creation, or choose to set the rule to report-only mode. Use {{site.data.keyword.logs_full_notm}} to monitor enabled rules and report-only rules to view how the rule affects your users, applications, and workflows without enforcing the rule.
 {: shortdesc}
 
+You can use the [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) module to manage context-based restrictions as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+{: tip}
+
 Monitoring is available depending on the service and APIs that you target in your rule. Review each service's documentation to learn more about how it integrates with context-based restrictions.
 {: tip}
 

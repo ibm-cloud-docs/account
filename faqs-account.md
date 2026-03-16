@@ -433,3 +433,9 @@ For classic infrastructure services, you can get similar information by using th
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**. The account number is displayed.
 
 You can also find your account number by directly accessing the **Account settings** page by clicking [Account settings](https://cloud.ibm.com/account/settings).
+
+## Can I automate account settings with Terraform?
+{: #faq-terraform-account-settings}
+{: faq}
+
+Yes. You can use the [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) module, which provides production-ready, opinionated Terraform configurations for managing IAM account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).

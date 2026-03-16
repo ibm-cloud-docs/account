@@ -117,6 +117,9 @@ For more information, see the [Terraform documentation](https://registry.terrafo
 You can enter a single IP address `17.5.7.8`, an IP address range `17.5.7.8 - 17.5.9.5`, or IP subnets `17.5.7.8.0/16`, or a [network zone](/docs/account?topic=account-context-restrictions-whatis#network-zones-whatis) `networkZoneName`. Use IPv4 or IPv6 addresses, and separate multiple values with a comma.
 {: note}
 
+For production deployments, consider using the [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) module, which provides opinionated, production-ready configurations for IAM account settings. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+{: tip}
+
 ## Unlocking an account
 {: #unlock_account}
 

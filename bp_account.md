@@ -19,6 +19,9 @@ subcollection: account
 After you set up your {{site.data.keyword.cloud}} account, you're ready to start planning how you want to organize [resources](#x2004267){: term} and assign access to identities in your account. These best practices provide you with the basic building blocks to enable successful and secure app development in {{site.data.keyword.cloud_notm}}.
 {: shortdesc}
 
+You can also manage account resources as code by using Terraform IBM Modules. Key modules include [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) for account settings, [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) for access groups, and [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) for context-based restrictions. For more information, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+{: tip}
+
 The following best practices focus on resources that are enabled for {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) and that are assigned to resource groups. Classic infrastructure services aren't IAM-enabled, which means that they can't be assigned to resource groups.
 {: note}
 
@@ -305,3 +308,5 @@ I assign the user a writer role on Bucket A in the specific instance of {{site.d
 Now that you know how to set up your resource groups, organize your resources, and create access groups in your account, you can start [Inviting users to your account](/docs/account?topic=account-iamuserinv) and assigning them access to your access groups. If you already invited users to your account, you can go to your Users page and start to [assign access](/docs/account?topic=account-assign-access-resources#assign-access-resources).
 
 If you decide that your organization wants to manage user access based on your corporate user directory, you can start by [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
+
+- To automate account resource provisioning with Terraform, see the [terraform-ibm-iam-account-settings](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings), [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group), and [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) modules. You can explore all available modules in the [Terraform IBM Modules registry](https://registry.terraform.io/namespaces/terraform-ibm-modules).

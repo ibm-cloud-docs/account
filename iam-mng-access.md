@@ -520,7 +520,9 @@ To assign access to resources by using Terraform, use the following steps:
    ```
    {: codeblock}
 
-  
+   For production deployments, consider using the [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) module, which provides opinionated, production-ready configurations for managing access. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+   {: tip}
+
    Increased policy limits for service IDs are available for select accounts. To take advantage of the increased policy limits, assign access to {{site.data.keyword.messagehub}} or {{site.data.keyword.cos_full_notm}} services. You must also scope the access policies to a specific service instance, resource type, and resource ID.
    {: preview}
 
@@ -594,6 +596,9 @@ To assign access within a resource group by using Terraform, use the following s
    {: codeblock}
 
    You can specify the ID of the resource group that you want to assign access to on the `resource_group_id` option. For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_user_policy){: external} page.
+
+   For production deployments, consider using the [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) module, which provides opinionated, production-ready configurations for managing access. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+   {: tip}
 
 1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 

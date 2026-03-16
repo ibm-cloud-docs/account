@@ -19,6 +19,9 @@ subcollection: account
 Access management enables you to control which users see, create, use, and manage resources in your account. To grant access, you can assign roles that allow users levels of access for completing platform management tasks and accessing account resources.
 {: shortdesc}
 
+You can also use the [terraform-ibm-iam-access-group](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) module to manage access groups as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+{: tip}
+
 The way that you manage access in {{site.data.keyword.Bluemix}} depends on the type of resource that you want to assign access to. {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) is the access management system that is used for consistently managing resources that are organized in a resource group across the {{site.data.keyword.cloud_notm}} platform. [Classic infrastructure resources](/docs/account?topic=account-mngclassicinfra) are not managed by using IAM. These resource types have their own access management systems.
 
 If you have a combination of resource types, you manage each type separately:

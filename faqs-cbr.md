@@ -56,3 +56,9 @@ As an administrator, you manage users, applications, and workflows that depend o
 {: faq}
 
 Currently, {{site.data.keyword.cloud_notm}} does not support GEO-based account access control through Context-based restrictions. This is a known limitation within the platform, and such a functionality is not available now.
+
+## Can I manage context-based restrictions with Terraform?
+{: #faq-terraform-cbr}
+{: faq}
+
+Yes. You can use the [terraform-ibm-cbr](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) module, which provides production-ready, opinionated Terraform configurations for managing context-based restrictions as code. The module simplifies creating and managing network zones and rules. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
