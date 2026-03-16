@@ -334,6 +334,29 @@ To create a network zone, use the Terraform resource [cbr_zone](https://registry
 For production deployments, consider using the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr), which provides opinionated, production-ready configurations for context-based restrictions. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 {: tip}
 
+The following example shows how to define a network zone using the module:
+
+```terraform
+module "cbr" {
+  source  = "terraform-ibm-modules/cbr/ibm"
+  version = "X.X.X" # Replace with the latest version
+
+  cbr_zones = [
+    {
+      name             = "my-network-zone"
+      zone_description = "Zone for approved IP ranges and VPCs"
+      addresses = [
+        { type = "ipRange", value = "10.0.0.0/8" },
+        { type = "vpc",     value = var.vpc_crn }
+      ]
+    }
+  ]
+}
+```
+{: codeblock}
+
+For the full list of inputs and usage examples, see the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) on GitHub.
+
 ## Creating rules
 {: #context-restrictions-create-rules}
 {: ui}
