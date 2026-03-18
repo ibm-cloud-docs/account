@@ -15,8 +15,13 @@ subcollection: account
 
 # Assigning access to account management services
 {: #account-services}
+
 As the account owner or the administrator of an account management service, you can grant users access to invite users to the account, track billing and usage, and work with support cases. Users with account management access policies can also manage service IDs, access policies, catalog entries, access groups, resources for the {{site.data.keyword.compliance_short}} service, and work with Context-based restrictions.
 {: shortdesc}
+
+
+
+
 
 ## Assigning access in the console
 {: #console-acct-mgmt}
