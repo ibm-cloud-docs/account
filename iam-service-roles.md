@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-03-07"
+lastupdated: "2026-03-18"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -3296,6 +3296,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Role | Description | Actions |
 | ----- | :----- | :----- |
+| Catalogs Administrator | Catalogs Administrator | `cp4d.catalogs.admin` |
 | CloudPak Data Engineer | Create or view governance artifacts | `cp4d.governance-artifacts.access`, `cp4d.data-protection-rules.manage` |
 | CloudPak Data Quality Analyst | CloudPak Data Quality Analyst | `cp4d.data-quality-asset-types.access`, `cp4d.data-quality-sla-rules.manage`, `cp4d.data-quality.measure`, `cp4d.data-quality.drill-down` |
 | CloudPak Data Scientist | Find data in catalogs and use data in projects. | `cp4d.governance-artifacts.access`, `cp4d.catalog.access`, `cp4d.catalog-assets-to-projects.add` |
@@ -3325,9 +3326,7 @@ Review the available platform and service roles and the actions mapped to each t
 
 | Action | Description | Roles |
 | ----- | :----- | :----- |
-| `cp4d.catalog.manage` | Manage catalogs
-
- | Administrator, Editor, Manager |
+| `cp4d.catalog.manage` | Manage catalogs | Administrator, Editor, Manager |
 | `cp4d.governance-categories.manage` | Manage governance categories
 
  | Manager |
@@ -3363,6 +3362,7 @@ Review the available platform and service roles and the actions mapped to each t
 | `cp4d.document-classes.manage` | Manage document classes | Manager |
 | `cp4d.data-intelligence-agent.access` | Chat with the Data Intelligence Agent to find, understand, and work with data | Data Intelligence Agent Consumer, Manager |
 | `cp4d.data-intelligence-gen-ai.manage` | View and Edit data intelligence GenAI admin page | Manager |
+| `cp4d.catalogs.admin` | Administer Catalogs | Catalogs Administrator |
 | `global-search-tagging.resource.read` | | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer |
 | `resource-controller.instance.retrieve` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `cbr.rule.read` | | Administrator, Editor, Manager, Operator, Reader, Viewer |
