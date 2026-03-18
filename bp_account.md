@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-11-15"
+  years: 2018, 2026
+lastupdated: "2026-03-16"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -240,7 +240,7 @@ You have two functional projects in your account. Developers working on a projec
 
 Flexibility is important, and with IAM, you can share resources between various groups. Let's say you notice that a resource might work well for both projects. You can share a resource between the two projects by tagging the resource and relying on the existing permissions to grant access to the developers. If a project doesn't require a resource anymore, you can simply revoke the developers' access by detaching the appropriate tag from the service instance. Check out the following video to gain a better understanding of how you can use access management tags to manage access to the resources in your account.
 
-![Controlling access by using tags in {{site.data.keyword.cloud}}](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_sgd6xxi4){: video output="iframe" data-script="#video-transcript-tags" id="mediacenter-player" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" style="border: 0 none transparent;"}
+![Controlling access by using tags in {{site.data.keyword.cloud}}](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_sgd6xxi4){: video output="iframe" data-script="#video-transcript-tags" id="mediacenter-player" frameborder="0" width="560" height="315" scrolling="no" allowfullscreen webkitallowfullscreen mozAllowFullScreen}
 
 #### Video transcript
 {: #video-transcript-tags}

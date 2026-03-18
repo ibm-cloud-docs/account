@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-llastupdated: "2025-11-15"
+  years: 2019, 2026
+llastupdated: "2026-03-16"
 
 keywords: IBM Cloud billing, payments, costs, usage, spending
 
@@ -19,7 +19,7 @@ subcollection: account
 Learn about the {{site.data.keyword.cloud}} billing options and tools that you can use to track your usage and manage invoicing and payments.
 {: shortdesc}
 
-![Introduction to IBM Cloud billing and usage](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_w31ph24n){: video output="iframe" data-script="#video-transcript-billing-usage" id="mediacenter-player" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
+![Introduction to IBM Cloud billing and usage](https://www.kaltura.com/p/1773841/sp/177384100/embedIframeJs/uiconf_id/27941801/partner_id/1773841?iframeembed=true&entry_id=1_w31ph24n){: video output="iframe" data-script="#video-transcript-billing-usage" id="mediacenter-player" frameborder="0" width="560" height="315" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 ## Video transcript
 {: #video-transcript-billing-usage}
