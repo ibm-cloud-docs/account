@@ -21,9 +21,6 @@ You can manage context rules at any time by updating the description, which help
 Context-based restrictions can define and enforce access restrictions for its own {{site.data.keyword.cloud}} resources. You can define these restrictions based on contexts, such as network zones and endpoint types. For more information, see [What are context-based restrictions](/docs/account?topic=account-context-restrictions-whatis&interface=ui).
 {: shortdesc}
 
-You can also use the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) to manage context-based restrictions as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
-{: tip}
-
 The context-based restriction service manages rules and network zones, so it is possible to lose all ability to manage these resources if you cannot satisfy a rule on the context-based restriction service. Attempts to create or update such a rule are permitted only if the context of the request satisfies the new or modified rule.
 
 If you can no longer satisfy a rule that targets the Context-based restrictions service, [open a support case](/unifiedsupport/cases/form) and provide a context that you can satisfy to restore your access.

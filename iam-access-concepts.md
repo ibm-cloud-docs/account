@@ -18,9 +18,6 @@ subcollection: account
 
 The concept of access management consists of a few interrelated components, including users, service IDs, access groups, trusted profiles, resources, policies, roles, actions, and the {{site.data.keyword.cloud_notm}} IAM control system, which allows users to take actions on resources within an account.
 
-You can also use the [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) to manage access groups as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
-{: tip}
-
 {{site.data.keyword.cloud_notm}} IAM follows an [eventually consistent](https://en.wikipedia.org/wiki/Eventual_consistency){: external} pattern that is common to many cloud-native services. As a result, IAM remains highly available and performant across multiple global regions. Changes that are made to IAM access policies, authorizations, service IDs, API keys, access groups, trusted profiles, resource groups, users, or any other access controls are recorded and propagated across all IAM components and IAM-enabled services worldwide. Access changes might not take effect until the propagation process is complete.
 
 ## Access groups

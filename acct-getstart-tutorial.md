@@ -327,5 +327,3 @@ You can use the Support Center to get help with any issues that you might encoun
 * The Help just for you section features links to common tasks, troubleshooting, and FAQs specific to the resources in your account.
 * The Featured FAQs section provides FAQs related to platform tasks, for example, resetting your password, IAM, and upgrading your account.
 * The Contact support section provides the options for getting in touch with a support representative: start a live chat, contact by phone, or create a support case.
-
-- To automate account setup with Terraform, see the [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) and [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group). You can explore all available modules in the [Terraform IBM Modules registry](https://registry.terraform.io/namespaces/terraform-ibm-modules).

@@ -15,18 +15,8 @@ subcollection: account
 
 # Assigning access to account management services
 {: #account-services}
-
 As the account owner or the administrator of an account management service, you can grant users access to invite users to the account, track billing and usage, and work with support cases. Users with account management access policies can also manage service IDs, access policies, catalog entries, access groups, resources for the {{site.data.keyword.compliance_short}} service, and work with Context-based restrictions.
 {: shortdesc}
-
-You can use Terraform IBM Modules to manage account management services as code. Consider the following modules:
-- [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings) for managing account settings
-- [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) for managing access groups
-- [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) for managing context-based restrictions
-
-For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
-{: tip}
-
 
 ## Assigning access in the console
 {: #console-acct-mgmt}

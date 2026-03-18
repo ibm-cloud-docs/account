@@ -50,9 +50,6 @@ You can also add time-based conditions to a policy that defines when the policy 
 
 Quickly and easily assign access for a group of users, service IDs, or trusted profiles that are organized in an access group by assigning access to the group, and then add or remove identities as needed to grant or deny access to account resources. Access groups enable you to manage a minimal number of policies in the account. For more information, see [Setting up access groups](/docs/account?topic=account-groups).
 
-You can use the [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) to automate access group provisioning with Terraform. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
-{: tip}
-
 ### Trusted profiles for eliminating the need to manage credentials
 {: #trusted-profiles-feature}
 {: support}
