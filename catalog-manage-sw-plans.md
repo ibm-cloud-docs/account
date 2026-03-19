@@ -3,8 +3,8 @@
 
 copyright:
 
-  years: 2024, 2025
-lastupdated: "2025-11-15"
+  years: 2024, 2026
+lastupdated: "2026-03-19"
 
 keywords: onboard software, pricing plans, manage plans, usage-based plan, software, catalog, partner center, catalog, private catalog, catalog management
 
@@ -20,7 +20,7 @@ subcollection: account
 When you onboard your software to a catalog, you must define a pricing model for it. Currently, {{site.data.keyword.cloud_notm}} supports free, usage-based, and bring your own license (BYOL) plans that you can add to a specific version of your software. By adding pricing plans, you are indicating whether you offer your product as a paid integrated product and customers need to pay to use it, as a product that customers need to purchase a license for, or as a product that does not require any payment or license to use.
 {: shortdesc}
 
-After adding a plan to your software in Partner Center, you can manage it in your catalog as well. Managing your plan includes adding features to it, changing the state of the plan, deprecating it, or updating plan details.
+After adding a plan to your software in Partner Center, you can manage it in your catalog as well. Managing your plan includes adding features to it, viewing associated licenses, changing the state of the plan, deprecating it, or updating plan details.
 
 Usage-based pricing plans are available only for software that are onboarded with the virtual server image delivery method.
 {: note}
@@ -115,6 +115,3 @@ Complete the following steps to make any updates to your plan details:
 1. Select the product in your catalog with the pricing plan that you want to make updates to.
 1. In the **Pricing plan details** section, click the **Edit** icon ![Edit icon](../icons/edit-tagging.svg "Edit") and update the **Name**, **Description**, and **Version range** fields if needed.
 1. Click **Save**.
-
-Pricing plan details, such as name and description can be updated from Partner Center as well. However, managing plan metrics is available only from Partner Center until your plan is published.
-{: note}
