@@ -438,4 +438,4 @@ You can also find your account number by directly accessing the **Account settin
 {: #faq-terraform-account-settings}
 {: faq}
 
-Yes. You can use the [IAM Account Settings module](https://registry.terraform.io/modules/terraform-ibm-modules/iam-account-settings/ibm/latest), which provides production-ready, opinionated Terraform configurations for managing IAM account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+Yes. You can use the [IAM Account Settings module](https://registry.terraform.io/modules/terraform-ibm-modules/iam-account-settings/ibm/latest){: external}, which provides production-ready, opinionated Terraform configurations for managing IAM account settings as code. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
