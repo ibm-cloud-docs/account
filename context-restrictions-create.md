@@ -346,8 +346,8 @@ module "cbr" {
       name             = "my-network-zone"
       zone_description = "Zone for approved IP ranges and VPCs"
       addresses = [
-        { type = "ipRange", value = "10.0.0.0/8" },
-        { type = "vpc",     value = var.vpc_crn }
+        { type = "ipRange", value = "10.0.0.0/8" }, // use your valid/supported CIDR range.
+        { type = "vpc",     value = "abcxxxx..." } // provide vpc crn
       ]
     }
   ]
@@ -355,7 +355,7 @@ module "cbr" {
 ```
 {: codeblock}
 
-For the full list of inputs and usage examples, see the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr) on GitHub.
+For the full list of inputs and usage examples, see the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest) on GitHub.
 
 ## Creating rules
 {: #context-restrictions-create-rules}
@@ -631,5 +631,5 @@ To define restrictions to your cloud resources by creating rules, use the Terraf
     ```
     {: codeblock}
 
-For production deployments, consider using the [Context-Based Restrictions module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr), which provides opinionated, production-ready configurations for context-based restrictions. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+For production deployments, consider using the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest), which provides opinionated, production-ready configurations for context-based restrictions. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 {: tip}
