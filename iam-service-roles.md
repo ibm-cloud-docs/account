@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-03-23"
+lastupdated: "2026-03-24"
 
 keywords: service iam roles, service iam actions, account management roles, iam roles
 
@@ -8666,10 +8666,10 @@ Review the available platform and service roles and the actions mapped to each t
 | Role | Description | Actions |
 | ----- | :----- | :----- |
 | Key Manager | As an key manager, the service can perform platform actions required to manage resource keys, such as creating a new resource key for a resource instance. | `resource-controller.key.manager_create`, `resource-controller.key.manager_delete`, `resource-controller.key.manager_update`, `resource-controller.key.manager_retrieve` |
-| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | `instructlab.taxonomy.read`, `instructlab.taxonomy.create`, `instructlab.taxonomy.list`, `instructlab.taxonomy.delete`, `instructlab.sdgdata.read`, `instructlab.sdgdata.list`, `instructlab.sdgdata.create`, `instructlab.sdgdata.delete`, `instructlab.sdgdata.stop`, `instructlab.model.read`, `instructlab.model.list`, `instructlab.model.create`, `instructlab.model.delete`, `instructlab.model.stop`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
-| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. | `instructlab.taxonomy.read`, `instructlab.taxonomy.list`, `instructlab.sdgdata.read`, `instructlab.sdgdata.list`, `instructlab.model.read`, `instructlab.model.list`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
+| Manager | As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources. | `instructlab.taxonomy.read`, `instructlab.taxonomy.create`, `instructlab.taxonomy.list`, `instructlab.taxonomy.delete`, `instructlab.sdgdata.read`, `instructlab.sdgdata.list`, `instructlab.sdgdata.create`, `instructlab.sdgdata.delete`, `instructlab.sdgdata.stop`, `instructlab.model.read`, `instructlab.model.list`, `instructlab.model.create`, `instructlab.model.delete`, `instructlab.model.stop`, `instructlab.inference.create`, `instructlab.inference.read`, `instructlab.inference.list`, `instructlab.inference-model.read`, `instructlab.inference-model.list`, `instructlab.inference.delete`, `instructlab.inference-session.read`, `instructlab.inference-session.list`, `instructlab.inference-session.delete`, `instructlab.inference-session.update`, `instructlab.inference-model.create`, `instructlab.inference-model.delete`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
+| Reader | As a reader, you can perform read-only actions within a service such as viewing service-specific resources. | `instructlab.taxonomy.read`, `instructlab.taxonomy.list`, `instructlab.sdgdata.read`, `instructlab.sdgdata.list`, `instructlab.model.read`, `instructlab.model.list`, `instructlab.inference.read`, `instructlab.inference.list`, `instructlab.inference-model.read`, `instructlab.inference-model.list`, `instructlab.inference-session.read`, `instructlab.inference-session.list`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
 | Service Configuration Reader | The ability to read services configuration for Governance management. | `global-search-tagging.resource.read`, `resource-controller.instance.retrieve` |
-| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. | `instructlab.taxonomy.read`, `instructlab.taxonomy.create`, `instructlab.taxonomy.list`, `instructlab.taxonomy.delete`, `instructlab.sdgdata.read`, `instructlab.sdgdata.list`, `instructlab.sdgdata.create`, `instructlab.sdgdata.delete`, `instructlab.sdgdata.stop`, `instructlab.model.read`, `instructlab.model.list`, `instructlab.model.create`, `instructlab.model.delete`, `instructlab.model.stop`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
+| Writer | As a writer, you have permissions beyond the reader role, including creating and editing service-specific resources. | `instructlab.taxonomy.read`, `instructlab.taxonomy.create`, `instructlab.taxonomy.list`, `instructlab.taxonomy.delete`, `instructlab.sdgdata.read`, `instructlab.sdgdata.list`, `instructlab.sdgdata.create`, `instructlab.sdgdata.delete`, `instructlab.sdgdata.stop`, `instructlab.model.read`, `instructlab.model.list`, `instructlab.model.create`, `instructlab.model.delete`, `instructlab.model.stop`, `instructlab.inference.create`, `instructlab.inference.read`, `instructlab.inference.list`, `instructlab.inference-model.read`, `instructlab.inference-model.list`, `instructlab.inference.delete`, `instructlab.inference-session.read`, `instructlab.inference-session.list`, `instructlab.inference-session.delete`, `instructlab.inference-session.update`, `instructlab.inference-model.create`, `instructlab.inference-model.delete`, `global-search-tagging.resource.read`, `cbr.rule.read`, `iam.policy.read` |
 {: row-headers}
 {: caption="Service roles - instructlab" caption-side="top"}
 {: tab-title="Service roles"}
@@ -8694,6 +8694,18 @@ Review the available platform and service roles and the actions mapped to each t
 | `instructlab.model.create` | instructlab.model.create | Manager, Writer |
 | `instructlab.model.delete` | instructlab.model.delete | Manager, Writer |
 | `instructlab.model.stop` | instructlab.model.stop | Manager, Writer |
+| `instructlab.inference.create` | instructlab.inference.create | Manager, Writer |
+| `instructlab.inference.read` | instructlab.inference.read | Manager, Reader, Writer |
+| `instructlab.inference.list` | instructlab.inference.list | Manager, Reader, Writer |
+| `instructlab.inference-model.read` | instructlab.inference-model.read | Manager, Reader, Writer |
+| `instructlab.inference-model.list` | instructlab.inference-model.list | Manager, Reader, Writer |
+| `instructlab.inference.delete` | instructlab.inference.delete | Manager, Writer |
+| `instructlab.inference-session.read` | instructlab.inference-session.read | Manager, Reader, Writer |
+| `instructlab.inference-session.list` | instructlab.inference-session.list | Manager, Reader, Writer |
+| `instructlab.inference-session.delete` | instructlab.inference-session.delete | Manager, Writer |
+| `instructlab.inference-session.update` | instructlab.inference-session.update | Manager, Writer |
+| `instructlab.inference-model.create` | instructlab.inference-model.create | Manager, Writer |
+| `instructlab.inference-model.delete` | instructlab.inference-model.delete | Manager, Writer |
 | `global-search-tagging.resource.read` | | Administrator, Editor, Manager, Operator, Reader, Service Configuration Reader, Viewer, Writer |
 | `resource-controller.instance.retrieve` | | Administrator, Editor, Operator, Service Configuration Reader, Viewer |
 | `cbr.rule.read` | | Administrator, Editor, Manager, Operator, Reader, Viewer, Writer |
