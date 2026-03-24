@@ -484,8 +484,29 @@ After you set up your group, use the following steps to assign access to it by u
 
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_policy){: external} page.
 
-   Assign group policies at scale using the [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) for consistent access control. Review [Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for policy patterns.
-   {: tip}
+   You can also use the [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group) to manage access groups and policies at scale. The following example demonstrates using the module:
+
+   ```terraform
+   module "access_group" {
+     source  = "terraform-ibm-modules/iam-access-group/ibm"
+     version = "latest"
+     
+     access_group_name        = "my-access-group"
+     access_group_description = "Access group for team members"
+     
+     policies = [
+       {
+         roles = ["Viewer"]
+         resources = [{
+           service = "cloud-object-storage"
+         }]
+       }
+     ]
+   }
+   ```
+   {: codeblock}
+
+   For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 
 1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 
