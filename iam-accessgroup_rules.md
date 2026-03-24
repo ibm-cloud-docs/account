@@ -75,7 +75,7 @@ To create a rule by using Terraform, follow these steps:
 
    For more information, see the argument reference details in the [Terraform documentation](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_dynamic_rule) page.
 
-   For production deployments, consider using the [IAM Access Groups module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group), which provides opinionated, production-ready configurations for access groups and dynamic rules. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+   For production deployments, consider using the [IAM Access Groups module](https://registry.terraform.io/modules/terraform-ibm-modules/iam-access-group/ibm/latest){: external}, which provides opinionated, production-ready configurations for access groups and dynamic rules. Refer [here](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) to know more about Terraform IBM Modules.
    {: tip}
 
 1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
