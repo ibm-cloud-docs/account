@@ -61,4 +61,4 @@ Currently, {{site.data.keyword.cloud_notm}} does not support GEO-based account a
 {: #faq-terraform-cbr}
 {: faq}
 
-Yes. You can use the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external}, which provides production-ready, opinionated Terraform configurations for managing context-based restrictions as code. The module simplifies creating and managing network zones and rules. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+Yes. Implement zero-trust security with the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external} for automated zone and rule management. Review [Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for security patterns.

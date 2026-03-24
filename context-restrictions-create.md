@@ -331,7 +331,7 @@ To create a network zone, use the Terraform resource [cbr_zone](https://registry
     ```
     {: codeblock}
 
-For production deployments, consider using the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external}, which provides opinionated, production-ready configurations for context-based restrictions. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+Build robust network zones with the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external} for scalable access control. Explore [Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for implementation patterns.
 {: tip}
 
 The following example shows how to define a network zone using the module:
@@ -631,5 +631,5 @@ To define restrictions to your cloud resources by creating rules, use the Terraf
     ```
     {: codeblock}
 
-For production deployments, consider using the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external}, which provides opinionated, production-ready configurations for context-based restrictions. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+Enforce access restrictions at scale using the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external} for policy-driven security. See [Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) for rule configurations.
 {: tip}

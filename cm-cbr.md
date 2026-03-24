@@ -305,5 +305,5 @@ To create a network zone, use the Terraform resource [cbr_zone](https://registry
     ```
     {: codeblock}
 
-For production deployments, consider using the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external}, which provides opinionated, production-ready configurations for context-based restrictions. For more information about Terraform IBM Modules, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
+Secure catalog resources with the [Context-Based Restrictions module](https://registry.terraform.io/modules/terraform-ibm-modules/cbr/ibm/latest){: external} for enterprise-grade network zone configurations. Learn about [Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
 {: tip}
