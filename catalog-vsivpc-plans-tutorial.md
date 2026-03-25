@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-03-03"
+lastupdated: "2026-03-25"
 
 keywords: onboard software, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud, software plan, plan, usage-based plan, partner center
 
@@ -105,18 +105,20 @@ When you add a usage-based pricing plan, you provide your suggested retail prici
 
 To add a usage-based pricing plan to your software, complete the following steps:
 
-
 1. In the {{site.data.keyword.cloud_notm}} console, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Partner Center** > **My products**.
 1. Select the product that you're onboarding, and click **Pricing**.
 1. Click **Add plan > Usage-based**.
 1. Provide a name for your pricing plan. This name refers to the plan name that appears in the pricing plan list on your product's catalog page when your customers select a pricing plan.
 1. Provide a programmatic name for your pricing plan.
+1. Optionally, select a license type to add license entitlements to your pricing plan. This allows you to track and manage license entitlements for each provisioned instance of your software.
+
+   Adding licenses to a pricing plan is available only for select customers. License entitlements require a configured license provider, which defines the license for your product. For more information, contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
+   {: preview}
+
 1. Select your software type. Usage metrics available within your plan depend on the type of software that is deployed under the plan.
 1. Enter your software version. You must select whether you want to validate only one version or a range of versions, or add a semantic version string to match the versions you want to validate.
 1. Provide a description for your pricing plan.
 1. Click **Save**.
-
-
 
 After you add a pricing plan to your software version in Partner Center, you can manage it in your catalog as well. This means that you can change the state of your plan to publish it, add features to it, deprecate it, or update certain plan details. For more information, see [Managing software plans in catalogs](/docs/account?topic=account-sw-manage-plans).
 
