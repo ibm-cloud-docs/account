@@ -346,8 +346,8 @@ module "cbr" {
       name             = "my-network-zone"
       zone_description = "Zone for approved IP ranges and VPCs"
       addresses = [
-        { type = "ipRange", value = "10.0.0.0/8" }, // use your valid/supported CIDR range.
-        { type = "vpc",     value = "abcxxxx..." } // provide vpc crn
+        { type = "ipRange", value = "10.0.0.0/8" }, # use your valid/supported CIDR range.
+        { type = "vpc",     value = "abcxxxx..." } # provide vpc crn
       ]
     }
   ]
