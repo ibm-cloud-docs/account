@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-03-26"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider, single sign on
 
@@ -76,6 +76,8 @@ If you don't have any IAM IdP references before in your account, you must enable
    1. Click **Add mapping** if you want to rename a nonrequired attribute from your IdP.
 1. Click **Next** and then click **Test** to test the assertion mapping.
 1. Click **Finish**.
+
+
 
 ### Mapping IdP assertions to IAM claims
 {: #assertion-mapping}
