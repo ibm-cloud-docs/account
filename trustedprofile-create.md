@@ -205,7 +205,7 @@ To customize the console navigation for a trusted profile, complete the followin
 1. Select the trusted profile that you want to customize and click **Console experience**.
 1. Select the landing page that you want to use as the default landing page and click **Save**.
 1. Select the navigation items that you want to include in the console banner and click **Save**.
-1. Select the private catalog where the trusted profile can access specific products and click **Save**.
+1. Select the private catalogs where the trusted profile can access specific products and click **Save**.
 
 ## Establishing trust with federated users by using the CLI
 {: #create-profile-federated-cli}
