@@ -59,16 +59,16 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
+        "date": "27 March 2026",
+        "title": "Share SAML IdP across IBM Cloud accounts"
+      },
+      {
+        "date": "27 March 2026",
+        "title": "Customizing the console experience for trusted profiles"
+      },
+      {
         "date": "22 September 2025",
         "title": "Carbon insights at the data center-level"
-      },
-      {
-        "date": "07 August 2025",
-        "title": "Federate enterprise IdP administrators to IBM Cloud by using SAML"
-      },
-      {
-        "date": "01 July 2025",
-        "title": "Manage one-time view credentials"
       }
     ]
   }

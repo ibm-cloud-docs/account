@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-03-27"
 
 keywords: identity provider, IdP, App ID, IAM, integration, IdP SSO, third-party authentication, dynamic rules, external identity provider, single sign on
 
@@ -76,6 +76,77 @@ If you don't have any IAM IdP references before in your account, you must enable
    1. Click **Add mapping** if you want to rename a nonrequired attribute from your IdP.
 1. Click **Next** and then click **Test** to test the assertion mapping.
 1. Click **Finish**.
+
+### Sharing an {{site.data.keyword.cloud_notm}} SAML IdP configuration
+{: #share-saml}
+
+After you configure your {{site.data.keyword.cloud_notm}} SAML service provider and connect it to your external IdP, you can share the IdP configuration with other accounts and provide the login URL to your users. Users authenticate through your IdP and are automatically added to your account upon successful login.
+
+To share the SAML IdP configuration:
+
+1. Go to **Manage** > **Access (IAM)** > **Identity providers** in the {{site.data.keyword.cloud_notm}} console and select an existing IdP that is in the **Ready to use** state, or create a new IdP as described in [Enabling and connecting your identity provider with the {{site.data.keyword.cloud_notm}} SAML SP](/docs/account?topic=account-ibm-idp-integration#cloud-sp-idp).
+1. Click the **Shared with** tab to share your IdP with other accounts.
+1. Click **Add**. In the **Your accounts** section, select the account that you want to share the IdP with and click **Share**.
+1. In the **External** section, select either **Account** or **Enterprise** and enter the account ID and click **Add**. You can also add multiple account IDs.
+1. Click **Share** to share the IdP with the selected accounts.
+
+#### Consuming the SAML IdP
+{: #consume-saml}
+
+After you share the SAML IdP with other accounts, you can consume the IdP in your account.
+
+To consume the SAML IdP:
+
+1. Go to **Manage** > **Access (IAM)** > **Identity providers** in the {{site.data.keyword.cloud_notm}} console. 
+1. Click **Add** > **Shared with you** to view the IdPs that are shared with you.
+1. Select the IdP you want to use and click **Next**.
+1. Set the **Enable for account login** toggle to **Yes** and click **Save** to allow users to login to this account.
+1. Set the **Set as default** toggle to **Yes** to set this IdP as the default IdP for account login.
+1. Select the users from **User management** based on how you want to manage them when they login through this IdP.
+1. Click **Save**.
+
+#### Removing a shared account from an IdP
+{: #remove-shared-account}
+
+After you share the SAML IdP with other accounts, you can remove the shared account from the IdP.
+
+To remove a shared account from an IdP:
+
+1. Go to **Manage** > **Access (IAM)** > **Identity providers** in the {{site.data.keyword.cloud_notm}} console.
+1. Click **Shared with you** to view the IdPs that are shared with you.
+1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the row that contains the IdP and click **Remove**.
+
+If the account has consumed the IdP, the initial removal attempt fails and a confirmation modal appears. Review the warning message carefully, as removing the account immediately stops all users in this account from logging in by using this IdP and might cause service disruption. Click **Remove** to confirm and proceed with the removal.
+{: note}
+
+#### Unconsuming an IdP
+{: #unconsme-idp}
+
+If you no longer need to use an IdP, you can unconsume it. Unconsuming an IdP removes the IdP from the list of IdPs that are available to your account.
+
+To unconsume an IdP:
+
+1. Go to **Manage** > **Access (IAM)** > **Identity providers** in the {{site.data.keyword.cloud_notm}} console.
+1. Select the IdP that has the type as {{site.data.keyword.cloud_notm}} SAML.
+1. Click the **Actions** icon ![Actions icon](../icons/action-menu-icon.svg "Actions") in the row that contains the IdP and click **Remove**.
+
+Unconsuming the IdP removes all users who are associated with this IdP from the account.
+{: note}
+
+##### Reviewing IdP statuses
+{: #review-idp-statuses}
+
+You can review the status of an IdP to determine whether it is active or inactive.
+
+To review the IdP statuses:
+
+1. Go to **Manage** > **Access (IAM)** > **Identity providers** in the {{site.data.keyword.cloud_notm}} console and select an existing IdP that is in the **Ready to use** state, or create a new IdP as described in [Enabling and connecting your identity provider with the {{site.data.keyword.cloud_notm}} SAML SP](/docs/account?topic=account-ibm-idp-integration#cloud-sp-idp).
+1. Click the **Details** tab to view the IdP status.
+    - **Inactive**: IdPs with an inactive tag are globally disabled by their owner. Click **Actions** > **Enable** to enable it.
+    - **Login will fail**: The IdP is not active. Click **Actions** > **Enable** and turn on the **Enable for account login** toggle to enable it.
+    - **Ready to use**: The IdP configuration is complete but not yet enabled for account login. Turn on the **Use for account login** toggle to enable it.
+
+After you share the IdP configuration, provide users with the login URL so they can authenticate and access your account.
 
 ### Mapping IdP assertions to IAM claims
 {: #assertion-mapping}
