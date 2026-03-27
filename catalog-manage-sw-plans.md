@@ -4,7 +4,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-03-26"
+lastupdated: "2026-03-27"
 
 keywords: onboard software, pricing plans, manage plans, usage-based plan, software, catalog, partner center, catalog, private catalog, catalog management
 
@@ -20,10 +20,7 @@ subcollection: account
 When you onboard your software to a catalog, you must define a pricing model for it. Currently, {{site.data.keyword.cloud_notm}} supports free, usage-based, and bring your own license (BYOL) plans that you can add to a specific version of your software. By adding pricing plans, you are indicating whether you offer your product as a paid integrated product and customers need to pay to use it, as a product that customers need to purchase a license for, or as a product that does not require any payment or license to use.
 {: shortdesc}
 
-
-After adding a plan to your software in Partner Center, you can manage it in your catalog as well. Managing your plan includes adding features to it, changing the state of the plan, deprecating it, or updating plan details.
-
-
+After adding a plan to your software in Partner Center, you can manage it in your catalog as well. Managing your plan includes adding features to it, viewing associated licenses, changing the state of the plan, deprecating it, or updating plan details.
 
 Usage-based pricing plans are available only for software that is onboarded with the virtual server image delivery method.
 {: note}
@@ -148,7 +145,7 @@ For usage-based pricing plans, metrics are automatically tracked and reported th
 When you onboard your product to {{site.data.keyword.cloud_notm}}, you must define a pricing model for your software in Partner Center. If you choose to add a usage-based pricing plan for your software, you can optionally include licenses in the plan. Licenses allow your customers to select licensed plans directly from the catalog, without needing to manage them separately outside of {{site.data.keyword.cloud_notm}}.
 
 Adding licenses to a pricing plan is available only for select IBM Business Partners. License entitlements require a configured license provider, which defines the license for your product. For more information, contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
-   {: preview}
+{: preview}
 
 For software instances with usage-based pricing plans, you can view license information that is associated with your deployed software. The **Plan licenses** section displays the entitlement ID and detailed license information, including the license name, provider, and vendor. 
 
