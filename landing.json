@@ -59,16 +59,16 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
+        "date": "01 April 2026",
+        "title": "Creating new identity provider integrations by using IBM Cloud SAML"
+      },
+      {
         "date": "27 March 2026",
         "title": "Share SAML IdP across IBM Cloud accounts"
       },
       {
         "date": "27 March 2026",
         "title": "Customizing the console experience for trusted profiles"
-      },
-      {
-        "date": "22 September 2025",
-        "title": "Carbon insights at the data center-level"
       }
     ]
   }
