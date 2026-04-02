@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-04-02"
 
 keywords: login, how login works, login flow, login diagram, login sequence
 
@@ -83,3 +83,20 @@ If you choose to integrate with your external IdP to securely authenticate exter
 11. The browser provides the authorization code to the console, which in turn is used to retrieve the required tokens from IAM.
 12. When the console receives the tokens, the login sequence ends. The console can now invoke {{site.data.keyword.cloud_notm}} APIs and identify the user.
 13. The console displays the dashboard with user-specific content.
+
+## Login sequence for {{site.data.keyword.cloud_notm}} SAML service provider
+{: #ibmcloud-saml-login}
+
+If you choose to integrate with your external IdP to securely authenticate external users to your account by using the {{site.data.keyword.cloud_notm}} SAML service provider, the login sequence works according to the following sequence. For more information about this type of authentication, see [Enabling authentication from an external identity provider](/docs/account?topic=account-ibm-idp-integration).
+
+![Login process for users who are connected from the {{site.data.keyword.cloud_notm}} SAML service provider](images/IBM-Cloud-SAML-provider-login-sqeuence.svg "Login process for users who are connected from {{site.data.keyword.cloud_notm}} SAML service provider"){: caption="Login process for users who are connected from {{site.data.keyword.cloud_notm}} SAML service provider" caption-side="bottom"}
+
+1. The user starts the sequence by visiting an account-specific URL with their browser. This is either `https://cloud.ibm.com/authorize/<account id>` or `https://cloud.ibm.com/authorize/<account alias>`. The account alias can be configured on the IAM Identity Provider configuration pages in the IBM Cloud console.
+1. The IBM Cloud console redirects the user's browser to IBM Cloud's IAM component. As part of the redirect, the account ID or alias is sent to IAM.
+1. The SAML request is sent to the enterprise customer's user authentication and authorization system.
+1. After validating the user's credentials, the enterprise customer's system sends a redirect instruction to the user's browser. Part of this redirect is the SAML response containing assertions that describe the user and the additional attributes of that user.
+1. The browser completes the redirect and sends the SAML response with assertions to IAM.
+1. After validating the SAML response, IAM is now finishing its authentication flow with the console by sending an OAuth2 compliant redirect with an authorization code to the browser.
+1. The browser provides the authorization code to the console, which in turn is used to retrieve the required tokens from IAM.
+1. When the console receives the tokens, the login sequence ends. The console can now invoke IBM Cloud APIs and identify the user.
+1. The console displays the dashboard with user-specific content.
