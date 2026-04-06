@@ -20,20 +20,6 @@ toc:
           - cm-video.md
           - billing-overview.md
       - topicgroup:
-          label: Learning about access management
-          topics:
-          - iam-manageaccess.md
-          - topicgroup:
-              label: What is IBM Cloud Identity and Access Management?
-              topics:
-              - iam-whatis.md
-              - iam-identities.md
-              - iam-access-concepts.md
-              - iam-policies-overview.md
-              - iam-roles-overview.md
-              - iam-mappings.md
-          - context-restrictions-what-is.md
-      - topicgroup:
           label: Best practices
           topics:
           - bp_billing.md
@@ -44,11 +30,9 @@ toc:
       id: tutorial
       topics:
       - acct-getstart-tutorial.md
-      - trustedprofile-compute-tutorial.md
       - topicgroup:
           label: Securing access to resources
           topics:
-          - iam-quickstart.md
           - tagging-resources-tutorial.md
       - topicgroup:
           label: Sharing software with users in your account
@@ -60,8 +44,6 @@ toc:
           - catalog-opbundle-tutorial.md
           - catalog-terraform-template-tutorial.md
           - catalog-terraform-template-cli.md
-      - trustedprofile-fed-tutorial.md
-      - context-restrictions-tutorial.md
       - reconcile-tutorial.md
   - navgroup:
       id: howto
