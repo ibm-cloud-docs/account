@@ -30,10 +30,7 @@ toc:
       id: tutorial
       topics:
       - acct-getstart-tutorial.md
-      - topicgroup:
-          label: Securing access to resources
-          topics:
-          - tagging-resources-tutorial.md
+      - tagging-resources-tutorial.md
       - topicgroup:
           label: Sharing software with users in your account
           topics:

@@ -14,10 +14,6 @@
         "href": "/docs/account?topic=account-account-getting-started"
       },
       {
-        "title": "Assigning access to resources by using access groups",
-        "href": "/docs/account?topic=account-access-getstarted"
-      },
-      {
         "title": "Monitoring your login sessions",
         "href": "/docs/account?topic=account-monitor-your-session"
       },
@@ -28,10 +24,6 @@
       {
         "title": "FAQ about accounts",
         "href": "/docs/account?topic=account-accountfaqs"
-      },
-      {
-        "title": "Using the Support Center",
-        "href": "/docs/account?topic=account-using-avatar"
       }
     ]
   },
