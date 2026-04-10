@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-04-10"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -28,6 +28,8 @@ Emissions from key greenhouse gases are measured in metric tons of carbon dioxid
 * Emissions by service: The GHG emissions are broken down by service.
 
 * Emissions by resource group: The GHG emissions are broken down by group. Most services are displayed by resource group. However, Classic Infrastructure is displayed in a dedicated group. The emissions are displayed only if a group contains those services.
+
+
 
 ## Tracking enterprise emissions with the carbon calculator
 {: #tracking-emissions-enterprise}
