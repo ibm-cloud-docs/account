@@ -158,6 +158,7 @@ toc:
               label: Exporting your usage data for continual insights
               topics:
               - exporting-usage.md
+              - topic: export-usage-focus-format.md
               - usage-report.md
           - topicgroup:
               label: Managing subscriptions and commitments
