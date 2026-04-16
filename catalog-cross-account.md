@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-12-17"
+  years: 2023, 2026
+lastupdated: "2026-04-16"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account
 
@@ -28,7 +28,7 @@ You might want to use a target account to validate software for the following re
 
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
 
-1. Verify that you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) or have the catalog administrator set up authorization.
+1. Verify that you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) or have the catalog administrator set up authorization.
 
 ## Setting up authorization
 {: #catalog-auth-step}

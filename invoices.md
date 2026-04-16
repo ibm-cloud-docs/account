@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-04-16"
 
 keywords: viewing invoices, invoices, IBM Customer Number, IBM Invoices, RSET, external invoice website, paperless invoice, request paperless invoice
 
@@ -26,7 +26,7 @@ In these situations, visit the [Invoices@IBM](https://www.ibm.com/support/custom
 ## Before you begin
 {: #setting-prereqs}
 
-To view your invoices, you need to be assigned the operator role or higher on the billing account management service. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+To view your invoices, you need to be assigned the operator role or higher on the billing account management service. For more information, see [Assigning access to account management services](/iam?topic=iam-account-services&interface=ui).
 
 ## Viewing invoices for new US-based Pay-As-You-Go accounts with credit card billing
 {: #viewing-invoices-tob}

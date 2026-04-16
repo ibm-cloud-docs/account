@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-01-28"
+lastupdated: "2026-04-16"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -206,7 +206,7 @@ You might be looking for information about promo codes and subscription codes, w
 {: #getting-billed}
 {: faq}
 
-As the account owner, you're responsible for all charges that are incurred by users in your account, including invited users. Ensure that each user is assigned only the level of access that is required to complete their job, including the ability to create new instances that might incur additional charges in your account. For more information, see [Managing access to resources](/docs/account?topic=account-assign-access-resources).
+As the account owner, you're responsible for all charges that are incurred by users in your account, including invited users. Ensure that each user is assigned only the level of access that is required to complete their job, including the ability to create new instances that might incur additional charges in your account. For more information, see [Managing access to resources](/docs/iam?topic=iam-assign-access-resources).
 
 Resources and applications that remain running in an account are subject to charges based on the pricing and description of the product. For example, this includes buildpacks, Platform as a Service, and Infrastructure as a Service.
 
@@ -292,9 +292,9 @@ You can view the primary contact and address that is associated with an account 
 
 As a self-managed platform, the security of an account is the responsibility of the account owner and all users with access to the account. Any charges that result from unauthorized access are the responsibility of the account owner.
 
-To prevent unauthorized access, change your password regularly and require the use of multifactor authentication by all users on your account. These options include the use of time-based one-time passcode authentication, security questions, third-party authentication mechanisms, and password expiration rules. For more information, see [Types of multifactor authentication](/docs/account?topic=account-types).
+To prevent unauthorized access, change your password regularly and require the use of multifactor authentication by all users on your account. These options include the use of time-based one-time passcode authentication, security questions, third-party authentication mechanisms, and password expiration rules. For more information, see [Types of multifactor authentication](/docs/iam?topic=iam-types).
 
-You can regularly review the list of account users and remove users who don't need access to the account. For more information, see [Removing users from an account](/docs/account?topic=account-iamuserinv#remove-user-access).
+You can regularly review the list of account users and remove users who don't need access to the account. For more information, see [Removing users from an account](/docs/iam?topic=iam-iamuserinv&interface=ui#remove-user-acount-ui).
 {: tip}
 
 ## Can I use my Pay-As-You-Go account to create an enterprise?

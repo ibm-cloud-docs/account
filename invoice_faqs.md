@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-04-16"
 
 keywords: GB-hour, container usage, runtime, charge, invoice, paperless invoicing, adjustments
 
@@ -41,8 +41,7 @@ Your usage might not match your invoice because the months that are used to comp
 {: #slperm-manage-invoices}
 {: faq}
 
-You might not have the correct permissions. Ask your account owner to add you to the View account summary access group. For more information, see [Managing migrated SoftLayer account permissions](/docs/account?topic=account-migrated_permissions).
-
+You might not have the correct permissions. Ask your account owner to add you to the View account summary access group. For more information, see [Managing migrated SoftLayer account permissions](/docs/iam?topic=iam-migrated_permissions).
 ## How can I download my invoice?
 {: #invoice-spreadsheet}
 {: faq}

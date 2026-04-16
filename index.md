@@ -3,7 +3,7 @@
 copyright:
 
  years: 2015, 2026
-lastupdated: "2026-01-28"
+lastupdated: "2026-04-16"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -52,7 +52,7 @@ If you upgrade your trial account to a Pay-As-You-Go account by entering a credi
 If you import a trial account into an enterprise, it's automatically upgraded to a [Pay-As-You-Go account](/docs/account?topic=account-accounts).
 {: note}
 
-Support for a trial account is limited to nontechnical support issues that are related to account access and billing. Users with trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/account?topic=account-using-avatar), ask questions of the AI Assistant, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
+Support for a trial account is limited to nontechnical support issues that are related to account access and billing. Users with trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/support?topic=support-using-avatar), ask questions of the AI Assistant, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Pay-As-You-Go account
 {: #paygo}
@@ -61,14 +61,14 @@ With a Pay-As-You-Go account, you can access the full {{site.data.keyword.cloud_
 
 Your resource usage consists of recurring and fluctuating costs. If you purchase classic infrastructure services, you're billed on an hourly or monthly recurring basis in advance of use, like a rent bill. If you purchase platform services, your invoice fluctuates as your resource usage fluctuates, similar to a utility bill. You will receive invoices for recurring resources in your account until you cancel them. Turning a resource "off" does not cancel the resource in your account. See [Cancelling your billing items](/docs/account?topic=account-cancel-billing-items) for more information.
 
-You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.cloud_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges. You can [set up spending notifications](/docs/account?topic=account-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
+You can create multiple resource groups to easily manage quota and view billing usage for a set of resources. Your charges are based on your use of {{site.data.keyword.cloud_notm}} computing and services. If you use more than the free runtime and service allowances, you receive a monthly invoice that provides details about your resource charges. You can [Setting spending notifications](/docs/support?topic=support-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
 Basic support is included with your {{site.data.keyword.cloud_notm}} Pay-As-You-Go. It is provided for nonproduction environments or workloads where traditional severities are not used and specific response times are not stipulated. Also, with a Pay-As-You-Go account, you can order Advanced or Premium support plans to get additional help with your production workloads. For more information, see [Support plans](/docs/account?topic=account-support-plans).
 
 ## Subscription account
 {: #subscription-account}
 
-Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts, including access to the full {{site.data.keyword.cloud_notm}} catalog and the ability to create multiple resource groups. In addition, Subscription accounts provide discounts for platform services and support and more consistent billing through subscriptions. You can also [set up spending notifications](/docs/account?topic=account-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
+Subscription accounts offer many of the same benefits as Pay-As-You-Go accounts, including access to the full {{site.data.keyword.cloud_notm}} catalog and the ability to create multiple resource groups. In addition, Subscription accounts provide discounts for platform services and support and more consistent billing through subscriptions. You can also [Setting spending notifications](/docs/support?topic=support-spending) to get notified when your account or a particular service reaches a specific spending threshold that you set.
 
 When you purchase a subscription, you commit to a minimum spending amount for a certain period of time and receive a discount on the overall cost. For example, if you commit to spend $1,000 a month for 6 months, you might get a 5% discount. For the duration of the subscription, you get $6,000 of usage but pay only $5,700 for it. The greater the subscription, the better the discount.
 

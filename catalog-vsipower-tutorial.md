@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-12-17"
+  years: 2022, 2026
+lastupdated: "2026-04-16"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -43,7 +43,7 @@ The tutorial includes steps for deploying a virtual server image to a target {{s
    Use the [latest release of the sample code](https://github.com/IBM-Cloud/isv-power-vsi-product-deploy-sample ){: external} as an example of how to set up your repository.
    {: tip}
 
-1. Make sure you're assigned the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) editor role on the catalog management service. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
+1. Make sure you're assigned the {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) editor role on the catalog management service. See [Assigning access to account management services](/docs/iam?topic=iam-account-services) for more information.
 
 ## Create a private catalog
 {: #catalog-vsipower-create}

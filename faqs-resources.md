@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-19"
+  years: 2015, 2026
+lastupdated: "2026-04-16"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -36,7 +36,7 @@ For more information about creating and working with resource groups, see [Manag
 
 Most likely you're dealing with an access issue. You must have at least the Viewer role on the resource group itself and at least the Editor role on the service in the account. Learn more in [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs).
 
-For more information about how to check your assigned access, see [Managing access to resources](/docs/account?topic=account-assign-access-resources#assign-access-resources).
+For more information about how to check your assigned access, see [Managing access to resources](/docs/iam?topic=iam-assign-access-resources&interface=ui).
 
 If you need additional access in the account, contact the account owner that is listed on the [Users](/iam/users) page.
 
@@ -44,7 +44,7 @@ If you need additional access in the account, contact the account owner that is 
 {: #create-resource}
 {: faq}
 
-You can create resource groups only if you're assigned as the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+You can create resource groups only if you're assigned as the Administrator role on All Account Management services in the account. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
 
 Lite accounts can have only the default resource group, so you can't create any additional resource groups even if you have the required access.
 
@@ -58,7 +58,7 @@ Yes, you can delete a resource group only if it doesn't contain any resources, a
 {: #add-users-resource-group}
 {: faq}
 
-Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For information, see [Creating an Access Group](/docs/account?topic=account-groups#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
+Resource groups are a method of organizing resources and are not directly associated with the management of users. For information on creating a resource group, see [Adding resources to a resource group](/docs/account?topic=account-rgs#add_to_rgs). After your resource group is created, an account administrator can grant access to a specific user. Or, an account administrator can create an access group to provide access to a resource group. For information, see [Creating an access group in the console](/docs/iam?topic=iam-groups&interface=ui#create_ag) in the console. After an access group is created, complete the following steps to associate the access group with a resource group:
 
 1. In the {{site.data.keyword.cloud_notm}} console, click **Manage** > **Access (IAM)** and click **Access groups**.
 2. Select an access group.

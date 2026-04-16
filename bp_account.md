@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-03-16"
+lastupdated: "2026-04-16"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -79,14 +79,14 @@ The most commonly used roles are viewer, editor, operator, and administrator pla
 
 While these are the most popular roles for assigning access in the platform, there are a second set of roles to consider called service roles. The actions mapped to these roles are defined by each service. Typically the actions mapped to these roles relate specifically to the ability to work with a service's APIs and UI.
 
-For more information about the roles that can be assigned, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
+For more information about the roles that can be assigned, see [IAM roles](/docs/iam?topic=iam-userroles#iamusermanrol).
 
 ## Reducing time and effort to manage access
 {: #limit-policies}
 
 There is a [limit](/docs/account?topic=account-known-issues#access-tag-limits) on the total number of policies that are allowed in an account. You can use a few strategies to ensure that you don't reach the limit and to reduce the amount of time that you spend managing access for the identities in your account (users, service IDs, or trusted profiles):
 
-* Use the principle of least privilege and assign only the access that is necessary. This can help you ensure that the identities in your account are limited to only the actions that you want to allow. For example, time-based conditions for access policies grant access during only the timeframe you specify, reducing the opportunity for attack in the event of a security breach. For more information, see [Limiting access with time-based conditions](/docs/account?topic=account-iam-time-based&interface=ui).
+* Use the principle of least privilege and assign only the access that is necessary. This can help you ensure that the identities in your account are limited to only the actions that you want to allow. For example, time-based conditions for access policies grant access during only the timeframe you specify, reducing the opportunity for attack in the event of a security breach. For more information, see [Limiting access with time-based conditions](/docs/iam?topic=iam-iam-time-based&interface=ui).
 * Add resources to a resource group to further minimize the number of necessary policies. For example, you might have a team working on a project that uses specific resources in your account. Add the team members to an access group or trusted profile with a policy that assigns access to only the resources that are in a specific resource group. This way, you don't need to assign a policy to each resource for each team member.
 * Use access groups to streamline managing access for identities that require the same level of access. You can set up an access group with a specific policy defined, and then add those identities to the group. If the group members need more access later on, you simply define a new policy for the access group.
 * Use access management tags to control access to the resources and service IDs in your account at scale. By assigning access only to resources and service IDs that have specific tags that are attached to them, you can avoid multiple updates to your defined policies. For more information, see [Controlling access to resources by using tags](/docs/account?topic=account-access-tags-tutorial).
@@ -94,10 +94,10 @@ There is a [limit](/docs/account?topic=account-known-issues#access-tag-limits) o
 * Assign access by using a group of services so that you need only a single policy to assign access to multiple services. This way, you decrease the number of policies in your account and reduce the time and effort to manage access.
 
       * **All Identity and Access enabled services**: All catalog services that use IAM for access management.
-      * **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+      * **All Account Management services**: Platform services, such as billing and usage, license and entitlements, enterprises, and more. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services).
       * **All IAM Account Management services**: A subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM Users, IAM Groups, and future IAM services.
 
-Removing access for inactive identities and inactive policies can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resources and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/account?topic=account-id-inactive-identities) and [Auditing access policies](/docs/account?topic=account-iam-audit-policies).
+Removing access for inactive identities and inactive policies can reduce the risk of unauthorized access to your {{site.data.keyword.cloud_notm}} resources and help you manage access more efficiently. For more information, see [Identifying inactive identities](/docs/iam?topic=iam-id-inactive-identities) and [Auditing access policies](/docs/iam?topic=iam-iam-audit-policies&interface=ui).
 {: tip}
 
 ## What makes a good access group strategy?
@@ -139,7 +139,7 @@ Review the following sample access policies to help you determine how you might 
 
 A trusted profile is a grouping of federated users or compute resources to which the same IAM access can be granted. All identities that are allowed to apply a single profile inherit the same access. To reduce the number of policies in an account, you can add compute resources and federated users to the same trusted profile if their access needs are the same.
 
-A logical way to assign access to your resource groups and the included resources is by [Creating one trusted profile](/docs/account?topic=account-create-trusted-profile) per required level of access. Then, you can map each trusted profile to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following trusted profiles:
+A logical way to assign access to your resource groups and the included resources is by creating a trusted profile. For more information, see [Trusted profiles for federated users and workloads](/docs/iam?topic=iam-create-trusted-profile) per required level of access. Then, you can map each trusted profile to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following trusted profiles:
 
 * Auditor-Profile
 * Developer-Profile
@@ -156,7 +156,7 @@ The following diagram shows how access is assigned to trusted profiles:
 
 ![Assigning access to trusted profiles](images/trusted-profiles.svg "Assigning access to trusted profiles"){: caption="Assigning access to trusted profiles" caption-side="bottom"}
 
-You can select only one trusted entity type when you first create a trusted profile. You can [Update trusted profiles](/docs/account?topic=account-trusted-profile-update) at any time to add trust relationships with compute resources.
+You can select only one trusted entity type when you first create a trusted profile. You can start by [Updating trusted profiles by using the console](/docs/iam?topic=iam-trusted-profile-update&interface=ui#updating-tp-console) at any time to add trust relationships with compute resources.
 
 You can assign administrator access to everything in an account by creating a trusted profile and assigning two policies to it. To create the first policy, select **All Identity and Access enabled services** with the Administrator platform role and Manager service role. For the second policy, select **All Account Management services** with the Administrator role assigned. Users with the Administrator role can update and remove trusted profile's access and add and remove users from the trusted profile, including other users with the administrator role.
 
@@ -302,6 +302,6 @@ I assign the user a writer role on Bucket A in the specific instance of {{site.d
 ## Next steps
 {: #bp-access-next}
 
-Now that you know how to set up your resource groups, organize your resources, and create access groups in your account, you can start [Inviting users to your account](/docs/account?topic=account-iamuserinv) and assigning them access to your access groups. If you already invited users to your account, you can go to your Users page and start to [assign access](/docs/account?topic=account-assign-access-resources#assign-access-resources).
+Now that you know how to set up your resource groups, organize your resources, and create access groups in your account, you can start [Inviting users to your account](/docs/iam?topic=iam-iamuserinv) and assigning them access to your access groups. If you already invited users to your account, you can go to your **Users** page and start [Assigning access in the console](/docs/iam?topic=iam-account-services&interface=ui#console-acct-mgmt).
 
-If you decide that your organization wants to manage user access based on your corporate user directory, you can start by [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
+If you decide that your organization wants to manage user access based on your corporate user directory, you can start by creating a trusted profile. For more information, see [Trusted profiles for federated users and workloads](/docs/iam?topic=iam-create-trusted-profile).

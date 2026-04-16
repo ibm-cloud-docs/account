@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-12-17"
+  years: 2021, 2026
+lastupdated: "2026-04-16"
 
 keywords: private catalog, software, onboard, Terraform, terraform template
 
@@ -30,8 +30,8 @@ This tutorial walks you through how to onboard a Terraform template to your acco
 ## Before you begin
 {: #terraform-prereqs}
 
-1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](https://cloud.ibm.com/docs/account?topic=account-account_settings#view-acct-type) for more details.
-1. Verify that you're assigned the following roles. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services) and [Managing access to resources](https://cloud.ibm.com/docs/account?topic=account-assign-access-resources).
+1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
+1. Verify that you're assigned the following roles. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services) and [Managing access to resources](/docs/iam?topic=iam-assign-access-resources).
 
    * Administrator on all account management services and all IAM-enabled services
    * Editor on the catalog management service
