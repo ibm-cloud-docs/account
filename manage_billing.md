@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-04-16"
 
 keywords: payment method, credit card, payment, billing method, pay, pay my bill, billing items, ibm billing,
 
@@ -27,7 +27,7 @@ You can contact {{site.data.keyword.cloud_notm}} Support to get help with paymen
 ## Before you begin
 {: #prereqs-payments}
 
-To manage payments, you need to be assigned the operator role or higher on the billing account management service. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
+To manage payments, you need to be assigned the operator role or higher on the billing account management service. See [Assigning access to account management services](/docs/iam?topic=iam-account-services) for more information.
 
 ## Managing payment methods for new US-based Pay-As-You-Go accounts with credit card billing
 {: #manage-paygo-us-account}

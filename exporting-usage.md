@@ -2,7 +2,7 @@
 
 copyright:
   years: 2023, 2026
-lastupdated: "2026-01-13"
+lastupdated: "2026-04-16"
 
 keywords: apptio, cost benefit analysis
 
@@ -26,7 +26,7 @@ To enable your account to share usage data, you need to grant permissions to the
 {: #enable-export-usage}
 {: ui}
 
-Before you can enable your account to export usage data, you need to have Administrator or editor role on the Billing account management service. For more information, see [IAM access](/docs/account?topic=account-userroles).
+Before you can enable your account to export usage data, you need to have Administrator or editor role on the Billing account management service. For more information, see [IAM access](/docs/iam?topic=iam-userroles).
 
 When you enable your account to export usage data, the COS bucket can collect data from as far back as a year. So, if its June 2024, you can only view usage as early as June 2023, but you'll always be able to view data from that far back. Meaning that if you enabled this feature in June 2023, and it is now June 2024, you can view usage data from June 2022 to June 2024.
 {: note}

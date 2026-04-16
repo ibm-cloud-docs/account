@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-04-16"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -169,7 +169,7 @@ If you have a Pay-As-You-Go or Subscription account, there's no limit to the num
 
 Yes, you can update your email preferences for receiving notifications from the Email preferences page in the console. Click the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Profile** > **Email preferences**.
 
-For more information, see [Setting email preferences](/docs/account?topic=account-email-prefs).
+For more information, see [Setting email preferences for notifications](/docs/support?topic=support-email-prefs).
 
 ## Can I reset my password?
 {: #reset-password}
@@ -221,7 +221,7 @@ To make a payment and reactivate your account, contact support by calling 1-866-
 {: #contactsupport-account}
 {: faq}
 
-From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/account?topic=account-support-plans).
+From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/support?topic=support-support-plans).
 
 Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/account?topic=account-using-avatar), ask questions of the AI Assistant, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
@@ -233,7 +233,7 @@ The {{site.data.keyword.cloud_notm}} console menu bar lists all of the accounts 
 
 ![A screen capture of the account selector in the console menu bar. The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access.](images/account-switcher.svg "The account selector displays the account name and account number, and you select the current account to display a list of other accounts that you can access."){: caption="Account selector" caption-side="bottom"}
 
-You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a username indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/account?topic=account-iam-user-setting). Contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
+You can view your role in each account on the [Users page](/iam/users). The 'owner' tag next to a username indicates the account owner. If you are the owner of the account, the 'self' tag is also listed next to your name. If you see only your name that is listed and you are not the account owner, the account owner has restricted the user list. For more information, see [Controlling user visibility](/docs/iam?topic=iam-iam-user-setting). Contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external} to determine the account owner.
 
 You can also find your accounts from the CLI by running the `ibmcloud account list` command. This command lists the accounts that you own and any other accounts that are affiliated with your IBMid.
 
@@ -408,7 +408,7 @@ You can also switch between the duplicate and original versions by selecting eac
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
 
-The administrator of your account has customized the duration of active and inactive accounts, which requires users to enter their credentials after a specific time. For more information, see [Managing user's login session durations](/docs/account?topic=account-iam-work-sessions).
+The administrator of your account has customized the duration of active and inactive accounts, which requires users to enter their credentials after a specific time. For more information, see [Setting limits for login sessions](/docs/account?topic=account-iam-work-sessions).
 
 ## Why can't I create a Lite account?
 {: #lite-account-create}

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-04-16"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 
@@ -33,7 +33,7 @@ This tutorial walks you through how to onboard a Terraform template to your acco
 
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
 1. Upload your source code to a release in your GitHub or GitLab repository. See [Setting up your source code repository](/docs/sell?topic=sell-source-repo-setup).
-1. Make sure you're assigned the following [IAM access](/docs/account?topic=account-groups):
+1. Make sure you're assigned the following [IAM access](/docs/iam?topic=iam-groups):
 
    * Editor role on the catalog management service
    * Viewer role on all resource groups in your account

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-01-13"
+lastupdated: "2026-04-16"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud
 
@@ -42,7 +42,7 @@ Onboarding Virtual Server Images for VPC with {{site.data.keyword.IBMz}} deploym
    * Editor role or higher on the catalog management service.
    * Manager role or higher on the Schematics service.
 
-   See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
+   See [Assigning access to account management services](/docs/iam?topic=iam-account-services) for more information.
 
 ## Create a private catalog
 {: #catalog-vsivpc-create}

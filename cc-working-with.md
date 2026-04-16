@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-12-17"
+  years: 2022, 2026
+lastupdated: "2026-04-16"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -111,7 +111,7 @@ The following table shows the services that have emissions data and the time fra
 ## Before you begin
 {: #carbon-calc-prereq}
 
-Account owners, account administrators, and users with a viewer role or higher on the billing service can view and export emissions data for the entire account. An account or billing administrator role is required to grant other users access to the Billing service. For more information about assigning access, see [Assigning access to account management services](/docs/account?topic=account-account-services&interface=api#billing-acct-mgmt-api).
+Account owners, account administrators, and users with a viewer role or higher on the billing service can view and export emissions data for the entire account. An account or billing administrator role is required to grant other users access to the Billing service. For more information about assigning access, see [Assigning access to account management services](/docs/iam?topic=iam-account-services&interface=api#billing-acct-mgmt-api).
 
 
 
@@ -133,7 +133,7 @@ One use case strategy for sustainability involves ESG reporting, which uses envi
 
 The calculation method depends on the gross electricity consumption and GHG emissions factor per location. It allocates a portion of the electricity consumption to each one of the services in a location based on the physical hosts that are being used. Then, it splits the electricity consumption per service, per location, across the tenants that are using the service based on their respective usage metrics. For Classic Infrastructure services, energy consumption is calculated by using the average power consumption for the machine on which the server is running.
 
-Due to the high volume of flexible profiles associated with Bare Metal for Classic, profiles were onboarded in phases. Complete data is available from December 2023 on. Users that require a complete emissions report for previous months can submit a support case to request a manual calculation. When creating a support case, select the **Billing and usage** topic. For more information, see [Creating support cases](/docs/account?topic=account-open-case).
+Due to the high volume of flexible profiles associated with Bare Metal for Classic, profiles were onboarded in phases. Complete data is available from December 2023 on. Users that require a complete emissions report for previous months can submit a support case to request a manual calculation. When creating a support case, select the **Billing and usage** topic. For more information, see [Creating support cases](/docs/support?topic=support-open-case).
 {: note}
 
 The method uses the service units of individual {{site.data.keyword.cloud_notm}} offerings to allocate electricity consumption of shared resources to a service's individual resources. The per-account electricity consumption is multiplied by the location’s Power Usage Effectiveness (PUE) and GHG emission factor to yield the accounts carbon footprint.

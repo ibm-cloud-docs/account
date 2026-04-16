@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-04-16"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -20,7 +20,7 @@ subcollection: account
 Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}} catalog, and the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources.
 {: shortdesc}
 
-To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/account?topic=account-cloudaccess#iam_limits).
+To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/iam?topic=iam-cloudaccess#iam_limits).
 {: note}
 
 ## Podman Desktop authentication tokens aren't refreshed
@@ -127,7 +127,7 @@ For example, the following statement contains an `operator` element that uses `s
 ```
 {: codeblock}
 
-[Authorization policies](/docs/account?topic=account-serviceauth) are currently only supported in `/v1/policies`.
+[Authorization policies](/docs/iam?topic=iam-serviceauth) are currently only supported in `/v1/policies`.
 {: note}
 
 ### Checking a policy version in the console

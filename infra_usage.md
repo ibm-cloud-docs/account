@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-01-28"
+  years: 2018, 2026
+lastupdated: "2026-04-16"
 
 keywords: SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -29,7 +29,7 @@ You can view information about your classic infrastructure device and service pu
 * Select **Device upgrades** to view specific information, such as which devices are upgraded and the date the case was created and completed. To view this page, you need an access policy with the Viewer role or higher on the Billing service.
 
    You can view all open and closed cases for your infrastructure device upgrades. You can also track the progress of the case, view a logged correspondence with support, and keep track of cases that are opened and completed.
-* Select **Orders** to view a list of all the orders made in your account. To view this page, you need the Add/Upgrade Storage (StorageLayer), Add Server, or Add/Upgrade Services [classic infrastructure permission](/docs/account?topic=account-mngclassicinfra).
+* Select **Orders** to view a list of all the orders made in your account. To view this page, you need the Add/Upgrade Storage (StorageLayer), Add Server, or Add/Upgrade Services [classic infrastructure permission](/docs/iam?topic=iam-mngclassicinfra).
 * Select **Cancellations** to view all cancellations on your account. To view this page, you need both the Cancel server and Cancel services classic infrastructure permissions.
 
    You can view a list of all of the cancellations made in the account, and you can view them by type of device or service. The cancellations show the device name and the case number. This list tracks ongoing and closed cases, and you can view your messages with support.
@@ -39,7 +39,7 @@ You can view information about your classic infrastructure device and service pu
 {: #infra-billing-ui}
 {: ui}
 
-To view billing and usage for classic infrastructure resources, you need an access policy with the Viewer role or higher on the Billing account management service. See [IAM access](/docs/account?topic=account-userroles) for more information.
+To view billing and usage for classic infrastructure resources, you need an access policy with the Viewer role or higher on the Billing account management service. See [IAM access](/docs/iam?topic=iam-userroles) for more information.
 
 * Select **Billing items** to view billing items and their associated devices. Billing items are services and products that are not a server, such as storage. Associating a billing item with a device helps you track and organize costs in your invoice.
 

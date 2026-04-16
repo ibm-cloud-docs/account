@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-01-06"
+lastupdated: "2026-04-16"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 
@@ -26,21 +26,21 @@ Private catalogs provide a way to centrally manage access to products in the {{s
 {: ui}
 
 * Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+* Make sure you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) to complete this task.
 
 ## Before you begin
 {: #prereq-restrict-api}
 {: api}
 
 * Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+* Make sure you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) to complete this task.
 
 ## Before you begin
 {: #prereq-restrict-cli}
 {: cli}
 
 * Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+* Make sure you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) to complete this task.
 * Run the following command to install the catalogs management plug-in:
 
    ```bash
@@ -53,7 +53,7 @@ Private catalogs provide a way to centrally manage access to products in the {{s
 {: terraform}
 
 * Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-* Make sure you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+* Make sure you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) to complete this task.
 * To customize catalogs by using Terraform, make sure that you have completed the following:
 
    - Install the Terraform CLI and configure the {{site.data.keyword.cloud_notm}} Provider plug-in for Terraform. For more information, see the tutorial for [Getting started with Terraform on {{site.data.keyword.cloud}}](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-getting-started). The plug-in abstracts the {{site.data.keyword.cloud_notm}} APIs that are used to complete this task.
@@ -126,7 +126,7 @@ You can also customize the provider name for private catalog products that you a
 {: #custom-catalog-access-ui}
 {: ui}
 
-To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management).
 
 ## Deleting a private catalog by using the console
 {: #delete-private-catalog-ui}
@@ -190,7 +190,7 @@ ibmcloud catalog filter hide-ibm-public-catalog
 {: #custom-catalog-access-cli}
 {: cli}
 
-To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services&interface=cli#cli-acct-mgmt).
+To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/iam?topic=iam-account-services&interface=cli#cli-acct-mgmt).
 
 ## Deleting a private catalog by using the CLI
 {: #delete-private-catalog-cli}
@@ -324,7 +324,7 @@ See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/
 {: #customcatalog-access-api}
 {: api}
 
-To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#api-acct-mgmt).
+To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#api-acct-mgmt).
 
 ## Deleting a private catalog by using the API
 {: #delete-private-catalog-api}
@@ -391,4 +391,4 @@ Use the following steps to create a private catalog:
 {: #customcatalog-access-terraform}
 {: terraform}
 
-To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services&interface=terraform#api-acct-mgmt).
+To authorize users to work with the products in your private catalogs, assign them the [viewer role on the catalog management service](/docs/iam?topic=iam-account-services&interface=terraform#api-acct-mgmt).

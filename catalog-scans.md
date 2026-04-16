@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-01-28"
+  years: 2021, 2026
+lastupdated: "2026-04-16"
 
 keywords: vulnerabilities, scanning, scans, images, software, catalog
 
@@ -39,7 +39,7 @@ To scan for software vulnerabilities, you need to use the {{site.data.keyword.cl
    ```
    {: pre}
 
-   If you're logging in with a federated ID, run the `ibmcloud login --sso` command. For more information, see [Logging in with a federated ID](/docs/account?topic=account-federated_id&interface=cli).
+   If you're logging in with a federated ID, run the `ibmcloud login --sso` command. For more information, see [Logging in with a federated ID](/docs/iam?topic=iam-federated_id&interface=cli).
    {: note}
 
 1. Run the `ibmcloud oath-tokens` command to retrieve your access token. If you're working with OVA images, you can skip this step.

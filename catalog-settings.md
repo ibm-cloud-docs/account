@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-04-16"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
@@ -25,9 +25,9 @@ All private catalogs that are in an account inherit filters that are set by the 
 {: #set-before-begin}
 
 1. Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-1. Verify that you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+1. Verify that you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management).
 1. If you want users to have access to products in your account, make sure that you [create a private catalog](/docs/account?topic=account-restrict-by-user&interface=ui) before you update the {{site.data.keyword.cloud_notm}} catalog visibility setting.
-1. To view the audit logs, you need to be a manager of the account the catalog is in, or an editor in that account and the catalog. See [Assigning access to account management services](/docs/account?topic=account-account-services) for more information.
+1. To view the audit logs, you need to be a manager of the account the catalog is in, or an editor in that account and the catalog. See [Assigning access to account management services](/docs/iam?topic=iam-account-services) for more information.
 
 ## Updating the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the console
 {: #set-public-visibility}
@@ -72,7 +72,7 @@ Set filters at a private catalog level for fine-grained control of which product
 6. (Optional) Add exceptions to the filter rules that you set in the previous step.
 7. Click **Update**.
 8. Go to the Settings page and turn off the visibility of the public catalog.
-9. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+9. To give users access to work with the products in the private catalog, assign them the [viewer role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management).
 
 For more detailed examples of how you can leverage filtering at the private catalog level, see [Customizing your private catalogs](/docs/account?topic=account-restrict-by-user).
 

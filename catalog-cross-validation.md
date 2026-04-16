@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2023, 2025
-lastupdated: "2025-11-15"
+  years: 2023, 2026
+lastupdated: "2026-04-16"
 
 keywords: catalog, private catalogs, IAM access, Schematics service, cross accounts, target account, projects
 
@@ -32,7 +32,7 @@ You might want to use a target account to validate software for the following re
 {: #catalog-cross-begin}
 
 - Verify that you're using a Pay-As-You-Go or Subscription account. See [Viewing your account type](/docs/account?topic=account-account_settings#view-acct-type) for more details.
-- Make sure that you have the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) or have the catalog administrator complete this task.
+- Make sure that you have the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) or have the catalog administrator complete this task.
 - Set up [service-to-service authorization](/docs/account?topic=account-catalog-service-authorization).
 - If you want to link a private catalog with a project, you must have a catalog and a project created. For more information on creating a private catalog, see [Customizing the IBM Cloud catalog and private catalogs for users in your account](/docs/account?topic=account-restrict-by-user&interface=ui). For more information on creating a project, see [Creating a project](/docs/secure-enterprise?topic=secure-enterprise-setup-project&interface=ui).
 
@@ -52,7 +52,7 @@ Alternatively, use a trusted profile to eliminate the need for key rotation. For
 1. Select **{{site.data.keyword.cloud_notm}} API key** as the method.
 1. Create a programmatic name of the target account.
 1. Create a display name for the target account. The display name appears as a target account option for users that are onboarding products.
-1. Enter the API key from the target account. If you need an API key, see [Create an API key](/docs/account?topic=account-userapikey&interface=ui#create_user_key).
+1. Enter the API key from the target account. If you need an API key, see [Creating an API key in the console](/docs/iam?topic=iam-userapikey&interface=ui#create_user_key).
 1. Select the checkbox to indicate that you set up service authorization for Schematics and Catalog Management.
 1. Click **Add** > **Update**.
 
@@ -91,7 +91,7 @@ Retrieve the CRN associated with your private catalog. You need this to establis
    {: note}
 
 1. Click **Continue**.
-1. [Assign access to the trusted profile](/docs/account?topic=account-create-trusted-profile&interface=ui#tp-access) with at least the Viewer role on the Schematic service and resource groups in the account.
+1. [Assign access to the trusted profile](/docs/iam?topic=iam-create-trusted-profile#tp-access) with at least the Viewer role on the Schematic service and resource groups in the account.
 
    To determine any other necessary permissions for your specific use case, look at the template to see what resources it creates. For example, if the template creates VPC resources, then the trusted profile requires permission to create those VPC resources as well.
    {: tip}

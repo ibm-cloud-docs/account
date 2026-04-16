@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-03-16"
+lastupdated: "2026-04-16"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -286,7 +286,7 @@ IAM access groups provide a way for you to quickly and easily assign access to m
    1. Select a single service or a group of services:
 
       * **All Identity and Access enabled services**: Assigns access to all catalog services that use IAM for access management.
-      * **All Account Management services**: Assigns access to manage platform services, such as billing, and license and entitlements. For more information, see [Assigning access to account management services](https://cloud.ibm.com/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles).
+      * **All Account Management services**: Assigns access to manage platform services, such as billing, and license and entitlements. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services&interface=ui).
       * **All IAM Account Management services**: Assigns access to a subset of account management services that includes the IAM platform services IAM Identity, IAM Access Management, IAM User Management, IAM Groups, and future IAM services.
 
    1. Click **Next**.
@@ -313,7 +313,7 @@ Complete the following steps:
 1. Add the user to one or more of the access groups that you created in the previous step.
 1. Click **Invite**.
 
-To learn more about the invitation flow and how users can accept invitations, see [Inviting users to an account](/docs/account?topic=account-iamuserinv).
+To learn more about the invitation flow and how users can accept invitations, see [Inviting users to an account](/docs/iam?topic=iam-iamuserinv).
 
 You can also give users access to your account by using trusted profiles. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy).
 

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-04-16"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -29,7 +29,7 @@ Not sure which type of account you want to upgrade to? Get detailed information 
 ## Before you begin
 {: #upgrade-prereq}
 
-To upgrade your account, you must have an access policy with the editor role or higher on all account management services. For more information, see [Assigning access to account management services](/docs/account?topic=account-account-services).
+To upgrade your account, you must have an access policy with the editor role or higher on all account management services. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services&interface=ui).
 
 ## Upgrading to a Pay-As-You-Go account
 {: #upgrade-paygo}

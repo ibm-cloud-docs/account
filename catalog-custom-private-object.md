@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-04-16"
 
 keywords: catalog, restrict visibility, hide object, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -33,7 +33,7 @@ All private catalogs that are in an account inherit filters that are set by the 
 ## Before you begin
 {: #prereq-restrict-object}
 
-You need the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+You need the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) to complete this task.
 
 ## Creating a private catalog for your objects
 {: #catalog-all-object}
@@ -49,4 +49,4 @@ Complete the following steps to create a catalog for your objects:
 ## Authorizing access to private catalogs
 {: #customcatalog-access-object}
 
-To authorize users to work with the objects in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).  
+To authorize users to work with the objects in your private catalogs, assign them the [viewer role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management).  

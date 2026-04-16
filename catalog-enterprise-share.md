@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-04-16"
 
 keywords: enterprise, share, private catalog, allowlist, account groups, share request, opt in
 
@@ -33,7 +33,7 @@ A `pre-release` version does not need to be validated before you can share it fr
 {: #ent-share-prereq}
 {: ui}
 
-* You must be assigned the Publisher and Viewer access roles for the Catalog Management service to share products with other accounts, enterprises, or account groups within enterprises. For more information, see [Access management in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cloudaccess). You don't need to be a member of a specific enterprise account to share products with that enterprise account.
+* You must be assigned the Publisher and Viewer access roles for the Catalog Management service to share products with other accounts, enterprises, or account groups within enterprises. For more information, see [Access management in {{site.data.keyword.cloud_notm}}](/docs/iam?topic=iam-cloudaccess). You don't need to be a member of a specific enterprise account to share products with that enterprise account.
 * Verify that at least one version of your product is in either the `test`, `pre-release` or `ready` state.
 * You need to know the ID for the accounts, enterprises, or account groups that you want to share with.
 
@@ -65,7 +65,7 @@ Complete the following steps to share your product:
 1. If you want to share `test` versions with a subset of the allowlist, toggle **Share test versions?** to **Yes**. This way, you can share early versions with a more limited set of accounts for testing and gathering feedback before sharing more widely.
 1. Click **Share**. In the version list, the **Visibility** status is now changed to `Shared`.
 
-You need to configure [service to service authorization](/docs/account?topic=account-serviceauth&interface=ui#create-auth) to share a product between accounts through {{site.data.keyword.bplong}}. To establish a service-to-service authorization between {{site.data.keyword.bplong}} and Catalog Management, {{site.data.keyword.bplong}} acts as the source and Catalog Management as the target with a viewer role. This ensures that {{site.data.keyword.bplong}} can access the source URL when provisioning the product from another account.
+You need to configure [service to service authorization](/docs/iam?topic=iam-serviceauth&interface=ui#create-auth) to share a product between accounts through {{site.data.keyword.bplong}}. To establish a service-to-service authorization between {{site.data.keyword.bplong}} and Catalog Management, {{site.data.keyword.bplong}} acts as the source and Catalog Management as the target with a viewer role. This ensures that {{site.data.keyword.bplong}} can access the source URL when provisioning the product from another account.
 {: note}
 
 If a share request has already been accepted by the target account for a previous product, this new share request is automatically accepted.

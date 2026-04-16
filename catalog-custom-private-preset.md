@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-01-28"
+  years: 2022, 2026
+lastupdated: "2026-04-16"
 
 keywords: catalog, restrict visibility, hide object, restrict by user, filter catalog, private catalog, catalog management service, public catalog, preset configuration, preset
 
@@ -25,7 +25,7 @@ All private catalogs that are in an account inherit filters that are set by the 
 ## Before you begin
 {: #prereq-restrict-preset}
 
-You need the [administrator role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management) to complete this task.
+You need the [administrator role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management) to complete this task.
 
 ## Creating a private catalog for your preset configurations
 {: #catalog-all-preset}
@@ -40,4 +40,4 @@ Complete the following steps to create a catalog for your preset configurations:
 ## Authorizing access to private catalogs
 {: #authorize-access-catalog}
 
-To authorize users to work with the preset configurations in your private catalogs, assign them the [viewer role on the catalog management service](/docs/account?topic=account-account-services#catalog-management-account-management).
+To authorize users to work with the preset configurations in your private catalogs, assign them the [viewer role on the catalog management service](/docs/iam?topic=iam-account-services&interface=ui#catalog-management-account-management).

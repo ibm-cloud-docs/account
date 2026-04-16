@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-04-16"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -99,7 +99,7 @@ After you set up your access groups, complete the following steps to add users t
 3. Select one of the three access groups you previously created, and click **Add** > **Invite**.
 4. Repeat the steps to add users to your other access groups.
 
-Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile).
+Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/iam?topic=iam-create-trusted-profile).
 
 ## Setting up your access groups by using the CLI
 {: #catalog-access-groups-cli}
@@ -158,7 +158,7 @@ ibmcloud iam access-group-user-add example_group name@example.com
 ```
 {: codeblock}
 
-Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=cli).
+Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/iam?topic=iam-create-trusted-profile&interface=cli).
 
 ## Setting up your access groups by using the API
 {: #catalog-access-groups-api}
@@ -802,7 +802,7 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/account?topic=account-create-trusted-profile&interface=api).
+Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/iam?topic=iam-create-trusted-profile&interface=api&q=Managing+access+in+IBM+Cloud&tags=iam).
 
 ### Adding users expected response
 {: #expected-response-api}
@@ -953,7 +953,7 @@ Before you can add users to your access groups by using Terraform, make sure tha
 
 Use the following steps to add users to your access groups:
 
-1. In your Terraform configuration file, find the Terraform code that you used to [create the access group](/docs/account?topic=account-groups&interface=terraform#create-ag-terraform) and note the `access_group_id` assigned to your access group.
+1. In your Terraform configuration file, find the Terraform code that you used to [create the access group](/docs/iam?topic=iam-groups&interface=terraform#create-ag-terraform) and note the `access_group_id` assigned to your access group.
 1. Add a member to the access group.
    ```terraform
    resource "ibm_iam_access_group_members" "accgroupmem" {
