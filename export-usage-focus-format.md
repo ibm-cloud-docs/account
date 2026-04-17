@@ -3,7 +3,7 @@
 copyright:
   years: 2026
 
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords: usage export, FOCUS format, FinOps, cost management, billing data, CSV export, multi-cloud, cost optimization, FOCUS v1.2
 
@@ -109,9 +109,9 @@ Beyond the 16 mandatory fields, {{site.data.keyword.Bluemix_notm}} FOCUS reports
 {: #export-focus-api}
 {: api}
 
-You can automate usage data exports using the {{site.data.keyword.cloud_notm}} Usage Reports API. For more information, see [Usage Reports API](https://cloud.ibm.com/apidocs/metering-reporting?code=python#get-resource-usage-account-focus).
+You can automate usage data exports using the {{site.data.keyword.cloud_notm}} Usage Reports API. For more information, see [Usage Reports API](/apidocs/metering-reporting?code=python#get-resource-usage-account-focus).
 
-1. Obtain an API key with appropriate billing access. For more information, see [Managing API keys](docs/iam?topic=iam-userapikey).
+1. Obtain an API key with appropriate billing access. For more information, see [Managing API keys](/docs/iam?topic=iam-userapikey).
 
 2. Use the following API endpoint to export usage data:
 

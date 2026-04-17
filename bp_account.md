@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords: organizing resources, organizing resource groups, account best practices, best practices account, access best practice, my resources, administrator, administrator role
 
@@ -105,7 +105,7 @@ Removing access for inactive identities and inactive policies can reduce the ris
 
 An access group is an organization of users, service IDs, and trusted profiles in a grouping that you can grant the same IAM access. All identities in a single access group inherit the same access.
 
-A logical way to assign access to your resource groups and the included resources is by [Creating one access group](/docs/account?topic=account-groups) per required level of access. Then, you can map each access group to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following access groups:
+A logical way to assign access to your resource groups and the included resources is by [Creating one access group](/docs/iam?topic=iam-groups) per required level of access. Then, you can map each access group to the previously created resource groups. For example, to control access to the `CustApp` project, you might create the following access groups:
 
 * Auditor-Group
 * Developer-Group

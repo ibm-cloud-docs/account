@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-01-15"
+lastupdated: "2026-04-17"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -40,7 +40,7 @@ The process to onboard software to your account includes importing a version to 
 
 1. There is no requirement to upload your source code to a release on your GitHub or GitLab repository if you are deploying VSI on VPC. Instead, ensure you have a custom image ready and available in your account. See [Importing and validating custom images into VPC](/docs/vpc?topic=vpc-importing-custom-images-vpc&interface=ui).
 
-1. Make sure you are assigned the following [IAM access](/docs/account?topic=account-groups):
+1. Make sure you are assigned the following [IAM access](/docs/iam?topic=iam-groups):
 
    * Manager role on the Schematics service
    * Editor role on the catalog management service

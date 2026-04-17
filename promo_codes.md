@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-04-17"
 
 keywords: promo code, discount, credit, promotion code, promotional code, redeem promos
 
@@ -59,7 +59,7 @@ Complete the following steps to apply promo codes to your account and {{site.dat
 You can also apply promo codes for {{site.data.keyword.cloud_notm}} products from the catalog when you create a resource. To apply the code, select a billable plan, enter the promo code, and click **Apply**. The promo code is added to your account even if you don't create the service.
 {: tip}
 
-Existing classic infrastructure promo codes can be applied only through the catalog when you create those classic infrastructure services. To apply these promo codes, you must have one of the following classic infrastructure permissions on the account: add or upgrade storage, add or upgrade services, or add server. For more information, see [Classic infrastructure permissions](/docs/account?topic=account-mngclassicinfra).
+Existing classic infrastructure promo codes can be applied only through the catalog when you create those classic infrastructure services. To apply these promo codes, you must have one of the following classic infrastructure permissions on the account: add or upgrade storage, add or upgrade services, or add server. For more information, see [Classic infrastructure permissions](/docs/iam?topic=iam-mngclassicinfra).
 
 ## Viewing your promotions
 {: #viewing-promotions}

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-04-17"
 
 keywords:
 
@@ -58,7 +58,7 @@ The following H2s and H3s are going to be reused in several different topics tha
 
 {{_include-segments/string-compare-intro-reuse.md}}
 
-The following table lists the string comparison operators that you can use to build access policies with `/v2/policies` syntax. For more information about each version, see [Comparing `/v1/policies` and `/v2/policies` syntax](/docs/account?topic=account-known-issues#compare-syntax). For example use cases of the operators, see [Resource attribute-based conditions](/docs/account?topic=account-iam-condition-properties&interface=ui#resource-based-conditions).
+The following table lists the string comparison operators that you can use to build access policies with `/v2/policies` syntax. For more information about each version, see [Comparing `/v1/policies` and `/v2/policies` syntax](/docs/account?topic=account-known-issues#compare-syntax). For example use cases of the operators, see [Resource attribute-based conditions](/docs/iam?topic=iam-iam-condition-properties#resource-based-conditions).
 {: #string-compare-intro-reuse}
 
 * Table - **String comparisons** is used in the following files:

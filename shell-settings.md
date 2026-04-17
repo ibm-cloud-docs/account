@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-04-17"
 
 keywords: cloud shell settings, cloud shell service, enable cloud shell, disable cloud shell, cloud shell locations, cloud shell access, cloud shell iam, cloud shell role, cloud shell administrator, cloud shell service
 
@@ -30,11 +30,11 @@ Only account owners, users assigned the Administrator role for the {{site.data.k
 2. On the Users page, select the user that you want to assign the role to.
 3. On the individual user's page, click the **Access** tab, and then click **Assign access**.
 4. Select the service **{{site.data.keyword.cloud-shell_notm}}**.
-5. For the role, select **Administrator**, and then click **Review**. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
+5. For the role, select **Administrator**, and then click **Review**. For more information, see [IAM roles](/docs/iam?topic=iam-userroles#iamusermanrol).
 6. Click **Add** to add your policy configuration to your policy summary.
 7. Click **Assign**.
 
-For more information, see the IAM roles and actions for the [{{site.data.keyword.cloud-shell_notm}}](/docs/account?topic=account-account-services&interface=ui#account-management-actions-roles) account management service.
+For more information, see the IAM roles and actions for the [{{site.data.keyword.cloud-shell_notm}}](/docs/iam?topic=iam-account-services#account-management-actions-roles) account management service.
 
 ## Enabling or disabling {{site.data.keyword.cloud-shell_short}} for an account
 {: #shell-settings-enable}
@@ -89,7 +89,7 @@ To assign {{site.data.keyword.cloud-shell_short}} access to a particular user, c
 3. On the individual user's page, click the **Access polcies** tab, and then click **Assign access**.
 4. For the service, select **{{site.data.keyword.cloud-shell_notm}}**. Then, click **Next**.
 5. Scope the access to **Specific resources**. Select a location to enable the features in. Then, click **Next**.
-6. Select one or more roles to assign to the user. For example, if you want to enable the **File Upload** and **File Download** features for the user, select the **File Manager** role. For more information, see [IAM roles](/docs/account?topic=account-userroles#iamusermanrol).
+6. Select one or more roles to assign to the user. For example, if you want to enable the **File Upload** and **File Download** features for the user, select the **File Manager** role. For more information, see [IAM roles](/docs/iam?topic=iam-userroles#iamusermanrol).
 7. Click **Review**.
 8. Click **Add** to add your policy configuration to your policy summary.
 9. Click **Assign**.

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -64,7 +64,7 @@ A federated ID is an ID within a company's domain that is registered with {{site
 
 For information about how to register your company for a federated ID, see the [IBMid Enterprise Federation Adoption Guide](https://www.ibm.com/docs/en/ief){: external}. An {{site.data.keyword.IBM_notm}} sponsor, such as an product advocate or client advocate, is required when you request to register federated IDs.
 
-You can also federate users from your corporate directory to an {{site.data.keyword.cloud_notm}} account by using the {{site.data.keyword.cloud_notm}} SAML service provider. This type of federation does not connect with other {{site.data.keyword.IBM_notm}} web applications, only {{site.data.keyword.cloud_notm}}. For more information, see [Federating with the IBM Cloud SAML SP](/docs/account?topic=account-ibm-idp-integration#federate-cloud-saml).
+You can also federate users from your corporate directory to an {{site.data.keyword.cloud_notm}} account by using the {{site.data.keyword.cloud_notm}} SAML service provider. This type of federation does not connect with other {{site.data.keyword.IBM_notm}} web applications, only {{site.data.keyword.cloud_notm}}. For more information, see [Federating with the IBM Cloud SAML SP](/docs/iam?topic=iam-ibm-idp-integration#federate-cloud-saml).
 {: note}
 
 ### Using a Google ID
@@ -253,7 +253,7 @@ Complete the following steps to set your preferences for receiving various types
 
 1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
 
-   You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when set up your spending notification. For more information, see [Setting spending notifications](/docs/account?topic=account-spending).
+   You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when set up your spending notification. For more information, see [Setting spending notifications](/docs/support?topic=support-spending).
 
 
 ## Create your resource groups

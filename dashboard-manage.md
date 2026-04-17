@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-04-17"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -20,7 +20,7 @@ You can customize your dashboard in the {{site.data.keyword.cloud}} console to e
 
 {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) access policies are not required for users in your account to view a dashboard. You can share the dashboard link with users so they can view your dashboard.
 
-Aside from being able to view dashboards, users can view resource details that are displayed within a dashboard widget only if they have the required access on the individual resource. For more information, see [IAM access](/docs/account?topic=account-userroles).
+Aside from being able to view dashboards, users can view resource details that are displayed within a dashboard widget only if they have the required access on the individual resource. For more information, see [IAM access](/docs/iam?topic=iam-userroles).
 
 ## Creating a dashboard
 {: #dash-create}

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2025
-lastupdated: "2025-11-15"
+  years: 2017, 2026
+lastupdated: "2026-04-17"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -31,7 +31,7 @@ Ensure that you have the required access to view usage data for the resources. A
 You can limit the access to view the usage for a specific resource group by assigning the viewer role or higher on all Identity and Access enabled services within that resource group.
 {: note}
 
-For more information about access roles, see [IAM access](/docs/account?topic=account-userroles).
+For more information about access roles, see [IAM access](/docs/iam?topic=iam-userroles).
 
 ## Viewing service usage details by using the console
 {: #services-console}
@@ -76,7 +76,7 @@ You can filter the usage summary by group and select the time frame for usage. T
 
 If you select a specific organization from the **Filter by group** list, you can see the total usage for that organization, including any usage as part of a free tier. The free tier usage is shown as free at the account level, but not at the organizational level. When you view the organizational usage, you see the real usage for that organization, which includes both free and charged usage. All organizational usage is rolled up to the account usage after the free tier is removed.
 
-The account owner of a billable account can set spending notifications against the total cost of the account, for runtime, services, and for individual services, excluding third-party services. For more information, see [Setting spending notifications](/docs/account?topic=account-spending).
+The account owner of a billable account can set spending notifications against the total cost of the account, for runtime, services, and for individual services, excluding third-party services. For more information, see [Setting spending notifications](/docs/support?topic=support-spending).
 
 ### Viewing usage details from the cost analysis page
 {: #cost-analysis-page}

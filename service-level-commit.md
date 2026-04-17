@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-01-28"
+lastupdated: "2026-04-17"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -72,7 +72,7 @@ Learn about the shared responsibilities for using {{site.data.keyword.cloud_notm
 
 Multi-year commitments might be broken up into year-long terms. All commitments have a monthly committed spending amount. If your usage doesn't meet the monthly or yearly committed amount, you are charged up to the remaining committed amount. To view how your commitment is progressing, go to the Service commitments page and click a commitment. Here you can view a detailed breakdown of your spending.
 
-Set a spending notification to make sure that your usage is on track to fulfill your commitment. For more information, see [Setting spending notifications](/docs/account?topic=account-spending).
+Set a spending notification to make sure that your usage is on track to fulfill your commitment. For more information, see [Setting spending notifications](/docs/support?topic=support-spending).
 {: tip}
 
 ## Viewing your commitment usage
@@ -102,4 +102,4 @@ To map commitment usage in your enterprise back to child accounts, complete the 
 
 You can get Advanced or Premium support with your service commitment. The level of support that you select determines the severity that you can assign to support cases and your level of access to the tools available in the Support Center. To get support, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
-For more information about {{site.data.keyword.cloud_notm}} support plans, see [Support plans](/docs/account?topic=account-support-plans).
+For more information about {{site.data.keyword.cloud_notm}} support plans, see [Support plans](/docs/support?topic=support-support-plans).

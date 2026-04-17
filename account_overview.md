@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, API key, users
 
@@ -47,5 +47,5 @@ Resource groups
 
 Another important aspect of the previous diagram is the depiction of the two types of access management systems that you can use to provide account users access to resources within the account.
 
-   * You can use IAM [access roles](/docs/account?topic=account-userroles) to provide users access to all resources that belong to a resource group. You can also give users access to manage resource groups and create new service instances that are assigned to a resource group.
+   * You can use IAM [access roles](/docs/iam?topic=iam-userroles) to provide users access to all resources that belong to a resource group. You can also give users access to manage resource groups and create new service instances that are assigned to a resource group.
    * You can use [Classic infrastructure permissions](/docs/iam?topic=iam-mngclassicinfra#how-classic-infra-permissions-work) to grant users more granular permissions for classic infrastructure resources. You assign device access and VPN subnet access separately.

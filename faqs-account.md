@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -223,7 +223,7 @@ To make a payment and reactivate your account, contact support by calling 1-866-
 
 From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/support?topic=support-support-plans).
 
-Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/account?topic=account-using-avatar), ask questions of the AI Assistant, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
+Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/support?topic=support-using-avatar), ask questions of the AI Assistant, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}
@@ -408,7 +408,7 @@ You can also switch between the duplicate and original versions by selecting eac
 ## Why do I get logged out of my account?
 {: #user-session-log-out}
 
-The administrator of your account has customized the duration of active and inactive accounts, which requires users to enter their credentials after a specific time. For more information, see [Setting limits for login sessions](/docs/account?topic=account-iam-work-sessions).
+The administrator of your account has customized the duration of active and inactive accounts, which requires users to enter their credentials after a specific time. For more information, see [Setting limits for login sessions](/docs/iam?topic=iam-iam-work-sessions).
 
 ## Why can't I create a Lite account?
 {: #lite-account-create}

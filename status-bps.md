@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-04-17"
 
 keywords: upcoming maintenance, stay up-to-date, monitor status
 
@@ -30,7 +30,7 @@ Check for upcoming maintenance windows posted on the {{site.data.keyword.cloud_n
 ## Check for current maintenance windows or an incident in progress
 {: #monbp-checcurmaninprog}
 
-If you suspect that {{site.data.keyword.cloud_notm}} isn't functioning as expected, check the Status page for current maintenance windows or an incident in progress. To report an incident that isn't already listed on the Status page, open a support case. For more information about opening a support case, see [Creating support cases](/docs/account?topic=account-open-case).
+If you suspect that {{site.data.keyword.cloud_notm}} isn't functioning as expected, check the Status page for current maintenance windows or an incident in progress. To report an incident that isn't already listed on the Status page, open a support case. For more information about opening a support case, see [Creating support cases](/docs/support?topic=support-open-case).
 
 In most cases, {{site.data.keyword.cloud_notm}} can be used normally during a maintenance window. However, minor interruptions of a service can't always be avoided. Running applications typically remain available even if the application management functions, such as starting and stopping apps, are temporarily interrupted. To maximize the availability of your running applications, run at least three instances of each application.
 
@@ -44,4 +44,4 @@ You can check the status of your locations from the dashboard on the {{site.data
 ## Subscribing to email notifications
 {: #monbp-subscribing}
 
-As a Lite account owner, you can select whether to receive email notifications about {{site.data.keyword.cloud_notm}} platform unplanned events, such as outages, and planned events, such as maintenance. As a Pay-As-You-Go or Subscription account, you can choose whether to receive {{site.data.keyword.cloud_notm}} infrastructure email notifications about unplanned events, maintenance, and announcements. For more information, see [Setting email preferences](/docs/account?topic=account-email-prefs).
+As a Lite account owner, you can select whether to receive email notifications about {{site.data.keyword.cloud_notm}} platform unplanned events, such as outages, and planned events, such as maintenance. As a Pay-As-You-Go or Subscription account, you can choose whether to receive {{site.data.keyword.cloud_notm}} infrastructure email notifications about unplanned events, maintenance, and announcements. For more information, see [Setting email preferences for notifications](/docs/support?topic=support-email-prefs).
