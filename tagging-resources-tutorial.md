@@ -2,8 +2,8 @@
 
 copyright:
 
-   years: 2021, 2025
-lastupdated: "2025-11-15"
+   years: 2021, 2026
+lastupdated: "2026-04-17"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -36,8 +36,8 @@ This tutorial applies to IAM-enabled resources only. You need to have administra
 
 If you are new to using IAM, check out the following resources to learn more about the features, concepts, and components of the access management system:
 
-* See [What is {{site.data.keyword.cloud_notm}} Identity and Access Management?](/docs/account?topic=account-iamoverview) for an overview of the service.
-* See [IAM access](/docs/account?topic=account-userroles) for a description of how access management works by using access policies.
+* See [What is {{site.data.keyword.cloud_notm}} Identity and Access Management?](/docs/iam?topic=iam-iamoverview) for an overview of the service.
+* See [IAM access](/docs/iam?topic=iam-userroles) for a description of how access management works by using access policies.
 * Watch the video about [controlling access by using tags in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-account_setup#two-teams-projects) for an overview of how to use access management tags.
 
 ## Create an access management tag

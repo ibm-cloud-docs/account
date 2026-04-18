@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-04-17"
 
 keywords: troubleshoot account, activate account, confirmation email
 
@@ -37,4 +37,4 @@ Check your inbox and your spam folder for the email. The confirmation email is s
 
 After you unblock the confirmation email, go to the [{{site.data.keyword.cloud_notm}} console](/){: external} and log in. Click **Resend** to send another confirmation email to the email address that is associated with your IBMid.
 
-If you still can't activate your account, contact [{{site.data.keyword.cloud_notm}} Support](/docs/account?topic=account-using-avatar). 
+If you still can't activate your account, contact [{{site.data.keyword.cloud_notm}} Support](/docs/support?topic=support-using-avatar). 

@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-04-17"
 
 keywords: resource, account resources, create resource, access to create resources, delete resource, delete instance, search, find, search for instance, search for resource
 
@@ -17,7 +17,7 @@ subcollection: account
 A [resource](x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You can create and manage resources by going to your [resource list](https://cloud.ibm.com/resources) in the {{site.data.keyword.cloud}} console or by using the command-line interface (CLI).
 {: shortdesc}
 
-Services that are managed by using {{site.data.keyword.cloud_notm}} [Identity and Access Management (IAM) access control](/docs/account?topic=account-userroles) and belong to a resource group have several benefits. Because resource groups are not scoped by location, you can create apps and services from different locations in the same resource group. You can also use fine-grained access control down to an individual instance within a resource group.
+Services that are managed by using {{site.data.keyword.cloud_notm}} [Identity and Access Management (IAM) access control](/docs/iam?topic=iam-userroles) and belong to a resource group have several benefits. Because resource groups are not scoped by location, you can create apps and services from different locations in the same resource group. You can also use fine-grained access control down to an individual instance within a resource group.
 
 ## Required access for creating resources
 {: #creating-resources}

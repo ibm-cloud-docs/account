@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-04-17"
 
 keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
@@ -49,9 +49,9 @@ Complete the following steps to add a credential to a service:
 
 1. Click **Create credential**.
 1. Enter a **Name**.
-1. Assign an IAM service access role. For more information about roles, see [IBM Cloud IAM roles](/docs/account?topic=account-userroles).
+1. Assign an IAM service access role. For more information about roles, see [IBM Cloud IAM roles](/docs/iam?topic=iam-userroles).
    1. Specify `None` to assign no role to the new credential if you want to manage access by associating a new or existing service ID with the service credential.
-1. (Optional) Select an existing service ID or **Create New Service ID** to associate with the credential. This way, you can manage access directly within IAM by going to **Manage > Access (IAM) > Service IDs**. For more information, see [Creating and working with service IDs](/docs/account?topic=account-serviceids).
+1. (Optional) Select an existing service ID or **Create New Service ID** to associate with the credential. This way, you can manage access directly within IAM by going to **Manage > Access (IAM) > Service IDs**. For more information, see [Creating and working with service IDs](/docs/iam?topic=iam-serviceids).
 
       For services that have finer grain resource access, you might want to use a service ID to grant access only to a subresource, such as a {{site.data.keyword.cos_short}} bucket.
       {: tip}

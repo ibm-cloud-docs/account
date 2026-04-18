@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords: getting help, getting support
 
@@ -20,7 +20,7 @@ If you experience an issue or have questions when you're working in the {{site.d
 {: shortdesc}
 
 * Review the [FAQs](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell) in the product documentation.
-* Review the troubleshooting documentation for [accounts](/docs/account?topic=account-ts_logintoibm), [billing](/docs/account?topic=account-cannot-access-billing-info), [selling on {{site.data.keyword.cloud_notm}}](/docs/sell?topic=sell-repo-upload-error), and [Using the support center](/docs/account?topic=account-ts_tech-support-case) to troubleshoot and resolve common issues.
+* Review the troubleshooting documentation for [accounts](/docs/account?topic=account-ts_logintoibm), [billing](/docs/account?topic=account-cannot-access-billing-info), [selling on {{site.data.keyword.cloud_notm}}](/docs/sell?topic=sell-repo-upload-error), and [Using the support center](/docs/support?topic=support-ts_tech-support-case) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users experienced the same problem. When you ask a question, tag the question with `ibm-cloud`, so that it's seen by the {{site.data.keyword.cloud_notm}} development teams.
 

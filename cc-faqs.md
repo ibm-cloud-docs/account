@@ -2,8 +2,8 @@
 
 copyright:
 
- years: 2023, 2025
-lastupdated: "2025-12-17"
+ years: 2023, 2026
+lastupdated: "2026-04-17"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -135,7 +135,7 @@ In the carbon calculator, on the locations widget, you can hover over the locati
 {: #view-data}
 {: faq}
 
-Account owners, account administrators, and users with a viewer role or higher on the billing service can view and export emissions data for the entire account. An account or billing administrator role is required to grant other users access to the Billing service. For more information about assigning access, see [Billing](/docs/account?topic=account-account-services&interface=api#billing-acct-mgmt-api).
+Account owners, account administrators, and users with a viewer role or higher on the billing service can view and export emissions data for the entire account. An account or billing administrator role is required to grant other users access to the Billing service. For more information about assigning access, see [Billing](/docs/iam?topic=iam-account-services#billing-acct-mgmt-api).
 
 ## How to view the Power Virtual Server data on carbon calculator?
 {: #view-power-virtual-server}
@@ -159,7 +159,7 @@ Only data from Power10 or later workspaces is used to calculate the carbon emiss
 {: #data-workspace-carbon-calculator}
 {: faq}
 
-If your workspace is on Power9 or previous versions, the data is not displayed on the carbon calculator. Also, you must have the permissions or roles to view the data on the carbon calculator. For more information about assigning access, see [Billing](/docs/account?topic=account-account-services&interface=api#billing-acct-mgmt-api).
+If your workspace is on Power9 or previous versions, the data is not displayed on the carbon calculator. Also, you must have the permissions or roles to view the data on the carbon calculator. For more information about assigning access, see [Billing](/docs/iam?topic=iam-account-services#billing-acct-mgmt-api).
 
 ## How do I to track GHG emissions for my account in the carbon calculator?
 {: #track-GHG-emissions}

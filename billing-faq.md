@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-17"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -238,7 +238,7 @@ You can view your monthly runtime and service usage by clicking **Manage > Billi
 {: faq}
 {: support}
 
-You can set separate spending thresholds for the account, container, runtime, all services, and specific services. You automatically receive notifications when your monthly spending reaches 80%, 90%, and 100% of those thresholds. To set spending notifications, click **Manage > Billing and usage** and select **Spending notifications**. For more information, see [Setting spending notifications](/docs/account?topic=account-spending).
+You can set separate spending thresholds for the account, container, runtime, all services, and specific services. You automatically receive notifications when your monthly spending reaches 80%, 90%, and 100% of those thresholds. To set spending notifications, click **Manage > Billing and usage** and select **Spending notifications**. For more information, see [Setting spending notifications](/docs/support?topic=support-spending).
 
 Spending notifications don't stop charges from incurring. You continue to incur charges if your usage exceeds 100% of the spending threshold.
 {: note}
@@ -278,7 +278,7 @@ Credits for {{site.data.keyword.IBM_notm}} corporate programs, such as Startup w
 {: #contactsupport}
 {: faq}
 
-Go to the [Support Center](/unifiedsupport/supportcenter){: external} page by clicking the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar. From there, review the list of common FAQs. If you don't find the answers that you need, review the **Contact Support** section. For more information on account types and support products, see [Support plans](/docs/account?topic=account-support-plans).
+Go to the [Support Center](/unifiedsupport/supportcenter){: external} page by clicking the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center** from the console menu bar. From there, review the list of common FAQs. If you don't find the answers that you need, review the **Contact Support** section. For more information on account types and support products, see [Support plans](/docs/support?topic=support-support-plans).
 
 ## Where can I view the billing address for my account?
 {: #billing-address}

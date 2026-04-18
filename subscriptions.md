@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-04-17"
 
 keywords: subscription, credit, subscription code, support code, subscription overage, subscription usage, feature code, expiring subscription, expired subscription
 
@@ -71,7 +71,7 @@ You can use the spending and usage information on the Subscriptions page to eval
 ### Support subscriptions
 {: #view-support-subscriptions}
 
-To view support subscription usage, in the console, go to **Manage > Billing and usage**, and select **Support costs**. You can view the remaining credit in your active support subscriptions and any upcoming subscriptions that aren't yet valid. For more information, see [Viewing your support costs](/docs/account?topic=account-support).
+To view support subscription usage, in the console, go to **Manage > Billing and usage**, and select **Support costs**. You can view the remaining credit in your active support subscriptions and any upcoming subscriptions that aren't yet valid. For more information, see [Viewing your support costs](/docs/iam?topic=iam-userroles).
 
 ## Subscription credit
 {: #subscription-codes}
