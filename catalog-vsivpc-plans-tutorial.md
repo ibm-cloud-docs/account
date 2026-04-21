@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-04-21"
 
 keywords: onboard software, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud, software plan, plan, usage-based plan, partner center
 
@@ -111,6 +111,8 @@ To add a usage-based pricing plan to your software, complete the following steps
 1. Provide a name for your pricing plan. This name refers to the plan name that appears in the pricing plan list on your product's catalog page when your customers select a pricing plan.
 1. Provide a programmatic name for your pricing plan.
 1. Optionally, select a license type to add license entitlements to your pricing plan. This allows you to track and manage license entitlements for each provisioned instance of your software.
+
+   To view the list of available licenses that are shared with your account, you must have the IAM Viewer role or higher on the **License and Entitlement** service and **license-provider** resource type in the account.
 
    Adding licenses to a pricing plan is available only for select {{site.data.keyword.IBM_notm}} Business Partners. License entitlements require a configured license provider, which defines the license for your product. For more information, contact [{{site.data.keyword.cloud_notm}} Support](/unifiedsupport/supportcenter){: external}.
    {: preview}
