@@ -113,23 +113,14 @@ You can automate usage data exports using the {{site.data.keyword.cloud_notm}} U
 
 1. Obtain an API key with appropriate billing access. For more information, see [Managing API keys](/docs/iam?topic=iam-userapikey).
 
-2. Use the following API endpoint to export usage data:
+2. Use the following API endpoint to export usage data at instance-level:
 
    ```bash
    curl -X GET "https://billing.cloud.ibm.com/v4/accounts/{account_id}/focus/{month}" \
      -H "Authorization: Bearer {iam_token}" \
      -H "Accept: text/csv"
    ```
-   {: pre}
-
-3. For instance-level usage data, use the following endpoint:
-
-   ```bash
-   curl -X GET "https://billing.cloud.ibm.com/v4/accounts/{account_id}/focus/{month}" \
-     -H "Authorization: Bearer {iam_token}" \
-     -H "Accept: text/csv"
-   ```
-   {: pre}
+   {: pre}  
 
 Replace `{account_id}` with your {{site.data.keyword.Bluemix_notm}} account ID (required), `{month}` with the report month in YYYY-MM format (e.g., 2024-01), and `{iam_token}` with your IAM access token.
 
@@ -137,7 +128,6 @@ Replace `{account_id}` with your {{site.data.keyword.Bluemix_notm}} account ID (
 {: #api-parameters}
 
 The FOCUS export API supports the following parameters:
-
 `account_id` (required)
 :   The {{site.data.keyword.Bluemix_notm}} account ID.
 
@@ -145,7 +135,6 @@ The FOCUS export API supports the following parameters:
 :   Report month in YYYY-MM format (e.g., 2024-01).
 
 **Headers:**
-
 `Authorization` (required)
 :   Bearer token for IAM authentication.
 
@@ -153,6 +142,11 @@ The FOCUS export API supports the following parameters:
 :   FOCUS version to use (default: 1.2). Set to `true` to bypass cache and generate fresh report.
 
 **Query Parameters:**
+
+`format`
+:   Options include:
+- **json** (default) - will return results in paginated JSON format.
+- **csv** - will return all results in CSV format.
 
 `_limit` (optional)
 :   Pagination limit, max 250 (default: 200).
