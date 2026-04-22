@@ -3,7 +3,7 @@
 copyright:
   years: 2026
 
-lastupdated: "2026-04-17"
+lastupdated: "2026-04-22"
 
 keywords: usage export, FOCUS format, FinOps, cost management, billing data, CSV export, multi-cloud, cost optimization, FOCUS v1.2
 
@@ -116,7 +116,7 @@ You can automate usage data exports using the {{site.data.keyword.cloud_notm}} U
 2. Use the following API endpoint to export usage data:
 
    ```bash
-   curl -X GET "https://cloud.ibm.com/apidocs/metering-reporting/v4/accounts/{account_id}/focus/{month}" \
+   curl -X GET "https://billing.cloud.ibm.com/v4/accounts/{account_id}/focus/{month}" \
      -H "Authorization: Bearer {iam_token}" \
      -H "Accept: text/csv"
    ```
@@ -125,7 +125,7 @@ You can automate usage data exports using the {{site.data.keyword.cloud_notm}} U
 3. For instance-level usage data, use the following endpoint:
 
    ```bash
-   curl -X GET "https://cloud.ibm.com/apidocs/metering-reporting/v4/accounts/{account_id}/focus/{month}" \
+   curl -X GET "https://billing.cloud.ibm.com/v4/accounts/{account_id}/focus/{month}" \
      -H "Authorization: Bearer {iam_token}" \
      -H "Accept: text/csv"
    ```
