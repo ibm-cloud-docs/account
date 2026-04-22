@@ -113,7 +113,7 @@ You can automate usage data exports using the {{site.data.keyword.cloud_notm}} U
 
 1. Obtain an API key with appropriate billing access. For more information, see [Managing API keys](/docs/iam?topic=iam-userapikey).
 
-2. Use the following API endpoint to export usage data at instance-level:
+2. Use the following API endpoint to export usage data:
 
    ```bash
    curl -X GET "https://billing.cloud.ibm.com/v4/accounts/{account_id}/focus/{month}" \
@@ -145,8 +145,8 @@ The FOCUS export API supports the following parameters:
 
 `format`
 :   Options include:
-- **json** (default) - will return results in paginated JSON format.
-- **csv** - will return all results in CSV format.
+    - **json** (default) - will return results in paginated JSON format.
+    - **csv** - will return all results in CSV format.
 
 `_limit` (optional)
 :   Pagination limit, max 250 (default: 200).
