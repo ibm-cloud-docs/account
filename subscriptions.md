@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-04-22"
 
 keywords: subscription, credit, subscription code, support code, subscription overage, subscription usage, feature code, expiring subscription, expired subscription
 
@@ -56,7 +56,7 @@ Support subscriptions that you buy after 24 September 2019 can be spent as descr
 {: help}
 {: support}
 
-You can view the subscriptions in your account to track your credit spending. To access this information, you need an access policy with the Viewer role or higher on the Billing account management service. See [IAM access](/docs/account?topic=account-userroles) for more information.
+You can view the subscriptions in your account to track your credit spending. To access this information, you need an access policy with the Viewer role or higher on the Billing account management service. For more information, see [Platform and service access roles for permissions](/docs/iam?topic=iam-userroles).
 
 ### Platform subscriptions
 {: #platform-service-subscriptions}
