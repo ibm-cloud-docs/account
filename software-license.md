@@ -3,7 +3,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-04-24"
 
 keywords: license, entitlement, software, passport advantage, cloud pak, binding a license, PPA, part number
 
@@ -42,7 +42,7 @@ You can unassign a license from the account. Note, however, any {{site.data.keyw
 {: #assign-license-api}
 {: api}
 
-When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/iam?topic=iam-account-services=ui#license-entitlement-management).
+When you assign licenses to your account, all users with access to your account can use them to install the software to which the licenses apply. If the procurement focal is not the owner of the account to which the license must be assigned, they must be assigned the administrator role on the [License and entitlement account management service](/docs/iam?topic=iam-account-services&interface=api#license-entitlement-management-api).
 
 To assign a license to an account, call the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-license-entitlement){: external} as shown in the following example request:
 

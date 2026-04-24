@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-04-24"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -51,3 +51,45 @@ Purchased Energy Commodities
 
 Renewable Energy
 :   Energy sources that are naturally replenishing but which may be flow-limited, including biomass, biogas, bioethanol, hydro-power, solar photovoltaic, concentrated solar power, wind power, geothermal, ocean thermal, wave action, and tidal action.
+
+Locations
+:   Location is defined as the geographical space where the service instance for the account is being deployed to. This shows the city name for the location. For display purposes, locations aggregate the information for the various datacenters inside the campus or buildings
+
+    The calculations are done by locations and are used for display purposes and to reduce the complexity of the dashboard.
+{: note}
+
+Regions and data center locations
+:   {{site.data.keyword.cloud_notm}} has a resilient global network of data centers to host our clients' workloads. These data centers are hosted in stand-alone facilities, in Single Campus Multizone Regions (MZRs) and Multizone Regions (MZRs).
+
+Data centers
+:   In addition to selecting a region for a resource, users can select from a list of the {{site.data.keyword.cloud_notm}} data centers. Data centers host compute, network, and storage resources and include energy consumption from supporting infrastructure (power generation and distribution, and cooling) used for services and apps.
+
+Single-campus MZRs
+:   Contain three availability zones in different sections of the same building or within multiple buildings on the same campus where the power, cooling, networking, and physical security dependencies overlap, but are not identical between any two availability zones. This setup ensures a level of continuous availability and resiliency of any one system outage, planned or unplanned.
+
+Multizone regions (MZRs)
+:   Composed of three or more data centers (or zones) that are independent from each other to ensure that single failure events affect only a single zone. MZRs provide low latency (< 2-milliseconds) and high bandwidth connectivity (> 1000 Gbps) across zones.
+
+    For more information about {{site.data.keyword.cloud_notm}} locations, see [Locations for resource deployment](/docs/overview?topic=overview-locations).
+
+{{site.data.keyword.cloud_notm}} services
+:   {{site.data.keyword.cloud_notm}} services include options for compute, storage, networking, end-to-end developer solutions for app development, testing and deployment, security management services, traditional and open-source databases, and cloud-native services.
+
+    The {{site.data.keyword.cloud_notm}} carbon calculator includes methodologies to estimate electricity consumption and associated GHG emissions for a comprehensive list of Cloud Services, with coverage for additional services being added in future versions of the tool.
+
+    As we continue to add, deprecate, or modify services, this list will continually evolve. For the latest list of supported services, see [Tracking your carbon emissions](/docs/account?topic=account-tracking-emission).
+    {: note}
+
+    To learn more about {{site.data.keyword.cloud_notm}} offerings, see [{{site.data.keyword.cloud_notm}} catalog](https://cloud.ibm.com/catalog){: external}.
+
+Service Usage Units
+:   Service Usage Units (Usage Units) are used to measure the "amount" or "volume" of any given service provided by {{site.data.keyword.cloud_notm}} to our clients, and subsequently used to bill clients for that use. {{site.data.keyword.cloud_notm}} clients may use a plurality of services in different regions, and {{site.data.keyword.cloud_notm}} uses different Usage Units for specific resources and services.
+
+    For example, for {{site.data.keyword.cloud_notm}} Kubernetes service, {{site.data.keyword.cloud_notm}} meters a large number of Service Usage Units on which it bases billing. These Usage Units include things such as the number of virtual CPU hours (vCPU-hours), disk usage in gigabytes or gigabyte-hours and network usage in gigabytes.
+
+    Another example is Cloud Object Storage, where Usage Units include the total size of objects used in gigabytes, the bandwidth outgoing from the {{site.data.keyword.cloud_notm}} for reads in gigabytes, and the number and type of operations.
+
+    The calculation method uses the Usage Units of individual {{site.data.keyword.cloud_notm}} Service offerings that are most closely related to electricity consumption to allocate electricity consumption of shared resources to individual clients. For example, for the {{site.data.keyword.cloud_notm}} Kubernetes service, the {{site.data.keyword.cloud_notm}} carbon calculator bases its allocation of electricity consumption on the number of vCPU-hours consumed by the client.
+
+Resource Groups
+:   A resource group is a logical set of service instances that have been tagged by the client at deployment.
