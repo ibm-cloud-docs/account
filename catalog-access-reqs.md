@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-04-24"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -802,7 +802,7 @@ fmt.Println(string(b))
 {: codeblock}
 {: go}
 
-Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/iam?topic=iam-create-trusted-profile&interface=api&q=Managing+access+in+IBM+Cloud&tags=iam).
+Or, you can give users access by adding trusted profiles to your access groups. For more information, see [What makes a good trusted profiles strategy?](/docs/account?topic=account-account_setup#trustedprofiles_strategy) and [Creating trusted profiles](/docs/iam?topic=iam-create-trusted-profile&interface=api).
 
 ### Adding users expected response
 {: #expected-response-api}
