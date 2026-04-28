@@ -64,7 +64,7 @@ toc:
           - iam-leave-account.md
           - account-close.md
       - topicgroup:
-          label: Catalog management in IBM Cloud
+          label: Managing catalogs in your account
           topics:
           - catalog-settings.md
           - topic: catalog-custom-private.md
@@ -250,7 +250,6 @@ toc:
           topics:
           - data_portability_tags.md
       - crn.md
-      - data-center-closures.md
       - managed-services-transition.md
       - bxnui.md
   - navgroup:
