@@ -550,7 +550,7 @@ You will get CSV version 0.1 if the data that you're viewing is from before Febr
 {: #service-name-0-1}
 {: tab-title="Account Resource Usage"}
 
-### Understanding your instances report
+## Understanding your instances report
 {: #table-account-instance-report}
 
 The following tables show the correlation between the heading titles in your CSV report and API parameters. For more information about JSON report fields, see [Usage Reports: Get resource instance usage in an account](/apidocs/metering-reporting#get-resource-usage-account). Each row of the **Account Instance Usage** section represents an instance usage of a specific metric in a service plan.
