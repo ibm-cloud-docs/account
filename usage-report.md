@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2026
-lastupdated: "2026-02-09"
+lastupdated: "2026-04-29"
 
 keywords: apptio, cost benefit analysis
 
@@ -25,11 +25,14 @@ The following table shows the correlation between the heading titles in your CSV
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
+- May 2025 to present is [version 1.3](#account-summary-csv-version-1-3)
 - July 2024 to present is [version 1.2](#account-summary-csv-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#account-summary-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#account-summary-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-0-2)
 - Before February 2023 is [version 0.1](#account-summary-csv-version-0-1).
+
+
 
 ### Account summary CSV version 1.2
 {: #account-summary-csvversion-1-2}
@@ -136,7 +139,6 @@ The following table is version 1.2 and the most recent CSV version. You get this
 {: tab-group="account-summary-1-2"}
 {: #service-name-1-2}
 {: tab-title="Account Resource Usage"}
-
 
 ### Account summary CSV version 1.1
 {: #account-summary-csvversion-1-1}
@@ -558,11 +560,197 @@ Regular account CSV reports are not real time and can be incomplete. Complete CS
 
 You can view other versions of the CSV if you have earlier instances reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
+- January 2026 to present is [version 1.4.1](#instances-CSV-version-1-4-1)
+- May 2025 to December 2025 is [version 1.4](#instances-CSV-version-1-4)
+- February 2025 to April 2025 is [version 1.3](#instances-CSV-version-1-3)
 - June 2024 to present is [version 1.2](#instances-CSV-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#instances-csv-version-1-1)
 - October 2023 to March 2024 is [version 1.0](#instances-csv-version-1-0)
 - February 2023 to October 2023 is [version 0.2](#instances-csv-version-0-2)
 - Before February 2023 is [version 0.1](#instances-csv-version-0-1).
+
+### Instances CSV version 1.4.1
+{: #instances-CSV-version-1-4-1}
+
+The following table is version 1.4.1 and the most recent CSV version. You get this version if the data that you're viewing is from January 2026 to present.
+
+| CSV Header       | Description                                     |
+|------------------|-------------------------------------------------|
+| Account Owner ID | ID of the account                               |
+| Account Name     | Name of the account                             |
+| Billing Month    | The month in which usages were incurred. Represented in `yyyy-mm` format     |
+| Currency Rate    | Currency Exchange Rate with USD as the base     |
+| Created Time     | Timestamp at which the CSV report was generated |
+| Version          | The version number of the account instance CSV  |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and descriptions for account metadata" caption-side="bottom"}
+{: tab-group="account-instance-1-4-1"}
+{: #account-owner-id-instance-1-4-1}
+{: tab-title="Account Metadata"}
+
+| CSV Header       | JSON Report Fields                 | Description |
+|---------------------|------------------------------------|-------------|
+| Service Name        | `resources.resource_name`          | The name of the resource |
+| Service ID          | `resources.resource_id`            | The ID of the resource |
+| Instance Name       | `resources.resource_instance_name` | The name of the resource instance |
+| Instance ID         | `resources.resource_instance_id`   | The ID of the resource instance |
+| Plan Name           | `resources.plan_name`              | The name of the plan where the instance was provisioned and rated |
+| Plan ID             | `resources.plan_id`                | The ID of the plan where the instance was provisioned and rated |
+| Region              | `resources.region`                 | The region where instance was provisioned |
+| Consumer ID         | `resources.consumer_id`            | The ID of the consumer |
+| Resource Group Name | `resources.resource_group_name`    | The name of the resource group |
+| Resource Group ID   | `resources.resource_group_id`      | The ID of the resource group |
+| CF Org              | `resources.organization_name`      | The name of the CF organization |
+| Org ID              | `resources.organization_id`        | The ID of the CF organization |
+| CF Space            | `resources.space_name`             | The name of the CF space |
+| Space ID            | `resources.space_id`               | The ID of the CF space|
+| Currency            | `resources.currency_code`          | The currency for the cost fields in the resources, plans, and metrics |
+| Billable            | `resources.billable`               | Validates if a cost is charged to the account |
+| Usage Metric        | `resources.usage.metric`           | ID of the metric |
+| Usage Unit          | `resources.usage.unit`             | Unit that qualifies the quantity |
+| Usage Quantity      | `resources.usage.quantity`         | Aggregated value for the metric |
+| Original Cost       | `resources.usage.rated_cost`       | The starting cost of a resource within your account |
+| Volume Discount   | `resources.usage.volume_discount` | This percentage reflects the reduction to the original cost that you receive under a volume based pricing structure |
+| Volume Cost  | `resources.usage.volume_cost` | The original cost adjusted for volume based discounts that are applied at the account level |
+| Cost |  `resources.usage.cost`   |  The pre-tax cost after accounting for any applicable discounts |
+| Pending             | `resources.pending`            | 	Pending charge from classic infrastructure |
+| Discount (%)        | `resources.plans.usage.discounts.discount`, semicolon(;) delimited | Discount percentage that is applied to the account |
+| Discount ID         | `resources.plans.usage.discounts.ref`, semicolon(;) delimited | Reference ID of the discount |
+| Subscription ID [New]{: tag-new} | `resources.subscription_id` | The ID of the subscription. |
+| Non Chargeable  | `resources.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
+| Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
+| Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
+| Created At  | `resources.created_at` | Created at timestamp of the instance. |
+| Deleted At  | `resources.deleted_at` | Deleted at timestamp of the instance. |
+| Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
+| Profile  | `resources.profile` | Server configuration of VSI instance.  |
+| Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and JSON report fields for account instance usage" caption-side="bottom"}
+{: tab-group="account-instance-1-4-1"}
+{: #service-name-instance-1-4-1}
+{: tab-title="Account Instance Usage"}
+
+### Instances CSV version 1.4
+{: #instances-CSV-version-1-4}
+
+The following table is version 1.4 and the most recent CSV version. You get this version if the data that you're viewing is from March 2025 to present.
+
+| CSV Header       | Description                                     |
+|------------------|-------------------------------------------------|
+| Account Owner ID | ID of the account                               |
+| Account Name     | Name of the account                             |
+| Billing Month    | The month in which usages were incurred. Represented in `yyyy-mm` format     |
+| Currency Rate    | Currency Exchange Rate with USD as the base     |
+| Created Time     | Timestamp at which the CSV report was generated |
+| Version          | The version number of the account instance CSV  |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and descriptions for account metadata" caption-side="bottom"}
+{: tab-group="account-instance-1-4"}
+{: #account-owner-id-instance-1-4}
+{: tab-title="Account Metadata"}
+
+| CSV Header       | JSON Report Fields                 | Description |
+|---------------------|------------------------------------|-------------|
+| Service Name        | `resources.resource_name`          | The name of the resource |
+| Service ID          | `resources.resource_id`            | The ID of the resource |
+| Instance Name       | `resources.resource_instance_name` | The name of the resource instance |
+| Instance ID         | `resources.resource_instance_id`   | The ID of the resource instance |
+| Plan Name           | `resources.plan_name`              | The name of the plan where the instance was provisioned and rated |
+| Plan ID             | `resources.plan_id`                | The ID of the plan where the instance was provisioned and rated |
+| Region              | `resources.region`                 | The region where instance was provisioned |
+| Consumer ID         | `resources.consumer_id`            | The ID of the consumer |
+| Resource Group Name | `resources.resource_group_name`    | The name of the resource group |
+| Resource Group ID   | `resources.resource_group_id`      | The ID of the resource group |
+| CF Org              | `resources.organization_name`      | The name of the CF organization |
+| Org ID              | `resources.organization_id`        | The ID of the CF organization |
+| CF Space            | `resources.space_name`             | The name of the CF space |
+| Space ID            | `resources.space_id`               | The ID of the CF space|
+| Currency            | `resources.currency_code`          | The currency for the cost fields in the resources, plans, and metrics |
+| Billable            | `resources.billable`               | Validates if a cost is charged to the account |
+| Usage Metric        | `resources.usage.metric`           | ID of the metric |
+| Usage Unit          | `resources.usage.unit`             | Unit that qualifies the quantity |
+| Usage Quantity      | `resources.usage.quantity`         | Aggregated value for the metric |
+| Original Cost       | `resources.usage.rated_cost`       | The starting cost of a resource within your account |
+| Volume Discount   | `resources.usage.volume_discount` | This percentage reflects the reduction to the original cost that you receive under a volume based pricing structure |
+| Volume Cost  | `resources.usage.volume_cost` | The original cost adjusted for volume based discounts that are applied at the account level |
+| Cost |  `resources.usage.cost`   |  The pre-tax cost after accounting for any applicable discounts |
+| Pending             | `resources.pending`            | 	Pending charge from classic infrastructure |
+| Discount (%)        | `resources.plans.usage.discounts.discount`, semicolon(;) delimited | Discount percentage that is applied to the account |
+| Discount ID         | `resources.plans.usage.discounts.ref`, semicolon(;) delimited | Reference ID of the discount |
+| Subscription ID [New]{: tag-new} | `resources.subscription_id` | The ID of the subscription. |
+| Non Chargeable  | `resources.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
+| Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
+| Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
+| Created At  | `resources.created_at` | Created at timestamp of the instance. |
+| Deleted At  | `resources.deleted_at` | Deleted at timestamp of the instance. |
+| Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
+| Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and JSON report fields for account instance usage" caption-side="bottom"}
+{: tab-group="account-instance-1-4"}
+{: #service-name-instance-1-4}
+{: tab-title="Account Instance Usage"}
+
+### Instances CSV version 1.3
+{: #instances-CSV-version-1-3}
+
+The following table is version 1.3. You get this version if the data that you're viewing is from February 2025 to March 2025.
+
+| CSV Header       | Description                                     |
+|------------------|-------------------------------------------------|
+| Account Owner ID | ID of the account                               |
+| Account Name     | Name of the account                             |
+| Billing Month    | The month in which usages were incurred. Represented in `yyyy-mm` format     |
+| Currency Rate    | Currency Exchange Rate with USD as the base     |
+| Created Time     | Timestamp at which the CSV report was generated |
+| Version          | The version number of the account instance CSV  |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and descriptions for account metadata" caption-side="bottom"}
+{: tab-group="account-instance-1-3"}
+{: #account-owner-id-instance-1-3}
+{: tab-title="Account Metadata"}
+
+| CSV Header       | JSON Report Fields                 | Description |
+|---------------------|------------------------------------|-------------|
+| Service Name        | `resources.resource_name`          | The name of the resource |
+| Service ID          | `resources.resource_id`            | The ID of the resource |
+| Instance Name       | `resources.resource_instance_name` | The name of the resource instance |
+| Instance ID         | `resources.resource_instance_id`   | The ID of the resource instance |
+| Plan Name           | `resources.plan_name`              | The name of the plan where the instance was provisioned and rated |
+| Plan ID             | `resources.plan_id`                | The ID of the plan where the instance was provisioned and rated |
+| Region              | `resources.region`                 | The region where instance was provisioned |
+| Consumer ID         | `resources.consumer_id`            | The ID of the consumer |
+| Resource Group Name | `resources.resource_group_name`    | The name of the resource group |
+| Resource Group ID   | `resources.resource_group_id`      | The ID of the resource group |
+| CF Org              | `resources.organization_name`      | The name of the CF organization |
+| Org ID              | `resources.organization_id`        | The ID of the CF organization |
+| CF Space            | `resources.space_name`             | The name of the CF space |
+| Space ID            | `resources.space_id`               | The ID of the CF space|
+| Currency            | `resources.currency_code`          | The currency for the cost fields in the resources, plans, and metrics |
+| Billable            | `resources.billable`               | Validates if a cost is charged to the account |
+| Usage Metric        | `resources.usage.metric`           | ID of the metric |
+| Usage Unit          | `resources.usage.unit`             | Unit that qualifies the quantity |
+| Usage Quantity      | `resources.usage.quantity`         | Aggregated value for the metric |
+| Original Cost       | `resources.usage.rated_cost`       | The starting cost of a resource within your account |
+| Volume Discount   | `resources.usage.volume_discount` | This percentage reflects the reduction to the original cost that you receive under a volume based pricing structure |
+| Volume Cost  | `resources.usage.volume_cost` | The original cost adjusted for volume based discounts that are applied at the account level |
+| Cost |  `resources.usage.cost`   |  The pre-tax cost after accounting for any applicable discounts |
+| Pending             | `resources.pending`            | 	Pending charge from classic infrastructure |
+| Discount (%)        | `resources.plans.usage.discounts.discount`, semicolon(;) delimited | Discount percentage that is applied to the account |
+| Discount ID         | `resources.plans.usage.discounts.ref`, semicolon(;) delimited | Reference ID of the discount |
+| Non Chargeable  | `resources.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
+| Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
+| Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
+| Created At  | `resources.created_at` | Created at timestamp of the instance. |
+| Deleted At  | `resources.deleted_at` | Deleted at timestamp of the instance. |
+| Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
+| Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
+{: class="simple-tab-table"}
+{: caption="Account instance CSV header titles and JSON report fields for account instance usage" caption-side="bottom"}
+{: tab-group="account-instance-1-3"}
+{: #service-name-instance-1-3}
+{: tab-title="Account Instance Usage"}
 
 ### Instances CSV version 1.2
 {: #instances-CSV-version1-2}
@@ -845,7 +1033,6 @@ For tags that are of `key:value` format, a new column is added for each and ever
 | `i2`        |            | `test` | `backend` |
 {: caption="Example of tag layout in the CSV report" caption-side="bottom"}
 
-
 ### Service tags
 {: #service-tags}
 
@@ -877,11 +1064,132 @@ The following are the JSON report section APIs for the different CVS headings:
 
 You can view other versions of the CSV if you have earlier enterprise account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
+- October 2024 to present is [version 1.3](#enterprise-account-summary-csv-version-1-3)
 - July 2024 to present is [version 1.2](#enterprise-account-summary-csv-version-1-2)
 - March 2024 to June 2024 is [version 1.1](#enterprise-account-summary-csv-version-1-1)
-- October 2024 to March 2024 is [version 1.0](#enterprise-account-summary-csv-version-1-0)
+- October 2023 to March 2024 is [version 1.0](#enterprise-account-summary-csv-version-1-0)
 - February 2023 to October 2024 is [version 0.2](#enterprise-account-summary-csv-version-0-2)
 - Before February 2023 is [version 0.1](#enterprise-account-summary-csv-version-0-1).
+
+### Enterprise account summary CSV version 1.3
+{: #enterprise-account-summary-csv-version-1-3}
+
+The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from October 2024 to present.
+
+| CSV Header         | Description        |
+|--------------------|--------------------|
+| Entity ID          | ID of the requested entity (`enterprise_id`/`account_group_id`/`account_id`) |
+| Entity Type        | Type of the requested entity (enterprise/account_group/account) |
+| Billing Month      | The month in which usages were incurred. Represented in `yyyy-mm` format |
+| Currency Rate      | Currency Exchange Rate with USD as the base |
+| Created Time       | Timestamp at which the CSV report was generated |
+| Version            | The version number of the enterprise summary CSV |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for entity metadata" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-metadata-1-3}
+{: tab-title="Entity Metadata"}
+
+| CSV Header      | Description |
+|--------------------|-------------|
+| Entity ID          | ID of the hierarchy entity |
+| Entity Type        | Type of the hierarchy entity |
+| Entity Name        | Name of the hierarchy entity |
+| Parent Entity ID   | ID of the parent of this hierarchy entity |
+| Parent Entity Name | Name of the parent of the current hierarchy entity |
+| Parent Entity Type | Type of the parent of the current hierarchy entity |
+| Entity CreatedOn   | Timestamp at which the hierarchy entity was created |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for entity hierarchy" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-hierarchy-1-3}
+{: tab-title="Entity Hierarchy"}
+
+| CSV Header Header          | JSON Report Fields        | Description        |
+|------------------------|---------------------------|--------------------|
+| Billing Unit ID        | `resources.id`         | The ID of the DEFAULT billing unit of the requested entity, which is a globally unique identifier (GUID) |
+| Billing Unit Name      | `resources.name`       | The name of the billing unit |
+| Billing Unit CreatedOn | `resources.created_at` | The creation date of the billing unit |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for billing units" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #billing-unit-id-enterprise-1-3}
+{: tab-title="Billing Units"}
+
+| CSV Header Header     | JSON Report Fields                        | Description        |
+|-------------------|-------------------------------------------|--------------------|
+| Credit Pool Type  | `resources.type`                          | The type of credit, either `PLATFORM` or `SUPPORT` |
+| Currency Code     | `resources.currency_code`                 | The currency code of the associated billing unit |
+| Billing Option ID | `resources.term_credits.billing_option_id`| The ID of the billing option from which the subscription term is derived |
+| Category          | `resources.term_credits.category`         | The category of the credit pool. \n For platform credit the valid values are `PLATFORM`, `OFFER`, or `SERVICE` \n For support credit the valid value is `SUPPORT` |
+| Start Date        | `resources.term_credits.start_date`       | The start date of the term in ISO format |
+| End Date          | `resources.term_credits.end_date`         | The end date of the term in ISO format  |
+| Total Credits     | `resources.term_credits.total_credits`    | The total credit available in this term |
+| Starting Balance  | `resources.term_credits.starting_balance` | The balance of available credit at the start of the current month |
+| Used Credits      | `resources.term_credits.used_credits`     | The amount of credit used during the current month |
+| Current Balance   | `resources.term_credits.current_balance`  | The balance of remaining credit in the subscription term |
+| True Up           | `resources.term_credits.true_up`          | The credits remaining after the end of the term |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for credit pools" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #credit-pool-type-enterprise-1-3}
+{: tab-title="Credit Pools"}
+
+| CSV Header Header     | JSON Report Fields       | Description        |
+|-------------------|--------------------------|--------------------|
+| Credit Pool Type  | `resources.type`         | The type of credit, either `PLATFORM` or `SUPPORT` |
+| Currency Code     | `resources.currency_code`| The currency code of the associated billing unit |
+| Billing Option ID | `resources.overage.billing_option_id` | The ID of the billing option from which the subscription term incurring the overage is derived. |
+| Category          | `resources.overage.category` | The category of the credit pool that has incurred the overage. The valid values are `PLATFORM`, `OFFER`, or `SERVICE` for platform credit and `SUPPORT` for support credit. |
+| Overage           | `resources.overage.cost` | The number of credits that are used as overage |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for overages" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #overages-enterprise-1-3}
+{: tab-title="Overages"}
+
+| CSV Header Header      | JSON Report Fields  | Description        |
+|--------------------|---------------------|--------------------|
+| Entity ID          | `reports.entity_id`         | The ID of the entity |
+| Entity Type        | `reports.entity_type`       | The type of the entity  \n Possible values: `enterprise` , `account-group`, or `account` |
+| Entity Name        | `reports.entity_name`       | A user-defined name for the entity, such as the enterprise name or account group name |
+| Billing Unit ID    | `reports.billing_unit_id`   | The ID of the billing unit  |
+| Billing Unit Name  | `reports.billing_unit_name` | The name of the billing unit |
+| Country Code       | `reports.country_code`      | The country code of the billing unit |
+| Currency Code      | `reports.currency_code`     | The currency code of the billing unit |
+| Billable Cost      | `reports.billable_cost`     | Billable charges that are aggregated from all entities in the report |
+| Non Billable Cost  | `reports.non_billable_cost` | Non-billable charges that are aggregated from all entities in the report |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for enterprise usage summary" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-resource-usage1-1-3}
+{: tab-title="Enterprise Usage Summary"}
+
+| CSV Header Header    | JSON Report Fields                       | Description        |
+|------------------|------------------------------------------|--------------------|
+| Entity ID        | `reports.entity_id`                      | The ID of the entity |
+| Entity Type      | `reports.entity_type`                    | The type of the entity. \n Possible values: `enterprise`, `account-group`, or `account` |
+| Parent Entity ID | `reports.parent_entity_id`               | The ID of the parent of the requested entity |
+| Billing Unit ID  | `reports.billing_unit_id`                | The ID of the billing unit  |
+| Currency Code    | `reports.currency_code`                  | The currency code of the billing unit |
+| Service Name     | `reports.resources.resource_name`        | The name of the resource |
+| Service ID       | `reports.resources.resource_id`          | The ID of the resource |
+| Billable         | `reports.resources.plans.billable`       | Whether the plan charges are billed to the customer |
+| Plan Name        | `reports.resources.plan_name`            | The name of the plan |
+| Plan ID          | `reports.resources.plan_id`              | The ID of the plan |
+| Pricing Region   | `reports.resources.plans.pricing_region` | The pricing region for the plan |
+| Metric           | `reports.resources.plans.usage.metric`   | The name of the metric |
+| Unit             | `reports.resources.plans.usage.unit`     | A unit to qualify the quantity |
+| Quantity         | `reports.resources.plans.usage.quantity` | The aggregated value for the metric |
+| Cost             | `reports.resources.plans.usage.cost`     | The cost that was incurred by the metric |
+| Pending          | `reports.resources.plans.pending`        | Pending charge from classic infrastructure |
+| Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
+| Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
+{: class="simple-tab-table"}
+{: caption="Enterprise usage report CSV contents for enterprise resource usage" caption-side="bottom"}
+{: tab-group="enterprise-account-summary-1-3"}
+{: #entity-resource-usage2-1-3}
+{: tab-title="Enterprise Resource Usage"}
 
 ### Enterprise account summary CSV version 1.2
 {: #enterprise-account-summary-csv-version1-2}
