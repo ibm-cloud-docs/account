@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-04-30"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -29,7 +29,8 @@ Emissions from key greenhouse gases are measured in metric tons of carbon dioxid
 
 * Emissions by resource group: The GHG emissions are broken down by group. Most services are displayed by resource group. However, Classic Infrastructure is displayed in a dedicated group. The emissions are displayed only if a group contains those services.
 
-
+The carbon calculator dynamically filters account-specific data based on your selected time range such as **Current year**, **Last available month**, **Last year**, **Last available quarter**, or any **Custom time range**. It displays only the associated data centers, locations, and services that are active during that period.
+{: tip}
 
 ## Tracking enterprise emissions with the carbon calculator
 {: #tracking-emissions-enterprise}
