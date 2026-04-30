@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-28"
+lastupdated: "2026-04-30"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -81,9 +81,7 @@ If your payments are managed outside of the console, go to [{{site.data.keyword.
 {: #pay-method}
 {: faq}
 
-For a Pay-As-You-Go account, you must have an active credit card on file. With the Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types, you might be able to use other payment options. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to inquire about payment options. 
-
-
+For a Pay-As-You-Go account, you must have an active credit card on file. With the Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types, you might be able to use other payment options. If you placed your order as a purchase order (PO) or a firm order letter (FOL) through an {{site.data.keyword.IBM_notm}} seller, you can change your payment method to a credit card and manage it in the console. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to inquire about payment options. For more information, see [Managing payment methods for purchase orders](/docs/account?topic=account-linkedusage#manage-po-billing).
 
 ## How do I pay an invoice?
 {: #pay-invoice}
