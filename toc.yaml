@@ -64,7 +64,7 @@ toc:
           - iam-leave-account.md
           - account-close.md
       - topicgroup:
-          label: Catalog management in IBM Cloud
+          label: Managing catalogs in your account
           topics:
           - catalog-settings.md
           - topic: catalog-custom-private.md
@@ -325,4 +325,6 @@ toc:
           - ts_commit_access_page.md
           - ts_commit_cannot_apply.md
           - ts-cc-error-messages.md
+          - topic: ts-add-creditcard.md
+          - topic: ts-cpq-credit-card.md
       - known-issues.md

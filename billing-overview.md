@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-llastupdated: "2026-03-16"
+llastupdated: "2026-05-04"
 
 keywords: IBM Cloud billing, payments, costs, usage, spending
 
@@ -70,8 +70,9 @@ If you own one of the following accounts, in the {{site.data.keyword.cloud}} con
 * New and existing Pay-As-You-Go accounts based in the US with any payment method other than a credit card.
 * New and existing Pay-As-You-Go accounts are not based in the US.
 * New and existing Subscription accounts worldwide.
+* Existing Pay-As-You-Go and Enterprise Savings Plan accounts created through {{site.data.keyword.IBM_notm}} sellers.
 
- The process for updating a credit card requires a manual review that might take a few days to process. To view your open change request cases, go to [{{site.data.keyword.cloud_notm}} Support](https://cloud.ibm.com/unifiedsupport/supportcenter).
+The process for updating a credit card and billing address details requires a manual review that might take a few days to process. To view your open change request cases, go to the [{{site.data.keyword.cloud_notm}} Support Center](/unifiedsupport/supportcenter){: external}.
 {: tip}
 
 You might manage your payment method on a separate billing platform. You can easily register, update, or delete a payment method by going to [IBM Billing](https://myibm.ibm.com/billing/).

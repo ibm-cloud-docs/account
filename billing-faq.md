@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-04-30"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -81,7 +81,7 @@ If your payments are managed outside of the console, go to [{{site.data.keyword.
 {: #pay-method}
 {: faq}
 
-For a Pay-As-You-Go account, you must have an active credit card on file. With the Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types, you might be able to use other payment options. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to inquire about payment options.
+For a Pay-As-You-Go account, you must have an active credit card on file. With the Subscription and {{site.data.keyword.cloud_notm}} Enterprise Savings Plan account types, you might be able to use other payment options. If you placed your order as a purchase order (PO) or a firm order letter (FOL) through an {{site.data.keyword.IBM_notm}} seller, you can change your payment method to a credit card and manage it in the console. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to inquire about payment options. For more information, see [Managing payment methods for purchase orders](/docs/account?topic=account-linkedusage#manage-po-billing).
 
 ## How do I pay an invoice?
 {: #pay-invoice}
@@ -128,6 +128,8 @@ For Pay-As-you-Go accounts, you must have an active credit card on file. You can
 * If you're using a new US-based Pay-As-You-Go account with credit card billing, you can add a new credit card in the Monthly Payment Method form on the [Payments](/billing/payments){: external} page.
 * For all other accounts, you can remove a credit card and switch to a different payment method by clicking **Pay with Other** > **Submit change request**. To complete the change, review and update the support case that is created for you.
 * If you manage your payment method on a separate billing platform, you can remove your credit card by going to [{{site.data.keyword.IBM_notm}} Billing](https://myibm.ibm.com/billing/){: external}. For more information, see [Managing your payment method outside of the console](/docs/account?topic=account-linkedusage#payment-method-ibm).
+
+
 
 ## How do I change the invoice currency from US Dollars to my local currency?
 {: #localcurrency}
@@ -208,7 +210,7 @@ You might be looking for information about promo codes and subscription codes, w
 
 As the account owner, you're responsible for all charges that are incurred by users in your account, including invited users. Ensure that each user is assigned only the level of access that is required to complete their job, including the ability to create new instances that might incur additional charges in your account. For more information, see [Managing access to resources](/docs/iam?topic=iam-assign-access-resources).
 
-Resources and applications that remain running in an account are subject to charges based on the pricing and description of the product. For example, this includes buildpacks, Platform as a Service, and Infrastructure as a Service.
+Resources and applications that remain to run in an account are subject to charges based on the pricing and description of the product. For example, this includes buildpacks, Platform as a Service, and Infrastructure as a Service.
 
 If you believe that charges on your invoice are incorrect, [contact Support](/unifiedsupport/supportcenter){: external} within 30 calendar days of the invoice due date or use the contact information that is found on your invoice.
 
