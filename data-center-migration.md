@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-05-05"
 
 keywords: migrate, migrating data center, migrate resources, data center
 
@@ -24,10 +24,7 @@ Throughout the data center migration process, help is available. To take advanta
 * [Live chat](https://www.ibm.com/solutions/cloud-data-centers){: external}
 * Phone: (US) 866-597-9687; (EMEA) +31 20 308 0540; (APAC) +65 6622 2231
 
-For information about which data centers are closing, see [Data center closures](/docs/account?topic=account-dc-closure). For a list of the data centers that are available, see [Locations for resource deployment](/docs/overview?topic=overview-locations).
-
-## Migrating your resources
-{: #migrating-your-resources}
+For a list of the data centers that are available, see [Locations for resource deployment](/docs/overview?topic=overview-locations).
 
 Complete the following steps to migrate resources to a new data center:
 

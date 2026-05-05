@@ -250,7 +250,6 @@ toc:
           topics:
           - data_portability_tags.md
       - crn.md
-      - data-center-closures.md
       - managed-services-transition.md
       - bxnui.md
   - navgroup:
