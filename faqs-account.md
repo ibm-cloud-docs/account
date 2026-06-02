@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-06-02"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -433,3 +433,9 @@ For classic infrastructure services, you can get similar information by using th
 In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**. The account number is displayed.
 
 You can also find your account number by directly accessing the **Account settings** page by clicking [Account settings](https://cloud.ibm.com/account/settings).
+
+## Can I use Terraform IBM Modules to configure account settings?
+{: #faq-tim-account-settings}
+{: faq}
+
+Yes, you can use [Terraform IBM Modules (TIM) IAM Account Settings](https://registry.terraform.io/modules/terraform-ibm-modules/iam-account-settings/ibm/latest){: external} for configuring and managing consistent and  auditable account settings. For more information, see [Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
