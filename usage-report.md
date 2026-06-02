@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-06-01"
 
 keywords: apptio, cost benefit analysis
 
@@ -739,14 +739,14 @@ The following table is version 1.4.1 and the most recent CSV version. You get th
 | Pending             | `resources.pending`            | 	Pending charge from classic infrastructure |
 | Discount (%)        | `resources.plans.usage.discounts.discount`, semicolon(;) delimited | Discount percentage that is applied to the account |
 | Discount ID         | `resources.plans.usage.discounts.ref`, semicolon(;) delimited | Reference ID of the discount |
-| Subscription ID [New]{: tag-new} | `resources.subscription_id` | The ID of the subscription. |
+| Subscription ID  | `resources.subscription_id` | The ID of the subscription. |
 | Non Chargeable  | `resources.usage.non_chargeable` |  When set to `true`, the cost is for informational purpose and is not included while calculating the plan charges. |
 | Classic Infrastructure Product ID | `resources.usage.additional_properties.classic_infrastructure_product_id`  | Product ID of classic infrastructure resource |
 | Classic Infrastructure Package ID |`resources.usage.additional_properties.classic_infrastructure_package_id` | Package ID of classic infrastructure resource |
 | Created At  | `resources.created_at` | Created at timestamp of the instance. |
 | Deleted At  | `resources.deleted_at` | Deleted at timestamp of the instance. |
 | Parent Resource Instance ID | `resources.parent_resource_instance_id` | Resource instance ID of the parent resource associated with this instance |
-| Profile  | `resources.profile` | Server configuration of VSI instance.  |
+| Profile [New]{: tag-new} | `resources.profile` | Server configuration of VSI instance.  |
 | Other Tags          | `resources.tags`                   | Tags that are not of `key:value` format |
 {: class="simple-tab-table"}
 {: caption="Account instance CSV header titles and JSON report fields for account instance usage" caption-side="bottom"}

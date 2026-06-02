@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2017, 2025
-lastupdated: "2025-11-15"
+  years: 2017, 2026
+lastupdated: "2026-06-02"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -153,6 +153,9 @@ Use the following steps to create a resource group by using Terraform:
    {: codeblock}
 
    You can specify `tags` associated with the resource group instance. For more information, see the argument reference details on the [Terraform Resource Management](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/resource_group){: external} page.
+
+   You can also create and manage resource groups with the [Resource Group module](https://registry.terraform.io/modules/terraform-ibm-modules/resource-group/ibm/latest){: external} from [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim), which simplifies provisioning and lookups by returning the resource group ID directly.
+   {: tip}
 
 1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
 

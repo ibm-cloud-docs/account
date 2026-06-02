@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-24"
+lastupdated: "2026-06-02"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -964,6 +964,9 @@ Use the following steps to add users to your access groups:
    {: codeblock}
 
    For more information, see the argument reference details on the [Terraform Identity and Access Management (IAM)](https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/iam_access_group_members){: external} page.
+
+   You can also use the [IAM Access Group module](https://registry.terraform.io/modules/terraform-ibm-modules/iam-access-group/ibm/latest){: external} from [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) to manage access group membership alongside policies in a consistent, reusable configuration.
+   {: tip}
 
 1. After you finish building your configuration file, initialize the Terraform CLI. For more information, see [Initializing Working Directories](https://developer.hashicorp.com/terraform/cli/init){: external}.
    ```terraform
