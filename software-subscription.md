@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2024, 2025
-lastupdated: "2025-11-15"
+  years: 2024, 2026
+lastupdated: "2026-06-05"
 
 keywords: IBM Cloud billing, software subscription, SaaS subscription
 
@@ -30,7 +30,7 @@ Work with an [{{site.data.keyword.cloud_notm}} Cloud Sales](https://www.ibm.com/
 - You can have multiple SaaS subscriptions for different services active at the same time.
 - You cannot have SaaS subscriptions for {{site.data.keyword.IBM_notm}} Partner Programs accounts or root enterprise accounts.
 - You can apply a SaaS subscription to a child account in an enterprise.
-- Make sure that the country and currency on your account matches the country and currency in your SaaS subscription order. To check your country and currency, export your CSV usage report and look in the Country Code and Currency Code headers. For more information, see [Understanding your account summary report](/docs/account?topic=account-exporting-your-usage&interface=ui#account-summary-csv-version-1-2).
+- Make sure that the country and currency on your account matches the country and currency in your SaaS subscription order. To check your country and currency, export your CSV usage report and look in the Country Code and Currency Code headers. For more information, see [Understanding your account summary report](/docs/account?topic=account-understand-reports#account-summary-csvversion-1-2).
 
 ## Adding your SaaS subscription to an account
 {: #slc-software}
