@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-06-05"
 
 keywords: subscription code, subscription credit, discount code, promo code, feature code 
 
@@ -16,7 +16,7 @@ subcollection: account
 # Applying subscription codes 
 {: #subscription_code}
 
-After you buy a subscription for platform or support credit, you must add the credit to your account by applying a subscription code to an existing account or a new account when you register. Applying the code ensures that the credit is added to your account and you don't have unexpected overage charges.
+After you buy a subscription for platform or support credit, you must add the credit to your account by applying a subscription code to an existing account or a new account when you register. Applying the code helps ensure that the credit is added to your account and you don't have unexpected overage charges.
 {: shortdesc}
 
 If you set up your first subscription from the [Subscriptions page](/billing/subscriptions), the credit for this subscription is automatically added to your account - no code required.
@@ -24,8 +24,14 @@ If you set up your first subscription from the [Subscriptions page](/billing/sub
 
 After {{site.data.keyword.cloud_notm}} Sales places the order, an email with the subscription code for each subscription and support line item is sent to the appropriate contact. 
 
-Only the account owner, enterprise account owner, or a user with the Editor or Administrator role on the Billing account management service can apply the subscription code. If you don't have access to apply subscription codes, the account owner or administrator can provide access. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services). Applying the subscription code through the {{site.data.keyword.Bluemix}} console is essential to ensure that your account is migrated appropriately. 
+Only the account owner, enterprise account owner, or a user with the Editor or Administrator role on the Billing account management service can apply the subscription code. If you don't have access to apply subscription codes, the account owner or administrator can provide access. For more information, see [Assigning access to account management services](/docs/iam?topic=iam-account-services). Applying the subscription code through the {{site.data.keyword.Bluemix}} console is essential to help ensure that your account is migrated. 
 
+## Applying a subscription code from email
+{: #apply-code-email}
+
+If you received an email with a subscription code, you can apply it directly by using the link in the email. It is the quickest method to add subscription credit to your account.
+
+To apply the subscription code from email, complete the following steps:
 
 1. Open the email with the subscription code.
 
@@ -34,7 +40,12 @@ Only the account owner, enterprise account owner, or a user with the Editor or A
 
 1. Click **Add subscription** to add it to an existing account.
 1. Sign in to the console with your IBMid and password.
-1. From the modal, choose the account you'd like to add the subscription to, select **I understand**, and then click **Add**.
+1. From the modal, choose the account that you like to add the subscription to, select **I understand**, and then click **Add**.
+
+## Applying a subscription code to an existing account
+{: #apply-code-existing}
+
+If you prefer to manually enter your subscription code or didn't receive an email link, you can apply the code directly through the console to an existing account.
 
 To manually apply the subscription code to an existing account, complete the following steps:
 
@@ -48,10 +59,15 @@ To manually apply the subscription code to an existing account, complete the fol
 
    If you have separate codes for platform and support credit, apply the platform subscription code first, then apply the support subscription code.
 
+## Applying a subscription code to a new account
+{: #apply-code-new}
+
+If you're creating a new {{site.data.keyword.cloud_notm}} account and have a subscription code, you can apply it during the registration process instead of providing credit card information.
+
 To manually apply the subscription code to a new account, complete the following steps:
 
-1. Go [create an {{site.data.keyword.cloud_notm}} account](/registration), and enter the required information.
-1. Click **Register with a code** instead of entering your credit card information.
+1. Go to [create an {{site.data.keyword.cloud_notm}} account](/registration), and enter the required information.
+1. In the **Account information** section, select an account type of **Company** or **Personal** and then, click **Register with a code** instead of entering your credit card information.
 1. Click **Create account**.
 
 If you don't know your seller, the codes are applied in the wrong order, or you experience issues with applying the codes, [contact {{site.data.keyword.cloud_notm}} Support](/docs/support?topic=support-using-avatar).
