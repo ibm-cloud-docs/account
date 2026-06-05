@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2024, 2025
-lastupdated: "2025-11-15"
+  years: 2024, 2026
+lastupdated: "2026-06-05"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -143,7 +143,7 @@ You can find instance level details for your monthly usage by completing the fol
 1. Click **Export CSV**.
 1. Select **Instance** for detailed usage information about each service instance.
 
-For more information about heading titles in your CSV report, see [Understanding your instances report](/docs/account?topic=account-exporting-your-usage&interface=ui#table-account-instance-csv).
+For more information about heading titles in your CSV report, see [Understanding your instances report](/docs/account?topic=account-understand-reports#table-account-instance-report).
 
 #### In Arrears infrastructure monthly charges
 {: #new-arrears-monthly}

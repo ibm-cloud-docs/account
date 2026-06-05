@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-06-05"
 
 keywords: migration FAQs, data centers
 
@@ -24,7 +24,7 @@ FAQ about migrating resources includes questions about resource and data center 
 {: #dc-required-move}
 {: faq}
 
-To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to help ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/account?topic=account-dc-closure).
+To continue bringing you the best service, hardware, and connectivity, data centers are continually evaluated to help ensure that they meet networking, electrical, and other infrastructure standards. Data centers that no longer meet ongoing standards are consolidated. For more information, see [Data center migrations](/docs/support?topic=support-dc-closure).
 
 ## Do I need to be fully migrated on the date my data center is consolidated?
 {: #dc-fully-migrated}
