@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-06-10"
 
 keywords: resource FAQs, resource frequently asked questions, resource group, resource list, dashboard widget, delete service, cancel service, cancel resource
 
@@ -112,10 +112,7 @@ For more information about the required access for other resources types, see [T
 
 To view all of your resources, click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Resource list**.
 
-To view just your classic infrastructure resources, select from the following options:
-
-* Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Classic Infrastructure**.
-* Click the **Navigation Menu** icon ![Navigation Menu icon](../icons/icon_hamburger.svg "Menu") > **Dashboard**, and click any of the links that are listed in the Classic infrastructure widget.
+To view just your classic infrastructure resources, use the **Group** filter and select **Classic Infrastructure** from the **Other** category.
 
 ## What causes resource restorations to fail?
 {: #reclamation-fail}
