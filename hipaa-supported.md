@@ -45,6 +45,6 @@ Accounts that enable the HIPAA Supported setting still have access to the full c
     You can't disable the setting after you enable it.
     {: important}
 
-1. Select **Accept**, and click **On**.
+1. Select **Accept**, and click **Submit**.
 
     After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.cloud_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**.
