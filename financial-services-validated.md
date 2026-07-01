@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-11-15"
+  years: 2018, 2026
+lastupdated: "2026-07-01"
 
 keywords: data security, FS-ready, Financial Services, encryption
 
@@ -26,10 +26,8 @@ Accounts that enable the Financial Services Validated setting can filter the cat
 
 When you enable this setting, you are indicating that your account stores regulated Financial Services information.
 
-
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
-1. For the Financial Services option, click **On**.
-1. Read the information about enabling the setting, and select **I understand and agree to these terms**.
-1. Click **On**.
+1. Go to the Financial Services Validated option and toggle **On**.
+1. Read the information about enabling the setting and click **On**.
 
 After you enable the setting at the account level, you can filter the {{site.data.keyword.cloud_notm}} catalog to display services that are designated as Financial Services Validated. In the {{site.data.keyword.cloud_notm}} catalog, expand the **Compliance** section and select **Financial Services Validated**. The Financial Services Validated label on a service can apply to all available plans or be limited to specific plans or configurations.
