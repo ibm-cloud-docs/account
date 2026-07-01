@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-11-15"
+  years: 2018, 2026
+lastupdated: "2026-07-01"
 
 keywords: GDPR, europe, ACS, EU, EU Supported
 
@@ -24,7 +24,7 @@ Turning on the EU supported setting limits Client Service Delivery that is provi
  If {{site.data.keyword.cloud_notm}} experts that are outside of the EU region need access to this data, an EU support team member reviews the access request. Then, the EU support team member provides necessary access to the requested system for a specific timeframe. When that timeframe is over, access is revoked. Throughout this process, your data is always protected.
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
-2. Scroll to the EU Supported section, and click **On**.
+2. Scroll to the EU Supported section and toggle **On**.
 3. Read the information about enabling the setting, and select **I understand and agree to these terms**.
 4. Click **On**.
 

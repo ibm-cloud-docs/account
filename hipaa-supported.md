@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-02-12"
+lastupdated: "2026-07-01"
 
 keywords: HIPAA, PHI, HITECH
 
@@ -38,13 +38,13 @@ Enable this setting only if you or your company is a covered entity as defined b
 
 Accounts that enable the HIPAA Supported setting still have access to the full catalog of services. {{site.data.keyword.cloud_notm}} services typically offer multiple plans. The HIPAA Enabled label on a service can apply to all available plans or be limited to specific plans or configurations. You as the client are solely responsible for limiting PHI to HIPAA Enabled product plans and architecting in accordance with HIPAA and HITECH.
 
-1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account setting** in the console.
-2. For the HIPAA Supported option, click **On**.
-3. Read the information about enabling this setting.
+1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account setting**.
+1. Scroll to the HIPAA Supported option and toggle **On**.
+1. Read the information about enabling this setting.
 
     You can't disable the setting after you enable it.
     {: important}
 
-4. Select **Accept**, and click **Submit**.
+1. Select **Accept**, and click **Submit**.
 
     After you enable the HIPAA Supported setting, you can use the HIPAA Enabled filter to find products that are HIPAA enabled. In the {{site.data.keyword.cloud_notm}} catalog, expand the **Compliance** section and select **HIPAA Enabled**.
