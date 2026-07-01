@@ -16,7 +16,7 @@ subcollection: account
 # Managing your account settings
 {: #account_settings}
 
-As an {{site.data.keyword.cloud}} account owner, you can change the account name, view your account type, and find your account ID on the Account settings page. You can also manage settings for compliance for EU support, Financial Services Validated products, HIPAA support, and AI access to account information.
+As an {{site.data.keyword.cloud}} account owner, you can change the account name, view your account type, and find your account ID on the Account settings page. You can also manage settings for compliance for EU support, Financial Services Validated products, and HIPAA support.
 {: shortdesc}
 
 ## Viewing your account settings
@@ -48,13 +48,3 @@ Depending on your specific needs, you can enable settings for the following area
 * HIPAA support for accounts that plan to include Protected Health Information in the account
 
 For more information about these settings, go to [Updating account settings for compliance](/docs/account?group=updating-account-settings-for-compliance).
-
-## Enabling AI access to account information
-{: #ai-access-account}
-
-Your account is enabled by default to allow {{site.data.keyword.cloud_notm}} AI capabilities like the AI assistant access to your account information. This access enables you to get customized responses in the AI assistant when you ask questions about your specific account.
-
-You can change this setting on the Account settings page in the console. If you turn off access to your account information, you can still use the AI assistant to ask questions and get helpful answers from the {{site.data.keyword.cloud_notm}} docs. However, the generated responses aren’t customized for account.
-
-{{site.data.keyword.cloud_notm}} is using your account information only to generate customized responses in the AI assistant. {{site.data.keyword.cloud_notm}} is not tracking or using your account data to train AI models.
-{: note}
