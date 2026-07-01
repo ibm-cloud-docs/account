@@ -28,6 +28,5 @@ When you enable this setting, you are indicating that your account stores regula
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
 1. Go to the Financial Services Validated option and toggle **On**.
-1. Read the information about enabling the setting and click **On**.
 
 After you enable the setting at the account level, you can filter the {{site.data.keyword.cloud_notm}} catalog to display services that are designated as Financial Services Validated. In the {{site.data.keyword.cloud_notm}} catalog, expand the **Compliance** section and select **Financial Services Validated**. The Financial Services Validated label on a service can apply to all available plans or be limited to specific plans or configurations.
