@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-06-18"
+lastupdated: "2026-07-13"
 
 keywords: account, publish, private catalog, allowlist, external
 
@@ -53,10 +53,10 @@ Install the {{site.data.keyword.cloud_notm}} Catalog plug-in to manage private c
     ```
     {: pre}
 
-    Example output
+    Example output:
     ```text
     NAME:
-    ibmcloud catalog - Manage catalog
+      ibmcloud catalog - Manage catalog
 
     USAGE:
     ibmcloud catalog command [arguments...] [command options]
