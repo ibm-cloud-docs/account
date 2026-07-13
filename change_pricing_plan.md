@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-06-18"
+lastupdated: "2026-07-13"
 
 keywords: change service, switch service, service plan, pricing plan
 
@@ -51,8 +51,8 @@ Complete the following steps to switch a pricing plan by using the {{site.data.k
 
 1. Check whether the service is enabled with the resource controller.
 
-   ```bash
-   ibmcloud catalog <service_name>
+   ```sh
+   ibmcloud catalog service <service-name>
    ```
    {: codeblock}
 
