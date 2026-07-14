@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2017, 2025
-lastupdated: "2025-11-15"
+  years: 2017, 2026
+lastupdated: "2026-07-14"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -110,11 +110,13 @@ ibmcloud resource service-instance
 ## resource-type, resource
 {: #resource-type-crn}
 
-The values of the `resource-type` and `resource` segments vary by service. A service is required to document their supported `resource types` segment and the format of the `resource` segment as part of their service metadata.
+The values of the `resource-type` and `resource` segments vary by service. Each service MUST document their supported resource types and the format of the resource as part of their service metadata. Note that if the CRN refers to the service instance then `resource-type` and `resource` segments must be empty. If it refers globally to the resource type then the `resource` segments must be empty.
 
-As an example, an image in the customer receipts container in an Object Storage service can have a `resource-type` segment of  `object` and a `resource` value of `CustomerReceipts/clientdinner.png`.
+As an example, an image in the customer receipts container in an Object Storage service may have a `resource-type` of "object" and `resource` value of 'CustomerReceipts/clientdinner.png'. `resource-type` MUST be alphanumeric, lower case, no spaces or special characters other than '-'
 
-The `resource-type` segment must be alphanumeric, lowercase, and no spaces or special characters other than '-'. A service can decide that the `resource-type` segment is optional, in which case it remains blank.
+A service can decide the `resource-type` is optional, in which case it would be left blank.
+
+`resource` MUST be a be a GUID or a string encoded according to the URI syntax as described in [RFC 3986 Uniform Resource Identifier (URI): Generic Syntax, Section 2](https://datatracker.ietf.org/doc/html/rfc3986#section-2){: external}. In particular the "/" character can be used to represent a hierarchical path.
 
 
 ## CRN examples
