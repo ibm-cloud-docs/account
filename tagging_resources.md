@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-07-15"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -42,7 +42,8 @@ Resources that are created by deploying a project are automatically tagged with 
 {: note}
 
 Access management tags
-:   Access management tags are used to manage access to resources. They can be created in advance for use in access policies, which grant access to the resources where access management tags are attached. Only the account administrator can create access management tags, and they can delete them only when the tags aren't attached to any resources in the account. Only the resource administrator can attach and detach access management tags on the resource itself.
+:   Access management tags are used to manage access to resources. They can be created in advance for use in access policies, which grant access to the resources where access management tags are attached. Only the account administrator can create access management tags, and they can delete them only when the tags aren't attached to any resources in the account. Only the resource administrator can attach and detach access management tags on the resource itself. 
+When you create access management tags programmatically, they must be declared with `tag_type = "access"` to distinguish them from user tags.
 
 ## Tagging rules
 {: #limits}
@@ -215,12 +216,13 @@ Before you can create access management tags by using Terraform, make sure that 
 
 Use the following steps to create access management tags by using Terraform:
 
-1. Create an argument in your `main.tf` file. The following example creates the access management tag `ibm_tag` to the `ibm` resource for the resource ID `ibm_satellite_location.location.crn`.
+1. Create an argument in your `main.tf` file. The following example creates the access management tag `project:myproject` by using the `ibm_resource_tag` resource. The `tag_type = "access"` argument is required to declare the tag as an access management tag rather than a user tag.
 
    ```terraform
-   resource "ibm_resource" "ibm" {
-   resource_id = ibm_satellite_location.location.crn
-   tags        = [ "ibm_tag" ]
+   resource "ibm_resource_tag" "access_tag" {
+     resource_id = ibm_satellite_location.location.crn
+     tag_type    = "access"
+     tags        = ["project:myproject"]
    }
    ```
     {: codeblock}
