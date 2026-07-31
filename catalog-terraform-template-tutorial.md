@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-07-31"
 
 keywords: private catalog, software, onboard, Terraform, terraform template
 
@@ -128,7 +128,7 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 {{_include-segments/manage-compliance-segment.md}}
 
 ### Add controls
-{: #add-controls}
+{: #add-controls-terraform}
 {: ui}
 
 {{_include-segments/run-security-compliance-segment.md}}

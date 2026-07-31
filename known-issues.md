@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-07-31"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -141,7 +141,7 @@ Time-based and resource attribute-based conditions for IAM access policies use `
 1. Go to **Access** > **Access policies**.
 1. Click on a policy. `/v1/policies` are indicated by the following notification:
 
-   > Conditions unavailable for v1 policies
+   `Conditions unavailable for v1 policies`
 
 1. (Optional) To add conditions to a policy that uses `/v1/policies` syntax, delete the original policy and create a new one. In the console, new policies use `/v2/policies` syntax.
 

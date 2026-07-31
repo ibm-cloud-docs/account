@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-07-31"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile, company information, company details, company account, company profile, company contact
 
@@ -46,7 +46,7 @@ If you log in with an ID from an external identity provider (IdP), then your inf
 ## Changing your cookie settings
 {: #tracking}
 
-The {{site.data.keyword.cloud_notm}} console requires cookies to manage your sessions, such as to provide secure login, handle transactions, and save some preferences. Extra cookies are used to build a more personalized experience for you and provide better support. If you change your cookie settings from the IBM standard default, you might not be able to use some features, such as chat communications.
+The {{site.data.keyword.cloud_notm}} console requires cookies to manage your sessions, such as to provide secure login, handle transactions, and save some preferences. Additional cookies are used to build a more personalized experience for you and provide better support. If you change your cookie settings from the IBM standard default, you might not be able to use some features, such as chat communications.
 
 To change your settings from the {{site.data.keyword.IBM_notm}} standard default, complete the following steps:
 1. In the console, go to the **{{site.data.keyword.avatar}}** icon ![Avatar icon](../icons/i-avatar-icon.svg "Avatar") > **Privacy**.

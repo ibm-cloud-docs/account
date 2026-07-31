@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-07-13"
+lastupdated: "2026-07-31"
 
 keywords: account, publish, private catalog, allowlist, external
 
@@ -90,7 +90,7 @@ Install the {{site.data.keyword.cloud_notm}} Catalog plug-in to manage private c
     help, h                Show help
 
     Enter 'ibmcloud catalog help [command]' for more information about a command
-        ```
+    ```
     {: screen}
 
 ## Publishing products to specific accounts by using the console

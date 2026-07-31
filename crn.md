@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-07-14"
+lastupdated: "2026-07-31"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -112,9 +112,9 @@ ibmcloud resource service-instance
 
 The values of the `resource-type` and `resource` segments vary by service. Each service MUST document their supported resource types and the format of the resource as part of their service metadata. Note that if the CRN refers to the service instance then `resource-type` and `resource` segments must be empty. If it refers globally to the resource type then the `resource` segments must be empty.
 
-As an example, an image in the customer receipts container in an Object Storage service may have a `resource-type` of "object" and `resource` value of 'CustomerReceipts/clientdinner.png'. `resource-type` MUST be alphanumeric, lower case, no spaces or special characters other than '-'
+As an example, an image in the customer receipts container in an Object Storage service may have a `resource-type` of "object" and `resource` value of 'CustomerReceipts/clientdinner.png'. `resource-type` MUST be alphanumeric, lowercase, no spaces or special characters other than '-'
 
-A service can decide the `resource-type` is optional, in which case it would be left blank.
+A service can decide the `resource-type` is optional, in which case it can be omitted.
 
 `resource` MUST be a be a GUID or a string encoded according to the URI syntax as described in [RFC 3986 Uniform Resource Identifier (URI): Generic Syntax, Section 2](https://datatracker.ietf.org/doc/html/rfc3986#section-2){: external}. In particular the "/" character can be used to represent a hierarchical path.
 
