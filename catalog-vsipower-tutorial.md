@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-07-31"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -153,7 +153,7 @@ Validate that you can deploy the virtual server image to your {{site.data.keywor
 {{_include-segments/manage-compliance-segment.md}}
 
 ### Add controls
-{: #add-controls}
+{: #add-controls-vsipower}
 {: ui}
 
 {{_include-segments/run-security-compliance-segment.md}}

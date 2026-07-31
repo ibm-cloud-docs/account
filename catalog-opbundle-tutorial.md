@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-07-31"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -121,7 +121,7 @@ Validate that the Operator bundle can be successfully installed on the target {{
 {{_include-segments/manage-compliance-segment.md}}
 
 ### Add controls
-{: #add-controls}
+{: #add-controls-opbundle}
 {: ui}
 
 {{_include-segments/run-security-compliance-segment.md}}

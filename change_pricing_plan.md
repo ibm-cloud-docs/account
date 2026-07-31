@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-07-13"
+lastupdated: "2026-07-31"
 
 keywords: change service, switch service, service plan, pricing plan
 
@@ -52,7 +52,7 @@ Complete the following steps to switch a pricing plan by using the {{site.data.k
 1. Check whether the service is enabled with the resource controller.
 
    ```sh
-   ibmcloud catalog service <service-name>
+   ibmcloud catalog service SERVICE_NAME
    ```
    {: codeblock}
 
@@ -72,7 +72,7 @@ Complete the following steps to switch a pricing plan by using the {{site.data.k
    - If the service is enabled with the resource controller, run the [`ibmcloud resource service-instance-update` command](/docs/cli?topic=cli-ibmcloud_commands_resource#ibmcloud_resource_service_instance_update).
 
      ```
-     ibmcloud resource service-instance-update <service_instance_name> --service-plan-id <plan_id>
+     ibmcloud resource service-instance-update SERVICE_INSTANCE_NAME --service-plan-id PLAN_ID
      ```
      {: codeblock}
 
