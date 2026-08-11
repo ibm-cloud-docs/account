@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-08-10"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -129,7 +129,26 @@ For Pay-As-you-Go accounts, you must have an active credit card on file. You can
 * For all other accounts, you can remove a credit card and switch to a different payment method by clicking **Pay with Other** > **Submit change request**. To complete the change, review and update the support case that is created for you.
 * If you manage your payment method on a separate billing platform, you can remove your credit card by going to [{{site.data.keyword.IBM_notm}} Billing](https://myibm.ibm.com/billing/){: external}. For more information, see [Managing your payment method outside of the console](/docs/account?topic=account-linkedusage#payment-method-ibm).
 
+## Can I use a credit card for a Pay-As-You-Go or Enterprise Savings Plan order?
+{: #cpq-credit-card}
+{: faq}
 
+Yes. If you placed a Pay-As-You-Go or Enterprise Savings Plan order through an {{site.data.keyword.IBM_notm}} seller, you can use a credit card as your payment method. You can add a credit card when you create your account or add one later on the [Payments](/billing/payments){: external} page in the console.
+
+If your account was initially set up with a purchase order or firm order letter, you can switch to credit card payment at any time. When you add a credit card, it becomes the default payment method for all charges in your account, including subscriptions, support, and usage.
+
+## What happens when I switch the payment method for a purchase order to credit card payment?
+{: #switch-po-cc}
+{: faq}
+
+When you switch your payment method for a purchase order or a firm order letter to credit card payment, the credit card becomes the payment method for all charges in your account. This includes:
+
+* Subscription charges
+* Support entitlements
+* Usage charges
+* Any additional service charges
+
+You cannot have different payment methods for different services within the same account. The change applies to all entitlements and charges.
 
 ## How do I change the invoice currency from US Dollars to my local currency?
 {: #localcurrency}

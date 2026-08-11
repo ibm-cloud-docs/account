@@ -3,7 +3,7 @@
 copyright:
 
  years: 2023, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-08-11"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -58,8 +58,6 @@ Emissions data is currently tracked for a subset of services, but more services 
 * {{site.data.keyword.contdelivery_short}}                      
 * Data Engine (previously SQL Query)                            
 * {{site.data.keyword.databases-for-elasticsearch}}             
-* {{site.data.keyword.databases-for-enterprisedb}}              
-* {{site.data.keyword.databases-for-etcd}}                      
 * {{site.data.keyword.databases-for-mongodb}}                   
 * {{site.data.keyword.databases-for-mysql}}                     
 * {{site.data.keyword.databases-for-postgresql}}                
