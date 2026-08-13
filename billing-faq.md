@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-08-10"
+lastupdated: "2026-08-13"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -329,6 +329,8 @@ Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can crea
 {: faq}
 
 No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to learn more about the {{site.data.keyword.cloud_notm}} services that qualify for a service commitment.
+
+
 
 ## What is a manual credit?
 {: #manual-credit}
