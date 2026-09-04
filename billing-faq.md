@@ -330,11 +330,7 @@ Pay-As-You-Go accounts that sign up with a credit card on cloud.ibm.com can crea
 
 No. Contact an [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} representative to learn more about the {{site.data.keyword.cloud_notm}} services that qualify for a service commitment.
 
-## What is a private offer?
-{: #private-offer}
-{: faq}
 
-A private offer is a negotiated discount on a paid third-party product from a vendor outside of {{site.data.keyword.IBM_notm}}. {{site.data.keyword.cloud_notm}} operates as an intermediary between you and the vendor to negotiate the details of the offer, including its start and expiration dates. To initiate a private offer, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external}.
 
 ## What is a manual credit?
 {: #manual-credit}

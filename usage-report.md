@@ -21,11 +21,11 @@ The following tables shows the correlation between the heading titles in your us
 ## Understanding your account summary report
 {: #export-csv-api-table-account-csv-summary}
 
-Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. 
+The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- May 2025 to September 2026 is [version 1.3](#account-summary-csv-version-1-3)
+- May 2025 to present is [version 1.3](#account-summary-csv-version-1-3)
 - July 2024 to present is [version 1.2](#account-summary-csvversion-1-2)
 - March 2024 to June 2024 is [version 1.1](#account-summary-csvversion-1-1)
 - October 2023 to March 2024 is [version 1.0](#account-summary-csvversion-1-0)

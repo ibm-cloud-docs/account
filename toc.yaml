@@ -167,10 +167,6 @@ toc:
               - software-subscription.md
               - service-level-commit.md
           - topicgroup:
-              label: Managing support
-              topics:
-              - support-plans.md
-          - topicgroup:
               label: Working with codes and credits
               topics:
               - credit-types.md
