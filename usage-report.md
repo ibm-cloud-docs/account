@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2026
-lastupdated: "2026-06-01"
+lastupdated: "2026-09-04"
 
 keywords: apptio, cost benefit analysis
 
@@ -21,21 +21,25 @@ The following tables shows the correlation between the heading titles in your us
 ## Understanding your account summary report
 {: #export-csv-api-table-account-csv-summary}
 
-The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
+Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. 
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
-- May 2025 to present is [version 1.3](#account-summary-csv-version-1-3)
+- May 2025 to September 2026 is [version 1.3](#account-summary-csv-version-1-3)
 - July 2024 to present is [version 1.2](#account-summary-csvversion-1-2)
 - March 2024 to June 2024 is [version 1.1](#account-summary-csvversion-1-1)
 - October 2023 to March 2024 is [version 1.0](#account-summary-csvversion-1-0)
 - February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-02)
 - Before February 2023 is [version 0.1](#account-summary-csv-version-01)
 
+
+
 ### Account summary CSV version 1.3
 {: #account-summary-csv-version-1-3}
 
-The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from March 2025 to present. 
+
+
+The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from March 2025 to present.
 
 | CSV Header          | Description                                        |
 |---------------------|-------------------------------------------------|
