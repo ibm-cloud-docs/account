@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2026
-lastupdated: "2026-06-01"
+lastupdated: "2026-09-04"
 
 keywords: apptio, cost benefit analysis
 
@@ -32,10 +32,14 @@ You can view other versions of the CSV if you have earlier account summary repor
 - February 2023 to October 2023 is [version 0.2](#account-summary-csv-version-02)
 - Before February 2023 is [version 0.1](#account-summary-csv-version-01)
 
+
+
 ### Account summary CSV version 1.3
 {: #account-summary-csv-version-1-3}
 
-The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from March 2025 to present. 
+
+
+The following table is version 1.3 and the most recent CSV version. You get this version if the data that you're viewing is from March 2025 to present.
 
 | CSV Header          | Description                                        |
 |---------------------|-------------------------------------------------|
