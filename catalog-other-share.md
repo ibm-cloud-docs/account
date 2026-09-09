@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-09-09"
 
 keywords: account, publish, private catalog, allowlist, external
 
@@ -49,12 +49,12 @@ Install the {{site.data.keyword.cloud_notm}} Catalog plug-in to manage private c
 
 1. Verify that you can use the catalogs-management command-line plug-in by listing all supported commands. The command prefix to work with the catalogs-management command-line plug-in is `ibmcloud catalog`.
     ```sh
-    ibmcloud catalog
+    ibmcloud catalog help
     ```
     {: pre}
 
     Example output:
-    ```text
+    ```screen
     NAME:
       ibmcloud catalog - Manage catalog
 
