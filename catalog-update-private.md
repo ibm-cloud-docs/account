@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-01-28"
+  years: 2020, 2026
+lastupdated: "2026-09-09"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -56,7 +56,7 @@ Complete the following steps to create a draft version, update it, and merge the
 
 1. Create a draft version of your software.
     ```bash
-    ibmcloud catalog offering create-draft --version-locator <VERSION_LOCATOR>
+    ibmcloud catalog offering version create-draft --version-locator VERSION_NUMBER
     ```
     {: codeblock}
 

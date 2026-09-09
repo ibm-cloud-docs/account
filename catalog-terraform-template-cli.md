@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-09-09"
 
 keywords: private catalog, software, onboard, Terraform, terraform template, cli
 
@@ -95,14 +95,14 @@ To update a product in your private catalog, you first need get the product and 
 Run the `offering get` command. For more information, see [ibmcloud catalog offering get](/docs/cli?topic=cli-manage-catalogs-plugin#get-offering).
 
 ```bash
-ibmcloud catalog offering get -c <CATALOGID> -o <OFFERINGID> --output json
+ibmcloud catalog offering get -c CATALOGID -o OFFERINGID --output json
 ```
 {: codeblock}
 
 Run the `offering update` command.
 
 ```bash
-ibmcloud catalog offering update -c <CATALOGID> -o <OFFERINGID> --updated-offering <UPDATED_OFFERING.json>
+ibmcloud catalog offering update -c CATALOGID -o OFFERINGID --updated-offering UPDATED_OFFERING.json
 ```
 {: codeblock}
 
@@ -114,7 +114,7 @@ ibmcloud catalog offering update -c <CATALOGID> -o <OFFERINGID> --updated-offeri
 Import the software version that you want in your catalog.
 
 ```bash
-ibmcloud catalog offering import-version -c <CATALOGID> -o <OFFERINGID> --zipurl <TGZ> --target-version <VERSION>
+ibmcloud catalog offering import-version -c CATALOGID -o OFFERINGID --zipurl TGZ --target-version VERSION
 ```
 {: codeblock}
 
@@ -146,7 +146,7 @@ ibmcloud catalog offering version validate-status --version-locator VERSION_NUMB
 When a product is published, all versions marked as ready within it have the same visibility. If your product is approved to publish, you can use the following commands to manage sharing your versions and products.
 
 ```bash
-ibmcloud catalog offering ready --vl <VERSION_LOCATOR>
+ibmcloud catalog offering ready --vl VERSION_LOCATOR
 ```
 {: codeblock}
 
