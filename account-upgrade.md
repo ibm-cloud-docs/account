@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-09-11"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -21,7 +21,7 @@ Lite accounts make it easy to get started with {{site.data.keyword.Bluemix}} and
 
 You can view your current account type by going to **Manage** > **Account** > **Account settings** in the {{site.data.keyword.cloud_notm}} console and checking the Account Type section.
 
-After you upgrade your Lite account to a Pay-As-You-Go account, you get a promotional credit of $200 that is automatically applied to your account. Your $200 credit is valid for 30 days, and your usage is automatically deducted from the credit amount. The credit cannot be used with third-party products, and the credit might not be available for all accounts.
+After you upgrade your Lite account to a Pay-As-You-Go account, you receive a promotional credit of $200 that is automatically applied to your account. The credit is valid for 30 days, and your usage is deducted from the credit amount. The credit cannot be used with third-party products and might not be available for all accounts.
 
 Not sure which type of account you want to upgrade to? Get detailed information about the benefits of each account type in [Account types](/docs/account?topic=account-accounts).
 {: tip}
@@ -46,7 +46,7 @@ To upgrade to a Pay-As-You-Go account, complete the following steps.
 
 After your payment information is processed, your account is upgraded and you can explore and access the full {{site.data.keyword.cloud_notm}} catalog. For any billable services that you use beyond any free allowances, you receive a monthly invoice.
 
-If you're upgrading to reactivate a deactivated account, your account might take a few days to be fully available. If your account continues to be in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc) for help.
+If you're upgrading to reactivate a deactivated account, your account might take a few days to become fully available. If your account remains in a pending state, see [Why can't I upgrade my account?](/docs/account?topic=account-ts_upgrade_cc).
 
 If you can't upgrade your account because of an issue with your credit card, see [Troubleshooting credit card error messages](/docs/account?topic=account-cc-error-messages) for more information.
 {: tip}
