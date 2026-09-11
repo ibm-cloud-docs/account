@@ -2,9 +2,9 @@
 
 copyright:
 
-  years: 2024, 2025
+  years: 2024, 2026
 
-lastupdated: "2025-11-15"
+lastupdated: "2026-09-11"
 
 keywords: close account, cancel account, delete account, terminate account
 
@@ -39,7 +39,7 @@ To cancel all devices, use the following steps:
 
 1. From the {{site.data.keyword.cloud_notm}} console, click the menu icon ![Menu icon](../../icons/icon_hamburger.svg) > **Classic Infrastructure** > **Device List**.
 1. For each device that you want to cancel, click the **Actions** icon ![Action icon](../icons/action-menu-icon.svg "Actions"), and select **Cancel device**.
-1. Acknowledge that data loss might occur as a result of canceling, and then click **Cancel device**.
+1. Confirm that you understand that data loss can occur when you cancel a device, and click **Cancel device**.
 
 ## Step 3: Canceling all billing items
 {: #cancel-billing-items-account}
@@ -58,7 +58,7 @@ After the account owner cancels all services, devices, and billing items for the
 
 If your account has reserved instances with term remaining on the agreement or if you can't cancel resources, contact [support](/unifiedsupport/supportcenter). Reschedule any pending cancellations to terminate before you cancel the account.
 
-When you close a Pay-As-You-Go account, all usage stops across all services that are running in your account. The usage that is accrued in the current billing period is sent in one final invoice at the close of the billing period. You might receive a final invoice after you close your account due to incurred charges from the month before closing the account.
+When you close a Pay-As-You-Go account, usage stops across all services that are running in your account. Any usage accrued in the current billing period is included in a final invoice at the end of that billing period. You might receive a final invoice after you close your account for charges that were incurred in the previous month.
 
 ## Closing a Subscription account
 {: #close-subscription-account}
