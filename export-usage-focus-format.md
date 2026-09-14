@@ -3,7 +3,7 @@
 copyright:
   years: 2026
 
-lastupdated: "2026-04-24"
+lastupdated: "2026-09-14"
 
 keywords: usage export, FOCUS format, FinOps, cost management, billing data, CSV export, multi-cloud, cost optimization, FOCUS v1.2
 
@@ -50,6 +50,8 @@ Improved transparency
 Competitive parity
 :   Benefit from the same standardized format used by other leading cloud service providers, ensuring consistent cost management practices across your multi-cloud environment.
 
+
+
 ## Exporting usage data
 {: #export-instance-level}
 {: ui}
@@ -59,6 +61,8 @@ Instance-level usage data provides granular details about individual resource in
 1. Log in to the [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com){: external}.
 2. Go to **Manage** > **Billing and usage** > **Usage**.
 3. Click **FOCUS** button. The system downloads a CSV file containing instance-level usage data in FOCUS v1.2 format, with additional columns for resource-specific details.
+
+
 
 ### Fully Supported Fields
 {: #account-focus-columns}
