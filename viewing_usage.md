@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-09-14"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -135,6 +135,8 @@ get_account_usage(self,
 {: codeblock}
 {: go}
 
+
+
 ## Exporting your usage details to a CSV file by using the console
 {: #export-csv}
 {: help}
@@ -156,6 +158,10 @@ This is not an estimate of your final bill. Instance costs don’t reflect your 
 
    Consider creating tags as a `key:value` pair to group related tags. The `key` becomes a column in the CSV file and the `value` is populated in the respective rows of the column. If you don't follow a `key:value` tag style, the tags appear in the **Other Tags** column.
    {: tip}
+
+
+
+
 
 ## Viewing your usage by using the CLI
 {: #usage_command_line}
