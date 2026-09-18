@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-09-18"
 
 keywords: apptio, cost benefit analysis
 
@@ -22,6 +22,7 @@ The following tables shows the correlation between the heading titles in your us
 {: #export-csv-api-table-account-csv-summary}
 
 The following table shows the correlation between the heading titles in your CSV report and JSON report fields as well the version of the CSV. For more information about JSON report fields, see [Usage Reports: Get account summary](/apidocs/metering-reporting#get-account-summary){: external}. Each row of the **Account Resource Usage** section represents the aggregated usage of a service plan metric for all the resource instances in the account.
+
 
 You can view other versions of the CSV if you have earlier account summary reports in your account. The CSV version depends on the date that the data is published. The following are the available versions:
 
