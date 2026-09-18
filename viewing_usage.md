@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-09-14"
+lastupdated: "2026-09-17"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -135,8 +135,6 @@ get_account_usage(self,
 {: codeblock}
 {: go}
 
-
-
 ## Exporting your usage details to a CSV file by using the console
 {: #export-csv}
 {: help}
@@ -149,9 +147,10 @@ This is not an estimate of your final bill. Instance costs don’t reflect your 
 {: note}
 
 1. In the console, go to **Manage > Billing and usage**, and select **Usage**.
-1. Click **Export CSV** and select one of the options:
+1. Click **Export > CSV**.
+1. From the **Time frame** menu, select the billing month for which you want to export data. Then, select one of the following options:
    - Click **Summary** for a high-level overview of the usage and associated costs for your account.
-   - Click **Instance** for detailed usage information about each service instance.
+   - Click **Instances** for detailed usage information about each service instance.
 
    You can use the tag related columns in the instance CSV file to help analyze the resources in your account. For example, you might have multiple projects in an account, each with a Kubernetes cluster. You can organize the CSV data according to the project tag on each instance so that you can better analyze the individual projects' cost. For more information about tagging, see [Working with tags](/docs/account?topic=account-tag).
    {: tip}
@@ -159,9 +158,7 @@ This is not an estimate of your final bill. Instance costs don’t reflect your 
    Consider creating tags as a `key:value` pair to group related tags. The `key` becomes a column in the CSV file and the `value` is populated in the respective rows of the column. If you don't follow a `key:value` tag style, the tags appear in the **Other Tags** column.
    {: tip}
 
-
-
-
+1. Click **Export**.
 
 ## Viewing your usage by using the CLI
 {: #usage_command_line}

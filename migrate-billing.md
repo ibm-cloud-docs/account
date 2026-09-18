@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-09-14"
+lastupdated: "2026-09-17"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -139,12 +139,10 @@ With your new billing experience, all three major usage types are billed a singl
 
 You can find instance level details for your monthly usage by completing the following steps:
 
-
 1. Go to **Manage > Billing and usage** in the {{site.data.keyword.cloud_notm}} console, and select **Usage**.
-1. Click **Export CSV**.
-1. Select **Instance** for detailed usage information about each service instance.
-
-
+1. Click **Export > CSV**. Then, from the **Time frame** menu, select the billing month for which you want to export data.
+1. Select **Instances** to export a detailed usage information about each service instance in your account.
+1. Click **Export**.
 
 For more information about heading titles in your CSV report, see [Understanding your instances report](/docs/account?topic=account-understand-reports#table-account-instance-report).
 
