@@ -51,16 +51,16 @@
     "view_more": "/docs/overview?topic=overview-whatsnew",
     "tiles": [
       {
+        "date": "23 Sept 2026",
+        "title": "Private offers from independent software vendors"
+      },
+      {
         "date": "01 April 2026",
         "title": "Creating new identity provider integrations by using IBM Cloud SAML"
       },
       {
         "date": "27 March 2026",
         "title": "Share SAML IdP across IBM Cloud accounts"
-      },
-      {
-        "date": "27 March 2026",
-        "title": "Customizing the console experience for trusted profiles"
       }
     ]
   }
