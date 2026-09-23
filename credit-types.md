@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-03-04"
+lastupdated: "2026-09-23"
 
 keywords: credit, credit types, promo code, discount, promotion code, promotional code, redeem promos, feature code, subscription code
 
@@ -47,3 +47,8 @@ Feature codes are provided for online courses and certain events, such as educat
 {: #sub-codes-credits}
 
 Subscription codes are provided when you purchase a subscription for a platform or support credit. Use the [{{site.data.keyword.IBM_notm}} Partner Plus](https://www.ibm.com/partnerplus) to manage subscriptions. For more information, see [Applying subscription codes](/docs/account?topic=account-subscription_code).
+
+## Private offers
+{: #private-offer-credits}
+
+A private offer is a discount on a paid third-party product from a vendor outside of {{site.data.keyword.IBM_notm}}. {{site.data.keyword.cloud_notm}} acts as an intermediary between you and the vendor to negotiate the details of the offer, including its start and expiration dates. To receive a private offer, contact [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/solutions/cloud?contactmodule){: external} to begin the process.
