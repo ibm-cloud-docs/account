@@ -43,7 +43,7 @@
     }
   ],
   "section_devtools": {
-    "api": "/docs/api/resource-catalog/private-catalog",
+    "api": "/apidocs/resource-catalog/private-catalog",
     "cli": "/docs/account?topic=account-manage-catalogs-plugin",
     "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs"
   },
