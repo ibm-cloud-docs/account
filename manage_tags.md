@@ -1,8 +1,8 @@
 ---
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-10-24"
+  years: 2021, 2026
+lastupdated: "2026-10-12"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -583,7 +583,7 @@ To add a tag to a service ID, complete the following steps:
 1. Choose to attach an access management tag or a user tag.
    - If you want to attach an access management tag, you must first create the tag. For more information, see [Creating tags](/docs/account?topic=account-tag&interface=cli#create).
    - If you want to attach a user tag, you don't need to create the user tag to attach it to resources or service IDs. Attaching the tag also creates it.
-1. Find the unique identifier for your service ID by calling the [IAM Identity Services](/apidocs/iam-identity-token-api#list-service-ids) with the following command:
+1. Find the unique identifier for your service ID by calling the [IAM Identity Services](/docs/apis/iam-identity-token-api#list-service-ids) with the following command:
 
    ```bash
    curl -X GET 'https://iam.cloud.ibm.com/v1/serviceids?account_id=ACCOUNT_ID&name=My-serviceID' -H 'Authorization: Bearer TOKEN' -H 'Content-Type: application/json'

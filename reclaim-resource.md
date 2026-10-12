@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-10-24"
+  years: 2020, 2026
+lastupdated: "2026-10-12"
 
 keywords: account resources, reclaim resource, restore resource, reclamation
 
@@ -16,7 +16,7 @@ subcollection: account
 # Using resource reclamations
 {: #resource-reclamation}
 
-You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources. For more information, see [FAQ about resources](/docs/account?topic=account-resources-faq&interface=cli)
+You can use the {{site.data.keyword.cloud}} CLI or the [{{site.data.keyword.cloud}} Resource Controller API](/docs/apis/resource-controller/resource-controller?code=go#run-reclamation-action) to manage the reclamation process of specific resources. For more information, see [FAQ about resources](/docs/account?topic=account-resources-faq&interface=cli)
 {: shortdesc}
 
 ## Listing reclaimed resources by using the CLI
@@ -44,7 +44,7 @@ ibmcloud resource reclamations --resource-instance-id abcd1234-ef56-486e-b293-22
 {: #list-reclaimed-api}
 {: api}
 
-To list reclaimed resources that can be restored or deleted, call the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller#list-reclamations) as shown in the following example:
+To list reclaimed resources that can be restored or deleted, call the [{{site.data.keyword.cloud}} Resource Controller API](/docs/apis/resource-controller/resource-controller?code=go#list-reclamations) as shown in the following example:
 
 Use the `ListReclamationsOptions.Builder` to create a `ListReclamationsOptions` object that contains the parameter values for the `listReclamations` method.
 {: java}
@@ -151,7 +151,7 @@ ibmcloud resource reclamation-delete "d9fendfwlw" --comment "no longer needed" -
 {: #delete-reclaimed-api}
 {: api}
 
-To reclaim (provisionally delete) a resource, call the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) as shown in the following example. Specify `reclaim` to delete a resource. `id` is the reclamation ID and not the resource instance ID. 
+To reclaim (provisionally delete) a resource, call the [{{site.data.keyword.cloud}} Resource Controller API](/docs/apis/resource-controller/resource-controller?code=go#run-reclamation-action) as shown in the following example. Specify `reclaim` to delete a resource. `id` is the reclamation ID and not the resource instance ID. 
 
 ```bash
 curl -X POST https://resource-controller.cloud.ibm.com/v1/reclamations/0114be9024c6eede47d08a85ac0c5c43/actions/reclaim -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json' -d '{
@@ -257,10 +257,10 @@ For more information, see the [`ibmcloud resource reclamations` command referenc
 
 Resources can typically be restored within 3 days of deletion. However, restoration periods might vary depending on the service, as each one follows its own retention policy. For more information, refer to the individual service's documentation.
 
-Not all resources can be restored. [Get a list of all reclaimations](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-reclamations) to check the resources that you can restore.
+Not all resources can be restored. [Get a list of all reclaimations](/docs/apis/resource-controller/resource-controller?code=go#list-reclamations) to check the resources that you can restore.
 {: important}
 
-To restore a resource by using the API, call the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#run-reclamation-action) as shown in the following example. Specify `restore` to restore a resource. `id` is the reclamation ID and not the resource instance ID. 
+To restore a resource by using the API, call the [{{site.data.keyword.cloud}} Resource Controller API](/docs/apis/resource-controller/resource-controller?code=go#run-reclamation-action) as shown in the following example. Specify `restore` to restore a resource. `id` is the reclamation ID and not the resource instance ID. 
 
 ```bash
 curl -X POST https://resource-controller.cloud.ibm.com/v1/reclamations/0114be9024c6eede47d08a85ac0c5c43/actions/restore -H 'Authorization: Bearer <IAM_TOKEN>' -H 'Content-Type: application/json' -d '{

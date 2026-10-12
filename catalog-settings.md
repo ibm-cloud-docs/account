@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-10-12"
 
 
 keywords: catalog, private catalogs, visibility, filter catalog, hide product, catalog filtering, enterprise, account group, child account, account, restrict
@@ -145,7 +145,7 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 {: codeblock}
 
 Make sure the `hide_IBM_cloud_catalog` field has a Boolean value of `true` to hide the public catalog in this account. Alternatively, you can give the `include_all` field a Boolean value of `false` for each `account_filters` object to exclude all of the public catalog.
-See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
+See the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
 
 ## Managing access to products for all users by using the API
 {: #set-account-filters-api}
@@ -164,7 +164,7 @@ curl -X "PUT" "https://cm.globalcatalog.cloud.ibm.com/api/v1-beta/catalogaccount
 {: codeblock}
 
 The options for `{accountFilters}` are: `include_all`, `category_filters`, and `id_filters`.
-See the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
+See the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=curl#update-catalog-account){: external} for more information.
 
 ## Managing access to products for specific users by using the API
 {: #set-private-filters-api}
@@ -181,7 +181,7 @@ curl -X 'PUT' \
 ```
 {: codeblock}
 
-See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#replace-catalog){: external} for more information.
+See the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=curl#replace-catalog){: external} for more information.
 
 ## Catalog filters
 {: #catalog-filters-customize}

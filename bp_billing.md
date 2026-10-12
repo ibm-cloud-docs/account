@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-12"
 
 keywords: best practice billing, best practice usage, automate billing, track costs
 
@@ -55,4 +55,4 @@ Use [projects](#x2035151){: term} to help you automatically tag related resource
 ## Automate billing and usage management by using the CLI or APIs
 {: #billing-cli-apis}
 
-If you want to automate how you review your resource usage and associated costs, use the [Usage Metering](/apidocs/usage-metering){: external} and [Usage Reports](/apidocs/metering-reporting){: external} APIs to integrate this functionality into your own apps.
+If you want to automate how you review your resource usage and associated costs, use the [Usage Metering](/docs/apis/usage-metering) and [Usage Reports](/docs/api/metering-reporting){: external} APIs to integrate this functionality into your own apps.

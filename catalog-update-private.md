@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-09-09"
+lastupdated: "2026-10-12"
 
 keywords: catalog, private catalog, update, private catalog product, update version, versions
 
@@ -82,7 +82,7 @@ Complete the following steps to create a draft version, update it, and merge the
 {: #update-version-api}
 {: api}
 
-You can programmatically update a version by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=python#replace-offering){: external}.
+You can programmatically update a version by calling the Catalog Management API as shown in the following sample request. For detailed information about the API, see [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=python#replace-offering){: external}.
 
 ```java
 String catalogID = "{catalogID}";

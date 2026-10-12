@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-07-15"
+lastupdated: "2026-10-12"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, full list of tags, how to use tags
 
@@ -131,7 +131,7 @@ Before you can attach your access management tags to individual resources or ser
 {{site.data.keyword.cloud}} allows up to 250 access management tags per account.
 {: note}
 
-You can programmatically create access management tags by calling the [Global Search and Tagging - Tagging API](/apidocs/tagging#create-tag){: external} as shown in the following sample request. The example creates a tag that is called `project:myproject`.
+You can programmatically create access management tags by calling the [Global Search and Tagging - Tagging API](/docs/apis/tagging#create-tag){: external} as shown in the following sample request. The example creates a tag that is called `project:myproject`.
 
 ```bash
 curl -X POST -H "Authorization: {iam_token}" \
@@ -277,7 +277,7 @@ To search for tags by using the API, see [Searching for resources](/docs/account
 
 A common use case for searching for tags by using the API is retrieving the tags that are attached to a resource. There are a couple of options for doing that.
 
-The preferred option is the [Search API](/apidocs/search){: external}, as shown in the following example.
+The preferred option is the [Search API](/docs/apis/search){: external}, as shown in the following example.
 
 ```bash
 curl -s -H'Content-type:application/json' -H'Accept:application/json' -H"Authorization:Bearer $IAM_TOKEN" \

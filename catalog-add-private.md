@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-10-12"
 
 keywords: catalog, catalogs, private catalogs, account catalogs, catalog visibility, software visibility, import software
 
@@ -423,7 +423,7 @@ Complete the following steps to add your software by using the CLI. You can use 
 {: #create-catalog-api}
 {: api}
 
-Private catalogs provide a way for you to manage access to products for users in your account. You can programmatically create a private catalog by calling the Catalog Management API as shown in the following sample request. For more information, see the [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=java#create-catalog) for creating a catalog.
+Private catalogs provide a way for you to manage access to products for users in your account. You can programmatically create a private catalog by calling the Catalog Management API as shown in the following sample request. For more information, see the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=java#create-catalog) for creating a catalog.
 
 ```java
 String label = "{label}";
@@ -469,7 +469,7 @@ fmt.Println(response)
 {: #import-product-api}
 {: api}
 
-You can programmatically import software to your catalog by calling the Catalog Management API as shown in the following sample request. This API creates the software and imports it as well. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=go#import-offering).
+You can programmatically import software to your catalog by calling the Catalog Management API as shown in the following sample request. This API creates the software and imports it as well. For detailed information about the API, see [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=go#import-offering).
 
 ```java
 id = "{id}";
@@ -513,7 +513,7 @@ fmt.Println(response)
 {: #validate-product-api}
 {: api}
 
-You can programmatically validate your product to by calling the Catalog Management API as shown in the following sample request. This process can take several minutes. For detailed information about the API, see [Catalog Management API](/apidocs/resource-catalog/private-catalog?code=java#validate-install).
+You can programmatically validate your product to by calling the Catalog Management API as shown in the following sample request. This process can take several minutes. For detailed information about the API, see [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=java#validate-install).
 
 ```java
 String authRefreshToken = "{authRefreshToken}";

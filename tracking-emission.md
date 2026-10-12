@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-04-30"
+lastupdated: "2026-10-12"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -47,4 +47,4 @@ Learn more about setting up and managing [Enterprise accounts](/docs/enterprise-
 ## Working with the carbon calculator API 
 {: #tracking-emissions-api}
 
-Users can pull emissions data or incorporate that data into their own applications and processes by leveraging the [Carbon Calculator API](/apidocs/carbon-calculator).
+Users can pull emissions data or incorporate that data into their own applications and processes by leveraging the [Carbon Calculator API](/docs/apis/carbon-calculator).

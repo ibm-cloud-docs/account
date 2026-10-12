@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-10-12"
 
 keywords: catalog, restrict visibility, hide product, restrict by user, filter catalog, private catalog, catalog management service, public catalog, delete catalog, create catalog, catalog banner
 
@@ -211,7 +211,7 @@ You can [restore a private catalog](/docs/account?topic=account-resource-reclama
 {: #catalog-all-api}
 {: api}
 
-To create a catalog that includes all products in the {{site.data.keyword.cloud_notm}} catalog, call the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=go#create-catalog) as shown in the following sample request. Replace variables with the values from your account.
+To create a catalog that includes all products in the {{site.data.keyword.cloud_notm}} catalog, call the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=go#create-catalog) as shown in the following sample request. Replace variables with the values from your account.
 
 ```bash
 curl -X 'POST' \
@@ -280,13 +280,13 @@ fmt.Println(response)
 {: go}
 {: codeblock}
 
-All the {{site.data.keyword.cloud_notm}} public catalog products are visible by default when you create a new private catalog. See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=java#create-catalog) for more information.
+All the {{site.data.keyword.cloud_notm}} public catalog products are visible by default when you create a new private catalog. See the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=java#create-catalog) for more information.
 
 ## Creating a private catalog with select products included by using the API
 {: #catalog-select-api}
 {: api}
 
-To create a catalog that includes a specific set of products in the {{site.data.keyword.cloud_notm}} catalog, call the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=go#create-catalog) as shown in the following sample request. Replace variables with the values from your account.
+To create a catalog that includes a specific set of products in the {{site.data.keyword.cloud_notm}} catalog, call the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=go#create-catalog) as shown in the following sample request. Replace variables with the values from your account.
 
 ```bash
 curl -X 'POST' \
@@ -300,7 +300,7 @@ curl -X 'POST' \
 
 Make sure to exclude all public catalog products by setting the `include_all` field has a boolean value of `false` for each `catalog_filters` object. To specify the products you want to include you can filter by `category_filters` or `id_filters`. Give `filter_terms` the product property or product ID you want to include. In this example, `AdvancedMobileAccess-d6aece47-d840-45b0-8ab9-ad15354deeea` is a product ID.
 
-See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=node#replace-catalog) for more command options.
+See the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=node#replace-catalog) for more command options.
 
 ## Setting the visibility of the {{site.data.keyword.cloud_notm}} catalog by using the API
 {: #catalog-off-api}
@@ -338,7 +338,7 @@ DELETE /catalogs/{catalog_identifier}
 {: codeblock}
 {: curl}
 
-See the [Catalog Management API](https://cloud.ibm.com/apidocs/resource-catalog/private-catalog?code=curl#delete-catalog) for more information.
+See the [Catalog Management API](/docs/apis/resource-catalog/private-catalog?code=curl#delete-catalog) for more information.
 
 You can [restore a private catalog](/docs/account?topic=account-resource-reclamation&interface=api#restore-resource-api) within 7 days after you delete it.
 {: tip}
