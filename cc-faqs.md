@@ -3,7 +3,7 @@
 copyright:
 
  years: 2023, 2026
-lastupdated: "2026-08-11"
+lastupdated: "2026-10-12"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -169,4 +169,4 @@ To view emissions data for your account, you must be assigned the viewer or high
 {: #extract-GHG-emissions}
 {: faq}
 
-For extracting emissions data through API, see [Carbon calculator API](https://cloud.ibm.com/apidocs/carbon-calculator){: external}.
+For extracting emissions data through API, see [Carbon calculator API](/docs/api/carbon-calculator).

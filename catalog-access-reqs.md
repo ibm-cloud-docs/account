@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-06-02"
+lastupdated: "2026-10-12"
 
 keywords: catalog, private catalogs, IAM access, roles, private catalog service, access groups, permissions, IAM, catalog management, access group
 
@@ -164,7 +164,7 @@ Or, you can give users access by adding trusted profiles to your access groups. 
 {: #catalog-access-groups-api}
 {: api}
 
-To assign access, call the [IAM Policy Management API](https://cloud.ibm.com/apidocs/iam-policy-management?code=go#create-policy) as shown in the follwing example. Replace the `role_id` vaiable with the role you want to assign: `Viewer`, `Editor`, or `Administrator`.
+To assign access, call the [IAM Policy Management API](/docs/apis/iam-policy-management?code=go#create-policy) as shown in the follwing example. Replace the `role_id` vaiable with the role you want to assign: `Viewer`, `Editor`, or `Administrator`.
 
 ```bash
 curl -X POST 'https://iam.cloud.ibm.com/v1/policies' -H 'Authorization: Bearer $TOKEN' -H 'Content-Type: application/json' -d '{
@@ -707,7 +707,7 @@ fmt.Println(string(b))
 {: #catalog-access-api-users}
 {: api}
 
-To add users to an access group by using the API, call the [IAM Access Groups API](/apidocs/iam-access-groups#add-members-to-access-group){: external} as shown in the following example.
+To add users to an access group by using the API, call the [IAM Access Groups API](/docs/apis/iam-access-groups#add-members-to-access-group){: external} as shown in the following example.
 
 ```bash
 curl -X PUT -H "Authorization: {iam_token}" -H "Accept: application/json" -H "Content-Type: application/json" -d '{"members": [ {"iam_id": "IBMid-user1", "type": "user"}, {"iam_id": "iam-ServiceId-123", "type": "service"} ]}' "{base_url}/groups/{access_group_id}/members"

@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-08-11"
+lastupdated: "2026-10-12"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -29,7 +29,7 @@ The carbon calculator provides a wide range of features to track your GHG emissi
 * Filter emissions data by time period, service, or location.
 * Best practices for cloud sustainability.
 * Export the data as a CSV file for additional analyses.
-* View emissions data by using [the API](/apidocs/carbon-calculator).
+* View emissions data by using [the API](/docs/api/carbon-calculator).
 
 Location-based service emissions (unadjusted emissions) are temporarily disabled while the service is getting updated. If you need any assistance during this period, reach out through a support ticket or Slack.
 {: important}

@@ -2,7 +2,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-06-02"
+lastupdated: "2026-10-12"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -62,7 +62,7 @@ If you have a Pay-As-You-Go or Subscription account, you can create multiple res
 
 You must be assigned an IAM policy with the Administrator role on All Account Management services to create additional resource groups. If you have a Lite account or 30-day trial, you can't create additional resource groups, but you can rename your default resource group.
 
-To create a resource group, call the [{{site.data.keyword.cloud}} Resource Manager API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager?code=go#create-resource-group) as shown in the following example:
+To create a resource group, call the [{{site.data.keyword.cloud}} Resource Manager API](/docs/apis/resource-controller/resource-manager?code=go#create-resource-group) as shown in the following example:
 
 ```bash
 curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_groups -H 'Authorization: Bearer <IAM_TOKEN>'
@@ -381,7 +381,7 @@ ibmcloud resource service-instances -g Default
 {: #viewing-rgs-api}
 {: api}
 
-To view resources in a resource group, call the [{{site.data.keyword.cloud}} Resource Controller API](https://cloud.ibm.com/apidocs/resource-controller/resource-controller?code=go#list-resource-instances) as shown in the following example:
+To view resources in a resource group, call the [{{site.data.keyword.cloud}} Resource Controller API](/docs/apis/resource-controller/resource-controller?code=go#list-resource-instances) as shown in the following example:
 
 ```bash
 curl -X GET https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>'
@@ -463,7 +463,7 @@ ibmcloud resource group-delete example-group -f
 {: #delete-rg-api}
 {: api}
 
-You can programmatically delete a resource group by calling the Resource Manager API as shown in the following sample request. For detailed information about the API, see [Resource Manager API](https://cloud.ibm.com/apidocs/resource-controller/resource-manager?code=java#related-apis){: external}.
+You can programmatically delete a resource group by calling the Resource Manager API as shown in the following sample request. For detailed information about the API, see [Resource Manager API](/docs/apis/resource-controller/resource-manager?code=java#related-apis){: external}.
 
 ```bash
 curl -X DELETE \

@@ -3,7 +3,7 @@
 copyright:
   years: 2026
 
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-12"
 
 keywords: usage export, FOCUS format, FinOps, cost management, billing data, CSV export, multi-cloud, cost optimization, FOCUS v1.2
 
@@ -19,7 +19,7 @@ subcollection: account
 Export your {{site.data.keyword.cloud}} usage data in FinOps Open Cost & Usage Specification (FOCUS) format to simplify multi-cloud cost management and enable seamless integration with FinOps tools.
 {: shortdesc}
 
-The FOCUS format is a cross-cloud standard developed by the FinOps Foundation that normalizes billing and usage data across cloud providers. {{site.data.keyword.Bluemix_notm}} now supports FOCUS v1.2 (FinOps Open Cost and Usage Specification) format for cost and usage reporting. By exporting your {{site.data.keyword.cloud_notm}} usage data in FOCUS format, you can analyze {{site.data.keyword.Bluemix_notm}} costs alongside AWS, Azure, and GCP data without custom transformation. For more information, see the [FinOps Foundation FOCUS v1.2 specification](https://focus.finops.org/focus-specification/v1-2/).
+The FOCUS format is a cross-cloud standard developed by the FinOps Foundation that normalizes billing and usage data across cloud providers. {{site.data.keyword.Bluemix_notm}} now supports FOCUS v1.2 (FinOps Open Cost and Usage Specification) format for cost and usage reporting. By exporting your {{site.data.keyword.cloud_notm}} usage data in FOCUS format, you can analyze {{site.data.keyword.Bluemix_notm}} costs alongside AWS, Azure, and GCP data without custom transformation. For more information, see the [FinOps Foundation FOCUS v1.2 specification](https://focus.finops.org/docs/specification/v1-2/).
 
 ## Before you begin
 {: #export-focus-prereqs}
@@ -110,7 +110,7 @@ Beyond the 16 mandatory fields, {{site.data.keyword.Bluemix_notm}} FOCUS reports
 {: #export-focus-api}
 {: api}
 
-You can automate usage data exports using the {{site.data.keyword.cloud_notm}} Usage Reports API. For more information, see [Usage Reports API](/apidocs/metering-reporting?code=python#introduction).
+You can automate usage data exports using the {{site.data.keyword.cloud_notm}} Usage Reports API. For more information, see [Usage Reports API](/docs/api/metering-reporting?code=python#introduction).
 
 1. Obtain an API key with appropriate billing access. For more information, see [Managing API keys](/docs/iam?topic=iam-userapikey).
 

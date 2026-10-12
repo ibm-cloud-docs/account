@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2025
-lastupdated: "2025-11-15"
+  years: 2026
+lastupdated: "2026-10-12"
 
 keywords: pricing, global catalog api
 
@@ -16,7 +16,7 @@ subcollection: account
 # Getting dynamic pricing
 {: #getting-pricing-api}
 
-As a seller, reseller, or a user that wants to pull pricing programmatically, you may want to get pricing dynamically so that you can quote true prices and do cost predictions on what a service or software is going to cost. To do this, you can leverage the Global Catalog API to get that dynamic pricing. To use the API, you need to have the correct [authentication](/apidocs/resource-catalog/global-catalog#authentication).
+As a seller, reseller, or a user that wants to pull pricing programmatically, you may want to get pricing dynamically so that you can quote true prices and do cost predictions on what a service or software is going to cost. To do this, you can leverage the Global Catalog API to get that dynamic pricing. To use the API, you need to have the correct [authentication](/docs/apis/resource-catalog/global-catalog#authentication).
 {: shortdesc}
 
 ## Identifying an offering and regional availability

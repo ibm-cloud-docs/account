@@ -2,7 +2,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-12"
 
 keywords: resource, account resources, create resource, access to create resources, delete resource, delete instance, search, find, search for instance, search for resource
 
@@ -221,7 +221,7 @@ You can create new resource instances by using Terraform.
 ## Searching for resources
 {: #searching-for-resources}
 
-You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.cloud_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](https://cloud.ibm.com/apidocs/search) supports searching for resources as well.
+You can search for resources from anywhere in the {{site.data.keyword.cloud}} console. Enter the resource or tag in the search field from the console menu bar. You can also use the {{site.data.keyword.cloud_notm}} command-line interface (CLI) to search across your resources. The CLI searches for distributed applications and service instances across locations and data centers. [The Global Search and Tagging - Search API](/docs/apis/search) supports searching for resources as well.
 
 ## Refining your search results
 {: #results}
