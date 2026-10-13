@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-09-23"
+lastupdated: "2026-10-13"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -172,7 +172,7 @@ To receive the credits for illegitimate charges against your servers, contact [{
 {: #promo-feature-codes}
 {: faq}
 
-Promo codes are for Pay-As-You-Go and Subscription accounts and give you limited-time credits toward your account and {{site.data.keyword.cloud_notm}} products. The codes are typically short phrases, like `PROMO200`. For more information about promo codes, see [Managing promotions](/docs/account?topic=account-applying-promo-codes).
+Promo codes are for Pay-As-You-Go and Subscription accounts and give you limited-time benefits toward your account and {{site.data.keyword.cloud_notm}} products, such as dollar credits or percentage discounts. The codes are typically short phrases, like `PROMO200`. For more information about promo codes, see [Managing promotions](/docs/account?topic=account-applying-promo-codes).
 
 Feature codes provide enhancements for an account, such as an unlimited number of organizations or creating a trial account. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops. They're typically random alphanumeric codes, like `a1b2c3def456`. For more information about feature codes, see [Applying feature codes](/docs/account?topic=account-codes).
 

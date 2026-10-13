@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-09-23"
+lastupdated: "2026-10-13"
 
 keywords: credit, credit types, promo code, discount, promotion code, promotional code, redeem promos, feature code, subscription code
 
@@ -36,7 +36,7 @@ You can create an account and use a myriad of software products with no time lim
 ### Promo code
 {: #promo-code-credits}
 
-Promo codes are provided on a limited basis by {{site.data.keyword.cloud_notm}} sales to customers with billable accounts, such as Pay-As-You-Go and Subscription accounts. Promotions provide specific discounts for a set amount of time. For more information, see [Applying promo codes](/docs/account?topic=account-applying-promo-codes).
+Promo codes are provided on a limited basis by {{site.data.keyword.cloud_notm}} sales to customers with billable accounts, such as Pay-As-You-Go and Subscription accounts. Promotions provide limited-time benefits, such as dollar credits or percentage discounts, for a set amount of time. For more information, see [Applying promo codes](/docs/account?topic=account-applying-promo-codes).
 
 ### Feature code
 {: #feature-credits}
