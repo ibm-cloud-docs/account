@@ -120,6 +120,7 @@ toc:
           - tagging_resources.md
           - manage_tags.md
           - grant-tag-access.md
+          - tagging-cbr.md
           - data-center-migration.md
           - quotas.md
           - resource-quota.md
