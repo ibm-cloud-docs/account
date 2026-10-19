@@ -3,7 +3,7 @@
 copyright:
   years: 2026
 
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-19"
 
 keywords: usage export, FOCUS format, FinOps, cost management, billing data, CSV export, multi-cloud, cost optimization, FOCUS v1.2
 
@@ -121,7 +121,7 @@ You can automate usage data exports using the {{site.data.keyword.cloud_notm}} U
      -H "Authorization: Bearer {iam_token}" \
      -H "Accept: text/csv"
    ```
-   {: pre}  
+   {: pre}
 
 Replace `{account_id}` with your {{site.data.keyword.Bluemix_notm}} account ID (required), `{month}` with the report month in YYYY-MM format (e.g., 2024-01), and `{iam_token}` with your IAM access token.
 
@@ -129,6 +129,7 @@ Replace `{account_id}` with your {{site.data.keyword.Bluemix_notm}} account ID (
 {: #api-parameters}
 
 The FOCUS export API supports the following parameters:
+
 `account_id` (required)
 :   The {{site.data.keyword.Bluemix_notm}} account ID.
 

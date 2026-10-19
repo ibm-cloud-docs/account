@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-10-16"
+lastupdated: "2026-10-19"
 
 keywords: context-based restrictions, protecting tagging, security, global tagging, access tags, ghost-tags
 
@@ -37,10 +37,10 @@ To protect your resources with context-based restrictions, see the tutorial for 
 
 The Tagging service exposes two distinct protected surfaces:
 
-`ghost-tags` (access tag create and delete)  
+`ghost-tags` (access tag create and delete)
 Protects the creation and deletion of access tags in your account. Rules target the `ghost-tags` service using the default API type `crn:v1:bluemix:public:context-based-restrictions::::api-type:`.
 
-`global-search-tagging` (tag attach and detach)  
+`global-search-tagging` (tag attach and detach)
 Protects attaching and detaching tags on resources. Rules target the `global-search-tagging` service using the `resource-management` platform API type `crn:v1:bluemix:public:context-based-restrictions::::platform-api-type:resource-management`. Resource search (`global-search-tagging.resource.read`) is not subject to context-based restrictions and always works regardless of the calling zone.
 
 ## Limitations
@@ -186,7 +186,7 @@ GST_TAGS_ENDPOINT=https://tags.private.global-search-tagging.cloud.ibm.com \
 To allow access tag create and delete operations only from a specific VPC over the private endpoint, create a network zone and rule for that VPC. Requests from a different VPC or the public endpoint are denied.
 
 #### By using the console
-{: #rules-tagging-endpoint-ui}
+{: #rules-tagging-vpc-ui}
 {: ui}
 
 Complete the following steps to restrict access tag create and delete operations to a specific VPC and private endpoint by using the console:
@@ -223,7 +223,7 @@ ibmcloud cbr rule-create \
 Tag attach and detach operations on a resource are routed through the `global-search-tagging` service using the `resource-management` platform API type. To protect these operations, create a rule on the **target resource's service** (for example, Key Protect), not on `global-search-tagging` directly. Resource search (`ibmcloud resource search`) is not subject to these rules and continues to work from any zone.
 
 #### By using the console
-{: #rules-tagging-endpoint-ui}
+{: #rules-tagging-attach-detach-ui}
 {: ui}
 
 Complete the following steps to restrict tag attach and detach operations on a resource by using the console:
