@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-20"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, API key, users
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# What's in an account?
+# {{site.data.keyword.cloud_notm}} account components and structure overview
 {: #overview}
 
 Your {{site.data.keyword.Bluemix}} account includes many interacting components and systems for resource, user, and access management. Concepts like how certain components are connected or how access works help you in understanding how to set up your account.

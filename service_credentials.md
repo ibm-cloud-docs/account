@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-20"
 
 keywords: service key, api key, credential, connect resources to apps, multi-cloud
 
@@ -13,10 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Connecting services to apps
+# Creating and managing {{site.data.keyword.cloud_notm}} service credentials
 {: #service_credentials}
 
-Connect your apps or third-party tools to {{site.data.keyword.cloud_notm}} services by generating a new set of service credentials. These credentials act as the bridge between your app, whether it’s hosted on {{site.data.keyword.Bluemix}} or an external platform like AWS, and the {{site.data.keyword.Bluemix}} service that you want to use. For example, if you’re integrating an AWS-hosted app with {{site.data.keyword.conversationshort}}, you generate a service credential that provides the necessary access. Then, you can add it to your app’s configuration to establish the connection.
+Create and manage {{site.data.keyword.cloud_notm}} service credentials to connect your apps or external tools to IBM Cloud services through the console, API, or Terraform.
+{: shortdesc}
+
+For example, if you integrate an AWS-hosted app with {{site.data.keyword.conversationshort}}, you generate a service credential that provides the necessary access, then add it to your app's configuration to establish the connection.
 
 To add credentials to your apps, refer to the documentation for the type of app or compute option that you are using.
 {: tip}

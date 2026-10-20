@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-04-24"
+lastupdated: "2026-10-20"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -12,10 +12,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Carbon calculator terminology
+# {{site.data.keyword.cloud_notm}} Carbon calculator terminology
 {: #carbon-calc-terms}
 
-The following are the terms that are used within the {{site.data.keyword.cloud_notm}}'s carbon calculator documentation.
+Use this reference to understand the key terms used in IBM Cloud carbon calculator documentation, including energy, greenhouse gas, and service usage definitions.
+{: shortdesc}
 
 Energy
 :   Electricity, fuels, and Purchased Energy Commodities used to operate facilities. It does not include energy used for transportation or similar activities.
