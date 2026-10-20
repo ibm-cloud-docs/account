@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-10-20"
 
 keywords: invoices, understanding invoice, iaas invoice, paas invoice, IBM invoices, invoice information, currency change
 
@@ -13,11 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding an invoice 
+# Understanding your {{site.data.keyword.cloud_notm}} invoice charges
 {: #understand-invoices}
 
-Billable accounts receive a monthly invoice for the usage charges and other fees that are incurred. At any time, you can view your invoice or expected invoiced charges by going to the [Invoices](https://cloud.ibm.com/billing/invoices){: external} page from the billing and usage dashboard in the {{site.data.keyword.cloud}} console.
+Review your IBM Cloud invoice to understand monthly usage charges, fees, and how billing differs across account types such as Subscription and Pay-As-You-Go.
 {: shortdesc}
+
+Billable accounts can view their invoice or expected invoiced charges at any time on the [Invoices](https://cloud.ibm.com/billing/invoices){: external} page from the billing and usage dashboard in the {{site.data.keyword.cloud}} console.
 
 If your account is billed through a separate billing platform, you can see the following message on the Invoices page:
 

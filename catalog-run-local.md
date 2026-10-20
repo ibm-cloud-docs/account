@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-10-20"
 
 keywords:  terraform, run local, customize, cli
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Running products locally
+# Deploy catalog products locally from the CLI
 {: #catalog-run-local}
 
-Instead of deploying the product by using the automated process from the catalog tile, you can manually deploy the solution locally. This user should be familiar with Terraform.
+Deploy catalog products locally from the CLI by running Terraform commands instead of using the automated catalog tile deployment process.
 {: shortdesc}
 
 ## Before you begin
