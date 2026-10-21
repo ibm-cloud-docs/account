@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-21"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -94,7 +94,7 @@ When using the cost analysis page, you can use the group by filter to dive deepe
 {: #view-usage-api}
 {: api}
 
-You can programmatically view your usage by calling the [{{site.data.keyword.cloud_notm}} Usage Reports API](/apidocs/metering-reporting#get-account-usage). You can base the query in your API call on an account, org, resource group, or resource instance.
+You can programmatically view your usage by calling the [{{site.data.keyword.cloud_notm}} Usage Reports API](/docs/apis/metering-reporting#get-account-usage). You can base the query in your API call on an account, org, resource group, or resource instance.
 
 The following examples show queries that you can use to view account level usage:
 
