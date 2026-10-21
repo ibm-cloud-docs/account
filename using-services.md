@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-11-15"
+  years: 2018, 2026
+lastupdated: "2026-10-21"
 
 keywords: classic infrastructure assets, application development, services that work with classic infrastructure
 
@@ -39,7 +39,7 @@ For example, do you want to add cognitive capabilities from Watson to your apps 
 
 For example, do you want to add cognitive capabilities from Watson to your apps that are running on classic infrastructure bare metal servers? You can add a service such as {{site.data.keyword.personalityinsightsshort}} to help understand your app's user by completing the following steps:
 
-1. Create an instance of the service by calling [Resource Controller API](/apidocs/resource-controller/resource-controller?code=go#create-resource-instance){: external} as shown in the following example request:
+1. Create an instance of the service by calling [Resource Controller API](/docs/apis/resource-controller/resource-controller?code=go#create-resource-instance) as shown in the following example request:
 
    ```bash
    curl -X POST https://resource-controller.cloud.ibm.com/v2/resource_instances -H 'Authorization: Bearer <>' -H 'Content-Type: application/json' -d '{

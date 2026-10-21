@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-10-21"
 
 keywords: SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -55,6 +55,6 @@ To view billing and usage for classic infrastructure resources, you need an acce
 {: #infra-billing-api}
 {: api}
 
-You can programmatically view your classic infrastructure usage by calling the [{{site.data.keyword.cloud_notm}} Usage Reports API](/apidocs/metering-reporting#get-account-usage). You can base the query in your API call on an account, org, resource group, or resource instance. For more information, see [Viewing your usage by using the API](/docs/account?topic=account-viewingusage&interface=api).
+You can programmatically view your classic infrastructure usage by calling the [{{site.data.keyword.cloud_notm}} Usage Reports API](/docs/apis/metering-reporting#get-account-usage). You can base the query in your API call on an account, org, resource group, or resource instance. For more information, see [Viewing your usage by using the API](/docs/account?topic=account-viewingusage&interface=api).
 
 Some accounts must use the [SoftLayer API](https://sldn.softlayer.com/) to retrieve usage information for classic infrastructure resources. For more information, see [SoftLayer_Billing_Invoice](https://sldn.softlayer.com/reference/datatypes/SoftLayer_Billing_Invoice/) and [SoftLayer_Billing_Invoice_Item](https://sldn.softlayer.com/reference/datatypes/SoftLayer_Billing_Invoice_Item/).
