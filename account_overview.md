@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-21"
 
 keywords: IBM Cloud account, account differences, account overview, account components, resource, API key, users
 
