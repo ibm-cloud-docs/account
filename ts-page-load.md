@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-01-08"
+lastupdated: "2026-10-23"
 
 keywords: troubleshoot account, page load, page error, console page error
 
@@ -15,18 +15,18 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why do I encounter console pages that don't load?
+# Why do {{site.data.keyword.cloud_notm}} console pages fail to load?
 {: #ts_err}
 {: troubleshoot}
 
-A page in the {{site.data.keyword.Bluemix}} console might not load properly, and an error message is displayed.
+You're unable to load an {{site.data.keyword.cloud_notm}} console page due to a browser issue or connectivity problem that you can resolve by clearing cache or checking {{site.data.keyword.cloud_notm}} status.
 {: shortdesc}
 
 One of the following error messages might be displayed:
 {: tsSymptoms}
 
 ```text
-BXNUI0001E: The page wasn't loaded because IBM Cloud didn't detect whether a session exists.
+BXNUI0001E: The page wasn't loaded because {{site.data.keyword.cloud_notm}} didn't detect whether a session exists.
 BXNUI0016E: The apps and services weren't retrieved because an IBM Cloud page didn't load.
 500 internal server error
 ```

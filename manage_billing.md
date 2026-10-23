@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-10-23"
 
 keywords: payment method, credit card, payment, billing method, pay, pay my bill, billing items, ibm billing,
 
@@ -13,11 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing payments
+# Managing {{site.data.keyword.cloud_notm}} payment methods and billing
 {: #linkedusage}
 
-Depending on your account type, you can easily manage your payment methods by using the [Payments](/billing/payments) page in the {{site.data.keyword.cloud}} console or by going to [{{site.data.keyword.IBM}} Billing](https://myibm.ibm.com/billing/).
+Manage your {{site.data.keyword.cloud_notm}} payment methods and billing details from the console to keep your Pay-As-You-Go or Subscription account current and avoid interruptions.
 {: shortdesc}
+
+Depending on your account type, you can easily manage your payment methods by using the [Payments](/billing/payments) page in the {{site.data.keyword.cloud}} console or by going to [{{site.data.keyword.IBM}} Billing](https://myibm.ibm.com/billing/).
 
 A valid credit card is required for all Pay-As-You-Go and Subscription accounts. Every month, the credit card is charged with the usage amount that is accumulated during that month. When updates to your payment details and billing address details are approved, they are applied to your account within few days. The contact that is specified in the billing address section receives an email confirming that the updates are applied.
 

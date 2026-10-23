@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-11-15"
+  years: 2021, 2026
+lastupdated: "2026-10-23"
 
 keywords: onboard software, third-party software, suspend, support, software, sellers, catalog, Partner Center - Sell, remove, delete, deprecate, catalogs, private catalogs
 
@@ -22,7 +22,7 @@ subcollection: account
 {:download: .download}
 {:external: target="_blank" .external}
 
-# Deprecating a private product
+# Deprecating a private product from your {{site.data.keyword.cloud}} catalog
 {: #deprecate-product}
 
 To permanently delete a private product or version, deprecate it first. Your product remains available for use during a 90-day deprecation period, and is removed after 90 days.

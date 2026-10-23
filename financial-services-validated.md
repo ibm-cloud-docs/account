@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-10-23"
 
 keywords: data security, FS-ready, Financial Services, encryption
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Enabling your account to use Financial Services Validated products
+# Enabling Financial Services Validated for your account
 {: #enabling-fs-validated}
 
-If you're the account owner, you can enable your {{site.data.keyword.cloud}} account to be Financial Services Validated designated, which means your account stores and manages regulated financial services information.
+Enable your {{site.data.keyword.cloud}} account for Financial Services Validated designation to store and manage regulated financial services information securely.
 {: shortdesc}
 
 If you have an account that's identified as a Financial Services account, you can use services that are designated as [IBM Cloud for Financial Services Validated](/docs/framework-financial-services?topic=framework-financial-services-about). Services that are designated as IBM Cloud for Financial Services Validated use the industry’s highest levels of encryption certification, provides preventive and compensatory controls for financial services regulatory workloads, multi-architecture support and proactive, and automated security.

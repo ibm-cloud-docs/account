@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2023, 2025
-lastupdated: "2025-11-15"
+  years: 2023, 2026
+lastupdated: "2026-10-23"
 
 keywords: catalog, catalog management, manage catalogs, video
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Catalog management on {{site.data.keyword.cloud_notm}}
+# Video: Managing catalogs and product access in {{site.data.keyword.cloud_notm}}
 {: #cm-video}
 
 As an account owner, you can control your users' access to the {{site.data.keyword.cloud_notm}} catalog, which contains over 350 products available for public use. You can hide the {{site.data.keyword.cloud_notm}} catalog from all users, or apply filters to scope the products that are available. Within your account, private catalogs provide more fine-tuned control over access to products in the {{site.data.keyword.cloud_notm}} catalog.

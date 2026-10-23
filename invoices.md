@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-10-23"
 
 keywords: viewing invoices, invoices, IBM Customer Number, IBM Invoices, RSET, external invoice website, paperless invoice, request paperless invoice
 
@@ -13,8 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing your invoices
+# Viewing and downloading your {{site.data.keyword.cloud_notm}} invoices
 {: #managing-invoices}
+
+View and download your {{site.data.keyword.cloud_notm}} invoices and check invoice status for Pay-As-You-Go and Subscription accounts from the billing and usage dashboard.
+{: shortdesc}
 
 To manage and view your invoices, visit the [Invoices](https://cloud.ibm.com/billing/invoices){: external} page from the billing and usage dashboard in the {{site.data.keyword.cloud}} console. If your account is billed through a separate billing platform, you can see the following message on the Invoices page:
 

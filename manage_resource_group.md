@@ -2,7 +2,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-23"
 
 keywords: resource group, account resources, users access to resource groups, create resource group, create resource group in the console, create resource group CLI, create resource group API, delete resource group
 
@@ -11,8 +11,11 @@ subcollection: account
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing resource groups
+# Managing {{site.data.keyword.cloud_notm}} resource groups for your account
 {: #rgs}
+
+Manage {{site.data.keyword.cloud_notm}} resource groups to organize account resources into customizable groupings and quickly assign users access to multiple resources at a time.
+{: shortdesc}
 
 A resource group is a way for you to organize your account resources in customizable groupings so that you can quickly assign users access to multiple resources at a time. Any account resource that is managed by using {{site.data.keyword.Bluemix}} Identity and Access Management (IAM) access control belongs to a resource group within your account. You can group resources and assign access to individual service instances or entire resource groups that use IAM.
 

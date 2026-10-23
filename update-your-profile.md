@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-23"
 
 keywords: edit profile, profile information, change profile, update profile, cookies, tracking, privacy, set up profile, company information, company details, company account, company profile, company contact
 
@@ -13,11 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Updating your profile
+# Updating your {{site.data.keyword.cloud}} profile and company information
 {: #usersettings}
 
-In your {{site.data.keyword.cloud}} profile, you can add a photo and personal information, manage notifications, and monitor your privacy. Setting it up helps your teammates know who you are and how you can help. You can also update your company profile details as each {{site.data.keyword.cloud_notm}} account includes a company profile that contains company information and details about the primary account holder. You can use data from the company profile when you set up contacts and user profiles. You can have various account-specific contacts that are used in association with services available in the account. If you have administrative access or higher, you can update your company contact information.
+Update your {{site.data.keyword.cloud}}d profile to add personal information, manage notifications, and maintain company details so teammates can identify you and your role.
 {: shortdesc}
+
+Your profile is shared across all {{site.data.keyword.cloud}} accounts that you can access. You can also update your company profile, which contains company information and details about the primary account holder. If you have administrative access or higher, you can update your company contact information.
 
 This page is not available for some account types. Upgrade to complete your account and access the functions on the Company information page.
 {: note}

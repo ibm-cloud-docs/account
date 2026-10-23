@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2023, 2025
-lastupdated: "2025-11-15"
+  years: 2023, 2026
+lastupdated: "2026-10-23"
 
 keywords: account settings, delete account, account errors, vrf account migration, account migration, vrf, classic account
 
@@ -15,11 +15,13 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ about VRF account migration
+# AQ for {{site.data.keyword.cloud}} classic account VRF migration
 {: #vrf-faqs}
 
-By default, classic accounts that were established before 30 November 2023, are included in the {{site.data.keyword.cloud}} general routing table. Previously, if you wanted to convert a classic account to a VRF-style account, you were required to open a support case with {{site.data.keyword.IBM}} Support. Beginning 30 November 2023, any new classic account or any existing classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
+Find answers to frequently asked questions about IBM Cloud classic account migration to VRF-style accounts, including automatic conversion and network connectivity.
 {: shortdesc}
+
+By default, classic accounts established before 30 November 2023 are included in the IBM Cloud general routing table. Beginning 30 November 2023, any new or empty classic account without provisioned VLANs is automatically converted to a VRF-style account the next time it initiates a private network connection. To find all FAQ for {{site.data.keyword.cloud_notm}}, see our [FAQ library](/docs/faqs).
 
 ## Will this affect current accounts that currently have existing servers or other Private Network connections?
 {: #existing-account}

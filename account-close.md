@@ -4,9 +4,9 @@ copyright:
 
   years: 2024, 2026
 
-lastupdated: "2026-09-11"
+lastupdated: "2026-10-23"
 
-keywords: close account, cancel account, delete account, terminate account
+keywords: close account, cancel account, delete account, terminate account, IBM Cloud account
 
 subcollection: account
 
@@ -14,7 +14,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Closing an account
+# Closing your {{site.data.keyword.cloud}} account permanently
 {: #account-close}
 
 When you decide that you no longer need your {{site.data.keyword.cloud}} account, you can close the account by using the {{site.data.keyword.cloud_notm}} console. If you need assistance with the process, don't hesitate to [contact us](/unifiedsupport/supportcenter){: external}.

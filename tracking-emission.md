@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-23"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -13,6 +13,9 @@ subcollection: account
 
 # Tracking account emissions with carbon calculator
 {: #tracking-emissions-account}
+
+Track {{site.data.keyword.cloud}} account greenhouse gas emissions with the carbon calculator to view, filter, and export emissions data by service, location, and resource group.
+{: shortdesc}
 
 The carbon emissions factor, a ratio of emissions per unit of energy, is being updated for higher accuracy and is temporarily unavailable. For urgent inquiries related to carbon emissions factor data, contact support.
 {: important}

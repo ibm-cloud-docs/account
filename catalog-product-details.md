@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-11-15"
+  years: 2021, 2026
+lastupdated: "2026-10-23"
 
 keywords: onboard software, catalog details, software, catalog entry, about, product page, catalog listing
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Defining your product details
+# Defining your {{site.data.keyword.cloud}} catalog product listing details
 {: #cm-catalog-details}
 
 When you publish your product to the catalog, users with access to your private catalog can view a tile with the product name, logo, and other details that you add during onboarding. To help users easily find your product in the catalog, you can specify specific keywords and filters that apply to your product.

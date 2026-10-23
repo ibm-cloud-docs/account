@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-09-17"
+lastupdated: "2026-10-23"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -13,11 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Moving to {{site.data.keyword.IBM_notm}} billing systems
+# Migrating your {{site.data.keyword.cloud}} account to IBM billing systems
 {: #migrate-to-simple}
 
-A segment of customers that use a legacy billing system must move their accounts to {{site.data.keyword.IBM_notm}} billing systems before 31 October 2024. If you receive invoices like the example in [Figure 1.](#old-invoice) and you pay your invoice on the [Invoices](/billing/invoices) page in the {{site.data.keyword.Bluemix}} console, this applies to your account. You will continue to enjoy the same services, pricing, and terms without any disruptions. This transition provides you an enhanced usage and invoicing experience.
+Migrate your {{site.data.keyword.cloud}} account from a legacy billing system to IBM billing systems to access an enhanced usage and invoicing experience without service disruptions.
 {: shortdesc}
+
+If you receive invoices like the example in [Figure 1.](#old-invoice) and you pay your invoice on the [Invoices](/billing/invoices) page in the {{site.data.keyword.cloud}} console, this migration applies to your account.
 
 Accounts that are required to move to {{site.data.keyword.IBM_notm}} billing systems are notified with a banner notification in the {{site.data.keyword.Bluemix}} console, an email notification, and a support case.
 

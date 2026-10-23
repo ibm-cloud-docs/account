@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-02-13"
+lastupdated: "2026-10-23"
 
 keywords: invoice reconciliation, non-subscription invoice, map invoice, map usage, one time charges, recurring invoice, recurring charges
 
@@ -17,12 +17,12 @@ completion-time: 45m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Reconciling usage for nonsubscription multi-year account invoices
+# Reconciling nonsubscription multi-year account invoices
 {: #tutorial-reconcile-invoice}
 {: toc-content-type="tutorial"}
 {: toc-completion-time="45m"}
 
-As an {{site.data.keyword.cloud}} customer with a nonsubscription multi-year account, understanding the different invoices that are available to you can help you understand your monthly cost breakdown.
+Reconcile {{site.data.keyword.cloud_notm}} nonsubscription multi-year account invoices to understand your monthly cost breakdown and map usage charges accurately.
 {: shortdesc}
 
 Final invoice

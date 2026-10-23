@@ -3,7 +3,7 @@
 copyright:
 
  years: 2015, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-23"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -13,8 +13,8 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Account types
-{: #accounts}
+# {{site.data.keyword.cloud}} account types and plan comparisons
+{: #accounts-types}
 
 When you register with {{site.data.keyword.cloud}}, you are set up with a Pay-As-You-Go type of account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions.
 {: shortdesc}

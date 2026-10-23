@@ -3,7 +3,7 @@
 
 copyright:
   years: 2020, 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-23"
 
 keywords: license, entitlement, software, passport advantage, cloud pak, binding a license, PPA, part number
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Assigning software licenses to your account
+# Assigning {{site.data.keyword.cloud}} software licenses to your account
 {: #software-license}
 
-To install software products in {{site.data.keyword.cloud}}, the license for the software must be assigned to your account. You're entitled to install a specific version of the software for a specific period of time, for example, one year. Licenses, which are also referred to as entitlements, are purchased and acquired through {{site.data.keyword.IBM}} Passport Advantage.
+Assign {{site.data.keyword.cloud}} software licenses purchased through {{site.data.keyword.IBM}} Passport Advantage to your account to install and entitle software products for a set period.
 {: shortdesc}
 
 ## Acquiring a license 

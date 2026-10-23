@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-10-21"
+lastupdated: "2026-10-23"
 
 keywords: view usage, view cost, service usage, usage report, usage permissions, usage details, SoftLayer billing, classic infrastructure usage, orders, IaaS usage, invoice, billing item
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Viewing your usage
+# Viewing {{site.data.keyword.cloud}} service and resource usage details
 {: #viewingusage}
 
-You can view your {{site.data.keyword.cloud}} usage details from the billing and usage dashboard, from the usage page, and from the cost analysis page in the console. Your usage details include a summary of estimated charges for all services and resources that are used per month in your organizations.
+View your {{site.data.keyword.cloud}} usage details and estimated charges for services and resources from the billing dashboard, usage page, or cost analysis page.
 {: shortdesc}
 
 You can also view your device usage and service purchases for classic infrastructure devices and services by going to **Manage > Billing and usage**.

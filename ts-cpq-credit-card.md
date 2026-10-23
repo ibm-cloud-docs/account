@@ -3,7 +3,7 @@
 copyright:
 
   years: 2026
-lastupdated: "2026-05-04"
+lastupdated: "2026-10-23"
 
 keywords: troubleshoot billing, credit card, payment method, credit card verification, purchase order to credit card
 
@@ -15,11 +15,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why is my credit card verification taking longer than expected for my account?
+# Why is my {{site.data.keyword.cloud}} credit card verification delayed?
 {: #ts-cc-verification}
 {: troubleshoot}
 
-You added a credit card to your Pay-As-You-Go or Enterprise Savings Plan account that was created through an {{site.data.keyword.IBM_notm}} seller, but the verification process is taking longer than expected.
+You added a credit card to your {{site.data.keyword.cloud}} Pay-As-You-Go or Enterprise Savings Plan account, but the verification process is taking longer than expected.
 {: shortdesc}
 
 You added your credit card information to your account, but after several hours, your credit card is still not verified and you cannot use it for payments.

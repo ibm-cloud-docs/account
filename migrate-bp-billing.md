@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2024, 2025
-lastupdated: "2025-10-23"
+  years: 2024, 2026
+lastupdated: "2026-10-23"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -14,8 +14,11 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Moving to {{site.data.keyword.IBM_notm}} Partner Programs
+# Migrating SoftLayer partners to IBM Partner Programs
 {: #migrate-to-partner}
+
+Migrate your SoftLayer partner account to IBM Partner Programs by signing a new IBM Partner Agreement and creating a new IBM order before the required deadline.
+{: shortdesc}
 
 Any SoftLayer Partner that signed the following agreements before May 2021 is required to sign an {{site.data.keyword.IBM}} Partner Agreement and create a new {{site.data.keyword.IBM_notm}} order by 31 October 2024:
 - SoftLayer Reseller Agreement

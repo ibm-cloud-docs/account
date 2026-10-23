@@ -3,7 +3,7 @@
 copyright:
 
  years: 2015, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-23"
 
 keywords: quote cost, find cost, estimate cost, estimate bill, total cost, service cost, cost estimator, infrastructure quote, compute quote, vsi quote, bare metal quote, savings plan
 
@@ -13,8 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Estimating your costs
-{: #cost}
+# Estimating {{site.data.keyword.cloud}} service costs with the cost estimator
+{: #estimate-cost}
+
+Estimate {{site.data.keyword.cloud}} service costs by using the cost estimator to customize plans and explore catalog products before you commit to a purchase.
+{: shortdesc}
 
 You can use the cost estimator to estimate the cost of {{site.data.keyword.cloud}} products by customizing plans that fit your business needs. Your account type doesn't affect your estimates. Explore the catalog to find available products to add to an estimate.
 

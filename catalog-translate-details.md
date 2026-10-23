@@ -3,8 +3,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-10-23"
 
 keywords: onboard software, catalog details, software, catalog entry, about, product page, catalog listing, translation, internationalization, localization, CLI
 
@@ -14,11 +14,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Translating product details by using the CLI
+# Translating {{site.data.keyword.cloud_notm}} catalog product details with the CLI
 {: #translate-product-details}
 
-When you onboard software, you can translate certain details about your product by using the [{{site.data.keyword.cloud}} CLI plug-in](/docs/cli?topic=cli-manage-catalogs-plugin). Run the `get-translations` command to download the language files. Then, edit those files to include your specific translations and upload them using the `upload-translations` command. For more information, see [Getting started with the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
+Translate {{site.data.keyword.cloud_notm}} catalog product details into multiple languages by using the CLI to download, edit, and upload language files for your onboarded software.
 {: shortdesc}
+
+Use the [{{site.data.keyword.cloud_notm}} CLI plug-in](/docs/cli?topic=cli-manage-catalogs-plugin) to run the `get-translations` command to download language files, edit them with your translations, and upload them with the `upload-translations` command. For more information, see [Getting started with the {{site.data.keyword.cloud_notm}} CLI](/docs/cli?topic=cli-getting-started).
 
 ## What product details can you translate? 
 {: #cm-translate-what}

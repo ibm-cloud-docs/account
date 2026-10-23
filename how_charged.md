@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-10-23"
 
 keywords: payment, charges, pricing plan, service cost, cost, pricing tier, pricing model, pricing
 
@@ -12,10 +12,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How you're charged
-{: #charges}
+# Understanding {{site.data.keyword.cloud}} billing and pricing charges
+{: #billing-pricing-charges}
 
-{{site.data.keyword.cloud}} charges vary depending on the resources that are used by a particular service, runtime, container, or support option. The resources can be the number of API calls, the number of instances, memory, or storage. In addition, tiered pricing is offered in simple, graduated, or block.
+Understand how {{site.data.keyword.cloud}} charges vary by resource usage, including API calls, instances, memory, and storage, across fixed, tiered, and block pricing models.
 {: shortdesc}
 
 {{site.data.keyword.cloud_notm}} provides detailed [cost estimators](/docs/account?topic=account-cost) to help you plan for charges.
