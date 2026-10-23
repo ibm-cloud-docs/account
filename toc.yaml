@@ -17,8 +17,10 @@ toc:
           topics:
           - index.md
           - account_overview.md
-          - cm-video.md
-          - billing-overview.md
+          - topic: cm-video.md
+            navtitle: Catalog management video
+          - topic: billing-overview.md
+            navtitle: Billing and usage video
       - topicgroup:
           label: Best practices
           topics:
@@ -38,7 +40,8 @@ toc:
           - catalog-vsivpc-plans-tutorial.md
           - catalog-vsipower-tutorial.md
           - catalog-operator-tutorial.md
-          - catalog-opbundle-tutorial.md
+          - topic: catalog-opbundle-tutorial.md
+            navtitle: Onboarding a Certified Operator
           - catalog-terraform-template-tutorial.md
           - catalog-terraform-template-cli.md
       - reconcile-tutorial.md
@@ -145,7 +148,8 @@ toc:
               topics:
               - how_charged.md
               - estimating_costs.md
-              - scenario.md
+              - topic: scenario.md
+                navtitle: Cost estimation scenario
               - change_pricing_plan.md
               - getting-pricing-api.md
               - viewing_usage.md

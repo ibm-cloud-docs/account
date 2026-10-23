@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-02-04"
+lastupdated: "2026-10-23"
 
 keywords: service availability, service location, using services across regions
 
@@ -13,11 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}} 
 
-# Using services in another region
+# Using {{site.data.keyword.cloud_notm}} service instances across regions
 {: #cross_region_service}
 
-If you have a service instance that is created and bound to apps in one region, you can use this service instance in another region by one of the following methods:
+Use an {{site.data.keyword.cloud_notm}} service instance across regions by connecting it with service credentials or creating a user-provided service as a bridge.
 {: shortdesc}
+
+If you have a service instance that is created and bound to apps in one region, you can use this service instance in another region by one of the following methods:
 
 * Use the service credentials to configure your app instance directly. See [Connecting services to apps](/docs/account?topic=account-service_credentials) for details.
 * Create a user-provided service as a bridge.
@@ -40,7 +42,7 @@ To use a service instance that exists in another region, complete the following 
    
    ```bash
    export SERVICE_USERNAME="appuser"
-   export SERVICE_PASSWORD="sec123"
+   export SERVICE_PASSWORD="PASSWORD"
    export SERVICE_URL="https://api.example.com"
    ```
    {: pre}
@@ -51,7 +53,7 @@ To use a service instance that exists in another region, complete the following 
    {
      "service": {
        "username": "appuser",
-       "password": "sec123",
+       "password": "PASSWORD",
        "url": "https://api.example.com"
      }
    }

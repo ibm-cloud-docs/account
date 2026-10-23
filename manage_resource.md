@@ -2,7 +2,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-23"
 
 keywords: resource, account resources, create resource, access to create resources, delete resource, delete instance, search, find, search for instance, search for resource
 
@@ -11,7 +11,7 @@ subcollection: account
 ---
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing resources
+# Managing {{site.data.keyword.cloud_notm}} resources
 {: #manage_resource}
 
 A [resource](x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You can create and manage resources by going to your [resource list](https://cloud.ibm.com/resources) in the {{site.data.keyword.cloud}} console or by using the command-line interface (CLI).

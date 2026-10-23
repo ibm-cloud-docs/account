@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-10-23"
 
 keywords: troubleshoot account, account problem, inactive account
 subcollection: account
@@ -14,11 +14,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why is my account inactive?
+# Why is my {{site.data.keyword.cloud}} account inactive or suspended?
 {: #ts_accnt_inactive}
 {: troubleshoot}
 
-You can't create an app in {{site.data.keyword.cloud_notm}} if your account is inactive. You must contact the support team and open a request to fix this problem.
+You can't create apps in IBM Cloud if your account is inactive or suspended. Contact {{site.data.keyword.cloud}} Support to reactivate your account and restore access.
 {: shortdesc}
 
 When you try to create an app in {{site.data.keyword.cloud_notm}}, the following error message is displayed:

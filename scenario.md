@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-02-12"
+lastupdated: "2026-10-23"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Scenario: Estimating costs of a {{site.data.keyword.codeengineshort}} App with an {{site.data.keyword.cloudant_short_notm}} Database and Observability Tools
+# Estimating costs for a {{site.data.keyword.codeengineshort}} app scenario
 {: #sample}
 
 Assume that you deployed your web application on to {{site.data.keyword.codeenginefull}}. The {{site.data.keyword.codeenginefull}} uses several services that are provided by {{site.data.keyword.Bluemix}} including a database, logging and monitoring. You can learn how the actual cost of your application is calculated in this example.

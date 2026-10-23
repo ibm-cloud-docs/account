@@ -2,7 +2,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-23"
 
 keywords: tags, user tags, access management tags, attach tags, detach tags, attach tags ui, attach tags cli, attach tags api, detach tags ui, detach tags api, detach tags cli, delete tags, unused tags, delete tags in  the console, delete  tags cli, delete tags api
 
@@ -12,7 +12,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing tags
+# Managing tags on {{site.data.keyword.cloud}} resources and service IDs
 {: #attaching-and-detaching-tags-on-a-resource}
 
 You can attach and detach tags on a resource or service ID through the console, CLI, or API. To attach or detach a tag on a resource or service ID, users must be assigned the appropriate permission. For more information, see [Granting users access to tag resources](/docs/account?topic=account-access).

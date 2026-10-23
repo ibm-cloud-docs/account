@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-11-15"
+  years: 2021, 2026
+lastupdated: "2026-10-23"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
@@ -18,7 +18,7 @@ content-type: troubleshoot
 {: #ts_upgrade_cc}
 {: troubleshoot}
 
-You can't upgrade to a Pay-As-You-Go account.
+You can't upgrade your {{site.data.keyword.cloud_notm}} account to Pay-As-You-Go because you lack access. Request the Editor role on account management services to upgrade.
 {: shortdesc}
 
 When you try to upgrade your account from the [Account settings](/account/settings) page in the {{site.data.keyword.cloud_notm}} console, the following message is displayed:

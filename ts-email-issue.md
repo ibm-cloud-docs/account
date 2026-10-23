@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-10-23"
 
 keywords: troubleshoot account, upgrade account, upgrade issue
 subcollection: account
@@ -17,7 +17,7 @@ content-type: troubleshoot
 {: #ts_email_notifications}
 {: troubleshoot}
 
-You are having issues with receiving email notifications.
+You aren't receiving {{site.data.keyword.cloud_notm}} email notifications. Check your spam filters and email settings to restore platform and infrastructure alerts.
 {: shortdesc}
 
 You completed the instructions required to set platform or infrastructure email notifications, but still are not receiving them.

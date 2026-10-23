@@ -2,7 +2,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-10-24"
+lastupdated: "2026-10-23"
 
 keywords: cancel active resources, close account
 
@@ -14,7 +14,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I close my account after canceling all services?
+# Why can't I close my {{site.data.keyword.cloud}} account after canceling?
 {: #troubleshoot-account-close}
 {: troubleshoot}
 {: support} 

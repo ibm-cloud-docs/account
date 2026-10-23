@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-10-23"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -15,7 +15,7 @@ subcollection: account
 # {{site.data.keyword.cloud_notm}} Carbon calculator terminology
 {: #carbon-calc-terms}
 
-Use this reference to understand the key terms used in IBM Cloud carbon calculator documentation, including energy, greenhouse gas, and service usage definitions.
+Use this reference to understand the key terms used in {{site.data.keyword.cloud_notm}} carbon calculator documentation, including energy, greenhouse gas, and service usage definitions.
 {: shortdesc}
 
 Energy

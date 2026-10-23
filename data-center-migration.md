@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-05-07"
+lastupdated: "2026-10-23"
 
 keywords: migrate, migrating data center, migrate resources, data center
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Migrating resources to a different data center
+# Migrating {{site.data.keyword.cloud}} resources to a different data center
 {: #migrate-data-center}
 
-{{site.data.keyword.IBM}} continually updates data centers to give you higher levels of performance. Some data centers aren't able to be upgraded, so they must be closed and you must migrate your resources to a different data center.
+Migrate your {{site.data.keyword.cloud}} resources to a different data center when an existing data center is closed or can no longer be upgraded to meet performance requirements.
 {: shortdesc}
 
 Throughout the data center migration process, help is available. To take advantage of special offers, or learn about recommended configurations, use one of the following options to contact the {{site.data.keyword.IBM_notm}} 24x7 Client Success team:

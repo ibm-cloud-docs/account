@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-23"
 
 keywords: onboard software, Terraform, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, power, power systems, power systems virtual server
 
@@ -24,8 +24,10 @@ completion-time: 20m
 {: toc-services="cloud-object-storage, vpc"}
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard a sample virtual server image for {{site.data.keyword.powerSys_notm}} to your account. By completing this tutorial, you learn how to create a private catalog, import the sample, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account.
+This tutorial walks you through onboarding a Power Systems Virtual Server image to a private catalog, validating it, and sharing it with account users.
 {: shortdesc}
+
+By completing this tutorial, you learn how to create a private catalog, import the sample image, validate that it can be installed on a selected deployment target, and make it available to users who have access to your account.
 
 This tutorial uses a [sample virtual server image for Power Systems Virtual Server](https://github.com/IBM-Cloud/isv-power-vsi-product-deploy-sample){: external} as part of the process to onboard a virtual server image. As you complete the tutorial, adapt each step to match your organization's goal.
 

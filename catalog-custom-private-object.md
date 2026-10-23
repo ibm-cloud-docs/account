@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-10-23"
 
 keywords: catalog, restrict visibility, hide object, restrict by user, filter catalog, private catalog, catalog management service, public catalog
 
@@ -22,7 +22,7 @@ subcollection: account
 # Customizing objects in your private catalogs
 {: #restrict-by-user-object}
 
-Private catalogs provide a way to centrally manage access to objects in your own catalogs. You can customize your private catalogs to make specific solutions available to users in your account. By doing so, you can ensure that your catalogs are relevant to your business. 
+Customize objects in {{site.data.keyword.cloud_notm}} private catalogs to control which virtual private endpoints your account users can access and use approved resources.
 {: shortdesc}
 
 Let's say you're an operations admin for your team, and you want your team to use only approved networks. You can create one catalog that includes all of the private virtual private endpoints for use by users in your account. Team members with viewer access can access only the virtual private endpoints in that catalog.

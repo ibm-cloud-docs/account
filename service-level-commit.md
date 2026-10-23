@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-23"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -14,8 +14,11 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Managing service commitments
+# Managing service commitments and committed usage in {{site.data.keyword.cloud_notm}}
 {: #service-comit}
+
+Manage {{site.data.keyword.cloud_notm}} service commitments to understand terms, discounts, and overage, so that you can track committed spend and avoid unexpected charges.
+{: shortdesc}
 
 Service commitments include a service or bundle of services, a term, discount, and total commitment amount. You might also have a monthly or yearly minimum spend if applicable. A term might be multiple months or years. For example, you might have a commitment with the following provisions:
 - 3-year term

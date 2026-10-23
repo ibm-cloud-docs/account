@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-07-10"
+lastupdated: "2026-10-23"
 
 keywords: software onboarding, controls, requirements, security, compliance, partners
 
@@ -13,10 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Adding compliance details
+# Adding compliance controls to your catalog product
 {: #catalog-format-controls}
 
-During the onboarding process, controls that are in your readme file, formatted correctly, and supported by {{site.data.keyword.sysdigsecure_full}} appear in the controls table in your private catalog. You can click **Add controls** to add additional controls to your version. After you publish your product, users can view your controls on the About page for your product.
+Add compliance controls to your {{site.data.keyword.cloud}} private catalog product during onboarding so users can view your security and compliance details on the product page.
+{: shortdesc}
 
 ## Formatting controls in your readme file
 {: #catalog-control-format}

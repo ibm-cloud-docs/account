@@ -3,7 +3,7 @@
 copyright:
 
   years: 2017, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-23"
 
 keywords: crn, cloud resource name, resources, cloud catalog
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Cloud Resource Names
+# Understanding IBM Cloud Resource Names
 {: #crn}
 
-A Cloud Resource Name (CRN) uniquely identifies {{site.data.keyword.Bluemix}} resources. A CRN is used to specify a resource in an unambiguous way that is guaranteed to be globally unique.
+Use IBM Cloud Resource Names (CRNs) to uniquely and globally identify {{site.data.keyword.cloud}} resources in an unambiguous way across services and regions.
 {: shortdesc}
 
 A CRN is formed from a concatenation of "segments" that hierarchically identify the resource, its location, and the service it belongs to. The segment delimiter is set to a colon (`:`). All CRNs begin with the segment identifier `crn`.

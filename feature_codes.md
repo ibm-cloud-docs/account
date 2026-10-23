@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-11-15"
+  years: 2018, 2026
+lastupdated: "2026-10-23"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}} 
 
-# Applying feature codes
+# Applying feature codes to your {{site.data.keyword.cloud}} account
 {: #codes}
 
 You can apply feature codes to take advantage of {{site.data.keyword.Bluemix}} resources or capabilities. Feature codes are typically provided for online courses and certain events, such as educational sessions or conference workshops.

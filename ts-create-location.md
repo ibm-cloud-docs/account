@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-10-23"
 
 keywords: troubleshoot account, account problem, IBM location, IBM Cloud location, create location
 
@@ -19,7 +19,7 @@ content-type: troubleshoot
 {: #nosecondreg}
 {: troubleshoot}
 
-You're unable to create a new location because your account type doesn't allow it.
+You're unable to access a different IBM Cloud location because your account type restricts it. Upgrade to a billable account to enable multiple locations.
 {: shortdesc}
 
 You receive an error message when you try to create a new {{site.data.keyword.cloud_notm}} location.

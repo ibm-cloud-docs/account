@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-23"
 
 keywords: private catalog, software, onboard, Terraform, terraform template
 
@@ -18,13 +18,13 @@ completion-time: 20m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Onboarding a Terraform template
+# Onboarding a Terraform template to a private catalog
 {: #catalog-terraform-template-tutorial}
 {: toc-content-type="tutorial"}
 {: toc-services="Terraform"}
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard a Terraform template to your account. By completing this tutorial, you learn how to create a private catalog and import the template. After that, you can validate that the template can create resources, or run a script, and you can make it available to users who have access to your account.
+This tutorial walks you through onboarding a Terraform template to an {{site.data.keyword.cloud_notm}} private catalog, including importing, validating, and sharing it with account users.
 {: shortdesc}
 
 ## Before you begin
@@ -129,13 +129,11 @@ If users are required to accept any license agreements beyond the {{site.data.ke
 
 ### Add controls
 {: #add-controls-terraform}
-{: ui}
 
 {{_include-segments/run-security-compliance-segment.md}}
 
 ### Add inventory results from {{site.data.keyword.sysdigsecure_short}}
 {: #add-inventory-from-wp}
-{: ui}
 
 You can add inventory results from {{site.data.keyword.sysdigsecure_short}} so that users can see the claimed compliance when they evaluate your product in the catalog.
 

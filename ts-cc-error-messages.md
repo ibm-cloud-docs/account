@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2022, 2025
-lastupdated: "2025-11-15"
+  years: 2022, 2026
+lastupdated: "2026-10-23"
 
 keywords: credit card, payment method, error credit card, credit card error, payment issue, card issue, card error, card error message, payment error message
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why am I facing issues with my credit card?
+# Why am I getting credit card errors in {{site.data.keyword.cloud_notm}}?
 {: #cc-error-messages}
 
 An issue might occur when you try to update or add a credit card. Review the following credit card error messages for detailed self-help information.

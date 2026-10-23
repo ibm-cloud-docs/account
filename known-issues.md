@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-23"
 
 keywords: account known issues, catalog known issues, catalog management, private catalogs, catalogs, IBM Cloud catalog, IAM, maximum limits for creating IAM resources, delete users from account, context-based restrictions
 
@@ -14,10 +14,10 @@ subcollection: account
 {{site.data.keyword.attribute-definition-list}}
 
 
-# Known issues and limitations
+# {{site.data.keyword.cloud_notm}} account and catalog known issues and limits
 {: #known-issues}
 
-Known issues and limitations include not being able to restrict access to some products in the {{site.data.keyword.cloud}} catalog, and the maximum limits for creating {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM) resources.
+Review {{site.data.keyword.cloud_notm}} account and catalog known issues and limitations, including catalog access restrictions and maximum limits for IAM resources.
 {: shortdesc}
 
 To review the default limits for your account, see [{{site.data.keyword.cloud_notm}} IAM limits](/docs/iam?topic=iam-cloudaccess#iam_limits).
