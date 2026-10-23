@@ -22,7 +22,7 @@ subcollection: account
 # Customizing objects in your private catalogs
 {: #restrict-by-user-object}
 
-Customize objects in {{site.data.keyword.cloud_notm}} private catalogs to control which virtual private endpoints your account users can access and use approved resources.
+Customize objects in {{site.data.keyword.cloud_notm}} private catalogs to control which virtual private endpoints your account users can access, so teams use only approved networks.
 {: shortdesc}
 
 Let's say you're an operations admin for your team, and you want your team to use only approved networks. You can create one catalog that includes all of the private virtual private endpoints for use by users in your account. Team members with viewer access can access only the virtual private endpoints in that catalog.

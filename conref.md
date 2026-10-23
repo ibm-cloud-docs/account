@@ -3,7 +3,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-23"
 
 keywords:
 
@@ -18,8 +18,10 @@ content-type: conref
 # Content references for account subcollection
 {: #conref-example}
 
-The following H2s and H3s are going to be reused in several different topics that need identical information.
+Use this {{site.data.keyword.cloud_notm}} account reference to find reusable content segments and the topics that include them, so you can keep shared content consistent.
 {: shortdesc}
+
+The following H2s and H3s are going to be reused in several different topics that need identical information:
 
 * H2 - **Define IAM access** is used in the following files:
    * catalog-vsi-tutorial.md

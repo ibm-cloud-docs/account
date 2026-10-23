@@ -17,7 +17,7 @@ completion-time: 45m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Reconciling nonsubscription multi-year account invoices
+# Reconciling multi-year nonsubscription invoices in {{site.data.keyword.cloud_notm}}
 {: #tutorial-reconcile-invoice}
 {: toc-content-type="tutorial"}
 {: toc-completion-time="45m"}

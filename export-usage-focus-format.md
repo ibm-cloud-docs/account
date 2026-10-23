@@ -3,7 +3,7 @@
 copyright:
   years: 2026
 
-lastupdated: "2026-10-19"
+lastupdated: "2026-10-23"
 
 keywords: usage export, FOCUS format, FinOps, cost management, billing data, CSV export, multi-cloud, cost optimization, FOCUS v1.2
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Exporting usage data in FOCUS format
+# Exporting {{site.data.keyword.cloud_notm}} usage data in FOCUS format for FinOps
 {: #export-usage-focus}
 
 Export your {{site.data.keyword.cloud}} usage data in FinOps Open Cost & Usage Specification (FOCUS) format to simplify multi-cloud cost management and enable seamless integration with FinOps tools.

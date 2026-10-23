@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-23"
 
 keywords: troubleshoot account, activate account, confirmation email
 
@@ -15,11 +15,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why didn’t I receive the confirmation email for creating my account?
+# Why didn't I receive my {{site.data.keyword.cloud_notm}} account confirmation email?
 {: #ts_email}
 {: troubleshoot}
 
-You're unable to receive the confirmation email because it might be blocked or filtered by your email client or server.
+You're unable to receive your {{site.data.keyword.cloud_notm}} account confirmation email because it might be blocked or filtered by your email client or server.
 {: shortdesc}
 
 You didn't receive the confirmation email to activate your account.

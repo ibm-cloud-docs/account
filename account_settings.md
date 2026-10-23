@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-07-01"
+lastupdated: "2026-10-23"
 
 keywords: account settings, edit account name, view account type, find account type
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing your account settings
+# Managing {{site.data.keyword.cloud_notm}} account settings
 {: #account_settings}
 
-As an {{site.data.keyword.cloud}} account owner, you can change the account name, view your account type, and find your account ID on the Account settings page. You can also manage settings for compliance for EU support, Financial Services Validated products, and HIPAA support.
+Manage {{site.data.keyword.cloud_notm}} account settings to change the account name, view the account type and ID, and configure compliance options for your account.
 {: shortdesc}
 
 ## Viewing your account settings

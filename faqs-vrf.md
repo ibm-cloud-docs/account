@@ -15,7 +15,7 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# AQ for {{site.data.keyword.cloud}} classic account VRF migration
+# FAQ for {{site.data.keyword.cloud}} classic account VRF migration
 {: #vrf-faqs}
 
 Find answers to frequently asked questions about IBM Cloud classic account migration to VRF-style accounts, including automatic conversion and network connectivity.

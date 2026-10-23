@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-23"
 
 keywords: dashboard, widgets display, manage visibility, customize, console, dashboard templates 
 
@@ -13,8 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Customizing dashboards for your account
+# Customizing and sharing dashboards in the {{site.data.keyword.cloud_notm}} console
 {: #custom-dashboard}
+
+Customize {{site.data.keyword.cloud_notm}} console dashboards by adding widgets and scoping resources so that you and your account users see only relevant data.
+{: shortdesc}
 
 You can customize your dashboard in the {{site.data.keyword.cloud}} console to ensure that what is displayed is relevant to you and the users in your account. The dashboards that you create can be scoped to specific resources. You can share the dashboards with users in your account as a way to group resources for specific projects or teams. When you create a new dashboard, you can start from scratch with a blank template or choose one of the other available templates.
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2026
-lastupdated: "2026-07-31"
+lastupdated: "2026-10-23"
 
 keywords: change service, switch service, service plan, pricing plan
 
@@ -12,10 +12,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Switching your pricing plan
+# Switching the pricing plan of an {{site.data.keyword.cloud_notm}} service instance
 {: #changing}
 
-You can switch the pricing plan of an {{site.data.keyword.Bluemix}} service if plan switches are enabled for the specific service. For example, you might want to switch or reduce your pricing plan. You can switch the service's pricing plan from the service instance dashboard.
+Switch the pricing plan of an {{site.data.keyword.cloud_notm}} service from the console, CLI, or API to match your usage needs or reduce costs, if the service allows plan changes.
 {: shortdesc}
 
 You can switch the pricing plan only for certain services. Pricing plans for some services cannot be reduced, or downgraded, to a prior plan. See the documentation for the specific service for information about what plan changes are allowed.
