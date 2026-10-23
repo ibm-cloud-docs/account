@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-06-05"
+lastupdated: "2026-10-23"
 
 keywords: IBM Cloud billing, software subscription, SaaS subscription
 
@@ -13,7 +13,7 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing SaaS subscriptions
+# Managing SaaS subscriptions in {{site.data.keyword.cloud_notm}}
 {: #software-subscription}
 
 You must have a paid account type for your SaaS subscription: Subscription, Pay-As-You-Go, or Enterprise Saving Plan. For more information, see [Account types](/docs/account?topic=account-accounts).

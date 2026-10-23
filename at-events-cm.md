@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2018, 2025
-lastupdated: "2025-11-15"
+  years: 2018, 2026
+lastupdated: "2026-10-23"
 
 keywords:
 
@@ -20,7 +20,7 @@ subcollection: account
 
 
 
-{{site.data.keyword.cloud_notm}} services, such as catalog management, generate activity tracking events.
+View {{site.data.keyword.cloud_notm}} catalog management activity tracking events to investigate abnormal activity, audit changes to catalogs and software, and meet compliance requirements.
 {: shortdesc}
 
 Activity tracking events report on activities that change the state of a service in {{site.data.keyword.cloud_notm}}. You can use the events to investigate abnormal activity and critical actions and to comply with regulatory audit requirements.

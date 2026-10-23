@@ -3,7 +3,7 @@
 copyright:
 
   years: 2023, 2026
-lastupdated: "2026-10-12"
+lastupdated: "2026-10-23"
 
 keywords: apptio, cost benefit analysis
 
@@ -13,10 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding the usage report
+# Understanding {{site.data.keyword.cloud_notm}} usage report
 {: #understand-reports}
 
-The following tables shows the correlation between the heading titles in your usage CSV report and JSON report fields as well the version of the CSV.
+Use the {{site.data.keyword.cloud_notm}} usage report reference to match CSV headers to JSON fields and CSV versions so that you can interpret your usage data accurately.
+{: shortdesc}
 
 ## Understanding your account summary report
 {: #export-csv-api-table-account-csv-summary}

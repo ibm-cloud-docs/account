@@ -3,7 +3,7 @@
 copyright:
 
    years: 2021, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-23"
 
 keywords: tagging resources, managing access, access management tags, create access management tags, get started with access management tags, IAM-enabled resources, tag your resource, access group, access group policy
 
@@ -16,13 +16,15 @@ completion-time: 10m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Controlling access to resources by using tags
+# Controlling access to resources by using management tags
 {: #access-tags-tutorial}
 {: toc-content-type="tutorial"}
 {: toc-completion-time="10m"}
 
-This tutorial guides you through the steps to centrally manage access to the resources in your account at scale. By completing this tutorial, you learn how to create an access management tag, add the tag to selected resources, and define a policy to assign access to resources based on the tags on those resources. 
+This tutorial shows you how to control access to {{site.data.keyword.cloud_notm}} resources by using access management tags, so that you can manage access at scale without updating IAM policies.
 {: shortdesc}
+
+By completing this tutorial, you learn how to create an access management tag, add the tag to selected resources, and define a policy to assign access to resources based on the tags on those resources.
 
 Access management tags are metadata that are added to resources to help organize access control relationships. They create flexible and easy to administer resource groupings. When you use tags to control access to your resources, your team's projects can grow without requiring updates to IAM policies.
 
