@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-10-30"
 
 keywords: IBM Cloud billing, commitment model, using commitments, pay as you go with committed use, enterprise savings plan
 
@@ -83,7 +83,7 @@ Set a spending notification to make sure that your usage is on track to fulfill 
 
 To view your service commitment usage, go to **Manage > Billing and usage > Commitments** and click **Service commitments**. To access this information, you need an access policy with the viewer role or higher on the billing account management service.
 
-For more details, download your usage report by [Exporting your account usage details to a CSV file](/docs/account?topic=account-viewingusage&interface=ui#export-csv) or [Exporting your enterprise usage details to a .csv file](/docs/enterprise-management?topic=enterprise-management-enterprise-usage&interface=ui#export-enterprise-csv).
+For more details, download your usage report by [Exporting your usage details to a CSV file by using the console](/docs/account?topic=account-viewingusage#export-csv) or [Exporting your enterprise usage details to a .csv file](/docs/enterprise-management?topic=enterprise-management-enterprise-usage#export-enterprise-csv).
 
 In the usage report, **Credit Pool Type** and **Category** help you identify a service commitment.
 

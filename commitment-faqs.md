@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-19"
+  years: 2019, 2026
+lastupdated: "2026-10-30"
 
 keywords: IBM Cloud billing, commitment model, using commitments, FAQs, enterprise savings plan, savings plan, pay as you go with committed use
 
@@ -69,7 +69,7 @@ Contact your [{{site.data.keyword.cloud_notm}} Sales](https://www.ibm.com/soluti
 
 Since you committed to a certain amount for a certain period and you didn't reach it, {{site.data.keyword.Bluemix}} have the rights to charge you with the remaining amount.
 
-## Can I convert my US-based USD Pay-As-You-Go to a Subscription account? If so, what kind of impact does the commitment model have?
+## Can I convert a Pay-As-You-Go account to a Subscription account?
 {: #payasyougo-to-subscription-account}
 {: faq}
 

@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-10-30"
 
 keywords: GB-hour, container usage, runtime, charge, invoice, paperless invoicing, adjustments
 
@@ -28,7 +28,7 @@ FAQ for invoices provide you with helpful information about finding and understa
 
 If you have a billable account, you can access your invoice by clicking **Manage > Billing and usage**, and selecting **Invoices**. If you have a Lite account, you don't have an invoice because you're never charged for Lite plan usage.
 
-You might be redirected to view your invoices on the [IBM Invoices website](https://www.ibm.com/support/customer/invoices/){: external}. See [How do I view invoices for Pay-As-You-Go or Subscription accounts?](/docs/account?topic=account-ts_cant-view-invoice) and [Viewing your invoices](/docs/account?topic=account-managing-invoices) for more information.
+You might be redirected to view your invoices on the [Invoices@IBM](https://www.ibm.com/support/customer/invoices/){: external}. See [How do I view invoices for Pay-As-You-Go or Subscription accounts?](/docs/account?topic=account-ts_cant-view-invoice) and [Viewing your invoices](/docs/account?topic=account-managing-invoices) for more information.
 
 ## Why does my usage not match my invoice?
 {: #usage-not-match-invoice}
