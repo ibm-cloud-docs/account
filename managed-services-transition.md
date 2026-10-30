@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-10-30"
 
 keywords: managed services transition, managed services
 
@@ -160,10 +160,10 @@ For requests or issues for the managed service the customer will be able to enga
 
 As part of the transition, we will remove billing from the customer's {{site.data.keyword.cloud_notm}} account for the managed service itself, but the devices will remain and continue to get billed normally by IBM. The customer will set up a separate billing with Wanclouds/provider for their managed services as per their agreement/contract with Wanclouds going forward.
 
-### The managed service came with 60GB of {{site.data.keyword.cloud_notm}} Backup storage at no additional cost. What happens to that if a customer opts not to transition?
+### What happens to the included backup storage if a customer opts not to transition?
 {: #backup-storage}
 
-The client will be able to retain the 60GB of {{site.data.keyword.cloud_notm}} Backup storage as part of this transition.
+The managed service included 60GB of {{site.data.keyword.cloud_notm}} Backup storage at no additional cost. The client will be able to retain this storage as part of the transition.
 
 ### What if I need to add a new device/server to my existing setup?
 {: #add-new}
