@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -15,7 +15,7 @@ subcollection: account
 # Tracking GHG emissions with the {{site.data.keyword.cloud_notm}} carbon calculator
 {: #what-is-cloud-calc}
 
-Track and manage your {site.data.keyword.cloud_notm}} greenhouse gas emissions by using the carbon calculator to monitor electricity consumption across services, locations (at datacenter level), and resource groups.
+Track and manage your {{site.data.keyword.cloud_notm}} greenhouse gas emissions by using the carbon calculator to monitor electricity consumption across services, locations (at datacenter level), and resource groups.
 {: shortdesc}
 
 Output that is provided by the carbon calculator is provided “as-is” for informational purposes only, and is based on cloud services information that is provisioned by client in client’s {{site.data.keyword.cloud_notm}} account. Output is provided in a format according to greenhouse gas (GHG) protocol standards. The data sources and tools that are used to calculate client's emissions are subject to change by IBM without notice. The client is responsible for confirming the accuracy of any calculator output for purposes of the client’s compliance with any applicable regulatory obligations or for any other purpose.
