@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-11-03"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -251,7 +251,7 @@ Complete the following steps to set your preferences for receiving various types
    * When you set {{site.data.keyword.cloud_notm}} platform notifications, you receive email notifications that are associated with only the platform. You do not receive notifications about events that are associated with {{site.data.keyword.cloud_notm}} services. By default, all platform notifications are turned off.
    *  If you update your preferences on resource activity, such as incidents, maintenance, security bulletins, or infrastructure service updates, the notifications are for only the services you use or the devices that you created. By default, all infrastructure notifications are turned off.
 
-1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](/user/notifications) page by clicking **Manage** in the **Billing and Usage** section.
+1. To receive spending notifications, go to **Manage** > **Billing and usage** > **Spending notifications** in the {{site.data.keyword.cloud_notm}} console. Or, you can access it directly from the [Notification preferences](https://cloud.ibm.com/user/notifications){: external} page by clicking **Manage** in the **Billing and Usage** section.
 
    You receive notifications when you reach 80%, 90%, and 100% of the spending thresholds that you specify. Enter the dollar amount to set a spending threshold when set up your spending notification. For more information, see [Setting spending notifications](/docs/support?topic=support-spending).
 

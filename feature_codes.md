@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: feature code, subscription code, subscription credit, support credit, promo code
 
@@ -24,7 +24,7 @@ Are you looking for details about adding subscription credit to your account? Se
 
 You must have the Editor role or higher for all account management services to apply a feature code. 
 
-If you don't have an account yet, you can add your feature code when you [register](/registration) for a new account by clicking **Register with a code** instead of entering your credit card information. If you do have an account, complete the following steps to apply a feature code to your existing account:
+If you don't have an account yet, you can add your feature code when you [register](https://cloud.ibm.com/registration){: external} for a new account by clicking **Register with a code** instead of entering your credit card information. If you do have an account, complete the following steps to apply a feature code to your existing account:
 
 1. In the {{site.data.keyword.cloud_notm}} console, go to **Manage** > **Account**, and select **Account settings**.
 1. Click **Apply code**.
