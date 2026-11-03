@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-10-30"
+lastupdated: "2026-11-03"
 
 keywords: GB-hour, container usage, runtime, charge
 
@@ -26,7 +26,7 @@ FAQ for subscription accounts include entries about subscription credit, subscri
 {: faq}
 {: support}
 
-After you purchase a subscription, you'll receive an email with a subscription code that adds the credit to your account. To apply the subscription code, go to [Account settings](https://cloud.ibm.com/account/settings), and click **Apply code**. You can also apply your code to a new account by clicking **Register with a code** when you [sign up for a new account](https://cloud.ibm.com/registration). For more information, see [Managing subscriptions](/docs/account?topic=account-subscriptions).
+After you purchase a subscription, you'll receive an email with a subscription code that adds the credit to your account. To apply the subscription code, go to [Account settings](https://cloud.ibm.com/account/settings){: external}, and click **Apply code**. You can also apply your code to a new account by clicking **Register with a code** when you [sign up for a new account](https://cloud.ibm.com/registration){: external}. For more information, see [Managing subscriptions](/docs/account?topic=account-subscriptions).
 
 You might be looking for information about promo codes and feature codes. For more information, see [Managing promotions](/docs/account?topic=account-applying-promo-codes) and [Applying feature codes](/docs/account?topic=account-codes).
 

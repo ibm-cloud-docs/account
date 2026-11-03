@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-04-17"
+lastupdated: "2026-11-03"
 
 keywords: getting help, getting support
 
@@ -24,4 +24,4 @@ If you experience an issue or have questions when you're working in the {{site.d
 * Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 * Review [Stack Overflow](https://stackoverflow.com/questions/tagged/ibm-cloud){: external} to see whether other users experienced the same problem. When you ask a question, tag the question with `ibm-cloud`, so that it's seen by the {{site.data.keyword.cloud_notm}} development teams.
 
- If you have paid support plans, for example Advanced or Premium plans, go to the [Support Center](/unifiedsupport/supportcenter){: external} in the {{site.data.keyword.cloud_notm}} console, and click **Create a case** from the Contact Support section. After your support case is created, you can follow its progress on the [Manage cases](/unifiedsupport/cases/manage){: external} page. For more information about creating a case, see [Creating support cases](/docs/support?topic=support-open-case).
+If you have paid support plans, for example Advanced or Premium plans, go to the [Support Center](https://cloud.ibm.com/unifiedsupport/supportcenter){: external} in the {{site.data.keyword.cloud_notm}} console, and click **Create a case** from the Contact Support section. After your support case is created, you can follow its progress on the [Manage cases](https://cloud.ibm.com/unifiedsupport/cases){: external} page. For more information about creating a case, see [Creating support cases](/docs/support?topic=support-open-case).
