@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: account settings, edit account name, view account type, find account type
 
@@ -34,7 +34,7 @@ Account owners or users with an access policy with the Operator role or higher o
 ## Viewing your account type
 {: #view-acct-type}
 
-To view your account type, go to **Manage** > **Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. Details about your account type are listed in the Account information section. For more information about the features that are included with your account, see [Account types](/docs/account?topic=account-accounts).
+To view your account type, go to **Manage** > **Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. Details about your account type are listed in the Account information section. For more information about the features that are included with your account, see [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types).
 
 You can change your account to a different type by upgrading or converting your account. See [Upgrading your account](/docs/account?topic=account-upgrading-account) for more information.
 

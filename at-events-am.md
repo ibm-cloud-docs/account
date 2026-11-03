@@ -3,7 +3,7 @@
 copyright:
 
   years: 2018, 2026
-lastupdated: "2026-09-04"
+lastupdated: "2026-11-03"
 
 keywords:
 
@@ -47,7 +47,7 @@ The following table lists the actions that generate an event:
 | `billing.account.create`             | An event is generated when you create an account after the account ID is assigned to the account. |
 | `billing.account.update`             | An event is generated when you update information about the account.  |
 | `billing.account.active`             | An event is generated when you verify the account, that is, an event is generated when the account becomes active. |
-| `billing.account-subscription.create` | An event is generated when you create a [Subscription account](/docs/account?topic=account-accounts#subscription-account). |
+| `billing.account-subscription.create` | An event is generated when you create a [Subscription account](/docs/account?topic=account-accounts-types#subscription-account). |
 {: caption="Actions that generate account management events" caption-side="top"}
 
 ## Events for managing account usage reports

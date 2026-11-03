@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -237,6 +237,6 @@ This pricing scenario provides an estimate of the costs that are associated with
 The actual costs may vary based on your specific usage patterns, data volumes, and configuration choices.
 {: note}
 
-To get a more accurate estimate tailored to your specific needs, you can use the [IBM Cloud cost estimator](/docs/account?topic=account-cost). You can input your expected usage for various services and the tool provides a customized cost estimate based on current pricing.
+To get a more accurate estimate tailored to your specific needs, you can use the [Estimating {{site.data.keyword.cloud}} service costs with the cost estimator](/docs/account?topic=account-estimate-cost). You can input your expected usage for various services and the tool provides a customized cost estimate based on current pricing.
 
 By carefully estimating your costs and by using the available tools, you can make informed decisions about your cloud resource usage and optimize your spending on the {{site.data.keyword.Bluemix}} platform.

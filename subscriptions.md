@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-04-22"
+lastupdated: "2026-11-03"
 
 keywords: subscription, credit, subscription code, support code, subscription overage, subscription usage, feature code, expiring subscription, expired subscription
 
@@ -19,7 +19,7 @@ subcollection: account
 With an {{site.data.keyword.cloud}} subscription, you get discounted usage for platform services and support by committing to a minimum spending commitment for a certain period of time. You can buy your first subscription, add more subscriptions, and monitor subscription usage on the Subscriptions page in the {{site.data.keyword.cloud_notm}} console.
 {: shortdesc}
 
-If you buy a subscription, your account is converted to a Subscription account type. For more details about other benefits of Subscription accounts, see [Account types](/docs/account?topic=account-accounts).
+If you buy a subscription, your account is converted to a Subscription account type. For more details about other benefits of Subscription accounts, see [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types).
 {: tip}
 
 If you are looking for information about SaaS subscriptions, see [Managing SaaS subscriptions](/docs/account?topic=account-software-subscription).
@@ -87,4 +87,4 @@ For more information, see [Applying subscription codes](/docs/account?topic=acco
 
 You are notified by email and on the [Subscriptions](/billing/subscriptions) page 60, 30, 14, and 1 day before the expiration date of the last subscription on the account. After the subscription expires, your account is converted to a Pay-As-You Go account, which means you pay only for billable services that you use with no contracts or commitments. The discounts that are associated with the subscription account don't apply to the Pay-As-You-Go account. To avoid getting charged at the Pay-As-You-Go, rate, set up a new subscription with Sales before the expiration date of the last subscription on the account.
 
-To learn more, see [Pay-As-You-Go accounts](/docs/account?topic=account-accounts#paygo).
+To learn more, see [Pay-As-You-Go accounts](/docs/account?topic=account-accounts-types#paygo).

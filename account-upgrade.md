@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-09-11"
+lastupdated: "2026-11-03"
 
 keywords: account upgrade, paid account, upgrade to Pay-As-You-Go, upgrade to Subscription, upgrade my account
 
@@ -23,7 +23,7 @@ You can view your current account type by going to **Manage** > **Account** > **
 
 After you upgrade your Lite account to a Pay-As-You-Go account, you receive a promotional credit of $200 that is automatically applied to your account. The credit is valid for 30 days, and your usage is deducted from the credit amount. The credit cannot be used with third-party products and might not be available for all accounts.
 
-Not sure which type of account you want to upgrade to? Get detailed information about the benefits of each account type in [Account types](/docs/account?topic=account-accounts).
+Not sure which type of account you want to upgrade to? Get detailed information about the benefits of each account type in [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types).
 {: tip}
 
 ## Before you begin

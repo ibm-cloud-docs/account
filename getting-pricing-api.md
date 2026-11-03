@@ -3,7 +3,7 @@
 copyright:
 
   years: 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: pricing, global catalog api
 
@@ -657,7 +657,7 @@ The following table shows the response body fields and their descriptions. For m
 | `deployment_location`      | The deployment location this pricing is from. Such as `che01`. |
 | `deployment_region`        | This is the region where the deployment plan is to retrieve plan pricing for a global deployment. For this example it is `che01`.  |
 | `origin`                   | Where the pricing data comes from. For this example, it's `pricing_catalog` and is designated by the Pricing Source in the Global Catalog UI. |
-| `type`                     | Type of plan. Valid values are `free`, `trial`, `paygo`, `paid`, `bluemix-subscription`, and `ibm-subscription`. For more information, see [Account types](/docs/account?topic=account-accounts). |
+| `type`                     | Type of plan. Valid values are `free`, `trial`, `paygo`, `paid`, `bluemix-subscription`, and `ibm-subscription`. For more information, see [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types). |
 | `url`                      | The url for the artifact. This is the url that you can use to get pricing. |
 | `starting_price`           | Plan-specific starting price information. |
 | `effective_from`           | The start date for the available pricing. |
@@ -665,7 +665,7 @@ The following table shows the response body fields and their descriptions. For m
 | `metrics`                  | Specifications of resources or operations that determine usage for pricing. |
 | `part_ref`                 | The IBM assigned part reference number for the metric. |
 | `metric_id`                | The metric ID or part number. |
-| `tier_model`               | The tier pricing model [^tabletext]. Possible values are `Simple Tier`, `Graduated Tier`, `Linear Tier`, or `Block (Step) Tier`. For this example it's `Linear Tier`. For more information, see [How you're charged](/docs/account?topic=account-charges). |
+| `tier_model`               | The tier pricing model [^tabletext]. Possible values are `Simple Tier`, `Graduated Tier`, `Linear Tier`, or `Block (Step) Tier`. For this example it's `Linear Tier`. For more information, see [Understanding {{site.data.keyword.cloud}} billing and pricing charges](/docs/account?topic=account-billing-pricing-charges). |
 | `resource_display_name`    | Display name of the resource. This is how the metric appears in the catalog. |
 | `charge_unit_display_name` | Display name of the charge unit. Unit friendly display name for the `charge_unit`. |
 | `charge_unit_name`         | An assigned name for the charge unit. This is the ID that is used to measure usages for the metric. |

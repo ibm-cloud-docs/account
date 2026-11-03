@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: IBM Cloud billing, software subscription, SaaS subscription
 
@@ -16,7 +16,7 @@ subcollection: account
 # Managing SaaS subscriptions in {{site.data.keyword.cloud_notm}}
 {: #software-subscription}
 
-You must have a paid account type for your SaaS subscription: Subscription, Pay-As-You-Go, or Enterprise Saving Plan. For more information, see [Account types](/docs/account?topic=account-accounts).
+You must have a paid account type for your SaaS subscription: Subscription, Pay-As-You-Go, or Enterprise Saving Plan. For more information, see [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types).
 {: shortdesc}
 
 To view your account type, go to **Manage > Account**, and select **Account settings** in the {{site.data.keyword.cloud_notm}} console. Details about your account type are listed in the Account Type section.

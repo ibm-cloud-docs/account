@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-11-03"
 
 keywords: troubleshoot account, infrastructure access, infrastructure services 
 
@@ -32,7 +32,7 @@ This page can't be loaded because your infrastructure account is not fully confi
 Multiple reasons why the message is displayed:
 {: tsCauses}
 
-* You have a [Lite account](/docs/account?topic=account-accounts#liteaccount), which does not allow access to infrastructure services.
+* You have a [Lite account](/docs/account?topic=account-accounts-types#liteaccount), which does not allow access to infrastructure services.
 * Your account is not linked to an infrastructure account.
 
 To resolve this issue, you must upgrade to a Pay-As-You-Go or Subscription account. For more information, see [Upgrading your account](/docs/account?topic=account-upgrading-account).
