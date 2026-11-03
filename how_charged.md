@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: payment, charges, pricing plan, service cost, cost, pricing tier, pricing model, pricing
 
@@ -18,7 +18,7 @@ subcollection: account
 Understand how {{site.data.keyword.cloud}} charges vary by resource usage, including API calls, instances, memory, and storage, across fixed, tiered, and block pricing models.
 {: shortdesc}
 
-{{site.data.keyword.cloud_notm}} provides detailed [cost estimators](/docs/account?topic=account-cost) to help you plan for charges.
+{{site.data.keyword.cloud_notm}} provides detailed [cost estimators](/docs/account?topic=account-estimate-cost) to help you plan for charges.
 {: tip}
 
 After you build your resources, you can check the actual cost. In the {{site.data.keyword.cloud}} console, go to **Manage > Billing and usage**, and select **Usage**. With an {{site.data.keyword.cloud_notm}} billable account, you're charged for the compute, containers, and services that your organization used. You might be invited by other {{site.data.keyword.cloud_notm}} users to participate in organizations under a different account. The usage of the apps or services that you use in the organizations that you're invited to are charged to the account that contains those organizations. You can see more information about a specific charge from each resource details page.

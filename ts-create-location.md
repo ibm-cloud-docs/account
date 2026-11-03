@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: troubleshoot account, account problem, IBM location, IBM Cloud location, create location
 
@@ -25,7 +25,7 @@ You're unable to access a different IBM Cloud location because your account type
 You receive an error message when you try to create a new {{site.data.keyword.cloud_notm}} location.
 {: tsSymptoms}
 
-This error typically occurs because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts#liteaccount).
+This error typically occurs because you're using a Lite account, which supports development in one public location only. For more information about Lite account features, see [Lite account](/docs/account?topic=account-accounts-types#liteaccount).
 {: tsCauses}
 
 To access more locations, upgrade to a billable account. Go to **Manage** > **Account** in the {{site.data.keyword.cloud_notm}} console, and select **Account settings**. In the Account upgrade section, select your upgrade option.

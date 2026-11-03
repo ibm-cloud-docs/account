@@ -3,7 +3,7 @@
 copyright:
 
  years: 2015, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-03"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -13,11 +13,13 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# {{site.data.keyword.cloud}} account types and plan comparisons
+# {{site.data.keyword.cloud_notm}} account types and plan comparisons
 {: #accounts-types}
 
-When you register with {{site.data.keyword.cloud}}, you are set up with a Pay-As-You-Go type of account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions.
+With {{site.data.keyword.cloud}}, register a Pay-As-You-Go account to use free and Lite plans, or choose a Subscription account for discounts and predictable billing.
 {: shortdesc}
+
+When you register, you are set up with a Pay-As-You-Go account. Even though you provide your credit card information for account security and identity verification purposes, you can still use {{site.data.keyword.cloud_notm}} for free by selecting products in the catalog that offer Free and Lite pricing plans. Another account type, called a Subscription account, is also available. With a Subscription account, you get many of the same features of a Pay-As-You-Go account, plus discounts for platform services and support with a more consistent billing structure that uses subscriptions.
 
 By default, classic accounts that were established before 30 November 2023, are included in the {{site.data.keyword.cloud_notm}} general routing table. Previously, if you wanted to convert a classic account to a VRF-style account, you were required to open a support case with {{site.data.keyword.IBM}} Support. Beginning 30 November 2023, any new classic account or any existing classic account that is "empty" (for example, without any provisioned VLANs), will be automatically converted to a VRF-style account the next time that account initiates a private network connection. For more information, see [FAQ about VRF account migration](/docs/account?topic=account-vrf-faqs).
 {: attention}
@@ -45,7 +47,7 @@ The following table provides a comparison of the Trial, Pay-As-You-Go, and Subsc
 ## Trial account
 {: #trial}
 
-Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without a financial commitment. You can access Lite service plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select **Register with a Code** during {{site.data.keyword.cloud_notm}} registration to apply a code. If you have an account, go to the [Account settings](/account/settings) page in the console to apply the code.
+Trial accounts offer timed access to a limited range of service plans and allow you to test out the platform without a financial commitment. You can access Lite service plans for a limited time with a trial account. To qualify for a trial account, go to [Harness the Power of IBM](https://ibm.biz/academic){: external} and validate your institution credentials or reach out to your educational program or course leader. If you don't have an account, select **Register with a Code** during {{site.data.keyword.cloud_notm}} registration to apply a code. If you have an account, go to the [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types) page in the console to apply the code.
 
 If you upgrade your trial account to a Pay-As-You-Go account by entering a credit card, it can't be converted back to a trial account. {{site.data.keyword.cloud_notm}} trial accounts are available for faculty and students at accredited academic institutions. Trial accounts expire after 30 days. Your account is deactivated when the trial period ends. To reactivate your account, log in to your account and upgrade it to a Pay-As-You-Go account.
 

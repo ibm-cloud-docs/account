@@ -148,8 +148,7 @@ toc:
               topics:
               - how_charged.md
               - estimating_costs.md
-              - topic: scenario.md
-                navtitle: Cost estimation scenario
+              - scenario.md
               - change_pricing_plan.md
               - getting-pricing-api.md
               - viewing_usage.md

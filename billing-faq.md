@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-10-13"
+lastupdated: "2026-11-03"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -50,7 +50,7 @@ If you provision multiple servers, you can potentially reduce bandwidth overage 
 
 With Pay-As-You-Go accounts, you're billed monthly for your resource usage. Your resource usage consists of recurring and fluctuating costs. This account type is a good fit for developers or companies that want to explore the entire {{site.data.keyword.cloud_notm}} catalog but have low-volume or variable workloads. You pay only for what you use or commit to monthly, with no long-term contracts. Usage consists of products, services, and resources.
 
-With Subscription accounts, you buy a subscription for an amount of credit to spend on resource usage within a certain time period. In exchange for this spending commitment, you get a discount on your usage costs. For more information about the differences between account types, see [Account types](/docs/account?topic=account-accounts).
+With Subscription accounts, you buy a subscription for an amount of credit to spend on resource usage within a certain time period. In exchange for this spending commitment, you get a discount on your usage costs. For more information about the differences between account types, see [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types).
 
 ## What happens if my Lite plan instance reaches the monthly quota?
 {: #monthlyquota-billing}

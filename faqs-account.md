@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-10-20"
+lastupdated: "2026-11-03"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -25,7 +25,7 @@ FAQ for your {{site.data.keyword.cloud}} account might include questions about u
 {: #create-account}
 {: faq}
 
-You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. A debit card is acceptable if it is from Visa or Mastercard, and it is not a disposable card or one-time use card number. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions and temporary educational accounts. To verify your identity with a code, you can apply a purchased subscription code for a Subscription account, or a feature code for a temporary educational account. For more information, see [Account types](/docs/account?topic=account-accounts).
+You can create an account by [registering](/registration){: external} your email address. For identity verification, a credit card is required when you create a new account. A debit card is acceptable if it is from Visa or Mastercard, and it is not a disposable card or one-time use card number. New accounts are created as Pay-As-You-Go accounts, except purchased subscriptions and temporary educational accounts. To verify your identity with a code, you can apply a purchased subscription code for a Subscription account, or a feature code for a temporary educational account. For more information, see [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types).
 
 Feature codes aren't supported in some countries. For more information, see [personal use availability](/docs/account?topic=account-account-getting-started#signup-personalaccts).
 {: note}
@@ -138,7 +138,7 @@ Yes, you can use your SoftLayer ID to log in to the console. Go to the [login pa
 {: #whatisliteplan}
 {: faq}
 
-A Lite plan is a free quota-based service plan. You can use a service's Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle that is renewed each month or on a one-off usage basis. Lite pricing plans are available with all account types. You can have one instance of a Lite plan for each service. For more information about Lite accounts, see [Account types](/docs/account?topic=account-accounts#liteaccount).
+A Lite plan is a free quota-based service plan. You can use a service's Lite plan to build an app without incurring any charges. A Lite plan might be offered on a monthly cycle that is renewed each month or on a one-off usage basis. Lite pricing plans are available with all account types. You can have one instance of a Lite plan for each service. For more information about Lite accounts, see [Lite account](https://cloud.ibm.com/docs/account?topic=account-accounts-types#liteaccount).
 
 ## How many apps can I build?
 {: #howmanyapps}
