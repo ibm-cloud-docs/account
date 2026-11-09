@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-09"
 
 keywords: account settings, delete account, account errors, reassign account, view tags, batch registration, transfer account ownership, upgrade, convert, trial, Lite, cancel account, terminate account, suspend account
 
@@ -42,7 +42,7 @@ A credit card is required to create a new {{site.data.keyword.cloud_notm}} accou
 
 If you are able to log in to an {{site.data.keyword.cloud_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
-* If you have advanced or premium support, click **Launch AI Assistant** and type `agent` to talk to an {{site.data.keyword.cloud_notm}} support representative.
+* If you have advanced or premium support, click **Ask {{site.data.keyword.paver}}** and type `agent` to talk to an {{site.data.keyword.cloud_notm}} support representative.
 * Create a support case by clicking **Create a case** from the **Need more help?** section.
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
@@ -223,7 +223,7 @@ To make a payment and reactivate your account, contact support by calling 1-866-
 
 From the {{site.data.keyword.cloud_notm}} console menu bar, click the **Help** icon ![Help icon](../icons/help.svg "Help") > **Support center**. The options that are available to you depend on your support plan. For more information, see [Getting support](/docs/support?topic=support-support-plans).
 
-Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/support?topic=support-using-avatar), ask questions of the AI Assistant, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
+Lite and Trial account support is limited to nontechnical support issues that are related to account access and billing. Users with Lite or Trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/docs/support?topic=support-using-avatar), ask questions in {{site.data.keyword.paver_full}}, and use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Can I view a list of accounts that I own?
 {: #accounts-owned}

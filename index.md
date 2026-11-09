@@ -3,7 +3,7 @@
 copyright:
 
  years: 2015, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-09"
 
 keywords: account types, Lite, paid account, buy account, account difference, compare account, subscription, savings plan, enterprise savings plan
 
@@ -54,7 +54,7 @@ If you upgrade your trial account to a Pay-As-You-Go account by entering a credi
 If you import a trial account into an enterprise, it's automatically upgraded to a [Pay-As-You-Go account](/docs/account?topic=account-accounts).
 {: note}
 
-Support for a trial account is limited to nontechnical support issues that are related to account access and billing. Users with trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/support?topic=support-using-avatar), ask questions of the AI Assistant, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
+Support for a trial account is limited to nontechnical support issues that are related to account access and billing. Users with trial accounts can view the [{{site.data.keyword.cloud_notm}} documentation](/support?topic=support-using-avatar), ask questions in {{site.data.keyword.paver_full}}, or use online communities such as the {{site.data.keyword.cloud_notm}} Community or Stack Overflow.
 
 ## Pay-As-You-Go account
 {: #paygo}
