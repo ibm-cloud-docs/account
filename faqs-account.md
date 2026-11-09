@@ -42,7 +42,7 @@ A credit card is required to create a new {{site.data.keyword.cloud_notm}} accou
 
 If you are able to log in to an {{site.data.keyword.cloud_notm}} account, go to the [Support Center](/unifiedsupport/supportcenter){: external} and choose one of the following options.
 
-* If you have advanced or premium support, click **Ask {{site.data.keyword.paver}}** and type `agent` to talk to an {{site.data.keyword.cloud_notm}} support representative.
+* If you have advanced or premium support, click **Ask {{site.data.keyword.paver}}** and ask to talk to an {{site.data.keyword.cloud_notm}} support representative.
 * Create a support case by clicking **Create a case** from the **Need more help?** section.
 
    After you open the case, an email notification is sent to you. Follow the instructions for further communication.
