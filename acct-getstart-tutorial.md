@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-11"
 
 keywords: getting started, account, Subscription, Pay-As-You-Go, catalog, upgrade account, IAM, access groups, invite users, notifications, email preferences, account settings, authentication, MFA, TOTP, security key, google login, Google ID, Google sign up, Red Hat ID, Red Hat sign up
 
@@ -16,13 +16,15 @@ completion-time: 60m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Setting up your {{site.data.keyword.cloud_notm}} account
+# Setting up a Pay-As-You-Go account in {{site.data.keyword.cloud_notm}}
 {: #account-getting-started}
 {: toc-content-type="tutorial"}
 {: toc-completion-time="60m"}
 
-This tutorial walks you through the steps for setting up a Pay-As-You-Go account in {{site.data.keyword.cloud}}. By completing this tutorial, you learn how to set up account authentication, manage your account settings, effectively organize resources in your account, and control access to resources.
+This tutorial shows how to set up a Pay-As-You-Go account in {{site.data.keyword.cloud_notm}}, including authentication, billing, resource groups, and user access.
 {: shortdesc}
+
+By completing this tutorial, you learn how to create your account, set up multifactor authentication (MFA), estimate costs, manage payments and invoices, set notification preferences, create resource groups, set up access groups, invite users, and find support options.
 
 ## Create your account
 {: #account-gs-create}

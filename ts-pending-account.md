@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-11-11"
 
 keywords: troubleshoot account, pending account, login issue 
 
@@ -15,11 +15,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I log in immediately after I create an account?
+# Why can't I log in to {{site.data.keyword.cloud_notm}} after creating an account?
 {: #ts_accntpding}
 {: troubleshoot}
 
-If your account is still pending, you can't log in to {{site.data.keyword.Bluemix}}.
+You can't log in to {{site.data.keyword.cloud_notm}} because your account is pending until you confirm it. Click the link in your confirmation email, or resend it.
 {: shortdesc}
 
 After you create an {{site.data.keyword.cloud_notm}} account, you might not be able to log in to {{site.data.keyword.cloud_notm}}. The `Your account is pending` message might be displayed.

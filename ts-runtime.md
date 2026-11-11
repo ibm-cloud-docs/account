@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-11"
 
 keywords: troubleshoot account, account problem, runtime memory allowance, exceed runtime allowance
 subcollection: account
@@ -14,11 +14,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# How did I exceed the runtime memory allowance? 
+# Why can't I deploy apps after exceeding my memory limit?
 {: #noruntimemem}
 {: troubleshoot}
 
-You went over the allowed memory for your {{site.data.keyword.Bluemix}} account.
+You can't deploy apps in {{site.data.keyword.cloud_notm}} because your organization exceeded its runtime memory limit. Upgrade your Lite account or delete apps to free memory.
 {: shortdesc}
 
 You're unable to deploy apps, and an error states that you've exceeded your organization's memory limit.

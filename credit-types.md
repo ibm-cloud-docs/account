@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-10-13"
+lastupdated: "2026-11-11"
 
 keywords: credit, credit types, promo code, discount, promotion code, promotional code, redeem promos, feature code, subscription code
 
@@ -13,8 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Types of codes and credits
+# Understanding {{site.data.keyword.cloud_notm}} credit types and billing codes
 {: #codes-credits}
+
+Compare {{site.data.keyword.cloud_notm}} credit types, including upgrade credits, promo codes, feature codes, subscription codes, and private offers, to find the right one.
+{: shortdesc}
 
 {{site.data.keyword.cloud}} provides credit opportunities for customers to access more than 130 unparalleled services at a reduced cost. You can easily manage your billing and credits. For more information, see [Centrally managing billing and usage with enterprises](/docs/enterprise-management?topic=enterprise-management-enterprise).
 

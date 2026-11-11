@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-11-11"
 
 keywords: troubleshooting services, troubleshooting resources, service problems, resource problems, migrate, migration error, migrate all services
 
@@ -15,11 +15,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I migrate all of my services?
+# Why can't I migrate all services to a resource group? 
 {: #ts_service_migration}
 {: troubleshoot}
 
-Not all {{site.data.keyword.Bluemix}} services are eligible for migration.
+You can't migrate some {{site.data.keyword.cloud_notm}} services to a resource group because they don't support IAM. Look for the Migrate icon to check eligibility.
 {: shortdesc}
 
 You're unable to migrate certain services.  

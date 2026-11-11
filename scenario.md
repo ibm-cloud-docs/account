@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-11"
 
 keywords: estimate cost, cost example, billing example, payment example, calculating app price
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Estimating costs for a {{site.data.keyword.codeengineshort}} app scenario
+# Estimating monthly costs for a {{site.data.keyword.codeengineshort}} app with Cloudant and logging
 {: #sample}
 
-Assume that you deployed your web application on to {{site.data.keyword.codeenginefull}}. The {{site.data.keyword.codeenginefull}} uses several services that are provided by {{site.data.keyword.Bluemix}} including a database, logging and monitoring. You can learn how the actual cost of your application is calculated in this example.
+Estimate the monthly cost of a {{site.data.keyword.codeenginefull}} app that uses {{site.data.keyword.cloudant_short_notm}}, {{site.data.keyword.logs_full_notm}}, and {{site.data.keyword.mon_full_notm}} by following a worked pricing example.
 {: shortdesc}
 
 With {{site.data.keyword.codeenginefull}} you pay for only the memory and CPU needed to run your application, and any incoming HTTP calls. It includes [scaling to 0](/docs/codeengine?topic=codeengine-app-scale#app-scale-boundaries), if your application doesn't receive any traffic for a span of time. For example, assume a production application, which is always running, and the application has the following specifications:

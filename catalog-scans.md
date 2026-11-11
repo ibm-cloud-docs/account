@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-04-16"
+lastupdated: "2026-11-11"
 
 keywords: vulnerabilities, scanning, scans, images, software, catalog
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Scanning software for vulnerabilities
+# Scanning {{site.data.keyword.cloud}} catalog software for vulnerabilities
 {: #scans}
 
-Before you install instances of software from the {{site.data.keyword.cloud}} catalog, you might want to complete a vulnerability assessment on the contents of the software and its associated images. By doing so, you can reduce the probability of security threats and unauthorized access of systems.
+Scan {{site.data.keyword.cloud_notm}} catalog software for vulnerabilities before you install it. Download the source package with the CLI, then scan it to reduce security risks.
 {: shortdesc}
 
 ## Before you begin

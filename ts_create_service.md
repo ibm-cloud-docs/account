@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-04-24"
+lastupdated: "2026-11-11"
 
 keywords: troubleshoot create service, create service error
 
@@ -15,11 +15,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can’t I create a new service instance?
+# Why can't I create a service instance in {{site.data.keyword.cloud_notm}}?
 {: #ts_create_service}
 {: troubleshoot}
 
-You are unable to create or add a new service instance.
+Your {{site.data.keyword.cloud_notm}} service instance might fail to create because of missing IAM access, plan limits, browser issues, or incidents. Check each cause to fix it.
 {: shortdesc}
 
 You might receive one of the following error messages when you create a service:

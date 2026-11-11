@@ -3,7 +3,7 @@
 copyright:
 
   years: 2024, 2026
-lastupdated: "2026-04-21"
+lastupdated: "2026-11-11"
 
 keywords: onboard software, virtual server image, virtual machine image, image, vm, vsi, validate, test, VSI image, VM image, private catalog, vpc, virtual private cloud, software plan, plan, usage-based plan, partner center
 
@@ -18,14 +18,16 @@ completion-time: 20m
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Onboarding a virtual server image for VPC with a plan
+# Onboarding a VPC virtual server image with a pricing plan
 {: #working-catalog-vsivpc-tutorial}
 {: toc-content-type="tutorial"}
 {: toc-services="cloud-object-storage, vpc"}
 {: toc-completion-time="20m"}
 
-This tutorial walks you through how to onboard a sample virtual server image for virtual private cloud (VPC) to your account with a software plan. By completing this tutorial, you learn how to create a private catalog, import the image to Partner Center, add a pricing plan, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account. As you complete the tutorial, adapt each step to match your organization's goal. This tutorial includes steps for deploying a virtual server image to a target {{site.data.keyword.cloud_notm}} Virtual Private Cloud (VPC). As a result, you incur associated infrastructure charges.
+This tutorial shows how to onboard a virtual server image for {{site.data.keyword.cloud_notm}} VPC with a usage-based pricing plan in a private catalog and Partner Center. You incur VPC infrastructure charges.
 {: shortdesc}
+
+By completing this tutorial, you learn how to create a private catalog, import the image to Partner Center, add a pricing plan, validate that it can be installed on a selected deployment target, and make the virtual server image available to users who have access to your account. As you complete the tutorial, adapt each step to match your organization's goal.
 
 Onboarding Virtual Server Images for VPC with {{site.data.keyword.IBMz}} deployment support is available in private catalogs. The onboarding experience for {{site.data.keyword.IBMz_notm}}-supported Virtual Server Images is the same as how you onboard other Virtual Server Images in your private catalog.
 {: note}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-11"
 
 keywords: troubleshoot account, account problem, lite plan, lite plan instance, extra instance, create instance
 
@@ -14,11 +14,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I create a new Lite plan instance?
+# Why can't I create a second Lite plan instance in {{site.data.keyword.cloud_notm}}?
 {: #nosecondlite}
 {: troubleshoot}
 
-You try to create more than one instance in your Lite account.
+You can't create a second Lite plan instance in {{site.data.keyword.cloud_notm}} because each Lite plan allows one instance.
 {: shortdesc}
 
 You receive the following error message when you try to create a new Lite plan instance:

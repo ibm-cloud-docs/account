@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-11"
 
 keywords: viewing invoices, invoices, IBM Customer Number, IBM Invoices, RSET, external invoice website, paperless invoice, request paperless invoice
 
@@ -53,7 +53,7 @@ You can check the status of your invoice on the [Invoices page](/billing/invoice
 Turning a resource "off" doesn't cancel the resource in your account. To cancel the resource, you must cancel the plan for the server.
 {: note}
 
-You will receive invoices for resources in your account until you cancel them. See [Cancelling your billing items](/docs/account?topic=account-cancel-billing-items) for more information.
+You will receive invoices for resources in your account until you cancel them. See [Canceling billing items for deleted resources in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cancel-billing-items) for more information.
 
 ### Viewing and downloading your invoice
 {: #download-invoices}
