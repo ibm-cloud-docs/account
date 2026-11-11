@@ -47,6 +47,8 @@ In the enterprise level view, you can filter your emissions data down to a speci
 
 Learn more about setting up and managing [Enterprise accounts](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise).
 
+
+
 ## Working with the carbon calculator API 
 {: #tracking-emissions-api}
 
