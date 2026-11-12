@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-11-15"
+  years: 2021, 2026
+lastupdated: "2026-11-11"
 
 keywords: billing items, cancel, cancel billing items, cancel resources, delete resource, delete billing items
 
@@ -13,8 +13,11 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Cancelling your billing items
+# Canceling billing items for deleted resources in {{site.data.keyword.cloud_notm}}
 {: #cancel-billing-items}
+
+Cancel billing items in the {{site.data.keyword.cloud_notm}} console to stop charges for deleted or unused resources. You can't recover billing items after you cancel them.
+{: shortdesc}
 
 You're billed for resources in your account until you cancel them. If you have deleted a resource or have resources in your account that are no longer used, make sure to cancel all billing items associated with those resources.
 

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2019, 2025
-lastupdated: "2025-11-15"
+  years: 2019, 2026
+lastupdated: "2026-11-11"
 
 keywords: private catalog, account catalogs, software, reload, version
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Reloading a software version
+# Reloading a software version in an {{site.data.keyword.cloud}} private catalog
 {: #catalog-reload-version}
 
-You can reload a version of software in your private catalog to update the version based on your current repository. When you reload a version, you revert it to its default state when you first imported the software.
+Reload a software version in your {{site.data.keyword.cloud_notm}} private catalog to update it from your source repository and restore its default imported state.
 {: shortdesc}
 
 ## Reloading an unpublished version

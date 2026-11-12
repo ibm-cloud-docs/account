@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-10"
 
 keywords: getting help, getting support
 
@@ -19,6 +19,7 @@ subcollection: account
 If you experience an issue or have questions when you're working in the {{site.data.keyword.cloud}} console, you can use the following resources before you open a support case.
 {: shortdesc}
 
+* * Troubleshoot with [{{site.data.keyword.paver_full}}](http://paver.cloud.ibm.com){: external}. {{site.data.keyword.paver}} is an embedded AI operator that understands your account context, creates a resolution plan, and executes changes on your behalf, while always requiring your approval before touching your live environment.
 * Review the [FAQs](/docs?tab=faqs&tags=get-support%2Cbilling-usage%2Caccount%2Csell) in the product documentation.
 * Review the troubleshooting documentation for [accounts](/docs/account?topic=account-ts_logintoibm), [billing](/docs/account?topic=account-cannot-access-billing-info), [selling on {{site.data.keyword.cloud_notm}}](/docs/sell?topic=sell-repo-upload-error), and [Using the support center](/docs/support?topic=support-ts_tech-support-case) to troubleshoot and resolve common issues.
 * Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.

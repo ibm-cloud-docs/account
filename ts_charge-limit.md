@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-11-15"
+  years: 2021, 2026
+lastupdated: "2026-11-11"
 
 keywords: troubleshoot, billing, payment limit, charge limit
 
@@ -15,11 +15,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why am I getting a charge limit error when I try to make a payment? 
+# Why do I get a charge limit error when paying an invoice? 
 {: #ts-charge-limit}
 {: troubleshoot}
 
-You can't make a full payment on your invoice because of a charge limit.
+You get a charge limit error because credit card payments in USD can't exceed $1,000.00 by default.
 {: shortdesc}
 
 You try to make a payment on an invoice that is over $1,000.00 USD, but you get the following error message:

@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2020, 2025
-lastupdated: "2025-11-15"
+  years: 2020, 2026
+lastupdated: "2026-11-11"
 
 keywords: troubleshoot account, upgrade account, upgrade issue, 
 subcollection: account
@@ -14,11 +14,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why didn't my payment process when I tried to upgrade my {{site.data.keyword.cloud_notm}} account? 
+# Why was my credit card rejected during {{site.data.keyword.cloud_notm}} upgrade?
 {: #ts_credit-card}
 {: troubleshoot}
 
-You tried to upgrade to a Pay-As-You-Go account by using a credit card.
+Your credit card was rejected when you upgraded to a {{site.data.keyword.cloud_notm}} Pay-As-You-Go account.
 {: shortdesc}
 
 When you go **Manage** > **Account** > **Account Settings** in the {{site.data.keyword.cloud_notm}} console, the following message is displayed:

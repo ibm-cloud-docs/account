@@ -2,7 +2,7 @@
 copyright:
 
   years: 2022, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-11"
 
 keywords: carbon calculator, cloud carbon calculator, emission calculator, carbon footprint, sustainability, FAQs
 
@@ -11,10 +11,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Tracking account emissions with carbon calculator
+# Tracking {{site.data.keyword.cloud}} account emissions with carbon calculator
 {: #tracking-emissions-account}
 
-Track {{site.data.keyword.cloud}} account greenhouse gas emissions with the carbon calculator to view, filter, and export emissions data by service, location, and resource group.
+Track {{site.data.keyword.cloud_notm}} account greenhouse gas emissions with the carbon calculator. View, filter, and export data by service, location, and resource group.
 {: shortdesc}
 
 The carbon emissions factor, a ratio of emissions per unit of energy, is being updated for higher accuracy and is temporarily unavailable. For urgent inquiries related to carbon emissions factor data, contact support.
@@ -46,6 +46,8 @@ In the enterprise level view, you can filter your emissions data down to a speci
 * Emissions by account: GHG emissions are broken down by account. This widget is displayed if the entity that is being viewed contains only accounts.
 
 Learn more about setting up and managing [Enterprise accounts](/docs/enterprise-management?topic=enterprise-management-what-is-enterprise).
+
+
 
 ## Working with the carbon calculator API 
 {: #tracking-emissions-api}

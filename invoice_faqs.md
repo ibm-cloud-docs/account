@@ -3,7 +3,7 @@
 copyright:
 
   years: 2020, 2026
-lastupdated: "2026-10-30"
+lastupdated: "2026-11-11"
 
 keywords: GB-hour, container usage, runtime, charge, invoice, paperless invoicing, adjustments
 
@@ -15,10 +15,10 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ for invoices
+# FAQ for finding and understanding {{site.data.keyword.cloud_notm}} invoices
 {: #invoice-faq}
 
-FAQ for invoices provide you with helpful information about finding and understanding your invoices. To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
+FAQ for {{site.data.keyword.cloud_notm}} invoices might include questions on accessing and downloading invoices, usage that differs from an invoice, invoice adjustments, paperless invoicing, and invoice payment status. To find all FAQ for {{site.data.keyword.cloud}}, see our [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## Where can I access my invoice?

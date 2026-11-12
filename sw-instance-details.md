@@ -3,8 +3,8 @@
 
 copyright:
 
-  years: 2021, 2025
-lastupdated: "2025-01-28"
+  years: 2021, 2026
+lastupdated: "2026-11-11"
 
 keywords: software instance, logs, delete, resource list, operator, operator bundle
 
@@ -14,10 +14,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing software instances
+# Managing {{site.data.keyword.cloud}} Operator software instances
 {: #sw-instance-details}
 
-After you install an Operator from the {{site.data.keyword.cloud}} catalog, you can view details about it from your software instance details page. You can also take common actions such as renaming, deleting, and viewing the logs for the instance.
+Manage an Operator software instance from the {{site.data.keyword.cloud_notm}} catalog by viewing its details and logs, renaming it, or deleting it in the console or with Terraform.
 {: shortdesc}
 
 ## Viewing details about your software instance in the console

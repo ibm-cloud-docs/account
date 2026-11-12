@@ -2,8 +2,8 @@
 
 copyright:
 
-  years: 2015, 2025
-lastupdated: "2025-11-15"
+  years: 2015, 2026
+lastupdated: "2026-11-11"
 
 keywords: troubleshoot account, account problem, add user to org, org, invite user to org
 subcollection: account
@@ -14,11 +14,11 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why can't I add users to an org? 
+# Why can't I add users to an {{site.data.keyword.cloud_notm}} organization?
 {: #ts_adduser}
 {: troubleshoot}
 
-You can invite users to your organization only if you're the account owner, or if you're both a manager and a member of the organization.
+You can't add users to an {{site.data.keyword.cloud_notm}} organization unless you're the account owner or a manager who is also a member.
 {: shortdesc}
 
 You can't see the **Invite a New User** link in your **Manage Organizations** section.

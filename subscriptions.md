@@ -3,7 +3,7 @@
 copyright:
 
   years: 2019, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-11"
 
 keywords: subscription, credit, subscription code, support code, subscription overage, subscription usage, feature code, expiring subscription, expired subscription
 
@@ -13,10 +13,10 @@ subcollection: account
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Managing platform and support subscriptions
+# Managing {{site.data.keyword.cloud_notm}} platform and support subscriptions
 {: #subscriptions}
 
-With an {{site.data.keyword.cloud}} subscription, you get discounted usage for platform services and support by committing to a minimum spending commitment for a certain period of time. You can buy your first subscription, add more subscriptions, and monitor subscription usage on the Subscriptions page in the {{site.data.keyword.cloud_notm}} console.
+Manage {{site.data.keyword.cloud_notm}} platform and support subscriptions to buy credit, monitor usage and overages, and track expiration dates in the console.
 {: shortdesc}
 
 If you buy a subscription, your account is converted to a Subscription account type. For more details about other benefits of Subscription accounts, see [{{site.data.keyword.cloud_notm}} account types and plan comparisons](/docs/account?topic=account-accounts-types).

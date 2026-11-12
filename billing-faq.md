@@ -3,7 +3,7 @@
 copyright:
 
   years: 2015, 2026
-lastupdated: "2026-11-03"
+lastupdated: "2026-11-11"
 
 keywords: promo code, feature code, Subscription account, Lite account, payment, invoice, credit card, subscription code, billing item
 
@@ -15,10 +15,10 @@ content-type: faq
 
 {{site.data.keyword.attribute-definition-list}}
 
-# FAQ for billing and usage
+# FAQ for {{site.data.keyword.cloud}} billing and usage
 {: #billusagefaqs}
 
-FAQ for billing and usage might include questions about credit cards, promo codes, or other billing-related issues. To find all FAQ for {{site.data.keyword.cloud}}, see the [FAQ library](/docs/faqs).
+FAQ for {{site.data.keyword.cloud_notm}} billing and usage might include questions on GB-hours, credit cards, payment methods, promo codes, feature codes, and invoices. To find all FAQ for {{site.data.keyword.cloud}}, see the [FAQ library](/docs/faqs).
 {: shortdesc}
 
 ## What is a GB-hour?
@@ -237,7 +237,7 @@ If you believe that charges on your invoice are incorrect, [contact Support](/un
 {: #stop-billing}
 {: faq}
 
-A [resource](#x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You're billed for resources in your account until you cancel them. If you deleted a resource or have resources in your account that are no longer used, make sure to cancel all billing items associated with those resources. Billing items can't be recovered after they are canceled. For more information, see [Cancelling your billing items](/docs/account?topic=account-cancel-billing-items).
+A [resource](#x2004267){: term} is anything that you can create from the catalog that is managed by and contained within a resource group. You're billed for resources in your account until you cancel them. If you deleted a resource or have resources in your account that are no longer used, make sure to cancel all billing items associated with those resources. Billing items can't be recovered after they are canceled. For more information, see [Canceling billing items for deleted resources in {{site.data.keyword.cloud_notm}}](/docs/account?topic=account-cancel-billing-items).
 
 ## Can I add a tax identification number to my account?
 {: #tax-assessment}
