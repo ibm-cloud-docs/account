@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-25"
 
 keywords: onboard software, operator, validate, test, Red Hat OpenShift cluster, sample Node-RED Operator, CSV file, CSV, operator bundle, TGZ file
 
@@ -24,6 +24,8 @@ completion-time: 45m
 {: toc-content-type="tutorial"}
 {: toc-services="Registry"}
 {: toc-completion-time="45m"}
+
+
 
 This tutorial walks you through onboarding an Operator from GitHub to an IBM Cloud private catalog using a TGZ or CSV file and validating it for account users.
 {: shortdesc}

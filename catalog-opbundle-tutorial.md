@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-25"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -23,6 +23,8 @@ completion-time: 45m
 {: toc-content-type="tutorial"}
 {: toc-services="Registry"}
 {: toc-completion-time="45m"}
+
+
 
 This tutorial shows you how to onboard a {{site.data.keyword.redhat_notm}} Certified Operator bundle to an {{site.data.keyword.cloud_notm}} private catalog and validate it on an {{site.data.keyword.openshiftshort}} cluster.
 {: shortdesc}
