@@ -3,7 +3,7 @@
 copyright:
 
   years: 2021, 2026
-lastupdated: "2026-10-23"
+lastupdated: "2026-11-25"
 
 keywords: private catalog, software, onboard, operator, validate, test, Red Hat OpenShift operator, operator bundle
 
@@ -23,6 +23,9 @@ completion-time: 45m
 {: toc-content-type="tutorial"}
 {: toc-services="Registry"}
 {: toc-completion-time="45m"}
+
+Operator onboarding, publishing, discovery, and installation capabilities in {{site.data.keyword.cloud_notm}} catalog are deprecated and will be removed on March 31, 2027. To continue discovering and installing operators for {{site.data.keyword.openshiftshort}} environments, migrate to {{site.data.keyword.redhat_notm}} OperatorHub, the operator ecosystem for {{site.data.keyword.openshiftshort}}. Existing operators already installed in clusters will continue to run after the effective date. However, IBM will no longer provide support, maintenance, or updates for operators distributed through the {{site.data.keyword.cloud_notm}} catalog.
+{: deprecated}
 
 This tutorial shows you how to onboard a {{site.data.keyword.redhat_notm}} Certified Operator bundle to an {{site.data.keyword.cloud_notm}} private catalog and validate it on an {{site.data.keyword.openshiftshort}} cluster.
 {: shortdesc}
