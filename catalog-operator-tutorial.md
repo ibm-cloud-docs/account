@@ -25,7 +25,8 @@ completion-time: 45m
 {: toc-services="Registry"}
 {: toc-completion-time="45m"}
 
-
+Operator onboarding, publishing, discovery, and installation capabilities in {{site.data.keyword.cloud_notm}} catalog are deprecated and will be removed on March 31, 2027. To continue discovering and installing operators for {{site.data.keyword.openshiftshort}} environments, migrate to {{site.data.keyword.redhat_notm}} OperatorHub, the operator ecosystem for {{site.data.keyword.openshiftshort}}. Existing operators already installed in clusters will continue to run after the effective date. However, IBM will no longer provide support, maintenance, or updates for operators distributed through the {{site.data.keyword.cloud_notm}} catalog.
+{: deprecated}
 
 This tutorial walks you through onboarding an Operator from GitHub to an IBM Cloud private catalog using a TGZ or CSV file and validating it for account users.
 {: shortdesc}
